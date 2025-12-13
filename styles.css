@@ -123,21 +123,6 @@ body {
     padding: 0;           
 }
 
-.resume-preview {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    background: transparent; 
-}
-
-.resume-preview img {
-    max-width: 1300px;      
-    width: 100%;
-    height: auto;
-    border-radius: 12px;   
-     
-}
-
 .resume-legend-section {
     display: flex;
     justify-content: center;
@@ -162,11 +147,33 @@ body {
     white-space: nowrap;
 }
 
-.resume-legend i {
+
+.dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     display: inline-block;
+    flex-shrink: 0;
+}
+
+.dot.purple { background: #6865f2; }
+.dot.blue   { background: #49abff; }
+.dot.green  { background: #5dffbc; }
+.dot.yellow { background: #ffee5d; }
+
+.resume-preview {
+    display: block;
+    padding: 3rem 1rem 4rem;
+}
+
+.resume-preview img {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    
 }
 
 .hero h1 {
