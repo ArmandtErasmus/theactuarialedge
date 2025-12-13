@@ -176,6 +176,122 @@ body {
     
 }
 
+
+.hero-split {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+
+.hero-media img {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.page-hero.hero-split {
+    max-width: 1400px;   
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+
+.hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem;
+}
+
+.hero-bullets li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 0.75rem;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.hero-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #6865f2; 
+    font-size: 1.2rem;
+}
+
+
+.hero-note {
+    color: #1e293b;
+    font-size: 0.85rem;
+}
+
+.cv-guidelines {
+    margin-top: 4rem;
+}
+
+.cv-guidelines ul {
+    list-style: none;
+    padding-left: 1.4rem;
+}
+
+.cv-guidelines li {
+    position: relative;
+}
+
+.cv-guidelines li::before {
+    content: "•";
+    position: absolute;
+    left: -1.2rem;
+    color: #6865f2;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.section-intro {
+    max-width: 720px;
+    margin-bottom: 3rem;
+    color: #1e293b;
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.guideline-block h3 {
+    margin-bottom: 0.75rem;
+    color: #6865f2;
+}
+
+.guideline-block p {
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+}
+
+.guideline-block ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.guideline-block li {
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+.guidelines-closing {
+    margin-top: 3rem;
+    max-width: 1500px;
+    width: 100%;
+    color: #94a3b8;
+    font-style: italic;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 800;
