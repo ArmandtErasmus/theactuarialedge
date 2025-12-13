@@ -193,6 +193,15 @@ body {
     
 }
 
+.hero-media-resume img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
 .page-hero.hero-split {
     max-width: 1400px;   
 }
