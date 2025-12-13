@@ -123,6 +123,52 @@ body {
     padding: 0;           
 }
 
+.resume-preview {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: transparent; 
+}
+
+.resume-preview img {
+    max-width: 1300px;      
+    width: 100%;
+    height: auto;
+    border-radius: 12px;   
+     
+}
+
+.resume-legend-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 0;
+}
+
+.resume-legend {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.resume-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.resume-legend i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 800;
