@@ -191,6 +191,131 @@ body {
     align-items: center;
 }
 
+/* FAQ SECTION */
+.faq-section {
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.faq-subtitle {
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    padding: 0 24px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    text-align: left;
+}
+
+.faq-answer p {
+    margin: 8px 0;
+    color: #475569;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* enough to fit answer */
+    padding: 12px 24px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+
+/* Live indicator container */
+.live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2ecc71;
+}
+
+.live-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+/* Green pulsing dot */
+.pulse {
+    width: 10px;
+    height: 10px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pulse::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 204, 113, 0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+    }
+}
+
 
 .hero-media img {
     width: 100%;
