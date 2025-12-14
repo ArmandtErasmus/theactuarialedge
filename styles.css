@@ -184,6 +184,13 @@ body {
     align-items: center;
 }
 
+.hero-split.projects {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 2rem;
+    align-items: center;
+}
+
 
 .hero-media img {
     width: 100%;
@@ -202,8 +209,19 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
 }
 
+.hero-media-project img {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+}
+
 .page-hero.hero-split {
     max-width: 1400px;   
+}
+
+.page-hero.hero-split.projects {
+    max-width: 2000px;   
 }
 
 .hero-content {
