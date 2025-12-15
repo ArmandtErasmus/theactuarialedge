@@ -1,0 +1,364 @@
+/* CODING PRACTICE SECTION */
+.coding-practice-section {
+    padding: 40px 60px;
+    background: #f8fafc;
+    min-height: calc(100vh - 200px);
+}
+
+.coding-practice-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.coding-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* Problem Panel */
+.problem-panel {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 32px;
+    overflow-y: auto;
+    max-height: calc(100vh - 250px);
+}
+
+.problem-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.problem-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.difficulty-badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.difficulty-badge.easy {
+    background: #5dffbc;
+    color: #0f5132;
+}
+
+.difficulty-badge.medium {
+    background: #ffee5d;
+    color: #856404;
+}
+
+.difficulty-badge.hard {
+    background: #ff4482;
+    color: white;
+}
+
+.problem-content h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.problem-content p {
+    color: #1e293b;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.problem-content code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #6366f1;
+}
+
+.problem-content pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.problem-content pre code {
+    background: transparent;
+    color: #e2e8f0;
+    padding: 0;
+}
+
+.problem-content ul {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.problem-content li {
+    color: #1e293b;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Editor Panel */
+.editor-panel {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 250px);
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    background: #f8fafc;
+    border-radius: 16px 16px 0 0;
+}
+
+.editor-header span {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.editor-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-run,
+.btn-submit {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.btn-run {
+    background: white;
+    color: #6366f1;
+    border: 2px solid #6366f1;
+}
+
+.btn-run:hover {
+    background: #f0f4ff;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+}
+
+.btn-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* CodeMirror Editor - Custom Theme */
+.CodeMirror {
+    height: 400px;
+    font-size: 14px;
+    border-radius: 0;
+    border: none;
+    background: #ffffff !important;
+    color: #1e293b !important;
+}
+
+.CodeMirror-scroll {
+    min-height: 400px;
+}
+
+/* Custom CodeMirror Theme to Match Website */
+.CodeMirror-gutters {
+    background: #f8fafc !important;
+    border-right: 1px solid #e2e8f0 !important;
+}
+
+.CodeMirror-linenumber {
+    color: #64748b !important;
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid #6366f1 !important;
+}
+
+/* Syntax Highlighting - Custom Theme Matching Website */
+.CodeMirror .cm-keyword { color: #6366f1 !important; font-weight: 600; }
+.CodeMirror .cm-string { color: #5dffbc !important; }
+.CodeMirror .cm-number { color: #8b5cf6 !important; }
+.CodeMirror .cm-comment { color: #64748b !important; font-style: italic; }
+.CodeMirror .cm-def { color: #6366f1 !important; }
+.CodeMirror .cm-variable { color: #1e293b !important; }
+.CodeMirror .cm-variable-2 { color: #8b5cf6 !important; }
+.CodeMirror .cm-operator { color: #6366f1 !important; }
+.CodeMirror .cm-builtin { color: #8b5cf6 !important; }
+.CodeMirror .cm-property { color: #6366f1 !important; }
+.CodeMirror .cm-atom { color: #8b5cf6 !important; }
+.CodeMirror .cm-tag { color: #6366f1 !important; }
+.CodeMirror .cm-attribute { color: #5dffbc !important; }
+.CodeMirror .cm-qualifier { color: #6366f1 !important; }
+.CodeMirror .cm-header { color: #6366f1 !important; }
+.CodeMirror .cm-link { color: #6366f1 !important; }
+.CodeMirror .cm-error { color: #ff4482 !important; background: #fff5f7 !important; }
+
+/* Output Panel */
+.output-panel {
+    border-top: 1px solid #e2e8f0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.output-header {
+    padding: 12px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.875rem;
+}
+
+.output-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+.output-content .success {
+    color: #0f5132;
+    font-weight: 600;
+}
+
+.output-content .error {
+    color: #ff4482;
+    font-weight: 600;
+}
+
+.output-content .test-case {
+    margin: 12px 0;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border-left: 3px solid #e2e8f0;
+}
+
+.output-content .test-case.passed {
+    border-left-color: #5dffbc;
+}
+
+.output-content .test-case.failed {
+    border-left-color: #ff4482;
+}
+
+/* Problems Sidebar */
+.problems-sidebar {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+.problems-sidebar h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.problems-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.problem-item {
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.problem-item:hover {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+.problem-item.active {
+    background: #f0f4ff;
+    border-color: #6366f1;
+}
+
+.problem-item-title {
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.problem-item-difficulty {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .coding-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .problems-sidebar {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coding-practice-section {
+        padding: 40px 24px;
+    }
+    
+    .problem-panel,
+    .editor-panel {
+        max-height: none;
+    }
+    
+    .CodeMirror {
+        height: 300px;
+    }
+}
+

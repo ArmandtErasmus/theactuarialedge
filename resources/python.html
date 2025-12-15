@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for Actuaries | The Actuarial Edge</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../ae_logo.png">
+    <!-- CodeMirror for code editor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <link rel="stylesheet" href="coding-practice.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">The Actuarial Edge</div>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../exams.html">Practice</a>
+        <a href="../projects.html">Portfolio Projects</a>
+        <a href="../cv.html">CV Templates</a>
+        <a href="../resources.html" class="active">Resources</a>
+    </div>
+    <div class="live-indicator">
+        <span class="pulse"></span>
+        <span class="live-text">30+ students online</span>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="eyebrow">Coding Practice</div>
+    <h1>Python for Actuaries</h1>
+    <p>Practice Python programming with actuarial-focused problems and examples.</p>
+</section>
+
+<section class="coding-practice-section">
+    <div class="coding-practice-container">
+        <div class="coding-layout">
+            <!-- Problem Panel -->
+            <div class="problem-panel">
+                <div class="problem-header">
+                    <h2 id="problem-title">Problem 1: Calculate Present Value</h2>
+                    <div class="difficulty-badge" id="difficulty-badge">Easy</div>
+                </div>
+                <div class="problem-content" id="problem-content">
+                    <h3>Description</h3>
+                    <p>Write a function <code>present_value(future_value, interest_rate, years)</code> that calculates the present value of a future amount.</p>
+                    <p><strong>Formula:</strong> PV = FV / (1 + r)^n</p>
+                    
+                    <h3>Example</h3>
+                    <pre><code>present_value(1000, 0.05, 10)
+# Returns: 613.91</code></pre>
+                    
+                    <h3>Constraints</h3>
+                    <ul>
+                        <li>future_value > 0</li>
+                        <li>interest_rate > 0</li>
+                        <li>years >= 0</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Code Editor Panel -->
+            <div class="editor-panel">
+                <div class="editor-header">
+                    <span>Code Editor</span>
+                    <div class="editor-actions">
+                        <button class="btn-run" id="run-btn">Run</button>
+                        <button class="btn-submit" id="submit-btn">Submit</button>
+                    </div>
+                </div>
+                <textarea id="code-editor">def present_value(future_value, interest_rate, years):
+    # Write your code here
+    pass</textarea>
+                
+                <div class="output-panel">
+                    <div class="output-header">
+                        <span>Output</span>
+                    </div>
+                    <div class="output-content" id="output-content">
+                        <p style="color: #64748b; font-style: italic;">Click "Run" to test your code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Problem List Sidebar -->
+        <div class="problems-sidebar">
+            <h3>Problems</h3>
+            <div class="problems-list" id="problems-list">
+                <!-- Problems will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../scripts.js"></script>
+<script src="python-practice.js"></script>
+</body>
+</html>
+

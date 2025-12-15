@@ -6,6 +6,10 @@
     <title>Practice | The Actuarial Edge</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="ae_logo.png">
+    <!-- KaTeX for LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 </head>
 
 <body>
@@ -31,19 +35,132 @@
     <p>Practice across different actuarial societies with exam-ready packs and worked solutions so you can benchmark and improve fast.</p>
     <div class="hero-actions">
         <a href="#papers" class="cta-button">Browse Papers</a>
-        <span style="color:#94a3b8;">Updated each semester with the latest exams.</span>
+        <span style="color:#94a3b8;">Interactive flashcards with instant feedback.</span>
+    </div>
+</section>
+
+<!-- Flashcard Preview Section -->
+<section class="preview-section">
+    <div class="preview-container">
+        <div class="preview-header">
+            <h2>How It Works</h2>
+            <p>Practice with interactive flashcards that flip to reveal detailed solutions</p>
+        </div>
+        
+        <div class="preview-flashcard-wrapper">
+            <div class="preview-flashcard" id="preview-flashcard">
+                <div class="preview-flashcard-inner">
+                    <!-- Question Side -->
+                    <div class="preview-flashcard-front">
+                        <div class="preview-card-header">
+                            <span class="preview-question-number">Question 1</span>
+                            <span class="preview-card-type-badge">CM1</span>
+                        </div>
+                        <div class="preview-card-content">
+                            <div class="preview-question-text">
+                                <p>If a bond with a face value of $100 pays annual coupons at a rate of 4% per annum, what is the coupon received each year?</p>
+                            </div>
+                            <div class="preview-answer-section">
+                                <label style="display: block; margin-bottom: 12px; font-weight: 600; color: #1e293b;">Enter your answer:</label>
+                                <input type="text" class="preview-answer-input" value="4" readonly style="background: #f8fafc;">
+                            </div>
+                            <div class="preview-card-actions">
+                                <button class="preview-btn-primary" onclick="flipPreviewCard()">Submit Answer</button>
+                                <button class="preview-btn-secondary" onclick="flipPreviewCard()">Show Solution</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Solution Side -->
+                    <div class="preview-flashcard-back">
+                        <div class="preview-card-header">
+                            <span class="preview-question-number">Solution</span>
+                            <span class="preview-card-type-badge">CM1</span>
+                        </div>
+                        <div class="preview-card-content">
+                            <div class="preview-solution-text">
+                                <p>The coupon payment is calculated as: <span class="katex">\(C = F \times r = 100 \times 0.04 = 4\)</span> where \(F\) is the face value and \(r\) is the coupon rate. Therefore, the annual coupon payment is $4.</p>
+                            </div>
+                            <div class="preview-feedback-correct">
+                                ✓ Correct! Well done.
+                            </div>
+                            <div class="preview-card-actions">
+                                <button class="preview-btn-secondary" onclick="flipPreviewCard()">Back to Question</button>
+                                <button class="preview-btn-primary" onclick="flipPreviewCard()">Next Question</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="preview-features">
+            <div class="preview-feature">
+                <div class="preview-feature-icon">📚</div>
+                <h3>Comprehensive Coverage</h3>
+                <p>Questions covering all key topics for each exam</p>
+            </div>
+            <div class="preview-feature">
+                <div class="preview-feature-icon">✓</div>
+                <h3>Instant Feedback</h3>
+                <p>Get immediate results with detailed solutions</p>
+            </div>
+            <div class="preview-feature">
+                <div class="preview-feature-icon">🔄</div>
+                <h3>Practice Mode</h3>
+                <p>Flip cards to review solutions and track progress</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="page" id="papers">
-    <h1><span class="color-text">Past Exam Papers</span></h1>
-    <p>Select your actuarial society:</p>
+    <h1><span class="color-text">Practice Exams</span></h1>
+    <p>Select your actuarial society to start practicing:</p>
 
     <div class="grid">
-        <a href="exams/assa.html" class="tile">ASSA Past Papers</a>
-        <a href="exams/ifoa.html" class="tile">IFoA Past Papers</a>
+        <a href="exams/assa.html" class="tile">ASSA Practice Questions</a>
+        <a href="exams/ifoa.html" class="tile">IFoA Practice Questions</a>
     </div>
 </section>
 
+<script src="scripts.js"></script>
+<script>
+    // Preview flashcard flip functionality
+    function flipPreviewCard() {
+        const card = document.getElementById('preview-flashcard');
+        if (card) {
+            card.classList.toggle('flipped');
+        }
+    }
+    
+    // Auto-flip preview card every 8 seconds
+    document.addEventListener('DOMContentLoaded', () => {
+        setInterval(() => {
+            const card = document.getElementById('preview-flashcard');
+            if (card && !card.classList.contains('flipped')) {
+                flipPreviewCard();
+            }
+        }, 8000);
+        
+        // Render math in preview
+        setTimeout(() => {
+            if (typeof renderMathInElement !== 'undefined') {
+                const solutionText = document.querySelector('.preview-solution-text');
+                if (solutionText) {
+                    renderMathInElement(solutionText, {
+                        delimiters: [
+                            {left: '$$', right: '$$', display: true},
+                            {left: '\\[', right: '\\]', display: true},
+                            {left: '$', right: '$', display: false},
+                            {left: '\\(', right: '\\)', display: false}
+                        ],
+                        throwOnError: false
+                    });
+                }
+            }
+        }, 500);
+    });
+</script>
 </body>
 </html>

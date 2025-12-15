@@ -6,6 +6,10 @@
     <title>F105 Finance and Investment Fellowship Principles | ASSA | The Actuarial Edge</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/png" href="../ae_logo.png">
+    <!-- KaTeX for LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
 
@@ -25,79 +29,78 @@
 </nav>
 
 <section class="page-hero">
-    <div class="eyebrow">ASSA Exam Papers</div>
+    <div class="eyebrow">ASSA Practice</div>
     <h1>F105 Finance and Investment Fellowship Principles</h1>
-    <p>Access past papers from 2020-2025. Select a year and semester to download.</p>
+    <p>Practice F105 exam questions with interactive flashcards.</p>
+    <div class="hero-actions">
+        <a href="#practice-section" class="cta-button">Start Practicing</a>
+    </div>
 </section>
 
-<section class="page">
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2025</h2>
-            <div class="year-divider"></div>
-        </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
-        </div>
-    </div>
 
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2024</h2>
-            <div class="year-divider"></div>
-        </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
-        </div>
-    </div>
 
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2023</h2>
-            <div class="year-divider"></div>
+<!-- Practice Section -->
+<section id="practice-section" class="practice-section">
+    <div class="practice-container">
+        <div class="practice-header">
+            <h2>F105 Practice Questions</h2>
+            <p>Test your knowledge with interactive flashcards</p>
         </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
+        
+        <div class="flashcard-wrapper">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-inner">
+                    <!-- Question Side -->
+                    <div class="flashcard-front">
+                        <div class="card-header">
+                            <span class="question-number">Question <span id="question-num">1</span></span>
+                            <span class="card-type-badge">F105</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="question-text" id="question-text">
+                                <!-- Question will be inserted here -->
+                            </div>
+                            <div class="answer-section" id="answer-section">
+                                <!-- Answer input will be inserted here -->
+                            </div>
+                            <div class="answer-feedback" id="answer-feedback" style="display: none;"></div>
+                            <div class="card-actions">
+                                <button class="btn-primary" id="submit-answer-btn">Submit Answer</button>
+                                <button class="btn-secondary" id="show-solution-btn">Show Solution</button>
+                                <button class="btn-secondary" id="next-question-btn">Next Question</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Solution Side -->
+                    <div class="flashcard-back">
+                        <div class="card-header">
+                            <span class="question-number">Solution</span>
+                            <span class="card-type-badge">F105</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="solution-text" id="solution-text">
+                                <!-- Solution will be inserted here -->
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-secondary" id="back-to-question-btn">Back to Question</button>
+                                <button class="btn-primary" id="next-after-solution-btn">Next Question</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2022</h2>
-            <div class="year-divider"></div>
-        </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
-        </div>
-    </div>
-
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2021</h2>
-            <div class="year-divider"></div>
-        </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
-        </div>
-    </div>
-
-    <div class="year-section">
-        <div class="year-header">
-            <h2 class="year-title">2020</h2>
-            <div class="year-divider"></div>
-        </div>
-        <div class="semester-grid">
-            <a href="#" class="semester-block">Semester 1</a>
-            <a href="#" class="semester-block">Semester 2</a>
+        
+        <div class="practice-progress">
+            <span>Progress: <span id="current-progress">1</span> / <span id="total-questions">0</span></span>
         </div>
     </div>
 </section>
 
+<script src="../scripts.js"></script>
+<script src="practice-f105.js"></script>
+<script src="practice.js"></script>
 </body>
 </html>
 
