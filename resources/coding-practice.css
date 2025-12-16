@@ -187,7 +187,7 @@
     border-radius: 0;
     border: none;
     background: #ffffff !important;
-    color: #1e293b !important;
+    color: #000000 !important;
 }
 
 .CodeMirror-scroll {
@@ -209,22 +209,22 @@
 }
 
 /* Syntax Highlighting - Custom Theme Matching Website */
-.CodeMirror .cm-keyword { color: #6366f1 !important; font-weight: 600; }
-.CodeMirror .cm-string { color: #5dffbc !important; }
-.CodeMirror .cm-number { color: #8b5cf6 !important; }
+.CodeMirror .cm-keyword { color: #6865f2 !important; font-weight: 600; }
+.CodeMirror .cm-string { color: #000000 !important; }
+.CodeMirror .cm-number { color: #64748b !important; }
 .CodeMirror .cm-comment { color: #64748b !important; font-style: italic; }
-.CodeMirror .cm-def { color: #6366f1 !important; }
-.CodeMirror .cm-variable { color: #1e293b !important; }
-.CodeMirror .cm-variable-2 { color: #8b5cf6 !important; }
-.CodeMirror .cm-operator { color: #6366f1 !important; }
-.CodeMirror .cm-builtin { color: #8b5cf6 !important; }
-.CodeMirror .cm-property { color: #6366f1 !important; }
-.CodeMirror .cm-atom { color: #8b5cf6 !important; }
-.CodeMirror .cm-tag { color: #6366f1 !important; }
-.CodeMirror .cm-attribute { color: #5dffbc !important; }
-.CodeMirror .cm-qualifier { color: #6366f1 !important; }
-.CodeMirror .cm-header { color: #6366f1 !important; }
-.CodeMirror .cm-link { color: #6366f1 !important; }
+.CodeMirror .cm-def { color: #6865f2 !important; }
+.CodeMirror .cm-variable { color: #000000 !important; }
+.CodeMirror .cm-variable-2 { color: #000000 !important; }
+.CodeMirror .cm-operator { color: #6865f2 !important; }
+.CodeMirror .cm-builtin { color: #6865f2 !important; }
+.CodeMirror .cm-property { color: #6865f2 !important; }
+.CodeMirror .cm-atom { color: #6865f2 !important; }
+.CodeMirror .cm-tag { color: #6865f2 !important; }
+.CodeMirror .cm-attribute { color: #000000 !important; }
+.CodeMirror .cm-qualifier { color: #6865f2 !important; }
+.CodeMirror .cm-header { color: #6865f2 !important; }
+.CodeMirror .cm-link { color: #6865f2 !important; }
 .CodeMirror .cm-error { color: #ff4482 !important; background: #fff5f7 !important; }
 
 /* Output Panel */

@@ -111,6 +111,12 @@ body {
     font-weight: 600;
     font-size: 0.75rem;
     overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.trust-indicator .avatar:hover {
+    transform: translateY(-4px);
 }
 
 
@@ -393,6 +399,7 @@ body {
     font-size: 3rem;
     margin-bottom: 16px;
     display: block;
+    color: #6865f2;
 }
 
 .project-bullet-item:hover {
@@ -1803,6 +1810,7 @@ body {
     font-size: 3rem;
     margin-bottom: 16px;
     display: block;
+    color: #6865f2;
 }
 
 .preview-feature h3 {
@@ -2038,10 +2046,7 @@ body {
 .certification-logo {
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #6865f2;
 }
 
 .certification-badge {
@@ -2262,6 +2267,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 16px;
     display: block;
+    color: #6865f2;
 }
 
 .projects-feature-card h3 {
