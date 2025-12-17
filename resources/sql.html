@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL for Actuaries | The Actuarial Edge</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../ae_logo.png">
+    <!-- CodeMirror for code editor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/sql/sql.min.js"></script>
+    <link rel="stylesheet" href="coding-practice.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">The Actuarial Edge</div>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../exams.html">Practice</a>
+        <a href="../projects.html">Portfolio Projects</a>
+        <a href="../cv.html">CV Templates</a>
+        <a href="../resources.html" class="active">Resources</a>
+    </div>
+    <div class="live-indicator">
+        <span class="pulse"></span>
+        <span class="live-text">30+ students online</span>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="eyebrow">Coding Practice</div>
+    <h1>SQL for Actuaries</h1>
+    <p>Practice SQL queries with actuarial database scenarios and examples.</p>
+</section>
+
+<section class="coding-practice-section">
+    <div class="coding-practice-container">
+        <div class="coding-layout">
+            <!-- Problem Panel -->
+            <div class="problem-panel">
+                <div class="problem-header">
+                    <h2 id="problem-title">Problem 1: Query Policy Data</h2>
+                    <div class="difficulty-badge" id="difficulty-badge">Easy</div>
+                </div>
+                <div class="problem-content" id="problem-content">
+                    <h3>Description</h3>
+                    <p>Write a SQL query to select all policies from the policies table where the premium is greater than 1000.</p>
+                    
+                    <h3>Database Schema</h3>
+                    <pre><code>policies (
+  policy_id INT,
+  policy_holder_name VARCHAR(100),
+  premium DECIMAL(10,2),
+  start_date DATE,
+  status VARCHAR(20)
+)</code></pre>
+                    
+                    <h3>Example Output</h3>
+                    <p>Should return all columns for policies with premium > 1000</p>
+                </div>
+            </div>
+            
+            <!-- Code Editor Panel -->
+            <div class="editor-panel">
+                <div class="editor-header">
+                    <span>SQL Editor</span>
+                    <div class="editor-actions">
+                        <button class="btn-run" id="run-btn">Run</button>
+                        <button class="btn-submit" id="submit-btn">Submit</button>
+                    </div>
+                </div>
+                <textarea id="code-editor">SELECT * 
+FROM policies
+WHERE premium > 1000;</textarea>
+                
+                <div class="output-panel">
+                    <div class="output-header">
+                        <span>Query Results</span>
+                    </div>
+                    <div class="output-content" id="output-content">
+                        <p style="color: #64748b; font-style: italic;">Click "Run" to execute your query</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Problem List Sidebar -->
+        <div class="problems-sidebar">
+            <h3>Problems</h3>
+            <div class="problems-list" id="problems-list">
+                <!-- Problems will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../scripts.js"></script>
+<script src="sql-practice.js"></script>
+</body>
+</html>
