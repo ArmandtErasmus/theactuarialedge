@@ -94,7 +94,7 @@ body {
 
 .gradient-text {
     background: linear-gradient(135deg, #6366f1, #8b5cf6, #6366f1);
-    background-size: 200% 200%;
+    background-size: 215% 215%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -591,6 +591,7 @@ body {
 
 .hero h1 .light-text {
     /* color: #94a3b8; */
+    color: #0f172a;
     font-weight: 600;
     font-style: italic
 }
