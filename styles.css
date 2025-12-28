@@ -99,6 +99,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientMove 3s linear infinite;
+    font-weight: 600;
+    font-style: italic;
 }
 
 @keyframes gradientMove {
@@ -588,7 +590,7 @@ body {
 }
 
 .hero h1 .light-text {
-    color: #94a3b8;
+    /* color: #94a3b8; */
     font-weight: 600;
     font-style: italic
 }
