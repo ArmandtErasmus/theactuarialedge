@@ -92,6 +92,20 @@ body {
     color: #64748b;
 }
 
+.gradient-text {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #6366f1);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
 .trust-indicator .avatars {
     display: flex;
     gap: -8px;
