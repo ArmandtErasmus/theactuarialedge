@@ -333,6 +333,226 @@ const questions = [
         answer: "A",
         solution: "The conversion premium is the extra amount that an investor pays for a share by buying it as a convertible, compared with the cost of buying the share directly. In this case, (120/70) - 0.90 = 81p"
     },
-
+    {
+        id: 31,
+        question: "Which of the following could NOT result in a company obtaining a stock exchange listing?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "an introduction", value: "A" },
+            { label: "a rights issue", value: "B" },
+            { label: "an offer for subscription", value: "C" },
+            { label: "a placing", value: "D" },
+        ],
+        answer: "B",
+        solution: "Rights issues are used by companies that already listed in order to raise further capital. The other three method are used for obtaining a listing."
+    },
+    {
+        id: 32,
+        question: "An arrangement whereby a company’s shares obtain a quotation on the London Stock Exchange, and the shares that are made available are bought by a small number of institutional investors, is known as:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "a placing.", value: "A" },
+            { label: "an offer for subscription.", value: "B" },
+            { label: "an introduction.", value: "C" },
+            { label: "an offer for sale.", value: "D" },
+        ],
+        answer: "A",
+        solution: "All four are methods of obtaining a listing. A subscription and offer for sale are both offers made to the public (directly by the company itself, or via an issuing house respectively). An introduction does not make any shares available."
+    },
+    {
+        id: 33,
+        question: "The main significance of the par value of an ordinary share is that:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "it is the minimum price at which shares can be traded on the Stock Exchange.", value: "A" },
+            { label: "it is the minimum price at which shares can be issued by the company.", value: "B" },
+            { label: "it is the amount at which the shares will be redeemed.", value: "C" },
+            { label: "at prices above the par value a company must have a scrip issue.", value: "D" },
+        ],
+        answer: "B",
+        solution: "A is the market price. C is wrong because shares are usually irredeemable. D is false because companies do not have to have scrip issues."
+    },
+    {
+        id: 34,
+        question: "The market price of a company’s shares is currently £7 per share. If it has a 1-for-3 rights issue at £5, the expected ex-rights price of the shares will be:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "£7.00", value: "A" },
+            { label: "£6.50", value: "B" },
+            { label: "£5.50", value: "C" },
+            { label: "£5.00", value: "D" },
+        ],
+        answer: "B",
+        solution: "The ex-rights price is given by price = [(3 × 7) + (1 × 5)] / (3 + 1) = £6.50"
+    },
+    {
+        id: 35,
+        question: "Which of the following is most often used by companies that are suffering from cashflow problems arising from late-paying customers?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "hire purchase", value: "A" },
+            { label: "bills of exchange", value: "B" },
+            { label: "invoice discounting", value: "C" },
+            { label: "trade credit", value: "D" },
+        ],
+        answer: "C",
+        solution: "Invoice discounting is another name for recourse factoring. This provides early payment of a percentage of the value of the invoices by a factor. The supplier retains contact with the customers and when the customers eventually pay their bills, the loan is repaid to the factor, with interest."
+    },
+    {
+        id: 36,
+        question: "Which of the following is NOT a type of crowdfunding?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "donation-based", value: "A" },
+            { label: "pre-payment", value: "B" },
+            { label: "loan-based", value: "C" },
+            { label: "non-recourse", value: "D" },
+        ],
+        answer: "D",
+        solution: "The fourth type of crowdfunding mentioned is investment-based."
+    },
+    {
+        id: 37,
+        question: "Which of the following statements about project finance is true?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "It entails the formation of a new legal entity.", value: "A" },
+            { label: "It is a recourse method of financing.pre-payment", value: "B" },
+            { label: "It provides on-balance-sheet financing.", value: "C" },
+            { label: "It always involves the public sector.", value: "D" },
+        ],
+        answer: "A",
+        solution: "Project finance is a non-recourse, off-balance sheet method of obtaining finance. It often involves public-private partnerships, but does not have to involve the public sector."
+    },
+    {
+        id: 38,
+        question: "The most likely explanation for an investor buying a call option is that they expect:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "the value of the underlying security to increase.", value: "A" },
+            { label: "the value of the underlying security to fall.", value: "B" },
+            { label: "interest rates to rise.", value: "C" },
+            { label: "a stock market crash.", value: "D" },
+        ],
+        answer: "A",
+        solution: "A call option gives the buyer the right to buy the underlying security at a set price. This will be worth doing if the market price on the expiry date is higher than the exercise price. If interest rates rise, we might expect the value of shares to fall, so it would not be worth buying a call option. (It might be worth buying a put option, though.)"
+    },
+    {
+        id: 39,
+        question: "Margin is:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "the cost of buying an option.", value: "A" },
+            { label: "the cost of buying a future.", value: "B" },
+            { label: "a deposit paid to the seller of a future or writer of an option by the purchaser.", value: "C" },
+            { label: "a deposit paid to the clearing house by the buyer and seller of a future and the writer of an option.non-recourse", value: "D" },
+        ],
+        answer: "D",
+        solution: "The margin exists to protect the clearing house against credit loss."
+    },
+    {
+        id: 40,
+        question: "Which of the following strategies would NOT help a company to reduce its exposure to rising interest rates?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "the negotiation of an interest rate swap", value: "A" },
+            { label: "the purchase of a put option on an interest rate future", value: "B" },
+            { label: "the purchase of a bond future", value: "C" },
+            { label: "the sale of an interest rate future", value: "D" },
+        ],
+        answer: "C",
+        solution: "The company could swap a floating interest rate for a fixed interest rate to protect it from rising interest rates. It could sell an interest rate future. If interest rates rise, the price of the interest rate future falls and thus a profit could be made on the future to offset the rise in interest rates. By buying a put option on an interest rate future, it is buying the option to sell. It will exercise this right if interest rates rise. It would not buy a bond future. If interest rates rise, the price of the bond future will fall. It would make a loss on the future as well as suffering from higher interest rates."
+    },
+    {
+        id: 41,
+        question: "Which of the following is responsible for developing, issuing and withdrawing accounting standards?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "International Accounting Standards Board", value: "A" },
+            { label: "Auditing Practices Board", value: "B" },
+            { label: "International Financial Reporting Standards", value: "C" },
+            { label: "Department of Trade and Industry", value: "D" },
+        ],
+        answer: "A",
+        solution: "The International Accounting Standards Board is responsible for developing, issuing and withdrawing accounting standards."
+    },
+    {
+        id: 42,
+        question: "Inventories (ie stock or raw materials used by a company) are valued at the lower of cost or net realisable value. This is an application of which accounting concept?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "cost concept", value: "A" },
+            { label: "accruals concept", value: "B" },
+            { label: "prudence concept", value: "C" },
+            { label: "realisation concept", value: "D" },
+        ],
+        answer: "C",
+        solution: "According to the prudence concept, assets should not be overestimated. If there is some uncertainty about the value of the inventories (eg Easter eggs after Easter!) and it is felt that the sale value is lower than the cost value then the lower (net realisable) value should be used in the statement of financial position."
+    },
+    {
+        id: 43,
+        question: "Which of the following statements most accurately describes the main purpose of the external audit of a limited company?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "To review the company’s accounting systems and related internal controls.", value: "A" },
+            { label: "To assist the directors to prepare the company’s annual financial statements.", value: "B" },
+            { label: "To express an opinion on the truth and fairness of the company’s annual financial statements.", value: "C" },
+            { label: "To prevent and detect fraud within the company.", value: "D" },
+        ],
+        answer: "C",
+        solution: "The wording of a typical auditors’ report is: ‘In our opinion, the financial statements give a true and fair view, in accordance with IFRSs as adopted by the European Union, of the state of the group’s and the parent company’s affairs as at …….. and of the group’s and the parent company’s profit [loss] for the year then ended; the financial statements and the part of the Directors’ Remuneration Report to be audited have been properly prepared in accordance with the Companies Act 2006 and Article 4 of the IAS Regulation; and the information given in the Directors’ Report is consistent with the financial statements.’"
+    },
+    {
+        id: 44,
+        question: "‘Expenses are recognised when they are incurred. It is not necessary to wait until the bills are paid.’ This statement refers to the:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "realisation concept", value: "A" },
+            { label: "accruals concept", value: "B" },
+            { label: "going concern concept", value: "C" },
+            { label: "money measurement concept", value: "D" },
+        ],
+        answer: "B",
+        solution: "The accruals concept."
+    },
+    {
+        id: 45,
+        question: "The term ‘current asset’ as used in company reports and accounts describes cash and other assets:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "that are marketable.", value: "A" },
+            { label: "that the company plans to dispose of within the next financial year.", value: "B" },
+            { label: "that are tangible.", value: "C" },
+            { label: "that will be converted into cash in the normal course of business.", value: "D" },
+        ],
+        answer: "D",
+        solution: "Land is an example of an asset that is marketable, tangible and a company may have plans to sell it. However, it is a non-current, not a current, asset."
+    },
+    {
+        id: 46,
+        question: "The term ‘inventories’ as used in company reports and accounts describes:",
+        questionType: "multiple-choice",
+        options: [
+            { label: "finished goods for resale only.", value: "A" },
+            { label: "work-in-progress and finished goods for resale only.", value: "B" },
+            { label: "raw materials, work-in-progress and finished goods for resale only.", value: "C" },
+            { label: "raw materials and consumables, work-in-progress and finished goods.", value: "D" },
+        ],
+        answer: "D",
+        solution: "Raw materials and consumables, work-in-progress and finished goods."
+    },
+    {
+        id: 47,
+        question: "What are non-current assets?",
+        questionType: "multiple-choice",
+        options: [
+            { label: "tangible assets with an expected life of more than one year", value: "A" },
+            { label: "tangible assets which are not held for sale in the normal course of business", value: "B" },
+            { label: "assets which are not held for sale in the normal course of business", value: "C" },
+            { label: "machines, factories and other immobile assets which are not intended for resale", value: "D" },
+        ],
+        answer: "C",
+        solution: "Non-current assets may be tangible or intangible. They may also be mobile (eg a lorry)."
+    },
     
 ];
