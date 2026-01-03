@@ -101,6 +101,8 @@ body {
     animation: gradientMove 3s linear infinite;
     font-weight: 600;
     font-style: italic;
+    display: inline-block;
+    padding: 0.05em 0.1em;
 }
 
 @keyframes gradientMove {
