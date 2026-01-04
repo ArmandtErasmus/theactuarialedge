@@ -8,6 +8,25 @@ let isFlipped = false;
 let answerSubmitted = false;
 let isAnswerCorrect = false;
 
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
+
+function randomizeQuestionsAndOptions(questions) {
+    // Shuffle question order
+    shuffleArray(questions);
+
+    // Shuffle options inside each multiple-choice question
+    questions.forEach(q => {
+        if (q.questionType === 'multiple-choice' && Array.isArray(q.options)) {
+            shuffleArray(q.options);
+        }
+    });
+}
+
 // Get exam code from page title or use default
 function getExamCode() {
     const title = document.title;
@@ -22,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         showNoQuestionsMessage();
         return;
     }
-    
+
+    // 🔀 Randomize everything ONCE at load
+    randomizeQuestionsAndOptions(questions);
+
     renderQuestion();
     setupEventListeners();
     renderMath(); // Initial render for any math in the first question
