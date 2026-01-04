@@ -16,10 +16,7 @@ function shuffleArray(arr) {
 }
 
 function randomizeQuestionsAndOptions(questions) {
-    // Shuffle question order
-    shuffleArray(questions);
-
-    // Shuffle options inside each multiple-choice question
+    // Only shuffle options, do NOT shuffle the question order
     questions.forEach(q => {
         if (q.questionType === 'multiple-choice' && Array.isArray(q.options)) {
             shuffleArray(q.options);
