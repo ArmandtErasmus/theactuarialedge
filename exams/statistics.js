@@ -2,7 +2,7 @@ const questions = [
 
     {
         id: 1,
-        question: "In a Gambler's Ruin problem, a player starts with $5, plays against an opponent with $10, and wins $1 with probability 0.5 each round. What is the probability the player goes broke? (round to 4 decimals)",
+        question: "In a Gambler's Ruin problem, a player starts with £5, plays against an opponent with £10, and wins £1 with probability 0.5 each round. What is the probability the player goes broke? (round to 4 decimals)",
         questionType: "input",
         answer: "0.6667",
         solution: "For fair game p=q=0.5, probability of ruin = 1 - (initial stake / total money) = 1 - 5/(5+10) = 1 - 5/15 = 0.6667"
@@ -70,7 +70,7 @@ const questions = [
     },
     {
         id: 9,
-        question: "Dynamic programming: A die game gives $i$ points for face i, max 1 roll. What is the expected value? (round to 2 decimals)",
+        question: "Dynamic programming: A die game gives £i£ points for face i, max 1 roll. What is the expected value? (round to 2 decimals)",
         questionType: "input",
         answer: "3.50",
         solution: "E[X]=Σ i*P(i)=(1+2+3+4+5+6)/6=21/6=3.50"
@@ -247,7 +247,7 @@ const questions = [
     },
     {
         id: 30,
-        question: "Dynamic programming: coin flip game, win $1 for H, lose $1 for T, max 3 flips. Expected total gain? (round to 2 decimals)",
+        question: "Dynamic programming: coin flip game, win £1 for H, lose £1 for T, max 3 flips. Expected total gain? (round to 2 decimals)",
         questionType: "input",
         answer: "0.00",
         solution: "Symmetric game, expected value per flip=0 → total expected gain = 3*0=0"
@@ -349,10 +349,10 @@ const questions = [
     },
     {
         id: 42,
-        question: "Gambler's ruin: player has $3, opponent $7, probability player wins all? (p=0.5, fair game) (round to 4 decimals)",
+        question: "Gambler's ruin: player has £3, opponent £7, probability player wins all? (p=0.5, fair game) (round to 4 decimals)",
         questionType: "input",
         answer: "0.3000",
-        solution: "For fair game, probability of reaching $10 (player + opponent) starting with $3: p_win=initial/(total)=3/10=0.3"
+        solution: "For fair game, probability of reaching £10 (player + opponent) starting with £3: p_win=initial/(total)=3/10=0.3"
     },
     {
         id: 43,
@@ -506,7 +506,7 @@ const questions = [
     },
     {
         id: 61,
-        question: "A gambler starts with $4 and plays against an opponent with $6. Each round, he wins $1 with probability 0.5 or loses $1. What is the probability the gambler goes broke before winning all the money? (round to 4 decimals)",
+        question: "A gambler starts with £4 and plays against an opponent with £6. Each round, he wins £1 with probability 0.5 or loses £1. What is the probability the gambler goes broke before winning all the money? (round to 4 decimals)",
         questionType: "input",
         answer: "0.4000",
         solution: "Fair Gambler's Ruin: Probability of ruin = opponent's stake / total money = 6/(4+6)=0.6. But probability to go broke = 1 - probability to win = 1-0.6=0.4"
@@ -588,7 +588,7 @@ const questions = [
     },
     {
         id: 71,
-        question: "Dynamic programming: game with 3 coins. Flip each sequentially; if two consecutive heads appear, win $5 and stop; otherwise continue. Expected winnings? (round to 2 decimals)",
+        question: "Dynamic programming: game with 3 coins. Flip each sequentially; if two consecutive heads appear, win £5 and stop; otherwise continue. Expected winnings? (round to 2 decimals)",
         questionType: "input",
         answer: "1.88",
         solution: "State-based DP: compute expected winnings from last coin backward. Probabilities: HH occurs once in 3 flips? E=1.875 → round 1.88"
@@ -663,14 +663,14 @@ const questions = [
     },
     {
         id: 80,
-        question: "Dynamic programming: Game with 4 coins, flip sequentially, stop if 3 consecutive heads appear, otherwise continue. Expected winnings $5 if stop? (round to 2 decimals)",
+        question: "Dynamic programming: Game with 4 coins, flip sequentially, stop if 3 consecutive heads appear, otherwise continue. Expected winnings £5 if stop? (round to 2 decimals)",
         questionType: "input",
         answer: "0.78",
         solution: "State-based DP: compute probability of 3 consecutive heads in 4 flips using Markov chain; expected winnings=0.78125 → round 0.78"
     },
     {
         id: 81,
-        question: "A gambler starts with $5 against an opponent with $10. He plays fair rounds (win $1 with p=0.5). What is the probability the gambler wins all the money before going broke? (round to 4 decimals)",
+        question: "A gambler starts with £5 against an opponent with £10. He plays fair rounds (win £1 with p=0.5). What is the probability the gambler wins all the money before going broke? (round to 4 decimals)",
         questionType: "input",
         answer: "0.3333",
         solution: "Fair Gambler's Ruin: probability to reach total sum = initial / total = 5/(5+10)=0.3333"
@@ -712,7 +712,7 @@ const questions = [
     },
     {
         id: 87,
-        question: "Dynamic programming: flip a coin sequentially. Win $5 if 2 consecutive heads appear. Maximum 3 flips. Expected winnings? (round to 2 decimals)",
+        question: "Dynamic programming: flip a coin sequentially. Win £5 if 2 consecutive heads appear. Maximum 3 flips. Expected winnings? (round to 2 decimals)",
         questionType: "input",
         answer: "1.88",
         solution: "State-based DP: compute expected winnings from last flip backward. Probability of getting 2 consecutive heads in 3 flips=0.375 → Expected winnings=0.375*5=1.875 → round 1.88"
@@ -780,7 +780,7 @@ const questions = [
     },
     {
         id: 95,
-        question: "Gambler plays coin game: win $1 for heads, lose $1 for tails, 5 sequential flips. Expected total gain? (round to 2 decimals)",
+        question: "Gambler plays coin game: win £1 for heads, lose £1 for tails, 5 sequential flips. Expected total gain? (round to 2 decimals)",
         questionType: "input",
         answer: "0.00",
         solution: "Fair coin, E[gain per flip]=0 → total expected gain=5*0=0"
@@ -800,7 +800,7 @@ const questions = [
     },
     {
         id: 97,
-        question: "Dynamic programming: Flip 3 coins sequentially. Win $4 if exactly two heads appear consecutively. Expected winnings? (round to 2 decimals)",
+        question: "Dynamic programming: Flip 3 coins sequentially. Win £4 if exactly two heads appear consecutively. Expected winnings? (round to 2 decimals)",
         questionType: "input",
         answer: "1.00",
         solution: "State-based DP: probability of two consecutive heads in 3 flips=0.25 → Expected winnings=0.25*4=1.00"
@@ -827,7 +827,7 @@ const questions = [
     },
     {
         id: 100,
-        question: "Dynamic programming: Flip 4 coins sequentially. Stop if 3 consecutive heads appear. Win $6 if stop. Expected winnings? (round to 2 decimals)",
+        question: "Dynamic programming: Flip 4 coins sequentially. Stop if 3 consecutive heads appear. Win £6 if stop. Expected winnings? (round to 2 decimals)",
         questionType: "input",
         answer: "0.84",
         solution: "Use state-based DP: probability of 3 consecutive heads in 4 flips=0.14 → Expected winnings=0.14*6≈0.84"
