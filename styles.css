@@ -72,11 +72,13 @@ body {
 .hero-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 80px 60px;
+    min-height: calc(100svh - 80px);
+    padding: 80px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 150px;
     align-items: center;
+    box-sizing: border-box
 }
 
 .hero {
