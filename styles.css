@@ -679,6 +679,16 @@ body {
     font-weight: 600;
 }
 
+.site-footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: #ffffff;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    border-top: 1px solid #e2e8f0;
+    letter-spacing: 0.2px;
+}
+
 .cta-button {
     display: inline-flex;
     align-items: center;
