@@ -1,5 +1,5 @@
 // Runs every SQL reference solution in sql.js (the same SQLite build the site uses).
-// Run: node scripts/check-sql.ts   (exits 1 on failures)
+// Run: node scripts/check-sql.ts   (exits 1 on failures)//
 import fs from 'node:fs'
 import path from 'node:path'
 import initSqlJs from 'sql.js'
