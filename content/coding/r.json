@@ -1,0 +1,2558 @@
+[
+  {
+    "id": "r-1",
+    "lang": "r",
+    "n": 1,
+    "title": "Present Value of a Single Payment",
+    "difficulty": "easy",
+    "description": "Return the present value of a single payment of `future_value` due in `years` years, discounted at the annual effective rate `interest_rate`.\n\n$$PV = FV\\,(1+i)^{-n}$$\n\n### Function signature\n\n```r\npresent_value <- function(future_value, interest_rate, years)\n```\n\n### Example\n\n```r\n> present_value(1000, 0.05, 10)\n[1] 613.91\n```\n\n### Notes\n\n- When `years` is 0 the present value equals the future value.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "present_value <- function(future_value, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "present_value <- function(future_value, interest_rate, years) {\n  future_value / (1 + interest_rate)^years\n}\n",
+    "entry": "present_value",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 613.91
+      },
+      {
+        "args": [
+          5000,
+          0.06,
+          5
+        ],
+        "expected": 3736.29
+      },
+      {
+        "args": [
+          10000,
+          0.04,
+          20
+        ],
+        "expected": 4563.87
+      },
+      {
+        "args": [
+          2500,
+          0.05,
+          0
+        ],
+        "expected": 2500
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-2",
+    "lang": "r",
+    "n": 2,
+    "title": "Crude Mortality Rate",
+    "difficulty": "easy",
+    "description": "Return the crude estimate of the probability of death, $\\hat q = d / E$, from the number of `deaths` observed and the initial `exposure` (lives at risk at the start of the year).\n\n### Function signature\n\n```r\nmortality_probability <- function(deaths, exposure)\n```\n\n### Example\n\n```r\n> mortality_probability(50, 10000)\n[1] 0.005\n```\n\n### Notes\n\n- You may assume `exposure > 0`. With no deaths the estimate is 0.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "mortality_probability <- function(deaths, exposure) {\n  # Write your code here\n}\n",
+    "solution": "mortality_probability <- function(deaths, exposure) {\n  deaths / exposure\n}\n",
+    "entry": "mortality_probability",
+    "tests": [
+      {
+        "args": [
+          50,
+          10000
+        ],
+        "expected": 0.005
+      },
+      {
+        "args": [
+          120,
+          50000
+        ],
+        "expected": 0.0024
+      },
+      {
+        "args": [
+          0,
+          2500
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-3",
+    "lang": "r",
+    "n": 3,
+    "title": "Curtate Life Expectancy",
+    "difficulty": "medium",
+    "description": "`lives` is a life-table column $l_0, l_1, \\dots, l_\\omega$: the number of survivors at successive ages, starting with the age of interest. Return the curtate expectation of life at the first age, the expected number of complete future years lived:\n\n$$e_0 = \\frac{1}{l_0}\\sum_{k \\ge 1} l_k$$\n\n### Function signature\n\n```r\nlife_expectancy <- function(lives)\n```\n\n### Example\n\n```r\n> life_expectancy(c(1000, 990, 980, 970))\n[1] 2.94\n```\n\n### Notes\n\n- The table ends at the last value given (everyone is dead one year later).\n- If only $l_0$ is given the curtate expectation is 0.\n- `lives` is a numeric vector; `lives[1]` is $l_0$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "life_expectancy <- function(lives) {\n  # Write your code here\n}\n",
+    "solution": "life_expectancy <- function(lives) {\n  sum(lives[-1]) / lives[1]\n}\n",
+    "entry": "life_expectancy",
+    "tests": [
+      {
+        "args": [
+          [
+            1000,
+            990,
+            980,
+            970
+          ]
+        ],
+        "expected": 2.94
+      },
+      {
+        "args": [
+          [
+            100000,
+            99500,
+            98900,
+            98200,
+            97400
+          ]
+        ],
+        "expected": 3.94
+      },
+      {
+        "args": [
+          [
+            1000
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-4",
+    "lang": "r",
+    "n": 4,
+    "title": "Future Value of a Single Payment",
+    "difficulty": "easy",
+    "description": "Return the accumulated value after `years` years of `present_value` invested at the annual effective rate `interest_rate`.\n\n$$FV = PV\\,(1+i)^{n}$$\n\n### Function signature\n\n```r\nfuture_value <- function(present_value, interest_rate, years)\n```\n\n### Example\n\n```r\n> future_value(1000, 0.05, 10)\n[1] 1628.89\n```\n\n### Notes\n\n- When `years` is 0 the future value equals the present value.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "future_value <- function(present_value, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "future_value <- function(present_value, interest_rate, years) {\n  present_value * (1 + interest_rate)^years\n}\n",
+    "entry": "future_value",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 1628.89
+      },
+      {
+        "args": [
+          5000,
+          0.06,
+          5
+        ],
+        "expected": 6691.13
+      },
+      {
+        "args": [
+          10000,
+          0.04,
+          20
+        ],
+        "expected": 21911.23
+      },
+      {
+        "args": [
+          2500,
+          0.07,
+          0
+        ],
+        "expected": 2500
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-5",
+    "lang": "r",
+    "n": 5,
+    "title": "Present Value of an Annuity-Immediate",
+    "difficulty": "medium",
+    "description": "Return the present value of an annuity-immediate: `payment` is paid at the **end** of each year for `years` years, valued at the annual effective rate `interest_rate`.\n\n$$PV = P\\,a_{\\overline{n}|} = P\\,\\frac{1-(1+i)^{-n}}{i}$$\n\n### Function signature\n\n```r\nannuity_pv <- function(payment, interest_rate, years)\n```\n\n### Example\n\n```r\n> annuity_pv(1000, 0.05, 10)\n[1] 7721.73\n```\n\n### Notes\n\n- If `interest_rate` is 0 the present value is simply `payment * years`.\n- If `years` is 0 there are no payments and the result is 0.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "annuity_pv <- function(payment, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "annuity_pv <- function(payment, interest_rate, years) {\n  if (interest_rate == 0) return(payment * years)\n  payment * (1 - (1 + interest_rate)^(-years)) / interest_rate\n}\n",
+    "entry": "annuity_pv",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 7721.73
+      },
+      {
+        "args": [
+          500,
+          0.06,
+          15
+        ],
+        "expected": 4856.12
+      },
+      {
+        "args": [
+          2000,
+          0.04,
+          20
+        ],
+        "expected": 27180.65
+      },
+      {
+        "args": [
+          1000,
+          0,
+          10
+        ],
+        "expected": 10000
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-6",
+    "lang": "r",
+    "n": 6,
+    "title": "Multi-Year Survival Probability",
+    "difficulty": "easy",
+    "description": "`mortality_rates` holds the one-year death probabilities $q_x, q_{x+1}, \\dots, q_{x+n-1}$ for consecutive ages. Return the probability of surviving all $n$ years:\n\n$${}_np_x = \\prod_{k=0}^{n-1} \\left(1 - q_{x+k}\\right)$$\n\n### Function signature\n\n```r\nsurvival_probability <- function(mortality_rates)\n```\n\n### Example\n\n```r\n> survival_probability(c(0.005))\n[1] 0.995\n```\n\n### Notes\n\n- An empty vector means surviving zero years, which is certain: return 1.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "survival_probability <- function(mortality_rates) {\n  # Write your code here\n}\n",
+    "solution": "survival_probability <- function(mortality_rates) {\n  prod(1 - mortality_rates)\n}\n",
+    "entry": "survival_probability",
+    "tests": [
+      {
+        "args": [
+          [
+            0.005
+          ]
+        ],
+        "expected": 0.995
+      },
+      {
+        "args": [
+          [
+            0.01,
+            0.012,
+            0.015
+          ]
+        ],
+        "expected": 0.963448
+      },
+      {
+        "args": [
+          [
+            0.002,
+            0.0025,
+            0.003,
+            0.0035,
+            0.004
+          ]
+        ],
+        "expected": 0.985088
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 1
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-7",
+    "lang": "r",
+    "n": 7,
+    "title": "One-Year Term Net Premium",
+    "difficulty": "easy",
+    "description": "A one-year term assurance pays `sum_assured` at the end of the year if the life dies during the year (probability `mortality_rate`). Return the net single premium paid at the start of the year, using the annual effective rate `interest_rate`:\n\n$$P = S\\,q_x\\,v, \\qquad v = \\frac{1}{1+i}$$\n\n### Function signature\n\n```r\nnet_premium <- function(sum_assured, mortality_rate, interest_rate)\n```\n\n### Example\n\n```r\n> net_premium(100000, 0.01, 0.05)\n[1] 952.38\n```\n\n### Notes\n\n- No expense or profit loading: this is the expected present value of the benefit.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "net_premium <- function(sum_assured, mortality_rate, interest_rate) {\n  # Write your code here\n}\n",
+    "solution": "net_premium <- function(sum_assured, mortality_rate, interest_rate) {\n  sum_assured * mortality_rate / (1 + interest_rate)\n}\n",
+    "entry": "net_premium",
+    "tests": [
+      {
+        "args": [
+          100000,
+          0.01,
+          0.05
+        ],
+        "expected": 952.38
+      },
+      {
+        "args": [
+          50000,
+          0.02,
+          0.06
+        ],
+        "expected": 943.4
+      },
+      {
+        "args": [
+          250000,
+          0.0015,
+          0.04
+        ],
+        "expected": 360.58
+      },
+      {
+        "args": [
+          100000,
+          0,
+          0.05
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-8",
+    "lang": "r",
+    "n": 8,
+    "title": "Price of an Annual-Coupon Bond",
+    "difficulty": "medium",
+    "description": "A bond pays an annual coupon of `coupon_rate * face_value` at the end of each year and is redeemed at `face_value` after `years_to_maturity` years. Return its price at the annual effective yield `yield_rate`: the present value of the coupons plus the present value of the redemption payment.\n\n$$P = C\\,a_{\\overline{n}|} + F\\,(1+y)^{-n}, \\qquad C = c\\,F$$\n\n### Function signature\n\n```r\nbond_price <- function(face_value, coupon_rate, years_to_maturity, yield_rate)\n```\n\n### Example\n\n```r\n> bond_price(1000, 0.05, 10, 0.06)\n[1] 926.4\n```\n\n### Notes\n\n- You may assume `yield_rate > 0`.\n- When the coupon rate equals the yield the bond prices at par (`face_value`).\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "bond_price <- function(face_value, coupon_rate, years_to_maturity, yield_rate) {\n  # Write your code here\n}\n",
+    "solution": "bond_price <- function(face_value, coupon_rate, years_to_maturity, yield_rate) {\n  coupon <- face_value * coupon_rate\n  v_n <- (1 + yield_rate)^(-years_to_maturity)\n  coupon * (1 - v_n) / yield_rate + face_value * v_n\n}\n",
+    "entry": "bond_price",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10,
+          0.06
+        ],
+        "expected": 926.4
+      },
+      {
+        "args": [
+          1000,
+          0.06,
+          5,
+          0.05
+        ],
+        "expected": 1043.29
+      },
+      {
+        "args": [
+          5000,
+          0.04,
+          15,
+          0.05
+        ],
+        "expected": 4481.02
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          10,
+          0.05
+        ],
+        "expected": 1000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-9",
+    "lang": "r",
+    "n": 9,
+    "title": "Level Loan Repayment",
+    "difficulty": "medium",
+    "description": "A loan of `principal` is repaid by level payments at the end of each year for `years` years at the annual effective rate `interest_rate`. Return the annual payment.\n\n$$R = \\frac{L}{a_{\\overline{n}|}} = L\\,\\frac{i(1+i)^n}{(1+i)^n-1}$$\n\n### Function signature\n\n```r\nloan_payment <- function(principal, interest_rate, years)\n```\n\n### Example\n\n```r\n> loan_payment(100000, 0.05, 30)\n[1] 6505.14\n```\n\n### Notes\n\n- If `interest_rate` is 0 the payment is `principal / years`.\n- You may assume `years >= 1`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "loan_payment <- function(principal, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "loan_payment <- function(principal, interest_rate, years) {\n  if (interest_rate == 0) return(principal / years)\n  growth <- (1 + interest_rate)^years\n  principal * interest_rate * growth / (growth - 1)\n}\n",
+    "entry": "loan_payment",
+    "tests": [
+      {
+        "args": [
+          100000,
+          0.05,
+          30
+        ],
+        "expected": 6505.14
+      },
+      {
+        "args": [
+          50000,
+          0.06,
+          10
+        ],
+        "expected": 6793.4
+      },
+      {
+        "args": [
+          200000,
+          0.04,
+          20
+        ],
+        "expected": 14716.35
+      },
+      {
+        "args": [
+          12000,
+          0,
+          12
+        ],
+        "expected": 1000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-10",
+    "lang": "r",
+    "n": 10,
+    "title": "Nominal to Effective Rate",
+    "difficulty": "easy",
+    "description": "Convert a nominal annual rate `nominal_rate`, compounded `compounding_periods` times a year, to the equivalent annual effective rate.\n\n$$i = \\left(1 + \\frac{i^{(m)}}{m}\\right)^{m} - 1$$\n\n### Function signature\n\n```r\neffective_rate <- function(nominal_rate, compounding_periods)\n```\n\n### Example\n\n```r\n> effective_rate(0.06, 12)\n[1] 0.0616778\n```\n\n### Notes\n\n- With `compounding_periods = 1` the effective rate equals the nominal rate.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "effective_rate <- function(nominal_rate, compounding_periods) {\n  # Write your code here\n}\n",
+    "solution": "effective_rate <- function(nominal_rate, compounding_periods) {\n  (1 + nominal_rate / compounding_periods)^compounding_periods - 1\n}\n",
+    "entry": "effective_rate",
+    "tests": [
+      {
+        "args": [
+          0.06,
+          12
+        ],
+        "expected": 0.0616778
+      },
+      {
+        "args": [
+          0.05,
+          4
+        ],
+        "expected": 0.0509453
+      },
+      {
+        "args": [
+          0.04,
+          2
+        ],
+        "expected": 0.0404
+      },
+      {
+        "args": [
+          0.08,
+          1
+        ],
+        "expected": 0.08
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-11",
+    "lang": "r",
+    "n": 11,
+    "title": "Portfolio Expected Return",
+    "difficulty": "easy",
+    "description": "Return the weighted return of a portfolio, $R_p = \\sum_k w_k\\,r_k$, where `weights[k]` is the proportion invested in asset $k$ and `returns[k]` its return.\n\n### Function signature\n\n```r\nportfolio_return <- function(weights, returns)\n```\n\n### Example\n\n```r\n> portfolio_return(c(0.5, 0.3, 0.2), c(0.1, 0.12, 0.08))\n[1] 0.102\n```\n\n### Notes\n\n- The two vectors have the same length.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "portfolio_return <- function(weights, returns) {\n  # Write your code here\n}\n",
+    "solution": "portfolio_return <- function(weights, returns) {\n  sum(weights * returns)\n}\n",
+    "entry": "portfolio_return",
+    "tests": [
+      {
+        "args": [
+          [
+            0.5,
+            0.3,
+            0.2
+          ],
+          [
+            0.1,
+            0.12,
+            0.08
+          ]
+        ],
+        "expected": 0.102
+      },
+      {
+        "args": [
+          [
+            0.6,
+            0.4
+          ],
+          [
+            0.08,
+            -0.02
+          ]
+        ],
+        "expected": 0.04
+      },
+      {
+        "args": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.04,
+            0.06,
+            0.08,
+            0.1
+          ]
+        ],
+        "expected": 0.07
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-12",
+    "lang": "r",
+    "n": 12,
+    "title": "Sharpe Ratio",
+    "difficulty": "medium",
+    "description": "Return the Sharpe ratio of the periodic `returns`: the mean excess return over `risk_free_rate` divided by the **sample** standard deviation of the returns:\n\n$$S = \\frac{\\bar r - r_f}{s}$$\n\n### Function signature\n\n```r\nsharpe_ratio <- function(returns, risk_free_rate)\n```\n\n### Example\n\n```r\n> sharpe_ratio(c(0.1, 0.12, 0.08, 0.15), 0.03)\n[1] 2.7628\n```\n\n### Notes\n\n- Use the sample standard deviation ($n-1$). You may assume the returns are not all equal.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "sharpe_ratio <- function(returns, risk_free_rate) {\n  # Write your code here\n}\n",
+    "solution": "sharpe_ratio <- function(returns, risk_free_rate) {\n  (mean(returns) - risk_free_rate) / sd(returns)\n}\n",
+    "entry": "sharpe_ratio",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08,
+            0.15
+          ],
+          0.03
+        ],
+        "expected": 2.7628
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.07,
+            -0.02,
+            0.1,
+            0.04
+          ],
+          0.02
+        ],
+        "expected": 0.630848
+      },
+      {
+        "args": [
+          [
+            0.01,
+            0.03
+          ],
+          0
+        ],
+        "expected": 1.4142
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-13",
+    "lang": "r",
+    "n": 13,
+    "title": "Correlation of Two Return Series",
+    "difficulty": "medium",
+    "description": "Return the Pearson correlation coefficient of two equally long return series:\n\n$$\\rho = \\frac{s_{xy}}{s_x\\,s_y}$$\n\nwhere $s_{xy}$ is the sample covariance and $s_x, s_y$ the sample standard deviations.\n\n### Function signature\n\n```r\ncorrelation <- function(returns1, returns2)\n```\n\n### Example\n\n```r\n> correlation(c(0.05, 0.1, -0.02, 0.08), c(0.04, 0.07, -0.01, 0.03))\n[1] 0.917242\n```\n\n### Notes\n\n- The $n-1$ factors cancel, so the result is the same whichever divisor you use consistently.\n- You may assume neither series is constant.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "correlation <- function(returns1, returns2) {\n  # Write your code here\n}\n",
+    "solution": "correlation <- function(returns1, returns2) {\n  cor(returns1, returns2)\n}\n",
+    "entry": "correlation",
+    "tests": [
+      {
+        "args": [
+          [
+            0.05,
+            0.1,
+            -0.02,
+            0.08
+          ],
+          [
+            0.04,
+            0.07,
+            -0.01,
+            0.03
+          ]
+        ],
+        "expected": 0.917242
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08
+          ],
+          [
+            0.15,
+            0.18,
+            0.12
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.2,
+            0.3
+          ],
+          [
+            0.3,
+            0.2,
+            0.1
+          ]
+        ],
+        "expected": -1
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-14",
+    "lang": "r",
+    "n": 14,
+    "title": "Sample Covariance of Two Return Series",
+    "difficulty": "medium",
+    "description": "Return the **sample** covariance of two equally long return series (divide by $n-1$):\n\n$$s_{xy} = \\frac{1}{n-1}\\sum_{t=1}^{n} (x_t - \\bar x)(y_t - \\bar y)$$\n\n### Function signature\n\n```r\ncovariance <- function(returns1, returns2)\n```\n\n### Example\n\n```r\n> covariance(c(0.1, 0.12, 0.08), c(0.15, 0.18, 0.12))\n[1] 0.0006\n```\n\n### Notes\n\n- You may assume both series have the same length of at least 2.\n- Base R's `cov()` already divides by $n-1$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "covariance <- function(returns1, returns2) {\n  # Write your code here\n}\n",
+    "solution": "covariance <- function(returns1, returns2) {\n  cov(returns1, returns2)\n}\n",
+    "entry": "covariance",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08
+          ],
+          [
+            0.15,
+            0.18,
+            0.12
+          ]
+        ],
+        "expected": 0.0006
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.2,
+            0.3
+          ],
+          [
+            0.3,
+            0.2,
+            0.1
+          ]
+        ],
+        "expected": -0.01
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.1,
+            -0.02,
+            0.08
+          ],
+          [
+            0.04,
+            0.07,
+            -0.01,
+            0.03
+          ]
+        ],
+        "expected": 0.00159167
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-15",
+    "lang": "r",
+    "n": 15,
+    "title": "Beta Against the Market",
+    "difficulty": "hard",
+    "description": "Return the beta of a stock relative to the market:\n\n$$\\beta = \\frac{\\operatorname{Cov}(r_s, r_m)}{\\operatorname{Var}(r_m)}$$\n\n### Function signature\n\n```r\nbeta <- function(stock_returns, market_returns)\n```\n\n### Example\n\n```r\n> beta(c(0.12, 0.05, -0.03, 0.09), c(0.1, 0.04, -0.02, 0.06))\n[1] 1.2867\n```\n\n### Notes\n\n- Use the same divisor ($n$ or $n-1$) for covariance and variance; it cancels.\n- You may assume the market returns are not all equal.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "beta <- function(stock_returns, market_returns) {\n  # Write your code here\n}\n",
+    "solution": "beta <- function(stock_returns, market_returns) {\n  cov(stock_returns, market_returns) / var(market_returns)\n}\n",
+    "entry": "beta",
+    "tests": [
+      {
+        "args": [
+          [
+            0.12,
+            0.05,
+            -0.03,
+            0.09
+          ],
+          [
+            0.1,
+            0.04,
+            -0.02,
+            0.06
+          ]
+        ],
+        "expected": 1.2867
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08
+          ],
+          [
+            0.08,
+            0.1,
+            0.06
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "args": [
+          [
+            0.2,
+            0,
+            0.1
+          ],
+          [
+            0.1,
+            0,
+            0.05
+          ]
+        ],
+        "expected": 2
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-16",
+    "lang": "r",
+    "n": 16,
+    "title": "Sample Standard Deviation of Returns",
+    "difficulty": "medium",
+    "description": "Return the **sample** standard deviation of `returns` (divide by $n-1$):\n\n$$s = \\sqrt{\\frac{1}{n-1}\\sum_{t=1}^{n} (r_t - \\bar r)^2}$$\n\n### Function signature\n\n```r\nstandard_deviation <- function(returns)\n```\n\n### Example\n\n```r\n> standard_deviation(c(0.1, 0.12, -0.05, 0.08))\n[1] 0.0767572\n```\n\n### Notes\n\n- You may assume at least two returns. Identical returns have a standard deviation of 0.\n- Base R's `sd()` already divides by $n-1$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "standard_deviation <- function(returns) {\n  # Write your code here\n}\n",
+    "solution": "standard_deviation <- function(returns) {\n  sd(returns)\n}\n",
+    "entry": "standard_deviation",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ]
+        ],
+        "expected": 0.0767572
+      },
+      {
+        "args": [
+          [
+            0.02,
+            0.04
+          ]
+        ],
+        "expected": 0.0141421
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.07,
+            -0.02,
+            0.1,
+            0.04
+          ]
+        ],
+        "expected": 0.0443847
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.1,
+            0.1
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-17",
+    "lang": "r",
+    "n": 17,
+    "title": "Sample Variance of Returns",
+    "difficulty": "easy",
+    "description": "Return the **sample** variance of `returns` (divide by $n-1$):\n\n$$s^2 = \\frac{1}{n-1}\\sum_{t=1}^{n} (r_t - \\bar r)^2$$\n\n### Function signature\n\n```r\nvariance <- function(returns)\n```\n\n### Example\n\n```r\n> variance(c(0.1, 0.12, -0.05, 0.08))\n[1] 0.00589167\n```\n\n### Notes\n\n- You may assume at least two returns.\n- Base R's `var()` already divides by $n-1$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "variance <- function(returns) {\n  # Write your code here\n}\n",
+    "solution": "variance <- function(returns) {\n  var(returns)\n}\n",
+    "entry": "variance",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ]
+        ],
+        "expected": 0.00589167
+      },
+      {
+        "args": [
+          [
+            0.02,
+            0.04
+          ]
+        ],
+        "expected": 0.0002
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.1,
+            0.1
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-18",
+    "lang": "r",
+    "n": 18,
+    "title": "Arithmetic Mean Return",
+    "difficulty": "easy",
+    "description": "Return the arithmetic mean of the periodic `returns`: $\\bar r = \\frac{1}{n}\\sum r_t$.\n\n### Function signature\n\n```r\narithmetic_mean_return <- function(returns)\n```\n\n### Example\n\n```r\n> arithmetic_mean_return(c(0.1, 0.12, -0.05, 0.08))\n[1] 0.0625\n```\n\n### Notes\n\n- For an empty vector return 0.\n- An empty vector arrives as `NULL`; `length(NULL)` is 0.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "arithmetic_mean_return <- function(returns) {\n  # Write your code here\n}\n",
+    "solution": "arithmetic_mean_return <- function(returns) {\n  if (length(returns) == 0) return(0)\n  mean(returns)\n}\n",
+    "entry": "arithmetic_mean_return",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ]
+        ],
+        "expected": 0.0625
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.07
+          ]
+        ],
+        "expected": 0.06
+      },
+      {
+        "args": [
+          [
+            -0.02,
+            0.01,
+            0.04,
+            0.03,
+            -0.01
+          ]
+        ],
+        "expected": 0.01
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-19",
+    "lang": "r",
+    "n": 19,
+    "title": "Geometric Mean Return",
+    "difficulty": "medium",
+    "description": "Return the geometric mean (compound average) of the periodic `returns`:\n\n$$\\bar r_g = \\left(\\prod_{t=1}^{n} (1 + r_t)\\right)^{1/n} - 1$$\n\n### Function signature\n\n```r\ngeometric_mean_return <- function(returns)\n```\n\n### Example\n\n```r\n> geometric_mean_return(c(0.1, 0.12, -0.05, 0.08))\n[1] 0.0603263\n```\n\n### Notes\n\n- The geometric mean never exceeds the arithmetic mean; a +50% then -50% sequence loses money.\n- You may assume at least one return, each greater than -1.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "geometric_mean_return <- function(returns) {\n  # Write your code here\n}\n",
+    "solution": "geometric_mean_return <- function(returns) {\n  prod(1 + returns)^(1 / length(returns)) - 1\n}\n",
+    "entry": "geometric_mean_return",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ]
+        ],
+        "expected": 0.0603263
+      },
+      {
+        "args": [
+          [
+            0.5,
+            -0.5
+          ]
+        ],
+        "expected": -0.133975
+      },
+      {
+        "args": [
+          [
+            0.07
+          ]
+        ],
+        "expected": 0.07
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-20",
+    "lang": "r",
+    "n": 20,
+    "title": "Historical Value at Risk",
+    "difficulty": "medium",
+    "description": "Estimate the historical Value at Risk of a return series at `confidence_level` $c$, **as a positive loss**. Sort the returns in ascending order, take the one at zero-based position $k = \\lfloor (1 - c)\\,n \\rfloor$, and return its negative.\n\n### Function signature\n\n```r\nvalue_at_risk <- function(returns, confidence_level)\n```\n\n### Example\n\n```r\n> value_at_risk(c(0.1, -0.05, 0.08, -0.02), 0.95)\n[1] 0.05\n```\n\n### Notes\n\n- A positive result is a loss; e.g. a VaR of 0.05 means a 5% loss.\n- Compute $k$ exactly as stated (floor, zero-based); the tests avoid cases where rounding error matters.\n- R vectors are 1-based, so the zero-based position $k$ is element `k + 1`.\n- Don't name helper variables `var`: it would mask base R's `var()`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "value_at_risk <- function(returns, confidence_level) {\n  # Write your code here\n}\n",
+    "solution": "value_at_risk <- function(returns, confidence_level) {\n  ordered <- sort(returns)\n  k <- floor((1 - confidence_level) * length(ordered))\n  -ordered[k + 1]\n}\n",
+    "entry": "value_at_risk",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            -0.05,
+            0.08,
+            -0.02
+          ],
+          0.95
+        ],
+        "expected": 0.05
+      },
+      {
+        "args": [
+          [
+            0.03,
+            -0.08,
+            0.05,
+            -0.12,
+            0.01,
+            -0.03,
+            0.07,
+            -0.01,
+            0.02,
+            -0.05
+          ],
+          0.75
+        ],
+        "expected": 0.05
+      },
+      {
+        "args": [
+          [
+            0.02,
+            -0.04,
+            0.01,
+            -0.06,
+            0.03,
+            -0.01,
+            0.05,
+            -0.02
+          ],
+          0.8
+        ],
+        "expected": 0.04
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-21",
+    "lang": "r",
+    "n": 21,
+    "title": "Present Value of a Perpetuity",
+    "difficulty": "easy",
+    "description": "Return the present value of a perpetuity-immediate paying `payment` at the end of every year forever: $PV = P / i$.\n\n### Function signature\n\n```r\nperpetuity_pv <- function(payment, interest_rate)\n```\n\n### Example\n\n```r\n> perpetuity_pv(100, 0.05)\n[1] 2000\n```\n\n### Notes\n\n- You may assume `interest_rate > 0`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "perpetuity_pv <- function(payment, interest_rate) {\n  # Write your code here\n}\n",
+    "solution": "perpetuity_pv <- function(payment, interest_rate) {\n  payment / interest_rate\n}\n",
+    "entry": "perpetuity_pv",
+    "tests": [
+      {
+        "args": [
+          100,
+          0.05
+        ],
+        "expected": 2000
+      },
+      {
+        "args": [
+          50,
+          0.04
+        ],
+        "expected": 1250
+      },
+      {
+        "args": [
+          1200,
+          0.08
+        ],
+        "expected": 15000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-22",
+    "lang": "r",
+    "n": 22,
+    "title": "Accumulated Value of an Annuity-Immediate",
+    "difficulty": "medium",
+    "description": "Return the accumulated value, at the time of the last payment, of `payment` paid at the end of each year for `years` years at the annual effective rate `interest_rate`.\n\n$$FV = P\\,s_{\\overline{n}|} = P\\,\\frac{(1+i)^n - 1}{i}$$\n\n### Function signature\n\n```r\nannuity_fv <- function(payment, interest_rate, years)\n```\n\n### Example\n\n```r\n> annuity_fv(1000, 0.05, 10)\n[1] 12577.89\n```\n\n### Notes\n\n- If `interest_rate` is 0 the result is `payment * years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "annuity_fv <- function(payment, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "annuity_fv <- function(payment, interest_rate, years) {\n  if (interest_rate == 0) return(payment * years)\n  payment * ((1 + interest_rate)^years - 1) / interest_rate\n}\n",
+    "entry": "annuity_fv",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 12577.89
+      },
+      {
+        "args": [
+          500,
+          0.06,
+          15
+        ],
+        "expected": 11637.98
+      },
+      {
+        "args": [
+          2000,
+          0.04,
+          20
+        ],
+        "expected": 59556.16
+      },
+      {
+        "args": [
+          1000,
+          0,
+          10
+        ],
+        "expected": 10000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-23",
+    "lang": "r",
+    "n": 23,
+    "title": "Discount Factor",
+    "difficulty": "easy",
+    "description": "Return the discount factor $v^n = (1+i)^{-n}$ for `years` years at the annual effective rate `interest_rate`.\n\n### Function signature\n\n```r\ndiscount_factor <- function(interest_rate, years)\n```\n\n### Example\n\n```r\n> discount_factor(0.05, 10)\n[1] 0.613913\n```\n\n### Notes\n\n- The discount factor for 0 years is 1.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "discount_factor <- function(interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "discount_factor <- function(interest_rate, years) {\n  (1 + interest_rate)^(-years)\n}\n",
+    "entry": "discount_factor",
+    "tests": [
+      {
+        "args": [
+          0.05,
+          10
+        ],
+        "expected": 0.613913
+      },
+      {
+        "args": [
+          0.08,
+          1
+        ],
+        "expected": 0.925926
+      },
+      {
+        "args": [
+          0.03,
+          2.5
+        ],
+        "expected": 0.928767
+      },
+      {
+        "args": [
+          0.05,
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-24",
+    "lang": "r",
+    "n": 24,
+    "title": "Accumulation Factor",
+    "difficulty": "easy",
+    "description": "Return the accumulation factor $(1+i)^n$ for `years` years at the annual effective rate `interest_rate`.\n\n### Function signature\n\n```r\naccumulation_factor <- function(interest_rate, years)\n```\n\n### Example\n\n```r\n> accumulation_factor(0.05, 10)\n[1] 1.6289\n```\n\n### Notes\n\n- The accumulation factor for 0 years is 1.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "accumulation_factor <- function(interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "accumulation_factor <- function(interest_rate, years) {\n  (1 + interest_rate)^years\n}\n",
+    "entry": "accumulation_factor",
+    "tests": [
+      {
+        "args": [
+          0.05,
+          10
+        ],
+        "expected": 1.6289
+      },
+      {
+        "args": [
+          0.03,
+          25
+        ],
+        "expected": 2.0938
+      },
+      {
+        "args": [
+          0.06,
+          0.5
+        ],
+        "expected": 1.0296
+      },
+      {
+        "args": [
+          0.05,
+          0
+        ],
+        "expected": 1
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-25",
+    "lang": "r",
+    "n": 25,
+    "title": "Approximate Yield to Maturity",
+    "difficulty": "medium",
+    "description": "Estimate the yield to maturity of an annual-coupon bond with the standard approximation. The annual coupon is $C = \\text{coupon\\_rate} \\times F$, the price is $P$ and the term is $n$ years.\n\n$$\\text{YTM} \\approx \\frac{C + (F - P)/n}{(F + P)/2}$$\n\n### Function signature\n\n```r\nytm <- function(bond_price, face_value, coupon_rate, years)\n```\n\n### Example\n\n```r\n> ytm(950, 1000, 0.05, 10)\n[1] 0.0564103\n```\n\n### Notes\n\n- A bond priced at par has an approximate yield equal to its coupon rate.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "ytm <- function(bond_price, face_value, coupon_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "ytm <- function(bond_price, face_value, coupon_rate, years) {\n  coupon <- face_value * coupon_rate\n  (coupon + (face_value - bond_price) / years) / ((face_value + bond_price) / 2)\n}\n",
+    "entry": "ytm",
+    "tests": [
+      {
+        "args": [
+          950,
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 0.0564103
+      },
+      {
+        "args": [
+          1050,
+          1000,
+          0.06,
+          5
+        ],
+        "expected": 0.0487805
+      },
+      {
+        "args": [
+          1000,
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 0.05
+      },
+      {
+        "args": [
+          900,
+          1000,
+          0.04,
+          8
+        ],
+        "expected": 0.0552632
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-26",
+    "lang": "r",
+    "n": 26,
+    "title": "Macaulay Duration of a Bond",
+    "difficulty": "hard",
+    "description": "Return the Macaulay duration, **in years**, of a bond redeemed at `face_value` after `years` years. Coupons are paid `frequency` times a year; `coupon_rate` and `yield_rate` are nominal annual rates convertible `frequency` times a year. With $m$ = `frequency`, $j = y/m$ and cash flows $CF_k$ at periods $k = 1,\\dots,mn$ (coupon $cF/m$, plus $F$ at the last period):\n\n$$D = \\frac{1}{m}\\,\\frac{\\sum_k k\\,CF_k\\,(1+j)^{-k}}{\\sum_k CF_k\\,(1+j)^{-k}}$$\n\n### Function signature\n\n```r\nbond_duration <- function(face_value, coupon_rate, yield_rate, years, frequency)\n```\n\n### Example\n\n```r\n> bond_duration(1000, 0.05, 0.06, 10, 2)\n[1] 7.895\n```\n\n### Notes\n\n- A zero-coupon bond has a duration equal to its term.\n- `years * frequency` is a whole number of periods.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "bond_duration <- function(face_value, coupon_rate, yield_rate, years, frequency) {\n  # Write your code here\n}\n",
+    "solution": "bond_duration <- function(face_value, coupon_rate, yield_rate, years, frequency) {\n  n <- years * frequency\n  k <- seq_len(n)\n  j <- yield_rate / frequency\n  cf <- rep(face_value * coupon_rate / frequency, n)\n  cf[n] <- cf[n] + face_value\n  pv <- cf / (1 + j)^k\n  sum(k * pv) / sum(pv) / frequency\n}\n",
+    "entry": "bond_duration",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          0.06,
+          10,
+          2
+        ],
+        "expected": 7.895
+      },
+      {
+        "args": [
+          1000,
+          0.06,
+          0.05,
+          5,
+          2
+        ],
+        "expected": 4.4084
+      },
+      {
+        "args": [
+          1000,
+          0,
+          0.05,
+          5,
+          1
+        ],
+        "expected": 5
+      },
+      {
+        "args": [
+          1000,
+          0.08,
+          0.08,
+          3,
+          1
+        ],
+        "expected": 2.7833
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-27",
+    "lang": "r",
+    "n": 27,
+    "title": "Modified Duration",
+    "difficulty": "medium",
+    "description": "Convert a Macaulay duration to modified duration, where `yield_rate` is a nominal annual yield compounded `frequency` times a year:\n\n$$D_{mod} = \\frac{D_{mac}}{1 + y/m}$$\n\n### Function signature\n\n```r\nmodified_duration <- function(macaulay_duration, yield_rate, frequency)\n```\n\n### Example\n\n```r\n> modified_duration(7.5, 0.06, 2)\n[1] 7.2816\n```\n\n### Notes\n\n- Modified duration approximates the percentage price change per unit change in yield.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "modified_duration <- function(macaulay_duration, yield_rate, frequency) {\n  # Write your code here\n}\n",
+    "solution": "modified_duration <- function(macaulay_duration, yield_rate, frequency) {\n  macaulay_duration / (1 + yield_rate / frequency)\n}\n",
+    "entry": "modified_duration",
+    "tests": [
+      {
+        "args": [
+          7.5,
+          0.06,
+          2
+        ],
+        "expected": 7.2816
+      },
+      {
+        "args": [
+          4.5,
+          0.05,
+          1
+        ],
+        "expected": 4.2857
+      },
+      {
+        "args": [
+          10,
+          0.08,
+          4
+        ],
+        "expected": 9.8039
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-28",
+    "lang": "r",
+    "n": 28,
+    "title": "Policy Value by Recursion",
+    "difficulty": "hard",
+    "description": "A policy pays a level annual `premium` at the start of each year and a death `benefit` at the end of the year of death. The one-year death probability `mortality_rate` and the interest rate `interest_rate` are the same every year. Starting from ${}_0V = 0$, roll the policy value forward with the recursion\n\n$${}_{t+1}V = \\frac{\\left({}_tV + P\\right)(1+i) - q\\,S}{1 - q}$$\n\nand return ${}_tV$ after `years_elapsed` years.\n\n### Function signature\n\n```r\nreserve <- function(premium, benefit, mortality_rate, interest_rate, years_elapsed)\n```\n\n### Example\n\n```r\n> reserve(1000, 100000, 0.01, 0.05, 5)\n[1] 285.05\n```\n\n### Notes\n\n- After 0 years the policy value is 0.\n- A negative value is possible when premiums are too low for the risk.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "reserve <- function(premium, benefit, mortality_rate, interest_rate, years_elapsed) {\n  # Write your code here\n}\n",
+    "solution": "reserve <- function(premium, benefit, mortality_rate, interest_rate, years_elapsed) {\n  value <- 0\n  for (k in seq_len(years_elapsed)) {\n    value <- ((value + premium) * (1 + interest_rate) - mortality_rate * benefit) / (1 - mortality_rate)\n  }\n  value\n}\n",
+    "entry": "reserve",
+    "tests": [
+      {
+        "args": [
+          1000,
+          100000,
+          0.01,
+          0.05,
+          5
+        ],
+        "expected": 285.05
+      },
+      {
+        "args": [
+          500,
+          50000,
+          0.005,
+          0.04,
+          10
+        ],
+        "expected": 3338
+      },
+      {
+        "args": [
+          1200,
+          100000,
+          0.01,
+          0.05,
+          1
+        ],
+        "expected": 262.63
+      },
+      {
+        "args": [
+          1000,
+          100000,
+          0.01,
+          0.05,
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-29",
+    "lang": "r",
+    "n": 29,
+    "title": "Term Assurance Net Single Premium",
+    "difficulty": "hard",
+    "description": "`mortality_table` maps ages (as **string** keys, e.g. `\"30\"`) to one-year death probabilities and covers at least ages `age` to `age + term - 1`. A term assurance pays `sum_assured` at the end of the year of death if death occurs within `term` years. Return its net single premium at the annual effective rate `interest_rate`:\n\n$$NSP = S \\sum_{k=0}^{n-1} v^{k+1}\\,{}_kp_x\\,q_{x+k}$$\n\n### Function signature\n\n```r\nnet_single_premium <- function(sum_assured, age, mortality_table, interest_rate, term)\n```\n\n### Example\n\n```r\n> net_single_premium(100000, 30, list(\"30\" = 0.001, \"31\" = 0.0012, \"32\" = 0.0014), 0.05, 3)\n[1] 324.64\n```\n\n### Notes\n\n- With `term = 0` there is no cover and the premium is 0.\n- In R the table arrives as a named list, e.g. `list(\"30\" = 0.001, \"31\" = 0.0012)`; look ages up with `mortality_table[[as.character(age + k)]]`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "net_single_premium <- function(sum_assured, age, mortality_table, interest_rate, term) {\n  # Write your code here\n}\n",
+    "solution": "net_single_premium <- function(sum_assured, age, mortality_table, interest_rate, term) {\n  nsp <- 0\n  survival <- 1\n  for (k in seq_len(term) - 1) {\n    q <- mortality_table[[as.character(age + k)]]\n    nsp <- nsp + sum_assured * survival * q / (1 + interest_rate)^(k + 1)\n    survival <- survival * (1 - q)\n  }\n  nsp\n}\n",
+    "entry": "net_single_premium",
+    "tests": [
+      {
+        "args": [
+          100000,
+          30,
+          {
+            "30": 0.001,
+            "31": 0.0012,
+            "32": 0.0014
+          },
+          0.05,
+          3
+        ],
+        "expected": 324.64
+      },
+      {
+        "args": [
+          100000,
+          30,
+          {
+            "30": 0.001,
+            "31": 0.0012
+          },
+          0.05,
+          2
+        ],
+        "expected": 203.97
+      },
+      {
+        "args": [
+          50000,
+          31,
+          {
+            "30": 0.001,
+            "31": 0.0012,
+            "32": 0.0014
+          },
+          0.04,
+          2
+        ],
+        "expected": 122.33
+      },
+      {
+        "args": [
+          100000,
+          30,
+          {
+            "30": 0.001
+          },
+          0.05,
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-30",
+    "lang": "r",
+    "n": 30,
+    "title": "Gross Premium from Loadings",
+    "difficulty": "easy",
+    "description": "Return the gross premium obtained by loading the `net_premium` for expenses and profit, both expressed as proportions of the net premium:\n\n$$G = P\\,(1 + e + \\pi)$$\n\n### Function signature\n\n```r\npremium_loading <- function(net_premium, expense_loading, profit_loading)\n```\n\n### Example\n\n```r\n> premium_loading(1000, 0.1, 0.05)\n[1] 1150\n```\n\n### Notes\n\n- With no loadings the gross premium equals the net premium.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "premium_loading <- function(net_premium, expense_loading, profit_loading) {\n  # Write your code here\n}\n",
+    "solution": "premium_loading <- function(net_premium, expense_loading, profit_loading) {\n  net_premium * (1 + expense_loading + profit_loading)\n}\n",
+    "entry": "premium_loading",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.1,
+          0.05
+        ],
+        "expected": 1150
+      },
+      {
+        "args": [
+          2500,
+          0.15,
+          0.05
+        ],
+        "expected": 3000
+      },
+      {
+        "args": [
+          800,
+          0,
+          0
+        ],
+        "expected": 800
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-31",
+    "lang": "r",
+    "n": 31,
+    "title": "Compound Interest Earned",
+    "difficulty": "easy",
+    "description": "Return the **interest earned** (not the accumulated amount) when `principal` is invested for `years` years at the nominal annual rate `rate` compounded `compounding` times a year:\n\n$$I = P\\left(1 + \\frac{r}{m}\\right)^{mn} - P$$\n\n### Function signature\n\n```r\ncompound_interest <- function(principal, rate, years, compounding)\n```\n\n### Example\n\n```r\n> compound_interest(1000, 0.05, 10, 12)\n[1] 647.01\n```\n\n### Notes\n\n- After 0 years no interest has been earned.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "compound_interest <- function(principal, rate, years, compounding) {\n  # Write your code here\n}\n",
+    "solution": "compound_interest <- function(principal, rate, years, compounding) {\n  principal * (1 + rate / compounding)^(compounding * years) - principal\n}\n",
+    "entry": "compound_interest",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10,
+          12
+        ],
+        "expected": 647.01
+      },
+      {
+        "args": [
+          5000,
+          0.08,
+          3,
+          4
+        ],
+        "expected": 1341.21
+      },
+      {
+        "args": [
+          1000,
+          0.06,
+          5,
+          1
+        ],
+        "expected": 338.23
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          0,
+          12
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-32",
+    "lang": "r",
+    "n": 32,
+    "title": "Simple Interest",
+    "difficulty": "easy",
+    "description": "Return the simple interest earned on `principal` at annual rate `rate` over `years` years: $I = P\\,r\\,t$.\n\n### Function signature\n\n```r\nsimple_interest <- function(principal, rate, years)\n```\n\n### Example\n\n```r\n> simple_interest(1000, 0.05, 10)\n[1] 500\n```\n\n### Notes\n\n- `years` may be fractional.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "simple_interest <- function(principal, rate, years) {\n  # Write your code here\n}\n",
+    "solution": "simple_interest <- function(principal, rate, years) {\n  principal * rate * years\n}\n",
+    "entry": "simple_interest",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 500
+      },
+      {
+        "args": [
+          2500,
+          0.08,
+          0.5
+        ],
+        "expected": 100
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          0
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-33",
+    "lang": "r",
+    "n": 33,
+    "title": "Present Value of an Annuity-Due",
+    "difficulty": "medium",
+    "description": "Return the present value of an annuity-due: `payment` at the **start** of each year for `years` years, at the annual effective rate `interest_rate`:\n\n$$PV = P\\,\\ddot a_{\\overline{n}|} = P\\,(1+i)\\,\\frac{1-(1+i)^{-n}}{i}$$\n\n### Function signature\n\n```r\nannuity_due_pv <- function(payment, interest_rate, years)\n```\n\n### Example\n\n```r\n> annuity_due_pv(1000, 0.05, 10)\n[1] 8107.82\n```\n\n### Notes\n\n- If `interest_rate` is 0 the result is `payment * years`.\n- A one-year annuity-due is just the first payment.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "annuity_due_pv <- function(payment, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "annuity_due_pv <- function(payment, interest_rate, years) {\n  if (interest_rate == 0) return(payment * years)\n  payment * (1 + interest_rate) * (1 - (1 + interest_rate)^(-years)) / interest_rate\n}\n",
+    "entry": "annuity_due_pv",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          10
+        ],
+        "expected": 8107.82
+      },
+      {
+        "args": [
+          500,
+          0.06,
+          15
+        ],
+        "expected": 5147.49
+      },
+      {
+        "args": [
+          1000,
+          0,
+          10
+        ],
+        "expected": 10000
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          1
+        ],
+        "expected": 1000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-34",
+    "lang": "r",
+    "n": 34,
+    "title": "Present Value of a Deferred Annuity",
+    "difficulty": "medium",
+    "description": "An annuity pays `payment` at the end of each year for `payment_years` years, but the first payment is made at the end of year `deferral_years + 1`. Return its present value at the annual effective rate `interest_rate`:\n\n$$PV = P\\,v^{d}\\,a_{\\overline{n}|}$$\n\n### Function signature\n\n```r\ndeferred_annuity_pv <- function(payment, interest_rate, deferral_years, payment_years)\n```\n\n### Example\n\n```r\n> deferred_annuity_pv(1000, 0.05, 5, 10)\n[1] 6050.18\n```\n\n### Notes\n\n- With `deferral_years = 0` this is an ordinary annuity-immediate.\n- If `interest_rate` is 0 the result is `payment * payment_years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "deferred_annuity_pv <- function(payment, interest_rate, deferral_years, payment_years) {\n  # Write your code here\n}\n",
+    "solution": "deferred_annuity_pv <- function(payment, interest_rate, deferral_years, payment_years) {\n  if (interest_rate == 0) return(payment * payment_years)\n  annuity <- payment * (1 - (1 + interest_rate)^(-payment_years)) / interest_rate\n  annuity / (1 + interest_rate)^deferral_years\n}\n",
+    "entry": "deferred_annuity_pv",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          5,
+          10
+        ],
+        "expected": 6050.18
+      },
+      {
+        "args": [
+          1000,
+          0.05,
+          0,
+          10
+        ],
+        "expected": 7721.73
+      },
+      {
+        "args": [
+          2000,
+          0.04,
+          10,
+          5
+        ],
+        "expected": 6014.98
+      },
+      {
+        "args": [
+          1000,
+          0,
+          5,
+          10
+        ],
+        "expected": 10000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-35",
+    "lang": "r",
+    "n": 35,
+    "title": "Present Value of a Growing Perpetuity",
+    "difficulty": "easy",
+    "description": "The first payment, `payment`, is made at the end of year 1 and each later payment grows by `growth_rate` a year, forever. Return the present value at the annual effective rate `interest_rate`:\n\n$$PV = \\frac{P}{i - g}, \\qquad g < i$$\n\n### Function signature\n\n```r\ngrowing_perpetuity_pv <- function(payment, interest_rate, growth_rate)\n```\n\n### Example\n\n```r\n> growing_perpetuity_pv(100, 0.05, 0.02)\n[1] 3333.33\n```\n\n### Notes\n\n- You may assume `growth_rate < interest_rate`. With zero growth this is a level perpetuity.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "growing_perpetuity_pv <- function(payment, interest_rate, growth_rate) {\n  # Write your code here\n}\n",
+    "solution": "growing_perpetuity_pv <- function(payment, interest_rate, growth_rate) {\n  payment / (interest_rate - growth_rate)\n}\n",
+    "entry": "growing_perpetuity_pv",
+    "tests": [
+      {
+        "args": [
+          100,
+          0.05,
+          0.02
+        ],
+        "expected": 3333.33
+      },
+      {
+        "args": [
+          50,
+          0.08,
+          0.03
+        ],
+        "expected": 1000
+      },
+      {
+        "args": [
+          100,
+          0.05,
+          0
+        ],
+        "expected": 2000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-36",
+    "lang": "r",
+    "n": 36,
+    "title": "Sinking Fund Payment",
+    "difficulty": "medium",
+    "description": "Return the level payment, made at the end of each year for `years` years, that accumulates to `future_value` at the annual effective rate `interest_rate`:\n\n$$R = \\frac{FV}{s_{\\overline{n}|}} = FV\\,\\frac{i}{(1+i)^n - 1}$$\n\n### Function signature\n\n```r\nsinking_fund_payment <- function(future_value, interest_rate, years)\n```\n\n### Example\n\n```r\n> sinking_fund_payment(100000, 0.05, 10)\n[1] 7950.46\n```\n\n### Notes\n\n- If `interest_rate` is 0 the payment is `future_value / years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "sinking_fund_payment <- function(future_value, interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "sinking_fund_payment <- function(future_value, interest_rate, years) {\n  if (interest_rate == 0) return(future_value / years)\n  future_value * interest_rate / ((1 + interest_rate)^years - 1)\n}\n",
+    "entry": "sinking_fund_payment",
+    "tests": [
+      {
+        "args": [
+          100000,
+          0.05,
+          10
+        ],
+        "expected": 7950.46
+      },
+      {
+        "args": [
+          50000,
+          0.06,
+          5
+        ],
+        "expected": 8869.82
+      },
+      {
+        "args": [
+          12000,
+          0,
+          6
+        ],
+        "expected": 2000
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-37",
+    "lang": "r",
+    "n": 37,
+    "title": "Capital Recovery Factor",
+    "difficulty": "medium",
+    "description": "Return the capital recovery factor, the level end-of-year payment that repays a loan of 1 over `years` years at the annual effective rate `interest_rate`:\n\n$$CRF = \\frac{1}{a_{\\overline{n}|}} = \\frac{i(1+i)^n}{(1+i)^n - 1}$$\n\n### Function signature\n\n```r\ncapital_recovery_factor <- function(interest_rate, years)\n```\n\n### Example\n\n```r\n> capital_recovery_factor(0.05, 10)\n[1] 0.129505\n```\n\n### Notes\n\n- If `interest_rate` is 0 the factor is `1 / years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "capital_recovery_factor <- function(interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "capital_recovery_factor <- function(interest_rate, years) {\n  if (interest_rate == 0) return(1 / years)\n  growth <- (1 + interest_rate)^years\n  interest_rate * growth / (growth - 1)\n}\n",
+    "entry": "capital_recovery_factor",
+    "tests": [
+      {
+        "args": [
+          0.05,
+          10
+        ],
+        "expected": 0.129505
+      },
+      {
+        "args": [
+          0.08,
+          5
+        ],
+        "expected": 0.250456
+      },
+      {
+        "args": [
+          0,
+          4
+        ],
+        "expected": 0.25
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-38",
+    "lang": "r",
+    "n": 38,
+    "title": "Annuity Factor (Present Worth)",
+    "difficulty": "easy",
+    "description": "Return the present worth (annuity) factor $a_{\\overline{n}|} = \\dfrac{1-(1+i)^{-n}}{i}$: the present value of 1 paid at the end of each year for `years` years.\n\n### Function signature\n\n```r\npresent_worth_factor <- function(interest_rate, years)\n```\n\n### Example\n\n```r\n> present_worth_factor(0.05, 10)\n[1] 7.7217\n```\n\n### Notes\n\n- If `interest_rate` is 0 the factor is `years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "present_worth_factor <- function(interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "present_worth_factor <- function(interest_rate, years) {\n  if (interest_rate == 0) return(years)\n  (1 - (1 + interest_rate)^(-years)) / interest_rate\n}\n",
+    "entry": "present_worth_factor",
+    "tests": [
+      {
+        "args": [
+          0.05,
+          10
+        ],
+        "expected": 7.7217
+      },
+      {
+        "args": [
+          0.06,
+          20
+        ],
+        "expected": 11.4699
+      },
+      {
+        "args": [
+          0,
+          5
+        ],
+        "expected": 5
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-39",
+    "lang": "r",
+    "n": 39,
+    "title": "Accumulation Factor of an Annuity",
+    "difficulty": "easy",
+    "description": "Return the future worth factor $s_{\\overline{n}|} = \\dfrac{(1+i)^n - 1}{i}$: the accumulated value, at the last payment, of 1 paid at the end of each year for `years` years.\n\n### Function signature\n\n```r\nfuture_worth_factor <- function(interest_rate, years)\n```\n\n### Example\n\n```r\n> future_worth_factor(0.05, 10)\n[1] 12.5779\n```\n\n### Notes\n\n- If `interest_rate` is 0 the factor is `years`.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "future_worth_factor <- function(interest_rate, years) {\n  # Write your code here\n}\n",
+    "solution": "future_worth_factor <- function(interest_rate, years) {\n  if (interest_rate == 0) return(years)\n  ((1 + interest_rate)^years - 1) / interest_rate\n}\n",
+    "entry": "future_worth_factor",
+    "tests": [
+      {
+        "args": [
+          0.05,
+          10
+        ],
+        "expected": 12.5779
+      },
+      {
+        "args": [
+          0.04,
+          15
+        ],
+        "expected": 20.0236
+      },
+      {
+        "args": [
+          0,
+          5
+        ],
+        "expected": 5
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-40",
+    "lang": "r",
+    "n": 40,
+    "title": "Effective to Nominal Rate",
+    "difficulty": "medium",
+    "description": "Convert the annual effective rate `effective_rate` to the equivalent nominal annual rate compounded `compounding` times a year:\n\n$$i^{(m)} = m\\left[(1+i)^{1/m} - 1\\right]$$\n\n### Function signature\n\n```r\nnominal_rate <- function(effective_rate, compounding)\n```\n\n### Example\n\n```r\n> nominal_rate(0.0617, 12)\n[1] 0.060021\n```\n\n### Notes\n\n- This is the inverse of the nominal-to-effective conversion.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "nominal_rate <- function(effective_rate, compounding) {\n  # Write your code here\n}\n",
+    "solution": "nominal_rate <- function(effective_rate, compounding) {\n  compounding * ((1 + effective_rate)^(1 / compounding) - 1)\n}\n",
+    "entry": "nominal_rate",
+    "tests": [
+      {
+        "args": [
+          0.0617,
+          12
+        ],
+        "expected": 0.060021
+      },
+      {
+        "args": [
+          0.05,
+          4
+        ],
+        "expected": 0.0490889
+      },
+      {
+        "args": [
+          0.1,
+          1
+        ],
+        "expected": 0.1
+      },
+      {
+        "args": [
+          0.0816,
+          2
+        ],
+        "expected": 0.08
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-41",
+    "lang": "r",
+    "n": 41,
+    "title": "Force of Interest",
+    "difficulty": "medium",
+    "description": "Return the force of interest $\\delta$ equivalent to the nominal annual rate `nominal_rate` compounded `compounding` times a year:\n\n$$\\delta = \\ln(1+i) = m \\ln\\!\\left(1 + \\frac{i^{(m)}}{m}\\right)$$\n\n### Function signature\n\n```r\nforce_of_interest <- function(nominal_rate, compounding)\n```\n\n### Example\n\n```r\n> force_of_interest(0.06, 12)\n[1] 0.0598505\n```\n\n### Notes\n\n- The force of interest is always slightly below the nominal rate for any finite `compounding`.\n- `log()` is the natural logarithm.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "force_of_interest <- function(nominal_rate, compounding) {\n  # Write your code here\n}\n",
+    "solution": "force_of_interest <- function(nominal_rate, compounding) {\n  compounding * log(1 + nominal_rate / compounding)\n}\n",
+    "entry": "force_of_interest",
+    "tests": [
+      {
+        "args": [
+          0.06,
+          12
+        ],
+        "expected": 0.0598505
+      },
+      {
+        "args": [
+          0.05,
+          1
+        ],
+        "expected": 0.0487902
+      },
+      {
+        "args": [
+          0.08,
+          4
+        ],
+        "expected": 0.0792105
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-42",
+    "lang": "r",
+    "n": 42,
+    "title": "Maximum Drawdown",
+    "difficulty": "medium",
+    "description": "Start with wealth $W_0 = 1$ and apply the periodic `returns`: $W_t = W_{t-1}(1 + r_t)$. The drawdown at time $t$ is $W_t / \\max_{s \\le t} W_s - 1$, where the running peak includes $W_0$. Return the maximum drawdown: the most negative drawdown, or 0 if wealth never falls below a previous peak.\n\n### Function signature\n\n```r\nmax_drawdown <- function(returns)\n```\n\n### Example\n\n```r\n> max_drawdown(c(0.1, 0.12, -0.05, 0.08, -0.02))\n[1] -0.05\n```\n\n### Notes\n\n- The result is negative or 0 (e.g. -0.19 for a 19% fall).\n- An empty vector has no drawdown: return 0.\n- `cumprod()` and `cummax()` are handy here.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "max_drawdown <- function(returns) {\n  # Write your code here\n}\n",
+    "solution": "max_drawdown <- function(returns) {\n  wealth <- cumprod(1 + returns)\n  peak <- cummax(c(1, wealth))[-1]\n  min(0, wealth / peak - 1)\n}\n",
+    "entry": "max_drawdown",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08,
+            -0.02
+          ]
+        ],
+        "expected": -0.05
+      },
+      {
+        "args": [
+          [
+            0.1,
+            -0.1,
+            -0.1,
+            0.05
+          ]
+        ],
+        "expected": -0.19
+      },
+      {
+        "args": [
+          [
+            -0.2,
+            0.1
+          ]
+        ],
+        "expected": -0.2
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.02
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "args": [
+          []
+        ],
+        "expected": 0
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-43",
+    "lang": "r",
+    "n": 43,
+    "title": "Jensen's Alpha",
+    "difficulty": "hard",
+    "description": "Return Jensen's alpha: the stock's mean return minus the return predicted by the CAPM,\n\n$$\\alpha = \\bar r_s - \\left[r_f + \\beta\\,(\\bar r_m - r_f)\\right], \\qquad \\beta = \\frac{\\operatorname{Cov}(r_s, r_m)}{\\operatorname{Var}(r_m)}$$\n\n### Function signature\n\n```r\nalpha <- function(stock_returns, market_returns, risk_free_rate)\n```\n\n### Example\n\n```r\n> alpha(c(0.1, 0.12, 0.08), c(0.08, 0.1, 0.06), 0.03)\n[1] 0.02\n```\n\n### Notes\n\n- All means are arithmetic means of the series.\n- Use your own helper functions if you like; define them in your answer.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "alpha <- function(stock_returns, market_returns, risk_free_rate) {\n  # Write your code here\n}\n",
+    "solution": "alpha <- function(stock_returns, market_returns, risk_free_rate) {\n  b <- cov(stock_returns, market_returns) / var(market_returns)\n  mean(stock_returns) - (risk_free_rate + b * (mean(market_returns) - risk_free_rate))\n}\n",
+    "entry": "alpha",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08
+          ],
+          [
+            0.08,
+            0.1,
+            0.06
+          ],
+          0.03
+        ],
+        "expected": 0.02
+      },
+      {
+        "args": [
+          [
+            0.12,
+            0.05,
+            -0.03,
+            0.09
+          ],
+          [
+            0.1,
+            0.04,
+            -0.02,
+            0.06
+          ],
+          0.02
+        ],
+        "expected": 0.00533333
+      },
+      {
+        "args": [
+          [
+            0.2,
+            0,
+            0.1
+          ],
+          [
+            0.1,
+            0,
+            0.05
+          ],
+          0.01
+        ],
+        "expected": 0.01
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-44",
+    "lang": "r",
+    "n": 44,
+    "title": "Treynor Ratio",
+    "difficulty": "medium",
+    "description": "Return the Treynor ratio, the mean excess return per unit of systematic risk:\n\n$$T = \\frac{\\bar r - r_f}{\\beta}, \\qquad \\beta = \\frac{\\operatorname{Cov}(r, r_m)}{\\operatorname{Var}(r_m)}$$\n\n### Function signature\n\n```r\ntreynor_ratio <- function(returns, market_returns, risk_free_rate)\n```\n\n### Example\n\n```r\n> treynor_ratio(c(0.1, 0.12, 0.08), c(0.08, 0.1, 0.06), 0.03)\n[1] 0.07\n```\n\n### Notes\n\n- You may assume beta is not 0.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "treynor_ratio <- function(returns, market_returns, risk_free_rate) {\n  # Write your code here\n}\n",
+    "solution": "treynor_ratio <- function(returns, market_returns, risk_free_rate) {\n  b <- cov(returns, market_returns) / var(market_returns)\n  (mean(returns) - risk_free_rate) / b\n}\n",
+    "entry": "treynor_ratio",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08
+          ],
+          [
+            0.08,
+            0.1,
+            0.06
+          ],
+          0.03
+        ],
+        "expected": 0.07
+      },
+      {
+        "args": [
+          [
+            0.12,
+            0.05,
+            -0.03,
+            0.09
+          ],
+          [
+            0.1,
+            0.04,
+            -0.02,
+            0.06
+          ],
+          0.02
+        ],
+        "expected": 0.0291451
+      },
+      {
+        "args": [
+          [
+            0.2,
+            0,
+            0.1
+          ],
+          [
+            0.1,
+            0,
+            0.05
+          ],
+          0.01
+        ],
+        "expected": 0.045
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-45",
+    "lang": "r",
+    "n": 45,
+    "title": "Information Ratio",
+    "difficulty": "hard",
+    "description": "Return the information ratio: the mean active return divided by the tracking error, where the active return each period is $a_t = r_{p,t} - r_{b,t}$ and the tracking error is the **sample** standard deviation of the $a_t$:\n\n$$IR = \\frac{\\bar a}{s_a}$$\n\n### Function signature\n\n```r\ninformation_ratio <- function(portfolio_returns, benchmark_returns)\n```\n\n### Example\n\n```r\n> information_ratio(c(0.1, 0.12, 0.08, 0.11), c(0.08, 0.1, 0.07, 0.08))\n[1] 2.4495\n```\n\n### Notes\n\n- You may assume the active returns are not all equal (non-zero tracking error).\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "information_ratio <- function(portfolio_returns, benchmark_returns) {\n  # Write your code here\n}\n",
+    "solution": "information_ratio <- function(portfolio_returns, benchmark_returns) {\n  active <- portfolio_returns - benchmark_returns\n  mean(active) / sd(active)\n}\n",
+    "entry": "information_ratio",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            0.08,
+            0.11
+          ],
+          [
+            0.08,
+            0.1,
+            0.07,
+            0.08
+          ]
+        ],
+        "expected": 2.4495
+      },
+      {
+        "args": [
+          [
+            0.05,
+            0.02,
+            0.09
+          ],
+          [
+            0.04,
+            0.03,
+            0.06
+          ]
+        ],
+        "expected": 0.5
+      },
+      {
+        "args": [
+          [
+            0.01,
+            -0.02,
+            0.03,
+            0,
+            0.02
+          ],
+          [
+            0.005,
+            -0.01,
+            0.02,
+            0.005,
+            0.01
+          ]
+        ],
+        "expected": 0.220193
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-46",
+    "lang": "r",
+    "n": 46,
+    "title": "Sortino Ratio",
+    "difficulty": "hard",
+    "description": "Return the Sortino ratio: the mean excess return over `risk_free_rate` divided by the downside deviation below `target_return`. The downside deviation averages over **all** $n$ periods, counting only shortfalls:\n\n$$DD = \\sqrt{\\frac{1}{n}\\sum_{t=1}^{n} \\min(0,\\; r_t - T)^2}, \\qquad \\text{Sortino} = \\frac{\\bar r - r_f}{DD}$$\n\n### Function signature\n\n```r\nsortino_ratio <- function(returns, risk_free_rate, target_return)\n```\n\n### Example\n\n```r\n> sortino_ratio(c(0.1, 0.12, -0.05, 0.08), 0.03, 0.05)\n[1] 0.65\n```\n\n### Notes\n\n- You may assume at least one return is below `target_return`.\n- `pmin()` takes the element-wise minimum.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "sortino_ratio <- function(returns, risk_free_rate, target_return) {\n  # Write your code here\n}\n",
+    "solution": "sortino_ratio <- function(returns, risk_free_rate, target_return) {\n  dd <- sqrt(mean(pmin(0, returns - target_return)^2))\n  (mean(returns) - risk_free_rate) / dd\n}\n",
+    "entry": "sortino_ratio",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ],
+          0.03,
+          0.05
+        ],
+        "expected": 0.65
+      },
+      {
+        "args": [
+          [
+            0.04,
+            -0.02,
+            0.06,
+            0.01,
+            -0.03
+          ],
+          0.01,
+          0
+        ],
+        "expected": 0.124035
+      },
+      {
+        "args": [
+          [
+            0.07,
+            0.02,
+            0.09,
+            -0.01
+          ],
+          0.02,
+          0.03
+        ],
+        "expected": 1.0914
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-47",
+    "lang": "r",
+    "n": 47,
+    "title": "Calmar Ratio",
+    "difficulty": "hard",
+    "description": "`returns` are **annual** returns. Return the Calmar ratio: the compound annual growth rate in excess of `risk_free_rate`, divided by the size of the maximum drawdown:\n\n$$\\text{Calmar} = \\frac{\\text{CAGR} - r_f}{|\\text{MDD}|}, \\qquad \\text{CAGR} = \\left(\\prod_t (1 + r_t)\\right)^{1/n} - 1$$\n\nThe maximum drawdown is measured on wealth starting at 1, with the running peak including the starting value.\n\n### Function signature\n\n```r\ncalmar_ratio <- function(returns, risk_free_rate)\n```\n\n### Example\n\n```r\n> calmar_ratio(c(0.1, 0.12, -0.05, 0.08), 0.03)\n[1] 0.606525\n```\n\n### Notes\n\n- You may assume the series has at least one drawdown.\n- Define any helper functions inside your answer.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "calmar_ratio <- function(returns, risk_free_rate) {\n  # Write your code here\n}\n",
+    "solution": "calmar_ratio <- function(returns, risk_free_rate) {\n  wealth <- cumprod(1 + returns)\n  mdd <- min(0, wealth / cummax(c(1, wealth))[-1] - 1)\n  cagr <- prod(1 + returns)^(1 / length(returns)) - 1\n  (cagr - risk_free_rate) / abs(mdd)\n}\n",
+    "entry": "calmar_ratio",
+    "tests": [
+      {
+        "args": [
+          [
+            0.1,
+            0.12,
+            -0.05,
+            0.08
+          ],
+          0.03
+        ],
+        "expected": 0.606525
+      },
+      {
+        "args": [
+          [
+            0.15,
+            -0.1,
+            0.2,
+            -0.05,
+            0.1
+          ],
+          0.02
+        ],
+        "expected": 0.335316
+      },
+      {
+        "args": [
+          [
+            -0.2,
+            0.3,
+            0.1
+          ],
+          0
+        ],
+        "expected": 0.229322
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-48",
+    "lang": "r",
+    "n": 48,
+    "title": "Portfolio Variance",
+    "difficulty": "hard",
+    "description": "Return the variance of a portfolio with asset `weights` and covariance matrix $\\Sigma$:\n\n$$\\sigma_p^2 = w^\\top \\Sigma\\, w = \\sum_i \\sum_j w_i\\,w_j\\,\\Sigma_{ij}$$\n\n### Function signature\n\n```r\nportfolio_variance <- function(weights, covariance_matrix)\n```\n\n### Example\n\n```r\n> portfolio_variance(c(0.5, 0.5), list(c(0.04, 0.01), c(0.01, 0.09)))\n[1] 0.0375\n```\n\n### Notes\n\n- `covariance_matrix` arrives as a list of row vectors, e.g. `list(c(0.04, 0.01), c(0.01, 0.09))`. `do.call(rbind, covariance_matrix)` turns it into a matrix.\n- Return a plain number (`as.numeric()` drops the 1 x 1 matrix).\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "portfolio_variance <- function(weights, covariance_matrix) {\n  # Write your code here\n}\n",
+    "solution": "portfolio_variance <- function(weights, covariance_matrix) {\n  sigma <- do.call(rbind, covariance_matrix)\n  as.numeric(t(weights) %*% sigma %*% weights)\n}\n",
+    "entry": "portfolio_variance",
+    "tests": [
+      {
+        "args": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            [
+              0.04,
+              0.01
+            ],
+            [
+              0.01,
+              0.09
+            ]
+          ]
+        ],
+        "expected": 0.0375
+      },
+      {
+        "args": [
+          [
+            0.5,
+            0.3,
+            0.2
+          ],
+          [
+            [
+              0.04,
+              0.006,
+              0.002
+            ],
+            [
+              0.006,
+              0.0225,
+              0.004
+            ],
+            [
+              0.002,
+              0.004,
+              0.01
+            ]
+          ]
+        ],
+        "expected": 0.015105
+      },
+      {
+        "args": [
+          [
+            1,
+            0
+          ],
+          [
+            [
+              0.04,
+              0.01
+            ],
+            [
+              0.01,
+              0.09
+            ]
+          ]
+        ],
+        "expected": 0.04
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-49",
+    "lang": "r",
+    "n": 49,
+    "title": "Internal Rate of Return (Newton-Raphson)",
+    "difficulty": "hard",
+    "description": "`cash_flows[t]` is the net cash flow at time $t = 0, 1, \\dots$ Find the internal rate of return, the rate $r$ with $NPV(r) = 0$, using Newton-Raphson iteration from `initial_guess`:\n\n$$NPV(r) = \\sum_t \\frac{CF_t}{(1+r)^t}, \\qquad NPV'(r) = -\\sum_t \\frac{t\\,CF_t}{(1+r)^{t+1}}, \\qquad r \\leftarrow r - \\frac{NPV(r)}{NPV'(r)}$$\n\nStop when the step is smaller than $10^{-10}$ in absolute value, or after 100 iterations.\n\n### Function signature\n\n```r\nirr <- function(cash_flows, initial_guess)\n```\n\n### Example\n\n```r\n> irr(c(-1000, 300, 300, 300, 300), 0.1)\n[1] 0.0771385\n```\n\n### Notes\n\n- The tests use conventional cash flows (one outflow, then inflows), which have a single IRR.\n- Cash flows are 0-indexed in time: element 1 of the vector is the flow at $t = 0$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "irr <- function(cash_flows, initial_guess) {\n  # Write your code here\n}\n",
+    "solution": "irr <- function(cash_flows, initial_guess) {\n  times <- seq_along(cash_flows) - 1\n  rate <- initial_guess\n  for (iter in 1:100) {\n    npv <- sum(cash_flows / (1 + rate)^times)\n    slope <- sum(-times * cash_flows / (1 + rate)^(times + 1))\n    step <- npv / slope\n    rate <- rate - step\n    if (abs(step) < 1e-10) break\n  }\n  rate\n}\n",
+    "entry": "irr",
+    "tests": [
+      {
+        "args": [
+          [
+            -1000,
+            300,
+            300,
+            300,
+            300
+          ],
+          0.1
+        ],
+        "expected": 0.0771385
+      },
+      {
+        "args": [
+          [
+            -100,
+            110
+          ],
+          0.05
+        ],
+        "expected": 0.1
+      },
+      {
+        "args": [
+          [
+            -1000,
+            400,
+            400,
+            400
+          ],
+          0.1
+        ],
+        "expected": 0.0970103
+      },
+      {
+        "args": [
+          [
+            -5000,
+            1000,
+            1500,
+            2000,
+            2500
+          ],
+          0.05
+        ],
+        "expected": 0.128257
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "r-50",
+    "lang": "r",
+    "n": 50,
+    "title": "Bond Convexity",
+    "difficulty": "hard",
+    "description": "Return the convexity, **in years squared**, of a bond redeemed at `face_value` after `years` years with coupons paid `frequency` times a year (`coupon_rate` and `yield_rate` are nominal annual rates convertible `frequency` times a year). With $m$ = `frequency`, $j = y/m$, cash flows $CF_k$ at periods $k = 1,\\dots,mn$ and price $P = \\sum_k CF_k (1+j)^{-k}$:\n\n$$C = \\frac{1}{P\\,m^2\\,(1+j)^2}\\sum_{k} k(k+1)\\,CF_k\\,(1+j)^{-k}$$\n\n### Function signature\n\n```r\nconvexity <- function(face_value, coupon_rate, yield_rate, years, frequency)\n```\n\n### Example\n\n```r\n> convexity(1000, 0.05, 0.06, 10, 2)\n[1] 71.7854\n```\n\n### Notes\n\n- Dividing by $m^2$ converts from periods squared to years squared.\n- For a zero-coupon bond with annual compounding, $C = n(n+1)/(1+y)^2$.\n- Use base R only (no packages).\n- Don't round your result: example outputs are rounded for display, and answers are accepted within 0.5%.",
+    "starterCode": "convexity <- function(face_value, coupon_rate, yield_rate, years, frequency) {\n  # Write your code here\n}\n",
+    "solution": "convexity <- function(face_value, coupon_rate, yield_rate, years, frequency) {\n  n <- years * frequency\n  k <- seq_len(n)\n  j <- yield_rate / frequency\n  cf <- rep(face_value * coupon_rate / frequency, n)\n  cf[n] <- cf[n] + face_value\n  pv <- cf / (1 + j)^k\n  sum(k * (k + 1) * pv) / (sum(pv) * frequency^2 * (1 + j)^2)\n}\n",
+    "entry": "convexity",
+    "tests": [
+      {
+        "args": [
+          1000,
+          0.05,
+          0.06,
+          10,
+          2
+        ],
+        "expected": 71.7854
+      },
+      {
+        "args": [
+          1000,
+          0,
+          0.05,
+          10,
+          1
+        ],
+        "expected": 99.7732
+      },
+      {
+        "args": [
+          1000,
+          0.08,
+          0.08,
+          5,
+          1
+        ],
+        "expected": 21.0465
+      }
+    ],
+    "topics": [
+      "Finance"
+    ]
+  }
+]

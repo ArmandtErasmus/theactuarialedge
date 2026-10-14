@@ -1,0 +1,1086 @@
+[
+  {
+    "id": "cb1-1",
+    "subject": "cb1",
+    "n": 1,
+    "title": "Agency Costs",
+    "difficulty": "easy",
+    "topics": [
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following situations is least likely to give rise to agency costs?",
+    "options": [
+      "A car manufacturing business, which employs managers to carry out day-to-day operations",
+      "An oil refining business in which the government takes a great interest",
+      "Wage negotiations in which managers have more information than unions",
+      "A retailing business, which has one owner-manager"
+    ],
+    "answerIndex": 3,
+    "solution": "Agency costs arise when costs are incurred in the monitoring and influencing of others. When the owner is the manager there is no conflict of interest."
+  },
+  {
+    "id": "cb1-2",
+    "subject": "cb1",
+    "n": 2,
+    "title": "UK Corporate Governance Code Headings",
+    "difficulty": "easy",
+    "topics": [
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is NOT one of the section headings of the UK Corporate Governance Code (2018)?",
+    "options": [
+      "Board Leadership and Company Purpose",
+      "Profitability",
+      "Audit, Risk and Internal Control",
+      "Remuneration"
+    ],
+    "answerIndex": 1,
+    "solution": "The five section headings are:\n1. Board Leadership and Company Purpose\n2. Division of Responsibilities\n3. Composition, Succession and Evaluation\n4. Audit, Risk and Internal Control\n5. Remuneration\n\n'Profitability' is not a heading."
+  },
+  {
+    "id": "cb1-3",
+    "subject": "cb1",
+    "n": 3,
+    "title": "Role of the Financial Manager",
+    "difficulty": "medium",
+    "topics": [
+      "Corporate structure & governance",
+      "Investment appraisal",
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Describe the role of the financial manager.",
+    "answer": "The financial manager is the link between the firm's operations and the financial markets. The two main decisions are (1) the investment (capital budgeting) decision, which is complex, important and risky and needs input from project, production, marketing, tax and legal specialists, and (2) the financing decision, which needs a clear understanding of the available sources of finance and how capital markets work.",
+    "solution": "The financial manager is the link between the firm's operations and the financial markets, and must make two main decisions: the investment (capital budgeting) decision and the financing decision.\n\nThe investment decision is complex, important and risky. There are often alternative projects, each with uncertain returns over an uncertain lifespan, and a wrong decision could seriously damage the firm's fortunes. The financial manager must work with project managers, production managers, marketing managers, tax experts and legal experts to understand the full implications of the decision.\n\nTo make appropriate financing decisions, the financial manager needs a clear understanding of the options available and of how the capital markets work."
+  },
+  {
+    "id": "cb1-4",
+    "subject": "cb1",
+    "n": 4,
+    "title": "Discipline of the Capital Markets",
+    "difficulty": "medium",
+    "topics": [
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Explain how businesses are subject to the disciplines of the capital markets.",
+    "answer": "Capital markets continuously value a company's shares and bonds. Poor use of assets by managers is reflected in a lower share price, which may lead to a takeover bid (the firm becomes a bargain) and to managers losing their jobs. This continuous assessment gives managers an incentive to perform efficiently.",
+    "solution": "Capital markets are continuously expressing their view of the current and expected future performance of a particular company through the valuations of a firm's shares and bonds. If managers are not using the assets of the business effectively, the market will soon know this and its poor perception of the company will be revealed in a lower share price. One consequence of a falling share price may be a takeover bid as the firm becomes a bargain for a corporate acquirer. Another consequence might be redundancy for the manager. So, by providing continuous assessment of the firm's performance, the capital markets stimulate efficiency and provide incentives to business managers to improve their performance."
+  },
+  {
+    "id": "cb1-5",
+    "subject": "cb1",
+    "n": 5,
+    "title": "LLP vs Limited Company",
+    "difficulty": "medium",
+    "topics": [
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "A limited liability partnership differs from a limited company in that:",
+    "options": [
+      "It is not a separate legal entity.",
+      "There must be one member with unlimited liability.",
+      "It has no Memorandum or Articles of Association.",
+      "Action cannot be taken against individual members for fraud and negligence."
+    ],
+    "answerIndex": 2,
+    "solution": "A limited liability partnership is similar to a limited company in that it is a separate legal entity, all its members benefit from limited liability and action can be taken against individual members for fraud and negligence. However, it does not have to produce a Memorandum or Articles of Association."
+  },
+  {
+    "id": "cb1-6",
+    "subject": "cb1",
+    "n": 6,
+    "title": "Features of a Public Company",
+    "difficulty": "medium",
+    "topics": [
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is NOT true of a public company?",
+    "options": [
+      "The company name must end in ‘public limited company’ or PLC or plc.",
+      "The ordinary shares must be quoted on the Stock Exchange.",
+      "Ordinary shareholders have one vote per share held.",
+      "The issued share capital must not be less than £50,000."
+    ],
+    "answerIndex": 1,
+    "solution": "Being a public company is a requirement for obtaining a quotation, but having a quotation is not a requirement for being a public company."
+  },
+  {
+    "id": "cb1-7",
+    "subject": "cb1",
+    "n": 7,
+    "title": "Limited Liability of Shareholders",
+    "difficulty": "easy",
+    "topics": [
+      "Corporate structure & governance",
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Investors in the ordinary shares of a company have their liability limited to:",
+    "options": [
+      "The market price of the shares.",
+      "The fully paid value of the shares.",
+      "The nominal value of their holding.",
+      "The capital value of their holding, less any dividends due."
+    ],
+    "answerIndex": 1,
+    "solution": "Shareholders’ liability is limited to the fully paid-up value of their shares."
+  },
+  {
+    "id": "cb1-8",
+    "subject": "cb1",
+    "n": 8,
+    "title": "Sole Trader vs Company",
+    "difficulty": "medium",
+    "topics": [
+      "Corporate structure & governance",
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Explain the differences between a sole trader and a company.",
+    "answer": "Ownership: one person vs shareholders. Liability: unlimited vs limited. Legal identity: not separate from the owner vs a separate legal entity. Documentation: none vs Memorandum and Articles of Association and registration at Companies House. Disclosure and tax: accounts for the tax authorities and income tax vs published accounts (above a certain size) and corporation tax.",
+    "solution": "1. Ownership: a sole trader is owned by one person; a company is owned by its shareholders.\n2. Liability: a sole trader has unlimited liability; shareholders of a company have limited liability.\n3. Legal identity: a sole trader has no legal identity distinct from its owner; a company is a legal entity distinct from its owners.\n4. Documentation: a sole trader needs no documentation; a company must have a Memorandum of Association and Articles of Association and be registered at Companies House.\n5. Disclosure and tax: a sole trader prepares accounts for the tax authorities and pays income tax; a company (above a certain size) must publish its accounts, and it pays corporation tax."
+  },
+  {
+    "id": "cb1-9",
+    "subject": "cb1",
+    "n": 9,
+    "title": "Partnership vs LLP",
+    "difficulty": "hard",
+    "topics": [
+      "Corporate structure & governance",
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Compare a partnership and a limited liability partnership (LLP).",
+    "answer": "Ownership: two or more partners vs members. Liability: unlimited, joint and several vs limited. Legal identity: not separate from the partners vs a separate legal entity. Documentation: none required (agreement advisable) vs partnership agreement or default regulations, plus registration at Companies House. Disclosure and tax: accounts for the tax authorities vs published accounts (above a certain size); in both cases the partners/members pay income tax.",
+    "solution": "1. Ownership: a partnership is owned by two or more people; an LLP is owned by its members.\n2. Liability: partners have unlimited liability and are jointly and severally liable for the partnership's debts; members of an LLP have limited liability.\n3. Legal identity: a partnership has no legal identity distinct from its owners; an LLP is a legal entity distinct from its owners.\n4. Documentation: a partnership needs no documentation, though a Partnership Agreement is advisable; an LLP has a Partnership Agreement or is governed by the default provisions in the regulations, and must be registered at Companies House.\n5. Disclosure and tax: a partnership prepares accounts for the tax authorities and the partners pay income tax; an LLP (above a certain size) must publish its accounts, and its members pay income tax."
+  },
+  {
+    "id": "cb1-10",
+    "subject": "cb1",
+    "n": 10,
+    "title": "Taxable Profits of a Company",
+    "difficulty": "medium",
+    "topics": [
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Taxable profits for a company are:",
+    "options": [
+      "Unadjusted pre-tax accounting profits.",
+      "Trading profits less capital allowances.",
+      "Unadjusted income (after expenses) plus capital gains.",
+      "None of the above."
+    ],
+    "answerIndex": 3,
+    "solution": "None of the above.\n- Unadjusted accounting profits are not taxable profits: various adjustments are made (disallowable expenses added back, special reliefs deducted).\n- Capital allowances replacing depreciation are only one of these adjustments, so 'trading profits less capital allowances' is incomplete.\n- 'Unadjusted income plus capital gains' again starts from unadjusted accounting figures."
+  },
+  {
+    "id": "cb1-11",
+    "subject": "cb1",
+    "n": 11,
+    "title": "Tax Deducted at Source",
+    "difficulty": "easy",
+    "topics": [
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "What is the most logical explanation for the requirement that investment income often has tax deducted at source?",
+    "options": [
+      "To discourage companies from paying dividends",
+      "To ensure that taxpayers who have insufficient income to pay tax are required to pay tax on their investment income",
+      "To enable governments to tax investment income at a higher rate than earned income",
+      "To simplify the collection of tax"
+    ],
+    "answerIndex": 3,
+    "solution": "There is no reason to discourage the payment of dividends by companies. If the investor receives the income, there is theoretically sufficient income to pay the tax. Charging tax up front will not raise the rate of tax charged. However, this could lead to simplifications in the collection of taxes as it avoids having to collect tax from many investors."
+  },
+  {
+    "id": "cb1-12",
+    "subject": "cb1",
+    "n": 12,
+    "title": "From Total Income to Taxable Income",
+    "difficulty": "medium",
+    "topics": [
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "List three sources of personal income that are tax-free in the UK. Outline other adjustments made to total income in order to arrive at taxable income.",
+    "answer": "Tax-free income: most gambling winnings, income from certain investments (e.g. ISAs), most social security benefits. Adjustments: add benefits-in-kind (e.g. cheap loans, company cars); deduct tax-free expenditure such as approved pension contributions and charitable gifts; deduct allowances such as the personal allowance.",
+    "solution": "Three sources of income that are tax-free in the UK:\n1. most gambling winnings\n2. income from certain investments, e.g. ISAs\n3. most social security benefits.\n\nOther adjustments to total income to arrive at taxable income:\n1. adding benefits-in-kind (fringe benefits), such as cheap mortgages or company cars\n2. deducting tax-free expenditure, such as contributions to an approved pension scheme and charitable gifts\n3. deducting appropriate allowances, e.g. the personal allowance."
+  },
+  {
+    "id": "cb1-13",
+    "subject": "cb1",
+    "n": 13,
+    "title": "UK Capital Gains Tax for Individuals",
+    "difficulty": "hard",
+    "topics": [
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Outline the system of capital gains tax as it applies to individuals in the UK.",
+    "answer": "Tax is charged on the gain when an asset is disposed of for more than it cost. Some assets are exempt (e.g. private cars, main residence). Allowable costs of purchase, sale and enhancement reduce the gain. Losses are offset, and each individual has an annual exempt amount, which cannot be transferred, although spouses can transfer assets between themselves at no gain/no loss. The remaining gains are taxed at rates that depend on the individual's taxable income.",
+    "solution": "A capital gain arises when an asset is sold (disposed of) for more than it cost.\n- Some assets are exempt: for UK residents, private motor cars and the main private residence are free from capital gains tax.\n- The sale proceeds are reduced by the costs of the sale. The base cost is increased by the costs of purchase and by any expenditure that enhanced the asset's value while it was held.\n- Capital losses are offset against gains.\n- Each individual has an annual exempt amount. It cannot be transferred between spouses or civil partners, but assets can pass between them at no gain/no loss, so a couple can make use of both exemptions.\n- Net taxable gains above the exemption are taxed at a lower or a higher rate, depending on the individual's taxable income (historically 10%/20%, with higher rates for residential property; 18%/24% for disposals from 30 October 2024)."
+  },
+  {
+    "id": "cb1-14",
+    "subject": "cb1",
+    "n": 14,
+    "title": "Calculating Corporation Tax",
+    "difficulty": "hard",
+    "topics": [
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "open",
+    "prompt": "Explain how corporation tax on the annual profits of a company is calculated.",
+    "answer": "Start from the accounting profit, which covers income and capital gains. Add back disallowable expenses and depreciation; deduct capital allowances and special reliefs (e.g. R&D). Apply the corporation tax rate to the resulting taxable profits. Where there is a double taxation agreement, deduct foreign tax already paid, limited to the domestic tax on that income.",
+    "solution": "Companies pay corporation tax on their taxable profits, which include both income and capital gains. The starting point is the profit shown in the company's profit and loss statement, adjusted as follows:\n1. add back any expenses in the accounts that are not allowable for tax purposes\n2. deduct any special reliefs (e.g. for research and development)\n3. add back the depreciation charged and deduct capital allowances instead.\n\nThe taxable profits are then taxed at the corporation tax rate, which may change from year to year.\n\nIf the company has earned income or gains abroad and paid foreign tax, and a double taxation agreement applies, the foreign tax is offset against the domestic corporation tax liability. The offset is limited to the domestic tax that would have been payable on that income."
+  },
+  {
+    "id": "cb1-15",
+    "subject": "cb1",
+    "n": 15,
+    "title": "Marketability: Government Bonds vs Debentures",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Government bonds are more marketable than debenture stock. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "solution": "True. Marketability of debentures is lower than the marketability of government bonds because the debenture issues are smaller. Trading in a particular debenture can be infrequent."
+  },
+  {
+    "id": "cb1-16",
+    "subject": "cb1",
+    "n": 16,
+    "title": "Marketability: Eurobonds vs Ordinary Shares",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Eurobonds are more marketable than ordinary shares. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "solution": "False. Ordinary shares are the most common form of company finance and are the most marketable. Eurobonds are usually more marketable than other forms of debt finance because they are issued in larger amounts and are actively marketed by banks."
+  },
+  {
+    "id": "cb1-17",
+    "subject": "cb1",
+    "n": 17,
+    "title": "Return: Debentures vs Unsecured Loan Stock",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance",
+      "Cost of capital"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Debentures provide a higher return than unsecured loan stock. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "solution": "False. Debentures provide a lower expected return because they are the more secure form of company finance. Holders of unsecured loan stock take a greater risk and thus require a greater reward."
+  },
+  {
+    "id": "cb1-18",
+    "subject": "cb1",
+    "n": 18,
+    "title": "Income Yield of Convertible Loan Stock",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Convertible loan stock generally provides a lower income yield than conventional loan stock. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "solution": "True. Convertible loan stock generally provides a lower income than conventional loan stock because convertibles offer the prospect of dividend growth in the future. Investors are attracted by the prospect of dividend growth in the future and are thus willing to accept lower income in the short term."
+  },
+  {
+    "id": "cb1-19",
+    "subject": "cb1",
+    "n": 19,
+    "title": "Income Yield: Ordinary vs Convertible Preference Shares",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Ordinary shares generally provide a higher income yield than convertible preference shares. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "solution": "False. Convertible preference shares generally provide a higher income than ordinary shares because convertibles do not at present offer the benefit of dividend growth. An ordinary shareholder is willing to accept a lower initial income in return for dividend growth, whereas the holder of a convertible does not benefit from dividend growth at present and would require a higher income."
+  },
+  {
+    "id": "cb1-20",
+    "subject": "cb1",
+    "n": 20,
+    "title": "Are Warrants Loan Stock?",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Warrants are a form of loan stock. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "solution": "False. Warrants are not a form of loan stock. They are call options written by a company on its own stock. They are often issued in conjunction with a fixed-interest bond to make the bond more attractive to investors."
+  },
+  {
+    "id": "cb1-21",
+    "subject": "cb1",
+    "n": 21,
+    "title": "Executive Share Options as Warrants",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Executive share options are a form of warrant. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 0,
+    "solution": "True. Executive share options are options to buy the company’s shares. They are issued to senior management as part of an incentive package."
+  },
+  {
+    "id": "cb1-22",
+    "subject": "cb1",
+    "n": 22,
+    "title": "Risk: Eurobonds vs Debentures",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Eurobonds are less risky than debentures. (True/False)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answerIndex": 1,
+    "solution": "False. Debentures are secured on some or all of the assets of the company. Eurobonds are a form of unsecured loan stock and rank after debentures in a wind-up."
+  },
+  {
+    "id": "cb1-23",
+    "subject": "cb1",
+    "n": 23,
+    "title": "Eurobond Misconceptions",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements concerning Eurobonds is false?",
+    "options": [
+      "Eurobonds are often issued outside the country of the currency of issue.",
+      "Eurobonds are often issued outside the country of the borrower.",
+      "Eurosterling can be issued in London.",
+      "Eurobonds are only issued in Europe."
+    ],
+    "answerIndex": 3,
+    "solution": "The term ‘Euro’ is misleading (although the oldest, and still the main, markets are in Europe). The other statements are all correct."
+  },
+  {
+    "id": "cb1-24",
+    "subject": "cb1",
+    "n": 24,
+    "title": "Fixed-Charge Debenture Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "‘The lender’s security is a specified asset which the borrower cannot dispose of (without the lender’s permission). The lender can repossess upon default or appoint a receiver to intercept income (eg rent).’ This is a definition of what?",
+    "options": [
+      "Eurobond",
+      "Warrant",
+      "Fixed-charge debenture",
+      "Floating-charge debenture"
+    ],
+    "answerIndex": 2,
+    "solution": "Debentures can be either fixed-charge (or mortgage) debentures or floating-charge debentures. Fixed-charge debentures are secured against a particular asset."
+  },
+  {
+    "id": "cb1-25",
+    "subject": "cb1",
+    "n": 25,
+    "title": "Interest vs Dividends",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance",
+      "Taxation"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is correct?",
+    "options": [
+      "Interest payments are always greater than dividend payments.",
+      "Interest is paid out of pre-tax profit and dividends are paid out of post-tax profit.",
+      "Interest is paid on debentures and dividends are paid on unsecured loan stock.",
+      "Interest is taxable but dividends are not."
+    ],
+    "answerIndex": 1,
+    "solution": "Interest is paid on loan stock, whereas dividends are paid on equity. Interest could be greater than, equal to or less than dividend payments (though the overall return to equity is expected to be greater than the return to debt because equity is riskier for the investor). Interest payments are treated as an expense for the company and are therefore paid out of pre-tax profit. Dividends are paid out of post-tax profit. Both interest and dividends are taxable, though in some countries governments give at least some credit to the recipient for the tax that has already been paid by the company."
+  },
+  {
+    "id": "cb1-26",
+    "subject": "cb1",
+    "n": 26,
+    "title": "Ranking on a Winding-Up",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance",
+      "Capital structure"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following ranks lowest if a company is wound up?",
+    "options": [
+      "Eurobonds",
+      "Mortgage debentures",
+      "Floating-charge debentures",
+      "Preference shares"
+    ],
+    "answerIndex": 3,
+    "solution": "Eurobonds, mortgage debentures and floating-charge debentures are all loan stock. All loan stock holders are paid before preference shareholders, who rank just above ordinary shareholders."
+  },
+  {
+    "id": "cb1-27",
+    "subject": "cb1",
+    "n": 27,
+    "title": "Ordinary Shares and Risk Aversion",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "A highly risk-averse investor should NOT invest in ordinary shares because:",
+    "options": [
+      "ordinary shares offer a low expected return relative to other securities.",
+      "ordinary shareholders have the last entitlement in the event of a winding-up of the company.",
+      "they offer a low initial yield.",
+      "shareholders have pre-emptive rights."
+    ],
+    "answerIndex": 1,
+    "solution": "Ordinary shareholders have the last claim on a winding-up, so they bear the most risk. This is the reason a highly risk-averse investor should avoid them.\n- Ordinary shares offer a high, not a low, expected return relative to other securities.\n- A low initial yield and pre-emptive rights are not reasons for a risk-averse investor to avoid them."
+  },
+  {
+    "id": "cb1-28",
+    "subject": "cb1",
+    "n": 28,
+    "title": "Floating Charges",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Under a floating charge:",
+    "options": [
+      "the company may not, in the usual course of business, realise assets which are subject to the charge.",
+      "a default by the company will make the charge crystallise into a fixed charge.",
+      "specific assets are available to meet investors’ claims if the company defaults on interest or capital payments.",
+      "security is provided in the event that the borrower defaults on the final capital payment, but not in the event of default on the interest payments."
+    ],
+    "answerIndex": 1,
+    "solution": "A floating charge is over a class of assets (e.g. inventories) that the company may deal in during the normal course of business. On a default it crystallises into a fixed charge over the assets in the class at that time.\n- Being unable to realise the charged assets, and having specific assets earmarked, are features of a fixed charge.\n- The security covers default on interest payments as well as on the capital repayment."
+  },
+  {
+    "id": "cb1-29",
+    "subject": "cb1",
+    "n": 29,
+    "title": "Securities That Dilute Equity",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance",
+      "Capital structure"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following will NOT dilute the value of the equity in a business?",
+    "options": [
+      "Warrants",
+      "Eurobonds",
+      "Convertible loan stock",
+      "Executive stock options"
+    ],
+    "answerIndex": 1,
+    "solution": "Eurobonds do not have any effect on the number of shares issued. The other three could all cause an increase in the number of shares and therefore a dilution of the value of the equity in the business."
+  },
+  {
+    "id": "cb1-30",
+    "subject": "cb1",
+    "n": 30,
+    "title": "Conversion Premium per Share",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "A convertible bond gives the right to purchase 70 ordinary shares per £100 nominal. The market prices of the convertible bond and ordinary shares are £120 and 90 pence respectively. The conversion premium per share is:",
+    "options": [
+      "81p",
+      "125p",
+      "129p",
+      "171p"
+    ],
+    "answerIndex": 0,
+    "solution": "The conversion premium is the extra amount an investor pays for a share by buying it through the convertible rather than directly.\n\nCost per share via the convertible = £120 / 70 = £1.714, i.e. 171.4p.\n\nConversion premium per share = 171.4p − 90p = 81.4p, which rounds to 81p."
+  },
+  {
+    "id": "cb1-31",
+    "subject": "cb1",
+    "n": 31,
+    "title": "Methods of Obtaining a Listing",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following could NOT result in a company obtaining a stock exchange listing?",
+    "options": [
+      "an introduction",
+      "a rights issue",
+      "an offer for subscription",
+      "a placing"
+    ],
+    "answerIndex": 1,
+    "solution": "Rights issues are used by companies that are already listed, to raise further capital from existing shareholders. An introduction, an offer for subscription and a placing are all methods of obtaining a listing."
+  },
+  {
+    "id": "cb1-32",
+    "subject": "cb1",
+    "n": 32,
+    "title": "Placing",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "An arrangement whereby a company’s shares obtain a quotation on the London Stock Exchange, and the shares that are made available are bought by a small number of institutional investors, is known as:",
+    "options": [
+      "a placing.",
+      "an offer for subscription.",
+      "an introduction.",
+      "an offer for sale."
+    ],
+    "answerIndex": 0,
+    "solution": "All four are methods of obtaining a listing. A subscription and offer for sale are both offers made to the public (directly by the company itself, or via an issuing house respectively). An introduction does not make any shares available."
+  },
+  {
+    "id": "cb1-33",
+    "subject": "cb1",
+    "n": 33,
+    "title": "Par Value of an Ordinary Share",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "The main significance of the par value of an ordinary share is that:",
+    "options": [
+      "it is the minimum price at which shares can be traded on the Stock Exchange.",
+      "it is the minimum price at which shares can be issued by the company.",
+      "it is the amount at which the shares will be redeemed.",
+      "at prices above the par value a company must have a scrip issue."
+    ],
+    "answerIndex": 1,
+    "solution": "Shares cannot be issued at a discount to their par (nominal) value.\n- Market trading prices are not constrained by the par value.\n- Ordinary shares are usually irredeemable, so the par value is not a redemption amount.\n- Companies are never required to make a scrip issue because the price exceeds par."
+  },
+  {
+    "id": "cb1-34",
+    "subject": "cb1",
+    "n": 34,
+    "title": "Theoretical Ex-Rights Price",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "The market price of a company’s shares is currently £7 per share. If it has a 1-for-3 rights issue at £5, the expected ex-rights price of the shares will be:",
+    "options": [
+      "£7.00",
+      "£6.50",
+      "£5.50",
+      "£5.00"
+    ],
+    "answerIndex": 1,
+    "solution": "For a 1-for-3 issue, the holder of 3 shares at £7 buys 1 new share at £5:\n$$\\text{TERP} = \\frac{3 \\times 7 + 1 \\times 5}{3 + 1} = \\frac{26}{4} = 6.50$$\nso the expected ex-rights price is £6.50."
+  },
+  {
+    "id": "cb1-35",
+    "subject": "cb1",
+    "n": 35,
+    "title": "Finance Against Late-Paying Customers",
+    "difficulty": "medium",
+    "topics": [
+      "Working capital",
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is most often used by companies that are suffering from cashflow problems arising from late-paying customers?",
+    "options": [
+      "hire purchase",
+      "bills of exchange",
+      "invoice discounting",
+      "trade credit"
+    ],
+    "answerIndex": 2,
+    "solution": "Invoice discounting gives a company cash straight away against its unpaid invoices. A finance house advances a percentage of the invoice value. Unlike factoring, the company keeps control of its sales ledger and its contact with customers, and the arrangement is usually confidential. When the customers pay, the advance is repaid to the finance house with interest."
+  },
+  {
+    "id": "cb1-36",
+    "subject": "cb1",
+    "n": 36,
+    "title": "Types of Crowdfunding",
+    "difficulty": "easy",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is NOT a type of crowdfunding?",
+    "options": [
+      "donation-based",
+      "pre-payment",
+      "loan-based",
+      "non-recourse"
+    ],
+    "answerIndex": 3,
+    "solution": "The fourth type of crowdfunding mentioned is investment-based."
+  },
+  {
+    "id": "cb1-37",
+    "subject": "cb1",
+    "n": 37,
+    "title": "Project Finance",
+    "difficulty": "medium",
+    "topics": [
+      "Sources of finance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about project finance is true?",
+    "options": [
+      "It entails the formation of a new legal entity.",
+      "It is a recourse method of financing.",
+      "It provides on-balance-sheet financing.",
+      "It always involves the public sector."
+    ],
+    "answerIndex": 0,
+    "solution": "Project finance is a non-recourse, off-balance sheet method of obtaining finance. It often involves public-private partnerships, but does not have to involve the public sector."
+  },
+  {
+    "id": "cb1-38",
+    "subject": "cb1",
+    "n": 38,
+    "title": "Buying a Call Option",
+    "difficulty": "easy",
+    "topics": [
+      "Risk management"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "The most likely explanation for an investor buying a call option is that they expect:",
+    "options": [
+      "the value of the underlying security to increase.",
+      "the value of the underlying security to fall.",
+      "interest rates to rise.",
+      "a stock market crash."
+    ],
+    "answerIndex": 0,
+    "solution": "A call option gives the buyer the right to buy the underlying security at a set price. This will be worth doing if the market price on the expiry date is higher than the exercise price. If interest rates rise, we might expect the value of shares to fall, so it would not be worth buying a call option. (It might be worth buying a put option, though.)"
+  },
+  {
+    "id": "cb1-39",
+    "subject": "cb1",
+    "n": 39,
+    "title": "Margin on Futures and Options",
+    "difficulty": "medium",
+    "topics": [
+      "Risk management"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Margin is:",
+    "options": [
+      "the cost of buying an option.",
+      "the cost of buying a future.",
+      "a deposit paid to the seller of a future or writer of an option by the purchaser.",
+      "a deposit paid to the clearing house by the buyer and seller of a future and the writer of an option."
+    ],
+    "answerIndex": 3,
+    "solution": "Margin is a deposit paid to the clearing house by both parties to a future and by the writer of an option, who could all make losses. It protects the clearing house against credit loss. The buyer of an option pays a premium and has no further liability, so they do not post margin."
+  },
+  {
+    "id": "cb1-40",
+    "subject": "cb1",
+    "n": 40,
+    "title": "Hedging Rising Interest Rates",
+    "difficulty": "hard",
+    "topics": [
+      "Risk management"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following strategies would NOT help a company to reduce its exposure to rising interest rates?",
+    "options": [
+      "the negotiation of an interest rate swap",
+      "the purchase of a put option on an interest rate future",
+      "the purchase of a bond future",
+      "the sale of an interest rate future"
+    ],
+    "answerIndex": 2,
+    "solution": "The company could swap a floating interest rate for a fixed interest rate to protect it from rising interest rates. It could sell an interest rate future. If interest rates rise, the price of the interest rate future falls and thus a profit could be made on the future to offset the rise in interest rates. By buying a put option on an interest rate future, it is buying the option to sell. It will exercise this right if interest rates rise. It would not buy a bond future. If interest rates rise, the price of the bond future will fall. It would make a loss on the future as well as suffering from higher interest rates."
+  },
+  {
+    "id": "cb1-41",
+    "subject": "cb1",
+    "n": 41,
+    "title": "Setting Accounting Standards",
+    "difficulty": "easy",
+    "topics": [
+      "Financial statements"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is responsible for developing, issuing and withdrawing accounting standards?",
+    "options": [
+      "International Accounting Standards Board",
+      "Auditing Practices Board",
+      "International Financial Reporting Standards",
+      "Department of Trade and Industry"
+    ],
+    "answerIndex": 0,
+    "solution": "The International Accounting Standards Board is responsible for developing, issuing and withdrawing accounting standards."
+  },
+  {
+    "id": "cb1-42",
+    "subject": "cb1",
+    "n": 42,
+    "title": "Lower of Cost and Net Realisable Value",
+    "difficulty": "easy",
+    "topics": [
+      "Financial statements",
+      "Working capital"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Inventories (ie stock or raw materials used by a company) are valued at the lower of cost or net realisable value. This is an application of which accounting concept?",
+    "options": [
+      "cost concept",
+      "accruals concept",
+      "prudence concept",
+      "realisation concept"
+    ],
+    "answerIndex": 2,
+    "solution": "According to the prudence concept, assets should not be overestimated. If there is some uncertainty about the value of the inventories (eg Easter eggs after Easter!) and it is felt that the sale value is lower than the cost value then the lower (net realisable) value should be used in the statement of financial position."
+  },
+  {
+    "id": "cb1-43",
+    "subject": "cb1",
+    "n": 43,
+    "title": "Purpose of the External Audit",
+    "difficulty": "easy",
+    "topics": [
+      "Financial statements",
+      "Corporate structure & governance"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements most accurately describes the main purpose of the external audit of a limited company?",
+    "options": [
+      "To review the company’s accounting systems and related internal controls.",
+      "To assist the directors to prepare the company’s annual financial statements.",
+      "To express an opinion on the truth and fairness of the company’s annual financial statements.",
+      "To prevent and detect fraud within the company."
+    ],
+    "answerIndex": 2,
+    "solution": "The external auditors report to the shareholders on whether, in their opinion, the financial statements give a true and fair view and have been properly prepared in accordance with the relevant accounting framework and company law. Reviewing internal controls is part of the audit work, and auditors should be alert to fraud, but neither is the main purpose. Preparing the accounts is the directors' responsibility."
+  },
+  {
+    "id": "cb1-44",
+    "subject": "cb1",
+    "n": 44,
+    "title": "Accruals Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Financial statements"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "‘Expenses are recognised when they are incurred. It is not necessary to wait until the bills are paid.’ This statement refers to the:",
+    "options": [
+      "realisation concept",
+      "accruals concept",
+      "going concern concept",
+      "money measurement concept"
+    ],
+    "answerIndex": 1,
+    "solution": "The accruals concept."
+  },
+  {
+    "id": "cb1-45",
+    "subject": "cb1",
+    "n": 45,
+    "title": "Definition of a Current Asset",
+    "difficulty": "medium",
+    "topics": [
+      "Financial statements",
+      "Working capital"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "The term ‘current asset’ as used in company reports and accounts describes cash and other assets:",
+    "options": [
+      "that are marketable.",
+      "that the company plans to dispose of within the next financial year.",
+      "that are tangible.",
+      "that will be converted into cash in the normal course of business."
+    ],
+    "answerIndex": 3,
+    "solution": "Land is an example of an asset that is marketable, tangible and a company may have plans to sell it. However, it is a non-current, not a current, asset."
+  },
+  {
+    "id": "cb1-46",
+    "subject": "cb1",
+    "n": 46,
+    "title": "What Inventories Include",
+    "difficulty": "easy",
+    "topics": [
+      "Financial statements",
+      "Working capital"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "The term ‘inventories’ as used in company reports and accounts describes:",
+    "options": [
+      "finished goods for resale only.",
+      "work-in-progress and finished goods for resale only.",
+      "raw materials, work-in-progress and finished goods for resale only.",
+      "raw materials and consumables, work-in-progress and finished goods."
+    ],
+    "answerIndex": 3,
+    "solution": "Raw materials and consumables, work-in-progress and finished goods."
+  },
+  {
+    "id": "cb1-47",
+    "subject": "cb1",
+    "n": 47,
+    "title": "Non-Current Assets",
+    "difficulty": "medium",
+    "topics": [
+      "Financial statements"
+    ],
+    "exams": [
+      "ifoa-cb1",
+      "assa-a113"
+    ],
+    "type": "mcq",
+    "prompt": "What are non-current assets?",
+    "options": [
+      "tangible assets with an expected life of more than one year",
+      "tangible assets which are not held for sale in the normal course of business",
+      "assets which are not held for sale in the normal course of business",
+      "machines, factories and other immobile assets which are not intended for resale"
+    ],
+    "answerIndex": 2,
+    "solution": "Non-current assets may be tangible or intangible. They may also be mobile (eg a lorry)."
+  }
+]

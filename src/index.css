@@ -1,0 +1,525 @@
+@import 'tailwindcss';
+@import '@fontsource/bungee/400.css';
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+@import 'katex/dist/katex.min.css';
+
+/* =====================================================================
+   Arcade design system (one dark theme).
+   Type and components follow the gitmastery.me "gm" system: dark navy
+   surfaces and bright faces, each with a darker "edge" used for the solid
+   3-D drop under buttons and cards. "Emerald & gold" palette (no purple);
+   the token names are roles:
+     lime  = gold    #ffd23f  main highlight, primary buttons, the ribbon
+     grape = emerald #11805b  brand surfaces, secondary buttons, active tabs
+     gold  = orange  #fb5607  coins and streaks
+     coral = pink    #ff006e  errors
+     cyan  = sky     #4cc9f0  info and the focus ring
+   Difficulty has its own colours (--gm-dif-*), matching the mascots'
+   glasses: easy green, medium yellow, hard red.
+   ===================================================================== */
+:root {
+  color-scheme: dark;
+  --gm-void: #0a0d14;
+  --gm-night: #121723;
+  --gm-deep: #1b2231;
+  --gm-line: #2c3547;
+  --gm-grape: #11805b;
+  --gm-grape-edge: #0a5038;
+  --gm-grape-hi: #2fbf86;
+  --gm-ink: #f3f5fa;
+  --gm-ink-soft: #c4cad8;
+  --gm-ink-dim: #8c95a8;
+  --gm-lime: #ffd23f;
+  --gm-lime-edge: #c79a00;
+  --gm-gold: #fb5607;
+  --gm-gold-edge: #b43a00;
+  --gm-coral: #ff006e;
+  --gm-coral-edge: #b2004d;
+  --gm-cyan: #4cc9f0;
+  --gm-cyan-edge: #1d8cb5;
+  /* Difficulty colours: green, yellow and red, like the mascots' glasses. */
+  --gm-dif-easy: lab(90.3475% -37.9161 68.5889);
+  --gm-dif-easy-edge: lab(60.0598% -39.6958 51.7028);
+  --gm-dif-medium: lab(84.0144% 9.93231 67.156);
+  --gm-dif-medium-edge: lab(55.6369% 21.1966 58.7498);
+  --gm-dif-hard: lab(68.1082% 53.9896 26.9651);
+  --gm-dif-hard-edge: lab(42.6622% 51.0115 26.5763);
+  --ease-out-expo-v: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --font-sans: 'Geist Variable', 'GeistSans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-display: 'Bungee', 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-gm-void: var(--gm-void);
+  --color-gm-night: var(--gm-night);
+  --color-gm-deep: var(--gm-deep);
+  --color-gm-line: var(--gm-line);
+  --color-gm-grape: var(--gm-grape);
+  --color-gm-grape-edge: var(--gm-grape-edge);
+  --color-gm-grape-hi: var(--gm-grape-hi);
+  --color-gm-ink: var(--gm-ink);
+  --color-gm-ink-soft: var(--gm-ink-soft);
+  --color-gm-ink-dim: var(--gm-ink-dim);
+  --color-gm-lime: var(--gm-lime);
+  --color-gm-lime-edge: var(--gm-lime-edge);
+  --color-gm-gold: var(--gm-gold);
+  --color-gm-gold-edge: var(--gm-gold-edge);
+  --color-gm-coral: var(--gm-coral);
+  --color-gm-coral-edge: var(--gm-coral-edge);
+  --color-gm-cyan: var(--gm-cyan);
+  --color-gm-cyan-edge: var(--gm-cyan-edge);
+  --color-dif-easy: var(--gm-dif-easy);
+  --color-dif-easy-edge: var(--gm-dif-easy-edge);
+  --color-dif-medium: var(--gm-dif-medium);
+  --color-dif-medium-edge: var(--gm-dif-medium-edge);
+  --color-dif-hard: var(--gm-dif-hard);
+  --color-dif-hard-edge: var(--gm-dif-hard-edge);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-marquee: gm-marquee 38s linear infinite;
+  --animate-marquee-reverse: gm-marquee-reverse 38s linear infinite;
+  --animate-caret: gm-caret 1.05s steps(1) infinite;
+}
+
+@layer base {
+  html {
+    background: var(--gm-void);
+    color: var(--gm-ink);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gm-line) transparent;
+  }
+  body {
+    @apply min-h-dvh bg-gm-void font-sans text-base leading-6 text-gm-ink;
+  }
+  ::selection {
+    background: var(--gm-grape);
+    color: var(--gm-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--gm-cyan);
+    outline-offset: 2px;
+  }
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+/* ---------- arcade button: solid "lift" drop that presses down ---------- */
+.btn-arcade {
+  --btn-lift: 5px;
+  --btn-face: var(--gm-night);
+  --btn-edge: var(--gm-line);
+  --btn-ink: var(--gm-ink);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.25rem;
+  padding: 0 1.5rem;
+  border: 2px solid var(--btn-edge);
+  border-radius: 1rem;
+  background: var(--btn-face);
+  color: var(--btn-ink);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 var(--btn-lift) 0 var(--btn-edge);
+  transform: translateY(0);
+  transition:
+    transform 0.16s var(--ease-out-expo-v),
+    box-shadow 0.16s var(--ease-out-expo-v),
+    filter 0.16s var(--ease-out-expo-v);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-arcade:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 calc(var(--btn-lift) + 2px) 0 var(--btn-edge);
+  transform: translateY(-2px);
+}
+.btn-arcade:active {
+  transform: translateY(calc(var(--btn-lift) - 1px));
+  box-shadow: 0 1px 0 var(--btn-edge);
+}
+.btn-arcade:focus-visible {
+  outline: 3px solid var(--gm-cyan);
+  outline-offset: 4px;
+}
+.btn-arcade:disabled,
+.btn-arcade[aria-disabled='true'] {
+  cursor: not-allowed;
+  filter: saturate(0.3) brightness(0.8);
+  transform: none;
+}
+.btn-arcade-sm {
+  --btn-lift: 4px;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  border-radius: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.btn-arcade-xs {
+  --btn-lift: 3px;
+  min-height: 2.25rem;
+  padding: 0 0.75rem;
+  gap: 0.4rem;
+  border-radius: 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.btn-arcade-lime {
+  --btn-face: var(--gm-lime);
+  --btn-edge: var(--gm-lime-edge);
+  --btn-ink: var(--gm-void);
+}
+.btn-arcade-grape {
+  --btn-face: var(--gm-grape);
+  --btn-edge: var(--gm-grape-edge);
+  --btn-ink: var(--gm-ink);
+}
+.btn-arcade-gold {
+  --btn-face: var(--gm-gold);
+  --btn-edge: var(--gm-gold-edge);
+  --btn-ink: var(--gm-void);
+}
+.btn-arcade-cyan {
+  --btn-face: var(--gm-cyan);
+  --btn-edge: var(--gm-cyan-edge);
+  --btn-ink: var(--gm-void);
+}
+.btn-arcade-coral {
+  --btn-face: var(--gm-coral);
+  --btn-edge: var(--gm-coral-edge);
+  --btn-ink: var(--gm-void);
+}
+.btn-arcade-night {
+  --btn-face: var(--gm-night);
+  --btn-edge: var(--gm-line);
+  --btn-ink: var(--gm-ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-arcade {
+    transition: filter 0.12s linear;
+  }
+  .btn-arcade:hover {
+    box-shadow: 0 var(--btn-lift) 0 var(--btn-edge);
+    transform: none;
+  }
+}
+
+/* ---------- surfaces ---------- */
+.gm-panel {
+  background: var(--gm-night);
+  border: 2px solid var(--gm-line);
+  border-radius: 1.4rem;
+  color: var(--gm-ink);
+}
+.gm-panel-lift {
+  box-shadow: 0 6px 0 var(--gm-line);
+}
+.gm-inset {
+  background: var(--gm-void);
+  border: 2px solid var(--gm-line);
+  border-radius: 1rem;
+}
+.gm-card {
+  background: var(--gm-night);
+  border: 2px solid var(--gm-line);
+  border-radius: 1.4rem;
+  box-shadow: 0 5px 0 var(--gm-line);
+  transition:
+    transform 0.15s var(--ease-out-expo-v),
+    box-shadow 0.15s var(--ease-out-expo-v),
+    border-color 0.15s var(--ease-out-expo-v);
+}
+a.gm-card:hover,
+button.gm-card:hover {
+  border-color: var(--gm-grape-hi);
+  transform: translateY(-4px);
+  box-shadow: 0 9px 0 var(--gm-line);
+}
+.gm-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.125rem 0.625rem;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.gm-field {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 2px solid var(--gm-line);
+  border-radius: 0.85rem;
+  background: var(--gm-void);
+  color: var(--gm-ink);
+  font-size: 1rem;
+  line-height: 1.4;
+  transition:
+    border-color 0.18s var(--ease-out-expo-v),
+    background 0.18s var(--ease-out-expo-v);
+}
+.gm-field::placeholder {
+  color: var(--gm-ink-dim);
+}
+.gm-field:hover {
+  border-color: var(--gm-grape-hi);
+}
+.gm-field:focus {
+  outline: none;
+  border-color: var(--gm-cyan);
+}
+.gm-field:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.gm-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gm-line) transparent;
+}
+.gm-dots {
+  background-image: radial-gradient(var(--gm-grape-edge) 1.5px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+.gm-dots-line {
+  background-image: radial-gradient(var(--gm-line) 1px, transparent 1.2px);
+  background-size: 14px 14px;
+}
+
+/* Tabs / segmented control (the "Play with: Terminal | Visual" switch). */
+.gm-tabs {
+  display: inline-flex;
+  max-width: 100%;
+  gap: 0.25rem;
+  overflow-x: auto;
+  padding: 0.25rem;
+  border: 2px solid var(--gm-line);
+  border-radius: 0.95rem;
+  background: var(--gm-night);
+}
+.gm-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  border-radius: 0.7rem;
+  color: var(--gm-ink-soft);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s var(--ease-out-expo-v),
+    color 0.15s var(--ease-out-expo-v);
+}
+.gm-tab:hover {
+  color: var(--gm-ink);
+  background: var(--gm-deep);
+}
+.gm-tab[aria-selected='true'],
+.gm-tab[aria-pressed='true'] {
+  background: var(--gm-grape);
+  color: var(--gm-ink);
+}
+
+/* ---------- long-form prose (guides, projects, coding descriptions) ---------- */
+.prose-ae {
+  color: var(--gm-ink-soft);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.prose-ae > * + * {
+  margin-top: 1em;
+}
+.prose-ae h2 {
+  color: var(--gm-ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 2.2em;
+}
+.prose-ae h3 {
+  color: var(--gm-ink);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1.8em;
+}
+.prose-ae h2 + *,
+.prose-ae h3 + * {
+  margin-top: 0.6em;
+}
+.prose-ae strong {
+  color: var(--gm-ink);
+  font-weight: 700;
+}
+.prose-ae a {
+  color: var(--gm-lime);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--gm-lime-edge);
+}
+.prose-ae a:hover {
+  text-decoration-color: var(--gm-lime);
+}
+.prose-ae ul,
+.prose-ae ol {
+  padding-left: 1.4em;
+}
+.prose-ae ul {
+  list-style: disc;
+}
+.prose-ae ol {
+  list-style: decimal;
+}
+.prose-ae li + li {
+  margin-top: 0.4em;
+}
+.prose-ae li::marker {
+  color: var(--gm-grape-hi);
+}
+.prose-ae code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  background: var(--gm-void);
+  border: 2px solid var(--gm-line);
+  border-radius: 0.45rem;
+  padding: 0.05em 0.35em;
+  color: var(--gm-ink);
+}
+.prose-ae pre {
+  background: var(--gm-void);
+  border: 2px solid var(--gm-line);
+  border-radius: 1rem;
+  padding: 14px 16px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+.prose-ae pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 0.85rem;
+}
+.prose-ae table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.92em;
+}
+.prose-ae th,
+.prose-ae td {
+  border: 2px solid var(--gm-line);
+  padding: 8px 12px;
+  text-align: left;
+}
+.prose-ae th {
+  color: var(--gm-ink);
+  background: var(--gm-deep);
+  font-weight: 700;
+}
+.prose-ae blockquote {
+  border-left: 4px solid var(--gm-grape);
+  padding-left: 1em;
+}
+.prose-ae hr {
+  border-color: var(--gm-line);
+  border-top-width: 2px;
+}
+.prose-ae .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+.katex {
+  font-size: 1.06em;
+}
+}
+
+/* Lime "tape" marquee. */
+@keyframes gm-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+}
+@keyframes gm-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes gm-caret {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes demo-progress {
+  from {
+    transform: scaleX(0.04);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+/* Modal dialogs (native <dialog>): void scrim, zoom-in like the gm modals. */
+.gm-dialog::backdrop {
+  background: color-mix(in lab, var(--gm-void) 85%, transparent);
+}
+.gm-dialog[open] {
+  animation: gm-dialog-in 0.2s var(--ease-out-expo-v);
+}
+.gm-dialog[open]::backdrop {
+  animation: gm-fade-in 0.2s linear;
+}
+@keyframes gm-dialog-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+@keyframes gm-fade-in {
+  from {
+    opacity: 0;
+  }
+}

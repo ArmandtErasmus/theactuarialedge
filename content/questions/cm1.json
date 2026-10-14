@@ -1,0 +1,4319 @@
+[
+  {
+    "id": "cm1-1",
+    "subject": "cm1",
+    "n": 1,
+    "title": "Discount Rate from Interest Rate",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly describes the relationship between the effective annual rate of interest i and the effective annual rate of discount d over one period?",
+    "options": [
+      "$d = \\dfrac{i}{1+i}$",
+      "$d = 1 - i$",
+      "$d = i^2$",
+      "$d = \\dfrac{1}{i}$"
+    ],
+    "answerIndex": 0,
+    "solution": "If $i$ is the effective annual interest rate, then the present value of 1 due in one year is $v = 1/(1+i)$. The effective discount rate is $d = 1 - v = 1 - \\frac{1}{1+i} = \\frac{i}{1+i}$."
+  },
+  {
+    "id": "cm1-2",
+    "subject": "cm1",
+    "n": 2,
+    "title": "Equivalent Effective Discount Rate",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An investment earns interest at an annual effective rate of 6%. Calculate the equivalent annual effective discount rate (to 4 decimal places).",
+    "answer": "0.0566",
+    "solution": "Using $d = \\frac{i}{1+i}$:\n$d = \\frac{0.06}{1.06} = 0.05660377 \\approx 0.0566$."
+  },
+  {
+    "id": "cm1-3",
+    "subject": "cm1",
+    "n": 3,
+    "title": "Force of Interest and Effective Rate",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly expresses the relationship between the force of interest $\\delta$ and the effective annual interest rate $i$?",
+    "options": [
+      "$1 + i = e^{\\delta}$",
+      "$i = e^{-\\delta}$",
+      "$\\delta = 1 + i$",
+      "$\\delta = i^2$"
+    ],
+    "answerIndex": 0,
+    "solution": "The force of interest satisfies $1+i = e^{\\delta}$, so $\\delta = \\ln(1+i)$."
+  },
+  {
+    "id": "cm1-4",
+    "subject": "cm1",
+    "n": 4,
+    "title": "Effective Rate from Force of Interest",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "If the force of interest is δ = 0.05, calculate the equivalent annual effective rate of interest i (to 4 decimal places).",
+    "answer": "0.0513",
+    "solution": "Since $1+i = e^{\\delta}$:\n$i = e^{0.05} - 1 = 1.051271 - 1 = 0.051271 \\approx 0.0513$."
+  },
+  {
+    "id": "cm1-5",
+    "subject": "cm1",
+    "n": 5,
+    "title": "Compound Interest Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about compound interest is correct?",
+    "options": [
+      "Interest is earned on both the original principal and previously earned interest",
+      "Interest is earned only on the original principal",
+      "Interest is deducted from the principal each period",
+      "The accumulated value increases linearly over time"
+    ],
+    "answerIndex": 0,
+    "solution": "Under compound interest, interest is earned on accumulated balances, causing exponential growth."
+  },
+  {
+    "id": "cm1-6",
+    "subject": "cm1",
+    "n": 6,
+    "title": "Accumulating a Single Sum",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An amount of 1 is invested for 5 years at an annual effective interest rate of 4%. Calculate the accumulated value (to 4 decimal places).",
+    "answer": "1.2167",
+    "solution": "Accumulated value: $(1.04)^5 = 1.2166529 \\approx 1.2167$."
+  },
+  {
+    "id": "cm1-7",
+    "subject": "cm1",
+    "n": 7,
+    "title": "Time Value of Money",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the time value of money?",
+    "options": [
+      "A unit of money today is worth more than the same unit in the future",
+      "Money has the same value regardless of time",
+      "Future money is always worth more than present money",
+      "Time value only applies under inflation"
+    ],
+    "answerIndex": 0,
+    "solution": "The time value of money reflects preference for earlier receipt due to earning potential and uncertainty."
+  },
+  {
+    "id": "cm1-8",
+    "subject": "cm1",
+    "n": 8,
+    "title": "Present Value of a Single Payment",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A payment of 100 is due in 3 years. The annual effective interest rate is 7%. Calculate the present value (to 2 decimal places).",
+    "answer": "81.63",
+    "solution": "Present value: $100 \\times (1.07)^{-3} = 100 / 1.225043 = 81.6340 \\approx 81.63$."
+  },
+  {
+    "id": "cm1-9",
+    "subject": "cm1",
+    "n": 9,
+    "title": "Accumulation Under Constant Force",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following represents the accumulation function $A(t)$ under a constant force of interest $\\delta$?",
+    "options": [
+      "$A(t) = e^{\\delta t}$",
+      "$A(t) = 1 + \\delta t$",
+      "$A(t) = (1+t)^{\\delta}$",
+      "$A(t) = \\delta^t$"
+    ],
+    "answerIndex": 0,
+    "solution": "With constant force of interest, accumulation follows $A(t) = e^{\\delta t}$."
+  },
+  {
+    "id": "cm1-10",
+    "subject": "cm1",
+    "n": 10,
+    "title": "Meaning of Discounting",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best explains the meaning of discounting?",
+    "options": [
+      "Finding the present value of a future amount",
+      "Calculating future value of a present amount",
+      "Subtracting interest from capital",
+      "Ignoring the time value of money"
+    ],
+    "answerIndex": 0,
+    "solution": "Discounting converts future cashflows into their present values."
+  },
+  {
+    "id": "cm1-11",
+    "subject": "cm1",
+    "n": 11,
+    "title": "Constant Force from Growth",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An investment grows from 100 to 160 over 8 years at a constant force of interest. Calculate δ (to 4 decimal places).",
+    "answer": "0.0588",
+    "solution": "Using $160 = 100e^{8\\delta}$:\n$e^{8\\delta} = 1.6 \\Rightarrow \\delta = \\dfrac{\\ln 1.6}{8} = \\dfrac{0.470004}{8} = 0.0587505$.\nTo 4 decimal places, $\\delta = 0.0588$."
+  },
+  {
+    "id": "cm1-12",
+    "subject": "cm1",
+    "n": 12,
+    "title": "Simple Interest Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about simple interest is correct?",
+    "options": [
+      "Interest is calculated only on the original principal",
+      "Interest grows exponentially",
+      "Interest is earned on accumulated interest",
+      "Simple interest is the standard assumption in finance"
+    ],
+    "answerIndex": 0,
+    "solution": "Simple interest accumulates linearly since interest is earned only on the principal."
+  },
+  {
+    "id": "cm1-13",
+    "subject": "cm1",
+    "n": 13,
+    "title": "Annuity-Immediate Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes an annuity-immediate?",
+    "options": [
+      "A sequence of payments made at the end of each period",
+      "A sequence of payments made at the beginning of each period",
+      "A single payment made at maturity",
+      "Payments made continuously"
+    ],
+    "answerIndex": 0,
+    "solution": "An annuity-immediate pays at the end of each period."
+  },
+  {
+    "id": "cm1-14",
+    "subject": "cm1",
+    "n": 14,
+    "title": "PV of a Level Annuity-Immediate",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the present value of an annuity-immediate paying 1 per year for 10 years at an annual effective interest rate of 5% (to 4 decimal places).",
+    "answer": "7.7217",
+    "solution": "$a_{\\overline{10}|} = \\dfrac{1 - (1.05)^{-10}}{0.05} = \\dfrac{1 - 0.613913}{0.05} = 7.72173 \\approx 7.7217$."
+  },
+  {
+    "id": "cm1-15",
+    "subject": "cm1",
+    "n": 15,
+    "title": "Term Structure Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Term structure"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines the term structure of interest rates?",
+    "options": [
+      "The relationship between interest rates and time to maturity",
+      "The relationship between risk and return",
+      "The variation of rates across institutions",
+      "The pattern of dividend payments over time"
+    ],
+    "answerIndex": 0,
+    "solution": "The term structure describes how yields vary with maturity."
+  },
+  {
+    "id": "cm1-16",
+    "subject": "cm1",
+    "n": 16,
+    "title": "Drivers of the Term Structure",
+    "difficulty": "easy",
+    "topics": [
+      "Term structure"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a factor influencing the term structure of interest rates?",
+    "options": [
+      "Expectations of future interest rates",
+      "The colour of banknotes",
+      "Number of ATMs in a country",
+      "The accounting year-end"
+    ],
+    "answerIndex": 0,
+    "solution": "Expectations about future rates strongly influence the yield curve."
+  },
+  {
+    "id": "cm1-17",
+    "subject": "cm1",
+    "n": 17,
+    "title": "Duration Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines duration?",
+    "options": [
+      "A measure of sensitivity of a cashflow's value to changes in interest rates",
+      "The total time until the last payment",
+      "The maturity of a bond",
+      "The amount of interest earned"
+    ],
+    "answerIndex": 0,
+    "solution": "Duration measures interest rate sensitivity of a cashflow's present value."
+  },
+  {
+    "id": "cm1-18",
+    "subject": "cm1",
+    "n": 18,
+    "title": "Convexity Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes convexity?",
+    "options": [
+      "The curvature of the price-yield relationship",
+      "The slope of the yield curve",
+      "The level of interest rates",
+      "The average maturity of payments"
+    ],
+    "answerIndex": 0,
+    "solution": "Convexity captures the curvature in the relationship between price and yield."
+  },
+  {
+    "id": "cm1-19",
+    "subject": "cm1",
+    "n": 19,
+    "title": "Redington's Duration Condition",
+    "difficulty": "easy",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is one of Redington's conditions for immunisation?",
+    "options": [
+      "The duration of assets equals the duration of liabilities",
+      "Assets must exceed liabilities at all times",
+      "Interest rates must be constant",
+      "Cashflows must be continuous"
+    ],
+    "answerIndex": 0,
+    "solution": "One key Redington condition is matching durations of assets and liabilities."
+  },
+  {
+    "id": "cm1-20",
+    "subject": "cm1",
+    "n": 20,
+    "title": "Purpose of Immunisation",
+    "difficulty": "easy",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes immunisation?",
+    "options": [
+      "Protecting a portfolio from small changes in interest rates",
+      "Maximising return at any cost",
+      "Eliminating all investment risk",
+      "Holding only cash instruments"
+    ],
+    "answerIndex": 0,
+    "solution": "Immunisation reduces sensitivity of net asset value to interest rate changes."
+  },
+  {
+    "id": "cm1-21",
+    "subject": "cm1",
+    "n": 21,
+    "title": "Checking Redington's Conditions",
+    "difficulty": "medium",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "An insurer's assets and liabilities have equal present values. The assets have (volatility-based) duration 5 and convexity 40; the liabilities have duration 5 and convexity 30. Which of Redington's duration and convexity conditions are satisfied?",
+    "options": [
+      "The duration condition only",
+      "The convexity condition only",
+      "Both the duration and convexity conditions",
+      "Neither condition"
+    ],
+    "answerIndex": 2,
+    "solution": "Redington's conditions (at the current rate) are:\n1. $PV_A = PV_L$ (given).\n2. Duration of assets = duration of liabilities: $5 = 5$, satisfied.\n3. Convexity of assets > convexity of liabilities: $40 > 30$, satisfied.\nSo both the duration and convexity conditions hold, and the insurer is immunised against small changes in interest rates."
+  },
+  {
+    "id": "cm1-22",
+    "subject": "cm1",
+    "n": 22,
+    "title": "Forward Rates Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Term structure"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes forward rates?",
+    "options": [
+      "Implied future interest rates derived from spot rates",
+      "Interest rates paid on forward contracts only",
+      "Historical interest rates",
+      "The average of past spot rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Forward rates represent market-implied future interest rates."
+  },
+  {
+    "id": "cm1-23",
+    "subject": "cm1",
+    "n": 23,
+    "title": "Forward Rate from Spot Rates",
+    "difficulty": "easy",
+    "topics": [
+      "Term structure"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "If the 1-year spot rate is 4% and the 2-year spot rate is 5%, calculate the 1-year forward rate starting in one year (to 4 decimals).",
+    "answer": "0.0601",
+    "solution": "$(1.05)^2 = (1.04)(1+f)$\n$\\Rightarrow 1+f = 1.1025 / 1.04 = 1.060096$\n$\\Rightarrow f = 0.060096 \\approx 0.0601$."
+  },
+  {
+    "id": "cm1-24",
+    "subject": "cm1",
+    "n": 24,
+    "title": "Yield to Maturity Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines yield to maturity?",
+    "options": [
+      "The constant interest rate that equates the present value of future bond cashflows to its price",
+      "The coupon rate of a bond",
+      "The spot rate of the longest maturity",
+      "The forward rate at maturity"
+    ],
+    "answerIndex": 0,
+    "solution": "Yield to maturity is the internal rate of return of the bond."
+  },
+  {
+    "id": "cm1-25",
+    "subject": "cm1",
+    "n": 25,
+    "title": "Role of Interest Theory",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best summarises the role of interest theory in actuarial work?",
+    "options": [
+      "Valuing cashflows that occur at different points in time",
+      "Predicting economic growth",
+      "Eliminating financial risk",
+      "Determining tax policy"
+    ],
+    "answerIndex": 0,
+    "solution": "Interest theory provides the mathematical foundation for valuing cashflows."
+  },
+  {
+    "id": "cm1-26",
+    "subject": "cm1",
+    "n": 26,
+    "title": "Accumulated Value at Compound Interest",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An amount of 500 is invested at an annual effective interest rate of 8% for 3 years. Interest is compounded annually. Calculate the accumulated value (to 2 decimals).",
+    "answer": "629.86",
+    "solution": "Accumulated value: $500 \\times (1.08)^3 = 500 \\times 1.259712 = 629.856 \\approx 629.86$."
+  },
+  {
+    "id": "cm1-27",
+    "subject": "cm1",
+    "n": 27,
+    "title": "Nominal vs Effective Interest",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly expresses the relationship between the nominal interest rate $i^{(m)}$ convertible $m$ times per year and the effective annual rate $i$?",
+    "options": [
+      "$1 + i = \\left(1 + \\dfrac{i^{(m)}}{m}\\right)^m$",
+      "$i = \\dfrac{i^{(m)}}{m}$",
+      "$i^{(m)} = i^m$",
+      "$i = m\\ln\\left(1 + i^{(m)}\\right)$"
+    ],
+    "answerIndex": 0,
+    "solution": "The effective annual rate is $i = \\left(1 + \\dfrac{i^{(m)}}{m}\\right)^m - 1$."
+  },
+  {
+    "id": "cm1-28",
+    "subject": "cm1",
+    "n": 28,
+    "title": "Effective Rate from Quarterly Nominal",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the annual effective interest rate corresponding to a nominal rate of 6% compounded quarterly (to 4 decimals).",
+    "answer": "0.0614",
+    "solution": "$i = \\left(1 + \\dfrac{0.06}{4}\\right)^4 - 1 = 1.015^4 - 1 = 1.061364 - 1 = 0.061364 \\approx 0.0614$."
+  },
+  {
+    "id": "cm1-29",
+    "subject": "cm1",
+    "n": 29,
+    "title": "Deferred Annuity Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines a deferred annuity?",
+    "options": [
+      "An annuity where payments begin after a specified deferment period",
+      "An annuity paid in advance",
+      "An annuity paid continuously",
+      "An annuity that pays a lump sum immediately"
+    ],
+    "answerIndex": 0,
+    "solution": "Deferred annuities begin payments only after a defined deferment period."
+  },
+  {
+    "id": "cm1-30",
+    "subject": "cm1",
+    "n": 30,
+    "title": "PV of a Deferred Annuity-Immediate",
+    "difficulty": "medium",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the present value of a deferred annuity-immediate paying 100 per year for 5 years, deferred for 3 years (so the payments are at times 4, 5, 6, 7 and 8), at an annual effective interest rate of 5% (to 2 decimals).",
+    "answer": "374.00",
+    "solution": "$PV = 100\\, v^3 a_{\\overline{5}|}$ at 5%.\n$a_{\\overline{5}|} = \\dfrac{1 - 1.05^{-5}}{0.05} = 4.329477$, $\\quad v^3 = 1.05^{-3} = 0.863838$.\n$PV = 100 \\times 0.863838 \\times 4.329477 = 374.00$."
+  },
+  {
+    "id": "cm1-31",
+    "subject": "cm1",
+    "n": 31,
+    "title": "Accumulation Under Varying Force",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following describes the accumulation factor $A(t)$ under a continuously varying force of interest $\\delta(t)$?",
+    "options": [
+      "$A(t) = \\exp\\left(\\int_0^t \\delta(s)\\,ds\\right)$",
+      "$A(t) = 1 + \\int_0^t \\delta(s)\\,ds$",
+      "$A(t) = (1 + \\delta(t))^t$",
+      "$A(t) = \\delta(t)^t$"
+    ],
+    "answerIndex": 0,
+    "solution": "For a time-varying force of interest, $A(t) = \\exp\\left(\\int_0^t \\delta(s)\\,ds\\right)$."
+  },
+  {
+    "id": "cm1-32",
+    "subject": "cm1",
+    "n": 32,
+    "title": "Accumulation with Linear Force of Interest",
+    "difficulty": "medium",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An investment grows under a force of interest $\\delta(t) = 0.02 + 0.01t$ for $t$ in years. Calculate the accumulated value of 100 after 3 years (to 2 decimals).",
+    "answer": "111.07",
+    "solution": "$\\int_0^3 (0.02 + 0.01t)\\,dt = 0.02 \\times 3 + 0.01 \\times \\dfrac{9}{2} = 0.06 + 0.045 = 0.105$.\nAccumulated value $= 100e^{0.105} = 100 \\times 1.110711 = 111.07$."
+  },
+  {
+    "id": "cm1-33",
+    "subject": "cm1",
+    "n": 33,
+    "title": "Par Yield Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Term structure",
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the par yield of a bond?",
+    "options": [
+      "The coupon rate that makes the bond price equal to par",
+      "The yield to maturity",
+      "The current market price divided by face value",
+      "The discounted value of future payments"
+    ],
+    "answerIndex": 0,
+    "solution": "Par yield is the coupon rate that prices the bond at its nominal value."
+  },
+  {
+    "id": "cm1-34",
+    "subject": "cm1",
+    "n": 34,
+    "title": "Increasing Annuity-Immediate Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly defines the present value of an increasing annuity-immediate?",
+    "options": [
+      "Payments increase by a fixed amount each period; $PV = \\sum_{k=1}^{n} k v^k$",
+      "Payments are constant; $PV = \\sum_{k=1}^{n} v^k$",
+      "Payments decrease by a fixed amount; $PV = \\sum_{k=1}^{n} v^k / k$",
+      "Payments are continuous; $PV = \\int_0^n v^t\\,dt$"
+    ],
+    "answerIndex": 0,
+    "solution": "An increasing annuity-immediate pays $k$ at time $k$, so $(Ia)_{\\overline{n}|} = \\sum_{k=1}^{n} k v^k$."
+  },
+  {
+    "id": "cm1-35",
+    "subject": "cm1",
+    "n": 35,
+    "title": "PV of an Increasing Annuity-Immediate",
+    "difficulty": "medium",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the present value of an increasing annuity-immediate for 4 years with first payment 100, increasing by 100 each year, at an annual effective interest rate of 5% (to 2 decimals).",
+    "answer": "864.88",
+    "solution": "$PV = 100\\,(Ia)_{\\overline{4}|} = 100(v + 2v^2 + 3v^3 + 4v^4)$ with $v = 1/1.05$.\n$v = 0.952381,\\ v^2 = 0.907029,\\ v^3 = 0.863838,\\ v^4 = 0.822702$.\n$PV = 95.238 + 181.406 + 259.151 + 329.081 = 864.88$."
+  },
+  {
+    "id": "cm1-36",
+    "subject": "cm1",
+    "n": 36,
+    "title": "Perpetuity-Immediate PV",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the present value of a perpetuity-immediate?",
+    "options": [
+      "$PV = \\text{Payment} / i$",
+      "$PV = \\text{Payment} \\times i$",
+      "$PV = \\text{Payment} \\times n$",
+      "$PV = \\text{Payment} \\times v^n$"
+    ],
+    "answerIndex": 0,
+    "solution": "The PV of a perpetuity-immediate paying 1 per period is $a_{\\overline{\\infty}|} = \\sum_{k=1}^{\\infty} v^k = \\dfrac{v}{1-v} = \\dfrac{1}{i}$."
+  },
+  {
+    "id": "cm1-37",
+    "subject": "cm1",
+    "n": 37,
+    "title": "Annuity-Due vs Annuity-Immediate",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the difference between an annuity-due and an annuity-immediate?",
+    "options": [
+      "Annuity-due payments occur at the start of each period, annuity-immediate at the end",
+      "Annuity-due payments occur at the end, annuity-immediate at the start",
+      "Both pay continuously",
+      "Both pay only once"
+    ],
+    "answerIndex": 0,
+    "solution": "The key difference is timing of payments."
+  },
+  {
+    "id": "cm1-38",
+    "subject": "cm1",
+    "n": 38,
+    "title": "PV of a Level Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the present value of a 10-year annuity-due paying 100 per year at 6% annual effective interest rate (to 2 decimals).",
+    "answer": "780.17",
+    "solution": "$\\ddot{a}_{\\overline{10}|} = (1+i)\\,a_{\\overline{10}|} = 1.06 \\times \\dfrac{1 - 1.06^{-10}}{0.06} = 1.06 \\times 7.360087 = 7.801692$.\n$PV = 100 \\times 7.801692 = 780.17$."
+  },
+  {
+    "id": "cm1-39",
+    "subject": "cm1",
+    "n": 39,
+    "title": "Growing Perpetuity PV",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly describes a perpetuity with payments increasing at a constant rate g per period?",
+    "options": [
+      "PV = Payment / (i - g), provided i > g",
+      "PV = Payment / i",
+      "PV = Payment × (i - g)",
+      "PV = Payment × n"
+    ],
+    "answerIndex": 0,
+    "solution": "For a perpetuity growing at rate g < i, PV = Payment / (i - g)."
+  },
+  {
+    "id": "cm1-40",
+    "subject": "cm1",
+    "n": 40,
+    "title": "Effective vs Nominal Rates",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about effective rate and nominal rate is correct?",
+    "options": [
+      "Effective rate accounts for compounding within the year, nominal rate does not",
+      "Nominal rate is always greater than effective rate",
+      "Effective rate is always less than nominal rate",
+      "Effective rate ignores compounding"
+    ],
+    "answerIndex": 0,
+    "solution": "Effective annual rate accounts for intra-year compounding; nominal is quoted per year without compounding."
+  },
+  {
+    "id": "cm1-41",
+    "subject": "cm1",
+    "n": 41,
+    "title": "Present and Accumulated Value Link",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is true regarding present value and accumulated value?",
+    "options": [
+      "$PV \\times (1+i)^n = AV$",
+      "$AV / n = PV$",
+      "$AV - PV = i$",
+      "$PV > AV$ always"
+    ],
+    "answerIndex": 0,
+    "solution": "Under compound interest, accumulated value $AV = PV \\times (1+i)^n$."
+  },
+  {
+    "id": "cm1-42",
+    "subject": "cm1",
+    "n": 42,
+    "title": "Interest Theory in Insurance",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the use of interest theory in insurance contracts?",
+    "options": [
+      "To value future benefits and premiums under time-value-of-money principles",
+      "To predict mortality",
+      "To calculate taxes",
+      "To determine investment portfolio allocations"
+    ],
+    "answerIndex": 0,
+    "solution": "Interest theory allows actuarial valuation of contracts by discounting expected cashflows."
+  },
+  {
+    "id": "cm1-43",
+    "subject": "cm1",
+    "n": 43,
+    "title": "Deferred Annuity with Level Payments",
+    "difficulty": "medium",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An investment pays 200 at the end of each year for 4 years, with the payments deferred for 2 years (so payments are at the end of years 3, 4, 5 and 6). The annual effective interest rate is 5%. Compute the present value (to 2 decimals).",
+    "answer": "643.26",
+    "solution": "$PV = 200\\, v^2 a_{\\overline{4}|}$ at 5%.\n$a_{\\overline{4}|} = \\dfrac{1 - 1.05^{-4}}{0.05} = 3.545951$, $\\quad v^2 = 1.05^{-2} = 0.907029$.\n$PV = 200 \\times 3.545951 \\times 0.907029 = 643.26$."
+  },
+  {
+    "id": "cm1-44",
+    "subject": "cm1",
+    "n": 44,
+    "title": "Bond Price Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following gives the price of a bond with $n$ annual coupons of $C$, redemption value $F$ and yield $i$ (with $v = 1/(1+i)$)?",
+    "options": [
+      "$PV = \\sum_{k=1}^{n} C v^k + F v^n$",
+      "$PV = Cn + F$",
+      "$PV = C / i$",
+      "$PV = F / (1+i)^n$"
+    ],
+    "answerIndex": 0,
+    "solution": "Bond price = PV of coupons + PV of redemption: $PV = C\\,a_{\\overline{n}|} + F v^n$."
+  },
+  {
+    "id": "cm1-45",
+    "subject": "cm1",
+    "n": 45,
+    "title": "Yield to Maturity Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the yield to maturity of a bond?",
+    "options": [
+      "The discount rate that equates the PV of cashflows to the bond price",
+      "The rate of coupon payments",
+      "The market rate of interest at issuance",
+      "The current spot rate"
+    ],
+    "answerIndex": 0,
+    "solution": "Yield to maturity is the internal rate of return of the bond's cashflows."
+  },
+  {
+    "id": "cm1-46",
+    "subject": "cm1",
+    "n": 46,
+    "title": "Redemption Yield of a Discount Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A bond has annual coupons of 60 (paid in arrear), face value 1,000 redeemable at par, and 5 years to maturity. Its price is 980. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0648",
+    "solution": "Solve $980 = 60\\,a_{\\overline{5}|} + 1000v^5$.\nStarting guess: $i \\approx \\dfrac{60 + (1000-980)/5}{(1000+980)/2} = \\dfrac{64}{990} = 0.0646$; at 6.46% the price is 980.67, slightly too high, so the yield is a little higher.\nSolving numerically: $i = 0.06481 \\approx 0.0648$."
+  },
+  {
+    "id": "cm1-47",
+    "subject": "cm1",
+    "n": 47,
+    "title": "Perpetuity-Due PV",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the present value of a perpetuity-due?",
+    "options": [
+      "PV = Payment × (1+i)/i",
+      "PV = Payment / i",
+      "PV = Payment × i",
+      "PV = Payment / (1+i)"
+    ],
+    "answerIndex": 0,
+    "solution": "Perpetuity-due pays at the start of each period: PV = 1*(1+i)/i."
+  },
+  {
+    "id": "cm1-48",
+    "subject": "cm1",
+    "n": 48,
+    "title": "Annuity-Due Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is the formula for present value of an n-year annuity-due paying 1 per period at rate i?",
+    "options": [
+      "$\\ddot{a}_{\\overline{n}|} = \\dfrac{1 - v^n}{d}$",
+      "$\\ddot{a}_{\\overline{n}|} = \\dfrac{1 - v^n}{v}$",
+      "$\\ddot{a}_{\\overline{n}|} = \\dfrac{1 - v^n}{i}$",
+      "$\\ddot{a}_{\\overline{n}|} = \\dfrac{1 + v^n}{d}$"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\ddot{a}_{\\overline{n}|} = \\sum_{k=0}^{n-1} v^k = \\dfrac{1 - v^n}{d}$, with $d = i/(1+i)$."
+  },
+  {
+    "id": "cm1-49",
+    "subject": "cm1",
+    "n": 49,
+    "title": "PV of an Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 6-year annuity-due pays 200 per year at i=5%. Calculate PV (to 2 decimals).",
+    "answer": "1065.90",
+    "solution": "$\\ddot{a}_{\\overline{6}|} = \\dfrac{1 - v^6}{d}$, with $v^6 = 1.05^{-6} = 0.746215$ and $d = 0.05/1.05 = 0.047619$.\n$\\ddot{a}_{\\overline{6}|} = \\dfrac{0.253785}{0.047619} = 5.329477$.\n$PV = 200 \\times 5.329477 = 1065.90$."
+  },
+  {
+    "id": "cm1-50",
+    "subject": "cm1",
+    "n": 50,
+    "title": "Why Match Durations",
+    "difficulty": "easy",
+    "topics": [
+      "Duration & immunisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best explains the purpose of matching durations in asset-liability management?",
+    "options": [
+      "To minimise the impact of interest rate changes on surplus",
+      "To maximise returns regardless of risk",
+      "To avoid investing in equities",
+      "To reduce default risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Duration matching immunises a portfolio against small interest rate fluctuations."
+  },
+  {
+    "id": "cm1-51",
+    "subject": "cm1",
+    "n": 51,
+    "title": "Level Loan Repayment",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 10,000 is to be repaid by 5 equal annual instalments of principal and interest. If the annual effective interest rate is 6%, calculate the annual repayment (to 2 decimals).",
+    "answer": "2373.96",
+    "solution": "Level repayment $X$ satisfies $X\\,a_{\\overline{5}|} = 10{,}000$ at 6%.\n$a_{\\overline{5}|} = \\dfrac{1 - 1.06^{-5}}{0.06} = \\dfrac{0.252742}{0.06} = 4.212364$.\n$X = 10{,}000 / 4.212364 = 2{,}373.96$."
+  },
+  {
+    "id": "cm1-52",
+    "subject": "cm1",
+    "n": 52,
+    "title": "Equation of Value Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the concept of an equation of value in financial problems?",
+    "options": [
+      "Equating the present values of payments and receipts at a chosen date",
+      "Setting all future cashflows equal to zero",
+      "Ignoring interest rates",
+      "Calculating only the first payment"
+    ],
+    "answerIndex": 0,
+    "solution": "An equation of value compares PV of outflows and inflows at a reference date, allowing determination of unknowns like interest or payment amounts."
+  },
+  {
+    "id": "cm1-53",
+    "subject": "cm1",
+    "n": 53,
+    "title": "Redemption Yield of a 4-Year Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 1,000 bond pays annual coupons of 50 in arrear for 4 years and is redeemed at 1,000. The price of the bond is 980. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0557",
+    "solution": "Solve $980 = 50\\,a_{\\overline{4}|} + 1000v^{4}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0556$. At this rate the price is 980.40, which is higher than 980, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.055715 \\approx 0.0557$."
+  },
+  {
+    "id": "cm1-54",
+    "subject": "cm1",
+    "n": 54,
+    "title": "Bounds on PV with Uncertain Redemption",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about the upper and lower bounds of a present value of a financial instrument is correct?",
+    "options": [
+      "The PV lies between the values computed assuming the earliest and latest possible redemption dates",
+      "The PV is always equal to the face value",
+      "The PV ignores coupon payments",
+      "The PV is independent of interest rates"
+    ],
+    "answerIndex": 0,
+    "solution": "If redemption can occur within a range, the PV must be between the PV assuming earliest and latest redemption dates."
+  },
+  {
+    "id": "cm1-55",
+    "subject": "cm1",
+    "n": 55,
+    "title": "Final Instalment from Equation of Value",
+    "difficulty": "medium",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 5,000 is repaid by 3 annual instalments. The first instalment is 1,500, the second is 1,600, and the third is unknown. The annual effective rate is 4%. Determine the third instalment (to 2 decimals).",
+    "answer": "2337.92",
+    "solution": "Equation of value at $t=0$: $1500v + 1600v^2 + Xv^3 = 5000$, $v = 1/1.04$.\n$1500v = 1442.308$, $\\quad 1600v^2 = 1479.290$, so $Xv^3 = 5000 - 2921.598 = 2078.402$.\n$X = 2078.402 \\times 1.04^3 = 2078.402 \\times 1.124864 = 2337.92$."
+  },
+  {
+    "id": "cm1-56",
+    "subject": "cm1",
+    "n": 56,
+    "title": "Running Yield Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines running yield for a bond?",
+    "options": [
+      "Annual coupon payment divided by current price",
+      "Yield to maturity",
+      "Price divided by redemption value",
+      "Total interest received during bond life"
+    ],
+    "answerIndex": 0,
+    "solution": "Running yield = annual coupon / current price."
+  },
+  {
+    "id": "cm1-57",
+    "subject": "cm1",
+    "n": 57,
+    "title": "Redemption Yield of a Discount Bond II",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "An investor buys a bond at 950 with annual coupons of 40 in arrear, redeemable at 1,000 in 5 years. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0516",
+    "solution": "Solve $950 = 40\\,a_{\\overline{5}|} + 1000v^{5}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0513$. At this rate the price is 951.25, which is higher than 950, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.051600 \\approx 0.0516$."
+  },
+  {
+    "id": "cm1-58",
+    "subject": "cm1",
+    "n": 58,
+    "title": "Redemption Yield Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about redemption yield of a bond is correct?",
+    "options": [
+      "It is the internal rate of return on the bond cashflows until redemption",
+      "It ignores coupon payments",
+      "It is always equal to the coupon rate",
+      "It is the average annual payment"
+    ],
+    "answerIndex": 0,
+    "solution": "Redemption yield = rate that equates PV of coupons + redemption to current price."
+  },
+  {
+    "id": "cm1-59",
+    "subject": "cm1",
+    "n": 59,
+    "title": "Perpetual Rental Valuation",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A property yields constant rental of 20,000 per year indefinitely. If the annual effective interest rate is 5%, calculate its present value (to 2 decimals).",
+    "answer": "400000.00",
+    "solution": "PV of perpetuity: PV = Payment / i = 20,000 / 0.05 = 400,000."
+  },
+  {
+    "id": "cm1-60",
+    "subject": "cm1",
+    "n": 60,
+    "title": "IRR Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the internal rate of return (IRR) for a project?",
+    "options": [
+      "The discount rate that makes the NPV of the project zero",
+      "The total investment divided by total receipts",
+      "The interest rate earned in the first year",
+      "The nominal rate of return ignoring cashflows"
+    ],
+    "answerIndex": 0,
+    "solution": "IRR is the rate at which PV of inflows = PV of outflows."
+  },
+  {
+    "id": "cm1-61",
+    "subject": "cm1",
+    "n": 61,
+    "title": "NPV of a Level Cashflow Project",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A project requires an investment of 50,000 now and generates cashflows of 15,000 at the end of each year for 5 years. At an annual effective rate of 6%, calculate the NPV (to 2 decimals).",
+    "answer": "13185.46",
+    "solution": "$a_{\\overline{5}|} = \\dfrac{1 - 1.06^{-5}}{0.06} = 4.212364$.\nPV of inflows $= 15{,}000 \\times 4.212364 = 63{,}185.46$.\n$NPV = 63{,}185.46 - 50{,}000 = 13{,}185.46$."
+  },
+  {
+    "id": "cm1-62",
+    "subject": "cm1",
+    "n": 62,
+    "title": "Payback Period Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a correct statement about payback period?",
+    "options": [
+      "It is the time required to recover initial investment from cash inflows",
+      "It discounts cashflows",
+      "It equals NPV",
+      "It includes all project cashflows indefinitely"
+    ],
+    "answerIndex": 0,
+    "solution": "Payback period is the period until cumulative cashflows equal the initial investment, without discounting."
+  },
+  {
+    "id": "cm1-63",
+    "subject": "cm1",
+    "n": 63,
+    "title": "Balancing Final Loan Payment",
+    "difficulty": "medium",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 20,000 is to be repaid by 4 payments at the end of each year of 5,000, 6,000, 7,000 and X. The annual effective rate is 5%. Calculate X (to 2 decimals).",
+    "answer": "4557.00",
+    "solution": "Equation of value at $t=0$: $5000v + 6000v^2 + 7000v^3 + Xv^4 = 20{,}000$, $v = 1/1.05$.\n$5000v = 4761.905$, $\\ 6000v^2 = 5442.177$, $\\ 7000v^3 = 6046.863$; total $= 16{,}250.945$.\n$Xv^4 = 3749.055 \\Rightarrow X = 3749.055 \\times 1.05^4 = 3749.055 \\times 1.215506 = 4557.00$."
+  },
+  {
+    "id": "cm1-64",
+    "subject": "cm1",
+    "n": 64,
+    "title": "Common Reference Date in Equations of Value",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a necessary condition for an exact solution to an equation of value?",
+    "options": [
+      "All cashflows are accounted for at the same reference date",
+      "Cashflows are ignored if they occur after 1 year",
+      "Interest rates must be zero",
+      "Only the largest cashflows are considered"
+    ],
+    "answerIndex": 0,
+    "solution": "An exact solution requires that all relevant cashflows are compared at a common reference date using proper discounting."
+  },
+  {
+    "id": "cm1-65",
+    "subject": "cm1",
+    "n": 65,
+    "title": "Redemption Yield of a Short Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A bond with face value 1,000 pays annual coupons of 60 in arrear for 3 years and is redeemed at par. The market price is 970. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0715",
+    "solution": "Solve $970 = 60\\,a_{\\overline{3}|} + 1000v^{3}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0711$. At this rate the price is 970.93, which is higher than 970, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.071462 \\approx 0.0715$."
+  },
+  {
+    "id": "cm1-66",
+    "subject": "cm1",
+    "n": 66,
+    "title": "Bounds for an Optional Redemption Date",
+    "difficulty": "hard",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "A bond redeemable at par has an optional redemption date (the borrower may redeem at any time in a given window). The coupon rate is lower than the investor's required yield. Which of the following correctly gives the upper and lower bounds for its present value?",
+    "options": [
+      "Upper bound = earliest redemption PV, Lower bound = latest redemption PV",
+      "Upper bound = sum of coupons only, Lower bound = face value only",
+      "Upper and lower bounds are always equal",
+      "Upper bound ignores interest, lower bound ignores principal"
+    ],
+    "answerIndex": 0,
+    "solution": "When the coupon rate is below the yield, the bond is valued below par and the investor gains on redemption, so the earlier that gain is received, the higher the PV.\nHence the upper bound is the PV assuming the earliest redemption date and the lower bound is the PV assuming the latest redemption date. (If the coupon rate exceeded the yield, the bounds would be reversed.)"
+  },
+  {
+    "id": "cm1-67",
+    "subject": "cm1",
+    "n": 67,
+    "title": "Equal Instalments on an 8% Loan",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 12,000 is to be repaid in 3 equal annual instalments. The annual effective rate is 8%. Calculate the annual repayment (to 2 decimals).",
+    "answer": "4,656.40",
+    "solution": "Level instalment $X$ satisfies $X\\,a_{\\overline{3}|} = 12{,}000$ at 8%.\n$a_{\\overline{3}|} = \\dfrac{1 - 1.08^{-3}}{0.08} = 2.577097$.\n$X = 12{,}000 / 2.577097 = 4{,}656.40$."
+  },
+  {
+    "id": "cm1-68",
+    "subject": "cm1",
+    "n": 68,
+    "title": "Running Yield of a Bond",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines running yield of a bond?",
+    "options": [
+      "Annual coupon divided by current market price",
+      "Redemption value divided by price",
+      "Internal rate of return on the bond",
+      "Coupon rate adjusted for inflation"
+    ],
+    "answerIndex": 0,
+    "solution": "Running yield = annual coupon / current price."
+  },
+  {
+    "id": "cm1-69",
+    "subject": "cm1",
+    "n": 69,
+    "title": "NPV of a Four-Year Project",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A project costs 30,000 and produces cashflows of 10,000 per year for 4 years. At i=5%, compute NPV (to 2 decimals).",
+    "answer": "5,459.51",
+    "solution": "$a_{\\overline{4}|} = \\dfrac{1 - 1.05^{-4}}{0.05} = 3.545951$.\nPV of inflows $= 10{,}000 \\times 3.545951 = 35{,}459.51$.\n$NPV = 35{,}459.51 - 30{,}000 = 5{,}459.51$."
+  },
+  {
+    "id": "cm1-70",
+    "subject": "cm1",
+    "n": 70,
+    "title": "IRR and NPV",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is true about internal rate of return (IRR)?",
+    "options": [
+      "IRR is the discount rate that makes NPV zero",
+      "IRR equals total cash inflows divided by investment",
+      "IRR is independent of cashflow timings",
+      "IRR ignores all outflows"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, IRR satisfies NPV=0."
+  },
+  {
+    "id": "cm1-71",
+    "subject": "cm1",
+    "n": 71,
+    "title": "Perpetual Rental at 4%",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A property yields 25,000 per year indefinitely. If the interest rate is 4%, calculate its PV (to 2 decimals).",
+    "answer": "625,000.00",
+    "solution": "PV perpetuity = Payment / i = 25,000 / 0.04 = 625,000."
+  },
+  {
+    "id": "cm1-72",
+    "subject": "cm1",
+    "n": 72,
+    "title": "Discounted Payback Period",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines discounted payback period?",
+    "options": [
+      "Time to recover initial investment using discounted cashflows",
+      "Time to recover investment ignoring interest",
+      "Time until project ends",
+      "Time to double investment"
+    ],
+    "answerIndex": 0,
+    "solution": "Discounted payback period accounts for time value of money in recovery calculation."
+  },
+  {
+    "id": "cm1-73",
+    "subject": "cm1",
+    "n": 73,
+    "title": "Redemption Yield of a 5-Year Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 1,000 bond pays annual coupons of 50 in arrear for 5 years and is redeemed at par. The market price is 980. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0547",
+    "solution": "Solve $980 = 50\\,a_{\\overline{5}|} + 1000v^{5}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0545$. At this rate the price is 980.76, which is higher than 980, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.054679 \\approx 0.0547$."
+  },
+  {
+    "id": "cm1-74",
+    "subject": "cm1",
+    "n": 74,
+    "title": "Equation of Value for Uncertain Cashflows",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a correct statement about equation of value for uncertain payments?",
+    "options": [
+      "Expected present values of payments and receipts are equated",
+      "Only earliest payments are considered",
+      "Interest is ignored",
+      "Equation of value is always negative"
+    ],
+    "answerIndex": 0,
+    "solution": "For uncertain cashflows, equation of value is applied to expected PVs."
+  },
+  {
+    "id": "cm1-75",
+    "subject": "cm1",
+    "n": 75,
+    "title": "Equal Instalments on a 7% Loan",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 8,000 is to be repaid in 4 equal annual instalments. Annual effective interest rate is 7%. Calculate the annual repayment (to 2 decimals).",
+    "answer": "2,361.82",
+    "solution": "Level instalment $X$ satisfies $X\\,a_{\\overline{4}|} = 8{,}000$ at 7%.\n$a_{\\overline{4}|} = \\dfrac{1 - 1.07^{-4}}{0.07} = 3.387211$.\n$X = 8{,}000 / 3.387211 = 2{,}361.82$."
+  },
+  {
+    "id": "cm1-76",
+    "subject": "cm1",
+    "n": 76,
+    "title": "Redemption Yield of a 6-Year Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 1,000 bond pays annual coupons of 60 in arrear for 6 years and is redeemed at par. The market price is 980. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0641",
+    "solution": "Solve $980 = 60\\,a_{\\overline{6}|} + 1000v^{6}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0640$. At this rate the price is 980.58, which is higher than 980, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.064120 \\approx 0.0641$."
+  },
+  {
+    "id": "cm1-77",
+    "subject": "cm1",
+    "n": 77,
+    "title": "Perpetuity Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly describes a perpetuity?",
+    "options": [
+      "A series of payments that continue indefinitely",
+      "A single payment at the end of a period",
+      "Payments that decrease geometrically",
+      "An annuity paid for a fixed term"
+    ],
+    "answerIndex": 0,
+    "solution": "A perpetuity is defined as a stream of constant payments continuing forever."
+  },
+  {
+    "id": "cm1-78",
+    "subject": "cm1",
+    "n": 78,
+    "title": "NPV of a Five-Year Project at 7%",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A project costs 40,000 and yields 12,000 annually for 5 years. Compute NPV at i=7% (to 2 decimals).",
+    "answer": "9,202.37",
+    "solution": "$a_{\\overline{5}|} = \\dfrac{1 - 1.07^{-5}}{0.07} = 4.100197$.\nPV of inflows $= 12{,}000 \\times 4.100197 = 49{,}202.37$.\n$NPV = 49{,}202.37 - 40{,}000 = 9{,}202.37$."
+  },
+  {
+    "id": "cm1-80",
+    "subject": "cm1",
+    "n": 79,
+    "title": "Balancing Final Loan Payment II",
+    "difficulty": "medium",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 20,000 loan is repaid by 4 payments at the end of each year of 5,000, 5,500, 6,000 and X, at an annual effective rate of 6%. Calculate X (to 2 decimals).",
+    "answer": "6,754.66",
+    "solution": "Equation of value at $t=0$: $5000v + 5500v^2 + 6000v^3 + Xv^4 = 20{,}000$, $v = 1/1.06$.\n$5000v = 4716.981$, $\\ 5500v^2 = 4894.980$, $\\ 6000v^3 = 5037.716$; total $= 14{,}649.677$.\n$Xv^4 = 5350.323 \\Rightarrow X = 5350.323 \\times 1.06^4 = 5350.323 \\times 1.262477 = 6754.66$."
+  },
+  {
+    "id": "cm1-81",
+    "subject": "cm1",
+    "n": 80,
+    "title": "Running Yield Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is true about running yield for a bond?",
+    "options": [
+      "Annual coupon divided by current price",
+      "Redemption value divided by current price",
+      "PV of all cashflows",
+      "Internal rate of return"
+    ],
+    "answerIndex": 0,
+    "solution": "Running yield = annual coupon / current price."
+  },
+  {
+    "id": "cm1-82",
+    "subject": "cm1",
+    "n": 81,
+    "title": "Redemption Yield of a Discount Bond III",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A bond with face value 1,000 pays coupons of 40 annually in arrear for 5 years and is redeemed at 1,000. The price is 950. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0516",
+    "solution": "Solve $950 = 40\\,a_{\\overline{5}|} + 1000v^{5}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0513$. At this rate the price is 951.25, which is higher than 950, so the yield is slightly higher.\nSolving numerically (e.g. by interpolation): $i = 0.051600 \\approx 0.0516$."
+  },
+  {
+    "id": "cm1-83",
+    "subject": "cm1",
+    "n": 82,
+    "title": "Internal Rate of Return Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes internal rate of return (IRR)?",
+    "options": [
+      "Rate that makes NPV of project zero",
+      "Average annual return",
+      "Initial investment divided by total cashflows",
+      "Discount rate ignoring cashflows"
+    ],
+    "answerIndex": 0,
+    "solution": "IRR is the discount rate where PV inflows = PV outflows (NPV=0)."
+  },
+  {
+    "id": "cm1-84",
+    "subject": "cm1",
+    "n": 83,
+    "title": "Equal Instalments on a 5% Loan",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 15,000 is to be repaid in 3 equal annual instalments at i=5%. Calculate annual repayment (to 2 decimals).",
+    "answer": "5,508.13",
+    "solution": "Level instalment $X$ satisfies $X\\,a_{\\overline{3}|} = 15{,}000$ at 5%.\n$a_{\\overline{3}|} = \\dfrac{1 - 1.05^{-3}}{0.05} = 2.723248$.\n$X = 15{,}000 / 2.723248 = 5{,}508.13$."
+  },
+  {
+    "id": "cm1-85",
+    "subject": "cm1",
+    "n": 84,
+    "title": "NPV Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about NPV is correct?",
+    "options": [
+      "NPV = PV inflows - PV outflows",
+      "NPV = sum of cashflows without discounting",
+      "NPV = initial investment only",
+      "NPV ignores interest rate"
+    ],
+    "answerIndex": 0,
+    "solution": "NPV measures the difference between present values of inflows and outflows at a given discount rate."
+  },
+  {
+    "id": "cm1-86",
+    "subject": "cm1",
+    "n": 85,
+    "title": "PV of Level Loan Instalments",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation",
+      "Annuities certain"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan is repaid by 5 annual instalments of 2,000 each, paid at the end of each year. If the annual effective rate is 4%, calculate the present value of the instalments (to 2 decimals).",
+    "answer": "8,903.64",
+    "solution": "$a_{\\overline{5}|} = \\dfrac{1 - 1.04^{-5}}{0.04} = 4.451822$.\n$PV = 2000 \\times 4.451822 = 8{,}903.64$."
+  },
+  {
+    "id": "cm1-87",
+    "subject": "cm1",
+    "n": 86,
+    "title": "Payback Period Property",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about payback period is true?",
+    "options": [
+      "Time to recover initial investment from cash inflows",
+      "Discounts cashflows",
+      "Equals NPV",
+      "Includes all future cashflows indefinitely"
+    ],
+    "answerIndex": 0,
+    "solution": "Payback period is the period until cumulative cashflows equal initial investment without discounting."
+  },
+  {
+    "id": "cm1-88",
+    "subject": "cm1",
+    "n": 87,
+    "title": "NPV of a Project at 6%",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A project costs 25,000 and yields 8,000 per year for 4 years. At i=6%, compute NPV (to 2 decimals).",
+    "answer": "2,720.84",
+    "solution": "$a_{\\overline{4}|} = \\dfrac{1 - 1.06^{-4}}{0.06} = 3.465106$.\nPV of inflows $= 8{,}000 \\times 3.465106 = 27{,}720.84$.\n$NPV = 27{,}720.84 - 25{,}000 = 2{,}720.84$."
+  },
+  {
+    "id": "cm1-89",
+    "subject": "cm1",
+    "n": 88,
+    "title": "IRR Characterisation",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is correct about IRR?",
+    "options": [
+      "Discount rate making NPV zero",
+      "Sum of cashflows divided by investment",
+      "Equals first year return",
+      "Ignores outflows"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, IRR is the rate at which PV inflows = PV outflows."
+  },
+  {
+    "id": "cm1-90",
+    "subject": "cm1",
+    "n": 89,
+    "title": "Instalments on a Small 5% Loan",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 6,000 is to be repaid by 3 equal annual instalments in arrear at an annual effective rate of 5%. Calculate the annual payment (to 2 decimals).",
+    "answer": "2,203.25",
+    "solution": "$a_{\\overline{3}|} = \\dfrac{1 - 1.05^{-3}}{0.05} = 2.723248$.\n$X = 6000 / 2.723248 = 2{,}203.25$."
+  },
+  {
+    "id": "cm1-91",
+    "subject": "cm1",
+    "n": 90,
+    "title": "Running Yield Meaning",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes running yield for a bond?",
+    "options": [
+      "Annual coupon divided by current price",
+      "Redemption value divided by price",
+      "Internal rate of return",
+      "PV of all future cashflows"
+    ],
+    "answerIndex": 0,
+    "solution": "Running yield is defined as annual coupon / current price."
+  },
+  {
+    "id": "cm1-92",
+    "subject": "cm1",
+    "n": 91,
+    "title": "Perpetual Rental at 3%",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A property yields 30,000 per year indefinitely. If the interest rate is 3%, calculate PV (to 2 decimals).",
+    "answer": "1,000,000.00",
+    "solution": "PV perpetuity = Payment / i = 30,000 / 0.03 = 1,000,000."
+  },
+  {
+    "id": "cm1-93",
+    "subject": "cm1",
+    "n": 92,
+    "title": "Discounted Payback Property",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about discounted payback period is correct?",
+    "options": [
+      "Uses discounted cashflows to determine recovery time",
+      "Ignores interest rates",
+      "Equals undiscounted payback period",
+      "Excludes first cashflow"
+    ],
+    "answerIndex": 0,
+    "solution": "Discounted payback period accounts for the time value of money."
+  },
+  {
+    "id": "cm1-94",
+    "subject": "cm1",
+    "n": 93,
+    "title": "Redemption Yield of a Premium Bond",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A 1,000 bond pays annual coupons of 70 in arrear for 5 years and is redeemed at par. The market price is 1,020. Calculate the gross redemption yield (annual effective), to 4 decimal places.",
+    "answer": "0.0652",
+    "solution": "Solve $1{,}020 = 70\\,a_{\\overline{5}|} + 1000v^{5}$ for $i$.\nStarting guess (approximation): $i \\approx \\dfrac{C + (F-P)/n}{(F+P)/2} = 0.0653$. At this rate the price is 1019.52, which is lower than 1,020, so the yield is slightly lower.\nSolving numerically (e.g. by interpolation): $i = 0.065185 \\approx 0.0652$."
+  },
+  {
+    "id": "cm1-95",
+    "subject": "cm1",
+    "n": 94,
+    "title": "Applications of Equations of Value",
+    "difficulty": "easy",
+    "topics": [
+      "Interest & discounting",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a key application of equation of value?",
+    "options": [
+      "Determining interest rates, repayments, and PVs of financial instruments",
+      "Ignoring future cashflows",
+      "Setting all payments equal to zero",
+      "Calculating only first instalments"
+    ],
+    "answerIndex": 0,
+    "solution": "Equation of value allows solving for unknown financial quantities by equating PVs at a reference date."
+  },
+  {
+    "id": "cm1-96",
+    "subject": "cm1",
+    "n": 95,
+    "title": "NPV of a Three-Year Project",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A project requires 50,000 and produces cashflows of 20,000 per year for 3 years. At i=8%, compute NPV (to 2 decimals).",
+    "answer": "1,541.94",
+    "solution": "$a_{\\overline{3}|} = \\dfrac{1 - 1.08^{-3}}{0.08} = 2.577097$.\nPV of inflows $= 20{,}000 \\times 2.577097 = 51{,}541.94$.\n$NPV = 51{,}541.94 - 50{,}000 = 1{,}541.94$."
+  },
+  {
+    "id": "cm1-97",
+    "subject": "cm1",
+    "n": 96,
+    "title": "IRR as a Break-Even Rate",
+    "difficulty": "easy",
+    "topics": [
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes IRR?",
+    "options": [
+      "Discount rate making NPV zero",
+      "Average cashflow per year",
+      "Initial investment divided by total inflows",
+      "Discount rate ignoring outflows"
+    ],
+    "answerIndex": 0,
+    "solution": "IRR is the rate at which the PV of inflows equals PV of outflows."
+  },
+  {
+    "id": "cm1-98",
+    "subject": "cm1",
+    "n": 97,
+    "title": "Instalments on a 7,500 Loan",
+    "difficulty": "easy",
+    "topics": [
+      "Loans & amortisation"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A loan of 7,500 is to be repaid in 3 equal annual instalments at i=5%. Calculate annual repayment (to 2 decimals).",
+    "answer": "2,754.06",
+    "solution": "Level instalment $X$ satisfies $X\\,a_{\\overline{3}|} = 7{,}500$ at 5%.\n$a_{\\overline{3}|} = \\dfrac{1 - 1.05^{-3}}{0.05} = 2.723248$.\n$X = 7{,}500 / 2.723248 = 2{,}754.06$."
+  },
+  {
+    "id": "cm1-99",
+    "subject": "cm1",
+    "n": 98,
+    "title": "Running Yield Property",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & yields"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about running yield is true?",
+    "options": [
+      "Annual coupon divided by current market price",
+      "Total PV divided by price",
+      "Equals IRR",
+      "Always equals coupon rate"
+    ],
+    "answerIndex": 0,
+    "solution": "Running yield = annual coupon / current price."
+  },
+  {
+    "id": "cm1-100",
+    "subject": "cm1",
+    "n": 99,
+    "title": "Perpetual Rental at 6%",
+    "difficulty": "easy",
+    "topics": [
+      "Annuities certain",
+      "Project appraisal"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a211"
+    ],
+    "type": "numeric",
+    "prompt": "A property yields 15,000 per year indefinitely. Interest rate = 6%. Calculate PV (to 2 decimals).",
+    "answer": "250,000.00",
+    "solution": "PV perpetuity = Payment / i = 15,000 / 0.06 = 250,000."
+  },
+  {
+    "id": "cm1-101",
+    "subject": "cm1",
+    "n": 100,
+    "title": "Whole-Life Assurance Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a whole-life assurance?",
+    "options": [
+      "Pays a sum on death whenever it occurs",
+      "Pays a sum if death occurs within a fixed term",
+      "Pays a sum at the end of a fixed term regardless of survival",
+      "Pays a sum periodically while the person is alive"
+    ],
+    "answerIndex": 0,
+    "solution": "Whole-life assurance provides a benefit payable on death whenever it occurs, with no fixed term."
+  },
+  {
+    "id": "cm1-102",
+    "subject": "cm1",
+    "n": 101,
+    "title": "Term Assurance Payment Condition",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A temporary assurance pays 50,000 if death occurs in the next 10 years. Which statement is true?",
+    "options": [
+      "It only pays if death occurs within the 10-year term",
+      "It pays regardless of death timing",
+      "It pays periodically while alive",
+      "It accumulates a fund payable at maturity"
+    ],
+    "answerIndex": 0,
+    "solution": "A temporary assurance is term-limited; benefits only occur if death happens within the specified term."
+  },
+  {
+    "id": "cm1-103",
+    "subject": "cm1",
+    "n": 102,
+    "title": "Pure Endowment Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Define pure endowment.",
+    "options": [
+      "Pays a sum only if the person survives to a fixed future date",
+      "Pays a sum on death at any time",
+      "Pays a combination of death and survival benefits",
+      "Provides periodic payments until death"
+    ],
+    "answerIndex": 0,
+    "solution": "A pure endowment is contingent on survival to a specific date; no payment occurs if death occurs earlier."
+  },
+  {
+    "id": "cm1-104",
+    "subject": "cm1",
+    "n": 103,
+    "title": "Whole-Life Annuity Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A whole-life annuity pays 1,000 annually in arrear for life. Which is true?",
+    "options": [
+      "Payments continue as long as the annuitant is alive",
+      "Payments stop after a fixed term",
+      "Payments are made at death",
+      "Payments are only made in advance"
+    ],
+    "answerIndex": 0,
+    "solution": "A whole-life annuity pays periodically for the entire remaining lifetime of the annuitant."
+  },
+  {
+    "id": "cm1-105",
+    "subject": "cm1",
+    "n": 104,
+    "title": "Endowment Assurance Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following describes an endowment assurance?",
+    "options": [
+      "Pays either on death within a term or on survival to the end of the term",
+      "Pays only on death regardless of term",
+      "Pays only if survival occurs",
+      "Pays a fixed periodic amount while alive"
+    ],
+    "answerIndex": 0,
+    "solution": "Endowment assurances provide benefits on death within a term or survival to the end of the term."
+  },
+  {
+    "id": "cm1-106",
+    "subject": "cm1",
+    "n": 105,
+    "title": "EPV of a Deferred Life Annuity",
+    "difficulty": "hard",
+    "topics": [
+      "Assurances & life annuities",
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A life aged $x$ buys a deferred whole-life annuity of 2,000 per year payable annually in arrear, deferred for 5 years (so the first payment is at age $x+6$ if alive). Given $\\delta = 0.05$, ${}_5p_x = 0.92$ and $a_{x+5} = 15.0$, calculate the expected present value at issue (to 2 decimals).",
+    "answer": "21,494.90",
+    "solution": "$EPV = 2000 \\times {}_{5|}a_x = 2000 \\times v^5 \\, {}_5p_x \\, a_{x+5}$.\n$v^5 = e^{-0.05 \\times 5} = e^{-0.25} = 0.778801$.\n$EPV = 2000 \\times 0.778801 \\times 0.92 \\times 15.0 = 21{,}494.90$."
+  },
+  {
+    "id": "cm1-107",
+    "subject": "cm1",
+    "n": 106,
+    "title": "Conventional With-Profits Bonuses",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true about conventional with-profits contracts?",
+    "options": [
+      "Benefits are increased by regular reversionary bonuses and terminal bonuses",
+      "Benefits are fixed and never change",
+      "Benefits are only linked to unit prices",
+      "Benefits are paid continuously regardless of bonuses"
+    ],
+    "answerIndex": 0,
+    "solution": "Conventional with-profits policies increase benefits via bonuses."
+  },
+  {
+    "id": "cm1-108",
+    "subject": "cm1",
+    "n": 107,
+    "title": "Unit-Linked Death Benefit",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities",
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A unit-linked policy provides death benefit equal to units times unit price. Which is true?",
+    "options": [
+      "Death benefit depends on fund value at death",
+      "Death benefit is guaranteed and fixed",
+      "Death benefit is only via cash bonuses",
+      "Death benefit ignores unit prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Unit-linked benefits are proportional to the fund value expressed as units times current unit price."
+  },
+  {
+    "id": "cm1-109",
+    "subject": "cm1",
+    "n": 108,
+    "title": "Accumulating With-Profits Mechanics",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Under an accumulating with-profits policy, premiums are credited to a policy fund. Which of the following is correct?",
+    "options": [
+      "Fund increases by guaranteed and bonus interest plus terminal bonus",
+      "Fund only accumulates guaranteed premiums",
+      "Fund pays benefits immediately without accumulation",
+      "Fund ignores terminal bonuses"
+    ],
+    "answerIndex": 0,
+    "solution": "Accumulating with-profits policies grow via guaranteed interest, regular bonuses, and terminal bonus."
+  },
+  {
+    "id": "cm1-110",
+    "subject": "cm1",
+    "n": 109,
+    "title": "Life Table Function l_x",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "The life table function $l_x$ represents:",
+    "options": [
+      "The (expected) number of lives alive at exact age $x$",
+      "The number of deaths at age $x$",
+      "The probability of dying within 1 year",
+      "The future lifetime of a life aged $x$"
+    ],
+    "answerIndex": 0,
+    "solution": "$l_x$ is the expected number of lives alive at exact age $x$, out of a starting cohort of $l_0$ (or $l_\\alpha$) lives."
+  },
+  {
+    "id": "cm1-111",
+    "subject": "cm1",
+    "n": 110,
+    "title": "Life Table Function d_x",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "In a life table, $d_x$ represents:",
+    "options": [
+      "The number of deaths between ages $x$ and $x+1$",
+      "The number of survivors at age $x$",
+      "The probability of surviving one year",
+      "The number alive at age $x+1$"
+    ],
+    "answerIndex": 0,
+    "solution": "$d_x = l_x - l_{x+1}$, the number dying between exact ages $x$ and $x+1$."
+  },
+  {
+    "id": "cm1-112",
+    "subject": "cm1",
+    "n": 111,
+    "title": "Notation for Survival Probability",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "The probability that a life aged $x$ survives $n$ years is denoted by:",
+    "options": [
+      "${}_np_x$",
+      "${}_nq_x$",
+      "$l_x$",
+      "$d_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "${}_np_x$ is the probability that a life aged $x$ survives to age $x+n$."
+  },
+  {
+    "id": "cm1-113",
+    "subject": "cm1",
+    "n": 112,
+    "title": "Notation for Death Probability",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "The probability that a life aged $x$ dies within $n$ years is denoted by:",
+    "options": [
+      "${}_nq_x$",
+      "${}_np_x$",
+      "$l_x$",
+      "$d_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "${}_nq_x = 1 - {}_np_x$ is the probability of dying within $n$ years."
+  },
+  {
+    "id": "cm1-114",
+    "subject": "cm1",
+    "n": 113,
+    "title": "EPV of an Immediate-Payment Whole-Life Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life assurance pays 100,000 immediately on death. Given $\\delta = 0.05$ and $\\bar{A}_x = 0.6$, compute the expected present value (to 2 decimals).",
+    "answer": "60,000.00",
+    "solution": "$EPV = 100{,}000\\,\\bar{A}_x = 100{,}000 \\times 0.6 = 60{,}000$."
+  },
+  {
+    "id": "cm1-115",
+    "subject": "cm1",
+    "n": 114,
+    "title": "EPV of a Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A temporary (term) assurance pays 50,000 if death occurs within 10 years. Given $A^{1}_{x:\\overline{10}|} = 0.08$, compute the expected present value (to 2 decimals).",
+    "answer": "4,000.00",
+    "solution": "$EPV = 50{,}000\\,A^{1}_{x:\\overline{10}|} = 50{,}000 \\times 0.08 = 4{,}000$."
+  },
+  {
+    "id": "cm1-116",
+    "subject": "cm1",
+    "n": 115,
+    "title": "Continuous Annuity-Assurance Identity",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which relationship between whole-life annuity and assurance functions is correct?",
+    "options": [
+      "$\\bar{a}_x = \\dfrac{1 - \\bar{A}_x}{\\delta}$",
+      "$\\bar{a}_x = \\bar{A}_x\\,\\delta$",
+      "$\\bar{A}_x = \\bar{a}_x\\,\\delta$",
+      "$\\bar{a}_x = 1 / \\bar{A}_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "Since $\\bar{A}_x = E[v^{T_x}]$ and $\\bar{a}_x = E\\left[\\dfrac{1 - v^{T_x}}{\\delta}\\right]$, we get $\\bar{a}_x = \\dfrac{1 - \\bar{A}_x}{\\delta}$, i.e. $\\bar{A}_x = 1 - \\delta\\,\\bar{a}_x$."
+  },
+  {
+    "id": "cm1-117",
+    "subject": "cm1",
+    "n": 116,
+    "title": "Curtate vs Continuous Annuities",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Curtate annuity differs from continuous annuity because:",
+    "options": [
+      "Payments occur at discrete times (annually)",
+      "Payments are continuous",
+      "Benefits are deferred",
+      "Benefits are paid at death only"
+    ],
+    "answerIndex": 0,
+    "solution": "Curtate annuities pay at integer time points, unlike continuous annuities."
+  },
+  {
+    "id": "cm1-118",
+    "subject": "cm1",
+    "n": 117,
+    "title": "Select Mortality Concept",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "What is the key feature of select mortality?",
+    "options": [
+      "Survival probabilities differ for first year(s) after selection",
+      "All probabilities identical to ultimate",
+      "Deferred benefits ignored",
+      "Used only in annuities"
+    ],
+    "answerIndex": 0,
+    "solution": "Select life tables account for improved survival in first r years post-selection."
+  },
+  {
+    "id": "cm1-119",
+    "subject": "cm1",
+    "n": 118,
+    "title": "EPV of a Joint-Life Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A joint-life assurance pays 100,000 at the end of the year of the first death of $(x)$ and $(y)$. Given $A_{xy} = 0.45$, compute the expected present value (to 2 decimals).",
+    "answer": "45,000.00",
+    "solution": "$EPV = 100{,}000\\,A_{xy} = 100{,}000 \\times 0.45 = 45{,}000$."
+  },
+  {
+    "id": "cm1-120",
+    "subject": "cm1",
+    "n": 119,
+    "title": "EPV of a Last-Survivor Annuity",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A last-survivor annuity pays 1,000 annually while either $(x)$ or $(y)$ is alive. Given $a_{\\overline{xy}} = 18.0$, compute the expected present value (to 2 decimals).",
+    "answer": "18,000.00",
+    "solution": "$EPV = 1000\\,a_{\\overline{xy}} = 1000 \\times 18.0 = 18{,}000$."
+  },
+  {
+    "id": "cm1-121",
+    "subject": "cm1",
+    "n": 120,
+    "title": "Multiple-Decrement Tables",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is correct about multiple-decrement tables?",
+    "options": [
+      "They model several competing risks for decrement",
+      "They only consider death",
+      "They ignore survival",
+      "They assume only one decrement type"
+    ],
+    "answerIndex": 0,
+    "solution": "Multiple-decrement tables allow evaluation of multiple causes of decrement simultaneously."
+  },
+  {
+    "id": "cm1-122",
+    "subject": "cm1",
+    "n": 121,
+    "title": "Force of Decrement Meaning",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "The force of decrement $\\mu_x$ in a continuous model represents:",
+    "options": [
+      "Instantaneous rate of decrement at age x",
+      "Probability of surviving 1 year",
+      "Number of deaths between x and x+1",
+      "PV of future payments"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\mu_x = \\lim_{h \\to 0^+} \\dfrac{{}_hq_x}{h}$: the instantaneous rate of decrement at exact age $x$."
+  },
+  {
+    "id": "cm1-123",
+    "subject": "cm1",
+    "n": 122,
+    "title": "Independent Decrements",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "In a multiple-decrement model, independent decrements mean:",
+    "options": [
+      "Occurrence of one decrement does not affect probability of others",
+      "One decrement cancels all others",
+      "Decrements always occur together",
+      "Decrement rates sum to zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Independence implies one type of decrement does not affect the probability of others."
+  },
+  {
+    "id": "cm1-124",
+    "subject": "cm1",
+    "n": 123,
+    "title": "EPV of Benefits Under a Single Decrement",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Expected present value of benefits under single decrement equals:",
+    "options": [
+      "Sum over ages of PV * probability of decrement at that age",
+      "PV of first payment only",
+      "Sum of premiums only",
+      "Discount factor without probabilities"
+    ],
+    "answerIndex": 0,
+    "solution": "$EPV = \\sum_t v^t \\times \\text{Benefit}_t \\times \\Pr(\\text{decrement at time } t)$."
+  },
+  {
+    "id": "cm1-125",
+    "subject": "cm1",
+    "n": 124,
+    "title": "Endowment Annuity-Assurance Identity",
+    "difficulty": "medium",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Select the correct formula linking the continuous temporary life annuity to the continuous endowment assurance:",
+    "options": [
+      "$\\bar{a}_{x:\\overline{n}|} = \\dfrac{1 - \\bar{A}_{x:\\overline{n}|}}{\\delta}$",
+      "$\\bar{a}_{x:\\overline{n}|} = \\bar{A}_{x:\\overline{n}|}\\,\\delta$",
+      "$\\bar{A}_{x:\\overline{n}|} = \\bar{a}_{x:\\overline{n}|}\\,\\delta$",
+      "$\\bar{a}_{x:\\overline{n}|} = 1 / \\bar{A}_{x:\\overline{n}|}$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $T = \\min(T_x, n)$, $\\bar{a}_{x:\\overline{n}|} = E\\left[\\dfrac{1 - v^{T}}{\\delta}\\right]$ and $\\bar{A}_{x:\\overline{n}|} = E[v^{T}]$ (an endowment assurance pays at death or at time $n$). Hence $\\bar{a}_{x:\\overline{n}|} = \\dfrac{1 - \\bar{A}_{x:\\overline{n}|}}{\\delta}$."
+  },
+  {
+    "id": "cm1-126",
+    "subject": "cm1",
+    "n": 125,
+    "title": "EPV of a Deferred Whole-Life Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred whole-life assurance pays 100,000 on death, with the cover deferred 5 years. Given ${}_{5|}A_x = 0.55$, compute the expected present value (to 2 decimals).",
+    "answer": "55,000.00",
+    "solution": "$EPV = 100{,}000 \\times {}_{5|}A_x = 100{,}000 \\times 0.55 = 55{,}000$."
+  },
+  {
+    "id": "cm1-127",
+    "subject": "cm1",
+    "n": 126,
+    "title": "EPV of a Temporary Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A temporary annuity-due pays 1,000 annually for 10 years to a life aged $x$. Given $\\ddot{a}_{x:\\overline{10}|} = 8.5$, compute the expected present value (to 2 decimals).",
+    "answer": "8,500.00",
+    "solution": "$EPV = 1000\\,\\ddot{a}_{x:\\overline{10}|} = 1000 \\times 8.5 = 8{,}500$."
+  },
+  {
+    "id": "cm1-128",
+    "subject": "cm1",
+    "n": 127,
+    "title": "Select Life Tables",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is correct about select life tables?",
+    "options": [
+      "They account for improved survival in first r years after selection",
+      "They are identical to ultimate tables",
+      "They ignore mortality improvements",
+      "They are only used for annuities"
+    ],
+    "answerIndex": 0,
+    "solution": "Select tables consider improved short-term survival after selection compared to ultimate tables."
+  },
+  {
+    "id": "cm1-129",
+    "subject": "cm1",
+    "n": 128,
+    "title": "Last-Survivor Annuity Valuation",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A last-survivor annuity pays 500 per year while at least one of $(x)$ and $(y)$ is alive. Given $a_{\\overline{xy}} = 20$, compute the expected present value (to 2 decimals).",
+    "answer": "10,000.00",
+    "solution": "$EPV = 500\\,a_{\\overline{xy}} = 500 \\times 20 = 10{,}000$."
+  },
+  {
+    "id": "cm1-130",
+    "subject": "cm1",
+    "n": 129,
+    "title": "Joint-Life Assurance Factor",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Joint-life assurance pays at first death. Which factor is used for PV?",
+    "options": [
+      "$A_{xy}$",
+      "$a_{xy}$",
+      "$A_x$",
+      "$a_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "A joint-life assurance pays on the first death, so its EPV uses $A_{xy}$, the assurance factor on the joint-life status."
+  },
+  {
+    "id": "cm1-131",
+    "subject": "cm1",
+    "n": 130,
+    "title": "Endowment Assurance Benefits",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which describes a temporary endowment assurance?",
+    "options": [
+      "Pays on death within term or on survival to term end",
+      "Pays only on survival",
+      "Pays periodically while alive",
+      "Pays on death at any time"
+    ],
+    "answerIndex": 0,
+    "solution": "Temporary endowment combines term assurance (death) and pure endowment (survival) payments."
+  },
+  {
+    "id": "cm1-132",
+    "subject": "cm1",
+    "n": 131,
+    "title": "EPV of a Whole-Life Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life annuity-due pays 1,000 per year to a life aged $x$. Given $\\ddot{a}_x = 12.5$, calculate the expected present value (to 2 decimals).",
+    "answer": "12,500.00",
+    "solution": "$EPV = 1000\\,\\ddot{a}_x = 1000 \\times 12.5 = 12{,}500$."
+  },
+  {
+    "id": "cm1-133",
+    "subject": "cm1",
+    "n": 132,
+    "title": "EPV of a Deferred Temporary Annuity",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred temporary annuity pays 1,000 annually for 10 years, deferred 3 years. Given ${}_{3|}a_{x:\\overline{10}|} = 7.5$, compute the expected present value (to 2 decimals).",
+    "answer": "7,500.00",
+    "solution": "$EPV = 1000 \\times {}_{3|}a_{x:\\overline{10}|} = 1000 \\times 7.5 = 7{,}500$."
+  },
+  {
+    "id": "cm1-134",
+    "subject": "cm1",
+    "n": 133,
+    "title": "Dependent Decrements",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "In multiple decrement models, dependent decrements mean:",
+    "options": [
+      "Occurrence of one decrement affects probability of others",
+      "Occurrence of one decrement independent of others",
+      "No decrements occur simultaneously",
+      "All decrements ignored"
+    ],
+    "answerIndex": 0,
+    "solution": "Dependent decrements mean the probability of one decrement can alter the probability of another."
+  },
+  {
+    "id": "cm1-135",
+    "subject": "cm1",
+    "n": 134,
+    "title": "Unit-Linked Benefit Dependence",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities",
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A conventional unit-linked policy provides death benefits as units times unit price. Which is correct?",
+    "options": [
+      "Death benefit depends on fund value at death",
+      "Death benefit is fixed",
+      "Benefit ignores units",
+      "Benefit paid regardless of fund value"
+    ],
+    "answerIndex": 0,
+    "solution": "Unit-linked benefits are proportional to current fund value."
+  },
+  {
+    "id": "cm1-136",
+    "subject": "cm1",
+    "n": 135,
+    "title": "Whole-Life Annuity-Due as a Sum",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Select the correct formula for the curtate whole-life annuity-due $\\ddot{a}_x$:",
+    "options": [
+      "$\\ddot{a}_x = \\sum_{k=0}^{\\infty} v^k\\,{}_kp_x$",
+      "$\\ddot{a}_x = 1 - A_x$",
+      "$\\ddot{a}_x = A_x / \\delta$",
+      "$\\ddot{a}_x = v^x q_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\ddot{a}_x = \\sum_{k=0}^{\\infty} v^k\\,{}_kp_x$: the payment of 1 at time $k$ is made if the life survives to $x+k$."
+  },
+  {
+    "id": "cm1-137",
+    "subject": "cm1",
+    "n": 136,
+    "title": "Force of Mortality and q_x",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Assuming the force of mortality is constant at $\\mu_x$ over the year of age $x$ to $x+1$, $q_x$ is related to $\\mu_x$ by:",
+    "options": [
+      "$q_x = 1 - e^{-\\mu_x}$",
+      "$q_x = e^{-\\mu_x}$",
+      "$\\mu_x = q_x / \\delta$",
+      "$\\mu_x = q_x^2$"
+    ],
+    "answerIndex": 0,
+    "solution": "With constant force over the year, $p_x = e^{-\\mu_x}$, so $q_x = 1 - e^{-\\mu_x}$."
+  },
+  {
+    "id": "cm1-138",
+    "subject": "cm1",
+    "n": 137,
+    "title": "Last-Survivor Annuity EPV II",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A last-survivor annuity pays 1,000 per year while either $(x)$ or $(y)$ is alive. Given $a_{\\overline{xy}} = 18.0$, compute the expected present value (to 2 decimals).",
+    "answer": "18,000.00",
+    "solution": "$EPV = 1000\\,a_{\\overline{xy}} = 1000 \\times 18.0 = 18{,}000$."
+  },
+  {
+    "id": "cm1-139",
+    "subject": "cm1",
+    "n": 138,
+    "title": "Joint-Life Assurance EPV II",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A joint-life assurance pays 100,000 on the first death of $(x)$ and $(y)$. Given $A_{xy} = 0.45$, compute the expected present value (to 2 decimals).",
+    "answer": "45,000.00",
+    "solution": "$EPV = 100{,}000\\,A_{xy} = 100{,}000 \\times 0.45 = 45{,}000$."
+  },
+  {
+    "id": "cm1-140",
+    "subject": "cm1",
+    "n": 139,
+    "title": "Accumulating With-Profits Fund Growth",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement about accumulating with-profits contracts is correct?",
+    "options": [
+      "The fund grows at a guaranteed rate plus bonus interest, with a possible terminal bonus",
+      "The fund is fixed and never increases",
+      "Benefits are paid immediately without accumulation",
+      "The fund ignores terminal bonuses"
+    ],
+    "answerIndex": 0,
+    "solution": "Premiums are credited to a fund that grows at a guaranteed interest rate plus discretionary (regular) bonus interest; a terminal bonus may be added when the benefit is paid."
+  },
+  {
+    "id": "cm1-141",
+    "subject": "cm1",
+    "n": 140,
+    "title": "EPV of a 5-Year Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A temporary annuity-due pays 500 annually for 5 years. Given $\\ddot{a}_{x:\\overline{5}|} = 4.6$, compute the expected present value (to 2 decimals).",
+    "answer": "2,300.00",
+    "solution": "$EPV = 500\\,\\ddot{a}_{x:\\overline{5}|} = 500 \\times 4.6 = 2{,}300$."
+  },
+  {
+    "id": "cm1-142",
+    "subject": "cm1",
+    "n": 141,
+    "title": "Temporary Annuity and Endowment Link",
+    "difficulty": "medium",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Select the correct relationship between continuous temporary annuity and endowment assurance factors:",
+    "options": [
+      "$\\bar{a}_{x:\\overline{n}|} = \\dfrac{1 - \\bar{A}_{x:\\overline{n}|}}{\\delta}$",
+      "$\\bar{a}_{x:\\overline{n}|} = \\bar{A}_{x:\\overline{n}|}\\,\\delta$",
+      "$\\bar{A}_{x:\\overline{n}|} = \\bar{a}_{x:\\overline{n}|}\\,\\delta$",
+      "$\\bar{a}_{x:\\overline{n}|} = 1 / \\bar{A}_{x:\\overline{n}|}$"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\bar{A}_{x:\\overline{n}|} = 1 - \\delta\\,\\bar{a}_{x:\\overline{n}|}$, where $\\bar{A}_{x:\\overline{n}|}$ is the endowment assurance (paying on death within $n$ years or on survival to $n$). Rearranging gives $\\bar{a}_{x:\\overline{n}|} = (1 - \\bar{A}_{x:\\overline{n}|})/\\delta$."
+  },
+  {
+    "id": "cm1-143",
+    "subject": "cm1",
+    "n": 142,
+    "title": "EPV of a Pure Endowment",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A pure endowment pays 50,000 at the end of 10 years if the life aged $x$ survives. Given ${}_{10}E_x = 0.7$, compute the expected present value (to 2 decimals).",
+    "answer": "35,000.00",
+    "solution": "$EPV = 50{,}000\\,{}_{10}E_x = 50{,}000 \\times 0.7 = 35{,}000$."
+  },
+  {
+    "id": "cm1-144",
+    "subject": "cm1",
+    "n": 143,
+    "title": "Joint-Life Annuity Payments",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true about joint-life annuities?",
+    "options": [
+      "Payments continue while all the lives are alive and cease on the first death",
+      "Payments stop after a fixed term",
+      "Payments are made only at death",
+      "Payments are not affected by survival of the lives"
+    ],
+    "answerIndex": 0,
+    "solution": "A joint-life annuity is payable only while the joint-life status survives, i.e. while all lives are alive; it ceases on the first death. (A last-survivor annuity continues until the second death.)"
+  },
+  {
+    "id": "cm1-145",
+    "subject": "cm1",
+    "n": 144,
+    "title": "Select vs Ultimate Mortality",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A select life table adjusts mortality rates for first r years after selection. Which is correct?",
+    "options": [
+      "Mortality lower than ultimate table for first r years",
+      "Mortality identical to ultimate table",
+      "Mortality higher than ultimate table",
+      "Mortality ignored for first year"
+    ],
+    "answerIndex": 0,
+    "solution": "Select tables account for improved short-term survival post selection."
+  },
+  {
+    "id": "cm1-146",
+    "subject": "cm1",
+    "n": 145,
+    "title": "Single Premium for Whole-Life Cover",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities",
+      "Premiums"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life assurance has sum assured 100,000 payable at the end of the year of death. Given $A_x = 0.6$, calculate the expected present value of the benefit (to 2 decimals).",
+    "answer": "60,000.00",
+    "solution": "$EPV = 100{,}000\\,A_x = 100{,}000 \\times 0.6 = 60{,}000$."
+  },
+  {
+    "id": "cm1-147",
+    "subject": "cm1",
+    "n": 146,
+    "title": "EPV of an Endowment Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "An endowment assurance pays 50,000 on death within 10 years or on survival to the end of 10 years. Given $A_{x:\\overline{10}|} = 0.70$, calculate the expected present value (to 2 decimals).",
+    "answer": "35,000.00",
+    "solution": "$EPV = 50{,}000\\,A_{x:\\overline{10}|} = 50{,}000 \\times 0.70 = 35{,}000$."
+  },
+  {
+    "id": "cm1-148",
+    "subject": "cm1",
+    "n": 147,
+    "title": "Uses of Multiple-Decrement Tables",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Multiple decrement table can be used to model:",
+    "options": [
+      "Competing risks of decrement",
+      "Only death",
+      "Only survival",
+      "No decrement"
+    ],
+    "answerIndex": 0,
+    "solution": "Multiple-decrement tables allow for modeling several competing causes of decrement."
+  },
+  {
+    "id": "cm1-149",
+    "subject": "cm1",
+    "n": 148,
+    "title": "Force of Decrement Interpretation",
+    "difficulty": "easy",
+    "topics": [
+      "Multiple lives & decrements",
+      "Survival models & life tables"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "In a continuous-time model, the force of decrement $\\mu_x$ represents:",
+    "options": [
+      "Instantaneous rate of decrement at age x",
+      "Annual probability of survival",
+      "Number of deaths in year",
+      "PV of benefits"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\mu_x$ is the instantaneous rate (hazard) of decrement for a life at exact age $x$."
+  },
+  {
+    "id": "cm1-150",
+    "subject": "cm1",
+    "n": 149,
+    "title": "Valuing a Life Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A curtate whole-life annuity-due pays 1,000 annually. Given $\\ddot{a}_x = 12.0$, calculate the expected present value (to 2 decimals).",
+    "answer": "12,000.00",
+    "solution": "$EPV = 1000\\,\\ddot{a}_x = 1000 \\times 12.0 = 12{,}000$."
+  },
+  {
+    "id": "cm1-151",
+    "subject": "cm1",
+    "n": 150,
+    "title": "Level Net Premium for Whole-Life Cover",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life assurance pays 100,000 at the end of the year of death. Level premiums are payable annually in advance for life. Using the equivalence principle with no expenses, and given $A_x = 0.6$ and $\\ddot{a}_x = 12.5$, compute the annual net premium (to 2 decimals).",
+    "answer": "4,800.00",
+    "solution": "Equivalence principle: $P\\,\\ddot{a}_x = 100{,}000\\,A_x$.\n$P = \\dfrac{100{,}000 \\times 0.6}{12.5} = \\dfrac{60{,}000}{12.5} = 4{,}800$."
+  },
+  {
+    "id": "cm1-152",
+    "subject": "cm1",
+    "n": 151,
+    "title": "Prospective Reserve Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "In a prospective reserve calculation, which is correct?",
+    "options": [
+      "Reserve = PV of future benefits - PV of future premiums",
+      "Reserve = PV of past premiums",
+      "Reserve = total premiums paid",
+      "Reserve = future benefit only, ignoring premiums"
+    ],
+    "answerIndex": 0,
+    "solution": "Prospective reserve considers present value of future obligations minus future premiums to be received."
+  },
+  {
+    "id": "cm1-153",
+    "subject": "cm1",
+    "n": 152,
+    "title": "Net Premium for an Endowment Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "An endowment assurance pays 50,000 on death within 10 years or on survival to the end of 10 years. Premiums are payable annually in advance for 10 years. Given $A_{x:\\overline{10}|} = 0.70$ and $\\ddot{a}_{x:\\overline{10}|} = 7.5$, and ignoring expenses, compute the annual net premium (to 2 decimals).",
+    "answer": "4,666.67",
+    "solution": "Equivalence principle: $P\\,\\ddot{a}_{x:\\overline{10}|} = 50{,}000\\,A_{x:\\overline{10}|}$.\n$P = \\dfrac{50{,}000 \\times 0.70}{7.5} = \\dfrac{35{,}000}{7.5} = 4{,}666.67$."
+  },
+  {
+    "id": "cm1-154",
+    "subject": "cm1",
+    "n": 153,
+    "title": "Retrospective Reserve Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true for retrospective reserve?",
+    "options": [
+      "Reserve = accumulated value of past premiums minus accumulated benefits paid",
+      "Reserve ignores past premiums",
+      "Reserve = present value of future benefits only",
+      "Reserve always equals zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Retrospective reserve sums past premiums with interest minus benefits already paid."
+  },
+  {
+    "id": "cm1-155",
+    "subject": "cm1",
+    "n": 154,
+    "title": "Net Premium for a Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A term assurance pays 100,000 at the end of the year of death within 20 years. Premiums are payable annually in advance for 20 years. Given $A^{1}_{x:\\overline{20}|} = 0.15$ and $\\ddot{a}_{x:\\overline{20}|} = 14$, compute the annual net premium using the equivalence principle (to 2 decimals).",
+    "answer": "1,071.43",
+    "solution": "$P = \\dfrac{100{,}000\\,A^{1}_{x:\\overline{20}|}}{\\ddot{a}_{x:\\overline{20}|}} = \\dfrac{15{,}000}{14} = 1{,}071.43$."
+  },
+  {
+    "id": "cm1-156",
+    "subject": "cm1",
+    "n": 155,
+    "title": "Death Strain at Risk Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true about death strain at risk?",
+    "options": [
+      "Death strain at risk = sum assured payable on death minus the end-of-year reserve",
+      "Death strain = gross premium only",
+      "Death strain = reserve at start of policy",
+      "Death strain = PV of future premiums"
+    ],
+    "answerIndex": 0,
+    "solution": "For policy year $t+1$, $DSAR = S - {}_{t+1}V$: the extra amount the insurer must find if the life dies, over and above the reserve it would otherwise have had to hold."
+  },
+  {
+    "id": "cm1-157",
+    "subject": "cm1",
+    "n": 156,
+    "title": "Mortality Profit Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Mortality profit is:",
+    "options": [
+      "Difference between expected and actual death strain",
+      "PV of premiums only",
+      "Accumulated premiums minus benefits",
+      "Difference between reserve and premiums"
+    ],
+    "answerIndex": 0,
+    "solution": "Mortality profit arises if fewer deaths occur than expected, producing a positive profit."
+  },
+  {
+    "id": "cm1-158",
+    "subject": "cm1",
+    "n": 157,
+    "title": "Premium for a Deferred Whole-Life Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred whole-life assurance pays 100,000 on death, with cover deferred 5 years. Premiums are payable annually in advance for at most 30 years. Given ${}_{5|}A_x = 0.55$ and $\\ddot{a}_{x:\\overline{30}|} = 12$, compute the annual net premium (to 2 decimals).",
+    "answer": "4,583.33",
+    "solution": "$P = \\dfrac{100{,}000 \\times {}_{5|}A_x}{\\ddot{a}_{x:\\overline{30}|}} = \\dfrac{55{,}000}{12} = 4{,}583.33$."
+  },
+  {
+    "id": "cm1-159",
+    "subject": "cm1",
+    "n": 158,
+    "title": "Purpose of a Profit Test",
+    "difficulty": "easy",
+    "topics": [
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is correct for a profit test life insurance model?",
+    "options": [
+      "It projects expected cashflows of premiums, benefits, expenses, and calculates profit over term",
+      "It ignores expenses",
+      "It only calculates reserve",
+      "It projects benefits only"
+    ],
+    "answerIndex": 0,
+    "solution": "Profit testing evaluates the product by projecting all relevant cashflows and determining the profit vector."
+  },
+  {
+    "id": "cm1-160",
+    "subject": "cm1",
+    "n": 159,
+    "title": "Single Premium for a Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the single net premium for a term assurance with sum assured 50,000, given $A^{1}_{x:\\overline{n}|} = 0.07$ (to 2 decimals).",
+    "answer": "3,500.00",
+    "solution": "Single premium $= 50{,}000\\,A^{1}_{x:\\overline{n}|} = 50{,}000 \\times 0.07 = 3{,}500$."
+  },
+  {
+    "id": "cm1-161",
+    "subject": "cm1",
+    "n": 160,
+    "title": "Gross Premium Reserve Components",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Expenses"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is correct regarding gross premium reserve?",
+    "options": [
+      "Gross premium reserve accounts for future expenses and premiums",
+      "Gross premium reserve ignores benefits",
+      "Gross premium reserve = net premium reserve",
+      "Gross premium reserve always zero at inception"
+    ],
+    "answerIndex": 0,
+    "solution": "Gross premium reserve includes both future benefits and expected premiums, accounting for expenses."
+  },
+  {
+    "id": "cm1-162",
+    "subject": "cm1",
+    "n": 161,
+    "title": "Purpose of Non-Unit Reserves",
+    "difficulty": "easy",
+    "topics": [
+      "Profit testing",
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Unit-linked policy with benefit = units * unit price. What can insurer do to eliminate future negative cashflows?",
+    "options": [
+      "Establish non-unit reserve",
+      "Ignore negative cashflows",
+      "Increase premiums arbitrarily",
+      "Pay benefits from external funds only"
+    ],
+    "answerIndex": 0,
+    "solution": "Non-unit reserve allows insurer to adjust for future negative cashflows while keeping unit fund intact."
+  },
+  {
+    "id": "cm1-163",
+    "subject": "cm1",
+    "n": 162,
+    "title": "Prospective Reserve for an Endowment",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate prospective reserve after 5 years for endowment, PV future benefits=40,000, PV future premiums=15,000 (to 2 decimals).",
+    "answer": "25,000.00",
+    "solution": "Prospective reserve = PV future benefits - PV future premiums = 40,000 - 15,000 = 25,000."
+  },
+  {
+    "id": "cm1-164",
+    "subject": "cm1",
+    "n": 163,
+    "title": "Recursive Reserve Relationship",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Recursive relationship between successive gross premium reserves allows:",
+    "options": [
+      "Efficient calculation of reserves at each period",
+      "Ignore premiums",
+      "Compute mortality profit only",
+      "Compute only first-year reserve"
+    ],
+    "answerIndex": 0,
+    "solution": "Recursive formulas relate reserves from one year to the next, simplifying calculations."
+  },
+  {
+    "id": "cm1-165",
+    "subject": "cm1",
+    "n": 164,
+    "title": "Reserve of a Single-Premium Annuity",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "An annuity of 500 per year for 20 years was bought by a single premium at t = 0, so there are no future premiums, and expenses are ignored. The prospective reserve at t = 0 (just after the single premium is paid) is 7,500. Compute the expected present value of future benefits at t = 0 (to 2 decimals).",
+    "answer": "7,500.00",
+    "solution": "With no future premiums or expenses, prospective reserve = EPV of future benefits - 0, so EPV of future benefits = 7,500."
+  },
+  {
+    "id": "cm1-166",
+    "subject": "cm1",
+    "n": 165,
+    "title": "Net Premium Valuation",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is correct for net premium valuation?",
+    "options": [
+      "Reserves are calculated ignoring expenses and using net premiums",
+      "Reserves include gross premiums and expenses",
+      "Net premium reserve = death strain",
+      "Net premium reserve is always zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Net premium valuation uses pure premiums, ignoring expenses and profit loadings."
+  },
+  {
+    "id": "cm1-167",
+    "subject": "cm1",
+    "n": 166,
+    "title": "Death Strain at Risk Calculation",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A policy has sum assured 100,000 payable at the end of the year of death, and the reserve at the end of that year is 40,000. Calculate the death strain at risk (to 2 decimals).",
+    "answer": "60,000.00",
+    "solution": "$DSAR = S - {}_{t+1}V = 100{,}000 - 40{,}000 = 60{,}000$."
+  },
+  {
+    "id": "cm1-168",
+    "subject": "cm1",
+    "n": 167,
+    "title": "Premium from EPV of Benefits",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "The expected present value of the benefits under a policy is 10,000. Level premiums are payable annually in advance for 10 years, and $\\ddot{a}_{x:\\overline{10}|} = 8.5$. Ignoring expenses, compute the annual net premium using the equivalence principle (to 2 decimals).",
+    "answer": "1,176.47",
+    "solution": "$P\\,\\ddot{a}_{x:\\overline{10}|} = 10{,}000 \\Rightarrow P = 10{,}000 / 8.5 = 1{,}176.47$."
+  },
+  {
+    "id": "cm1-169",
+    "subject": "cm1",
+    "n": 168,
+    "title": "Computing Mortality Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Mortality profit is computed as:",
+    "options": [
+      "Difference between expected and actual claims",
+      "Difference between reserve and PV premiums",
+      "Sum of all premiums",
+      "Present value of future benefits"
+    ],
+    "answerIndex": 0,
+    "solution": "Mortality profit = expected death strain - actual death strain, i.e. the difference between expected and actual claims (net of reserves released). It is positive when fewer deaths occur than expected."
+  },
+  {
+    "id": "cm1-170",
+    "subject": "cm1",
+    "n": 169,
+    "title": "Single Premium for Death Cover",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A single premium term assurance pays 50,000 on death within the term. Given $A^{1}_{x:\\overline{n}|} = 0.08$, and ignoring expenses, compute the single premium (to 2 decimals).",
+    "answer": "4,000.00",
+    "solution": "Single premium $= 50{,}000\\,A^{1}_{x:\\overline{n}|} = 50{,}000 \\times 0.08 = 4{,}000$."
+  },
+  {
+    "id": "cm1-171",
+    "subject": "cm1",
+    "n": 170,
+    "title": "Varying Benefit Contracts",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities",
+      "Premiums"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true about increasing/decreasing benefit contracts?",
+    "options": [
+      "EPV accounts for change in benefit over time",
+      "EPV ignores change in benefit",
+      "Gross premiums remain constant",
+      "Death strain unaffected by benefit changes"
+    ],
+    "answerIndex": 0,
+    "solution": "For increasing/decreasing benefits, EPV calculation reflects varying amounts over time."
+  },
+  {
+    "id": "cm1-172",
+    "subject": "cm1",
+    "n": 171,
+    "title": "Unit-Linked Profit Test Components",
+    "difficulty": "easy",
+    "topics": [
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Profit test for unit-linked contract can include:",
+    "options": [
+      "Future unit fund values, non-unit reserves, expenses, and premiums",
+      "Only premiums",
+      "Only reserves",
+      "Only expenses"
+    ],
+    "answerIndex": 0,
+    "solution": "Unit-linked profit test includes projected unit fund, reserves, premiums, and expenses."
+  },
+  {
+    "id": "cm1-173",
+    "subject": "cm1",
+    "n": 172,
+    "title": "EPV of a Deferred Temporary Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred annuity-due pays 1,000 per year for 10 years, starting in 5 years' time. Given ${}_{5|}\\ddot{a}_{x:\\overline{10}|} = 7.0$, compute the expected present value (to 2 decimals).",
+    "answer": "7,000.00",
+    "solution": "$EPV = 1000 \\times {}_{5|}\\ddot{a}_{x:\\overline{10}|} = 1000 \\times 7.0 = 7{,}000$."
+  },
+  {
+    "id": "cm1-174",
+    "subject": "cm1",
+    "n": 173,
+    "title": "Prospective Reserve for an Annuity",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate prospective reserve for annuity, PV future benefits=20,000, PV future premiums=8,000 (to 2 decimals).",
+    "answer": "12,000.00",
+    "solution": "Prospective reserve = PV future benefits - PV future premiums = 20,000 - 8,000 = 12,000."
+  },
+  {
+    "id": "cm1-175",
+    "subject": "cm1",
+    "n": 174,
+    "title": "Gross Reserve for Unit-Linked Business",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is correct about gross prospective reserve for unit-linked contract?",
+    "options": [
+      "Includes PV of future benefits and PV of future expenses less PV of future premiums",
+      "Includes only PV of unit fund",
+      "Equals net premium reserve",
+      "Always zero at start"
+    ],
+    "answerIndex": 0,
+    "solution": "Gross prospective reserve accounts for expected future benefits, expenses, minus premiums."
+  },
+  {
+    "id": "cm1-176",
+    "subject": "cm1",
+    "n": 175,
+    "title": "Net Premium for a 20-Year Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A term assurance pays 100,000 on death within 20 years. Premiums are payable annually in advance for 20 years. Given $A^{1}_{x:\\overline{20}|} = 0.12$ and $\\ddot{a}_{x:\\overline{20}|} = 15$, compute the annual net premium (to 2 decimals).",
+    "answer": "800.00",
+    "solution": "$P = \\dfrac{100{,}000 \\times 0.12}{15} = \\dfrac{12{,}000}{15} = 800$."
+  },
+  {
+    "id": "cm1-177",
+    "subject": "cm1",
+    "n": 176,
+    "title": "Valuing Deferred Annuities",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true for deferred benefit annuities?",
+    "options": [
+      "PV = Payment * deferred annuity factor",
+      "PV ignores deferral period",
+      "PV only considers immediate payments",
+      "PV is same as for whole-life annuity"
+    ],
+    "answerIndex": 0,
+    "solution": "Deferred benefits require discounting from the start of payments, using the deferred annuity factor."
+  },
+  {
+    "id": "cm1-178",
+    "subject": "cm1",
+    "n": 177,
+    "title": "Net Premium for a 15-Year Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A term assurance pays 50,000 on death within 15 years. Premiums are payable annually in advance for 15 years. Given $A^{1}_{x:\\overline{15}|} = 0.10$ and $\\ddot{a}_{x:\\overline{15}|} = 12$, compute the annual net premium (to 2 decimals).",
+    "answer": "416.67",
+    "solution": "$P = \\dfrac{50{,}000 \\times 0.10}{12} = \\dfrac{5{,}000}{12} = 416.67$."
+  },
+  {
+    "id": "cm1-179",
+    "subject": "cm1",
+    "n": 178,
+    "title": "Reserve for a Deferred Annuity",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true about the prospective reserve of a deferred annuity?",
+    "options": [
+      "PV of future benefits minus PV of future premiums, considering deferral",
+      "PV of past premiums only",
+      "Equals zero until first payment",
+      "PV of benefits ignoring deferral"
+    ],
+    "answerIndex": 0,
+    "solution": "Prospective reserve accounts for the deferral period in calculating PV of future benefits and premiums."
+  },
+  {
+    "id": "cm1-180",
+    "subject": "cm1",
+    "n": 179,
+    "title": "Single Premium for Whole-Life Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the single net premium for a whole-life assurance with sum assured 100,000, given $A_x = 0.07$ (to 2 decimals).",
+    "answer": "7,000.00",
+    "solution": "Single premium $= 100{,}000\\,A_x = 100{,}000 \\times 0.07 = 7{,}000$."
+  },
+  {
+    "id": "cm1-181",
+    "subject": "cm1",
+    "n": 180,
+    "title": "Portfolio Mortality Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true regarding mortality profit for a portfolio of term assurances?",
+    "options": [
+      "Sum of expected minus actual death strains over portfolio",
+      "Difference between reserves and premiums only",
+      "PV of future premiums minus PV benefits",
+      "Always zero at inception"
+    ],
+    "answerIndex": 0,
+    "solution": "Mortality profit aggregates the difference between expected and actual death claims across all policies."
+  },
+  {
+    "id": "cm1-182",
+    "subject": "cm1",
+    "n": 181,
+    "title": "Annuity-Due EPV at Outset",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life annuity-due pays 1,000 annually. Given $\\ddot{a}_x = 10$, calculate the expected present value of future benefits at $t = 0$ (to 2 decimals).",
+    "answer": "10,000.00",
+    "solution": "$EPV = 1000\\,\\ddot{a}_x = 1000 \\times 10 = 10{,}000$."
+  },
+  {
+    "id": "cm1-183",
+    "subject": "cm1",
+    "n": 182,
+    "title": "Gross Prospective Reserve Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Expenses"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Gross prospective reserve is calculated as:",
+    "options": [
+      "PV future benefits + PV expenses - PV future premiums",
+      "PV future benefits only",
+      "PV past premiums",
+      "PV of unit fund only"
+    ],
+    "answerIndex": 0,
+    "solution": "Gross prospective reserve accounts for all expected cashflows including expenses, minus future premiums."
+  },
+  {
+    "id": "cm1-184",
+    "subject": "cm1",
+    "n": 183,
+    "title": "Premium for a 10-Year Deferred Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred whole-life assurance pays 100,000 on death, with cover deferred 10 years. Premiums are payable annually in advance for at most 30 years. Given ${}_{10|}A_x = 0.45$ and $\\ddot{a}_{x:\\overline{30}|} = 15$, compute the annual net premium (to 2 decimals).",
+    "answer": "3,000.00",
+    "solution": "$P = \\dfrac{100{,}000 \\times 0.45}{15} = \\dfrac{45{,}000}{15} = 3{,}000$."
+  },
+  {
+    "id": "cm1-185",
+    "subject": "cm1",
+    "n": 184,
+    "title": "Death Strain for Annuities",
+    "difficulty": "medium",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true about death strain for annuity contracts?",
+    "options": [
+      "Death strain = Benefit due at death - reserve at death",
+      "Death strain = PV of premiums",
+      "Death strain = reserve only",
+      "Death strain = EPV of future premiums"
+    ],
+    "answerIndex": 0,
+    "solution": "In general, death strain = benefit payable on death $-$ reserve released. For an annuity with no death benefit this is $0 - {}_{t+1}V < 0$, so deaths release reserves and generate mortality profit."
+  },
+  {
+    "id": "cm1-186",
+    "subject": "cm1",
+    "n": 185,
+    "title": "Gross Prospective Reserve Calculation",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves",
+      "Expenses"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "For a policy, the EPV of future benefits is 50,000, the EPV of future premiums is 20,000 and the EPV of future expenses is 5,000. Calculate the gross prospective reserve (to 2 decimals).",
+    "answer": "35,000.00",
+    "solution": "Gross prospective reserve = EPV benefits + EPV expenses - EPV premiums = 50,000 + 5,000 - 20,000 = 35,000."
+  },
+  {
+    "id": "cm1-187",
+    "subject": "cm1",
+    "n": 186,
+    "title": "Single Premium Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the single net premium for a term assurance with sum assured 50,000, given $A^{1}_{x:\\overline{n}|} = 0.09$ (to 2 decimals).",
+    "answer": "4,500.00",
+    "solution": "Single premium $= 50{,}000 \\times 0.09 = 4{,}500$."
+  },
+  {
+    "id": "cm1-188",
+    "subject": "cm1",
+    "n": 187,
+    "title": "Net Premium Reserve of an Endowment",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true for net premium reserve of an endowment assurance?",
+    "options": [
+      "Calculated ignoring expenses and profit loadings",
+      "Includes gross premiums",
+      "PV of unit-linked fund only",
+      "Always equals zero at start"
+    ],
+    "answerIndex": 0,
+    "solution": "Net premium reserve uses pure premiums, without including expenses or profit loads."
+  },
+  {
+    "id": "cm1-189",
+    "subject": "cm1",
+    "n": 188,
+    "title": "Profit Vector Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Profit testing"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Profit vector in profit test represents:",
+    "options": [
+      "Profit at each time period of the policy",
+      "Total premiums paid",
+      "Reserve only",
+      "Expected benefits only"
+    ],
+    "answerIndex": 0,
+    "solution": "Profit vector shows the net profit (or loss) in each period of the policy from expected cashflows."
+  },
+  {
+    "id": "cm1-190",
+    "subject": "cm1",
+    "n": 189,
+    "title": "Deferred Annuity-Due Valuation II",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred annuity-due pays 1,000 per year for 10 years, starting in 5 years' time. Given ${}_{5|}\\ddot{a}_{x:\\overline{10}|} = 6.8$, compute the expected present value (to 2 decimals).",
+    "answer": "6,800.00",
+    "solution": "$EPV = 1000 \\times 6.8 = 6{,}800$."
+  },
+  {
+    "id": "cm1-191",
+    "subject": "cm1",
+    "n": 190,
+    "title": "Recursive Gross Premium Reserves",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement is true about recursive gross premium reserve?",
+    "options": [
+      "It links reserve at t to reserve at t+1 for efficient calculation",
+      "It ignores past premiums",
+      "It only applies to single premium policies",
+      "Reserve always increases over time"
+    ],
+    "answerIndex": 0,
+    "solution": "Recursive relationship allows calculation of reserve at each time point from prior reserve and cashflows."
+  },
+  {
+    "id": "cm1-192",
+    "subject": "cm1",
+    "n": 191,
+    "title": "Mortality Profit Calculation",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the mortality profit if the expected death strain is 30,000 and the actual death strain is 25,000 (to 2 decimals).",
+    "answer": "5,000.00",
+    "solution": "Mortality profit = Expected - Actual = 30,000 - 25,000 = 5,000."
+  },
+  {
+    "id": "cm1-193",
+    "subject": "cm1",
+    "n": 192,
+    "title": "Premiums for Increasing Term Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true about gross premium for increasing benefit term assurance?",
+    "options": [
+      "Premium calculation accounts for benefit increasing over time",
+      "Premium remains constant ignoring benefit",
+      "Premium only considers first year",
+      "Premium ignores EPV of benefits"
+    ],
+    "answerIndex": 0,
+    "solution": "Gross premium reflects the expected present value of benefits, including increases over time."
+  },
+  {
+    "id": "cm1-194",
+    "subject": "cm1",
+    "n": 193,
+    "title": "Single Premium for Whole-Life Assurance II",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A whole-life assurance has sum assured 100,000 and $A_x = 0.11$. Ignoring expenses, calculate the single premium (to 2 decimals).",
+    "answer": "11,000.00",
+    "solution": "Single premium $= 100{,}000 \\times 0.11 = 11{,}000$."
+  },
+  {
+    "id": "cm1-195",
+    "subject": "cm1",
+    "n": 194,
+    "title": "Non-Unit Reserve Role",
+    "difficulty": "easy",
+    "topics": [
+      "Profit testing",
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Which is true about unit-linked non-unit reserve?",
+    "options": [
+      "Adjusts for future negative cashflows not covered by unit fund",
+      "Represents unit fund value",
+      "Always zero",
+      "Includes past premiums only"
+    ],
+    "answerIndex": 0,
+    "solution": "Non-unit reserve ensures negative cashflows are covered without impacting unit fund."
+  },
+  {
+    "id": "cm1-196",
+    "subject": "cm1",
+    "n": 195,
+    "title": "Premium for a 5-Year Deferred Assurance",
+    "difficulty": "easy",
+    "topics": [
+      "Premiums",
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A deferred whole-life assurance pays 100,000 on death, with cover deferred 5 years. Premiums are payable annually in advance for at most 25 years. Given ${}_{5|}A_x = 0.5$ and $\\ddot{a}_{x:\\overline{25}|} = 15$, compute the annual net premium (to 2 decimals).",
+    "answer": "3,333.33",
+    "solution": "$P = \\dfrac{0.5 \\times 100{,}000}{15} = \\dfrac{50{,}000}{15} = 3{,}333.33$."
+  },
+  {
+    "id": "cm1-197",
+    "subject": "cm1",
+    "n": 196,
+    "title": "Prospective Reserve Calculation",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "Calculate the prospective reserve if the EPV of future benefits is 45,000 and the EPV of future premiums is 18,000 (to 2 decimals).",
+    "answer": "27,000.00",
+    "solution": "Reserve = PV future benefits - PV future premiums = 45,000 - 18,000 = 27,000."
+  },
+  {
+    "id": "cm1-198",
+    "subject": "cm1",
+    "n": 197,
+    "title": "Gross Premium Reserve at Inception",
+    "difficulty": "medium",
+    "topics": [
+      "Reserves",
+      "Premiums"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "A gross premium is calculated using the equivalence principle. What is the gross premium prospective reserve at inception (just before the first premium is paid), calculated on the same basis as the premium?",
+    "options": [
+      "Zero",
+      "Equal to the EPV of the benefits",
+      "Equal to the first premium",
+      "Always negative, because of initial expenses"
+    ],
+    "answerIndex": 0,
+    "solution": "By the equivalence principle, EPV of premiums = EPV of benefits + EPV of expenses on the premium basis. The prospective reserve at inception on the same basis is EPV(benefits + expenses) - EPV(premiums) = 0. (On a different, e.g. more prudent, reserving basis it could be positive or negative.)"
+  },
+  {
+    "id": "cm1-199",
+    "subject": "cm1",
+    "n": 198,
+    "title": "Drivers of Mortality Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Reserves"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "mcq",
+    "prompt": "Mortality profit is affected by:",
+    "options": [
+      "Actual deaths versus expected deaths",
+      "Premium frequency only",
+      "Interest rate only",
+      "Reserve calculation method only"
+    ],
+    "answerIndex": 0,
+    "solution": "Mortality profit depends on the difference between expected and actual mortality experience."
+  },
+  {
+    "id": "cm1-200",
+    "subject": "cm1",
+    "n": 199,
+    "title": "EPV of a 20-Year Annuity-Due",
+    "difficulty": "easy",
+    "topics": [
+      "Assurances & life annuities"
+    ],
+    "exams": [
+      "ifoa-cm1",
+      "assa-a213"
+    ],
+    "type": "numeric",
+    "prompt": "A temporary annuity-due pays 1,500 per year for 20 years. Given $\\ddot{a}_{x:\\overline{20}|} = 14$, calculate the expected present value (to 2 decimals).",
+    "answer": "21,000.00",
+    "solution": "$EPV = 1500 \\times 14 = 21{,}000$."
+  }
+]

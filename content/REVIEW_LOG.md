@@ -1,0 +1,505 @@
+# Content review log
+
+Every question from the original site was reviewed before migration: answers recomputed (numeric ones in Python),
+ambiguous wording tightened, broken notation fixed and muddled solutions rewritten. This log lists every content change.
+950 placeholder questions ("Practice question covering key topics", answer "0") and 41 exact duplicates were removed.
+
+| Subject | Corrections |
+|---|---|
+| BRAIN Brainteasers | 66 |
+| CB1 Business Finance | 20 |
+| CB2 Business Economics | 14 |
+| CM1 Actuarial Mathematics | 106 |
+| CM2 Financial Engineering & Loss Reserving | 22 |
+| CS1 Actuarial Statistics | 28 |
+| CS2 Risk Modelling & Survival Analysis | 39 |
+| FIN Finance | 67 |
+| PROB Probability | 20 |
+| STOCH Stochastic Processes | 74 |
+| **Total** | **456** |
+
+## BRAIN Brainteasers
+
+- **brainteasers-1** (Pirates Dividing Gold): With 3 pirates the proposer keeps 99, not 98. The solution also referred to a non-existent 4th pirate. Specified the voting rule (ties pass) and that indifferent pirates vote no, then rewrote the solution.
+- **brainteasers-2** (Tiger and Sheep Crossing): Both 'tiger first' and 'sheep first' work, since the two animals are never alone together. Replaced the options so that 'either order works' is the single correct answer.
+- **brainteasers-7** (25 Horses, Top 3): The solution's description of the 7th race was wrong. Rewrote it with the correct five candidates.
+- **brainteasers-9** (Mislabeled Fruit Boxes): Made the deduction explicit.
+- **brainteasers-10** (Locker Toggling): Prompt didn't say the lockers start closed or exactly what a toggle is. Clarified it.
+- **brainteasers-11** (Desert Messenger with One Helper): Underspecified (number of messengers and rules not given) and the answer 2 was wrong under any sensible reading. Fixed to two messengers with a helper who must return; the answer is 4/3 days.
+- **brainteasers-14** (Equalising Two Piles): A 'move' wasn't defined (you could move 5 coins at once). Now each move transfers one coin.
+- **brainteasers-15** (Two Missing Numbers): Algebra error: x+y=101 and x²+y²=10001 give xy=100, so the missing numbers are 1 and 100, not 50 and 51 (50²+51²=5101). Answer changed to 100.
+- **brainteasers-16** (Eight Coins, One Light): The solution skipped the balanced case. Rewrote it in full.
+- **brainteasers-21** (All Tails by Flipping Subsets): Prompt was a 'prove' instruction, not a true/false statement. Reworded as a statement and simplified the solution.
+- **brainteasers-22** (Chocolate Bar Breaks): Reworded as a true/false statement and gave a cleaner argument.
+- **brainteasers-23** (Runners Regrouping on a Track): The original statement ('all are in some order on the track') was vacuous. Turned it into a well-defined numeric version of the same race-track idea.
+- **brainteasers-24** (Flipping Ten Coins at a Time): Answer was 'false', but the solution itself found that it is feasible, and it is: flip 10 disjoint groups of 10. Changed answer to true and rewrote the solution.
+- **brainteasers-25** (Twelve Coins, Heavier or Lighter): The solution's scheme (4 vs 4, then 2 vs 2, then 1 vs 1) fails when you don't know whether the fake is heavy or light. Replaced it with a correct 3-weighing scheme and the lower bound.
+- **brainteasers-26** (39 Coins, One Light): Added the lower-bound argument (why 3 weighings are not enough).
+- **brainteasers-28** (Three Wise Men and Red Hats): Puzzle setup was missing (what they're told, what hats they wear). Added the standard setup and a proper explanation.
+- **brainteasers-29** (Chameleon Colour Invariant): The meeting rule was not stated, and the solution cited a non-existent 'parity mod 3' invariant. Stated the rule and wrote out the correct mod-3 invariant.
+- **brainteasers-30** (Monty Hall with n Doors): Prompt didn't say the guard knows the answer or how many doors he opens. Specified n−2 wrong doors opened knowingly and gave the probabilities.
+- **brainteasers-31** (Sum of First n Integers): Reworded the 'prove' prompt as a true/false statement and typeset the proof.
+- **brainteasers-32** (Sum of Squares Formula): Reworded the 'prove' prompt as a true/false statement and typeset the proof.
+- **brainteasers-33** (Geometric Series Convergence): Reworded as a true/false statement and fixed the solution's off-by-one in the partial sum.
+- **brainteasers-34** (Equal-Sum Split of 1..n): The solution proved only necessity. Added the sufficiency construction needed for 'iff'.
+- **brainteasers-37** (Four Coins to Tails): Reworded the 'prove' prompt as a true/false statement.
+- **brainteasers-38** (Runners Realigning at the Start): The claim was false as stated (with irrational speed ratios the runners never all realign). Added the rational-ratio condition so that the answer 'true' is correct.
+- **brainteasers-39** (√3 Is Irrational): Reworded the 'prove' prompt as a true/false statement and tidied the proof.
+- **brainteasers-40** (Hat Guessing Guarantee): The prompt was a 'how' question with a true/false answer, and the solution's parity strategy was garbled. Reworded the statement and gave a correct strategy.
+- **brainteasers-41** (Socks: 13 Colours): Prompt said 'mixed colours' without saying each pair is a different colour, which the answer assumes. Clarified.
+- **brainteasers-42** (Handshake Pigeonhole): Reworded as a true/false statement and tightened the argument.
+- **brainteasers-43** (367 People Birthday Pigeonhole): Reworded the prompt as a true/false statement.
+- **brainteasers-45** (Twelve Coins, One Lighter): Added the lower bound and tidied the scheme.
+- **brainteasers-46** (100 Prisoners and Boxes): Prompt was a 'how' question with a true/false answer and omitted the rules. Restated it and explained why cycle-following gives about 31%.
+- **brainteasers-48** (Chameleons Revisited): Stated that the meeting chameleons have different colours and replaced the solution's wrong 'parity' invariant with the mod-3 invariant.
+- **brainteasers-50** (Three Pairs from Ten): Answer 22 is impossible (there are only 20 socks). Worst case is 2 pairs plus 8 singletons = 12 socks, so 13 guarantee 3 pairs.
+- **brainteasers-51** (Ants on an Octagon): Eight ants can't sit at the corners of a square, and the answer (1/256) contradicted the solution (1/128). Moved the ants to an octagon; the answer is 2/256 = 0.0078125.
+- **brainteasers-52** (39 Coins, One Light II): Added the lower-bound argument.
+- **brainteasers-54** (100 Prisoners and a Light Bulb): Prompt was a 'how' question with a true/false answer, and the strategy as written ('flip once') doesn't work. Restated the rules and gave the correct counter strategy.
+- **brainteasers-55** (Handshake Lemma): The original claim (someone must have an even handshake count) is false for 6 people, e.g. three disjoint handshakes give everyone 1. Restated it as the handshake lemma, which the solution actually proves.
+- **brainteasers-57** (51 of One Colour): Answer 102 exceeds the 101 socks available, and the worst case in the solution was wrong. With unknown proportions you might draw 50 of each in 100 socks, so the answer is 101.
+- **brainteasers-58** (Ants on a Hexagon): Six ants can't sit at the corners of a square, and the answer (0.0625) contradicted the solution (1/32). Moved the ants to a hexagon; the answer is 0.03125.
+- **brainteasers-60** (Phone Number Last Digits): Reworded the 'prove' prompt as a true/false statement.
+- **brainteasers-62** (Calendar Cubes: Shared Digits): Prompt was meaningless (a cube always has 6 faces; the answer 6 is trivial). Turned it into the classic calendar-cube MCQ about which digits must be on both cubes.
+- **brainteasers-65** (Three-Messenger Desert Relay): Rules were unstated and the solution was hand-waving. Specified the rules (helpers must return, no second trips) and derived the 1.5-day answer.
+- **brainteasers-66** (100 Switches, 100 Passes): As worded, the passes started at 'every 2nd', which would leave the 90 non-squares on. Clarified that pass 1 toggles every switch, so the classic answer 10 holds.
+- **brainteasers-67** (Percentage Raises: Who Earns More?): The marked answer 'second quant' was wrong. With unknown starting salaries the answer depends on the gap, which is what the solution itself concluded. Clarified the prompt and marked 'cannot tell'.
+- **brainteasers-68** (Doubling Offer): The prompt asked 'which is better?' with a numeric answer, and the solution wandered through three interpretations and two totals. Made the offer precise; the answer 12,800 is unchanged.
+- **brainteasers-69** (Josephus Problem (100 Balls)): The Josephus formula applies to a circle, but the prompt said 'in a line' (where the survivor is ball 1 or 64, depending on convention). Changed the arrangement to a circle and spelled out the elimination order.
+- **brainteasers-70** (Jeep Problem: Desert Caches): Open question with no definite answer. Converted it to the classic jeep (desert-crossing) problem with 4 units of water, which has an exact answer.
+- **brainteasers-71** (Four Switches, One Bulb): The marked option ('turn one on and wait') can't distinguish 4 switches, and the solution left C and D indistinguishable. Rewrote the correct option using four states (on/hot, off/warm, on/cold, off/cold).
+- **brainteasers-72** (Bin Packing Ten Items): The original had no item sizes or box capacity, so there was nothing to solve. Supplied concrete sizes for which 4 boxes is the minimum.
+- **brainteasers-73** (Calendar Cubes Without 6-as-9): Prompt was incoherent (three cubes, 'how to arrange' with answer 6). Converted it to a true/false calendar-cube question about why the 6/9 trick is needed.
+- **brainteasers-74** (Relay Riders Needed): Open question with a formula as the answer. Converted to a concrete numeric version of the same idea.
+- **brainteasers-75** (Expected Value of a Gamble): The prompt asked 'which choice' but the answer is a number. It now asks for the gamble's expected value.
+- **brainteasers-76** (Calendar Cubes: Upside-Down Sixes): Open question with a trivial answer. Converted to a numeric question about the standard cube arrangement.
+- **brainteasers-78** (Josephus Problem (6 Balls)): Josephus formula needs a circle; the prompt didn't say so. Specified the circle and the elimination order.
+- **brainteasers-80** (Salaries with Different Raises): The prompt asked 'who earns more?' with a true/false answer, and the solution applied both raises to both quants. Restated it as a true/false claim with each quant getting their own raise.
+- **brainteasers-81** (Wolf, Goat and Cabbage Crossing): The marked option ('goat, then wolf, then cabbage') leaves out the essential step of bringing the goat back. Rewrote the option as the full sequence.
+- **brainteasers-84** (Burning Ropes II): The prompt asked 'how?' with the numeric answer 45. Reworded it as a timing question with a definite answer.
+- **brainteasers-85** (Eight Balls, One Lighter): The prompt didn't say whether the defective ball is lighter or heavier, which the 2-weighing answer needs. Stated 'lighter'.
+- **brainteasers-87** (25 Horses, Top 3 II): Step 3 of the solution named the wrong horses for the final race. Rewrote it with the correct five candidates.
+- **brainteasers-90** (First Die Beats Second): Gave the symmetry argument instead of an unfinished enumeration.
+- **brainteasers-93** (Candies of Three Colours): The working correctly gives 30/120 = 0.25, but the answer said 0.3333. Fixed.
+- **brainteasers-95** (Exactly Two Aces): 6×1128/270725 = 0.0250, not 0.0397 or 0.0399. Fixed answer and solution.
+- **brainteasers-97** (Basketball Possessions): Underspecified (what is random?), and the answer 0.25 was unsupported. Defined three possessions scoring 2 or 3 with equal probability; P(total 7) = 3/8.
+- **brainteasers-98** (Cars in Distinct Lanes): The working correctly gives 6/27 = 0.2222, but the answer said 0.167. Fixed.
+- **brainteasers-99** (Lost Boarding Pass): The prompt said n ≥ 1 (for n = 1 the answer is 1) and left the seating rule vague. Stated the standard setup with 100 passengers.
+- **brainteasers-100** (Points in a Semicircle): The solution's formula (1/2)^{n−1} is wrong; the correct one is n/2^{n−1}. The prompt also didn't fix n (for n = 2 the answer is 1). Set n = 4, which gives 0.5.
+
+## CB1 Business Finance
+
+- **cb1-2** (UK Corporate Governance Code Headings): Options mixed headings from different versions of the Code ('Accountability' is an old 2016 heading, not in the current Code, so it was also arguably 'not a heading'). Specified the 2018 Code, used its actual headings, fixed the 'Renumeration' typo.
+- **cb1-3** (Role of the Financial Manager): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. Fixed the 'financial manger' typo.
+- **cb1-4** (Discipline of the Capital Markets): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment.
+- **cb1-8** (Sole Trader vs Company): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. Laid out the solution as a numbered list.
+- **cb1-9** (Partnership vs LLP): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. (The original instruction also misspelt 'parnership'.) Laid out the solution as a numbered list.
+- **cb1-10** (Taxable Profits of a Company): Solution referred to options by letter ('C deals with...'); rewrote it to address each option by content.
+- **cb1-12** (From Total Income to Taxable Income): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. Removed the age-related allowance, which the UK abolished in 2016; laid out the lists.
+- **cb1-13** (UK Capital Gains Tax for Individuals): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. Corrected the solution, which said the annual allowance is transferable between spouses (it is not; only assets can be transferred at no gain/no loss), and updated the rates.
+- **cb1-14** (Calculating Corporation Tax): Removed the '(enter ... to submit a correct solution)' instruction from the prompt and replaced the placeholder answer with a model answer for self-assessment. Laid out the solution as numbered steps.
+- **cb1-26** (Ranking on a Winding-Up): Solution referred to options by letter; rewrote it to name the securities.
+- **cb1-27** (Ordinary Shares and Risk Aversion): Solution referred to options by letter; rewrote it to address each option by content.
+- **cb1-28** (Floating Charges): Solution referred to options by letter and did not explain the fourth option; rewrote it.
+- **cb1-30** (Conversion Premium per Share): Solution mixed pounds and pence in one expression ('(120/70) - 0.90 = 81p'); rewrote it as clean steps. The answer is unchanged.
+- **cb1-31** (Methods of Obtaining a Listing): Fixed grammar ('already listed', 'methods').
+- **cb1-33** (Par Value of an Ordinary Share): Solution referred to options by letter (and wrongly said 'A is the market price'); rewrote it to address each option by content.
+- **cb1-34** (Theoretical Ex-Rights Price): Formatted the calculation in LaTeX. The answer is unchanged.
+- **cb1-35** (Finance Against Late-Paying Customers): Solution wrongly said invoice discounting is 'another name for recourse factoring'. It is a separate arrangement in which the company keeps its sales ledger. Rewrote the solution.
+- **cb1-37** (Project Finance): Removed migration junk ('financing.pre-payment') from option B.
+- **cb1-39** (Margin on Futures and Options): Removed migration junk ('option.non-recourse') from the correct option and expanded the solution.
+- **cb1-43** (Purpose of the External Audit): Replaced a long verbatim audit-report quotation with a concise explanation covering each option.
+
+## CB2 Business Economics
+
+- **cb2-17** (Evidence Against Strong-Form EMH): Distractor 'Market crashes' is also arguably evidence against market efficiency (and hence the strong form); replaced it with a clearly consistent-with-EMH option and explained the answer.
+- **cb2-28** (Irrational Behaviour in Financial Markets): Distractor 'Ignoring all market signals' is itself a form of irrational behaviour, so two options were defensible; replaced it with a rational behaviour.
+- **cb2-33** (Classical View of Full Employment): Option 'Money is neutral in the long run' is also a classical belief (classical dichotomy), so two options were correct; replaced it with a Keynesian view.
+- **cb2-62** (Price Elasticity of Demand: Definition): Rewrote plain-text formula in LaTeX.
+- **cb2-70** (Economies of Scale): Solution explained economies of scale by spreading fixed costs, which is a short-run effect; clarified the long-run definition and gave the correct sources.
+- **cb2-81** (Income Elasticity of Demand: Definition): Rewrote plain-text formula in LaTeX and added interpretation.
+- **cb2-95** (Why Short-Run Supply Slopes Upward): Solution said the firm 'must charge higher prices', but a competitive firm is a price taker; reworded in terms of P = MC.
+- **cb2-99** (Components of Total Cost): Distractor 'Total revenue minus profit' is identically equal to total cost (profit = TR - TC), so it was also correct; replaced it with a genuinely false statement.
+- **cb2-103** (Revenue Maximisation and Elasticity): Elasticity sign was unstated (PED is usually negative, so 'Elasticity < 1' was ambiguous); specified absolute value, clarified options and added the MR derivation.
+- **cb2-104** (Long-Run Industry Supply (Constant Cost)): Prompt asked about a firm's long-run supply curve, which is upward sloping (LRMC above min LRAC), making the marked answer wrong; reworded to the constant-cost industry supply curve, which is horizontal at minimum AC.
+- **cb2-112** (Slope of the Budget Line): Rewrote plain-text formula in LaTeX and showed the rearrangement.
+- **cb2-113** (Marginal Rate of Substitution): Rewrote plain-text formula in LaTeX.
+- **cb2-119** (Excess Capacity in Monopolistic Competition): Correct option 'Firms produce below minimum AC' could be read as costs below minimum AC (impossible); reworded to refer to output, and expanded the solution.
+- **cb2-144** (Sectors in the Extended Circular Flow): 'Only households and firms' is a correct description of the basic two-sector circular flow model, so the question was ambiguous; specified the extended model and listed all sectors.
+
+## CM1 Actuarial Mathematics
+
+- **cm1-1** (Discount Rate from Interest Rate): Options were plain-text formulas; rewritten as maths.
+- **cm1-3** (Force of Interest and Effective Rate): Options contained raw TeX outside maths delimiters (e.g. e^{\delta}); wrapped in $...$.
+- **cm1-9** (Accumulation Under Constant Force): Options contained raw TeX outside maths delimiters; wrapped in $...$.
+- **cm1-11** (Constant Force from Growth): ln(1.6)/8 = 0.0587505, which rounds to 0.0588 at 4 d.p., not 0.0587. Corrected answer and solution.
+- **cm1-14** (PV of a Level Annuity-Immediate): Tidied annuity notation in the solution.
+- **cm1-21** (Checking Redington's Conditions): The original answer said the convexity condition fails 'since asset convexity exceeds liability convexity', which is backwards: Redington requires asset convexity > liability convexity, so it is satisfied. 'First/second condition' was also ambiguous. Reworded prompt and options (PVs stated equal) and set the answer to 'both'.
+- **cm1-23** (Forward Rate from Spot Rates): Currency-escaping had corrupted the maths delimiters (\$1+f ... \$). Rewrote solution with correct $...$ maths.
+- **cm1-27** (Nominal vs Effective Interest): Options used plain-text pseudo-notation i^(m); rewritten as maths.
+- **cm1-28** (Effective Rate from Quarterly Nominal): Solution written as maths.
+- **cm1-30** (PV of a Deferred Annuity-Immediate): Stated answer 432.95 is just 100 x a_5 (the deferral was dropped). 100 x 4.32948 x 0.863838 = 374.00. Corrected answer and solution; clarified the payment timing.
+- **cm1-31** (Accumulation Under Varying Force): Options rewritten as maths.
+- **cm1-32** (Accumulation with Linear Force of Interest): Stated answer 106.93 is wrong: 100e^{0.105} = 111.07. Corrected answer and solution.
+- **cm1-34** (Increasing Annuity-Immediate Formula): Options rewritten as maths.
+- **cm1-35** (PV of an Increasing Annuity-Immediate): Stated answer 728.06 contradicted the working (which reached 864.88 after a 'Wait compute carefully'). Correct value is 864.88; rewrote the solution cleanly.
+- **cm1-36** (Perpetuity-Immediate PV): Formula options rewritten as maths.
+- **cm1-38** (PV of a Level Annuity-Due): Stated answer 791.55 is wrong; 100 x 7.36009 x 1.06 = 780.17. Corrected answer and solution.
+- **cm1-41** (Present and Accumulated Value Link): Formula options and solution rewritten as maths.
+- **cm1-43** (Deferred Annuity with Level Payments): Ambiguous timing, and the stated answer 678.48 matched no interpretation (200 v^2 a_4 = 643.26). Clarified that payments are at the end of years 3-6 and corrected the answer.
+- **cm1-44** (Bond Price Formula): Options rewritten as maths.
+- **cm1-46** (Redemption Yield of a Discount Bond): The 'approximate' formula gives 0.0646 and the exact yield is 0.0648; the stated 0.0632 matched neither and the solution 'rounded' 0.0646 to 0.0632. Reworded to ask for the exact yield and corrected the answer.
+- **cm1-48** (Annuity-Due Formula): Options used plain-text pseudo-notation; rewritten as maths.
+- **cm1-49** (PV of an Annuity-Due): Stated answer 1,067.40 and muddled working; correct value is 200 x 5.329477 = 1,065.90.
+- **cm1-51** (Level Loan Repayment): Stated answer 2,373.36 has an arithmetic slip; 10,000 / 4.212364 = 2,373.96.
+- **cm1-53** (Redemption Yield of a 4-Year Bond): Stated 0.0566 matched neither the approximation (0.0556) nor the exact yield (0.0557); the solution 'rounded' 0.0556 to 0.0566. Reworded to ask for the exact yield.
+- **cm1-55** (Final Instalment from Equation of Value): Stated 1,927.04 is an arithmetic error (2,078.40 / 0.888996 = 2,337.92, not 1,927.04). Corrected answer and solution.
+- **cm1-57** (Redemption Yield of a Discount Bond II): Stated 0.0503 matched neither the approximation (0.0513) nor the exact yield (0.0516); the solution 'adjusted' arbitrarily. Reworded to ask for the exact yield.
+- **cm1-61** (NPV of a Level Cashflow Project): Stated answer 6,394.96 contradicted the working; NPV = 15,000 x 4.212364 - 50,000 = 13,185.46. Corrected and cleaned the solution.
+- **cm1-63** (Balancing Final Loan Payment): Stated 5,832.00 contradicted the working (which ended at 4,556.00). Correct value is 4,557.00. Clarified payments are at the ends of years 1-4.
+- **cm1-65** (Redemption Yield of a Short Bond): Stated 0.0666 matched neither the approximation (0.0711) nor the exact yield (0.0715). Reworded to ask for the exact yield.
+- **cm1-66** (Bounds for an Optional Redemption Date): Which redemption date gives the upper bound depends on whether the bond trades above or below par (coupon rate vs yield). Added the condition that makes the keyed option the only correct one.
+- **cm1-67** (Equal Instalments on an 8% Loan): Stated 4,768.82 is wrong: 960 / 0.206168 = 4,656.40.
+- **cm1-69** (NPV of a Four-Year Project): Stated 5,796.18 contradicted the working; correct NPV is 5,459.51. Cleaned solution.
+- **cm1-73** (Redemption Yield of a 5-Year Bond): Stated 0.0536 matched neither the approximation (0.0545) nor the exact yield (0.0547). Reworded to ask for the exact yield.
+- **cm1-75** (Equal Instalments on a 7% Loan): Stated 2,396.17 used over-rounded factors; 8,000 / 3.387211 = 2,361.82.
+- **cm1-76** (Redemption Yield of a 6-Year Bond): Stated 0.0623 matched neither the approximation (0.0640) nor the exact yield (0.0641). Reworded to ask for the exact yield.
+- **cm1-78** (NPV of a Five-Year Project at 7%): Stated 17,044.86 contradicted the working; NPV = 12,000 x 4.100197 - 40,000 = 9,202.37.
+- **cm1-80** (Balancing Final Loan Payment II): Stated 6,250.12 contradicted the working; correct X = 6,754.66. Clarified timing and cleaned solution.
+- **cm1-82** (Redemption Yield of a Discount Bond III): Stated 0.0605 matched neither the approximation (0.0513) nor the exact yield (0.0516). Reworded to ask for the exact yield.
+- **cm1-84** (Equal Instalments on a 5% Loan): Stated 5,438.63 contradicted the working (5,505) and both are wrong: 15,000 / 2.723248 = 5,508.13.
+- **cm1-86** (PV of Level Loan Instalments): Timing unstated and stated 9,207.96 matched nothing. Clarified payments are in arrear; PV = 2,000 x 4.451822 = 8,903.64.
+- **cm1-88** (NPV of a Project at 6%): Stated 3,600.00 contradicted the working; NPV = 8,000 x 3.465106 - 25,000 = 2,720.84.
+- **cm1-90** (Instalments on a Small 5% Loan): Stated 2,177.69 is wrong ('adjusting accurately' from 2,201); 6,000 / 2.723248 = 2,203.25. Clarified annual payments in arrear.
+- **cm1-94** (Redemption Yield of a Premium Bond): Stated 0.0647 matched neither the approximation (0.0653) nor the exact yield (0.0652). Reworded to ask for the exact yield.
+- **cm1-96** (NPV of a Three-Year Project): Stated 5,361.66 contradicted the working; NPV = 20,000 x 2.577097 - 50,000 = 1,541.94.
+- **cm1-98** (Instalments on a 7,500 Loan): Stated 2,721.35 is wrong ('adjusted for accuracy' from 2,752); 7,500 / 2.723248 = 2,754.06.
+- **cm1-106** (EPV of a Deferred Life Annuity): Underspecified: a deferred life annuity needs the 5-year survival probability and the annuity factor at the deferred age, and the solution ended with an unrelated 'placeholder' answer (14,374.62). Added 5p_x = 0.92 and a_{x+5} = 15.0 and recomputed: 21,494.90.
+- **cm1-109** (Accumulating With-Profits Mechanics): Prompt wording ('combine guaranteed premiums and bonus interest') was garbled; reworded.
+- **cm1-110** (Life Table Function l_x): Notation tidied; first option made precise (exact age x).
+- **cm1-111** (Life Table Function d_x): Notation tidied.
+- **cm1-112** (Notation for Survival Probability): Options used plain-text pseudo-notation (n_p_x); rewritten as maths.
+- **cm1-113** (Notation for Death Probability): Options used plain-text pseudo-notation (n_q_x); rewritten as maths.
+- **cm1-114** (EPV of an Immediate-Payment Whole-Life Assurance): Notation tidied: benefit payable immediately on death uses the continuous factor.
+- **cm1-115** (EPV of a Term Assurance): Garbled factor notation 'A_x:0.08' replaced with proper term-assurance notation.
+- **cm1-116** (Continuous Annuity-Assurance Identity): The identity a = (1 - A)/delta only holds for the continuous functions; options rewritten with bar notation.
+- **cm1-118** (Select Mortality Concept): Prompt 'Select-and select equivalence means' was garbled; reworded.
+- **cm1-119** (EPV of a Joint-Life Assurance): Notation tidied.
+- **cm1-120** (EPV of a Last-Survivor Annuity): A last-survivor annuity factor is written with an overbar, not as the joint-life a_{xy}; notation corrected.
+- **cm1-122** (Force of Decrement Meaning): Solution's limit was written loosely; restated precisely. Notation tidied.
+- **cm1-124** (EPV of Benefits Under a Single Decrement): Solution written as maths.
+- **cm1-125** (Endowment Annuity-Assurance Identity): The identity a = (1 - A)/delta links the continuous temporary annuity to the continuous ENDOWMENT assurance, not the temporary (term) assurance as the solution claimed. Options rewritten in proper notation and solution corrected.
+- **cm1-126** (EPV of a Deferred Whole-Life Assurance): Factor was written A_{x:5}, which is a 5-year endowment assurance; corrected to deferred notation.
+- **cm1-127** (EPV of a Temporary Annuity-Due): Notation 'a_ẍ:10' rewritten as proper maths.
+- **cm1-129** (Last-Survivor Annuity Valuation): Last-survivor factor notation corrected (overbar) and wording tidied.
+- **cm1-130** (Joint-Life Assurance Factor): Options rewritten as maths.
+- **cm1-132** (EPV of a Whole-Life Annuity-Due): Prompt was a garbled fragment; rewritten as a complete question with proper notation.
+- **cm1-133** (EPV of a Deferred Temporary Annuity): Notation 'a_{x:10|3}' rewritten in standard deferred-annuity form.
+- **cm1-136** (Whole-Life Annuity-Due as a Sum): Options used garbled notation (p_x^k); rewritten as maths.
+- **cm1-137** (Force of Mortality and q_x): Options rewritten as maths; the nonsensical distractor 'q_x = mu_x * 0' replaced.
+- **cm1-138** (Last-Survivor Annuity EPV II): Last-survivor factor notation corrected (overbar).
+- **cm1-139** (Joint-Life Assurance EPV II): Notation tidied.
+- **cm1-140** (Accumulating With-Profits Fund Growth): Keyed option said the fund grows via 'guaranteed premiums', which is not meaningful; reworded options.
+- **cm1-141** (EPV of a 5-Year Annuity-Due): Notation tidied.
+- **cm1-142** (Temporary Annuity and Endowment Link): Prompt said 'temporary assurance' but the identity uses the endowment assurance; corrected prompt, options and solution.
+- **cm1-143** (EPV of a Pure Endowment): Garbled notation 'A_x:n' replaced with pure endowment notation.
+- **cm1-144** (Joint-Life Annuity Payments): Keyed option conflated joint-life and last-survivor annuities ('first or last ... depending on contract'). A joint-life annuity ceases on the first death; option reworded.
+- **cm1-146** (Single Premium for Whole-Life Cover): Prompt was a fragment; reworded.
+- **cm1-147** (EPV of an Endowment Assurance): The factor 0.08 is impossible for a 10-year endowment assurance (it is at least the pure endowment value, which is far higher); prompt also had a stray 'P=50,000'. Changed the factor to 0.70 and answer to 35,000.
+- **cm1-149** (Force of Decrement Interpretation): Notation tidied.
+- **cm1-150** (Valuing a Life Annuity-Due): Prompt was a fragment; reworded with proper notation.
+- **cm1-151** (Level Net Premium for Whole-Life Cover): The premium described (benefits only, no expenses) is a net premium, not a gross premium; reworded and tidied notation.
+- **cm1-153** (Net Premium for an Endowment Assurance): EPV factor 0.08 is impossible for a 10-year endowment assurance, and with no expenses the premium is a net premium. Set A = 0.70 (consistent with the annuity factor 7.5 at about 4% interest) and recomputed: 4,666.67.
+- **cm1-155** (Net Premium for a Term Assurance): Notation tidied.
+- **cm1-156** (Death Strain at Risk Definition): Keyed option defined death strain as 'PV of death benefit - reserve'; the death strain at risk is the sum assured payable on death less the reserve held at the end of the year of death. Option and solution corrected.
+- **cm1-158** (Premium for a Deferred Whole-Life Assurance): Factor notation A_{x:5} (an endowment assurance) corrected to deferred notation; no expenses so the premium is a net premium.
+- **cm1-160** (Single Premium for a Term Assurance): An EPV factor of 0.07 is not credible for an endowment assurance (it must exceed the pure endowment value); recast as a term assurance, which keeps the intended answer 3,500.
+- **cm1-165** (Reserve of a Single-Premium Annuity): Only correct if there are no future premiums or expenses; added that assumption.
+- **cm1-167** (Death Strain at Risk Calculation): Prompt was a fragment; reworded.
+- **cm1-168** (Premium from EPV of Benefits): Prompt was muddled (an annuity paying 1,000 as well as 'premiums to fund 10,000 benefits'). Reworded to: EPV of benefits 10,000, premiums annually in advance for 10 years, no expenses.
+- **cm1-169** (Computing Mortality Profit): Prompt said 'Expected mortality profit', which is zero by definition; the question is about mortality profit.
+- **cm1-170** (Single Premium for Death Cover): Prompt was underspecified ('EPV=0.08'); stated the contract and factor explicitly.
+- **cm1-173** (EPV of a Deferred Temporary Annuity-Due): Notation rewritten in standard deferred-annuity form.
+- **cm1-176** (Net Premium for a 20-Year Term Assurance): An EPV factor of 0.12 is impossible for a 20-year endowment assurance with annuity factor 15 (the pure endowment alone is worth more). Recast as a term assurance (keeping the answer 800) and called it a net premium as no expenses are given.
+- **cm1-178** (Net Premium for a 15-Year Term Assurance): Notation tidied; premium is a net premium.
+- **cm1-180** (Single Premium for Whole-Life Assurance): Prompt was a fragment; reworded.
+- **cm1-182** (Annuity-Due EPV at Outset): Notation tidied.
+- **cm1-184** (Premium for a 10-Year Deferred Assurance): Notation tidied; with no expenses the premium is a net premium.
+- **cm1-185** (Death Strain for Annuities): Solution expanded to explain that for an annuity with no death benefit the death strain is negative.
+- **cm1-186** (Gross Prospective Reserve Calculation): Prompt was a fragment; reworded.
+- **cm1-187** (Single Premium Term Assurance): Prompt was a fragment; reworded.
+- **cm1-190** (Deferred Annuity-Due Valuation II): Notation rewritten in standard deferred-annuity form.
+- **cm1-192** (Mortality Profit Calculation): Rounding instruction added.
+- **cm1-194** (Single Premium for Whole-Life Assurance II): Prompt was a fragment; reworded.
+- **cm1-196** (Premium for a 5-Year Deferred Assurance): Prompt was a fragment; reworded with notation; no expenses so a net premium.
+- **cm1-197** (Prospective Reserve Calculation): Rounding instruction added.
+- **cm1-198** (Gross Premium Reserve at Inception): Keyed answer ('zero for single premium policies, positive if regular premiums') was wrong. Under the equivalence principle the reserve at inception on the premium basis is zero; it can be positive or negative only if the reserving basis differs. Reworded prompt and options so one answer is correct.
+- **cm1-200** (EPV of a 20-Year Annuity-Due): Notation tidied.
+
+## CM2 Financial Engineering & Loss Reserving
+
+- **cm2-3** (Increasing Absolute Risk Aversion): The keyed answer (decreasing ARA) described the opposite behaviour. Becoming less willing to take absolute risks as wealth rises is increasing ARA; changed answerIndex to 1 and rewrote the solution.
+- **cm2-17** (Illustrating Non-Satiation): Solution said non-satiation holds 'irrespective of risk', which confuses it with risk attitude; restated it as $u'(w) > 0$.
+- **cm2-28** (Testing the Weak-Form EMH): 'Easiest to refute' was ambiguous: logically the strong form (the strongest claim) is the easiest to refute and is widely rejected. Reworded the prompt to ask which form is easiest to test, for which 'weak form' is correct.
+- **cm2-65** (CAPM Assumptions): Keyed option stated as an assumption that all investors 'hold the market portfolio', which is actually a result (and they hold it combined with the risk-free asset). Reworded the correct option to list genuine CAPM assumptions.
+- **cm2-75** (Intensity-Based Credit Models): Keyed option required the intensity to be stochastic, but intensity models such as the two-state model use a deterministic intensity. Broadened the option and clarified the solution.
+- **cm2-80** (Hull-White Extension of Vasicek): 'Time-dependent mean reversion' was ambiguous (it suggests the speed varies). Clarified that it is the mean-reversion level $\theta(t)$ and added the SDE.
+- **cm2-83** (Cox-Ingersoll-Ross Model Property): Solution claimed rates always remain positive; strictly they are non-negative, and positive only under the Feller condition. Added the SDE.
+- **cm2-86** (Two-State Credit Model): Keyed option implied two-way transitions and a necessarily constant intensity. Default is an absorbing state and the intensity may vary with time. Reworded the option and solution.
+- **cm2-87** (CAPM Expected Return Formula): Rewrote the plain-text CAPM formula in LaTeX and defined beta.
+- **cm2-90** (Empirical Behaviour of Share Prices): Keyed answer said share prices are approximately lognormal over short intervals, which contradicts the empirical evidence (fat-tailed, leptokurtic short-term returns). Replaced the correct option and solution, and clarified a distractor.
+- **cm2-95** (Lundberg Adjustment Coefficient): The adjustment coefficient bounds the ruin probability, it does not approximate it. Reworded the option and stated Lundberg's inequality.
+- **cm2-106** (Inflation-Adjusted Chain Ladder): Keyed option said historical claims are scaled by expected inflation. Past claims are adjusted with observed past inflation, and assumed future inflation is applied to the projections. Rewrote the option and solution.
+- **cm2-107** (Chain-Ladder Homogeneity Assumption): Keyed option ('claims within each development period') misstated the homogeneity assumption, which is about the same development pattern applying across origin years.
+- **cm2-108** (Bornhuetter-Ferguson Emerging Claims): The phrase 'unobserved claims are weighted by' was vague. Reworded the prompt and correct option to state the BF emerging-claims formula precisely.
+- **cm2-109** (When to Use Average Cost per Claim): Keyed option said the average claim size is 'known'. The method estimates both claim numbers and average costs from data. Rewrote the option and solution.
+- **cm2-113** (Proportional Reinsurance and Ruin Probability): Keyed answer said proportional reinsurance always lowers ruin probability. It can increase it when the reinsurer's loading exceeds the insurer's. Rewrote the options so the correct answer reflects this.
+- **cm2-124** (No-Arbitrage Bounds on a European Call): Correct option and solution gave the lower bound as intrinsic value $\max(0, S-K)$ rather than the no-arbitrage bound $\max(0, S_0 - Ke^{-rT})$, and the prompt did not state no dividends. Corrected the bounds and tidied the distractors.
+- **cm2-125** (Value of a Forward Contract): 'Spot price minus discounted forward price' was loose: it is the agreed delivery price that is discounted, and the prompt did not give the setting. Made the prompt precise and gave the formula.
+- **cm2-126** (Risk-Neutral Valuation Principle): Keyed answer said risk-neutral pricing assumes investors are indifferent to risk, a common misconception. Reworded the prompt and correct option to describe the method.
+- **cm2-137** (European Put Price Sensitivity): Distractor 'Interest rates decrease' also increases a European put's value, so two options were correct. Replaced it with 'Expected dividends decrease'.
+- **cm2-141** (Option Vega Definition): Solution said '1% change in volatility'; vega is the derivative with respect to $\sigma$, usually quoted per percentage point. Clarified.
+- **cm2-143** (Option Rho Definition): Solution said '1% change' in the rate; rho is the derivative with respect to $r$, usually quoted per percentage point. Clarified.
+
+## CS1 Actuarial Statistics
+
+- **cs1-26** (Geometric Memoryless Property): Rewrote the memoryless identity in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-28** (Binomial Variance): Rewrote plain-text formulas in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-33** (Sum of Independent Exponentials): Expanded the solution to explain why gamma (not chi-square) is the general answer. Options reordered (every correct answer in this bank was option A).
+- **cs1-39** (Condition for Independence): Rewrote the condition in LaTeX and explained why zero covariance is not sufficient. Options reordered (every correct answer in this bank was option A).
+- **cs1-40** (Definition of Covariance): Rewrote options and solution in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-41** (Variance of a Linear Combination): Rewrote options and solution in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-43** (Law of Total Expectation): Rewrote options and solution in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-48** (Distribution of the Sample Variance): Distractor 'Gamma distribution' was also correct (chi-square is a gamma distribution, and S^2 itself is gamma-distributed); replaced it with 't distribution'. LaTeX solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-49** (Ratio of Two Sample Variances): Prompt clarified (the raw ratio of sample variances is only F-distributed after scaling or when the population variances are equal). LaTeX solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-50** (Studentised Sample Mean): Rewrote the statistic in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-53** (Unbiased Estimators): Rewrote the definition in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-54** (Consistency of an Estimator): Rewrote the solution in LaTeX and stated the mode of convergence. Options reordered (every correct answer in this bank was option A).
+- **cs1-55** (Bias–Variance Decomposition of MSE): Rewrote options and solution in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-56** (Efficient Estimators): Distractors 'It is always unbiased' and 'It has zero bias' were equivalent to each other and both true under the usual definition of efficiency; replaced with clearly false statements. Options reordered (every correct answer in this bank was option A).
+- **cs1-68** (Testing Independence in a Contingency Table): Distractor 'Permutation test' was defensible (Fisher's exact test is a permutation test of independence); replaced with 'F test'. Options reordered (every correct answer in this bank was option A).
+- **cs1-74** (Likelihood Ratio Test Statistic): Defined L0 and L1, rewrote options in LaTeX and expanded the solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-78** (Simple Linear Regression Model): Distractor 'Y = β0X + β1 + ε' was the same model with the parameter labels swapped; replaced with a model lacking the error term. LaTeX options. Options reordered (every correct answer in this bank was option A).
+- **cs1-80** (Least Squares Slope Estimator): Rewrote options and solution in LaTeX; explained the through-origin distractor. Options reordered (every correct answer in this bank was option A).
+- **cs1-82** (Coefficient of Determination): LaTeX notation in options and solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-83** (Significance of a Regression Coefficient): Distractor 'F-test' was also correct for the slope in simple linear regression (F = t^2); replaced with a test that is not used for this, and clarified the prompt. Options reordered (every correct answer in this bank was option A).
+- **cs1-87** (Exponential Family Models in GLMs): Original prompt was ambiguous: the normal linear (OLS) model is itself a GLM with an exponential-family response. Prompt now asks for a non-normal exponential-family model. Options reordered (every correct answer in this bank was option A).
+- **cs1-89** (Fitting Criterion for GLMs): Clarified that fitting is by maximum likelihood, which is equivalent to minimising deviance. Options reordered (every correct answer in this bank was option A).
+- **cs1-91** (Comparing Nested GLMs): Distractors 'F-test' and 'Chi-square test' were both defensible (the deviance difference is referred to a chi-square, or an F when the scale is estimated); replaced with tests that do not compare nested models. Options reordered (every correct answer in this bank was option A).
+- **cs1-92** (GLM Linear Predictor): Distractor 'η = μ' is true under the identity link; replaced it. LaTeX options and solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-94** (Model Selection with Adjusted R-Squared): LaTeX notation in options and solution. Options reordered (every correct answer in this bank was option A).
+- **cs1-96** (Pearson Residuals): Gave the Pearson residual formula in LaTeX. Options reordered (every correct answer in this bank was option A).
+- **cs1-106** (Non-Informative Priors): Original wording ('contains no subjective information') also fitted an empirical Bayes prior, which is estimated from data. Reworded. Options reordered (every correct answer in this bank was option A).
+- **cs1-119** (Role of the Likelihood in Bayes' Theorem): Original prompt ('measures how much data influences the posterior relative to the prior') was muddled, and prior variance was also defensible. Reworded so the likelihood is the only correct answer. Options reordered (every correct answer in this bank was option A).
+
+## CS2 Risk Modelling & Survival Analysis
+
+- **cs2-2** (Insurer Payment Under a Policy Deductible): Rendered max as \max in the solution.
+- **cs2-3** (Choosing a Claim Severity Distribution): The keyed answer (Exponential) is a light-tailed distribution and is not the usual choice for claim severity. Replaced it with the Pareto distribution and rewrote the solution.
+- **cs2-4** (Reinsurer Share Under Proportional Reinsurance): Prompt asked for a 'fraction' but the options are amounts; reworded. Tidied number formatting in the solution.
+- **cs2-8** (Copula With No Tail Dependence): The Frank copula also has no tail dependence, so two options were correct. Replaced it with the Student's t copula, which does have tail dependence.
+- **cs2-11** (Mean of Reinsurer's Aggregate Claims (Quota Share)): Prompt did not say whose aggregate claims S_R are (it read like the insurer's net claims, for which the answer would be (1-c)E[S]). Clarified that S_R is the reinsurer's share.
+- **cs2-18** (Stop-Loss Reinsurer Payment): Stop-loss reinsurance applies to aggregate claims, not an individual claim; reworded. Used \max and fixed number formatting.
+- **cs2-20** (Expected Insurer Payment With a Deductible): Rendered max as \max and expanded the solution slightly.
+- **cs2-24** (Properties of the Exponential Distribution): Original option 'Mean equals variance only if lambda=1' is actually true (mean 1/lambda, variance 1/lambda^2), so two options were correct. Changed it to the false statement 'for every value of lambda'.
+- **cs2-25** (Variance of a Quota Share Reinsurer Payment): Fixed broken maths delimiters (unclosed '$0.4^2 * 4,000,000' and a mis-escaped option), clarified the treaty wording, and laid out the solution.
+- **cs2-26** (Expected Aggregate Claims (Compound Poisson)): Solution was plain text; rewrote as maths.
+- **cs2-30** (Assumptions of the Collective Risk Model): The keyed answer ('Claims occur independently') is a standard assumption, and the solution itself said so. Rewrote the question and options so that exactly one option is not an assumption.
+- **cs2-46** (The Backward Difference Operator): Used the standard CS2 symbol nabla for the backward difference (Delta conventionally denotes the forward difference, which was one of the distractors). Converted to LaTeX.
+- **cs2-54** (ACF Cut-Off for an MA(q) Process): 'ACF cutoff at' was ambiguous between the last non-zero lag (q) and the first zero lag (q+1), both of which were options. Reworded to 'cuts off after' to match the PACF question.
+- **cs2-57** (Conditions for Weak Stationarity): The keyed option said autocovariance is 'constant over time', which is imprecise: it must depend only on the lag. Reworded.
+- **cs2-59** (Characteristics of a Random Walk): Solution used plain-text notation; rewrote in LaTeX with the variance and unit-root argument.
+- **cs2-76** (Holding Times in a Markov Jump Process): Holding times are exponential only for a time-homogeneous process; added that condition.
+- **cs2-78** (Expected Number of Poisson Process Events): Rate was not named in the prompt; added it. Converted notation to LaTeX.
+- **cs2-80** (Probability of Two Events in a Poisson Process): Options such as '3^2 * e^-3 / 2!' were plain text; converted to LaTeX and added the numerical value (0.2240).
+- **cs2-81** (Variance of a Poisson Process Count): Converted plain-text formula to LaTeX.
+- **cs2-83** (Mean Return Time and Stationary Probability): The result only holds for an irreducible positive recurrent chain; added the conditions and converted to LaTeX.
+- **cs2-84** (Generator Matrix of a Two-State Process): Matrices were in plain-text [[...]] form; converted to LaTeX. Solution wrongly said the diagonal equals the sum of outgoing rates (it is minus that sum).
+- **cs2-86** (Kolmogorov Backward Equations): Keyed option ('compute probabilities backward in time') was a misleading description, and the distractor 'Calculate survival functions' was defensible (Kolmogorov equations give occupancy/survival probabilities). Reworded the correct option, replaced that distractor and rewrote the solution.
+- **cs2-87** (Periodicity of a Markov Chain): Correct option was awkwardly worded ('There exists a gcd ... > 1'); reworded and gave the formal definition.
+- **cs2-88** (Small-Interval Property of a Poisson Process): Converted plain-text notation to LaTeX.
+- **cs2-91** (Definition of the Survival Function): Converted notation to LaTeX.
+- **cs2-92** (Force of Mortality From the Survival Function): Converted plain-text notation to LaTeX.
+- **cs2-93** (Curtate Future Lifetime): Converted notation to LaTeX.
+- **cs2-94** (Curtate Expectation of Life as a Sum): The keyed option 'Sigma n p_x' had no summation limits or proper notation; rewrote as the sum from k=1 of kpx in LaTeX.
+- **cs2-95** (Gompertz Law of Mortality): Converted notation to LaTeX.
+- **cs2-96** (Makeham's Constant Term): Converted notation to LaTeX.
+- **cs2-99** (Covariate Effect in Proportional Hazards): Converted notation to LaTeX.
+- **cs2-102** (Census Approximation to Exposed to Risk): The keyed answer ('deaths occur uniformly during interval') is not the census approximation's assumption; the census method assumes the population varies linearly between census dates. Fixed the option and solution.
+- **cs2-104** (Lee-Carter Model Purpose): Converted notation to LaTeX.
+- **cs2-105** (Complete vs Curtate Expectation of Life): Notation was reversed: it called e_x the complete expectation and the circled e the curtate one. Standard notation is the circled e for complete and e_x for curtate. Fixed and converted to LaTeX.
+- **cs2-109** (Rate Interval and Age Definition): The keyed definition ('length of time over which rates are assumed constant') is not the CS2 definition. The rate interval is the year of age implied by the age definition. Fixed the option and solution.
+- **cs2-111** (Testing Adherence of a Graduation): Keyed option said 'consistency of shape' and the solution said 'smoothness'. Smoothness is not tested by comparing crude and graduated rates. Reworded to adherence to data (fit and bias).
+- **cs2-114** (Lee-Carter Period Index): Converted notation to LaTeX.
+- **cs2-116** (Duplicate Policies in Graduation Tests): The keyed answer ('adjust for duplicated exposure') misidentifies the issue. Duplicates mainly inflate the variance of the claim counts, so the test statistics need a variance adjustment. Fixed the option and solution.
+- **cs2-117** (Role of Central Exposed to Risk): 'Calculate mortality rates' was imprecise: central exposed to risk gives the force of mortality or central rate, while q_x uses initial exposed to risk. Clarified.
+
+## FIN Finance
+
+- **finance-1** (Black–Scholes Call Price): Stated answer 3.85 was wrong; the working itself reached 6.04 and then hand-waved. Correct BS price is 5.99. Rewrote solution.
+- **finance-2** (Put–Call Parity): Working correctly reached 2.89 but the stated answer was 3.71. Fixed answer and cleaned solution.
+- **finance-3** (Delta Approximation of Price Change): Solution wrote the nonsensical 'Δ*S*Δ'; rewrote it.
+- **finance-4** (Modified Duration Price Change): Rewrote solution in proper notation (answer unchanged).
+- **finance-5** (Implied Rate from a 6-Month Forward): Arithmetic error: ln(1.05)/0.5 = 0.0976, not 0.0953. Fixed answer and solution.
+- **finance-6** (Straddle Payoff at Expiry): Clarified that the payoff (before premium) is wanted and gave answer to 2 dp.
+- **finance-8** (Parametric VaR (95%)): Answer 39,200 used z = 1.96 (the one-sided 97.5% value) and the solution gave a range. At 95% with z = 1.645 the VaR is $32,900. Prompt now states z; answer fixed.
+- **finance-10** (Black–Scholes d1 (30% Vol)): Working gave −0.0061 but the answer was −0.0333. Fixed answer.
+- **finance-11** (Margrabe Exchange Option): Prompt was ambiguous about direction and volatility; answer 6.88 was unsupported (the working itself got about 10.4). Defined the payoff and the ratio volatility; correct Margrabe value is 10.52.
+- **finance-12** (Duration–Convexity Price Change): Prompt asked for a 'price change' without a price; the answer is a percentage. Prompt now asks for the % change and the answer is a percent.
+- **finance-13** (Black–Scholes Put Delta): Answer −0.4562 was wrong (the working itself got −0.403). Correct put delta is −0.4023.
+- **finance-14** (Implied Rate from a Futures Price): Rewrote solution in proper notation (answer unchanged).
+- **finance-15** (Black–Scholes Vega): d1 was mis-computed and the answer 9.90 contradicted the working (13.5). Correct vega (per unit of σ) is 13.74.
+- **finance-16** (Volatility of Stock–Cash Portfolio): Answer '12.00' was a percentage without saying so. Answer is now 12%; prompt says to give a percentage.
+- **finance-17** (Cash-or-Nothing Binary Call): No volatility was given and the solution assumed the option finishes in the money with certainty (computed 97.56, then 'rounded' to 95.12). Added σ = 25% and priced with Black–Scholes: 59.33.
+- **finance-19** (Black–Scholes Call Theta): Answer −3.21 was wrong and contradicted the working (−8.17, itself mis-computed). Correct annual theta is −4.70.
+- **finance-20** (Forward Price with Dividend Yield): 100e^{0.03} = 103.0455, which rounds to 103.05, not 103.04.
+- **finance-21** (Black–Scholes d1 (In-the-Money)): Working gave 0.5003 but answer said 0.6068. Fixed answer.
+- **finance-24** (Black–Scholes Call Delta): N(0.2475) = 0.5977, not 0.5398 (0.5398 is N(0.1)). Fixed answer.
+- **finance-26** (Two-Asset Portfolio Volatility): Working correctly reached 0.1419 but the answer said 16.33%. Fixed to 14.19%.
+- **finance-28** (Forward-Start Call): A forward-start option was not defined (no start date, strike rule) and the answer 9.18 was unsupported (working got 7.8). Defined the contract; with no dividends its value is S₀·c(1, 1.05), which equals the plain BS call with S=100, K=105, T=1: 10.00.
+- **finance-29** (Time Value of an American Call): The question asked for the 'early-exercise benefit', which is zero for a non-dividend American call; $2 is the time value. Reworded the prompt to ask for the time value.
+- **finance-32** (Long Call Butterfly Max Profit): Clarified that max profit occurs at the middle strike (answer unchanged).
+- **finance-33** (Implied Rate with Dividend Yield): ln(1.03)+0.02 = 0.04956, which rounds to 0.0496, not 0.0493.
+- **finance-36** (Long Vega Position): Prompt wording ('price stays near strike') made the long straddle look wrong at expiry. Reworded to ask about a rise in implied volatility before expiry.
+- **finance-37** (Black–Scholes Gamma): Working gave 0.0273 but answer said 0.0156. Correct gamma is 0.0274.
+- **finance-38** (Duration of a Bond Portfolio): No yields were given, so durations could not be computed, and the answer 3.98 was a guess (maturity average 4.0 'adjusted'). Specified a 5% flat yield and value weights; the portfolio Macaulay duration is 3.69.
+- **finance-39** (Put Delta from a Market Price): Delta can't be computed from the put price alone without r and volatility. The answer was copied from another question. Added r = 5% and asked for the implied volatility first; delta is −0.3987.
+- **finance-46** (Macaulay Duration (Premium Bond)): Solution divided cash flows by 1050 without discounting. Proper Macaulay duration is 2.8358, which rounds to 2.84 (not 2.83).
+- **finance-47** (Black–Scholes Put Theta): d1 was mis-computed (0.198 instead of 0.2298) and the answer −3.12 was wrong. Correct annual put theta is −2.27.
+- **finance-49** (Strategy for a Range-Bound Stock): Clarified that this is a short iron condor (answer unchanged).
+- **finance-50** (Implied Dividend Yield from a Forward): With F = $51 the arithmetic actually gives q = 0.04 − 0.0396 = 0.0004, not 0.0202. Changed F to $50.50 so the question has the intended sensible answer (0.0201).
+- **finance-51** (Parametric VaR (Smaller Portfolio)): Prompt didn't say which z-value to use; added z = 1.645.
+- **finance-53** (Forward-Start Call II): Forward-start contract undefined and no rate given; answer 7.87 unsupported. Defined the contract, added r = 5%; value = BS call with S=100, K=110, T=1, σ=20% = 6.04.
+- **finance-54** (Cash-or-Nothing Binary Put): No volatility given and solution assumed the put finishes in the money with certainty. Added σ = 25%; BS price is 60.61.
+- **finance-55** (Black–Scholes Put Gamma): d1 mis-computed (0.088 vs 0.2298) and answer 0.0152 contradicted the working. Put gamma equals call gamma: 0.0220.
+- **finance-56** (Iron Condor Max Loss): 'Long iron condor' with a $2 'premium' was ambiguous (debit or credit?), and a sister question gave the opposite reading. Spelled out the short iron condor for a $2 credit; max loss 3.00.
+- **finance-59** (Zero-Coupon Bond Price (5-Year)): Prompt didn't say how the yield is compounded; the answer assumes continuous. Stated it.
+- **finance-62** (Duration–Convexity for a Yield Drop): Solution was muddled ('Wait carefully') and reached 8.79, then said 8.73. Correct answer 8.79.
+- **finance-63** (Rebalancing a Delta Hedge): The calls' delta rises, so a delta-neutral long-call book must sell shares, not buy them. The answer 2 also rounded 1.5 the wrong way. Prompt now asks for shares to sell, to 1 decimal: 1.5.
+- **finance-64** (d1 with Continuous Dividends): Working gave 0.0498 but the answer said 0.0725. Fixed.
+- **finance-65** (Minimum-Variance Weight): 0.08/0.11 = 0.727 rounds to 0.73, not 0.70. The prompt also didn't say which asset's weight; it now asks for asset 1.
+- **finance-68** (Delta–Gamma–Theta P&L): Working correctly reached 111 and then 'normalised' to 0.86. Answer is 111.00; prompt now says theta is per option per day.
+- **finance-69** (Identify the Vasicek Model): Clarified why Vasicek, not Hull–White (answer unchanged).
+- **finance-70** (Zero-Coupon Bond (Annual Compounding)): The answer 821.93 is the annual-compounding price, but the solution used e^{-0.2} (= 818.73). Prompt now states annual compounding and the solution matches.
+- **finance-72** (Forward Price with Dividend Yield II): 100e^{0.03} = 103.0455, which rounds to 103.05, not 103.04.
+- **finance-74** (Theta of an At-the-Money Call): d1 mis-computed (0.088 instead of 0.2298) and answer −4.12 was wrong. Correct annual theta is −9.41.
+- **finance-75** (Macaulay Duration (Discount Bond)): Solution didn't discount cash flows. Exact Macaulay duration is 2.857, so the answer is 2.86, not 2.87.
+- **finance-76** (Re-Hedging After a Stock Move): Underspecified: no position size, and it asked about buying when you must sell. Now: 100 long calls, each with gamma 0.02, hedged with short stock; you sell 4 shares.
+- **finance-77** (Delta of Short Calls and Long Puts): The working gave −39.5, then 'adjusted signs' to −19. The correct delta is −39.50.
+- **finance-78** (Delta–Gamma–Theta P&L II): Working correctly reached 26.5 and then 'normalised' to 0.87. Answer is 26.50; prompt now says theta is per option per day.
+- **finance-79** (Constant-Parameter Gaussian Short Rate): CIR and Hull–White are also mean-reverting, so the question had three correct answers. Narrowed it to the model with constant parameters and normally distributed rates.
+- **finance-80** (Put Delta (1-Year)): d1 is 0.325 here (not 0.088), and −0.4602 came from N(0.1). Correct put delta is −0.3726.
+- **finance-81** (Gamma Re-Hedge Share Count): Solution computed 5 but answer said 10. Also, a long-call hedge needs shares sold, not bought. Answer is 5 shares to sell.
+- **finance-82** (Net Duration of a Payer Swap): The question asked for 'duration exposure' and gave the absolute value 1.40, dropping the sign. Paying fixed is a short-duration position, so the answer is −1.40.
+- **finance-83** (Black–Scholes d2): Working reached −0.2389 and then 'rounded' to −0.0645. Fixed.
+- **finance-85** (Forward-Start Call III): Forward-start contract undefined; answer 8.12 didn't match the BS value. Defined the contract; value = BS call with S=100, K=110, σ=25%, T=1 = 8.03.
+- **finance-87** (Bond Convexity): The answer 10.87 doesn't match the stated formula; correct convexity is 10.09. Put the formula in the prompt and wrote out the working.
+- **finance-90** (Forward Price with Dividend Yield III): 100e^{0.03} = 103.0455, which rounds to 103.05, not 103.04.
+- **finance-91** (Reverse Iron Condor Max Profit): 'Long iron condor' was ambiguous, and the solution's max-profit formula was the max-loss formula of a short condor. Defined the long (reverse) iron condor bought for a $2 debit; max profit is 3.00.
+- **finance-92** (Zero-Coupon Bond Price II): Prompt didn't say how the yield is compounded; stated continuous compounding.
+- **finance-93** (Square-Root Short-Rate Model): Vasicek, CIR and Hull–White are all mean-reverting, so the question had three correct answers. Asked instead for the model whose volatility scales with √r (CIR).
+- **finance-95** (Put Delta (1-Year) II): d1 is 0.325 here (not 0.088), and −0.4602 came from N(0.1). Correct put delta is −0.3726.
+- **finance-96** (Binary Call with Smaller Payout): No volatility given and solution assumed the option finishes in the money with certainty. Added σ = 25%; BS price is 28.52.
+- **finance-98** (Theta of a 1-Year ATM Call): The answer −5.12 was asserted with no working and is wrong; the correct annual theta is −8.10. Wrote out the full working.
+- **finance-99** (Macaulay Duration II): No working shown; exact Macaulay duration is 2.857, so the answer is 2.86, not 2.87.
+- **finance-100** (Gamma of an ATM Call): d1 is 0.2298 here (not 0.088), which gives gamma 0.0220, not 0.0152.
+
+## PROB Probability
+
+- **probability-4** (Two Aces Without Replacement): Stated 0.004524 was 1/221 = 0.0045249 rounded incorrectly; corrected the rounding to 0.004525.
+- **probability-32** (Four-Digit Numbers with Increasing Digits): The original answer C(10,4) = 210 counted digit sets containing 0, which would give a leading zero (not a 4-digit number). Correct count is C(9,4) = 126.
+- **probability-34** (Six-Letter Words from BALLOON): Answer 180 only counted the case where B, A or N is omitted, once. Correct total over all choices of omitted letter is 1260; clarified the prompt and rewrote the solution.
+- **probability-36** (Arrangements of PROBABILITY): The solution missed that I is also repeated. Answer corrected from 11!/2! = 39,916,800 to 11!/(2!2!) = 9,979,200.
+- **probability-45** (Bayes: Positive Disease Test): "95% accurate" was ambiguous; the prompt now states both sensitivity and specificity are 95% and gives the rounding. Answer unchanged.
+- **probability-49** (At Least One Ace in Two Cards): Arithmetic error: (48/52)(47/51) = 0.8507, not 0.853, so the answer is 33/221 = 0.1493, not 0.147. Also stated 'without replacement' and the rounding.
+- **probability-53** (Sum of Nine Given a Four Shows): The solution correctly derived 2/11, but the stated answer was 0.333333. Answer corrected to 2/11 = 0.181818.
+- **probability-59** (First Two Heads Are Consecutive): Stated answer 2/3 was unsupported and wrong: the first two heads are consecutive if and only if the toss after the first head is heads, so the probability is 1/2.
+- **probability-64** (Broken Stick Triangle): The original asked whether three points on [0,1] form a triangle. Points on a line are always collinear, so the answer of 1 and its reasoning were wrong. Rewrote it as the intended broken-stick problem (answer 1/4).
+- **probability-65** (Acute Triangle from Random Points on a Circle): The solution's reasoning was wrong: an obtuse triangle does not have an angle that 'subtends a diameter' (that gives a right angle). Rewrote it using the centre/semicircle argument. Answer unchanged.
+- **probability-108** (Hypergeometric: Two Reds in Four Draws): The solution correctly found 30/70 = 3/7, but the stated answer was 0.357143 (= 5/14). Answer corrected to 0.428571.
+- **probability-109** (Maximum of Four Dice): The stated answer 0.197531 is 256/1296 = P(max at most 4). The correct P(max = 4) = 175/1296 = 0.135031.
+- **probability-110** (Higher of Two Cards Is a King): The solution used 48 'non-Ace non-King' cards (there are 44), ignored the two-Kings case, and its 384/2652 did not even equal the stated 0.153846. Correct answer 7/51 = 0.1373. Specified Aces high, the tie rule and the rounding.
+- **probability-111** (Expected Maximum of a Sample): The solution computed 17.5 but then 'approximated' it as 17. The formula n(N+1)/(n+1) is exact for sampling without replacement. Answer corrected to 17.5; the prompt now says the numbers are distinct.
+- **probability-112** (Colour Pattern Without Replacement): The denominator was wrong: 10 x 9 x 8 x 7 = 5040, not 2520. Correct answer is 1/14 = 0.071429, not 0.114286.
+- **probability-113** (Expected Longest Run of Heads): The answer '3' was a vague approximation with no working. Exact enumeration gives E[L] = 1433/512 = 2.7988. Defined L precisely, added the rounding and a full solution.
+- **probability-115** (All Three Colours Drawn): The solution correctly found 36/120 = 0.3, but the stated answer was 0.4. Answer corrected.
+- **probability-117** (Smallest Selected Number): The solution correctly found 35/252 = 0.138889, but the stated answer was 0.222222. Answer corrected.
+- **probability-118** (Three Dice in Strictly Increasing Order): The solution's own expression (120/216)(1/6) equals 20/216 = 0.0926, but it was simplified wrongly to 1/6. Answer corrected to 0.092593.
+- **probability-119** (Draws Until a Colour Is Exhausted): The answer 9 rested on a false claim that exactly one ball is expected to remain. The expected number left is 5/3, so E[draws] = 25/3 = 8.3333 (confirmed by simulation). Rewrote the solution and added the rounding.
+
+## STOCH Stochastic Processes
+
+- **statistics-7** (Expected Position in a Ticket Line): The prompt was garbled ('probability of selecting your ticket randomly is uniform'). It now states that the position is uniform on 1..n. Answer unchanged.
+- **statistics-8** (Two Heads Before the First Tail): Clarified the awkward wording and wrote the answer to 4 decimals as requested.
+- **statistics-9** (Expected Points from One Die Roll): A migration error turned '$i$' into '£i£'. Restored the maths and tidied the prompt. Answer unchanged.
+- **statistics-10** (Best-of-Seven Series, Equal Teams): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-11** (Reroll Two Dice Until the Sum Is at Least 7): The answer 10.5 was wrong: the solution miscounted (the sums with S at least 7 add to 182 over 21 outcomes, not 147 over 14). Correct value 26/3 = 8.67. Also made clear the rerolling repeats.
+- **statistics-14** (Hitting Time Is a Stopping Time): Option 'It depends on filtration' was arguably defensible, so the prompt now fixes the natural filtration. Answer unchanged.
+- **statistics-15** (Variance of a Brownian Exit Time): For the one-sided first passage to level 1, the hitting time has infinite mean and variance, so the stated Var = a^2 = 1 was wrong. Reframed as the two-sided exit time from (-1, 1), which has a finite variance of 2/3, and wrote a full derivation.
+- **statistics-16** (Ito's Lemma: W(t) Squared): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-17** (Random Walk Back at the Origin (2 Steps)): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-20** (First Six on the Third Roll): The stated answer 0.6944 (= 25/36) left out the final factor of 1/6. Correct is 25/216 = 0.1157. Removed the self-correcting 'wait, check' text from the solution.
+- **statistics-21** (Markov Chain: Two-Step Transition): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-22** (Sequence H,T,H in Three Flips): 'Probability first occurrence of H,T,H' was ill-posed (HTH occurs eventually with probability 1). Reworded it as the probability that three flips give H, T, H. Answer unchanged.
+- **statistics-24** (One Reroll Below Four): The solution's own arithmetic gives 3.08, and the stated 4.67 matches no reading of the game. With a single reroll (as the solution intended) the correct value is 4.25. Clarified the rules.
+- **statistics-26** (Mean First Passage Time of Brownian Motion): This was an open question with the instruction 'round to 2 decimals' but answer infinity, and its solution wrongly said the variance is finite. Converted it to an MCQ and corrected the solution (the variance is infinite too).
+- **statistics-28** (Ito's Lemma: Exponential of W(t)): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-29** (First Six on the Fourth Roll): The solution correctly found 125/1296 = 0.0965, but the stated answer was 0.1157 (the third-roll value). Answer corrected.
+- **statistics-31** (Best-of-Five Series, Equal Teams): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-32** (Reroll Until Even): It was unclear whether you reroll once or repeatedly. Made it 'repeat until even', which is what the answer 4.00 assumes.
+- **statistics-34** (Random Walk at +2 After 4 Steps): The solution reached 0.25 after a muddled self-correction, but the stated answer was 0.3750 (the value for position 0). Answer corrected and solution cleaned up.
+- **statistics-35** (Two Blues With Replacement): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-36** (Sequence T,H,T in Three Flips): 'Probability first occurrence of T,H,T' was ill-posed. Reworded it as the probability that three flips give T, H, T. Answer unchanged.
+- **statistics-37** (Predictability of a Brownian Hitting Time): The marked answer 'stopping time, but not predictable' is technically false. Hitting times of continuous processes are predictable stopping times (announced by hitting times of nearby levels). Rewrote the options and solution to give the correct statement.
+- **statistics-38** (Ito Product Rule: t W(t)): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-40** (Draw Cards Until at Least Seven): The solution found the correct 8.5 for the stopping values and then 'concluded' 7.50 with no valid reasoning. For repeated draws the value is exactly 8.50. Clarified the rules.
+- **statistics-41** (Markov Chain: Three-Step Transition): The solution was unfinished, and the stated 0.3780 was wrong. Computing P^3 gives P^3[0,1] = 0.381.
+- **statistics-43** (Sequence H,H,T in Three Flips): 'First occurrence of H,H,T? Probability?' was ill-posed. Reworded it as the probability that three flips give H, H, T. Answer unchanged.
+- **statistics-44** (Random Walk at +2 After 6 Steps): The solution found 15/64 = 0.2344, but the stated answer was 0.3125. Answer corrected.
+- **statistics-45** (Roll Until at Least Five): The solution derived 5.5, but the stated answer was 5.67. Answer corrected and solution rewritten.
+- **statistics-46** (Expected Brownian Exit Time): 'Expected squared value of hitting time' with 'E[T^2] = a^2' was wrong (E[tau^2] = 5/3 for this exit time). Reworded it to ask for E[tau], which is 1, matching the stated answer, and gave the martingale proof.
+- **statistics-47** (Variance of a Sum of Independent BMs): The time was not specified (the answer depends on t). The prompt now asks at t = 1. Answer unchanged.
+- **statistics-48** (Ito's Lemma: sin(W(t))): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-50** (Absorption with a Single Absorbing State): The stated answer 0.44 was wrong, and the solution derived 0.5 and then 'checked' 0.44. State 2 is the only absorbing state, so the absorption probability is 1.
+- **statistics-51** (Reroll Two Dice Until the Sum Is at Least 5): The answer 7.00 ignored the conditioning. The expected value is E[S | S at least 5] = 232/30 = 7.73. Clarified the repeat-until rule.
+- **statistics-54** (Second Moment of Brownian Motion): E[W(t)^2] = t depends on t, which was unspecified. The prompt now asks for t = 1. Answer unchanged.
+- **statistics-55** (Stopping Time Property of an Exit Time): The marked option 'not predictable' is technically false (hitting times of continuous paths are predictable stopping times). Replaced the options so exactly one is correct without that subtlety.
+- **statistics-56** (Single Reroll on a Low Roll): The solution computed 4.25 and then 'approximated' it as 4.50. Answer corrected to 4.25, and the prompt now makes clear there is a single reroll.
+- **statistics-57** (Variance of a Sum of Correlated BMs): The time was not specified. The prompt now asks at t = 1. Answer unchanged.
+- **statistics-58** (Ito's Lemma: t exp(W(t))): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-59** (First Four on the Third Roll): The solution found 25/216 = 0.1157, but the stated answer was 0.0694. Answer corrected.
+- **statistics-60** (Draw Cards Until at Least Six): The stated 7.00 came from a vague 'recursive' blend. Under the stated repeat-until-stop rule, the value is exactly 8.00.
+- **statistics-61** (Gambler's Ruin: 4 Pounds Against 6): The question asks for the probability of going broke. That is 6/10 = 0.6, but the stated answer 0.4 is the probability of winning. The solution also contradicted itself.
+- **statistics-63** (Three Balls of Different Colours): The solution found 24/84 = 0.2857, but the stated answer was 0.4444. Answer corrected.
+- **statistics-64** (Expected Wait for H,T,H): The solution just asserted 'known result: 10'. Replaced it with the state-equation derivation. Answer unchanged.
+- **statistics-66** (Roll Until Four or More): The solution derived E = 5 and then 'rounded' it to 4.50. Answer corrected to 5.00.
+- **statistics-67** (Asymmetric Exit Time Is a Stopping Time): The marked option 'stopping time but not predictable' is technically false (hitting times of continuous processes are predictable), and 'Predictable' was a distractor. Replaced the options so exactly one is correct.
+- **statistics-68** (Biased Walk: +3 Before -2): The solution correctly reached about 0.640 and then 'rounded' to 0.6711. The correct value is 135/211 = 0.6398.
+- **statistics-69** (Mean of Brownian Motion with Drift): Named the drifted process X(t) = mu t + sigma W(t) instead of 'W(t) with drift' (W normally denotes standard BM). Answer unchanged.
+- **statistics-70** (Ito's Lemma: ln(1 + W(t) Squared)): The marked option had dt coefficient (1-2W^2)/(1+W^2)^2, which contradicts the solution's own f''. The correct coefficient is (1-W^2)/(1+W^2)^2. Fixed the option and wrote everything in maths notation.
+- **statistics-71** (Two Consecutive Heads Within Three Flips): The prompt mixed '3 coins' with 'otherwise continue', and the solution was vague. Clarified the rules (at most 3 flips) and gave the calculation. Answer unchanged.
+- **statistics-72** (Absorption Probability, Two Absorbing States): The solution derived 0.5, but the stated answer was 0.3. Answer corrected and the matrix written properly.
+- **statistics-73** (Both Brownian Motions Positive): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-74** (Reroll Two Dice Until the Sum Is at Least 9): The solution used P(S at least 9) = 4/36 (it is 10/36), and the stated 9.25 was wrong. E[S | S at least 9] = 100/10 = 10.00.
+- **statistics-75** (Exit Time from (-5, 5)): The distractor 'Predictable' is technically also true (hitting times of continuous paths are predictable stopping times). Replaced it with 'Known in advance at time 0'.
+- **statistics-76** (Biased Coin: Flips Until the First Tail): The stated answer 1.43 = 1/0.7 used the probability of heads. The solution reached 3.33. Answer corrected.
+- **statistics-77** (Biased Walk: +2 Before -3): The solution correctly found about 0.360 and then stated 0.1793. The correct value is 0.3602.
+- **statistics-78** (Variance of Brownian Motion with Drift): Named the drifted process X(t) instead of W(t), since W normally denotes standard BM. Answer unchanged.
+- **statistics-79** (Ito's Lemma: W(t) Cubed): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-80** (Three Consecutive Heads in Four Flips (5 Pound Prize)): The stated 0.78 (0.78125 = 5 x 5/32) was wrong. P(HHH within 4 flips) = 3/16, so E = 0.9375. Clarified the prompt.
+- **statistics-82** (Random Walk at +4 After 10 Steps): The solution found 120/1024 = 0.1172, but the stated answer was 0.2051. Answer corrected.
+- **statistics-83** (Exactly Two Reds in Three Draws): The solution found 30/56 = 0.5357, but the stated answer was 0.4464. Answer corrected.
+- **statistics-84** (Expected Wait for H,T,H II): The solution only asserted the result. Added the derivation. Answer unchanged.
+- **statistics-86** (Variance of Drifted BM at Time 3): Named the drifted process X(t) instead of W(t). Answer unchanged.
+- **statistics-88** (Brownian Motions with Opposite Signs): Answer rewritten to 4 decimal places as the prompt asks, so the grading tolerance matches the requested precision. Value unchanged.
+- **statistics-89** (Exit Time from (-4, 4)): The distractor 'Predictable in advance' mixed up the technical term 'predictable' (which hitting times of continuous paths do satisfy) with 'known in advance'. Reworded it to 'Known in advance at time 0'.
+- **statistics-90** (Slightly Biased Walk: +3 Before -2): Arithmetic error: (9/11)^5 = 0.3666, so the denominator is 0.6334 (not 0.666), and the answer is 0.5220, not 0.6090.
+- **statistics-91** (Ito's Lemma: Exponential with Drift): The marked option said 7 dt, but the correct drift is 5 dt (the solution even derived 5). Fixed the correct option and replaced one distractor with the common mistake of omitting the Ito term.
+- **statistics-92** (Reroll Two Dice Until the Sum Is at Least 8): The stated 8.25 was wrong. E[S | S at least 8] = 140/15 = 9.33.
+- **statistics-93** (Absorption Probability in a Four-State Chain): The stated 0.286 was wrong. Solving the absorption equations gives h2 = 0.375.
+- **statistics-94** (Mean of Drifted BM II): Named the drifted process X(t) instead of W(t). Answer unchanged.
+- **statistics-96** (Exit Time from (-1.5, 1.5)): The distractor 'Predictable' is technically also true for hitting times of continuous paths. Replaced it with 'Known in advance at time 0'.
+- **statistics-97** (Exactly Two Heads, Consecutive, in Three Flips): 'Exactly two heads appear consecutively' was ambiguous (HHH also contains consecutive heads). Clarified that exactly two heads are needed. Answer unchanged.
+- **statistics-98** (Variance of Correlated BM Sum II): The time was not specified. The prompt now asks at t = 1. Answer unchanged.
+- **statistics-99** (Ito's Lemma: W(t) to the Fourth): Rewrote the prompt, options and solution in proper maths notation. Answer unchanged.
+- **statistics-100** (Three Consecutive Heads in Four Flips (6 Pound Prize)): Used P(HHH within 4 flips) = 0.14 instead of 3/16 = 0.1875. Correct expected winnings 1.125, which rounds to 1.13.

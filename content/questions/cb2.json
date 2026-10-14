@@ -1,0 +1,3936 @@
+[
+  {
+    "id": "cb2-1",
+    "subject": "cb2",
+    "n": 1,
+    "title": "Definition of Opportunity Cost",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs",
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Opportunity cost refers to:",
+    "options": [
+      "The cost of the next best alternative foregone",
+      "The explicit monetary cost only",
+      "Sunk costs in a project",
+      "Costs that cannot be measured"
+    ],
+    "answerIndex": 0,
+    "solution": "Opportunity cost includes both explicit and implicit costs of the next best alternative."
+  },
+  {
+    "id": "cb2-2",
+    "subject": "cb2",
+    "n": 2,
+    "title": "Meaning of Scarcity",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Scarcity in economics means:",
+    "options": [
+      "Resources are limited relative to wants",
+      "No resources exist",
+      "Prices are always high",
+      "Demand exceeds supply at all prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Scarcity arises because resources are finite, but human wants are unlimited."
+  },
+  {
+    "id": "cb2-3",
+    "subject": "cb2",
+    "n": 3,
+    "title": "Scope of Microeconomics",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Microeconomics primarily studies:",
+    "options": [
+      "Individual firms, households, and markets",
+      "National income and inflation",
+      "Government fiscal policy",
+      "Global trade balances"
+    ],
+    "answerIndex": 0,
+    "solution": "Microeconomics focuses on decisions and interactions of individual economic agents."
+  },
+  {
+    "id": "cb2-4",
+    "subject": "cb2",
+    "n": 4,
+    "title": "Scope of Macroeconomics",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Macroeconomics primarily studies:",
+    "options": [
+      "Aggregate economic variables like GDP and inflation",
+      "Price of a single product",
+      "Market structure of a firm",
+      "Consumer indifference curves"
+    ],
+    "answerIndex": 0,
+    "solution": "Macroeconomics looks at the economy as a whole, not individual markets."
+  },
+  {
+    "id": "cb2-5",
+    "subject": "cb2",
+    "n": 5,
+    "title": "Key Feature of Classical Economics",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a key feature of Classical economics?",
+    "options": [
+      "Markets naturally reach equilibrium",
+      "Government should intervene heavily",
+      "Focus on central planning",
+      "Prices are always sticky downward"
+    ],
+    "answerIndex": 0,
+    "solution": "Classical economics assumes self-correcting markets where supply and demand determine prices."
+  },
+  {
+    "id": "cb2-6",
+    "subject": "cb2",
+    "n": 6,
+    "title": "Marxian Socialism and Ownership",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Marxian socialism emphasizes:",
+    "options": [
+      "Public ownership of the means of production",
+      "Free markets without regulation",
+      "Minimal government intervention",
+      "Focus on utility maximization for individuals"
+    ],
+    "answerIndex": 0,
+    "solution": "Marxian socialism emphasizes collective ownership and reducing inequality."
+  },
+  {
+    "id": "cb2-7",
+    "subject": "cb2",
+    "n": 7,
+    "title": "Keynesian View of Stabilisation",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Keynesian economics advocates:",
+    "options": [
+      "Active government intervention to stabilize the economy",
+      "No government interference in the market",
+      "Privatization of all industries",
+      "Fixed money supply regardless of demand"
+    ],
+    "answerIndex": 0,
+    "solution": "Keynesian theory recommends fiscal and monetary policy to smooth economic cycles."
+  },
+  {
+    "id": "cb2-8",
+    "subject": "cb2",
+    "n": 8,
+    "title": "Focus of Monetarist Economics",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monetarist economics primarily focuses on:",
+    "options": [
+      "The role of money supply in influencing inflation and output",
+      "Income redistribution through taxes",
+      "Government-controlled prices",
+      "Labour market rigidities"
+    ],
+    "answerIndex": 0,
+    "solution": "Monetarists emphasize controlling the money supply to stabilize the economy."
+  },
+  {
+    "id": "cb2-9",
+    "subject": "cb2",
+    "n": 9,
+    "title": "Austrian School Emphasis",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The Austrian school of economics emphasizes:",
+    "options": [
+      "Individual decision-making and market processes",
+      "Central planning of resources",
+      "Government deficit spending",
+      "Nominal rigidities in wages"
+    ],
+    "answerIndex": 0,
+    "solution": "Austrian economics focuses on entrepreneurship, individual choices, and price signals."
+  },
+  {
+    "id": "cb2-10",
+    "subject": "cb2",
+    "n": 10,
+    "title": "Lessons of the 2008 Banking Crisis",
+    "difficulty": "medium",
+    "topics": [
+      "Monetary policy",
+      "Fiscal policy",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The 2008 banking crisis highlighted:",
+    "options": [
+      "The limitations of monetary policy alone to stabilize the economy",
+      "That free markets never fail",
+      "That fiscal policy is always ineffective",
+      "That inflation is always the main concern"
+    ],
+    "answerIndex": 0,
+    "solution": "The crisis showed that both fiscal and monetary tools are needed, and market failures occur."
+  },
+  {
+    "id": "cb2-11",
+    "subject": "cb2",
+    "n": 11,
+    "title": "European Policy Response After 2008",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "After the 2008 crisis, European governments:",
+    "options": [
+      "Implemented stimulus packages and austerity measures",
+      "Eliminated central banks",
+      "Privatized all banks immediately",
+      "Adopted pure laissez-faire policies"
+    ],
+    "answerIndex": 0,
+    "solution": "Europe applied a mix of stimulus, regulation, and austerity after the crisis."
+  },
+  {
+    "id": "cb2-12",
+    "subject": "cb2",
+    "n": 12,
+    "title": "What Economic Choice Involves",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic choice involves:",
+    "options": [
+      "Selecting among alternatives given limited resources",
+      "Choosing randomly without constraints",
+      "Ignoring opportunity costs",
+      "Maximizing government revenue only"
+    ],
+    "answerIndex": 0,
+    "solution": "Economic choice is constrained by scarcity, requiring evaluation of opportunity costs."
+  },
+  {
+    "id": "cb2-13",
+    "subject": "cb2",
+    "n": 13,
+    "title": "Factors in Business Decisions",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Business decisions are influenced by:",
+    "options": [
+      "Outputs, inputs, technology, location and competition",
+      "Only government regulations",
+      "Consumer preferences exclusively",
+      "Macroeconomic variables only"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms consider multiple factors, including production choices, technology, and competition."
+  },
+  {
+    "id": "cb2-14",
+    "subject": "cb2",
+    "n": 14,
+    "title": "Micro vs Macro: Primary Difference",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The difference between microeconomics and macroeconomics is primarily:",
+    "options": [
+      "Micro focuses on individual agents; macro on aggregate economy",
+      "Micro deals with GDP; macro with firms",
+      "Micro ignores prices; macro ignores output",
+      "They are essentially the same"
+    ],
+    "answerIndex": 0,
+    "solution": "Micro studies firms, households, and markets; macro studies the whole economy."
+  },
+  {
+    "id": "cb2-15",
+    "subject": "cb2",
+    "n": 15,
+    "title": "Purpose of Economic Models",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic models are used primarily to:",
+    "options": [
+      "Simplify and explain real-world economic phenomena",
+      "Replace real-world data entirely",
+      "Guarantee policy success",
+      "Predict exact future outcomes"
+    ],
+    "answerIndex": 0,
+    "solution": "Models simplify reality to highlight key relationships and support analysis."
+  },
+  {
+    "id": "cb2-16",
+    "subject": "cb2",
+    "n": 16,
+    "title": "Rational Expectations Principle",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment",
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The principle of rational expectations suggests that:",
+    "options": [
+      "People use all available information to forecast future economic variables",
+      "People always make mistakes in forecasting",
+      "Expectations are irrelevant for markets",
+      "Governments can perfectly predict economic outcomes"
+    ],
+    "answerIndex": 0,
+    "solution": "Rational expectations assume that agents use all available information efficiently in forming expectations."
+  },
+  {
+    "id": "cb2-17",
+    "subject": "cb2",
+    "n": 17,
+    "title": "Evidence Against Strong-Form EMH",
+    "difficulty": "medium",
+    "topics": [
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Evidence against the strong form of the Efficient Markets Hypothesis includes:",
+    "options": [
+      "Insider trading profits",
+      "Stable stock prices",
+      "Prices reacting quickly to new public announcements",
+      "Interest rate changes"
+    ],
+    "answerIndex": 0,
+    "solution": "Strong-form EMH says prices reflect all information, public and private. If insiders can consistently earn abnormal profits from private information, prices did not already reflect it, which contradicts the strong form. Rapid price reaction to public news is consistent with (semi-strong) efficiency, while stable prices and interest rate changes say nothing specific about the strong form."
+  },
+  {
+    "id": "cb2-18",
+    "subject": "cb2",
+    "n": 18,
+    "title": "Role of Expected Utility Theory",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Expected utility theory is used to:",
+    "options": [
+      "Evaluate choices under uncertainty",
+      "Calculate GDP growth",
+      "Determine market prices directly",
+      "Measure inflation"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility allows agents to make decisions considering both outcomes and their probabilities."
+  },
+  {
+    "id": "cb2-19",
+    "subject": "cb2",
+    "n": 19,
+    "title": "Risk Aversion in a Utility Function",
+    "difficulty": "medium",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A utility function exhibits risk aversion if:",
+    "options": [
+      "The individual prefers a certain outcome to a risky one with the same expected value",
+      "The individual prefers risk over certainty",
+      "Utility is independent of wealth",
+      "The function is linear"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk-averse individuals prefer less risk for the same expected payoff."
+  },
+  {
+    "id": "cb2-20",
+    "subject": "cb2",
+    "n": 20,
+    "title": "Declining Absolute Risk Aversion",
+    "difficulty": "hard",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A declining absolute risk aversion means:",
+    "options": [
+      "As wealth increases, the individual becomes less sensitive to absolute risk",
+      "The individual becomes more sensitive to risk as wealth rises",
+      "The individual is risk neutral",
+      "The individual’s risk preference does not change with wealth"
+    ],
+    "answerIndex": 0,
+    "solution": "Declining absolute risk aversion indicates that richer individuals tolerate larger monetary risks."
+  },
+  {
+    "id": "cb2-21",
+    "subject": "cb2",
+    "n": 21,
+    "title": "State-Dependent Utility",
+    "difficulty": "medium",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "State-dependent utility functions imply that:",
+    "options": [
+      "Utility depends on the state of the world or individual circumstances",
+      "Utility is always linear",
+      "Utility is independent of outcomes",
+      "Preferences are random"
+    ],
+    "answerIndex": 0,
+    "solution": "State-dependent utilities allow utility to change with context, e.g., health or economic conditions."
+  },
+  {
+    "id": "cb2-22",
+    "subject": "cb2",
+    "n": 22,
+    "title": "Trigger of the Great Recession",
+    "difficulty": "easy",
+    "topics": [
+      "Money & banking",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The Great Recession was triggered primarily by:",
+    "options": [
+      "A banking and financial crisis in the US housing market",
+      "A decline in gold prices",
+      "Excessive government spending in Europe only",
+      "Hyperinflation in Asia"
+    ],
+    "answerIndex": 0,
+    "solution": "The collapse of subprime mortgages and bank failures led to the global recession of 2008."
+  },
+  {
+    "id": "cb2-23",
+    "subject": "cb2",
+    "n": 23,
+    "title": "Monetary Policy in a Liquidity Trap",
+    "difficulty": "medium",
+    "topics": [
+      "Monetary policy",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monetary policy was less effective during the 2008 crisis because:",
+    "options": [
+      "Interest rates were already near zero (liquidity trap)",
+      "Inflation was extremely high",
+      "Markets were perfectly efficient",
+      "Fiscal policy had no impact"
+    ],
+    "answerIndex": 0,
+    "solution": "When interest rates are near zero, lowering them further has little effect on stimulating demand."
+  },
+  {
+    "id": "cb2-24",
+    "subject": "cb2",
+    "n": 24,
+    "title": "The Stimulus-Austerity Debate",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Stimulus–austerity debate revolves around:",
+    "options": [
+      "Whether governments should increase spending or cut deficits to support the economy",
+      "Whether to reduce taxes on firms only",
+      "The choice between free trade and protectionism",
+      "Monetary vs. fiscal policy for controlling inflation"
+    ],
+    "answerIndex": 0,
+    "solution": "The debate is about using fiscal policy to boost growth versus reducing debt."
+  },
+  {
+    "id": "cb2-25",
+    "subject": "cb2",
+    "n": 25,
+    "title": "Classical Assumption of Self-Correction",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Classical economics assumes:",
+    "options": [
+      "Markets are self-correcting without government intervention",
+      "Government should actively manage aggregate demand",
+      "Prices are sticky in the short run",
+      "Economic agents are irrational"
+    ],
+    "answerIndex": 0,
+    "solution": "Classical theory trusts market forces to reach equilibrium naturally."
+  },
+  {
+    "id": "cb2-26",
+    "subject": "cb2",
+    "n": 26,
+    "title": "Post-Keynesian vs Traditional Keynesian",
+    "difficulty": "medium",
+    "topics": [
+      "National income",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Post-Keynesian economics differs from traditional Keynesianism by:",
+    "options": [
+      "Emphasizing historical time, uncertainty, and non-neutral money",
+      "Ignoring government intervention entirely",
+      "Assuming perfectly rational expectations",
+      "Relying solely on monetary aggregates"
+    ],
+    "answerIndex": 0,
+    "solution": "Post-Keynesians stress fundamental uncertainty and dynamic market processes."
+  },
+  {
+    "id": "cb2-27",
+    "subject": "cb2",
+    "n": 27,
+    "title": "Lessons from Banking Crises",
+    "difficulty": "easy",
+    "topics": [
+      "Money & banking",
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The main lesson from banking crises since the Great Depression is:",
+    "options": [
+      "Financial markets can fail, requiring regulation and oversight",
+      "Free markets always self-correct without risk",
+      "Inflation is the sole cause of crises",
+      "Government intervention is always harmful"
+    ],
+    "answerIndex": 0,
+    "solution": "Crises show that regulation and central bank intervention are needed to stabilize the financial system."
+  },
+  {
+    "id": "cb2-28",
+    "subject": "cb2",
+    "n": 28,
+    "title": "Irrational Behaviour in Financial Markets",
+    "difficulty": "easy",
+    "topics": [
+      "Money & banking",
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Irrational behavior in financial markets may include:",
+    "options": [
+      "Excessive optimism leading to asset bubbles",
+      "Always making rational investment choices",
+      "Perfectly forecasting interest rates",
+      "Updating beliefs correctly as new information arrives"
+    ],
+    "answerIndex": 0,
+    "solution": "Behavioral economics shows that psychological biases can cause bubbles and crashes."
+  },
+  {
+    "id": "cb2-29",
+    "subject": "cb2",
+    "n": 29,
+    "title": "Influences on Business Economic Choice",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic choice in business decisions is influenced by:",
+    "options": [
+      "Opportunity costs, technology, competition, and inputs/outputs",
+      "Only government taxes",
+      "Random market movements",
+      "Consumer irrationality alone"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms weigh multiple factors when deciding on production, location, and pricing."
+  },
+  {
+    "id": "cb2-30",
+    "subject": "cb2",
+    "n": 30,
+    "title": "Micro vs Macro Perspectives",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Microeconomic and macroeconomic perspectives differ in that:",
+    "options": [
+      "Micro looks at parts of the economy; macro at the whole economy",
+      "Micro is about money supply; macro is about firms",
+      "They are entirely unrelated",
+      "Micro ignores markets; macro ignores consumers"
+    ],
+    "answerIndex": 0,
+    "solution": "Micro studies individual markets and agents; macro studies aggregate variables and overall economic performance."
+  },
+  {
+    "id": "cb2-31",
+    "subject": "cb2",
+    "n": 31,
+    "title": "Scarcity: Resources vs Wants",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Scarcity in economics refers to:",
+    "options": [
+      "Limited resources relative to unlimited wants",
+      "A lack of money in the economy",
+      "Government intervention in markets",
+      "Overproduction of goods"
+    ],
+    "answerIndex": 0,
+    "solution": "Scarcity arises because resources are finite while human wants are virtually unlimited."
+  },
+  {
+    "id": "cb2-32",
+    "subject": "cb2",
+    "n": 32,
+    "title": "Opportunity Cost Definition II",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs",
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Opportunity cost is defined as:",
+    "options": [
+      "The value of the next best alternative foregone",
+      "All the money spent on a decision",
+      "The total cost of production",
+      "The benefit from the chosen option"
+    ],
+    "answerIndex": 0,
+    "solution": "Opportunity cost measures what you give up when choosing one option over another."
+  },
+  {
+    "id": "cb2-33",
+    "subject": "cb2",
+    "n": 33,
+    "title": "Classical View of Full Employment",
+    "difficulty": "medium",
+    "topics": [
+      "Labour markets",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Classical economists primarily believed that:",
+    "options": [
+      "Markets naturally move toward full employment",
+      "Government should manage aggregate demand actively",
+      "Prices are rigid in the short run",
+      "Unemployment is mainly caused by deficient aggregate demand"
+    ],
+    "answerIndex": 0,
+    "solution": "Classical economists believed flexible wages and prices clear markets, so the economy tends towards full employment without intervention. Persistent demand-deficient unemployment and active demand management are Keynesian ideas, and short-run price rigidity is a Keynesian/New Keynesian assumption."
+  },
+  {
+    "id": "cb2-35",
+    "subject": "cb2",
+    "n": 34,
+    "title": "Neo-Classical Optimising Agents",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Neo-classical economics assumes that:",
+    "options": [
+      "Individuals maximize utility and firms maximize profit",
+      "Governments always intervene effectively",
+      "Markets are always inefficient",
+      "Money is irrelevant"
+    ],
+    "answerIndex": 0,
+    "solution": "Neo-classical models rely on rational agents optimizing under constraints."
+  },
+  {
+    "id": "cb2-36",
+    "subject": "cb2",
+    "n": 35,
+    "title": "Keynesian vs Classical Theory",
+    "difficulty": "medium",
+    "topics": [
+      "National income",
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Keynesian economics differs from classical theory by:",
+    "options": [
+      "Recognizing that aggregate demand drives output and employment in the short run",
+      "Assuming markets always self-correct",
+      "Ignoring government policy",
+      "Focusing only on long-run equilibrium"
+    ],
+    "answerIndex": 0,
+    "solution": "Keynes emphasized short-run fluctuations and the role of government spending in stabilizing demand."
+  },
+  {
+    "id": "cb2-37",
+    "subject": "cb2",
+    "n": 36,
+    "title": "Financial System Failure and Recession",
+    "difficulty": "easy",
+    "topics": [
+      "Money & banking",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The 2008 banking crisis illustrated that:",
+    "options": [
+      "Failures in the financial system can lead to severe global recessions",
+      "Markets always correct themselves immediately",
+      "Monetary policy was unnecessary",
+      "Government action had no impact"
+    ],
+    "answerIndex": 0,
+    "solution": "The subprime mortgage collapse triggered widespread financial instability."
+  },
+  {
+    "id": "cb2-38",
+    "subject": "cb2",
+    "n": 37,
+    "title": "Purpose of Post-2008 Fiscal Stimulus",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Post-2008, many governments engaged in stimulus measures to:",
+    "options": [
+      "Boost aggregate demand and prevent deeper recession",
+      "Increase long-term interest rates",
+      "Reduce the money supply",
+      "Decrease public sector employment"
+    ],
+    "answerIndex": 0,
+    "solution": "Fiscal stimulus aimed to increase spending and support economic recovery."
+  },
+  {
+    "id": "cb2-39",
+    "subject": "cb2",
+    "n": 38,
+    "title": "Austrian Economics: Limits of Planning",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government",
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Austrian economics emphasizes:",
+    "options": [
+      "Individual choice, entrepreneurship, and the limits of central planning",
+      "Heavy government intervention",
+      "Short-run fiscal policy",
+      "Fixed exchange rates only"
+    ],
+    "answerIndex": 0,
+    "solution": "Austrian economists stress market processes and the dangers of intervention."
+  },
+  {
+    "id": "cb2-40",
+    "subject": "cb2",
+    "n": 39,
+    "title": "What the Monetarist School Is Known For",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The monetarist school is known for:",
+    "options": [
+      "Emphasizing the role of money supply in influencing inflation and output",
+      "Focusing solely on government regulation",
+      "Advocating central planning",
+      "Ignoring interest rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Monetarists, like Friedman, link money supply growth to inflation and economic stability."
+  },
+  {
+    "id": "cb2-41",
+    "subject": "cb2",
+    "n": 40,
+    "title": "Micro vs Macro: Core Difference",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The core difference between microeconomics and macroeconomics is that:",
+    "options": [
+      "Micro focuses on individuals and firms, macro on aggregate economy",
+      "Micro ignores prices, macro ignores output",
+      "Micro studies interest rates only",
+      "They are completely unrelated"
+    ],
+    "answerIndex": 0,
+    "solution": "Micro deals with parts of the economy, macro with the whole."
+  },
+  {
+    "id": "cb2-42",
+    "subject": "cb2",
+    "n": 41,
+    "title": "Why Economic Models Are Useful",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic models are useful because they:",
+    "options": [
+      "Simplify complex reality to understand cause-effect relationships",
+      "Predict the future with complete accuracy",
+      "Remove all uncertainty from decision-making",
+      "Replace actual data"
+    ],
+    "answerIndex": 0,
+    "solution": "Models abstract from reality to highlight key mechanisms and relationships."
+  },
+  {
+    "id": "cb2-43",
+    "subject": "cb2",
+    "n": 42,
+    "title": "Stimulus-Austerity Impact on Business",
+    "difficulty": "medium",
+    "topics": [
+      "Fiscal policy",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The stimulus–austerity debate can impact businesses by:",
+    "options": [
+      "Affecting demand for goods and services through government spending decisions",
+      "Changing only interest rates",
+      "Determining the supply of labor directly",
+      "Fixing market prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Government fiscal policy influences overall demand, which affects business revenues."
+  },
+  {
+    "id": "cb2-44",
+    "subject": "cb2",
+    "n": 43,
+    "title": "Testing the Efficient Market Hypothesis",
+    "difficulty": "medium",
+    "topics": [
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Evidence for or against the Efficient Market Hypothesis can be gathered by:",
+    "options": [
+      "Studying the ability to consistently earn abnormal returns",
+      "Examining only macroeconomic growth",
+      "Counting the number of firms in a market",
+      "Measuring government spending alone"
+    ],
+    "answerIndex": 0,
+    "solution": "If markets are efficient, no strategy consistently outperforms the market after adjusting for risk."
+  },
+  {
+    "id": "cb2-45",
+    "subject": "cb2",
+    "n": 44,
+    "title": "Economic History Since the Great Depression",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic history since the Great Depression shows that:",
+    "options": [
+      "Crises, interventions, and recoveries are recurrent themes in economic development",
+      "Economies always grow steadily without crises",
+      "Government policy is irrelevant",
+      "Inflation is always the main problem"
+    ],
+    "answerIndex": 0,
+    "solution": "Historical evidence shows cycles of boom, bust, and policy responses."
+  },
+  {
+    "id": "cb2-46",
+    "subject": "cb2",
+    "n": 45,
+    "title": "Opportunity Cost in Business Decisions",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Opportunity cost influences business decisions because:",
+    "options": [
+      "Choosing one option means forgoing the next best alternative",
+      "It guarantees a profit from every decision",
+      "It eliminates market risks",
+      "It only applies to government policies"
+    ],
+    "answerIndex": 0,
+    "solution": "Opportunity cost helps firms evaluate the true cost of choices in resource allocation."
+  },
+  {
+    "id": "cb2-47",
+    "subject": "cb2",
+    "n": 46,
+    "title": "Post-Keynesian Emphasis",
+    "difficulty": "medium",
+    "topics": [
+      "National income",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Post-Keynesian economics primarily emphasizes:",
+    "options": [
+      "Uncertainty, path-dependence, and the role of institutions in the economy",
+      "Automatic market equilibrium",
+      "Fixed exchange rates only",
+      "Long-run neutrality of money"
+    ],
+    "answerIndex": 0,
+    "solution": "Post-Keynesians focus on real-world deviations from classical predictions and institutional factors."
+  },
+  {
+    "id": "cb2-48",
+    "subject": "cb2",
+    "n": 47,
+    "title": "Rational Expectations Assumption",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment",
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Rational expectations theory assumes that:",
+    "options": [
+      "Economic agents use all available information efficiently",
+      "Firms ignore market prices",
+      "Individuals never make forecasting errors",
+      "Government intervention is always effective"
+    ],
+    "answerIndex": 0,
+    "solution": "Rational expectations imply agents form expectations consistent with model predictions on average."
+  },
+  {
+    "id": "cb2-50",
+    "subject": "cb2",
+    "n": 48,
+    "title": "Why Choice Involves Trade-Offs",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economic choice involves trade-offs because:",
+    "options": [
+      "Resources are limited and cannot satisfy all wants simultaneously",
+      "Governments dictate all production decisions",
+      "Technology is always fixed",
+      "Prices never change"
+    ],
+    "answerIndex": 0,
+    "solution": "Scarcity forces individuals and firms to prioritize some choices over others."
+  },
+  {
+    "id": "cb2-51",
+    "subject": "cb2",
+    "n": 49,
+    "title": "Policy Response to the 2008 Crisis",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The 2008 financial crisis led to:",
+    "options": [
+      "Extensive monetary and fiscal interventions globally",
+      "Complete market self-correction without policy",
+      "A permanent elimination of recessions",
+      "Stable housing prices worldwide"
+    ],
+    "answerIndex": 0,
+    "solution": "Central banks lowered interest rates and governments injected stimulus to stabilize economies."
+  },
+  {
+    "id": "cb2-52",
+    "subject": "cb2",
+    "n": 50,
+    "title": "Link Between Scarcity and Choice",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Scarcity and choice are linked because:",
+    "options": [
+      "Every choice consumes a scarce resource",
+      "All goods are free",
+      "Opportunity cost does not exist",
+      "Markets always produce abundance"
+    ],
+    "answerIndex": 0,
+    "solution": "Scarcity forces trade-offs, making opportunity cost an essential part of decision-making."
+  },
+  {
+    "id": "cb2-53",
+    "subject": "cb2",
+    "n": 51,
+    "title": "Monetarists vs Keynesians",
+    "difficulty": "medium",
+    "topics": [
+      "Monetary policy",
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The core difference between monetarists and Keynesians is:",
+    "options": [
+      "Monetarists emphasize money supply; Keynesians emphasize aggregate demand",
+      "Monetarists always support government spending; Keynesians oppose it",
+      "Keynesians ignore unemployment completely",
+      "Monetarists focus on fiscal deficits only"
+    ],
+    "answerIndex": 0,
+    "solution": "Monetarists focus on controlling money growth, while Keynesians advocate demand-side management."
+  },
+  {
+    "id": "cb2-54",
+    "subject": "cb2",
+    "n": 52,
+    "title": "Utility Functions in Rational Choice",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Rational choice theory uses the concept of:",
+    "options": [
+      "Utility functions to represent preferences",
+      "Fixed prices for all goods",
+      "Random decision-making",
+      "Government quotas"
+    ],
+    "answerIndex": 0,
+    "solution": "Utility functions quantify the satisfaction or value an individual gets from choices."
+  },
+  {
+    "id": "cb2-55",
+    "subject": "cb2",
+    "n": 53,
+    "title": "Lessons of Historical Macroeconomic Crises",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government",
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Historical macroeconomic crises illustrate that:",
+    "options": [
+      "Markets can fail and require government or central bank intervention",
+      "Crises are always predictable with precision",
+      "Policy responses are irrelevant",
+      "Monetary policy alone can prevent all recessions"
+    ],
+    "answerIndex": 0,
+    "solution": "Real-world crises demonstrate the need for stabilization policies in addition to market mechanisms."
+  },
+  {
+    "id": "cb2-56",
+    "subject": "cb2",
+    "n": 54,
+    "title": "Neoclassical Theory of the Firm",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Neoclassical economics assumes that firms:",
+    "options": [
+      "Maximize profit given constraints",
+      "Always fail in competitive markets",
+      "Ignore costs and inputs",
+      "Follow government-set prices only"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms are modeled as rational agents optimizing profits in their decision-making."
+  },
+  {
+    "id": "cb2-57",
+    "subject": "cb2",
+    "n": 55,
+    "title": "What the Austrian School Is Sceptical Of",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The Austrian school is skeptical of:",
+    "options": [
+      "Central planning and intervention",
+      "Private entrepreneurship",
+      "Market processes",
+      "Scarcity and opportunity cost"
+    ],
+    "answerIndex": 0,
+    "solution": "Austrians emphasize spontaneous order and the importance of market signals over central planning."
+  },
+  {
+    "id": "cb2-58",
+    "subject": "cb2",
+    "n": 56,
+    "title": "Classical View of Recessions",
+    "difficulty": "medium",
+    "topics": [
+      "National income",
+      "Labour markets"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Classical economists believed that recessions are:",
+    "options": [
+      "Temporary deviations that self-correct due to flexible prices",
+      "Permanent without government intervention",
+      "Always caused by monetary policy",
+      "Best solved with fiscal stimulus"
+    ],
+    "answerIndex": 0,
+    "solution": "Flexible prices and wages allow classical markets to return to full employment automatically."
+  },
+  {
+    "id": "cb2-59",
+    "subject": "cb2",
+    "n": 57,
+    "title": "Behavioural Challenge to Rational Choice",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Behavioural economics challenges rational choice theory by:",
+    "options": [
+      "Showing that individuals sometimes act irrationally due to biases and heuristics",
+      "Claiming all agents maximize utility perfectly",
+      "Assuming perfect market efficiency at all times",
+      "Ignoring scarcity"
+    ],
+    "answerIndex": 0,
+    "solution": "Behavioral economics incorporates psychology to explain deviations from strict rationality."
+  },
+  {
+    "id": "cb2-60",
+    "subject": "cb2",
+    "n": 58,
+    "title": "Macroeconomic History and Business Strategy",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The main lesson from recent macroeconomic history for businesses is:",
+    "options": [
+      "Economic cycles, crises, and policy responses affect business strategy and risk management",
+      "Markets are always stable and predictable",
+      "Government interventions are always harmful",
+      "Business decisions are unaffected by macroeconomic trends"
+    ],
+    "answerIndex": 0,
+    "solution": "Understanding economic history helps firms anticipate risks and adjust strategies accordingly."
+  },
+  {
+    "id": "cb2-61",
+    "subject": "cb2",
+    "n": 59,
+    "title": "Price Mechanism in Perfect Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In a perfectly competitive market, the price mechanism:",
+    "options": [
+      "Allocates resources efficiently by balancing demand and supply",
+      "Ensures monopoly profits",
+      "Ignores consumer preferences",
+      "Is set by government policy only"
+    ],
+    "answerIndex": 0,
+    "solution": "In perfect competition, prices adjust to equate quantity demanded and supplied, leading to efficient resource allocation."
+  },
+  {
+    "id": "cb2-62",
+    "subject": "cb2",
+    "n": 60,
+    "title": "Price Elasticity of Demand: Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Price elasticity of demand measures:",
+    "options": [
+      "The responsiveness of quantity demanded to a change in price",
+      "The responsiveness of quantity supplied to a change in technology",
+      "The total revenue of a firm",
+      "The consumer surplus"
+    ],
+    "answerIndex": 0,
+    "solution": "$$PED = \\frac{\\%\\Delta Q_d}{\\%\\Delta P}$$\nIt measures how responsive quantity demanded is to a change in the good's own price."
+  },
+  {
+    "id": "cb2-63",
+    "subject": "cb2",
+    "n": 61,
+    "title": "What Indifference Curves Represent",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Indifference curves represent:",
+    "options": [
+      "Combinations of goods giving the same utility to the consumer",
+      "The total cost of production",
+      "Profit-maximizing output",
+      "Market equilibrium price"
+    ],
+    "answerIndex": 0,
+    "solution": "Indifference curves show consumer preferences where any point on the curve gives equal satisfaction."
+  },
+  {
+    "id": "cb2-64",
+    "subject": "cb2",
+    "n": 62,
+    "title": "Production Function Relationship",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The production function relates:",
+    "options": [
+      "Inputs to output in a firm",
+      "Consumer income to utility",
+      "Price to quantity demanded",
+      "Government spending to GDP"
+    ],
+    "answerIndex": 0,
+    "solution": "A production function shows how different combinations of inputs produce output."
+  },
+  {
+    "id": "cb2-65",
+    "subject": "cb2",
+    "n": 63,
+    "title": "Definition of Average Cost",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Average cost is defined as:",
+    "options": [
+      "Total cost divided by output",
+      "Total revenue minus total cost",
+      "The additional cost of producing one more unit",
+      "Market price times quantity"
+    ],
+    "answerIndex": 0,
+    "solution": "Average cost = TC / Q."
+  },
+  {
+    "id": "cb2-66",
+    "subject": "cb2",
+    "n": 64,
+    "title": "Definition of Marginal Cost",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Marginal cost represents:",
+    "options": [
+      "The increase in total cost from producing one additional unit",
+      "The average cost per unit",
+      "The total revenue per unit",
+      "The price of inputs only"
+    ],
+    "answerIndex": 0,
+    "solution": "Marginal cost = change in total cost / change in output."
+  },
+  {
+    "id": "cb2-67",
+    "subject": "cb2",
+    "n": 65,
+    "title": "Short-Run Operating Condition",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In the short run, a firm should continue operating as long as:",
+    "options": [
+      "Price covers average variable cost",
+      "Price equals average total cost",
+      "Profit is zero",
+      "Total revenue is less than total cost"
+    ],
+    "answerIndex": 0,
+    "solution": "The firm covers its variable costs and contributes to fixed costs even if profit is negative."
+  },
+  {
+    "id": "cb2-68",
+    "subject": "cb2",
+    "n": 66,
+    "title": "Profit Maximisation in Perfect Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In perfect competition, profit maximization occurs when:",
+    "options": [
+      "Marginal cost equals market price",
+      "Average cost is minimized",
+      "Total revenue is maximized",
+      "Price equals marginal revenue only in monopolies"
+    ],
+    "answerIndex": 0,
+    "solution": "For perfectly competitive firms, P = MR = MC at the profit-maximizing output."
+  },
+  {
+    "id": "cb2-69",
+    "subject": "cb2",
+    "n": 67,
+    "title": "Monopoly Profit-Maximising Output",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A monopoly sets output where:",
+    "options": [
+      "Marginal revenue equals marginal cost",
+      "Price equals marginal cost",
+      "Average cost is minimized",
+      "Total revenue is zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Monopolists maximize profit where MR = MC and set price according to the demand curve."
+  },
+  {
+    "id": "cb2-70",
+    "subject": "cb2",
+    "n": 68,
+    "title": "Economies of Scale",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Economies of scale occur when:",
+    "options": [
+      "Long-run average cost decreases as output increases",
+      "Average cost increases with output",
+      "Marginal cost exceeds price",
+      "Revenue is constant"
+    ],
+    "answerIndex": 0,
+    "solution": "Economies of scale are a long-run concept (all inputs variable): long-run average cost falls as the scale of production rises, through specialisation and division of labour, indivisibilities of large equipment, bulk buying, and cheaper finance. (Spreading fixed costs over more output is a short-run effect, not economies of scale.)"
+  },
+  {
+    "id": "cb2-71",
+    "subject": "cb2",
+    "n": 69,
+    "title": "Analysing Oligopoly Behaviour",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Oligopoly behavior can be analyzed using:",
+    "options": [
+      "Game theory",
+      "Indifference curves only",
+      "Consumer surplus analysis only",
+      "Monopolistic pricing models only"
+    ],
+    "answerIndex": 0,
+    "solution": "Game theory models strategic interactions among firms in an oligopoly."
+  },
+  {
+    "id": "cb2-72",
+    "subject": "cb2",
+    "n": 70,
+    "title": "Long-Run Profit in Perfect Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Perfect competition long-run profits are:",
+    "options": [
+      "Zero (normal profits)",
+      "Always positive",
+      "Negative",
+      "Indeterminate"
+    ],
+    "answerIndex": 0,
+    "solution": "Entry and exit drive profits to zero in the long run."
+  },
+  {
+    "id": "cb2-73",
+    "subject": "cb2",
+    "n": 71,
+    "title": "What Price Discrimination Allows",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Price discrimination allows firms to:",
+    "options": [
+      "Charge different prices to different consumers based on willingness to pay",
+      "Always reduce consumer surplus to zero",
+      "Eliminate costs entirely",
+      "Ignore production constraints"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms segment the market to capture more value from consumers."
+  },
+  {
+    "id": "cb2-74",
+    "subject": "cb2",
+    "n": 72,
+    "title": "Effect of Advertising on Demand",
+    "difficulty": "easy",
+    "topics": [
+      "Supply & demand",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Advertising affects demand by:",
+    "options": [
+      "Shifting the demand curve outward",
+      "Changing production costs",
+      "Increasing supply elasticity",
+      "Reducing market competition"
+    ],
+    "answerIndex": 0,
+    "solution": "Effective advertising can increase consumer willingness to pay and overall demand."
+  },
+  {
+    "id": "cb2-75",
+    "subject": "cb2",
+    "n": 73,
+    "title": "Rational Consumer Choice",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Rational choice in consumer theory assumes:",
+    "options": [
+      "Consumers maximize utility subject to a budget constraint",
+      "Consumers always follow social trends",
+      "Consumers ignore prices",
+      "Consumers randomly select goods"
+    ],
+    "answerIndex": 0,
+    "solution": "Rational consumers make decisions that provide the highest satisfaction given their budget."
+  },
+  {
+    "id": "cb2-76",
+    "subject": "cb2",
+    "n": 74,
+    "title": "Long-Run Profit in Monopolistic Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In monopolistic competition, long-run economic profits are:",
+    "options": [
+      "Zero (normal profits)",
+      "Always positive",
+      "Negative",
+      "Indeterminate"
+    ],
+    "answerIndex": 0,
+    "solution": "Entry and exit of firms drive economic profits to zero in the long run."
+  },
+  {
+    "id": "cb2-77",
+    "subject": "cb2",
+    "n": 75,
+    "title": "Barriers to Entry and Monopoly Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Barriers to entry in a monopoly lead to:",
+    "options": [
+      "Sustained positive economic profits",
+      "Zero economic profits",
+      "Increased competition",
+      "Lower market prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Barriers prevent new firms from entering, allowing monopolists to earn profits over time."
+  },
+  {
+    "id": "cb2-78",
+    "subject": "cb2",
+    "n": 76,
+    "title": "Why Oligopolists Collude",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Oligopolistic firms may collude to:",
+    "options": [
+      "Increase joint profits by coordinating prices or output",
+      "Maximize consumer welfare",
+      "Eliminate fixed costs",
+      "Ensure zero profits"
+    ],
+    "answerIndex": 0,
+    "solution": "Collusion allows firms to act like a monopoly and capture higher profits."
+  },
+  {
+    "id": "cb2-79",
+    "subject": "cb2",
+    "n": 77,
+    "title": "The Shutdown Point",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The shutdown point occurs when:",
+    "options": [
+      "Price equals minimum average variable cost",
+      "Price equals average total cost",
+      "Marginal cost equals zero",
+      "Total revenue is maximized"
+    ],
+    "answerIndex": 0,
+    "solution": "Below this price, the firm cannot cover variable costs and should cease production in the short run."
+  },
+  {
+    "id": "cb2-80",
+    "subject": "cb2",
+    "n": 78,
+    "title": "Total Revenue Maximisation Condition",
+    "difficulty": "medium",
+    "topics": [
+      "Elasticity",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In the short run, total revenue is maximized when:",
+    "options": [
+      "Marginal revenue equals zero",
+      "Price equals marginal cost",
+      "Average revenue equals marginal cost",
+      "Total cost equals zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Total revenue is maximized at the output where MR = 0."
+  },
+  {
+    "id": "cb2-81",
+    "subject": "cb2",
+    "n": 79,
+    "title": "Income Elasticity of Demand: Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Income elasticity of demand measures:",
+    "options": [
+      "Responsiveness of demand to changes in consumer income",
+      "Responsiveness of demand to price changes",
+      "Responsiveness of supply to price changes",
+      "Changes in consumer utility"
+    ],
+    "answerIndex": 0,
+    "solution": "$$YED = \\frac{\\%\\Delta Q_d}{\\%\\Delta Y}$$\nwhere $Y$ is consumer income. Positive for normal goods, negative for inferior goods."
+  },
+  {
+    "id": "cb2-82",
+    "subject": "cb2",
+    "n": 80,
+    "title": "Characteristics of a Giffen Good",
+    "difficulty": "medium",
+    "topics": [
+      "Consumer theory",
+      "Supply & demand"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A Giffen good is characterized by:",
+    "options": [
+      "Quantity demanded increases as price rises",
+      "Quantity demanded decreases as price rises",
+      "Price elasticity equals zero",
+      "Unitary elasticity"
+    ],
+    "answerIndex": 0,
+    "solution": "For a Giffen good, the income effect outweighs the substitution effect."
+  },
+  {
+    "id": "cb2-83",
+    "subject": "cb2",
+    "n": 81,
+    "title": "Convexity of Indifference Curves",
+    "difficulty": "medium",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Indifference curve convexity reflects:",
+    "options": [
+      "Diminishing marginal rate of substitution",
+      "Constant marginal utility",
+      "Increasing returns to scale",
+      "Perfect complements"
+    ],
+    "answerIndex": 0,
+    "solution": "Convex curves indicate consumers are willing to give up fewer units of one good for additional units of another as they move along the curve."
+  },
+  {
+    "id": "cb2-84",
+    "subject": "cb2",
+    "n": 82,
+    "title": "Dominant Strategy in Oligopoly",
+    "difficulty": "medium",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In an oligopoly, a dominant strategy is:",
+    "options": [
+      "The best choice regardless of the other firm's actions",
+      "Always to collude",
+      "To produce zero output",
+      "To maximize social welfare"
+    ],
+    "answerIndex": 0,
+    "solution": "A dominant strategy yields the highest payoff for a firm regardless of competitors' decisions."
+  },
+  {
+    "id": "cb2-85",
+    "subject": "cb2",
+    "n": 83,
+    "title": "Kinked Demand Curve and Price Rigidity",
+    "difficulty": "medium",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A kinked demand curve explains:",
+    "options": [
+      "Price rigidity in oligopolistic markets",
+      "Perfect competition equilibrium",
+      "Monopolistic profit maximization",
+      "Shifts in aggregate supply"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms may not change prices due to asymmetric response of rivals to price increases vs. decreases."
+  },
+  {
+    "id": "cb2-86",
+    "subject": "cb2",
+    "n": 84,
+    "title": "Average Revenue of a Monopolist",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Average revenue in a monopoly equals:",
+    "options": [
+      "Price",
+      "Marginal cost",
+      "Marginal revenue",
+      "Total cost"
+    ],
+    "answerIndex": 0,
+    "solution": "Average revenue = total revenue / quantity = price."
+  },
+  {
+    "id": "cb2-87",
+    "subject": "cb2",
+    "n": 85,
+    "title": "Revenue Maximisation and Marginal Revenue",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures",
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Revenue maximization occurs when:",
+    "options": [
+      "Marginal revenue = 0",
+      "Price = average cost",
+      "Price = marginal cost",
+      "Total cost is minimized"
+    ],
+    "answerIndex": 0,
+    "solution": "Revenue-maximizing output occurs where MR = 0."
+  },
+  {
+    "id": "cb2-88",
+    "subject": "cb2",
+    "n": 86,
+    "title": "Conditions for Price Discrimination",
+    "difficulty": "medium",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Price discrimination requires:",
+    "options": [
+      "Market power and ability to segment customers",
+      "Perfect competition",
+      "Zero marginal cost",
+      "Government regulation"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms must have pricing power and prevent resale to implement price discrimination."
+  },
+  {
+    "id": "cb2-89",
+    "subject": "cb2",
+    "n": 87,
+    "title": "Firm's Short-Run Supply Curve",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A firm’s short-run supply curve is:",
+    "options": [
+      "Portion of marginal cost above average variable cost",
+      "Average cost curve",
+      "Average revenue curve",
+      "Marginal revenue curve"
+    ],
+    "answerIndex": 0,
+    "solution": "The supply curve corresponds to the marginal cost curve above the shutdown point."
+  },
+  {
+    "id": "cb2-90",
+    "subject": "cb2",
+    "n": 88,
+    "title": "Monopolistic vs Perfect Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monopolistic competition differs from perfect competition because:",
+    "options": [
+      "Firms sell differentiated products",
+      "Firms are price takers",
+      "Economic profits are always positive",
+      "There are no close substitutes"
+    ],
+    "answerIndex": 0,
+    "solution": "Product differentiation gives monopolistic competitors some market power."
+  },
+  {
+    "id": "cb2-91",
+    "subject": "cb2",
+    "n": 89,
+    "title": "Law of Diminishing Marginal Returns",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The law of diminishing marginal returns implies:",
+    "options": [
+      "Adding more of a variable input eventually yields smaller additional output",
+      "Total output decreases as inputs increase",
+      "Average cost increases indefinitely",
+      "Profit maximization is impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "Each additional unit of input adds less to total output than the previous one, holding other inputs constant."
+  },
+  {
+    "id": "cb2-92",
+    "subject": "cb2",
+    "n": 90,
+    "title": "Where MC Cuts Average Total Cost",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The marginal cost curve intersects the average total cost curve at:",
+    "options": [
+      "The minimum of the average total cost",
+      "The maximum of average total cost",
+      "The shutdown point",
+      "Zero output"
+    ],
+    "answerIndex": 0,
+    "solution": "MC < ATC lowers ATC; MC > ATC raises ATC. So MC intersects ATC at its minimum."
+  },
+  {
+    "id": "cb2-93",
+    "subject": "cb2",
+    "n": 91,
+    "title": "Cross-Price Elasticity of Demand",
+    "difficulty": "easy",
+    "topics": [
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Cross-price elasticity of demand measures:",
+    "options": [
+      "Responsiveness of quantity demanded of one good to a change in the price of another",
+      "Responsiveness of demand to income",
+      "Responsiveness of supply to price",
+      "Change in total revenue due to price changes"
+    ],
+    "answerIndex": 0,
+    "solution": "It indicates whether goods are substitutes (positive) or complements (negative)."
+  },
+  {
+    "id": "cb2-94",
+    "subject": "cb2",
+    "n": 92,
+    "title": "What Makes a Firm a Price Taker",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A firm is said to be a price taker if:",
+    "options": [
+      "It cannot influence the market price",
+      "It can set any price it wants",
+      "It faces a downward sloping demand curve",
+      "It has market power"
+    ],
+    "answerIndex": 0,
+    "solution": "Perfectly competitive firms accept the market price and produce accordingly."
+  },
+  {
+    "id": "cb2-95",
+    "subject": "cb2",
+    "n": 93,
+    "title": "Why Short-Run Supply Slopes Upward",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Short-run supply in perfect competition is upward sloping because:",
+    "options": [
+      "Marginal cost rises with output",
+      "Average total cost falls with output",
+      "Demand is inelastic",
+      "Price is constant"
+    ],
+    "answerIndex": 0,
+    "solution": "A perfectly competitive firm produces where $P = MC$. Because of diminishing returns, marginal cost rises with output, so the firm will only supply more if the market price rises to cover the higher marginal cost of the extra units. Hence its supply curve (the MC curve above AVC) slopes upward."
+  },
+  {
+    "id": "cb2-96",
+    "subject": "cb2",
+    "n": 94,
+    "title": "Source of Monopoly Power",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monopoly power arises because:",
+    "options": [
+      "Barriers to entry prevent competition",
+      "Firms have identical products",
+      "Market is perfectly competitive",
+      "All firms are small"
+    ],
+    "answerIndex": 0,
+    "solution": "Barriers allow a single firm to influence price and earn long-run profits."
+  },
+  {
+    "id": "cb2-97",
+    "subject": "cb2",
+    "n": 95,
+    "title": "What an Isoquant Represents",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "An isoquant represents:",
+    "options": [
+      "Combinations of inputs producing the same output",
+      "Combinations of outputs producing the same cost",
+      "Combinations of prices yielding the same revenue",
+      "Points of maximum profit"
+    ],
+    "answerIndex": 0,
+    "solution": "Isoquants are analogous to indifference curves but for production."
+  },
+  {
+    "id": "cb2-98",
+    "subject": "cb2",
+    "n": 96,
+    "title": "What the Production Function Shows",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The production function shows:",
+    "options": [
+      "Maximum output obtainable from a given set of inputs",
+      "Market demand for goods",
+      "Cost of production for each output level",
+      "Consumer preferences"
+    ],
+    "answerIndex": 0,
+    "solution": "It represents technological relationships between inputs and output."
+  },
+  {
+    "id": "cb2-99",
+    "subject": "cb2",
+    "n": 97,
+    "title": "Components of Total Cost",
+    "difficulty": "easy",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Total cost equals:",
+    "options": [
+      "Fixed cost plus variable cost",
+      "Average cost times marginal cost",
+      "Marginal cost times output",
+      "Marginal cost divided by output"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, TC = FC + VC."
+  },
+  {
+    "id": "cb2-100",
+    "subject": "cb2",
+    "n": 98,
+    "title": "Condition for Minimum Average Cost",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Average cost is minimized when:",
+    "options": [
+      "Marginal cost equals average cost",
+      "Price equals average revenue",
+      "Total cost is minimized",
+      "Marginal revenue equals zero"
+    ],
+    "answerIndex": 0,
+    "solution": "MC intersects AC at its minimum, ensuring lowest per-unit cost."
+  },
+  {
+    "id": "cb2-101",
+    "subject": "cb2",
+    "n": 99,
+    "title": "Competitive Short-Run Supply Curve",
+    "difficulty": "medium",
+    "topics": [
+      "Market structures",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In a perfectly competitive market, the short-run supply curve is:",
+    "options": [
+      "Portion of MC above AVC",
+      "MC below AVC",
+      "Horizontal at market price",
+      "The demand curve"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms produce where P ≥ AVC; otherwise, they shut down."
+  },
+  {
+    "id": "cb2-103",
+    "subject": "cb2",
+    "n": 100,
+    "title": "Revenue Maximisation and Elasticity",
+    "difficulty": "medium",
+    "topics": [
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Total revenue is maximised when the price elasticity of demand (in absolute value) is:",
+    "options": [
+      "Equal to 1 (unit elastic)",
+      "Greater than 1 (elastic)",
+      "Less than 1 (inelastic)",
+      "Equal to 0 (perfectly inelastic)"
+    ],
+    "answerIndex": 0,
+    "solution": "$MR = P\\left(1 - \\dfrac{1}{|\\varepsilon|}\\right)$. Total revenue is maximised where $MR = 0$, i.e. where $|\\varepsilon| = 1$. Where demand is elastic a price cut raises revenue; where it is inelastic a price rise raises revenue."
+  },
+  {
+    "id": "cb2-104",
+    "subject": "cb2",
+    "n": 101,
+    "title": "Long-Run Industry Supply (Constant Cost)",
+    "difficulty": "hard",
+    "topics": [
+      "Market structures",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In a perfectly competitive constant-cost industry, the long-run industry supply curve is:",
+    "options": [
+      "Horizontal at minimum AC",
+      "Upward sloping",
+      "Vertical",
+      "Downward sloping"
+    ],
+    "answerIndex": 0,
+    "solution": "In the long run firms enter or exit until each earns zero economic profit, producing at minimum average cost. If input prices are unaffected by industry expansion (constant-cost industry), extra output comes from new firms at the same minimum AC, so the long-run industry supply curve is horizontal at $P = \\min AC$. (An individual firm's long-run supply curve is its LRMC above minimum LRAC, which slopes upward.)"
+  },
+  {
+    "id": "cb2-105",
+    "subject": "cb2",
+    "n": 102,
+    "title": "Product Differentiation and Market Power",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In monopolistic competition, product differentiation:",
+    "options": [
+      "Gives firms some market power",
+      "Eliminates all profits",
+      "Occurs only in oligopoly",
+      "Ensures perfect substitutes"
+    ],
+    "answerIndex": 0,
+    "solution": "Differentiation allows firms to set prices above marginal cost."
+  },
+  {
+    "id": "cb2-106",
+    "subject": "cb2",
+    "n": 103,
+    "title": "Characteristics of Oligopoly",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Oligopolistic markets are characterized by:",
+    "options": [
+      "Few firms with interdependent pricing",
+      "Many firms with no influence on price",
+      "Single firm setting price",
+      "Perfect substitutes only"
+    ],
+    "answerIndex": 0,
+    "solution": "In oligopoly, each firm’s decisions affect others, leading to strategic behaviour."
+  },
+  {
+    "id": "cb2-107",
+    "subject": "cb2",
+    "n": 104,
+    "title": "Game Theory and Strategic Interaction",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Game theory in oligopoly helps explain:",
+    "options": [
+      "Strategic interaction between firms",
+      "Cost minimization for a single firm",
+      "Perfect competition outcomes",
+      "Monopoly regulation"
+    ],
+    "answerIndex": 0,
+    "solution": "Oligopolists make decisions considering rivals’ likely responses."
+  },
+  {
+    "id": "cb2-108",
+    "subject": "cb2",
+    "n": 105,
+    "title": "Definition of Price Discrimination",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Price discrimination occurs when:",
+    "options": [
+      "A firm charges different prices for the same product to different consumers",
+      "Prices are set equal for all consumers",
+      "Monopolies charge a single profit-maximizing price",
+      "Competition forces prices down to marginal cost"
+    ],
+    "answerIndex": 0,
+    "solution": "Price discrimination allows firms to capture more consumer surplus."
+  },
+  {
+    "id": "cb2-110",
+    "subject": "cb2",
+    "n": 106,
+    "title": "Short-Run Shut-Down Rule",
+    "difficulty": "medium",
+    "topics": [
+      "Production & costs",
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A firm’s shut-down point in the short run occurs when:",
+    "options": [
+      "Price falls below average variable cost",
+      "Total revenue equals total cost",
+      "Price equals marginal cost",
+      "Average total cost is minimized"
+    ],
+    "answerIndex": 0,
+    "solution": "If price < AVC, the firm cannot cover variable costs and should cease production temporarily."
+  },
+  {
+    "id": "cb2-111",
+    "subject": "cb2",
+    "n": 107,
+    "title": "Indifference Curves Defined",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Indifference curves are:",
+    "options": [
+      "Curves showing combinations of goods providing the same utility",
+      "Production possibilities",
+      "Market demand curves",
+      "Revenue functions"
+    ],
+    "answerIndex": 0,
+    "solution": "Each point on the curve gives the consumer equal satisfaction."
+  },
+  {
+    "id": "cb2-112",
+    "subject": "cb2",
+    "n": 108,
+    "title": "Slope of the Budget Line",
+    "difficulty": "medium",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The slope of a budget line represents:",
+    "options": [
+      "The relative price of two goods",
+      "Consumer income",
+      "Utility level",
+      "Total expenditure"
+    ],
+    "answerIndex": 0,
+    "solution": "Budget line: $Y = P_1 Q_1 + P_2 Q_2$. With $Q_2$ on the vertical axis, $Q_2 = \\dfrac{Y}{P_2} - \\dfrac{P_1}{P_2} Q_1$, so the slope is $-P_1/P_2$, the relative price of the two goods."
+  },
+  {
+    "id": "cb2-113",
+    "subject": "cb2",
+    "n": 109,
+    "title": "Marginal Rate of Substitution",
+    "difficulty": "easy",
+    "topics": [
+      "Consumer theory"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Marginal rate of substitution (MRS) measures:",
+    "options": [
+      "Rate at which consumer is willing to trade one good for another",
+      "Slope of demand curve",
+      "Slope of supply curve",
+      "Cost of production"
+    ],
+    "answerIndex": 0,
+    "solution": "$MRS = \\left|\\dfrac{\\Delta Q_2}{\\Delta Q_1}\\right|$ along an indifference curve: the amount of good 2 the consumer is willing to give up for one more unit of good 1 while keeping utility constant."
+  },
+  {
+    "id": "cb2-114",
+    "subject": "cb2",
+    "n": 110,
+    "title": "Competitive Firm's Average Revenue Curve",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A firm’s average revenue curve in perfect competition is:",
+    "options": [
+      "Horizontal at the market price",
+      "Downward sloping",
+      "Upward sloping",
+      "Vertical"
+    ],
+    "answerIndex": 0,
+    "solution": "Price is constant; hence AR = P."
+  },
+  {
+    "id": "cb2-115",
+    "subject": "cb2",
+    "n": 111,
+    "title": "Long-Run Equilibrium in Perfect Competition",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Long-run equilibrium in perfect competition occurs when:",
+    "options": [
+      "Firms earn zero economic profit",
+      "Firms earn positive economic profit",
+      "Marginal cost exceeds price",
+      "Output is below capacity"
+    ],
+    "answerIndex": 0,
+    "solution": "Entry and exit ensure P = min ATC in long run."
+  },
+  {
+    "id": "cb2-116",
+    "subject": "cb2",
+    "n": 112,
+    "title": "Revenue Maximisation at Unit Elasticity",
+    "difficulty": "easy",
+    "topics": [
+      "Elasticity"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Revenue maximization occurs at:",
+    "options": [
+      "Unit elasticity of demand",
+      "Perfectly elastic demand",
+      "Perfectly inelastic demand",
+      "Infinite demand"
+    ],
+    "answerIndex": 0,
+    "solution": "At unit elastic demand, total revenue is maximized."
+  },
+  {
+    "id": "cb2-117",
+    "subject": "cb2",
+    "n": 113,
+    "title": "Monopolistic Competition Long-Run Equilibrium",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In monopolistic competition, long-run equilibrium implies:",
+    "options": [
+      "Zero economic profit",
+      "Maximum market share",
+      "Excess profits",
+      "Constant returns to scale"
+    ],
+    "answerIndex": 0,
+    "solution": "Free entry erodes supernormal profits in the long run."
+  },
+  {
+    "id": "cb2-118",
+    "subject": "cb2",
+    "n": 114,
+    "title": "Market Structure of the Kinked Demand Curve",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A kinked demand curve is associated with:",
+    "options": [
+      "Oligopoly",
+      "Perfect competition",
+      "Monopolistic competition",
+      "Monopoly"
+    ],
+    "answerIndex": 0,
+    "solution": "Firms expect rivals to follow price cuts but not price increases."
+  },
+  {
+    "id": "cb2-119",
+    "subject": "cb2",
+    "n": 115,
+    "title": "Excess Capacity in Monopolistic Competition",
+    "difficulty": "hard",
+    "topics": [
+      "Market structures",
+      "Production & costs"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Excess capacity in monopolistic competition means:",
+    "options": [
+      "Firms produce an output below the level that minimises average cost",
+      "Firms maximize profit at minimum AC",
+      "Firms produce at perfect competition output",
+      "Firms shut down"
+    ],
+    "answerIndex": 0,
+    "solution": "In long-run equilibrium the downward-sloping demand curve is tangent to the AC curve on its falling part, so each firm produces less than the output at which AC is minimised. The gap between actual output and minimum-efficient output is excess capacity."
+  },
+  {
+    "id": "cb2-120",
+    "subject": "cb2",
+    "n": 116,
+    "title": "Outcome of Oligopoly Collusion",
+    "difficulty": "easy",
+    "topics": [
+      "Market structures"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "In an oligopoly, collusion can lead to:",
+    "options": [
+      "Higher prices and joint profit maximization",
+      "Lower prices than in perfect competition",
+      "No change in market outcome",
+      "Elimination of all competitors"
+    ],
+    "answerIndex": 0,
+    "solution": "Collusion allows oligopolists to act like a monopoly to maximize profits."
+  },
+  {
+    "id": "cb2-121",
+    "subject": "cb2",
+    "n": 117,
+    "title": "Definition of Market Failure",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Market failure occurs when:",
+    "options": [
+      "Markets fail to allocate resources efficiently",
+      "All firms earn profits",
+      "Consumers maximize utility",
+      "Supply equals demand"
+    ],
+    "answerIndex": 0,
+    "solution": "Market failure arises due to externalities, public goods, or information asymmetry."
+  },
+  {
+    "id": "cb2-122",
+    "subject": "cb2",
+    "n": 118,
+    "title": "What Externalities Are",
+    "difficulty": "easy",
+    "topics": [
+      "Market failure & government"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Externalities are:",
+    "options": [
+      "Costs or benefits affecting third parties",
+      "Internal production costs",
+      "Government subsidies",
+      "Market prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Externalities occur when private costs/benefits diverge from social costs/benefits."
+  },
+  {
+    "id": "cb2-123",
+    "subject": "cb2",
+    "n": 119,
+    "title": "Instruments of Fiscal Policy",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Fiscal policy involves:",
+    "options": [
+      "Government spending and taxation",
+      "Central bank interest rates",
+      "Stock market regulation",
+      "Trade tariffs only"
+    ],
+    "answerIndex": 0,
+    "solution": "Fiscal policy adjusts aggregate demand via taxes and government spending."
+  },
+  {
+    "id": "cb2-124",
+    "subject": "cb2",
+    "n": 120,
+    "title": "Who Conducts Monetary Policy",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monetary policy is primarily conducted by:",
+    "options": [
+      "The central bank",
+      "The finance ministry",
+      "Private banks",
+      "The WTO"
+    ],
+    "answerIndex": 0,
+    "solution": "Central banks manage money supply and interest rates to influence the economy."
+  },
+  {
+    "id": "cb2-125",
+    "subject": "cb2",
+    "n": 121,
+    "title": "Components of Aggregate Demand",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Aggregate demand is composed of:",
+    "options": [
+      "Consumption, investment, government spending, net exports",
+      "Only consumption",
+      "Only exports",
+      "Supply of money"
+    ],
+    "answerIndex": 0,
+    "solution": "AD = C + I + G + (X - M) represents total demand in an economy."
+  },
+  {
+    "id": "cb2-126",
+    "subject": "cb2",
+    "n": 122,
+    "title": "What the Circular Flow Illustrates",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The circular flow of income illustrates:",
+    "options": [
+      "Flows of money and goods between households and firms",
+      "Government budget deficits",
+      "Trade balances only",
+      "Stock market returns"
+    ],
+    "answerIndex": 0,
+    "solution": "It shows how money circulates in exchange for goods, services, and factors of production."
+  },
+  {
+    "id": "cb2-127",
+    "subject": "cb2",
+    "n": 123,
+    "title": "Definition of Inflation",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Inflation is defined as:",
+    "options": [
+      "A sustained rise in the general price level",
+      "A fall in interest rates",
+      "Increase in GDP only",
+      "An increase in money supply only"
+    ],
+    "answerIndex": 0,
+    "solution": "Inflation measures the percentage change in the price level over time."
+  },
+  {
+    "id": "cb2-128",
+    "subject": "cb2",
+    "n": 124,
+    "title": "The Phillips Curve Relationship",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The Phillips curve shows the relationship between:",
+    "options": [
+      "Inflation and unemployment",
+      "GDP and investment",
+      "Interest rates and money supply",
+      "Exports and imports"
+    ],
+    "answerIndex": 0,
+    "solution": "The curve suggests an inverse short-term trade-off between inflation and unemployment."
+  },
+  {
+    "id": "cb2-129",
+    "subject": "cb2",
+    "n": 125,
+    "title": "The Multiplier Effect",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The multiplier effect refers to:",
+    "options": [
+      "A change in spending leading to a larger change in national income",
+      "A change in interest rates affecting investment",
+      "Government taxes reducing consumption",
+      "Exports increasing imports"
+    ],
+    "answerIndex": 0,
+    "solution": "An initial injection into the economy produces a larger total increase in output."
+  },
+  {
+    "id": "cb2-130",
+    "subject": "cb2",
+    "n": 126,
+    "title": "Definition of Monetary Union",
+    "difficulty": "easy",
+    "topics": [
+      "International trade & exchange rates",
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monetary union refers to:",
+    "options": [
+      "Two or more countries sharing a common currency",
+      "A single country using multiple currencies",
+      "Countries fixing interest rates individually",
+      "Countries imposing trade barriers"
+    ],
+    "answerIndex": 0,
+    "solution": "Monetary union harmonizes currency, monetary policy, and exchange rates."
+  },
+  {
+    "id": "cb2-131",
+    "subject": "cb2",
+    "n": 127,
+    "title": "Open Market Operations",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A central bank can influence interest rates by:",
+    "options": [
+      "Open market operations",
+      "Setting trade tariffs",
+      "Changing government spending",
+      "Regulating firms’ prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Buying/selling securities affects the money supply and short-term interest rates."
+  },
+  {
+    "id": "cb2-132",
+    "subject": "cb2",
+    "n": 128,
+    "title": "What GDP Measures",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "GDP measures:",
+    "options": [
+      "Total market value of final goods and services produced in a country",
+      "Net exports only",
+      "Total population income",
+      "Government spending only"
+    ],
+    "answerIndex": 0,
+    "solution": "GDP = C + I + G + (X - M)."
+  },
+  {
+    "id": "cb2-133",
+    "subject": "cb2",
+    "n": 129,
+    "title": "Potential GDP",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Economic growth"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Potential GDP refers to:",
+    "options": [
+      "Output when the economy is at full employment",
+      "Current measured GDP",
+      "GDP adjusted for inflation",
+      "Total government expenditure"
+    ],
+    "answerIndex": 0,
+    "solution": "Potential GDP represents sustainable output without accelerating inflation."
+  },
+  {
+    "id": "cb2-134",
+    "subject": "cb2",
+    "n": 130,
+    "title": "Budget Deficit Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A budget deficit occurs when:",
+    "options": [
+      "Government spending exceeds revenue",
+      "Taxes exceed spending",
+      "Exports exceed imports",
+      "Private savings exceed investment"
+    ],
+    "answerIndex": 0,
+    "solution": "Deficit = G - T > 0."
+  },
+  {
+    "id": "cb2-135",
+    "subject": "cb2",
+    "n": 131,
+    "title": "Economic Cost of Unemployment",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment",
+      "Labour markets"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Unemployment causes a loss of:",
+    "options": [
+      "Output and income",
+      "Government revenue only",
+      "Inflation only",
+      "Exports only"
+    ],
+    "answerIndex": 0,
+    "solution": "Unemployment reduces the economy’s actual output below potential output."
+  },
+  {
+    "id": "cb2-136",
+    "subject": "cb2",
+    "n": 132,
+    "title": "Purpose of the AS-AD Model",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The AS–AD model illustrates:",
+    "options": [
+      "Interaction between aggregate supply and aggregate demand",
+      "Individual firm pricing decisions",
+      "International trade flows",
+      "Unemployment insurance schemes"
+    ],
+    "answerIndex": 0,
+    "solution": "The AS–AD model shows how price level and output are determined in the short run."
+  },
+  {
+    "id": "cb2-137",
+    "subject": "cb2",
+    "n": 133,
+    "title": "Aim of Inflation Targeting",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Inflation targeting aims to:",
+    "options": [
+      "Keep inflation near a set rate",
+      "Maximise GDP growth regardless of inflation",
+      "Control unemployment directly",
+      "Regulate international trade"
+    ],
+    "answerIndex": 0,
+    "solution": "Central banks use interest rates to stabilize inflation near the target level."
+  },
+  {
+    "id": "cb2-138",
+    "subject": "cb2",
+    "n": 134,
+    "title": "Trade Surplus Definition",
+    "difficulty": "easy",
+    "topics": [
+      "International trade & exchange rates"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A trade surplus occurs when:",
+    "options": [
+      "Exports exceed imports",
+      "Imports exceed exports",
+      "Government spending exceeds taxation",
+      "Investment exceeds savings"
+    ],
+    "answerIndex": 0,
+    "solution": "Trade surplus = X - M > 0."
+  },
+  {
+    "id": "cb2-139",
+    "subject": "cb2",
+    "n": 135,
+    "title": "The Money Multiplier",
+    "difficulty": "medium",
+    "topics": [
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The money multiplier reflects:",
+    "options": [
+      "The maximum money supply generated from base money",
+      "Interest rate changes",
+      "Inflation rate",
+      "Government debt level"
+    ],
+    "answerIndex": 0,
+    "solution": "Money multiplier = 1 / reserve ratio; shows how deposits create new money."
+  },
+  {
+    "id": "cb2-140",
+    "subject": "cb2",
+    "n": 136,
+    "title": "Systemic Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Systemic risk refers to:",
+    "options": [
+      "Risk of collapse of the entire financial system",
+      "Individual firm risk only",
+      "Risk in foreign exchange markets",
+      "Operational risk in banks"
+    ],
+    "answerIndex": 0,
+    "solution": "Systemic risk affects the stability of the financial system as a whole."
+  },
+  {
+    "id": "cb2-141",
+    "subject": "cb2",
+    "n": 137,
+    "title": "Long-Run Phillips Curve",
+    "difficulty": "hard",
+    "topics": [
+      "Inflation & unemployment",
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The Phillips curve trade-off may not hold in the long run because:",
+    "options": [
+      "Expectations adjust and unemployment returns to natural rate",
+      "Fiscal policy changes",
+      "Money supply is fixed",
+      "Exports fluctuate"
+    ],
+    "answerIndex": 0,
+    "solution": "Long-run Phillips curve is vertical; inflation does not reduce unemployment permanently."
+  },
+  {
+    "id": "cb2-142",
+    "subject": "cb2",
+    "n": 138,
+    "title": "Quantitative Easing",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Quantitative easing involves:",
+    "options": [
+      "Central bank buying assets to increase money supply",
+      "Raising taxes to reduce deficit",
+      "Increasing government spending",
+      "Devaluing the currency directly"
+    ],
+    "answerIndex": 0,
+    "solution": "QE increases liquidity to stimulate the economy when interest rates are near zero."
+  },
+  {
+    "id": "cb2-143",
+    "subject": "cb2",
+    "n": 139,
+    "title": "Floating Exchange Rate Determination",
+    "difficulty": "easy",
+    "topics": [
+      "International trade & exchange rates"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Floating exchange rates are determined by:",
+    "options": [
+      "Market forces of supply and demand",
+      "Government diktat",
+      "Fixed by the IMF",
+      "Trade surpluses only"
+    ],
+    "answerIndex": 0,
+    "solution": "Floating rates adjust according to currency demand and supply in foreign exchange markets."
+  },
+  {
+    "id": "cb2-144",
+    "subject": "cb2",
+    "n": 140,
+    "title": "Sectors in the Extended Circular Flow",
+    "difficulty": "medium",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The extended circular flow of income model (with injections and withdrawals) includes:",
+    "options": [
+      "Households, firms, the government, the financial sector and the foreign sector",
+      "Only households and firms",
+      "Only government and banks",
+      "Only exports and imports"
+    ],
+    "answerIndex": 0,
+    "solution": "The basic two-sector model has only households and firms. The extended model adds the financial sector (saving and investment), the government (taxes and government spending) and the foreign sector (imports and exports) as withdrawals and injections."
+  },
+  {
+    "id": "cb2-145",
+    "subject": "cb2",
+    "n": 141,
+    "title": "Aim of Supply-Side Policies",
+    "difficulty": "easy",
+    "topics": [
+      "Economic growth"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Supply-side policies aim to:",
+    "options": [
+      "Increase productive capacity and efficiency",
+      "Reduce government spending only",
+      "Control inflation via interest rates only",
+      "Increase exports exclusively"
+    ],
+    "answerIndex": 0,
+    "solution": "Supply-side policies improve efficiency, incentives, and long-term growth."
+  },
+  {
+    "id": "cb2-146",
+    "subject": "cb2",
+    "n": 142,
+    "title": "Business Cycles",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Economic growth"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Business cycles consist of:",
+    "options": [
+      "Periods of expansion and contraction in economic activity",
+      "Constant GDP growth",
+      "Stable inflation only",
+      "Steady employment rates only"
+    ],
+    "answerIndex": 0,
+    "solution": "Business cycles are fluctuations in output, employment, and prices over time."
+  },
+  {
+    "id": "cb2-147",
+    "subject": "cb2",
+    "n": 143,
+    "title": "Central Bank Independence",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Central bank independence can:",
+    "options": [
+      "Improve inflation control without political interference",
+      "Increase government deficit directly",
+      "Set fiscal policy",
+      "Control trade policy"
+    ],
+    "answerIndex": 0,
+    "solution": "Independent central banks can focus on monetary objectives like inflation targeting."
+  },
+  {
+    "id": "cb2-148",
+    "subject": "cb2",
+    "n": 144,
+    "title": "Protectionist Policy Instruments",
+    "difficulty": "easy",
+    "topics": [
+      "International trade & exchange rates"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Protectionist policies include:",
+    "options": [
+      "Tariffs and quotas",
+      "Monetary easing",
+      "Subsidies for domestic banks only",
+      "Currency devaluation alone"
+    ],
+    "answerIndex": 0,
+    "solution": "Protectionism restricts imports to protect domestic industries."
+  },
+  {
+    "id": "cb2-149",
+    "subject": "cb2",
+    "n": 145,
+    "title": "Equilibrium Level of National Income",
+    "difficulty": "medium",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The equilibrium level of income occurs when:",
+    "options": [
+      "Planned expenditure equals output",
+      "Aggregate supply exceeds demand",
+      "Interest rates are zero",
+      "Government spending is maximal"
+    ],
+    "answerIndex": 0,
+    "solution": "Equilibrium income is where aggregate demand matches actual output."
+  },
+  {
+    "id": "cb2-150",
+    "subject": "cb2",
+    "n": 146,
+    "title": "Effects of Inflation on Business",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Inflation affects businesses by:",
+    "options": [
+      "Increasing input costs and uncertainty",
+      "Decreasing government taxes only",
+      "Increasing exports automatically",
+      "Reducing labour supply directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Rising prices increase costs, affect planning, and can reduce investment."
+  },
+  {
+    "id": "cb2-151",
+    "subject": "cb2",
+    "n": 147,
+    "title": "Circular Flow Model of Income",
+    "difficulty": "easy",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The circular flow of income model helps illustrate:",
+    "options": [
+      "Flows of money, goods, and services in the economy",
+      "Individual firm pricing decisions",
+      "Government budget deficits only",
+      "Foreign trade exclusively"
+    ],
+    "answerIndex": 0,
+    "solution": "It shows how households, firms, and government interact through markets and money flows."
+  },
+  {
+    "id": "cb2-152",
+    "subject": "cb2",
+    "n": 148,
+    "title": "Monetary Policy Transmission",
+    "difficulty": "medium",
+    "topics": [
+      "Monetary policy",
+      "Money & banking"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Monetary policy primarily affects the economy through:",
+    "options": [
+      "Interest rates and credit availability",
+      "Direct taxation levels",
+      "Government spending only",
+      "Foreign trade restrictions"
+    ],
+    "answerIndex": 0,
+    "solution": "Central banks adjust interest rates and money supply to influence spending and investment."
+  },
+  {
+    "id": "cb2-153",
+    "subject": "cb2",
+    "n": 149,
+    "title": "Shifts in Aggregate Demand",
+    "difficulty": "medium",
+    "topics": [
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Aggregate demand shifts when:",
+    "options": [
+      "Consumer confidence or government spending changes",
+      "Only wages change",
+      "Money supply is fixed",
+      "International trade remains constant"
+    ],
+    "answerIndex": 0,
+    "solution": "Aggregate demand depends on consumption, investment, government spending, and net exports."
+  },
+  {
+    "id": "cb2-154",
+    "subject": "cb2",
+    "n": 150,
+    "title": "Budget Deficit and Aggregate Demand",
+    "difficulty": "medium",
+    "topics": [
+      "Fiscal policy",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A government budget deficit can:",
+    "options": [
+      "Increase aggregate demand if financed by borrowing",
+      "Always reduce economic growth",
+      "Have no effect on the economy",
+      "Reduce private investment regardless of interest rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Deficit spending injects money into the economy, raising demand."
+  },
+  {
+    "id": "cb2-155",
+    "subject": "cb2",
+    "n": 151,
+    "title": "Macroeconomic Effects of Rising Unemployment",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment",
+      "National income"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Unemployment increases can lead to:",
+    "options": [
+      "Lower consumer spending and slower economic growth",
+      "Higher government revenue automatically",
+      "Decreased inflation only",
+      "Increased exports directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Fewer people working reduces income, consumption, and overall economic activity."
+  },
+  {
+    "id": "cb2-156",
+    "subject": "cb2",
+    "n": 152,
+    "title": "Floating Exchange Rates and the BoP",
+    "difficulty": "medium",
+    "topics": [
+      "International trade & exchange rates"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Floating exchange rates can adjust to:",
+    "options": [
+      "Balance of payments changes through currency value adjustments",
+      "Government fiscal policy directly",
+      "Banking regulation automatically",
+      "Interest rate changes only"
+    ],
+    "answerIndex": 0,
+    "solution": "Supply and demand for currency determine floating exchange rates."
+  },
+  {
+    "id": "cb2-157",
+    "subject": "cb2",
+    "n": 153,
+    "title": "ECB Primary Objective",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The European Central Bank primarily targets:",
+    "options": [
+      "Price stability (inflation control)",
+      "Unemployment only",
+      "Government spending",
+      "Trade deficits"
+    ],
+    "answerIndex": 0,
+    "solution": "The ECB's main mandate is to maintain stable inflation in the eurozone."
+  },
+  {
+    "id": "cb2-158",
+    "subject": "cb2",
+    "n": 154,
+    "title": "Examples of Supply-Side Policies",
+    "difficulty": "easy",
+    "topics": [
+      "Economic growth",
+      "Labour markets"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Supply-side policies may include:",
+    "options": [
+      "Reducing corporate taxes and deregulation",
+      "Direct increases in government spending",
+      "Reducing money supply",
+      "Setting exchange rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Supply-side policies focus on increasing efficiency and productive capacity."
+  },
+  {
+    "id": "cb2-159",
+    "subject": "cb2",
+    "n": 155,
+    "title": "Natural Rate of Unemployment",
+    "difficulty": "medium",
+    "topics": [
+      "Inflation & unemployment",
+      "Labour markets"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The natural rate of unemployment is:",
+    "options": [
+      "The unemployment rate when the economy is at potential output",
+      "Zero unemployment",
+      "Caused by inflation only",
+      "Set by government policy directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Even in a healthy economy, frictional and structural unemployment exist."
+  },
+  {
+    "id": "cb2-160",
+    "subject": "cb2",
+    "n": 156,
+    "title": "Multiplier Effect II",
+    "difficulty": "easy",
+    "topics": [
+      "National income",
+      "Fiscal policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "The multiplier effect occurs when:",
+    "options": [
+      "An initial spending increase leads to a larger overall increase in output",
+      "Government sets interest rates",
+      "Exports exceed imports",
+      "Money supply is constant"
+    ],
+    "answerIndex": 0,
+    "solution": "Each round of spending generates additional income and consumption, amplifying the effect."
+  },
+  {
+    "id": "cb2-161",
+    "subject": "cb2",
+    "n": 157,
+    "title": "Inflation and Purchasing Power",
+    "difficulty": "easy",
+    "topics": [
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Inflation can erode:",
+    "options": [
+      "Purchasing power of money",
+      "Government regulation",
+      "Aggregate supply",
+      "Exports directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Rising prices reduce what money can buy, affecting consumers and firms."
+  },
+  {
+    "id": "cb2-162",
+    "subject": "cb2",
+    "n": 158,
+    "title": "Interest Rates and Business Investment",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Interest rate changes affect business by:",
+    "options": [
+      "Altering borrowing costs and investment decisions",
+      "Directly controlling profits",
+      "Changing government taxation",
+      "Regulating international trade"
+    ],
+    "answerIndex": 0,
+    "solution": "Higher rates increase borrowing costs, reducing investment; lower rates stimulate investment."
+  },
+  {
+    "id": "cb2-163",
+    "subject": "cb2",
+    "n": 159,
+    "title": "Business Benefits of Globalisation",
+    "difficulty": "easy",
+    "topics": [
+      "International trade & exchange rates",
+      "Economic growth"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Globalisation benefits businesses by:",
+    "options": [
+      "Expanding markets and access to resources",
+      "Eliminating competition entirely",
+      "Guaranteeing domestic profits",
+      "Setting fixed exchange rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Globalisation opens opportunities for trade, investment, and efficiency gains."
+  },
+  {
+    "id": "cb2-164",
+    "subject": "cb2",
+    "n": 160,
+    "title": "Central Banks and Aggregate Demand",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "Central banks influence aggregate demand through:",
+    "options": [
+      "Interest rate and liquidity adjustments",
+      "Government fiscal policy",
+      "Setting wages",
+      "Trade tariffs"
+    ],
+    "answerIndex": 0,
+    "solution": "Monetary policy tools affect borrowing, spending, and investment decisions."
+  },
+  {
+    "id": "cb2-165",
+    "subject": "cb2",
+    "n": 161,
+    "title": "Aim of Contractionary Monetary Policy",
+    "difficulty": "easy",
+    "topics": [
+      "Monetary policy",
+      "Inflation & unemployment"
+    ],
+    "exams": [
+      "ifoa-cb2",
+      "assa-a112"
+    ],
+    "type": "mcq",
+    "prompt": "A contractionary monetary policy typically aims to:",
+    "options": [
+      "Reduce inflationary pressures",
+      "Increase government spending",
+      "Stimulate exports only",
+      "Raise unemployment intentionally"
+    ],
+    "answerIndex": 0,
+    "solution": "By reducing money supply or increasing interest rates, spending and inflation slow down."
+  }
+]

@@ -1,0 +1,3259 @@
+[
+  {
+    "id": "cs2-1",
+    "subject": "cs2",
+    "n": 1,
+    "title": "Poisson Distribution: Mean Equals Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions",
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a property of the Poisson distribution?",
+    "options": [
+      "Mean equals variance",
+      "Always takes negative values",
+      "Defined only for continuous data",
+      "Skewness is zero"
+    ],
+    "answerIndex": 0,
+    "solution": "For a Poisson random variable $X \\sim Poisson(\\lambda)$, $E[X] = Var[X] = \\lambda$. It is discrete and skewed for small $\\lambda$."
+  },
+  {
+    "id": "cs2-2",
+    "subject": "cs2",
+    "n": 2,
+    "title": "Insurer Payment Under a Policy Deductible",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions",
+      "Reinsurance"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "An insurer has a deductible of \\$500 on claims. If the claim amount $X$ exceeds $500$, what is the payment $Y$ by the insurer?",
+    "options": [
+      "$Y = X$",
+      "$Y = X - 500$",
+      "$Y = 500$",
+      "$Y = X + 500$"
+    ],
+    "answerIndex": 1,
+    "solution": "For a deductible $d$, the insurer pays $Y = \\max(0, X - d)$. Here $d = 500$, so when $X > 500$ the insurer pays $Y = X - 500$."
+  },
+  {
+    "id": "cs2-3",
+    "subject": "cs2",
+    "n": 3,
+    "title": "Choosing a Claim Severity Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is commonly used for modelling individual claim severity (claim amounts) in insurance, particularly where large claims are possible?",
+    "options": [
+      "Pareto distribution",
+      "Binomial distribution",
+      "Uniform distribution",
+      "Poisson distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "Claim amounts are positive, continuous and typically right-skewed with a heavy tail, so heavy-tailed continuous distributions such as the Pareto (or lognormal, gamma, Weibull) are the standard choices. The binomial and Poisson distributions are discrete and are used for claim counts, and the uniform distribution has bounded support with no skew, which is unrealistic for claim sizes."
+  },
+  {
+    "id": "cs2-4",
+    "subject": "cs2",
+    "n": 4,
+    "title": "Reinsurer Share Under Proportional Reinsurance",
+    "difficulty": "easy",
+    "topics": [
+      "Reinsurance"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In proportional reinsurance, the reinsurer pays 30% of each claim. How much of a \\$10,000 claim does the reinsurer pay?",
+    "options": [
+      "\\$3,000",
+      "\\$7,000",
+      "\\$10,000",
+      "\\$0"
+    ],
+    "answerIndex": 0,
+    "solution": "Under proportional reinsurance the reinsurer pays a fixed proportion of each claim: $0.3 \\times 10{,}000 = 3{,}000$. The reinsurer pays \\$3,000 and the insurer retains \\$7,000."
+  },
+  {
+    "id": "cs2-5",
+    "subject": "cs2",
+    "n": 5,
+    "title": "Mean of a Compound Poisson Sum",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "For a compound Poisson distribution, the mean of total claims $S = X_1 + \\dots + X_N$ is given by?",
+    "options": [
+      "$E[S] = E[N] \\cdot E[X]$",
+      "$E[S] = Var[N] + Var[X]$",
+      "$E[S] = E[N] + E[X]$",
+      "$E[S] = E[N]/E[X]$"
+    ],
+    "answerIndex": 0,
+    "solution": "If $N$ is Poisson with mean $\\lambda$ and $X_i$ are independent claim amounts, $E[S] = E[N] \\cdot E[X]$."
+  },
+  {
+    "id": "cs2-6",
+    "subject": "cs2",
+    "n": 6,
+    "title": "Variance of a Compound Poisson Sum",
+    "difficulty": "medium",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The variance of a compound Poisson total claim amount $S$ is:",
+    "options": [
+      "$Var[S] = E[N] Var[X] + Var[N] (E[X])^2$",
+      "$Var[S] = E[X]^2$",
+      "$Var[S] = Var[X]$",
+      "$Var[S] = Var[N]$"
+    ],
+    "answerIndex": 0,
+    "solution": "For compound Poisson: $Var[S] = E[N] Var[X] + Var[N] (E[X])^2$. With $N \\sim Poisson(\\lambda)$, $Var[N] = \\lambda$."
+  },
+  {
+    "id": "cs2-7",
+    "subject": "cs2",
+    "n": 7,
+    "title": "How Excess-of-Loss Reinsurance Works",
+    "difficulty": "easy",
+    "topics": [
+      "Reinsurance"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about excess-of-loss reinsurance is true?",
+    "options": [
+      "The reinsurer pays the portion of the loss exceeding a retention limit",
+      "The insurer pays nothing",
+      "The reinsurer pays all claims below the retention limit",
+      "It is the same as proportional reinsurance"
+    ],
+    "answerIndex": 0,
+    "solution": "Excess-of-loss reinsurance covers only the amount above a specified retention limit, protecting the insurer from large losses."
+  },
+  {
+    "id": "cs2-8",
+    "subject": "cs2",
+    "n": 8,
+    "title": "Copula With No Tail Dependence",
+    "difficulty": "hard",
+    "topics": [
+      "Copulas"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which copula is commonly used in finance for modelling dependency with no tail dependence?",
+    "options": [
+      "Gaussian copula",
+      "Clayton copula",
+      "Gumbel copula",
+      "Student's $t$ copula"
+    ],
+    "answerIndex": 0,
+    "solution": "The Gaussian copula (with correlation $\\rho < 1$) has zero upper and zero lower tail dependence. By contrast, the Clayton copula has lower tail dependence, the Gumbel copula has upper tail dependence, and the Student's $t$ copula has symmetric (upper and lower) tail dependence."
+  },
+  {
+    "id": "cs2-9",
+    "subject": "cs2",
+    "n": 9,
+    "title": "What the Coefficient of Skewness Measures",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In risk modelling, the coefficient of skewness measures:",
+    "options": [
+      "Asymmetry of the distribution",
+      "Spread of the distribution",
+      "Central tendency",
+      "Correlation between two variables"
+    ],
+    "answerIndex": 0,
+    "solution": "Skewness quantifies asymmetry: positive skew indicates a longer right tail, negative skew a longer left tail."
+  },
+  {
+    "id": "cs2-10",
+    "subject": "cs2",
+    "n": 10,
+    "title": "Distribution for Claim Counts",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models",
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is appropriate for modelling the number of claims in a fixed period?",
+    "options": [
+      "Poisson distribution",
+      "Normal distribution",
+      "Exponential distribution",
+      "Uniform distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "The Poisson distribution models the count of events (claims) in a fixed interval, assuming events are independent and occur at a constant rate."
+  },
+  {
+    "id": "cs2-11",
+    "subject": "cs2",
+    "n": 11,
+    "title": "Mean of Reinsurer's Aggregate Claims (Quota Share)",
+    "difficulty": "easy",
+    "topics": [
+      "Reinsurance",
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Under proportional reinsurance the reinsurer pays a proportion $c$ of every claim. The reinsurer's aggregate claims $S_R$ have mean:",
+    "options": [
+      "$E[S_R] = c E[S]$",
+      "$E[S_R] = E[S]/c$",
+      "$E[S_R] = E[S]$",
+      "$E[S_R] = c + E[S]$"
+    ],
+    "answerIndex": 0,
+    "solution": "Each claim $X_i$ is split as $(1-c)X_i$ for the insurer and $cX_i$ for the reinsurer, so $S_R = cS$ and $E[S_R] = c\\,E[S]$."
+  },
+  {
+    "id": "cs2-12",
+    "subject": "cs2",
+    "n": 12,
+    "title": "Meaning of Tail Dependence",
+    "difficulty": "easy",
+    "topics": [
+      "Copulas"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Tail dependence in a copula describes:",
+    "options": [
+      "Probability of joint extreme outcomes",
+      "Mean of marginal distributions",
+      "Variance of dependent variable",
+      "Expected claim amount"
+    ],
+    "answerIndex": 0,
+    "solution": "Tail dependence measures how likely extreme values occur simultaneously for dependent variables, important in modelling risk concentration."
+  },
+  {
+    "id": "cs2-13",
+    "subject": "cs2",
+    "n": 13,
+    "title": "Defining Feature of Archimedean Copulas",
+    "difficulty": "easy",
+    "topics": [
+      "Copulas"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The Archimedean family of copulas is characterized by:",
+    "options": [
+      "A single generator function defining the dependence structure",
+      "Exact modeling of marginal distributions only",
+      "Independence of all variables",
+      "Poisson-distributed marginals"
+    ],
+    "answerIndex": 0,
+    "solution": "Archimedean copulas use a generator function to model dependence between variables, allowing flexible tail dependence."
+  },
+  {
+    "id": "cs2-14",
+    "subject": "cs2",
+    "n": 14,
+    "title": "Purpose of Extreme Value Distributions",
+    "difficulty": "easy",
+    "topics": [
+      "Extreme value theory"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Extreme value distributions are used to model:",
+    "options": [
+      "The severity of very large losses",
+      "Average claim amounts",
+      "Frequency of small claims",
+      "Survival times only"
+    ],
+    "answerIndex": 0,
+    "solution": "Extreme value theory focuses on modelling the tail of distributions, which is crucial for large insurance losses."
+  },
+  {
+    "id": "cs2-15",
+    "subject": "cs2",
+    "n": 15,
+    "title": "Negative Binomial for Overdispersed Counts",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models",
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A negative binomial distribution can be used to model:",
+    "options": [
+      "Overdispersed claim counts",
+      "Exactly Poisson-like claim counts",
+      "Continuous loss amounts",
+      "Uniformly distributed claims"
+    ],
+    "answerIndex": 0,
+    "solution": "Negative binomial allows variance > mean, modelling overdispersion in claim counts where Poisson is inadequate."
+  },
+  {
+    "id": "cs2-16",
+    "subject": "cs2",
+    "n": 16,
+    "title": "Mean of a Compound Binomial Sum",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "For a compound binomial distribution, the mean total claims is given by:",
+    "options": [
+      "$E[S] = n p E[X]$",
+      "$E[S] = n p + E[X]$",
+      "$E[S] = E[X]/(n p)$",
+      "$E[S] = n E[X]$"
+    ],
+    "answerIndex": 0,
+    "solution": "For $N \\sim Binomial(n,p)$ and $X_i$ independent claim sizes, $E[S] = E[N] E[X] = n p E[X]$."
+  },
+  {
+    "id": "cs2-17",
+    "subject": "cs2",
+    "n": 17,
+    "title": "Variance of a Compound Negative Binomial Sum",
+    "difficulty": "medium",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The variance of a compound negative binomial total claims amount is:",
+    "options": [
+      "$Var[S] = E[N] Var[X] + Var[N] (E[X])^2$",
+      "$Var[S] = E[X]^2$",
+      "$Var[S] = Var[X]$",
+      "$Var[S] = E[N] + Var[X]$"
+    ],
+    "answerIndex": 0,
+    "solution": "General formula for compound distributions: $Var[S] = E[N] Var[X] + Var[N] (E[X])^2$."
+  },
+  {
+    "id": "cs2-18",
+    "subject": "cs2",
+    "n": 18,
+    "title": "Stop-Loss Reinsurer Payment",
+    "difficulty": "easy",
+    "topics": [
+      "Reinsurance",
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A stop-loss reinsurance treaty covers aggregate claims above a threshold $M$. If aggregate claims for the year are $S = 20{,}000$ and $M = 15{,}000$, the reinsurer pays:",
+    "options": [
+      "$5{,}000$",
+      "$15{,}000$",
+      "$20{,}000$",
+      "$0$"
+    ],
+    "answerIndex": 0,
+    "solution": "The stop-loss reinsurer pays $\\max(0, S - M) = 20{,}000 - 15{,}000 = 5{,}000$."
+  },
+  {
+    "id": "cs2-19",
+    "subject": "cs2",
+    "n": 19,
+    "title": "Key Assumption of the Compound Poisson Model",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a key assumption in a compound Poisson model for insurance claims?",
+    "options": [
+      "Number of claims is Poisson-distributed",
+      "All claims are deterministic",
+      "Claims are dependent on each other",
+      "Claim sizes are uniform"
+    ],
+    "answerIndex": 0,
+    "solution": "Compound Poisson assumes $N \\sim Poisson(\\lambda)$ and independent identically distributed claim sizes."
+  },
+  {
+    "id": "cs2-20",
+    "subject": "cs2",
+    "n": 20,
+    "title": "Expected Insurer Payment With a Deductible",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions",
+      "Reinsurance"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a loss distribution with deductible $d$, which of the following is true for the expected payment by the insurer $E[Y]$?",
+    "options": [
+      "$E[Y] = E[\\max(0, X - d)]$",
+      "$E[Y] = E[X] + d$",
+      "$E[Y] = d$",
+      "$E[Y] = E[X] - \\text{Var}[X]$"
+    ],
+    "answerIndex": 0,
+    "solution": "With deductible $d$, the insurer pays $Y = \\max(0, X - d)$ on each loss, so $E[Y] = E[\\max(0, X - d)] = \\int_d^\\infty (x - d) f(x)\\,dx$."
+  },
+  {
+    "id": "cs2-21",
+    "subject": "cs2",
+    "n": 21,
+    "title": "Method of Moments Estimation",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The method of moments is used to estimate parameters by:",
+    "options": [
+      "Equating sample moments to theoretical moments",
+      "Maximizing the likelihood function",
+      "Minimizing the sum of squared residuals",
+      "Integrating the PDF over the sample"
+    ],
+    "answerIndex": 0,
+    "solution": "Method of moments estimates parameters by setting sample moments equal to theoretical moments."
+  },
+  {
+    "id": "cs2-22",
+    "subject": "cs2",
+    "n": 22,
+    "title": "Principle of Maximum Likelihood Estimation",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Maximum likelihood estimation (MLE) is suitable because it:",
+    "options": [
+      "Finds parameters that maximize the probability of observed data",
+      "Minimizes the sample variance",
+      "Guarantees unbiased estimates",
+      "Does not require a likelihood function"
+    ],
+    "answerIndex": 0,
+    "solution": "MLE chooses parameters that maximize the likelihood function for observed data."
+  },
+  {
+    "id": "cs2-23",
+    "subject": "cs2",
+    "n": 23,
+    "title": "Survival Function of a Loss Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions",
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In an insurance context, the survival function $S(x)$ represents:",
+    "options": [
+      "Probability a loss exceeds $x$",
+      "Expected value of loss $X$",
+      "Variance of $X$",
+      "Density at $x$"
+    ],
+    "answerIndex": 0,
+    "solution": "$S(x) = P(X > x)$ is the probability that a loss or lifetime exceeds $x$."
+  },
+  {
+    "id": "cs2-24",
+    "subject": "cs2",
+    "n": 24,
+    "title": "Properties of the Exponential Distribution",
+    "difficulty": "medium",
+    "topics": [
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a property of the Exponential distribution?",
+    "options": [
+      "Memoryless property",
+      "Mean equals variance for every value of $\\lambda$",
+      "Always takes negative values",
+      "Defined for discrete counts"
+    ],
+    "answerIndex": 0,
+    "solution": "The Exponential distribution is continuous, positive and memoryless: $P(X > s+t \\mid X > s) = P(X > t)$. Its mean is $1/\\lambda$ and variance $1/\\lambda^2$, which are equal only when $\\lambda = 1$, not in general."
+  },
+  {
+    "id": "cs2-25",
+    "subject": "cs2",
+    "n": 25,
+    "title": "Variance of a Quota Share Reinsurer Payment",
+    "difficulty": "medium",
+    "topics": [
+      "Reinsurance",
+      "Loss distributions"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A claim amount $X$ has mean $E[X] = 10{,}000$ and variance $\\text{Var}[X] = 4{,}000{,}000$. Under a quota share treaty the insurer cedes 40% of every claim. The variance of the reinsurer's payment on a claim is:",
+    "options": [
+      "$0.4^2 \\times 4{,}000{,}000 = 640{,}000$",
+      "$0.4 \\times 4{,}000{,}000 = 1{,}600{,}000$",
+      "$4{,}000{,}000$",
+      "$10{,}000$"
+    ],
+    "answerIndex": 0,
+    "solution": "The reinsurer pays $0.4X$, and variance scales with the square of a constant:\n$$\\text{Var}[0.4X] = 0.4^2\\,\\text{Var}[X] = 0.16 \\times 4{,}000{,}000 = 640{,}000.$$"
+  },
+  {
+    "id": "cs2-26",
+    "subject": "cs2",
+    "n": 26,
+    "title": "Expected Aggregate Claims (Compound Poisson)",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a compound Poisson model, if individual claim amounts $X_i$ are exponential with mean $1,000$, and $N \\sim Poisson(5)$, the expected total claims $E[S]$ is:",
+    "options": [
+      "$5,000$",
+      "$1,000$",
+      "$5$",
+      "$6,000$"
+    ],
+    "answerIndex": 0,
+    "solution": "$E[S] = E[N]\\,E[X] = 5 \\times 1{,}000 = 5{,}000$. (Only the mean claim size is needed; the exponential form does not matter for the mean.)"
+  },
+  {
+    "id": "cs2-27",
+    "subject": "cs2",
+    "n": 27,
+    "title": "Characterising the Gaussian Copula",
+    "difficulty": "easy",
+    "topics": [
+      "Copulas"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the Gaussian copula?",
+    "options": [
+      "Dependency modeled using a correlation matrix with no tail dependence",
+      "Strong lower tail dependence",
+      "Strong upper tail dependence",
+      "Only for discrete variables"
+    ],
+    "answerIndex": 0,
+    "solution": "Gaussian copula uses correlation to model dependence, with no specific upper or lower tail dependence."
+  },
+  {
+    "id": "cs2-28",
+    "subject": "cs2",
+    "n": 28,
+    "title": "Tail Weight of a Loss Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Loss distributions",
+      "Extreme value theory"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Tail weight of a loss distribution refers to:",
+    "options": [
+      "Probability of extremely large claims",
+      "Mean claim amount",
+      "Median claim amount",
+      "Minimum claim amount"
+    ],
+    "answerIndex": 0,
+    "solution": "Tail weight characterizes the probability of extreme outcomes, crucial for risk management and reinsurance pricing."
+  },
+  {
+    "id": "cs2-29",
+    "subject": "cs2",
+    "n": 29,
+    "title": "Random Sum as a Compound Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "If $X_i$ are independent and identically distributed and $N$ is independent of $X_i$, the sum $S = \\sum_{i=1}^N X_i$ is:",
+    "options": [
+      "A compound distribution",
+      "Always normal",
+      "Uniform",
+      "Deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Sums of a random number of independent identically distributed variables form a compound distribution."
+  },
+  {
+    "id": "cs2-30",
+    "subject": "cs2",
+    "n": 30,
+    "title": "Assumptions of the Collective Risk Model",
+    "difficulty": "medium",
+    "topics": [
+      "Aggregate risk models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is NOT one of the standard assumptions of the collective risk model $S = X_1 + \\dots + X_N$ for short-term insurance?",
+    "options": [
+      "All claim amounts are equal to the same fixed amount",
+      "The claim amounts $X_i$ are independent and identically distributed",
+      "The number of claims $N$ is independent of the claim amounts",
+      "Claim amounts are non-negative random variables"
+    ],
+    "answerIndex": 0,
+    "solution": "The collective risk model assumes that the $X_i$ are i.i.d. non-negative random variables, independent of the claim count $N$. Claim amounts are random, not all equal to a fixed amount, so that is not an assumption of the model."
+  },
+  {
+    "id": "cs2-31",
+    "subject": "cs2",
+    "n": 31,
+    "title": "Definition of a Stationary Time Series",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A stationary time series is one whose statistical properties:",
+    "options": [
+      "Do not change over time",
+      "Depend linearly on time",
+      "Are only defined at integer times",
+      "Always follow a normal distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "Stationary series have constant mean, variance, and autocovariance over time."
+  },
+  {
+    "id": "cs2-32",
+    "subject": "cs2",
+    "n": 32,
+    "title": "The Backward Shift Operator",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The backwards shift operator B applied to $X_t$ gives:",
+    "options": [
+      "$B X_t = X_{t-1}$",
+      "$B X_t = X_{t+1}$",
+      "$B X_t = X_t + 1$",
+      "$B X_t = \\Delta X_t$"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, $B X_t = X_{t-1}$."
+  },
+  {
+    "id": "cs2-33",
+    "subject": "cs2",
+    "n": 33,
+    "title": "Form of an AR(1) Model",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "An AR(1) model is defined as:",
+    "options": [
+      "$X_t = \\phi X_{t-1} + \\epsilon_t$",
+      "$X_t = X_{t-1} + X_{t-2}$",
+      "$X_t = \\epsilon_t$",
+      "$X_t = \\phi + \\epsilon_t$"
+    ],
+    "answerIndex": 0,
+    "solution": "An AR(1) model uses the previous value plus a random error."
+  },
+  {
+    "id": "cs2-34",
+    "subject": "cs2",
+    "n": 34,
+    "title": "Form of an MA(1) Model",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A MA(1) model is given by:",
+    "options": [
+      "$X_t = \\epsilon_t + \\theta \\epsilon_{t-1}$",
+      "$X_t = X_{t-1} + \\epsilon_t$",
+      "$X_t = \\epsilon_{t-1} + \\epsilon_{t-2}$",
+      "$X_t = \\phi X_{t-1} + \\theta X_{t-2}$"
+    ],
+    "answerIndex": 0,
+    "solution": "MA(1) is a moving average of current and previous error terms."
+  },
+  {
+    "id": "cs2-35",
+    "subject": "cs2",
+    "n": 35,
+    "title": "Components of an ARMA(p,q) Model",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "An ARMA(p,q) model combines:",
+    "options": [
+      "Autoregressive (AR) and Moving Average (MA) components",
+      "Only AR components",
+      "Only MA components",
+      "Seasonal differencing"
+    ],
+    "answerIndex": 0,
+    "solution": "ARMA models combine AR(p) and MA(q) components for stationary series."
+  },
+  {
+    "id": "cs2-36",
+    "subject": "cs2",
+    "n": 36,
+    "title": "Random Walk With Drift",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A random walk with drift has the form:",
+    "options": [
+      "$X_t = \\mu + X_{t-1} + \\epsilon_t$",
+      "$X_t = X_{t-1} + \\epsilon_{t-1}$",
+      "$X_t = \\epsilon_t$",
+      "$X_t = \\phi X_{t-1}$"
+    ],
+    "answerIndex": 0,
+    "solution": "Drift adds a constant $\\mu$ to the standard random walk."
+  },
+  {
+    "id": "cs2-37",
+    "subject": "cs2",
+    "n": 37,
+    "title": "Integrated of Order One Series",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A time series is I(1) if:",
+    "options": [
+      "It becomes stationary after first differencing",
+      "It is stationary without differencing",
+      "It has seasonal fluctuations only",
+      "Its autocorrelation is zero at all lags"
+    ],
+    "answerIndex": 0,
+    "solution": "Integrated of order 1 (I(1)) means first differences are stationary."
+  },
+  {
+    "id": "cs2-38",
+    "subject": "cs2",
+    "n": 38,
+    "title": "ACF of a Stationary Series",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The autocorrelation function (ACF) of a stationary time series:",
+    "options": [
+      "Depends only on lag, not time",
+      "Varies with time",
+      "Is always zero for AR models",
+      "Is always positive"
+    ],
+    "answerIndex": 0,
+    "solution": "ACF measures correlation at lag k, independent of actual time t for stationary series."
+  },
+  {
+    "id": "cs2-39",
+    "subject": "cs2",
+    "n": 39,
+    "title": "Definition of Cointegration",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Cointegration occurs when:",
+    "options": [
+      "Two or more non-stationary series have a stationary linear combination",
+      "All series are stationary",
+      "Series have no correlation",
+      "Series are independent"
+    ],
+    "answerIndex": 0,
+    "solution": "Cointegration implies a long-term equilibrium relationship between non-stationary series."
+  },
+  {
+    "id": "cs2-40",
+    "subject": "cs2",
+    "n": 40,
+    "title": "Residual Diagnostics: White Noise",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In time series diagnostics, residuals should ideally be:",
+    "options": [
+      "Uncorrelated and mean zero",
+      "Increasing over time",
+      "Always positive",
+      "Deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Good model fit requires residuals to resemble white noise: uncorrelated with zero mean."
+  },
+  {
+    "id": "cs2-41",
+    "subject": "cs2",
+    "n": 41,
+    "title": "Vector Autoregression (VAR) Models",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A multivariate autoregressive (VAR) model allows:",
+    "options": [
+      "Multiple time series to influence each other",
+      "Only one series at a time",
+      "Only stationary series",
+      "Only cointegrated series"
+    ],
+    "answerIndex": 0,
+    "solution": "VAR models capture interdependence between multiple time series."
+  },
+  {
+    "id": "cs2-42",
+    "subject": "cs2",
+    "n": 42,
+    "title": "Box-Jenkins Identification Step",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A key step in time series modeling is identification, which involves:",
+    "options": [
+      "Determining model order (p, q) and stationarity",
+      "Estimating parameters via MLE",
+      "Forecasting future values",
+      "Checking residuals"
+    ],
+    "answerIndex": 0,
+    "solution": "Identification chooses model type, order, and checks if series is stationary."
+  },
+  {
+    "id": "cs2-43",
+    "subject": "cs2",
+    "n": 43,
+    "title": "Use of Exponential Smoothing",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Exponential smoothing is primarily used for:",
+    "options": [
+      "Generating short-term forecasts",
+      "Parameter estimation",
+      "Testing stationarity",
+      "Identifying cointegration"
+    ],
+    "answerIndex": 0,
+    "solution": "Exponential smoothing applies weighted averages for short-term forecasting."
+  },
+  {
+    "id": "cs2-44",
+    "subject": "cs2",
+    "n": 44,
+    "title": "Deterministic Trend in a Time Series",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A deterministic trend in time series refers to:",
+    "options": [
+      "A consistent predictable increase or decrease",
+      "Random fluctuations around a mean",
+      "Seasonal variation only",
+      "Noise in the series"
+    ],
+    "answerIndex": 0,
+    "solution": "Deterministic trend is a predictable pattern in the series, e.g., linear or exponential growth."
+  },
+  {
+    "id": "cs2-45",
+    "subject": "cs2",
+    "n": 45,
+    "title": "Why a Random Walk Is Non-Stationary",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Random walks are non-stationary because:",
+    "options": [
+      "Variance increases with time",
+      "Mean is constant",
+      "Autocorrelations are zero",
+      "They are bounded"
+    ],
+    "answerIndex": 0,
+    "solution": "Variance grows with time in a random walk, making it non-stationary."
+  },
+  {
+    "id": "cs2-46",
+    "subject": "cs2",
+    "n": 46,
+    "title": "The Backward Difference Operator",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The backward difference operator $\\nabla$ applied to $X_t$ is defined as:",
+    "options": [
+      "$\\nabla X_t = X_t - X_{t-1}$",
+      "$\\nabla X_t = X_{t+1} - X_t$",
+      "$\\nabla X_t = X_t + X_{t-1}$",
+      "$\\nabla X_t = X_t / X_{t-1}$"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\nabla X_t = X_t - X_{t-1} = (1 - B)X_t$: the current value minus the previous value. (The forward difference $X_{t+1} - X_t$ is usually written $\\Delta X_t$.)"
+  },
+  {
+    "id": "cs2-47",
+    "subject": "cs2",
+    "n": 47,
+    "title": "Purpose of Seasonal Adjustment",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Seasonal adjustment in a time series is used to:",
+    "options": [
+      "Remove periodic seasonal effects",
+      "Increase variance",
+      "Change the AR order",
+      "Generate cointegration"
+    ],
+    "answerIndex": 0,
+    "solution": "Seasonal adjustment isolates trend and irregular components by removing seasonality."
+  },
+  {
+    "id": "cs2-48",
+    "subject": "cs2",
+    "n": 48,
+    "title": "Implication of a Unit Root",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A unit root in a time series implies:",
+    "options": [
+      "Non-stationarity",
+      "Stationarity",
+      "Deterministic trend only",
+      "White noise behavior"
+    ],
+    "answerIndex": 0,
+    "solution": "Unit root presence makes variance grow over time, causing non-stationarity."
+  },
+  {
+    "id": "cs2-49",
+    "subject": "cs2",
+    "n": 49,
+    "title": "Characteristic Equation and AR Stationarity",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The characteristic equation of an AR(p) process is used to:",
+    "options": [
+      "Check stationarity",
+      "Estimate residuals",
+      "Fit MA components",
+      "Compute forecasts directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Stationarity requires roots of the characteristic equation to lie outside the unit circle."
+  },
+  {
+    "id": "cs2-50",
+    "subject": "cs2",
+    "n": 50,
+    "title": "Forecasting With ARIMA Models",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Forecasting with ARIMA models involves:",
+    "options": [
+      "Accounting for AR, MA, and integration components",
+      "Using only moving averages",
+      "Ignoring differencing",
+      "Fitting only stationary series"
+    ],
+    "answerIndex": 0,
+    "solution": "ARIMA models include AR(p), MA(q), and differencing I(d) for forecasting."
+  },
+  {
+    "id": "cs2-51",
+    "subject": "cs2",
+    "n": 51,
+    "title": "Reading ARIMA(p,d,q) Notation",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "An ARIMA(1,1,1) model has:",
+    "options": [
+      "AR order 1, first difference, MA order 1",
+      "AR order 1, MA order 2",
+      "No differencing",
+      "Only MA(1)"
+    ],
+    "answerIndex": 0,
+    "solution": "Notation: ARIMA(p,d,q) → AR order p, differencing d, MA order q."
+  },
+  {
+    "id": "cs2-52",
+    "subject": "cs2",
+    "n": 52,
+    "title": "Purpose of Smoothing Techniques",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Smoothing techniques help in:",
+    "options": [
+      "Reducing short-term fluctuations",
+      "Increasing noise",
+      "Generating unit roots",
+      "Fitting Poisson models"
+    ],
+    "answerIndex": 0,
+    "solution": "Smoothing removes random variation to reveal underlying trends."
+  },
+  {
+    "id": "cs2-53",
+    "subject": "cs2",
+    "n": 53,
+    "title": "PACF Cut-Off for an AR(2) Process",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In an AR(2) model, the partial autocorrelation function (PACF) cuts off after:",
+    "options": [
+      "Lag 2",
+      "Lag 1",
+      "Lag 3",
+      "Never"
+    ],
+    "answerIndex": 0,
+    "solution": "PACF of AR(p) series cuts off after lag p."
+  },
+  {
+    "id": "cs2-54",
+    "subject": "cs2",
+    "n": 54,
+    "title": "ACF Cut-Off for an MA(q) Process",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The ACF of an MA($q$) process cuts off after:",
+    "options": [
+      "Lag q",
+      "Lag 1",
+      "Lag q+1",
+      "Lag p"
+    ],
+    "answerIndex": 0,
+    "solution": "For an MA($q$) process, $\\rho_q \\neq 0$ in general but $\\rho_k = 0$ for all $k > q$, so the ACF cuts off after lag $q$."
+  },
+  {
+    "id": "cs2-55",
+    "subject": "cs2",
+    "n": 55,
+    "title": "Exponential Smoothing Parameter Near One",
+    "difficulty": "medium",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Exponential smoothing with parameter α close to 1:",
+    "options": [
+      "Gives more weight to recent observations",
+      "Gives more weight to older observations",
+      "Removes trend completely",
+      "Removes seasonality completely"
+    ],
+    "answerIndex": 0,
+    "solution": "High α makes the forecast more responsive to recent changes."
+  },
+  {
+    "id": "cs2-56",
+    "subject": "cs2",
+    "n": 56,
+    "title": "Seasonal ARIMA Specification",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Seasonal ARIMA models are indicated by:",
+    "options": [
+      "Adding seasonal terms (P,D,Q)s",
+      "Ignoring seasonal patterns",
+      "Using only MA terms",
+      "Using only AR terms"
+    ],
+    "answerIndex": 0,
+    "solution": "Seasonal ARIMA includes additional seasonal AR, MA, and differencing components."
+  },
+  {
+    "id": "cs2-57",
+    "subject": "cs2",
+    "n": 57,
+    "title": "Conditions for Weak Stationarity",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A time series is weakly stationary if:",
+    "options": [
+      "Its mean is constant and its autocovariance $\\text{Cov}(X_t, X_{t+k})$ depends only on the lag $k$",
+      "It has a deterministic trend",
+      "Its variance changes with time",
+      "It is cointegrated"
+    ],
+    "answerIndex": 0,
+    "solution": "Weak stationarity requires $E[X_t]$ to be constant and $\\text{Cov}(X_t, X_{t+k})$ to depend only on $k$, not on $t$. It does not require the whole distribution to be time-invariant."
+  },
+  {
+    "id": "cs2-58",
+    "subject": "cs2",
+    "n": 58,
+    "title": "Measures of Forecast Accuracy",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Forecast accuracy can be evaluated using:",
+    "options": [
+      "Mean Squared Error (MSE) or Mean Absolute Error (MAE)",
+      "Only R-squared",
+      "Unit root tests",
+      "Lag plots"
+    ],
+    "answerIndex": 0,
+    "solution": "MSE and MAE measure average forecast error magnitude."
+  },
+  {
+    "id": "cs2-59",
+    "subject": "cs2",
+    "n": 59,
+    "title": "Characteristics of a Random Walk",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Random walks are characterized by:",
+    "options": [
+      "Non-stationarity and unit root",
+      "Stationarity",
+      "AR(2) structure",
+      "Deterministic trend only"
+    ],
+    "answerIndex": 0,
+    "solution": "A random walk $X_t = X_{t-1} + \\varepsilon_t$ gives $X_t = X_0 + \\sum_{j=1}^{t} \\varepsilon_j$, so $\\text{Var}(X_t) = t\\sigma^2$ grows with $t$. The characteristic equation $1 - z = 0$ has a unit root, so the process is non-stationary."
+  },
+  {
+    "id": "cs2-60",
+    "subject": "cs2",
+    "n": 60,
+    "title": "Backtesting Time Series Forecasts",
+    "difficulty": "easy",
+    "topics": [
+      "Time series"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Backtesting of time series forecasts involves:",
+    "options": [
+      "Comparing forecasts with actual outcomes",
+      "Fitting ARMA models only",
+      "Differencing the series",
+      "Testing stationarity"
+    ],
+    "answerIndex": 0,
+    "solution": "Backtesting validates forecast performance against observed data."
+  },
+  {
+    "id": "cs2-76",
+    "subject": "cs2",
+    "n": 61,
+    "title": "Holding Times in a Markov Jump Process",
+    "difficulty": "medium",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a time-homogeneous Markov jump process, the holding time in a state is:",
+    "options": [
+      "Exponentially distributed",
+      "Uniformly distributed",
+      "Deterministic",
+      "Normally distributed"
+    ],
+    "answerIndex": 0,
+    "solution": "By the Markov (memoryless) property, the holding time in state $i$ of a time-homogeneous Markov jump process is exponential with rate $\\lambda_i = \\sum_{j \\neq i} \\mu_{ij}$, the total rate out of $i$."
+  },
+  {
+    "id": "cs2-77",
+    "subject": "cs2",
+    "n": 62,
+    "title": "Poisson Process as a Markov Process",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes",
+      "Stochastic processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The Poisson process is a special case of which stochastic process?",
+    "options": [
+      "Continuous-time Markov process",
+      "Discrete-time AR(1) process",
+      "Gaussian process",
+      "Random walk with drift"
+    ],
+    "answerIndex": 0,
+    "solution": "Poisson process is a continuous-time Markov counting process."
+  },
+  {
+    "id": "cs2-78",
+    "subject": "cs2",
+    "n": 63,
+    "title": "Expected Number of Poisson Process Events",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes",
+      "Stochastic processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The expected number of events (jumps) of a Poisson process with rate $\\lambda$ over the interval $[0, t]$ is:",
+    "options": [
+      "$\\lambda t$",
+      "$t/\\lambda$",
+      "$\\lambda$",
+      "$\\sqrt{\\lambda t}$"
+    ],
+    "answerIndex": 0,
+    "solution": "$N(t) \\sim \\text{Poisson}(\\lambda t)$, so $E[N(t)] = \\lambda t$."
+  },
+  {
+    "id": "cs2-79",
+    "subject": "cs2",
+    "n": 64,
+    "title": "Row Sums of a Transition Matrix",
+    "difficulty": "easy",
+    "topics": [
+      "Markov chains"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a discrete-time Markov chain, the sum of transition probabilities from a state is:",
+    "options": [
+      "1",
+      "0",
+      "Equal to number of states",
+      "Depends on time"
+    ],
+    "answerIndex": 0,
+    "solution": "Transition probabilities from a given state form a probability distribution summing to 1."
+  },
+  {
+    "id": "cs2-80",
+    "subject": "cs2",
+    "n": 65,
+    "title": "Probability of Two Events in a Poisson Process",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes",
+      "Stochastic processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "If a Poisson process has rate $\\lambda = 3$ per hour, the probability of exactly 2 events in 1 hour is:",
+    "options": [
+      "$\\dfrac{3^2 e^{-3}}{2!}$",
+      "$\\dfrac{e^{-3}}{2}$",
+      "$\\dfrac{2^3}{3!}$",
+      "$\\dfrac{3}{2!}$"
+    ],
+    "answerIndex": 0,
+    "solution": "$N(1) \\sim \\text{Poisson}(3)$, so\n$$P(N(1) = 2) = \\frac{\\lambda^k e^{-\\lambda}}{k!} = \\frac{3^2 e^{-3}}{2!} = 4.5\\,e^{-3} \\approx 0.2240.$$"
+  },
+  {
+    "id": "cs2-81",
+    "subject": "cs2",
+    "n": 66,
+    "title": "Variance of a Poisson Process Count",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes",
+      "Stochastic processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The variance of the number of events in a Poisson process equals:",
+    "options": [
+      "Mean number of events",
+      "Square of the mean",
+      "Zero",
+      "Twice the mean"
+    ],
+    "answerIndex": 0,
+    "solution": "For a Poisson process, $N(t) \\sim \\text{Poisson}(\\lambda t)$, so $\\text{Var}(N(t)) = E[N(t)] = \\lambda t$."
+  },
+  {
+    "id": "cs2-82",
+    "subject": "cs2",
+    "n": 67,
+    "title": "Irreducible Markov Chains",
+    "difficulty": "medium",
+    "topics": [
+      "Markov chains"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A Markov chain is irreducible if:",
+    "options": [
+      "Every state can be reached from every other state",
+      "Some states are isolated",
+      "It has a stationary distribution",
+      "It is continuous-time"
+    ],
+    "answerIndex": 0,
+    "solution": "Irreducibility requires the ability to move between any pair of states, possibly in multiple steps."
+  },
+  {
+    "id": "cs2-83",
+    "subject": "cs2",
+    "n": 68,
+    "title": "Mean Return Time and Stationary Probability",
+    "difficulty": "medium",
+    "topics": [
+      "Markov chains"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "For an irreducible, positive recurrent discrete-time Markov chain with stationary distribution $\\pi$, the expected number of steps to return to state $i$, starting from $i$, is:",
+    "options": [
+      "$1/\\pi_i$",
+      "$\\pi_i$",
+      "$0$",
+      "It depends on the variance of the chain"
+    ],
+    "answerIndex": 0,
+    "solution": "For an irreducible positive recurrent chain, the mean return time to state $i$ is $m_i = 1/\\pi_i$: in the long run the chain spends a proportion $\\pi_i$ of steps in state $i$, so visits occur on average every $1/\\pi_i$ steps."
+  },
+  {
+    "id": "cs2-84",
+    "subject": "cs2",
+    "n": 69,
+    "title": "Generator Matrix of a Two-State Process",
+    "difficulty": "medium",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a two-state Markov jump process with states 0 and 1, transition rate $\\lambda_{01}$ from 0 to 1 and $\\lambda_{10}$ from 1 to 0, the generator matrix $Q$ is:",
+    "options": [
+      "$\\begin{pmatrix} -\\lambda_{01} & \\lambda_{01} \\\\ \\lambda_{10} & -\\lambda_{10} \\end{pmatrix}$",
+      "$\\begin{pmatrix} \\lambda_{01} & \\lambda_{10} \\\\ \\lambda_{10} & \\lambda_{01} \\end{pmatrix}$",
+      "$\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$",
+      "$\\begin{pmatrix} \\lambda & -\\lambda \\\\ -\\lambda & \\lambda \\end{pmatrix}$"
+    ],
+    "answerIndex": 0,
+    "solution": "Off-diagonal entries are the transition rates $q_{ij}$; each diagonal entry is minus the total rate out of that state, $q_{ii} = -\\sum_{j \\neq i} q_{ij}$, so every row sums to zero."
+  },
+  {
+    "id": "cs2-85",
+    "subject": "cs2",
+    "n": 70,
+    "title": "Duration-Dependent Transition Intensities",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a duration-dependent process, the transition intensity from state i to j may depend on:",
+    "options": [
+      "Time spent in state i",
+      "Initial state only",
+      "Future states",
+      "Stationary distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "Duration-dependent processes account for age/duration in current state when computing intensities."
+  },
+  {
+    "id": "cs2-86",
+    "subject": "cs2",
+    "n": 71,
+    "title": "Kolmogorov Backward Equations",
+    "difficulty": "hard",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Kolmogorov backward equations are used to:",
+    "options": [
+      "Find transition probabilities $p_{ij}(s,t)$ via differential equations in the starting time $s$",
+      "Fit ARIMA models",
+      "Simulate Poisson processes",
+      "Estimate transition intensities from data"
+    ],
+    "answerIndex": 0,
+    "solution": "The backward equations condition on the first jump after the starting time:\n$$\\frac{\\partial}{\\partial s} P(s,t) = -A(s)\\,P(s,t),$$\nwhere $A(s)$ is the generator. In the time-homogeneous case $P'(t) = A\\,P(t)$ (backward), compared with $P'(t) = P(t)\\,A$ (forward)."
+  },
+  {
+    "id": "cs2-87",
+    "subject": "cs2",
+    "n": 72,
+    "title": "Periodicity of a Markov Chain",
+    "difficulty": "medium",
+    "topics": [
+      "Markov chains"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A Markov chain is periodic if:",
+    "options": [
+      "The greatest common divisor of the possible return times to a state is greater than 1",
+      "All states are transient",
+      "A stationary distribution does not exist",
+      "It is continuous-time"
+    ],
+    "answerIndex": 0,
+    "solution": "The period of state $i$ is $d_i = \\gcd\\{n \\ge 1 : p_{ii}^{(n)} > 0\\}$. The state (and, for an irreducible chain, the whole chain) is periodic if $d_i > 1$, i.e. returns can occur only at multiples of $d_i$."
+  },
+  {
+    "id": "cs2-88",
+    "subject": "cs2",
+    "n": 73,
+    "title": "Small-Interval Property of a Poisson Process",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes",
+      "Stochastic processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "A Poisson process with rate $\\lambda$ has the property that, for a small interval of length $h$:",
+    "options": [
+      "$P(\\text{one event in the interval}) = \\lambda h + o(h)$",
+      "$P(\\text{one event in the interval}) = h^2 + o(h)$",
+      "$P(\\text{one event in the interval}) = 1$",
+      "No events can occur in the interval"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, $P(N(t+h) - N(t) = 1) = \\lambda h + o(h)$ and $P(N(t+h) - N(t) \\ge 2) = o(h)$."
+  },
+  {
+    "id": "cs2-89",
+    "subject": "cs2",
+    "n": 74,
+    "title": "Simulating a Markov Jump Process",
+    "difficulty": "medium",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In simulation of a continuous-time Markov chain, the next state is determined by:",
+    "options": [
+      "Randomly sampling from exponential waiting time and transition probabilities",
+      "Solving linear algebra only",
+      "Assuming equal probabilities",
+      "Ignoring transition intensities"
+    ],
+    "answerIndex": 0,
+    "solution": "Simulation uses exponential holding times and discrete transitions based on intensities."
+  },
+  {
+    "id": "cs2-90",
+    "subject": "cs2",
+    "n": 75,
+    "title": "Number of Jumps in a Markov Jump Process",
+    "difficulty": "easy",
+    "topics": [
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a Markov jump process, the number of jumps in [0,t] is:",
+    "options": [
+      "Random and depends on intensity",
+      "Deterministic",
+      "Always zero",
+      "Normally distributed"
+    ],
+    "answerIndex": 0,
+    "solution": "Jumps occur randomly according to transition intensities; number of jumps is stochastic."
+  },
+  {
+    "id": "cs2-91",
+    "subject": "cs2",
+    "n": 76,
+    "title": "Definition of the Survival Function",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The survival function $S(t)$ of a lifetime $T$ is defined as:",
+    "options": [
+      "$P(T > t)$",
+      "$P(T \\le t)$",
+      "$f(t)$",
+      "The hazard rate at $t$"
+    ],
+    "answerIndex": 0,
+    "solution": "$S(t) = P(T > t) = 1 - F(t)$, the probability that the lifetime exceeds $t$."
+  },
+  {
+    "id": "cs2-92",
+    "subject": "cs2",
+    "n": 77,
+    "title": "Force of Mortality From the Survival Function",
+    "difficulty": "medium",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The force of mortality $\\mu(t)$ is related to the survival function $S(t)$ by $\\mu(t) =$",
+    "options": [
+      "$-\\dfrac{d}{dt} \\ln S(t)$",
+      "$\\dfrac{dS(t)}{dt}$",
+      "$S(t)/t$",
+      "$\\int_0^t S(u)\\,du$"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\mu(t) = \\dfrac{f(t)}{S(t)} = -\\dfrac{S'(t)}{S(t)} = -\\dfrac{d}{dt}\\ln S(t)$, the instantaneous hazard rate at time $t$."
+  },
+  {
+    "id": "cs2-93",
+    "subject": "cs2",
+    "n": 78,
+    "title": "Curtate Future Lifetime",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The curtate future lifetime $K_x$ is:",
+    "options": [
+      "$\\lfloor T_x \\rfloor$, the integer part of $T_x$",
+      "$T_x$ itself",
+      "$E[T_x]$",
+      "$\\text{Var}(T_x)$"
+    ],
+    "answerIndex": 0,
+    "solution": "$K_x = \\lfloor T_x \\rfloor$, the number of complete years lived beyond age $x$."
+  },
+  {
+    "id": "cs2-94",
+    "subject": "cs2",
+    "n": 79,
+    "title": "Curtate Expectation of Life as a Sum",
+    "difficulty": "medium",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The curtate expectation of life $e_x = E[K_x]$ is given by:",
+    "options": [
+      "$E[K_x] = \\sum_{k=1}^{\\infty} {}_k p_x$",
+      "$E[K_x] = \\int_0^\\infty \\mu_{x+t}\\,dt$",
+      "$E[K_x] = 1/p_x$",
+      "$E[K_x] = S(x)$"
+    ],
+    "answerIndex": 0,
+    "solution": "Since $K_x$ takes non-negative integer values,\n$$E[K_x] = \\sum_{k=1}^{\\infty} P(K_x \\ge k) = \\sum_{k=1}^{\\infty} {}_k p_x.$$"
+  },
+  {
+    "id": "cs2-95",
+    "subject": "cs2",
+    "n": 80,
+    "title": "Gompertz Law of Mortality",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Under the Gompertz law of mortality, the force of mortality $\\mu_x$ is:",
+    "options": [
+      "$Bc^x$",
+      "$A + Bx$",
+      "$\\ln x$",
+      "$1/x$"
+    ],
+    "answerIndex": 0,
+    "solution": "Gompertz: $\\mu_x = Bc^x$ (with $c > 1$), so mortality increases exponentially with age."
+  },
+  {
+    "id": "cs2-96",
+    "subject": "cs2",
+    "n": 81,
+    "title": "Makeham's Constant Term",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The Makeham law of mortality adds to Gompertz a constant term to account for:",
+    "options": [
+      "Age-independent mortality",
+      "Infant mortality only",
+      "Random shocks",
+      "Population growth"
+    ],
+    "answerIndex": 0,
+    "solution": "Makeham: $\\mu_x = A + Bc^x$. The constant $A$ captures age-independent background risk (e.g. accidents), added to the Gompertz term $Bc^x$."
+  },
+  {
+    "id": "cs2-97",
+    "subject": "cs2",
+    "n": 82,
+    "title": "Purpose of the Kaplan-Meier Estimator",
+    "difficulty": "easy",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Kaplan–Meier estimator is used to:",
+    "options": [
+      "Estimate survival function with censored data",
+      "Compute hazard rate only",
+      "Predict future mortality rates",
+      "Fit Gompertz law"
+    ],
+    "answerIndex": 0,
+    "solution": "Kaplan–Meier estimates survival non-parametrically from censored lifetime data."
+  },
+  {
+    "id": "cs2-98",
+    "subject": "cs2",
+    "n": 83,
+    "title": "What the Nelson-Aalen Estimator Estimates",
+    "difficulty": "easy",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Nelson–Aalen estimator provides an estimate of:",
+    "options": [
+      "Cumulative hazard function",
+      "Survival function",
+      "Mean lifetime",
+      "Mortality table"
+    ],
+    "answerIndex": 0,
+    "solution": "It sums observed events over risk sets to estimate cumulative hazard."
+  },
+  {
+    "id": "cs2-99",
+    "subject": "cs2",
+    "n": 84,
+    "title": "Covariate Effect in Proportional Hazards",
+    "difficulty": "easy",
+    "topics": [
+      "Proportional hazards"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In a proportional hazards model, covariates affect the hazard by:",
+    "options": [
+      "Multiplicative factor",
+      "Additive factor",
+      "Exponential of survival",
+      "Not at all"
+    ],
+    "answerIndex": 0,
+    "solution": "The Cox model assumes $h(t \\mid z) = h_0(t)\\exp(\\beta^T z)$: the covariates multiply the baseline hazard $h_0(t)$ by the factor $\\exp(\\beta^T z)$."
+  },
+  {
+    "id": "cs2-100",
+    "subject": "cs2",
+    "n": 85,
+    "title": "Definition of Censoring",
+    "difficulty": "easy",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Censoring occurs when:",
+    "options": [
+      "Exact lifetime is unknown for some subjects",
+      "All lifetimes are observed exactly",
+      "Mortality is zero",
+      "Only one state is possible"
+    ],
+    "answerIndex": 0,
+    "solution": "Censoring happens when subjects leave study, die from other causes, or study ends before event."
+  },
+  {
+    "id": "cs2-101",
+    "subject": "cs2",
+    "n": 86,
+    "title": "Central Exposed to Risk",
+    "difficulty": "medium",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Central exposed to risk at age x is:",
+    "options": [
+      "Sum of fractions of year each person was at risk",
+      "Number of deaths",
+      "Survival probability",
+      "Future lifetime"
+    ],
+    "answerIndex": 0,
+    "solution": "Exposed to risk accounts for partial-year contributions of each subject."
+  },
+  {
+    "id": "cs2-102",
+    "subject": "cs2",
+    "n": 87,
+    "title": "Census Approximation to Exposed to Risk",
+    "difficulty": "hard",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Census approximation assumes:",
+    "options": [
+      "The population varies linearly between census dates",
+      "All deaths occur at the start of the year",
+      "All deaths occur at the end of the year",
+      "No deaths occur"
+    ],
+    "answerIndex": 0,
+    "solution": "The central exposed to risk is $E^c_x = \\int_0^1 P_{x,t}\\,dt$, where $P_{x,t}$ is the population aged $x$ at time $t$. If populations are only known at census dates, assuming $P_{x,t}$ is linear between them gives the trapezium approximation\n$$E^c_x \\approx \\tfrac12\\left(P_{x,0} + P_{x,1}\\right).$$"
+  },
+  {
+    "id": "cs2-103",
+    "subject": "cs2",
+    "n": 88,
+    "title": "Purpose of Graduation",
+    "difficulty": "easy",
+    "topics": [
+      "Graduation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Graduation of mortality rates is performed to:",
+    "options": [
+      "Smooth crude estimates",
+      "Increase variance",
+      "Remove older ages",
+      "Only for censored data"
+    ],
+    "answerIndex": 0,
+    "solution": "Graduation reduces random fluctuation to create a smooth mortality curve."
+  },
+  {
+    "id": "cs2-104",
+    "subject": "cs2",
+    "n": 89,
+    "title": "Lee-Carter Model Purpose",
+    "difficulty": "easy",
+    "topics": [
+      "Mortality projection"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Lee–Carter model is used for:",
+    "options": [
+      "Mortality forecasting",
+      "Estimating hazard rates from censored data",
+      "Simulating Poisson processes",
+      "ARIMA fitting"
+    ],
+    "answerIndex": 0,
+    "solution": "Lee-Carter: $\\ln m_{x,t} = a_x + b_x k_t + \\varepsilon_{x,t}$. The period index $k_t$ is forecast (e.g. as a random walk with drift) to project mortality rates."
+  },
+  {
+    "id": "cs2-105",
+    "subject": "cs2",
+    "n": 90,
+    "title": "Complete vs Curtate Expectation of Life",
+    "difficulty": "medium",
+    "topics": [
+      "Survival models"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The complete expectation of life $\\mathring{e}_x$ can be approximated from the curtate expectation of life $e_x$ by:",
+    "options": [
+      "$\\mathring{e}_x \\approx e_x + \\tfrac12$",
+      "$\\mathring{e}_x = e_x$",
+      "$\\mathring{e}_x \\approx e_x - 1$",
+      "$\\mathring{e}_x \\approx 2e_x$"
+    ],
+    "answerIndex": 0,
+    "solution": "Write $T_x = K_x + U$, where $U$ is the fraction of the year of death lived. If deaths are uniformly distributed over each year of age, $E[U] \\approx \\tfrac12$, so $\\mathring{e}_x = E[T_x] \\approx E[K_x] + \\tfrac12 = e_x + \\tfrac12$."
+  },
+  {
+    "id": "cs2-106",
+    "subject": "cs2",
+    "n": 91,
+    "title": "Two-State Alive-Dead Model",
+    "difficulty": "easy",
+    "topics": [
+      "Survival models",
+      "Markov jump processes"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Two-state model of single decrement assumes:",
+    "options": [
+      "Individual is either alive or dead",
+      "Individual can be in multiple health states",
+      "Deaths occur in fixed intervals only",
+      "Hazard rate is zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Single decrement model simplifies life to alive/dead states for actuarial calculations."
+  },
+  {
+    "id": "cs2-107",
+    "subject": "cs2",
+    "n": 92,
+    "title": "MLE of Transition Intensities",
+    "difficulty": "medium",
+    "topics": [
+      "Markov jump processes",
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Maximum likelihood estimation for transition intensities requires:",
+    "options": [
+      "Observed waiting times and number of transitions",
+      "Only total deaths",
+      "Exact future lifetimes",
+      "Only exposed to risk"
+    ],
+    "answerIndex": 0,
+    "solution": "MLE uses observed durations in each state and counts of transitions to estimate rates."
+  },
+  {
+    "id": "cs2-108",
+    "subject": "cs2",
+    "n": 93,
+    "title": "Poisson Model for Death Counts",
+    "difficulty": "medium",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Poisson approximation in survival analysis is used when:",
+    "options": [
+      "Events are rare and independent",
+      "All events occur simultaneously",
+      "Exposures are infinite",
+      "Censoring is ignored"
+    ],
+    "answerIndex": 0,
+    "solution": "For rare events, counts of events follow approximately a Poisson distribution."
+  },
+  {
+    "id": "cs2-109",
+    "subject": "cs2",
+    "n": 94,
+    "title": "Rate Interval and Age Definition",
+    "difficulty": "hard",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Rate interval in census approximation refers to:",
+    "options": [
+      "The year of age over which a life's recorded age (under the chosen age definition) stays the same",
+      "Exposed to risk for a single person",
+      "Observed deaths only",
+      "Time until censoring"
+    ],
+    "answerIndex": 0,
+    "solution": "The rate interval is the one-year period of age during which a life has the same recorded age $x$. For example, with age last birthday it runs from exact age $x$ to $x+1$, so the crude rate estimates $\\mu$ at about age $x + \\tfrac12$. Deaths and exposed to risk must use the same age definition."
+  },
+  {
+    "id": "cs2-110",
+    "subject": "cs2",
+    "n": 95,
+    "title": "Graduation by Spline Functions",
+    "difficulty": "easy",
+    "topics": [
+      "Graduation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Graduation by spline functions has the advantage of:",
+    "options": [
+      "Flexibly smoothing data while maintaining local shape",
+      "Reducing variance to zero",
+      "Removing all biases",
+      "Eliminating censoring"
+    ],
+    "answerIndex": 0,
+    "solution": "Splines create smooth curves adapting locally to the data shape."
+  },
+  {
+    "id": "cs2-111",
+    "subject": "cs2",
+    "n": 96,
+    "title": "Testing Adherence of a Graduation",
+    "difficulty": "hard",
+    "topics": [
+      "Graduation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Comparison of crude and graduated mortality rates tests for:",
+    "options": [
+      "Adherence to the data: overall goodness of fit and absence of bias",
+      "Only variance reduction",
+      "Survival beyond the last age only",
+      "The presence of censoring only"
+    ],
+    "answerIndex": 0,
+    "solution": "Comparing graduated rates with crude rates (through deviations $d_x - E_x\\mu_x$) tests adherence to data: overall fit (chi-square test), and bias or systematic departures (signs, cumulative deviations, grouping of signs, serial correlations). Smoothness is checked separately using the graduated rates alone, e.g. via third differences."
+  },
+  {
+    "id": "cs2-112",
+    "subject": "cs2",
+    "n": 97,
+    "title": "Graduation by Parametric Formula",
+    "difficulty": "easy",
+    "topics": [
+      "Graduation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In graduation, a parametric formula method:",
+    "options": [
+      "Assumes a functional form for mortality rates",
+      "Does not assume any form",
+      "Is only for censored data",
+      "Removes all variance"
+    ],
+    "answerIndex": 0,
+    "solution": "Parametric graduation fits a chosen mathematical formula to crude rates."
+  },
+  {
+    "id": "cs2-113",
+    "subject": "cs2",
+    "n": 98,
+    "title": "Extrapolative Mortality Forecasting",
+    "difficulty": "easy",
+    "topics": [
+      "Mortality projection"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Extrapolation approach to mortality forecasting assumes:",
+    "options": [
+      "Past trends continue into future",
+      "Mortality is constant",
+      "Mortality is random only",
+      "Covariates are ignored completely"
+    ],
+    "answerIndex": 0,
+    "solution": "Extrapolation projects historical mortality rates forward."
+  },
+  {
+    "id": "cs2-114",
+    "subject": "cs2",
+    "n": 99,
+    "title": "Lee-Carter Period Index",
+    "difficulty": "easy",
+    "topics": [
+      "Mortality projection"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In the Lee-Carter model, the parameter $k_t$ represents:",
+    "options": [
+      "Time-varying mortality index",
+      "Age-specific constant",
+      "Cohort effect",
+      "Variance of survival"
+    ],
+    "answerIndex": 0,
+    "solution": "In $\\ln m_{x,t} = a_x + b_x k_t + \\varepsilon_{x,t}$, $k_t$ is a time-varying index of the overall level of mortality; $b_x$ gives the sensitivity of each age to changes in $k_t$."
+  },
+  {
+    "id": "cs2-115",
+    "subject": "cs2",
+    "n": 100,
+    "title": "Age-Period-Cohort Models",
+    "difficulty": "easy",
+    "topics": [
+      "Mortality projection"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Age-period-cohort models include:",
+    "options": [
+      "Effects of age, calendar period, and birth cohort",
+      "Only age effect",
+      "Only period effect",
+      "Only cohort effect"
+    ],
+    "answerIndex": 0,
+    "solution": "APC models separate trends by age, period, and cohort to capture demographic patterns."
+  },
+  {
+    "id": "cs2-116",
+    "subject": "cs2",
+    "n": 101,
+    "title": "Duplicate Policies in Graduation Tests",
+    "difficulty": "hard",
+    "topics": [
+      "Graduation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "In presence of duplicate policies, graduation tests should:",
+    "options": [
+      "Allow for the increased variance of the death counts, e.g. by scaling the standardised deviations",
+      "Ignore duplicates",
+      "Double the rates",
+      "Set all duplicates to zero"
+    ],
+    "answerIndex": 0,
+    "solution": "When rates are based on policies rather than lives, one death can generate several policy claims, so the counts are not independent and their variance exceeds the Poisson variance by a factor $r_x \\geq 1$. The crude rates stay roughly unbiased, but the standardised deviations should be divided by $\\sqrt{r_x}$ (and the chi-square statistic by $r_x$) before the graduation tests are applied."
+  },
+  {
+    "id": "cs2-117",
+    "subject": "cs2",
+    "n": 102,
+    "title": "Role of Central Exposed to Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Central exposed to risk is needed to:",
+    "options": [
+      "Estimate the force of mortality $\\mu_x$ (or central rate $m_x$)",
+      "Estimate the survival function only",
+      "Fit parametric models only",
+      "Forecast $k_t$"
+    ],
+    "answerIndex": 0,
+    "solution": "The force of mortality, or central rate, is estimated as deaths divided by central exposed to risk: $\\hat\\mu_x = d_x / E^c_x$. (Initial exposed to risk is used for $q_x$.)"
+  },
+  {
+    "id": "cs2-118",
+    "subject": "cs2",
+    "n": 103,
+    "title": "Cox Partial Likelihood",
+    "difficulty": "medium",
+    "topics": [
+      "Proportional hazards"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Partial likelihood in Cox model allows estimation of:",
+    "options": [
+      "Regression coefficients without baseline hazard",
+      "Survival function directly",
+      "Exposed-to-risk only",
+      "Hazard for censored individuals only"
+    ],
+    "answerIndex": 0,
+    "solution": "Partial likelihood focuses on ordering of events to estimate β parameters."
+  },
+  {
+    "id": "cs2-119",
+    "subject": "cs2",
+    "n": 104,
+    "title": "Proportional Hazards Assumption",
+    "difficulty": "medium",
+    "topics": [
+      "Proportional hazards"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Cox model assumes proportional hazards, meaning:",
+    "options": [
+      "Hazard ratios between individuals are constant over time",
+      "Hazard itself is constant",
+      "Survival functions are identical",
+      "Events occur at fixed intervals"
+    ],
+    "answerIndex": 0,
+    "solution": "Proportional hazards assumption: ratio of hazards for two covariate sets is constant."
+  },
+  {
+    "id": "cs2-120",
+    "subject": "cs2",
+    "n": 105,
+    "title": "Variance of the Kaplan-Meier Estimator",
+    "difficulty": "easy",
+    "topics": [
+      "Lifetime estimation"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Variance of Kaplan–Meier estimator is estimated by:",
+    "options": [
+      "Greenwood formula",
+      "Cox regression",
+      "Poisson approximation",
+      "Lee–Carter method"
+    ],
+    "answerIndex": 0,
+    "solution": "Greenwood’s formula sums contributions from each event time to estimate variance."
+  },
+  {
+    "id": "cs2-121",
+    "subject": "cs2",
+    "n": 106,
+    "title": "Bias-Variance Trade-Off",
+    "difficulty": "medium",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Bias-variance trade-off occurs because:",
+    "options": [
+      "Increasing model complexity reduces bias but increases variance",
+      "Increasing model complexity reduces both bias and variance",
+      "Simpler models always have lower variance",
+      "Bias and variance are unrelated"
+    ],
+    "answerIndex": 0,
+    "solution": "Complex models fit data better (low bias) but are sensitive to fluctuations (high variance)."
+  },
+  {
+    "id": "cs2-122",
+    "subject": "cs2",
+    "n": 107,
+    "title": "Purpose of Cross-Validation",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Cross-validation is used to:",
+    "options": [
+      "Estimate model performance on unseen data",
+      "Maximise training set fit",
+      "Compute partial derivatives",
+      "Regularise coefficients directly"
+    ],
+    "answerIndex": 0,
+    "solution": "Cross-validation splits data into folds to estimate generalisation performance."
+  },
+  {
+    "id": "cs2-123",
+    "subject": "cs2",
+    "n": 108,
+    "title": "How Regularisation Prevents Overfitting",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Regularisation helps prevent overfitting by:",
+    "options": [
+      "Penalising large parameter values",
+      "Increasing model complexity",
+      "Removing all bias",
+      "Ignoring training data"
+    ],
+    "answerIndex": 0,
+    "solution": "Regularisation (L1/L2) discourages overly complex models that fit noise."
+  },
+  {
+    "id": "cs2-124",
+    "subject": "cs2",
+    "n": 109,
+    "title": "Definition of Precision",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Precision measures:",
+    "options": [
+      "Proportion of positive predictions that are correct",
+      "Proportion of actual positives correctly identified",
+      "Overall classification accuracy",
+      "Average loss"
+    ],
+    "answerIndex": 0,
+    "solution": "Precision = TP / (TP + FP), focused on correctness of positive predictions."
+  },
+  {
+    "id": "cs2-125",
+    "subject": "cs2",
+    "n": 110,
+    "title": "Definition of Recall",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Recall measures:",
+    "options": [
+      "Proportion of actual positives correctly identified",
+      "Proportion of positive predictions correct",
+      "Model complexity",
+      "Total number of predictions"
+    ],
+    "answerIndex": 0,
+    "solution": "Recall = TP / (TP + FN), focused on capturing all true positives."
+  },
+  {
+    "id": "cs2-126",
+    "subject": "cs2",
+    "n": 111,
+    "title": "Definition of the F1 Score",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "F1 score is:",
+    "options": [
+      "Harmonic mean of precision and recall",
+      "Average of accuracy and recall",
+      "Difference between precision and recall",
+      "Variance of predictions"
+    ],
+    "answerIndex": 0,
+    "solution": "F1 = 2 * (precision * recall) / (precision + recall) balances precision and recall."
+  },
+  {
+    "id": "cs2-127",
+    "subject": "cs2",
+    "n": 112,
+    "title": "What a ROC Curve Plots",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "ROC curve plots:",
+    "options": [
+      "True positive rate vs false positive rate",
+      "Precision vs recall",
+      "Accuracy vs model complexity",
+      "Bias vs variance"
+    ],
+    "answerIndex": 0,
+    "solution": "ROC curve visualises trade-off between sensitivity (TPR) and specificity (1-FPR)."
+  },
+  {
+    "id": "cs2-128",
+    "subject": "cs2",
+    "n": 113,
+    "title": "Purpose of Unsupervised Learning",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Unsupervised learning is used to:",
+    "options": [
+      "Identify structure in unlabeled data",
+      "Predict target values",
+      "Compute gradient descent",
+      "Perform cross-validation"
+    ],
+    "answerIndex": 0,
+    "solution": "Unsupervised methods like PCA and K-means explore latent structures without labels."
+  },
+  {
+    "id": "cs2-129",
+    "subject": "cs2",
+    "n": 114,
+    "title": "Purpose of Principal Component Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Principal Component Analysis (PCA) is used to:",
+    "options": [
+      "Reduce dimensionality while retaining variance",
+      "Increase number of features",
+      "Supervise classification",
+      "Regularise models"
+    ],
+    "answerIndex": 0,
+    "solution": "PCA projects data onto orthogonal axes capturing maximal variance."
+  },
+  {
+    "id": "cs2-130",
+    "subject": "cs2",
+    "n": 115,
+    "title": "Aim of K-Means Clustering",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "K-means clustering aims to:",
+    "options": [
+      "Partition data into k clusters minimizing within-cluster distance",
+      "Supervise regression tasks",
+      "Maximise feature variance",
+      "Estimate hazard rates"
+    ],
+    "answerIndex": 0,
+    "solution": "K-means assigns points to nearest cluster centroid iteratively to minimize variance."
+  },
+  {
+    "id": "cs2-131",
+    "subject": "cs2",
+    "n": 116,
+    "title": "Definition of Overfitting",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Overfitting occurs when:",
+    "options": [
+      "Model fits training data well but fails on unseen data",
+      "Training error is high",
+      "Model has low complexity",
+      "Cross-validation error is minimal"
+    ],
+    "answerIndex": 0,
+    "solution": "Overfitting happens when model captures noise, not underlying pattern."
+  },
+  {
+    "id": "cs2-132",
+    "subject": "cs2",
+    "n": 117,
+    "title": "What Hyperparameters Are",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Hyperparameters are:",
+    "options": [
+      "Parameters set before training that control model behaviour",
+      "Weights learned during training",
+      "Outputs of predictions",
+      "Censoring adjustments"
+    ],
+    "answerIndex": 0,
+    "solution": "Hyperparameters like regularisation strength or tree depth are configured before learning."
+  },
+  {
+    "id": "cs2-133",
+    "subject": "cs2",
+    "n": 118,
+    "title": "Supervised Learning Tasks",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Supervised learning tasks include:",
+    "options": [
+      "Regression and classification",
+      "Clustering only",
+      "PCA only",
+      "Data smoothing only"
+    ],
+    "answerIndex": 0,
+    "solution": "Supervised learning predicts labels or values from input features."
+  },
+  {
+    "id": "cs2-134",
+    "subject": "cs2",
+    "n": 119,
+    "title": "Contents of a Confusion Matrix",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Confusion matrix contains:",
+    "options": [
+      "TP, FP, TN, FN counts",
+      "Means and variances",
+      "Hyperparameters",
+      "Principal components"
+    ],
+    "answerIndex": 0,
+    "solution": "Confusion matrix summarises model predictions vs actual outcomes."
+  },
+  {
+    "id": "cs2-135",
+    "subject": "cs2",
+    "n": 120,
+    "title": "Types of Regularisation",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Regularisation types include:",
+    "options": [
+      "L1 (Lasso) and L2 (Ridge)",
+      "Only L3",
+      "Bootstrap and Jackknife",
+      "PCA and ICA"
+    ],
+    "answerIndex": 0,
+    "solution": "L1 penalises absolute weights, L2 penalises squared weights to control overfitting."
+  },
+  {
+    "id": "cs2-136",
+    "subject": "cs2",
+    "n": 121,
+    "title": "Sparsity From L1 Regularisation",
+    "difficulty": "medium",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "L1 regularisation can lead to:",
+    "options": [
+      "Sparse solutions (some coefficients exactly zero)",
+      "All coefficients increasing",
+      "No change in weights",
+      "Overfitting always"
+    ],
+    "answerIndex": 0,
+    "solution": "L1 penalises absolute values, which can shrink some coefficients to zero."
+  },
+  {
+    "id": "cs2-137",
+    "subject": "cs2",
+    "n": 122,
+    "title": "Effect of L2 Regularisation",
+    "difficulty": "medium",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "L2 regularisation primarily:",
+    "options": [
+      "Reduces large coefficients smoothly",
+      "Sets coefficients exactly to zero",
+      "Removes bias completely",
+      "Changes target values"
+    ],
+    "answerIndex": 0,
+    "solution": "L2 penalises squared weights, shrinking them but rarely to zero."
+  },
+  {
+    "id": "cs2-138",
+    "subject": "cs2",
+    "n": 123,
+    "title": "K-Fold Cross-Validation Procedure",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "K-fold cross-validation splits data into:",
+    "options": [
+      "K subsets, trains on K-1 and validates on 1",
+      "Only one training and one test set",
+      "K models without validation",
+      "Random subsamples with replacement"
+    ],
+    "answerIndex": 0,
+    "solution": "Each fold is used once for validation, the rest for training, averaged over K folds."
+  },
+  {
+    "id": "cs2-139",
+    "subject": "cs2",
+    "n": 124,
+    "title": "Data Requirements for Supervised Learning",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Supervised learning requires:",
+    "options": [
+      "Input features and labeled outputs",
+      "Only input features",
+      "Only output labels",
+      "No data at all"
+    ],
+    "answerIndex": 0,
+    "solution": "Supervised learning learns a mapping from inputs to outputs using labeled data."
+  },
+  {
+    "id": "cs2-140",
+    "subject": "cs2",
+    "n": 125,
+    "title": "Detecting Overfitting",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Overfitting can be detected by:",
+    "options": [
+      "High training accuracy but low validation accuracy",
+      "Low training and validation error",
+      "High bias and high variance",
+      "Random noise in predictions"
+    ],
+    "answerIndex": 0,
+    "solution": "Overfitting occurs when the model performs well on training but poorly on new data."
+  },
+  {
+    "id": "cs2-141",
+    "subject": "cs2",
+    "n": 126,
+    "title": "Purpose of Gradient Descent",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Gradient descent is used to:",
+    "options": [
+      "Minimise a loss function by iteratively updating parameters",
+      "Maximise bias directly",
+      "Partition data",
+      "Compute precision and recall"
+    ],
+    "answerIndex": 0,
+    "solution": "Gradient descent updates weights in the direction opposite to the gradient of the loss."
+  },
+  {
+    "id": "cs2-142",
+    "subject": "cs2",
+    "n": 127,
+    "title": "Early Stopping",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Early stopping prevents overfitting by:",
+    "options": [
+      "Halting training when validation error increases",
+      "Training indefinitely",
+      "Increasing model complexity",
+      "Adding noise to the inputs"
+    ],
+    "answerIndex": 0,
+    "solution": "Early stopping stops training once validation performance starts to degrade."
+  },
+  {
+    "id": "cs2-143",
+    "subject": "cs2",
+    "n": 128,
+    "title": "Applications of Unsupervised Learning",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Unsupervised learning can be used for:",
+    "options": [
+      "Detecting clusters and anomalies",
+      "Predicting labels directly",
+      "Training neural networks for regression",
+      "Hyperparameter tuning"
+    ],
+    "answerIndex": 0,
+    "solution": "Without labels, unsupervised learning finds patterns or groups in data."
+  },
+  {
+    "id": "cs2-144",
+    "subject": "cs2",
+    "n": 129,
+    "title": "PCA Output: Orthogonal Components",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "PCA transforms data into:",
+    "options": [
+      "Orthogonal components that capture maximal variance",
+      "Correlated variables with higher dimensionality",
+      "Labels for classification",
+      "Random features"
+    ],
+    "answerIndex": 0,
+    "solution": "PCA reduces dimensionality by projecting onto uncorrelated principal components."
+  },
+  {
+    "id": "cs2-145",
+    "subject": "cs2",
+    "n": 130,
+    "title": "K-Means Objective Function",
+    "difficulty": "medium",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "K-means clustering objective is to:",
+    "options": [
+      "Minimise sum of squared distances within clusters",
+      "Maximise inter-cluster similarity",
+      "Predict regression targets",
+      "Compute hazard rates"
+    ],
+    "answerIndex": 0,
+    "solution": "K-means partitions data to minimise variance within clusters."
+  },
+  {
+    "id": "cs2-146",
+    "subject": "cs2",
+    "n": 131,
+    "title": "The Curse of Dimensionality",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "The curse of dimensionality refers to:",
+    "options": [
+      "Problems caused by high-dimensional feature spaces",
+      "Overfitting in simple models",
+      "Low variance in predictions",
+      "Absence of noise in data"
+    ],
+    "answerIndex": 0,
+    "solution": "High dimensions make distance measures less meaningful and increase model complexity."
+  },
+  {
+    "id": "cs2-147",
+    "subject": "cs2",
+    "n": 132,
+    "title": "Regularisation as a Loss Penalty",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Regularisation reduces overfitting by:",
+    "options": [
+      "Adding a penalty to the loss function",
+      "Increasing learning rate",
+      "Reducing training data",
+      "Ignoring validation error"
+    ],
+    "answerIndex": 0,
+    "solution": "Penalty discourages extreme parameter values, simplifying the model."
+  },
+  {
+    "id": "cs2-148",
+    "subject": "cs2",
+    "n": 133,
+    "title": "Hyperparameter Tuning by Cross-Validation",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Cross-validation can be used to:",
+    "options": [
+      "Tune hyperparameters to improve generalisation",
+      "Compute exact test error without data",
+      "Replace training entirely",
+      "Remove bias automatically"
+    ],
+    "answerIndex": 0,
+    "solution": "Cross-validation helps choose hyperparameters that generalise well."
+  },
+  {
+    "id": "cs2-149",
+    "subject": "cs2",
+    "n": 134,
+    "title": "Purpose of a Confusion Matrix",
+    "difficulty": "easy",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "Confusion matrix is used to:",
+    "options": [
+      "Visualise classification performance",
+      "Reduce dimensionality",
+      "Compute PCA components",
+      "Regularise models"
+    ],
+    "answerIndex": 0,
+    "solution": "Shows TP, FP, TN, FN to evaluate classifiers."
+  },
+  {
+    "id": "cs2-150",
+    "subject": "cs2",
+    "n": 135,
+    "title": "F1 Score vs Accuracy for Imbalanced Classes",
+    "difficulty": "medium",
+    "topics": [
+      "Machine learning"
+    ],
+    "exams": [
+      "ifoa-cs2",
+      "assa-a212"
+    ],
+    "type": "mcq",
+    "prompt": "F1 score is preferred over accuracy when:",
+    "options": [
+      "Classes are imbalanced",
+      "Data is noise-free",
+      "All classes have equal frequency",
+      "Hyperparameters are unknown"
+    ],
+    "answerIndex": 0,
+    "solution": "F1 balances precision and recall, important when positives are rare."
+  }
+]

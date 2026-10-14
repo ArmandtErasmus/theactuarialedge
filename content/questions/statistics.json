@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "statistics-1",
+    "subject": "statistics",
+    "n": 1,
+    "title": "Fair Gambler's Ruin: Probability of Ruin",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "In a Gambler's Ruin problem, a player starts with £5, plays against an opponent with £10, and wins £1 with probability 0.5 each round. What is the probability the player goes broke? (round to 4 decimals)",
+    "answer": "0.6667",
+    "solution": "For fair game p=q=0.5, probability of ruin = 1 - (initial stake / total money) = 1 - 5/(5+10) = 1 - 5/15 = 0.6667"
+  },
+  {
+    "id": "statistics-2",
+    "subject": "statistics",
+    "n": 2,
+    "title": "Sum of Seven with Two Dice",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A die is rolled twice. What is the probability of getting a sum of 7? (round to 4 decimals)",
+    "answer": "0.1667",
+    "solution": "Number of favorable outcomes: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)=6; total outcomes=6*6=36 → probability=6/36=0.1667"
+  },
+  {
+    "id": "statistics-3",
+    "subject": "statistics",
+    "n": 3,
+    "title": "Exactly Two Heads in Three Flips",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "In a coin triplet experiment, you flip 3 coins. Probability of exactly 2 heads? (round to 4 decimals)",
+    "answer": "0.3750",
+    "solution": "Number of ways to get 2 heads = C(3,2)=3; total outcomes=2^3=8; probability=3/8=0.3750"
+  },
+  {
+    "id": "statistics-4",
+    "subject": "statistics",
+    "n": 4,
+    "title": "Coloured Balls: Single Draw",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A bag contains 3 red, 2 blue, 1 green ball. One ball is drawn at random. Which statement is true?",
+    "options": [
+      "Probability of red = 0.5",
+      "Probability of green = 0.5",
+      "Probability of blue = 0.6",
+      "All probabilities equal"
+    ],
+    "answerIndex": 0,
+    "solution": "Total balls=3+2+1=6; P(red)=3/6=0.5, P(blue)=2/6=0.3333, P(green)=1/6=0.1667"
+  },
+  {
+    "id": "statistics-5",
+    "subject": "statistics",
+    "n": 5,
+    "title": "Expected Position of a Symmetric Walk",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A drunk man starts at position 0. Each step he moves ±1 with probability 0.5. What is the expected position after 10 steps? (round to 2 decimals)",
+    "answer": "0.00",
+    "solution": "Drunk man performs symmetric random walk. Expected value E[X]=0 (steps cancel out on average)."
+  },
+  {
+    "id": "statistics-6",
+    "subject": "statistics",
+    "n": 6,
+    "title": "Expected Rolls Until a Six",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You roll a die repeatedly until you get a 6. Expected number of rolls? (round to 2 decimals)",
+    "answer": "6.00",
+    "solution": "Expected rolls for first success = 1/p = 1/(1/6) = 6"
+  },
+  {
+    "id": "statistics-7",
+    "subject": "statistics",
+    "n": 7,
+    "title": "Expected Position in a Ticket Line",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "There are $n$ tickets in a line, and your ticket is equally likely to be in any of positions $1, 2, \\dots, n$. Which statement is true?",
+    "options": [
+      "Expected position $= \\dfrac{n+1}{2}$",
+      "Expected position $= 1$",
+      "Expected position $= n$",
+      "Expected position $= 0$"
+    ],
+    "answerIndex": 0,
+    "solution": "The position is uniform on $\\{1,\\dots,n\\}$, so\n$$E[\\text{position}] = \\frac{1 + 2 + \\dots + n}{n} = \\frac{n(n+1)/2}{n} = \\frac{n+1}{2}.$$"
+  },
+  {
+    "id": "statistics-8",
+    "subject": "statistics",
+    "n": 8,
+    "title": "Two Heads Before the First Tail",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A fair coin is flipped repeatedly. What is the probability that two heads occur before the first tail, i.e. the first two flips are both heads? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "Two heads come before the first tail exactly when flips 1 and 2 are both heads: $P = \\tfrac12 \\times \\tfrac12 = 0.2500$."
+  },
+  {
+    "id": "statistics-9",
+    "subject": "statistics",
+    "n": 9,
+    "title": "Expected Points from One Die Roll",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A die game awards $i$ points when face $i$ shows, and you roll exactly once. What is the expected number of points? (round to 2 decimals)",
+    "answer": "3.50",
+    "solution": "$$E[X] = \\sum_{i=1}^{6} i \\cdot \\tfrac16 = \\frac{21}{6} = 3.50.$$"
+  },
+  {
+    "id": "statistics-10",
+    "subject": "statistics",
+    "n": 10,
+    "title": "Best-of-Seven Series, Equal Teams",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "World series problem: best-of-7, two teams equal skill. Probability team A wins series? (round to 4 decimals)",
+    "answer": "0.5000",
+    "solution": "Teams equal, symmetric series. Probability A wins = 0.5 by symmetry."
+  },
+  {
+    "id": "statistics-11",
+    "subject": "statistics",
+    "n": 11,
+    "title": "Reroll Two Dice Until the Sum Is at Least 7",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two fair dice are rolled. If the sum is less than 7, both dice are rerolled, and this repeats until the sum is at least 7. What is the expected value of the final sum? (round to 2 decimals)",
+    "answer": "8.67",
+    "solution": "Rerolling restarts the game, so $E = P(S\\ge 7)\\,E[S\\mid S\\ge 7] + P(S<7)\\,E$, which gives $E = E[S \\mid S \\ge 7]$.\nThere are 21 outcomes (of 36) with $S \\ge 7$, and their sums add to 182.\n$$E = \\frac{182}{21} = \\frac{26}{3} \\approx 8.67.$$"
+  },
+  {
+    "id": "statistics-12",
+    "subject": "statistics",
+    "n": 12,
+    "title": "Drawing a Red Card",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dynamic card game: pick random card from standard deck. Probability it is red? (round to 4 decimals)",
+    "answer": "0.5000",
+    "solution": "26 red cards/52 total = 0.5"
+  },
+  {
+    "id": "statistics-13",
+    "subject": "statistics",
+    "n": 13,
+    "title": "Mean of Brownian Motion",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Brownian motion: W(t) with W(0)=0, E[W(3)] = ? (round to 2 decimals)",
+    "answer": "0.00",
+    "solution": "Brownian motion has E[W(t)]=0 for all t"
+  },
+  {
+    "id": "statistics-14",
+    "subject": "statistics",
+    "n": 14,
+    "title": "Hitting Time Is a Stopping Time",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Let $\\tau$ be the first time a standard Brownian motion $W(t)$ hits level 2. With respect to the natural filtration of $W$, which statement is true?",
+    "options": [
+      "It is a stopping time",
+      "It is not a stopping time",
+      "It depends on filtration",
+      "Always deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Hitting times of Brownian motion are classic examples of stopping times."
+  },
+  {
+    "id": "statistics-15",
+    "subject": "statistics",
+    "n": 15,
+    "title": "Variance of a Brownian Exit Time",
+    "difficulty": "hard",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $\\tau = \\inf\\{t \\ge 0 : |W(t)| = 1\\}$ be the first exit time of a standard Brownian motion from $(-1, 1)$. What is $\\operatorname{Var}(\\tau)$? (round to 2 decimals)",
+    "answer": "0.67",
+    "solution": "Use two martingales and optional stopping ($\\tau$ has finite moments of all orders, and $W(\\tau)^2 = 1$).\n1. $W(t)^2 - t$ is a martingale, so $E[\\tau] = E[W(\\tau)^2] = 1$.\n2. $W(t)^4 - 6tW(t)^2 + 3t^2$ is a martingale, so $E[W(\\tau)^4] - 6E[\\tau W(\\tau)^2] + 3E[\\tau^2] = 0$, i.e. $1 - 6 + 3E[\\tau^2] = 0$, giving $E[\\tau^2] = \\tfrac53$.\n$$\\operatorname{Var}(\\tau) = \\tfrac53 - 1^2 = \\tfrac23 \\approx 0.67.$$"
+  },
+  {
+    "id": "statistics-16",
+    "subject": "statistics",
+    "n": 16,
+    "title": "Ito's Lemma: W(t) Squared",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $X(t) = W(t)^2$, what is $dX(t)$?",
+    "options": [
+      "$dX = 2W(t)\\,dW(t) + dt$",
+      "$dX = 2W(t)\\,dW(t)$",
+      "$dX = (dW(t))^2$",
+      "$dX = dt$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(w) = w^2$: $f'(w) = 2w$ and $f''(w) = 2$. Ito's lemma gives\n$$dX = f'(W)\\,dW + \\tfrac12 f''(W)\\,dt = 2W(t)\\,dW(t) + dt,$$\nwhere the extra $dt$ comes from $(dW)^2 = dt$."
+  },
+  {
+    "id": "statistics-17",
+    "subject": "statistics",
+    "n": 17,
+    "title": "Random Walk Back at the Origin (2 Steps)",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A drunk man performs symmetric random walk, probability at origin after 2 steps? (round to 4 decimals)",
+    "answer": "0.5000",
+    "solution": "Two steps, must have +1,-1 or -1,+1: 2 favorable/4 total=0.5"
+  },
+  {
+    "id": "statistics-18",
+    "subject": "statistics",
+    "n": 18,
+    "title": "Two Reds Without Replacement",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Colour balls: bag with 3 red, 2 blue, 1 green. Draw 2 balls without replacement. Probability both red? (round to 4 decimals)",
+    "answer": "0.3000",
+    "solution": "P(RR)=C(3,2)/C(6,2)=3/15=0.3"
+  },
+  {
+    "id": "statistics-19",
+    "subject": "statistics",
+    "n": 19,
+    "title": "Definition of a Martingale",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Martingale property: Which of the following is true?",
+    "options": [
+      "E[X_{t+1} | F_t] = X_t",
+      "E[X_{t+1} | F_t] > X_t",
+      "E[X_{t+1}] = 0",
+      "Var(X_{t+1})=0"
+    ],
+    "answerIndex": 0,
+    "solution": "Martingale: conditional expectation of next step given history equals current value."
+  },
+  {
+    "id": "statistics-20",
+    "subject": "statistics",
+    "n": 20,
+    "title": "First Six on the Third Roll",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice game: Roll 1 die repeatedly. Probability first 6 occurs on third roll? (round to 4 decimals)",
+    "answer": "0.1157",
+    "solution": "Geometric distribution with $p = \\tfrac16$:\n$$P(\\text{first 6 on roll 3}) = \\left(\\tfrac56\\right)^2 \\tfrac16 = \\frac{25}{216} \\approx 0.1157.$$"
+  },
+  {
+    "id": "statistics-21",
+    "subject": "statistics",
+    "n": 21,
+    "title": "Markov Chain: Two-Step Transition",
+    "difficulty": "easy",
+    "topics": [
+      "Markov chains",
+      "Linear algebra"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A Markov chain has states {0,1,2} with transition matrix P=[[0.5,0.5,0],[0,0.5,0.5],[0,0,1]]. Starting at 0, probability of being in state 2 after 2 steps? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "P^2[0,2] = Σ P[0,k]*P[k,2] = P[0,0]*P[0,2]+P[0,1]*P[1,2]+P[0,2]*P[2,2]=0.5*0+0.5*0.5+0*1=0.25"
+  },
+  {
+    "id": "statistics-22",
+    "subject": "statistics",
+    "n": 22,
+    "title": "Sequence H,T,H in Three Flips",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A fair coin is flipped three times. What is the probability that the flips come out H, T, H in that order? (round to 4 decimals)",
+    "answer": "0.1250",
+    "solution": "The flips are independent: $P(HTH) = \\left(\\tfrac12\\right)^3 = 0.1250$."
+  },
+  {
+    "id": "statistics-23",
+    "subject": "statistics",
+    "n": 23,
+    "title": "Random Walk Back at the Origin (4 Steps)",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Drunk man at origin, 4 steps, probability ends at 0? (round to 4 decimals)",
+    "answer": "0.3750",
+    "solution": "Number of +1/-1 sequences summing to 0: C(4,2)=6 favorable/16 total=0.3750"
+  },
+  {
+    "id": "statistics-24",
+    "subject": "statistics",
+    "n": 24,
+    "title": "One Reroll Below Four",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Roll a fair die. If the result is less than 4, you must reroll once and keep the second result, whatever it is. Otherwise you keep the first roll. Your reward is the face value you keep. What is the expected reward? (round to 2 decimals)",
+    "answer": "4.25",
+    "solution": "With probability $\\tfrac12$ the first roll is 4, 5 or 6 and is kept, with average $5$. With probability $\\tfrac12$ you reroll, and the second roll has mean $3.5$.\n$$E = \\tfrac12 \\times 5 + \\tfrac12 \\times 3.5 = 4.25.$$"
+  },
+  {
+    "id": "statistics-25",
+    "subject": "statistics",
+    "n": 25,
+    "title": "Exit Time from (-2, 2)",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Stopping time: first time 1D Brownian motion hits ±2. Which is true?",
+    "options": [
+      "It is a stopping time",
+      "It is deterministic",
+      "Cannot define expected value",
+      "Not measurable"
+    ],
+    "answerIndex": 0,
+    "solution": "Hitting times for Brownian motion are classic stopping times; measurable w.r.t filtration."
+  },
+  {
+    "id": "statistics-26",
+    "subject": "statistics",
+    "n": 26,
+    "title": "Mean First Passage Time of Brownian Motion",
+    "difficulty": "medium",
+    "topics": [
+      "Brownian motion",
+      "Martingales & stopping times",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Let $T_a = \\inf\\{t \\ge 0 : W(t) = a\\}$ be the first passage time of a standard Brownian motion to level $a = 3$. Which statement about $E[T_a]$ is correct?",
+    "options": [
+      "$E[T_a] = a^2 = 9$",
+      "$E[T_a] = a = 3$",
+      "$E[T_a] = \\infty$, even though $T_a < \\infty$ almost surely",
+      "$E[T_a] = 0$"
+    ],
+    "answerIndex": 2,
+    "answer": "∞",
+    "solution": "By the reflection principle, $P(T_a \\le t) = 2P(W(t) \\ge a)$, which tends to 1, so $T_a < \\infty$ almost surely.\nBut $P(T_a > t) = P(|W(t)| < a) \\approx a\\sqrt{2/(\\pi t)}$ for large $t$, so $E[T_a] = \\int_0^\\infty P(T_a > t)\\,dt = \\infty$.\nAnother way to see it: if $E[T_a]$ were finite, Wald's identity would give $E[W(T_a)] = 0$, but $W(T_a) = a = 3$. The variance is infinite as well."
+  },
+  {
+    "id": "statistics-27",
+    "subject": "statistics",
+    "n": 27,
+    "title": "Product of Independent Brownian Motions",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Multidimensional Brownian motion: (W1,W2) independent standard. E[W1(t)W2(t)]? (round to 2 decimals)",
+    "answer": "0.00",
+    "solution": "Independent BMs: E[W1*W2]=E[W1]*E[W2]=0*0=0"
+  },
+  {
+    "id": "statistics-28",
+    "subject": "statistics",
+    "n": 28,
+    "title": "Ito's Lemma: Exponential of W(t)",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $X(t) = e^{W(t)}$, what is $dX(t)$?",
+    "options": [
+      "$dX = X(t)\\,dW(t) + \\tfrac12 X(t)\\,dt$",
+      "$dX = X(t)\\,dW(t)$",
+      "$dX = dt$",
+      "$dX = (dW(t))^2$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(w) = e^w$, $f' = f'' = e^w$, so\n$$dX = e^{W}\\,dW + \\tfrac12 e^{W}\\,dt = X(t)\\,dW(t) + \\tfrac12 X(t)\\,dt.$$"
+  },
+  {
+    "id": "statistics-29",
+    "subject": "statistics",
+    "n": 29,
+    "title": "First Six on the Fourth Roll",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice game: roll until 6 appears. Probability first 6 on 4th roll? (round to 4 decimals)",
+    "answer": "0.0965",
+    "solution": "Geometric distribution with $p = \\tfrac16$:\n$$P(\\text{first 6 on roll 4}) = \\left(\\tfrac56\\right)^3 \\tfrac16 = \\frac{125}{1296} \\approx 0.0965.$$"
+  },
+  {
+    "id": "statistics-30",
+    "subject": "statistics",
+    "n": 30,
+    "title": "Expected Gain from Three Fair Bets",
+    "difficulty": "easy",
+    "topics": [
+      "Expectation & variance",
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dynamic programming: coin flip game, win £1 for H, lose £1 for T, max 3 flips. Expected total gain? (round to 2 decimals)",
+    "answer": "0.00",
+    "solution": "Symmetric game, expected value per flip=0 → total expected gain = 3*0=0"
+  },
+  {
+    "id": "statistics-31",
+    "subject": "statistics",
+    "n": 31,
+    "title": "Best-of-Five Series, Equal Teams",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "World series, best-of-5, teams equal skill. Probability team A wins series? (round to 4 decimals)",
+    "answer": "0.5000",
+    "solution": "Equal skill → symmetric → probability = 0.5"
+  },
+  {
+    "id": "statistics-32",
+    "subject": "statistics",
+    "n": 32,
+    "title": "Reroll Until Even",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Roll a fair die. If the result is odd, reroll, and repeat until an even number appears. What is the expected value of the kept roll? (round to 2 decimals)",
+    "answer": "4.00",
+    "solution": "The kept roll is uniform on $\\{2, 4, 6\\}$, so $E = \\dfrac{2 + 4 + 6}{3} = 4.00$."
+  },
+  {
+    "id": "statistics-33",
+    "subject": "statistics",
+    "n": 33,
+    "title": "Martingale Property II",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Martingale property: Which statement is true?",
+    "options": [
+      "E[X_{t+1} | F_t] = X_t",
+      "E[X_{t+1}] > X_t",
+      "Var(X_{t+1})=0",
+      "E[X_{t+1}|F_t]=0"
+    ],
+    "answerIndex": 0,
+    "solution": "Martingale: conditional expectation given history equals current value."
+  },
+  {
+    "id": "statistics-34",
+    "subject": "statistics",
+    "n": 34,
+    "title": "Random Walk at +2 After 4 Steps",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Drunk man random walk, probability at position +2 after 4 steps? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "To be at $+2$ after 4 steps you need 3 up-steps and 1 down-step: $\\binom{4}{3} = 4$ of the $2^4 = 16$ sequences.\n$$P = \\frac{4}{16} = 0.2500.$$"
+  },
+  {
+    "id": "statistics-35",
+    "subject": "statistics",
+    "n": 35,
+    "title": "Two Blues With Replacement",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Colour balls: 2 red, 3 blue, 1 green. Draw 2 balls with replacement. Probability both blue? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "With replacement: P(blue)*P(blue)=(3/6)*(3/6)=0.25"
+  },
+  {
+    "id": "statistics-36",
+    "subject": "statistics",
+    "n": 36,
+    "title": "Sequence T,H,T in Three Flips",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A fair coin is flipped three times. What is the probability that the flips come out T, H, T in that order? (round to 4 decimals)",
+    "answer": "0.1250",
+    "solution": "The flips are independent: $P(THT) = \\left(\\tfrac12\\right)^3 = 0.1250$."
+  },
+  {
+    "id": "statistics-37",
+    "subject": "statistics",
+    "n": 37,
+    "title": "Predictability of a Brownian Hitting Time",
+    "difficulty": "hard",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Let $\\tau$ be the first time a standard Brownian motion $W(t)$, started at 0, hits $\\pm 3$ (i.e. $|W(t)| = 3$). Is $\\tau$ a predictable stopping time?",
+    "options": [
+      "Yes: it is a stopping time, and because paths are continuous it is announced by the hitting times of $\\pm(3 - 1/n)$, so it is predictable",
+      "It is a stopping time but not a predictable one",
+      "It is not a stopping time",
+      "It is deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\{\\tau \\le t\\}$ is determined by the path up to time $t$, so $\\tau$ is a stopping time.\nLet $\\tau_n$ be the first time $|W| = 3 - 1/n$. By continuity of paths, $\\tau_n < \\tau$ and $\\tau_n \\uparrow \\tau$. So $\\tau$ is announced by the sequence $(\\tau_n)$, which is the definition of a predictable stopping time.\nHitting times of closed sets by continuous processes are predictable. Non-predictable ('totally inaccessible') times arise from jumps, e.g. the first jump of a Poisson process. Predictable does not mean known in advance: $\\tau$ is still random."
+  },
+  {
+    "id": "statistics-38",
+    "subject": "statistics",
+    "n": 38,
+    "title": "Ito Product Rule: t W(t)",
+    "difficulty": "easy",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $Y(t) = t\\,W(t)$, what is $dY(t)$?",
+    "options": [
+      "$dY = W(t)\\,dt + t\\,dW(t)$",
+      "$dY = t\\,dW(t)$",
+      "$dY = dt$",
+      "$dY = dW(t)$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(t, w) = tw$: $f_t = w$, $f_w = t$, $f_{ww} = 0$. So\n$$dY = W(t)\\,dt + t\\,dW(t).$$\nThere is no second-order term because $f_{ww} = 0$ (and $dt\\,dW = 0$)."
+  },
+  {
+    "id": "statistics-39",
+    "subject": "statistics",
+    "n": 39,
+    "title": "First Five on the Second Roll",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice game: probability first 5 appears on 2nd roll? (round to 4 decimals)",
+    "answer": "0.1389",
+    "solution": "P(first 5 on 2nd)=(5/6)^1*(1/6)=5/36≈0.1389"
+  },
+  {
+    "id": "statistics-40",
+    "subject": "statistics",
+    "n": 40,
+    "title": "Draw Cards Until at Least Seven",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A card is drawn uniformly at random from cards numbered 1 to 10 (and replaced). If it shows 7 or more, you stop and win its value; otherwise you draw again, repeating until you stop. What is the expected winnings? (round to 2 decimals)",
+    "answer": "8.50",
+    "solution": "Each redraw restarts the game: $E = 0.4 \\times E[X \\mid X \\ge 7] + 0.6\\,E$, so $E = E[X \\mid X \\ge 7]$.\n$$E = \\frac{7 + 8 + 9 + 10}{4} = 8.50.$$"
+  },
+  {
+    "id": "statistics-41",
+    "subject": "statistics",
+    "n": 41,
+    "title": "Markov Chain: Three-Step Transition",
+    "difficulty": "medium",
+    "topics": [
+      "Markov chains",
+      "Linear algebra"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Markov chain with states {0,1,2}, P=[[0.7,0.3,0],[0,0.6,0.4],[0,0,1]]. Starting at 0, probability of being in state 1 after 3 steps? (round to 4 decimals)",
+    "answer": "0.3810",
+    "solution": "Paths from 0 that are in state 1 at step 3 (0 can only stay or move to 1, and 1 can only stay or move to 2):\n- $0\\to0\\to0\\to1$: $0.7^2 \\times 0.3 = 0.147$\n- $0\\to0\\to1\\to1$: $0.7 \\times 0.3 \\times 0.6 = 0.126$\n- $0\\to1\\to1\\to1$: $0.3 \\times 0.6^2 = 0.108$\n$$P^3_{01} = 0.147 + 0.126 + 0.108 = 0.3810.$$"
+  },
+  {
+    "id": "statistics-42",
+    "subject": "statistics",
+    "n": 42,
+    "title": "Fair Gambler's Ruin: Probability of Winning",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Gambler's ruin: player has £3, opponent £7, probability player wins all? (p=0.5, fair game) (round to 4 decimals)",
+    "answer": "0.3000",
+    "solution": "For fair game, probability of reaching £10 (player + opponent) starting with £3: p_win=initial/(total)=3/10=0.3"
+  },
+  {
+    "id": "statistics-43",
+    "subject": "statistics",
+    "n": 43,
+    "title": "Sequence H,H,T in Three Flips",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A fair coin is flipped three times. What is the probability that the flips come out H, H, T in that order? (round to 4 decimals)",
+    "answer": "0.1250",
+    "solution": "The flips are independent: $P(HHT) = \\left(\\tfrac12\\right)^3 = 0.1250$."
+  },
+  {
+    "id": "statistics-44",
+    "subject": "statistics",
+    "n": 44,
+    "title": "Random Walk at +2 After 6 Steps",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Drunk man starts at 0, moves ±1 with p=0.5, 6 steps. Probability ends at +2? (round to 4 decimals)",
+    "answer": "0.2344",
+    "solution": "To be at $+2$ after 6 steps you need $(6+2)/2 = 4$ up-steps and 2 down-steps:\n$$P = \\binom{6}{4}\\Big/ 2^6 = \\frac{15}{64} \\approx 0.2344.$$"
+  },
+  {
+    "id": "statistics-45",
+    "subject": "statistics",
+    "n": 45,
+    "title": "Roll Until at Least Five",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Roll a fair die repeatedly until the result is at least 5; your reward is that final roll. What is the expected reward? (round to 2 decimals)",
+    "answer": "5.50",
+    "solution": "Rolls of 1 to 4 just restart the game, so $E = \\tfrac46 E + \\tfrac16(5 + 6)$, giving $\\tfrac13 E = \\tfrac{11}{6}$ and $E = 5.50$. Equivalently, the final roll is uniform on $\\{5, 6\\}$."
+  },
+  {
+    "id": "statistics-46",
+    "subject": "statistics",
+    "n": 46,
+    "title": "Expected Brownian Exit Time",
+    "difficulty": "medium",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $\\tau$ be the first time a standard Brownian motion started at 0 hits $\\pm 1$. What is $E[\\tau]$? (round to 2 decimals)",
+    "answer": "1.00",
+    "solution": "$W(t)^2 - t$ is a martingale. By optional stopping, $E[W(\\tau)^2 - \\tau] = 0$. Since $W(\\tau)^2 = 1$,\n$$E[\\tau] = 1.00.$$\n(In general, the exit time from $(-a, a)$ has $E[\\tau] = a^2$.)"
+  },
+  {
+    "id": "statistics-47",
+    "subject": "statistics",
+    "n": 47,
+    "title": "Variance of a Sum of Independent BMs",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "$(W_1, W_2)$ are independent standard Brownian motions. What is $\\operatorname{Var}(W_1(1) + W_2(1))$? (round to 2 decimals)",
+    "answer": "2.00",
+    "solution": "$\\operatorname{Var}(W_1(t) + W_2(t)) = t + t + 2\\operatorname{Cov} = 2t$, since the covariance is 0. At $t = 1$ this is $2.00$."
+  },
+  {
+    "id": "statistics-48",
+    "subject": "statistics",
+    "n": 48,
+    "title": "Ito's Lemma: sin(W(t))",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $X(t) = \\sin(W(t))$, what is $dX(t)$?",
+    "options": [
+      "$dX = \\cos(W(t))\\,dW(t) - \\tfrac12\\sin(W(t))\\,dt$",
+      "$dX = \\cos(W(t))\\,dW(t)$",
+      "$dX = dt$",
+      "$dX = (dW(t))^2$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f = \\sin$: $f' = \\cos$ and $f'' = -\\sin$, so\n$$dX = \\cos(W)\\,dW - \\tfrac12 \\sin(W)\\,dt.$$"
+  },
+  {
+    "id": "statistics-49",
+    "subject": "statistics",
+    "n": 49,
+    "title": "Sum of Nine with Two Dice",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice game: probability sum of two dice = 9? (round to 4 decimals)",
+    "answer": "0.1111",
+    "solution": "Favorable outcomes: (3,6),(4,5),(5,4),(6,3)=4; total=36 → 4/36=0.1111"
+  },
+  {
+    "id": "statistics-50",
+    "subject": "statistics",
+    "n": 50,
+    "title": "Absorption with a Single Absorbing State",
+    "difficulty": "easy",
+    "topics": [
+      "Markov chains",
+      "Linear algebra"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A Markov chain on states $\\{0, 1, 2\\}$ has transition matrix $P = \\begin{pmatrix}0.5 & 0.3 & 0.2\\\\ 0 & 0.6 & 0.4\\\\ 0 & 0 & 1\\end{pmatrix}$ and starts in state 0. What is the probability that it is eventually absorbed in state 2? (round to 4 decimals)",
+    "answer": "1.0000",
+    "solution": "Let $h_i$ be the probability of absorption in state 2 from state $i$, with $h_2 = 1$.\n$h_1 = 0.6h_1 + 0.4$, so $h_1 = 1$.\n$h_0 = 0.5h_0 + 0.3h_1 + 0.2$, so $0.5h_0 = 0.5$ and $h_0 = 1.0000$.\nThis is expected: states 0 and 1 are transient and 2 is the only absorbing state, so absorption there is certain."
+  },
+  {
+    "id": "statistics-51",
+    "subject": "statistics",
+    "n": 51,
+    "title": "Reroll Two Dice Until the Sum Is at Least 5",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two fair dice are rolled. If the sum is less than 5, both are rerolled, and this repeats until the sum is at least 5; you receive the final sum. What is the expected value? (round to 2 decimals)",
+    "answer": "7.73",
+    "solution": "Rerolling restarts the game, so $E = P(S\\ge 5)\\,E[S\\mid S\\ge 5] + P(S<5)\\,E$, which gives $E = E[S \\mid S \\ge 5]$.\nThere are 30 outcomes (of 36) with $S \\ge 5$, and their sums add to 232.\n$$E = \\frac{232}{30} \\approx 7.73.$$"
+  },
+  {
+    "id": "statistics-52",
+    "subject": "statistics",
+    "n": 52,
+    "title": "Martingale: W(t) Squared Minus t",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion",
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Martingale property: Which is true for X_t = W_t^2 - t?",
+    "options": [
+      "X_t is a martingale",
+      "Not a martingale",
+      "Always increasing",
+      "Deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "X_t=W_t^2 - t is a classic martingale derived from Ito's lemma."
+  },
+  {
+    "id": "statistics-53",
+    "subject": "statistics",
+    "n": 53,
+    "title": "Sequence H,T,H on Flips 1-3",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Coin sequence: probability first H,T,H appears on flips 1–3? (round to 4 decimals)",
+    "answer": "0.1250",
+    "solution": "Independent flips: P(H,T,H)=0.5*0.5*0.5=0.125"
+  },
+  {
+    "id": "statistics-54",
+    "subject": "statistics",
+    "n": 54,
+    "title": "Second Moment of Brownian Motion",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "For a standard Brownian motion, what is $E[W(1)^2]$? (round to 2 decimals)",
+    "answer": "1.00",
+    "solution": "$E[W(t)^2] = \\operatorname{Var}(W(t)) + (E[W(t)])^2 = t + 0 = t$. At $t = 1$ this is $1.00$."
+  },
+  {
+    "id": "statistics-55",
+    "subject": "statistics",
+    "n": 55,
+    "title": "Stopping Time Property of an Exit Time",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Let $\\tau$ be the first time a standard Brownian motion started at 0 hits $\\pm 2$. Which statement is true?",
+    "options": [
+      "$\\tau$ is a stopping time: whether $\\tau \\le t$ is determined by the path up to time $t$",
+      "$\\tau$ is deterministic and equal to $E[\\tau] = 4$",
+      "$\\tau$ is not a stopping time, because it can only be found from the whole path",
+      "$\\tau$ cannot be defined because Brownian paths are nowhere differentiable"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\{\\tau \\le t\\} = \\{\\max_{s \\le t} |W(s)| \\ge 2\\}$ depends only on the path up to time $t$, so $\\tau$ is a stopping time. It is random, with $E[\\tau] = 2^2 = 4$."
+  },
+  {
+    "id": "statistics-56",
+    "subject": "statistics",
+    "n": 56,
+    "title": "Single Reroll on a Low Roll",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Roll a fair die. If it shows 1 to 3, you reroll once and must keep the second roll; if it shows 4 to 6, you keep it. What is the expected value of the kept roll? (round to 2 decimals)",
+    "answer": "4.25",
+    "solution": "$$E = P(4\\text{-}6)\\,E[X \\mid 4\\text{-}6] + P(1\\text{-}3)\\,E[\\text{reroll}] = \\tfrac12 \\times 5 + \\tfrac12 \\times 3.5 = 4.25.$$"
+  },
+  {
+    "id": "statistics-57",
+    "subject": "statistics",
+    "n": 57,
+    "title": "Variance of a Sum of Correlated BMs",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "$W_1$ and $W_2$ are standard Brownian motions with correlation $\\rho = 0.5$. What is $\\operatorname{Var}(W_1(1) + W_2(1))$? (round to 2 decimals)",
+    "answer": "3.00",
+    "solution": "$\\operatorname{Var}(W_1(t) + W_2(t)) = t + t + 2\\rho t$. At $t = 1$: $1 + 1 + 2 \\times 0.5 = 3.00$."
+  },
+  {
+    "id": "statistics-58",
+    "subject": "statistics",
+    "n": 58,
+    "title": "Ito's Lemma: t exp(W(t))",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $Y(t) = t\\,e^{W(t)}$, what is $dY(t)$?",
+    "options": [
+      "$dY = e^{W(t)}\\,dt + t e^{W(t)}\\,dW(t) + \\tfrac12 t e^{W(t)}\\,dt$",
+      "$dY = t e^{W(t)}\\,dW(t)$",
+      "$dY = dt$",
+      "$dY = (dW(t))^2$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(t, w) = t e^w$: $f_t = e^w$, $f_w = t e^w$, $f_{ww} = t e^w$. So\n$$dY = e^{W}\\,dt + t e^{W}\\,dW + \\tfrac12 t e^{W}\\,dt.$$"
+  },
+  {
+    "id": "statistics-59",
+    "subject": "statistics",
+    "n": 59,
+    "title": "First Four on the Third Roll",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice game: first 4 appears on 3rd roll? Probability? (round to 4 decimals)",
+    "answer": "0.1157",
+    "solution": "Geometric distribution with $p = \\tfrac16$:\n$$P(\\text{first 4 on roll 3}) = \\left(\\tfrac56\\right)^2 \\tfrac16 = \\frac{25}{216} \\approx 0.1157.$$"
+  },
+  {
+    "id": "statistics-60",
+    "subject": "statistics",
+    "n": 60,
+    "title": "Draw Cards Until at Least Six",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A card is drawn uniformly at random from cards numbered 1 to 10 (and replaced). If it shows 6 or more, you stop and win its value; otherwise you draw again, repeating until you stop. What is the expected winnings? (round to 2 decimals)",
+    "answer": "8.00",
+    "solution": "Each redraw restarts the game, so $E = E[X \\mid X \\ge 6]$:\n$$E = \\frac{6 + 7 + 8 + 9 + 10}{5} = 8.00.$$"
+  },
+  {
+    "id": "statistics-61",
+    "subject": "statistics",
+    "n": 61,
+    "title": "Gambler's Ruin: 4 Pounds Against 6",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A gambler starts with £4 and plays against an opponent with £6. Each round, he wins £1 with probability 0.5 or loses £1. What is the probability the gambler goes broke before winning all the money? (round to 4 decimals)",
+    "answer": "0.6000",
+    "solution": "In a fair game, the probability of reaching the total $N = 10$ before 0 from a stake of $x = 4$ is $x/N = 0.4$.\nSo the probability of going broke is $1 - 0.4 = 6/10 = 0.6000$."
+  },
+  {
+    "id": "statistics-62",
+    "subject": "statistics",
+    "n": 62,
+    "title": "Random Walk at +2 After 8 Steps",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1D drunk man starts at 0. He moves ±1 each step with equal probability. After 8 steps, what is the probability he is at position +2? (round to 4 decimals)",
+    "answer": "0.2188",
+    "solution": "Net displacement +2 → number of +1 steps = (8+2)/2=5, -1 steps=3. Number of sequences = C(8,5)=56; total sequences=2^8=256 → probability=56/256=0.2188"
+  },
+  {
+    "id": "statistics-63",
+    "subject": "statistics",
+    "n": 63,
+    "title": "Three Balls of Different Colours",
+    "difficulty": "medium",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A bag contains 4 red, 3 blue, and 2 green balls. You draw 3 balls sequentially without replacement. What is the probability all 3 balls are different colors? (round to 4 decimals)",
+    "answer": "0.2857",
+    "solution": "One ball of each colour: $\\binom41\\binom31\\binom21 = 24$ of the $\\binom93 = 84$ equally likely sets.\n$$P = \\frac{24}{84} = \\frac27 \\approx 0.2857.$$"
+  },
+  {
+    "id": "statistics-64",
+    "subject": "statistics",
+    "n": 64,
+    "title": "Expected Wait for H,T,H",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Markov chains",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A sequence of coin flips continues until H,T,H appears consecutively. What is the expected number of flips needed? (round to 2 decimals)",
+    "answer": "10.00",
+    "solution": "Track the progress towards HTH: $E_0$ is the expected flips from scratch, $E_1$ after a trailing H, and $E_2$ after a trailing HT.\n$E_0 = 1 + \\tfrac12 E_1 + \\tfrac12 E_0$\n$E_1 = 1 + \\tfrac12 E_1 + \\tfrac12 E_2$ (H keeps a trailing H)\n$E_2 = 1 + \\tfrac12 \\cdot 0 + \\tfrac12 E_0$ (HTT leaves no useful suffix)\nThen $E_0 = 2 + E_1$ and $E_1 = 2 + E_2 = 3 + \\tfrac12 E_0$. So $E_0 = 5 + \\tfrac12 E_0$, which gives $E_0 = 10.00$.\n(Check: HTH overlaps itself in 'H', so $E = 2^3 + 2^1 = 10$.)"
+  },
+  {
+    "id": "statistics-65",
+    "subject": "statistics",
+    "n": 65,
+    "title": "Squared Norm of 2D Brownian Motion",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two independent standard Brownian motions W1(t) and W2(t). Define X(t)=W1(t)^2+W2(t)^2. Compute E[X(2)]? (round to 2 decimals)",
+    "answer": "4.00",
+    "solution": "E[W1^2]=Var(W1)=t=2; E[W2^2]=t=2; independent → E[X]=2+2=4.00"
+  },
+  {
+    "id": "statistics-66",
+    "subject": "statistics",
+    "n": 66,
+    "title": "Roll Until Four or More",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A gambler plays a game: roll a die, if 4–6, stop and win that number; if 1–3, roll again. Expected value of the game? (round to 2 decimals)",
+    "answer": "5.00",
+    "solution": "Rolls of 1 to 3 restart the game: $E = \\tfrac12 E + \\tfrac12 \\times 5$, so $E = 5.00$. Equivalently, the final roll is uniform on $\\{4, 5, 6\\}$."
+  },
+  {
+    "id": "statistics-67",
+    "subject": "statistics",
+    "n": 67,
+    "title": "Asymmetric Exit Time Is a Stopping Time",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Let $\\tau$ be the first time a standard Brownian motion started at 0 hits either $+3$ or $-2$. Which statement is correct?",
+    "options": [
+      "$\\tau$ is a stopping time: it is random, but whether $\\tau \\le t$ is known from the path up to time $t$",
+      "$\\tau$ is deterministic",
+      "$\\tau$ cannot be defined",
+      "$\\tau$ is not a stopping time, because it depends on which level is hit first"
+    ],
+    "answerIndex": 0,
+    "solution": "$\\{\\tau \\le t\\}$ is determined by the path on $[0, t]$, so $\\tau$ is a stopping time. It is random (with $E[\\tau] = 3 \\times 2 = 6$)."
+  },
+  {
+    "id": "statistics-68",
+    "subject": "statistics",
+    "n": 68,
+    "title": "Biased Walk: +3 Before -2",
+    "difficulty": "medium",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A player moves along a line: +1 with p=0.6, -1 with p=0.4, starting at 0. Probability he reaches +3 before -2? (round to 4 decimals)",
+    "answer": "0.6398",
+    "solution": "Shift the start to $b = 2$ on $\\{0,\\dots,5\\}$. With $r = q/p = 0.4/0.6$, the probability of hitting the top before 0 is\n$$P = \\frac{1 - r^{2}}{1 - r^{5}} = \\frac{1 - (2/3)^2}{1 - (2/3)^5} = \\frac{5/9}{211/243} = \\frac{135}{211} \\approx 0.6398.$$"
+  },
+  {
+    "id": "statistics-69",
+    "subject": "statistics",
+    "n": 69,
+    "title": "Mean of Brownian Motion with Drift",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $X(t) = \\mu t + \\sigma W(t)$ be a Brownian motion with drift $\\mu = 0.5$ and volatility $\\sigma = 1$. What is $E[X(2)]$? (round to 2 decimals)",
+    "answer": "1.00",
+    "solution": "$E[X(t)] = \\mu t + \\sigma E[W(t)] = \\mu t = 0.5 \\times 2 = 1.00.$"
+  },
+  {
+    "id": "statistics-70",
+    "subject": "statistics",
+    "n": 70,
+    "title": "Ito's Lemma: ln(1 + W(t) Squared)",
+    "difficulty": "hard",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $Y(t) = \\ln\\!\\left(W(t)^2 + 1\\right)$, what is $dY(t)$?",
+    "options": [
+      "$dY = \\dfrac{2W}{1+W^2}\\,dW + \\dfrac{1-W^2}{(1+W^2)^2}\\,dt$",
+      "$dY = dW$",
+      "$dY = dt$",
+      "$dY = 2W\\,dW$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(w) = \\ln(1 + w^2)$:\n$$f'(w) = \\frac{2w}{1+w^2}, \\qquad f''(w) = \\frac{2(1+w^2) - 4w^2}{(1+w^2)^2} = \\frac{2 - 2w^2}{(1+w^2)^2}.$$\nSo\n$$dY = \\frac{2W}{1+W^2}\\,dW + \\tfrac12 \\cdot \\frac{2-2W^2}{(1+W^2)^2}\\,dt = \\frac{2W}{1+W^2}\\,dW + \\frac{1-W^2}{(1+W^2)^2}\\,dt.$$"
+  },
+  {
+    "id": "statistics-71",
+    "subject": "statistics",
+    "n": 71,
+    "title": "Two Consecutive Heads Within Three Flips",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Flip a fair coin up to 3 times. If two consecutive heads appear, you win £5 and stop. What are the expected winnings? (round to 2 decimals)",
+    "answer": "1.88",
+    "solution": "You win if the first three flips contain HH. The winning sequences are HH (on flips 1-2, either third flip) and THH:\n$$P(\\text{win}) = \\tfrac14 + \\tfrac18 = \\tfrac38.$$\nExpected winnings $= \\tfrac38 \\times 5 = 1.875 \\approx 1.88$."
+  },
+  {
+    "id": "statistics-72",
+    "subject": "statistics",
+    "n": 72,
+    "title": "Absorption Probability, Two Absorbing States",
+    "difficulty": "easy",
+    "topics": [
+      "Markov chains",
+      "Linear algebra"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A Markov chain on states $\\{1, 2, 3\\}$ has transition matrix $P = \\begin{pmatrix}1 & 0 & 0\\\\ 0.3 & 0.4 & 0.3\\\\ 0 & 0 & 1\\end{pmatrix}$, so states 1 and 3 are absorbing. Starting in state 2, what is the probability of absorption in state 3? (round to 4 decimals)",
+    "answer": "0.5000",
+    "solution": "Let $h$ be the probability of absorption in state 3 from state 2: $h = 0.3 + 0.4h$, so $h = 0.3/0.6 = 0.5000$.\nThis is also clear by symmetry, since 2 moves to 1 and to 3 with equal probability."
+  },
+  {
+    "id": "statistics-73",
+    "subject": "statistics",
+    "n": 73,
+    "title": "Both Brownian Motions Positive",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 2D Brownian motion (W1,W2), independent. Probability that W1(1)>0 and W2(1)>0? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "Independence: P(W1>0)=0.5, P(W2>0)=0.5 → P(both>0)=0.5*0.5=0.25"
+  },
+  {
+    "id": "statistics-74",
+    "subject": "statistics",
+    "n": 74,
+    "title": "Reroll Two Dice Until the Sum Is at Least 9",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two fair dice are rolled. If the sum is less than 9, both are rerolled, and this repeats until the sum is at least 9; you receive the final sum. What is the expected value? (round to 2 decimals)",
+    "answer": "10.00",
+    "solution": "Rerolling restarts the game, so $E = P(S\\ge 9)\\,E[S\\mid S\\ge 9] + P(S<9)\\,E$, which gives $E = E[S \\mid S \\ge 9]$.\nThere are 10 outcomes (of 36) with $S \\ge 9$, and their sums add to 100.\n$$E = \\frac{100}{10} = 10.00.$$"
+  },
+  {
+    "id": "statistics-75",
+    "subject": "statistics",
+    "n": 75,
+    "title": "Exit Time from (-5, 5)",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Stopping time: BM hits ±5. Which is true?",
+    "options": [
+      "Stopping time, random but measurable",
+      "Deterministic",
+      "Not measurable",
+      "Known in advance at time 0"
+    ],
+    "answerIndex": 0,
+    "solution": "Hitting times are stopping times, measurable, but random and not predictable."
+  },
+  {
+    "id": "statistics-76",
+    "subject": "statistics",
+    "n": 76,
+    "title": "Biased Coin: Flips Until the First Tail",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns",
+      "Distributions",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A biased coin, p(H)=0.7, is flipped until first tail occurs. Expected number of flips? (round to 2 decimals)",
+    "answer": "3.33",
+    "solution": "The number of flips until the first tail is geometric with success probability $q = P(T) = 0.3$:\n$$E[N] = \\frac{1}{0.3} \\approx 3.33.$$"
+  },
+  {
+    "id": "statistics-77",
+    "subject": "statistics",
+    "n": 77,
+    "title": "Biased Walk: +2 Before -3",
+    "difficulty": "medium",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Gambler plays asymmetric random walk: +1 with p=0.4, -1 with p=0.6, starts at 0. Probability reaches +2 before -3? (round to 4 decimals)",
+    "answer": "0.3602",
+    "solution": "Shift the start to $b = 3$ on $\\{0,\\dots,5\\}$. With $r = q/p = 0.6/0.4$, the probability of hitting the top before 0 is\n$$P = \\frac{1 - r^{3}}{1 - r^{5}} = \\frac{1 - 1.5^3}{1 - 1.5^5} = \\frac{-2.375}{-6.59375} \\approx 0.3602.$$"
+  },
+  {
+    "id": "statistics-78",
+    "subject": "statistics",
+    "n": 78,
+    "title": "Variance of Brownian Motion with Drift",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $X(t) = \\mu t + \\sigma W(t)$ with drift $\\mu = 1$ and volatility $\\sigma = 2$. What is $\\operatorname{Var}[X(1)]$? (round to 2 decimals)",
+    "answer": "4.00",
+    "solution": "The drift is deterministic, so $\\operatorname{Var}[X(t)] = \\sigma^2 t = 4 \\times 1 = 4.00$."
+  },
+  {
+    "id": "statistics-79",
+    "subject": "statistics",
+    "n": 79,
+    "title": "Ito's Lemma: W(t) Cubed",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $X(t) = W(t)^3$, what is $dX(t)$?",
+    "options": [
+      "$dX = 3W^2\\,dW + 3W\\,dt$",
+      "$dX = 3W^2\\,dW$",
+      "$dX = dt$",
+      "$dX = W^3\\,dt$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(w) = w^3$: $f' = 3w^2$, $f'' = 6w$, so $dX = 3W^2\\,dW + \\tfrac12 \\cdot 6W\\,dt = 3W^2\\,dW + 3W\\,dt$."
+  },
+  {
+    "id": "statistics-80",
+    "subject": "statistics",
+    "n": 80,
+    "title": "Three Consecutive Heads in Four Flips (5 Pound Prize)",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Flip a fair coin up to 4 times, stopping early if 3 consecutive heads appear. If they do, you win £5. What are the expected winnings? (round to 2 decimals)",
+    "answer": "0.94",
+    "solution": "HHH appears within 4 flips via HHH on flips 1-3 (probability $\\tfrac18$) or THHH (probability $\\tfrac1{16}$):\n$$P(\\text{win}) = \\tfrac{2}{16} + \\tfrac{1}{16} = \\tfrac{3}{16}.$$\nExpected winnings $= \\tfrac{3}{16} \\times 5 = 0.9375 \\approx 0.94$."
+  },
+  {
+    "id": "statistics-81",
+    "subject": "statistics",
+    "n": 81,
+    "title": "Fair Gambler's Ruin: 5 Pounds Against 10",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A gambler starts with £5 against an opponent with £10. He plays fair rounds (win £1 with p=0.5). What is the probability the gambler wins all the money before going broke? (round to 4 decimals)",
+    "answer": "0.3333",
+    "solution": "Fair Gambler's Ruin: probability to reach total sum = initial / total = 5/(5+10)=0.3333"
+  },
+  {
+    "id": "statistics-82",
+    "subject": "statistics",
+    "n": 82,
+    "title": "Random Walk at +4 After 10 Steps",
+    "difficulty": "easy",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1D drunk man starts at 0. He moves ±1 each step with p=0.5. After 10 steps, probability he is at position +4? (round to 4 decimals)",
+    "answer": "0.1172",
+    "solution": "At $+4$ after 10 steps you need 7 up-steps and 3 down-steps:\n$$P = \\binom{10}{7}\\Big/2^{10} = \\frac{120}{1024} \\approx 0.1172.$$"
+  },
+  {
+    "id": "statistics-83",
+    "subject": "statistics",
+    "n": 83,
+    "title": "Exactly Two Reds in Three Draws",
+    "difficulty": "easy",
+    "topics": [
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A bag contains 5 red and 3 blue balls. Draw 3 balls sequentially without replacement. Probability exactly 2 red balls? (round to 4 decimals)",
+    "answer": "0.5357",
+    "solution": "$$P = \\frac{\\binom52\\binom31}{\\binom83} = \\frac{30}{56} \\approx 0.5357.$$"
+  },
+  {
+    "id": "statistics-84",
+    "subject": "statistics",
+    "n": 84,
+    "title": "Expected Wait for H,T,H II",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Markov chains",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Sequential coin flips continue until H,T,H appears. Expected number of flips? (round to 2 decimals)",
+    "answer": "10.00",
+    "solution": "Let $E_0$, $E_1$, $E_2$ be the expected remaining flips with no progress, after a trailing H, and after a trailing HT.\n$E_0 = 1 + \\tfrac12(E_0 + E_1)$, $\\quad E_1 = 1 + \\tfrac12(E_1 + E_2)$, $\\quad E_2 = 1 + \\tfrac12 E_0$.\nSolving gives $E_0 = 10.00$. Equivalently, HTH overlaps itself in 'H', so $E = 2^3 + 2 = 10$."
+  },
+  {
+    "id": "statistics-85",
+    "subject": "statistics",
+    "n": 85,
+    "title": "Expected Rolls Until a Six II",
+    "difficulty": "easy",
+    "topics": [
+      "Dice & sequential games",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A player rolls a die until rolling 6. Expected number of rolls? (round to 2 decimals)",
+    "answer": "6.00",
+    "solution": "Geometric distribution: E[number of rolls]=1/p=1/(1/6)=6.00"
+  },
+  {
+    "id": "statistics-86",
+    "subject": "statistics",
+    "n": 86,
+    "title": "Variance of Drifted BM at Time 3",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $X(t) = \\mu t + \\sigma W(t)$ with drift $\\mu = 0.5$ and volatility $\\sigma = 1$. What is $\\operatorname{Var}[X(3)]$? (round to 2 decimals)",
+    "answer": "3.00",
+    "solution": "$\\operatorname{Var}[X(t)] = \\sigma^2 t = 1 \\times 3 = 3.00$; the drift does not affect the variance."
+  },
+  {
+    "id": "statistics-87",
+    "subject": "statistics",
+    "n": 87,
+    "title": "Two Consecutive Heads Within Three Flips II",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dynamic programming: flip a coin sequentially. Win £5 if 2 consecutive heads appear. Maximum 3 flips. Expected winnings? (round to 2 decimals)",
+    "answer": "1.88",
+    "solution": "State-based DP: compute expected winnings from last flip backward. Probability of getting 2 consecutive heads in 3 flips=0.375 → Expected winnings=0.375*5=1.875 → round 1.88"
+  },
+  {
+    "id": "statistics-88",
+    "subject": "statistics",
+    "n": 88,
+    "title": "Brownian Motions with Opposite Signs",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Distributions"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 2D Brownian motion (W1,W2) is independent. What is P(W1(2)>0 and W2(2)<0)? (round to 4 decimals)",
+    "answer": "0.2500",
+    "solution": "Independence: P(W1>0)=0.5, P(W2<0)=0.5 → P(both)=0.5*0.5=0.25"
+  },
+  {
+    "id": "statistics-89",
+    "subject": "statistics",
+    "n": 89,
+    "title": "Exit Time from (-4, 4)",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Stopping time: Brownian motion hits ±4. Which is true?",
+    "options": [
+      "It is a stopping time, measurable but random",
+      "Known in advance at time 0",
+      "Deterministic",
+      "Cannot define"
+    ],
+    "answerIndex": 0,
+    "solution": "Hitting times are classic stopping times: measurable w.r.t filtration, random, not predictable."
+  },
+  {
+    "id": "statistics-90",
+    "subject": "statistics",
+    "n": 90,
+    "title": "Slightly Biased Walk: +3 Before -2",
+    "difficulty": "medium",
+    "topics": [
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A gambler moves along a line: +1 with p=0.55, -1 with p=0.45, starting at 0. Probability he reaches +3 before -2? (round to 4 decimals)",
+    "answer": "0.5220",
+    "solution": "Shift the start to $b = 2$ on $\\{0,\\dots,5\\}$. With $r = q/p = 0.45/0.55$, the probability of hitting the top before 0 is\n$$P = \\frac{1 - r^{2}}{1 - r^{5}} = \\frac{1 - (9/11)^2}{1 - (9/11)^5} = \\frac{0.3306}{0.6334} \\approx 0.5220.$$"
+  },
+  {
+    "id": "statistics-91",
+    "subject": "statistics",
+    "n": 91,
+    "title": "Ito's Lemma: Exponential with Drift",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $Y(t) = e^{2W(t) + 3t}$, what is $dY(t)$?",
+    "options": [
+      "$dY = Y(t)\\,(2\\,dW + 5\\,dt)$",
+      "$dY = 2Y(t)\\,dW$",
+      "$dY = 3Y(t)\\,dt$",
+      "$dY = Y(t)\\,(2\\,dW + 3\\,dt)$"
+    ],
+    "answerIndex": 0,
+    "solution": "Let $Z = 2W + 3t$, so $dZ = 2\\,dW + 3\\,dt$ and $(dZ)^2 = 4\\,dt$. For $Y = e^Z$,\n$$dY = Y\\,dZ + \\tfrac12 Y\\,(dZ)^2 = Y\\,(2\\,dW + 3\\,dt + 2\\,dt) = Y\\,(2\\,dW + 5\\,dt).$$"
+  },
+  {
+    "id": "statistics-92",
+    "subject": "statistics",
+    "n": 92,
+    "title": "Reroll Two Dice Until the Sum Is at Least 8",
+    "difficulty": "medium",
+    "topics": [
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two fair dice are rolled. If the sum is less than 8, both are rerolled, and this repeats until the sum is at least 8; you receive the final sum. What is the expected value? (round to 2 decimals)",
+    "answer": "9.33",
+    "solution": "Rerolling restarts the game, so $E = P(S\\ge 8)\\,E[S\\mid S\\ge 8] + P(S<8)\\,E$, which gives $E = E[S \\mid S \\ge 8]$.\nThere are 15 outcomes (of 36) with $S \\ge 8$, and their sums add to 140.\n$$E = \\frac{140}{15} \\approx 9.33.$$"
+  },
+  {
+    "id": "statistics-93",
+    "subject": "statistics",
+    "n": 93,
+    "title": "Absorption Probability in a Four-State Chain",
+    "difficulty": "hard",
+    "topics": [
+      "Markov chains",
+      "Linear algebra"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A Markov chain on states $\\{1,2,3,4\\}$ has transition matrix $P = \\begin{pmatrix}1 & 0 & 0 & 0\\\\ 0.2 & 0.5 & 0.3 & 0\\\\ 0 & 0.3 & 0.5 & 0.2\\\\ 0 & 0 & 0 & 1\\end{pmatrix}$, with states 1 and 4 absorbing. Starting in state 2, what is the probability of absorption in state 4? (round to 4 decimals)",
+    "answer": "0.3750",
+    "solution": "Let $h_i$ be the probability of absorption in 4 from state $i$, with $h_1 = 0$ and $h_4 = 1$.\n$h_2 = 0.5h_2 + 0.3h_3$, so $h_2 = 0.6h_3$.\n$h_3 = 0.3h_2 + 0.5h_3 + 0.2$, so $h_3 = 0.6h_2 + 0.4$.\nSubstituting: $h_3 = 0.36h_3 + 0.4$, so $h_3 = 0.625$ and $h_2 = 0.6 \\times 0.625 = 0.3750$."
+  },
+  {
+    "id": "statistics-94",
+    "subject": "statistics",
+    "n": 94,
+    "title": "Mean of Drifted BM II",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Let $X(t) = \\mu t + \\sigma W(t)$ with drift $\\mu = 0.7$ and volatility $\\sigma = 1.5$. What is $E[X(2)]$? (round to 2 decimals)",
+    "answer": "1.40",
+    "solution": "$E[X(t)] = \\mu t = 0.7 \\times 2 = 1.40$; the Brownian term has mean zero."
+  },
+  {
+    "id": "statistics-95",
+    "subject": "statistics",
+    "n": 95,
+    "title": "Expected Gain from Five Fair Bets",
+    "difficulty": "easy",
+    "topics": [
+      "Expectation & variance",
+      "Random walks & gambler's ruin"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Gambler plays coin game: win £1 for heads, lose £1 for tails, 5 sequential flips. Expected total gain? (round to 2 decimals)",
+    "answer": "0.00",
+    "solution": "Fair coin, E[gain per flip]=0 → total expected gain=5*0=0"
+  },
+  {
+    "id": "statistics-96",
+    "subject": "statistics",
+    "n": 96,
+    "title": "Exit Time from (-1.5, 1.5)",
+    "difficulty": "easy",
+    "topics": [
+      "Martingales & stopping times",
+      "Brownian motion"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Stopping time: Brownian motion hits ±1.5. Which is true?",
+    "options": [
+      "Random, measurable, a stopping time",
+      "Known in advance at time 0",
+      "Deterministic",
+      "Cannot define"
+    ],
+    "answerIndex": 0,
+    "solution": "Hitting times are stopping times: measurable, random, not predictable."
+  },
+  {
+    "id": "statistics-97",
+    "subject": "statistics",
+    "n": 97,
+    "title": "Exactly Two Heads, Consecutive, in Three Flips",
+    "difficulty": "easy",
+    "topics": [
+      "Coin-flip patterns",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Flip a fair coin 3 times. You win £4 if there are exactly two heads and those two heads are consecutive. What are the expected winnings? (round to 2 decimals)",
+    "answer": "1.00",
+    "solution": "The winning sequences are HHT and THH (HTH has two heads, but they are not consecutive; HHH has three heads). So $P = \\tfrac28 = 0.25$, and the expected winnings are $0.25 \\times 4 = 1.00$."
+  },
+  {
+    "id": "statistics-98",
+    "subject": "statistics",
+    "n": 98,
+    "title": "Variance of Correlated BM Sum II",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "$W_1$ and $W_2$ are standard Brownian motions with correlation $\\rho = 0.3$. What is $\\operatorname{Var}(W_1(1) + W_2(1))$? (round to 2 decimals)",
+    "answer": "2.60",
+    "solution": "$\\operatorname{Var}(W_1(t) + W_2(t)) = 2t + 2\\rho t$. At $t = 1$: $2 + 0.6 = 2.60$."
+  },
+  {
+    "id": "statistics-99",
+    "subject": "statistics",
+    "n": 99,
+    "title": "Ito's Lemma: W(t) to the Fourth",
+    "difficulty": "medium",
+    "topics": [
+      "Itô calculus"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Using Ito's lemma, if $X(t) = W(t)^4$, what is $dX(t)$?",
+    "options": [
+      "$dX = 4W^3\\,dW + 6W^2\\,dt$",
+      "$dX = 4W^3\\,dW$",
+      "$dX = dt$",
+      "$dX = W^4\\,dt$"
+    ],
+    "answerIndex": 0,
+    "solution": "With $f(w) = w^4$: $f' = 4w^3$, $f'' = 12w^2$, so $dX = 4W^3\\,dW + \\tfrac12 \\cdot 12W^2\\,dt = 4W^3\\,dW + 6W^2\\,dt$."
+  },
+  {
+    "id": "statistics-100",
+    "subject": "statistics",
+    "n": 100,
+    "title": "Three Consecutive Heads in Four Flips (6 Pound Prize)",
+    "difficulty": "medium",
+    "topics": [
+      "Coin-flip patterns",
+      "Dice & sequential games",
+      "Expectation & variance"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Flip a fair coin up to 4 times, stopping early if 3 consecutive heads appear. If they do, you win £6. What are the expected winnings? (round to 2 decimals)",
+    "answer": "1.13",
+    "solution": "HHH appears within 4 flips via HHH on flips 1-3 ($\\tfrac18$) or THHH ($\\tfrac1{16}$), so $P(\\text{win}) = \\tfrac{3}{16} = 0.1875$.\nExpected winnings $= 0.1875 \\times 6 = 1.125 \\approx 1.13$."
+  }
+]

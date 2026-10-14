@@ -1,0 +1,1651 @@
+[
+  {
+    "id": "brainteasers-1",
+    "subject": "brainteasers",
+    "n": 1,
+    "title": "Pirates Dividing Gold",
+    "difficulty": "medium",
+    "topics": [
+      "Game theory",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Three pirates (1 most senior, 3 most junior) must divide 100 gold coins. The most senior surviving pirate proposes a split and everyone alive votes, including the proposer. The proposal passes if at least half the votes are in favour; otherwise the proposer is thrown overboard and the next pirate proposes. Pirates are perfectly logical, value survival first and coins second, and vote against a proposal they are indifferent to. How many coins does pirate 1 keep?",
+    "answer": "99",
+    "solution": "Work backwards.\nTwo pirates left (2 and 3): pirate 2's own vote is half the votes, so he keeps all 100 and pirate 3 gets 0.\nThree pirates: pirate 1 needs 2 of 3 votes. Pirate 3 gets 0 if pirate 1 dies, so 1 coin is enough to buy his vote; pirate 2 can't be bought cheaply and isn't needed.\nProposal: 99 for pirate 1, 0 for pirate 2, 1 for pirate 3. Pirate 1 keeps 99."
+  },
+  {
+    "id": "brainteasers-2",
+    "subject": "brainteasers",
+    "n": 2,
+    "title": "Tiger and Sheep Crossing",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A tiger and a sheep are on a boat. The tiger will eat the sheep if left alone with it. How do you get both across the river if you can only take one at a time?",
+    "options": [
+      "Take the tiger first, return alone, then take the sheep",
+      "Take the sheep first, return alone, then take the tiger",
+      "Either order works: take one across, return alone, then take the other",
+      "Impossible"
+    ],
+    "answerIndex": 2,
+    "solution": "The only danger is the tiger and sheep together without you. After the first crossing they are on opposite banks. They only end up on the same bank after your second crossing, and you are there with them. So either order works."
+  },
+  {
+    "id": "brainteasers-3",
+    "subject": "brainteasers",
+    "n": 3,
+    "title": "Wolf, Goat and Cabbage: First Move",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A man must cross a river with a wolf, goat, and cabbage. Which one should he take first?",
+    "options": [
+      "Wolf",
+      "Goat",
+      "Cabbage",
+      "None"
+    ],
+    "answerIndex": 1,
+    "solution": "If left alone, the wolf eats the goat and the goat eats the cabbage. Taking the goat first avoids any dangerous pairing."
+  },
+  {
+    "id": "brainteasers-4",
+    "subject": "brainteasers",
+    "n": 4,
+    "title": "Burning Ropes: 45 Minutes",
+    "difficulty": "medium",
+    "topics": [
+      "Logic",
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "You have two ropes that each burn in exactly 60 minutes but not at a uniform rate. How do you measure 45 minutes?",
+    "options": [
+      "Burn one rope only",
+      "Burn both ropes at one end",
+      "Burn rope A at both ends and rope B at one end",
+      "Impossible"
+    ],
+    "answerIndex": 2,
+    "solution": "Light rope A at both ends and rope B at one end. Rope A finishes in 30 minutes. At that moment, light the other end of rope B. The remaining half of rope B now burns in 15 minutes, totaling 45 minutes."
+  },
+  {
+    "id": "brainteasers-5",
+    "subject": "brainteasers",
+    "n": 5,
+    "title": "Light Ball Among 27",
+    "difficulty": "easy",
+    "topics": [
+      "Strategy & optimisation",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A factory produces balls, one of which is defective and lighter. Using a balance scale, what is the minimum number of weighings needed to find the defective ball among 27?",
+    "answer": "3",
+    "solution": "Each weighing splits the group into 3 parts. 3^3 = 27, so 3 weighings suffice using ternary search."
+  },
+  {
+    "id": "brainteasers-6",
+    "subject": "brainteasers",
+    "n": 6,
+    "title": "Trailing Zeros of 100!",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "How many trailing zeros are in 100! ?",
+    "answer": "24",
+    "solution": "Trailing zeros come from factors of 10, which are formed from 2 × 5. Count the number of 5s: floor(100/5)=20, floor(100/25)=4, floor(100/125)=0. Total = 24."
+  },
+  {
+    "id": "brainteasers-7",
+    "subject": "brainteasers",
+    "n": 7,
+    "title": "25 Horses, Top 3",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "25 horses, no stopwatch. Find the fastest 3 in the minimum number of races (5 horses per race).",
+    "answer": "7",
+    "solution": "Races 1–5: split the horses into five groups of 5 and race each group.\nRace 6: race the five group winners. Label the groups A, B, C, D, E by where their winner finished (A's winner is the fastest horse overall).\nEliminate group D and E entirely, plus C2, C3, B3 and everything below them: each has at least three horses known to be faster.\nThe only candidates for 2nd and 3rd overall are A2, A3, B1, B2 and C1, which is exactly five horses.\nRace 7: race those five. The top two finishers are 2nd and 3rd overall. Total: 7 races."
+  },
+  {
+    "id": "brainteasers-8",
+    "subject": "brainteasers",
+    "n": 8,
+    "title": "Geometric Series Sum",
+    "difficulty": "easy",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "What is the sum of the infinite series: 1 + 1/2 + 1/4 + 1/8 + ...?",
+    "answer": "2",
+    "solution": "This is a geometric series with first term 1 and ratio 1/2. Sum = 1 / (1 − 1/2) = 2."
+  },
+  {
+    "id": "brainteasers-9",
+    "subject": "brainteasers",
+    "n": 9,
+    "title": "Mislabeled Fruit Boxes",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Three boxes are labeled incorrectly: Apples, Oranges, Mixed. You may take one fruit from one box. How do you label correctly?",
+    "options": [
+      "Pick from Mixed box",
+      "Pick from Apples box",
+      "Pick from Oranges box",
+      "Pick randomly"
+    ],
+    "answerIndex": 0,
+    "solution": "Every label is wrong, so the box labelled Mixed holds only apples or only oranges. Draw one fruit from it; say it's an apple, so that box is Apples.\nThe box labelled Oranges can't hold oranges (wrong label) or apples (taken), so it is Mixed. The box labelled Apples must then be Oranges. The case of an orange is symmetric."
+  },
+  {
+    "id": "brainteasers-10",
+    "subject": "brainteasers",
+    "n": 10,
+    "title": "Locker Toggling",
+    "difficulty": "medium",
+    "topics": [
+      "Number puzzles",
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "There are 100 lockers, all closed, and 100 prisoners. For $k=1,2,\\dots,100$, prisoner $k$ toggles (opens if closed, closes if open) every locker whose number is a multiple of $k$. How many lockers are open at the end?",
+    "answer": "10",
+    "solution": "Locker $n$ is toggled once for each divisor of $n$. It ends open if it has an odd number of divisors. Divisors pair up as $d\\leftrightarrow n/d$, except when $d=\\sqrt n$, so only perfect squares have an odd count: $1,4,9,\\dots,100$, giving 10 lockers."
+  },
+  {
+    "id": "brainteasers-11",
+    "subject": "brainteasers",
+    "n": 11,
+    "title": "Desert Messenger with One Helper",
+    "difficulty": "medium",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two messengers set out together across a desert. Each can carry at most 1 day's worth of water. They can pass water between them, but the helper must keep enough water to walk back to the start. How far from the start (in days of walking) can the other messenger get? Round to 2 decimals.",
+    "answer": "1.33",
+    "solution": "Let the helper turn back after $x$ days. Each then has $1-x$. The helper needs $x$ to get home, so he can give away $1-2x$. The traveller has room for only $x$ more.\nThe traveller then has $1-x+\\min(x,1-2x)$ and reaches $x+(1-x)+\\min(x,1-2x)=1+\\min(x,1-2x)$.\nThis is largest when $x=1-2x$, i.e. $x=1/3$, giving $4/3\\approx1.33$ days."
+  },
+  {
+    "id": "brainteasers-12",
+    "subject": "brainteasers",
+    "n": 12,
+    "title": "Three Switches, One Bulb",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Three light switches in one room, one bulb in another. You may enter the bulb room once. How do you determine which switch controls the bulb?",
+    "options": [
+      "Turn all on then off",
+      "Turn two on, wait, turn one off",
+      "Flip randomly",
+      "Impossible"
+    ],
+    "answerIndex": 1,
+    "solution": "Turn on switch A for several minutes, then off. Turn on switch B and enter. If bulb is on: B. If off but warm: A. If off and cold: C."
+  },
+  {
+    "id": "brainteasers-13",
+    "subject": "brainteasers",
+    "n": 13,
+    "title": "Quants and Traders Syllogism",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "If all quants earn more than traders and Alice is a trader, is Alice a quant?",
+    "options": [
+      "Yes",
+      "No",
+      "Maybe",
+      "Cannot be determined"
+    ],
+    "answerIndex": 1,
+    "solution": "If Alice were a quant, she would earn more than herself as a trader, which is impossible. Therefore, she is not a quant."
+  },
+  {
+    "id": "brainteasers-14",
+    "subject": "brainteasers",
+    "n": 14,
+    "title": "Equalising Two Piles",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two piles contain 10 and 20 coins. In one move you transfer a single coin from one pile to the other. What is the minimum number of moves to make the piles equal?",
+    "answer": "5",
+    "solution": "Final piles must be 15 and 15. Moving one coin shifts one from the larger to the smaller. 5 coins must be transferred."
+  },
+  {
+    "id": "brainteasers-15",
+    "subject": "brainteasers",
+    "n": 15,
+    "title": "Two Missing Numbers",
+    "difficulty": "medium",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two numbers are missing from 1..100. The sum of remaining numbers is 4949 and sum of squares is 328349. Find the larger missing number.",
+    "answer": "100",
+    "solution": "Missing sum: $x+y=5050-4949=101$.\nMissing sum of squares: $x^2+y^2=338350-328349=10001$.\n$2xy=(x+y)^2-(x^2+y^2)=10201-10001=200\\Rightarrow xy=100$.\n$x,y$ are roots of $t^2-101t+100=0$, so $t=1$ or $t=100$. The larger missing number is 100."
+  },
+  {
+    "id": "brainteasers-16",
+    "subject": "brainteasers",
+    "n": 16,
+    "title": "Eight Coins, One Light",
+    "difficulty": "easy",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You have 8 coins, one counterfeit which is lighter. What is the minimum number of weighings needed?",
+    "answer": "2",
+    "solution": "Weigh 3 vs 3. If one side is lighter, weigh two of its coins against each other: the lighter is fake, or the third if they balance. If the first weighing balances, the fake is one of the remaining 2: weigh them.\nOne weighing has only 3 outcomes, which can't single out 1 of 8 coins, so the minimum is 2."
+  },
+  {
+    "id": "brainteasers-17",
+    "subject": "brainteasers",
+    "n": 17,
+    "title": "Socks: Guaranteed Pair",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You have 10 socks, all black or white. What is the minimum number needed to guarantee a matching pair?",
+    "answer": "3",
+    "solution": "Worst case: one black, one white, third sock must match one of them."
+  },
+  {
+    "id": "brainteasers-18",
+    "subject": "brainteasers",
+    "n": 18,
+    "title": "Birth Month Pigeonhole",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "In a group of 13 people, must two have the same birth month?",
+    "options": [
+      "Yes",
+      "No",
+      "Only if leap year",
+      "Cannot tell"
+    ],
+    "answerIndex": 0,
+    "solution": "By the pigeonhole principle, 13 people and 12 months guarantees at least two share a month."
+  },
+  {
+    "id": "brainteasers-19",
+    "subject": "brainteasers",
+    "n": 19,
+    "title": "Ants on a Square",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "On a square, ants start at each corner and randomly choose clockwise or counterclockwise. What is the probability no ants collide?",
+    "answer": "0.125",
+    "solution": "All ants must choose the same direction to avoid collisions. There are 2 such outcomes out of 2^4 = 16 total. So probability = 2/16 = 1/8 = 0.125."
+  },
+  {
+    "id": "brainteasers-20",
+    "subject": "brainteasers",
+    "n": 20,
+    "title": "Divisibility by 9 Rule",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A number is divisible by 9 if and only if what condition holds?",
+    "options": [
+      "Last digit is 9",
+      "Number is even",
+      "Sum of digits divisible by 9",
+      "Contains 9"
+    ],
+    "answerIndex": 2,
+    "solution": "By modular arithmetic, 10 ≡ 1 (mod 9), so the entire number reduces to the sum of its digits modulo 9."
+  },
+  {
+    "id": "brainteasers-21",
+    "subject": "brainteasers",
+    "n": 21,
+    "title": "All Tails by Flipping Subsets",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Start with $n$ coins all showing heads. In one move you may flip any subset of the coins. True or false: for every $n\\ge1$ you can reach all tails in a finite number of moves.",
+    "answer": "true",
+    "solution": "True. One move suffices: flip all $n$ coins. (Induction also works: get the first $k$ to tails, then flip the last coin.)"
+  },
+  {
+    "id": "brainteasers-22",
+    "subject": "brainteasers",
+    "n": 22,
+    "title": "Chocolate Bar Breaks",
+    "difficulty": "medium",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "An $m\\times n$ chocolate bar is broken along grid lines, one piece at a time. True or false: however you break it, separating it into $mn$ unit squares takes exactly $mn-1$ breaks.",
+    "answer": "true",
+    "solution": "True. Each break turns one piece into two, so it raises the number of pieces by exactly 1. Going from 1 piece to $mn$ pieces takes $mn-1$ breaks, whatever the order."
+  },
+  {
+    "id": "brainteasers-23",
+    "subject": "brainteasers",
+    "n": 23,
+    "title": "Runners Regrouping on a Track",
+    "difficulty": "medium",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Three runners start together at the same point of a 400 m circular track and run in the same direction at constant speeds of 4, 5 and 6 m/s. After how many seconds are all three together again for the first time?",
+    "answer": "400",
+    "solution": "Relative to the slowest runner, the others gain 1 m/s and 2 m/s. They are all together when both gaps are whole laps: $1\\cdot t$ and $2\\cdot t$ are multiples of 400.\nThe first condition needs $t\\in\\{400,800,\\dots\\}$ and the second $t\\in\\{200,400,\\dots\\}$, so $t=400$ s."
+  },
+  {
+    "id": "brainteasers-24",
+    "subject": "brainteasers",
+    "n": 24,
+    "title": "Flipping Ten Coins at a Time",
+    "difficulty": "easy",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "100 coins all show heads. Each move you must flip exactly 10 coins. True or false: you can reach all tails.",
+    "answer": "true",
+    "solution": "True. Split the coins into 10 groups of 10 and flip one group per move. After 10 moves all are tails.\n(The parity check agrees: each move changes the number of heads by an even amount, and 100 and 0 are both even.)"
+  },
+  {
+    "id": "brainteasers-25",
+    "subject": "brainteasers",
+    "n": 25,
+    "title": "Twelve Coins, Heavier or Lighter",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "There are 12 coins, one counterfeit (heavier or lighter). What is the minimum number of weighings to guarantee identification?",
+    "answer": "3",
+    "solution": "Lower bound: there are 24 cases (12 coins × heavy/light). Two weighings give only $3^2=9$ outcomes, so you need at least 3; $3^3=27\\ge24$.\nScheme: weigh 1234 vs 5678.\nBalanced: the fake is among 9–12. Weigh 9,10,11 vs 1,2,3 (known good). If balanced, 12 is fake: weigh it against a good coin to see heavy or light. If not, you know the direction: weigh 9 vs 10.\n1234 heavier: the cases are 1H–4H and 5L–8L. Weigh {1,2,5} vs {3,6,9}.\nLeft heavy means 1H, 2H or 6L: weigh 1 vs 2 (balanced means 6).\nRight heavy means 3H or 5L: weigh 3 vs a good coin.\nBalanced means 4H, 7L or 8L: weigh 7 vs 8 (balanced means 4).\n1234 lighter is symmetric. 3 weighings always suffice."
+  },
+  {
+    "id": "brainteasers-26",
+    "subject": "brainteasers",
+    "n": 26,
+    "title": "39 Coins, One Light",
+    "difficulty": "medium",
+    "topics": [
+      "Strategy & optimisation",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Using the same counterfeit coin problem, if you have 39 coins, one lighter, how many weighings suffice?",
+    "answer": "4",
+    "solution": "Lower bound: 3 weighings give at most $3^3=27<39$ outcomes, so 3 aren't enough. Upper bound: $3^4=81\\ge39$. Split 13/13/13, then the suspect 13 into 4/4/5, then at most 5 into 2/2/1, then a final 1 vs 1. So 4 weighings."
+  },
+  {
+    "id": "brainteasers-27",
+    "subject": "brainteasers",
+    "n": 27,
+    "title": "Irrationality of √2",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Prove by contradiction: sqrt(2) is irrational.",
+    "options": [
+      "Assume sqrt(2) = p/q in lowest terms, derive a contradiction",
+      "Assume it is irrational",
+      "Assume p and q are equal",
+      "Use decimal expansion"
+    ],
+    "answerIndex": 0,
+    "solution": "Assume sqrt(2) = p/q with gcd(p,q)=1. Then 2 = p^2/q^2 ⇒ p^2 = 2q^2 ⇒ p^2 even ⇒ p even ⇒ p=2k ⇒ 4k^2 = 2q^2 ⇒ q^2=2k^2 ⇒ q even. Contradiction as gcd(p,q)=1. Therefore sqrt(2) is irrational."
+  },
+  {
+    "id": "brainteasers-28",
+    "subject": "brainteasers",
+    "n": 28,
+    "title": "Three Wise Men and Red Hats",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Three wise men are told that each wears a red or blue hat and that at least one hat is red. In fact all three hats are red. Each sees the other two hats but not his own, and for a while nobody speaks. How does one of them eventually work out his hat colour?",
+    "options": [
+      "They guess randomly",
+      "Use logical deduction from others’ hesitation",
+      "They always see at least one red",
+      "Impossible to solve"
+    ],
+    "answerIndex": 1,
+    "solution": "Wise man A reasons: 'Suppose my hat were blue. Then B would see one blue and one red hat and would think: if my hat were also blue, C would see two blue hats and announce red at once. Since C is silent, B would quickly announce red.' When B and C both stay silent, A concludes his hat cannot be blue, so it is red. The deduction comes from the others' hesitation."
+  },
+  {
+    "id": "brainteasers-29",
+    "subject": "brainteasers",
+    "n": 29,
+    "title": "Chameleon Colour Invariant",
+    "difficulty": "hard",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "An island has 7 red, 9 green and 11 blue chameleons. Whenever two chameleons of different colours meet, both change to the third colour. True or false: the chameleons can all end up the same colour.",
+    "answer": "false",
+    "solution": "In a meeting the three counts change by $(-1,-1,+2)$ in some order, so every pairwise difference changes by 0 or $\\pm3$. The differences mod 3 are therefore invariant.\nInitially $7,9,11\\equiv1,0,2\\pmod 3$, so no two counts are congruent mod 3.\nEnding all one colour means $(27,0,0)$ in some order: two counts equal (both 0), so that difference is $\\equiv0\\pmod 3$. This is unreachable, so the answer is false."
+  },
+  {
+    "id": "brainteasers-30",
+    "subject": "brainteasers",
+    "n": 30,
+    "title": "Monty Hall with n Doors",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A prisoner picks one of $n\\ge3$ doors, exactly one of which leads to freedom. A guard who knows the correct door then opens $n-2$ of the other doors, all wrong, and offers him the chance to switch to the one remaining closed door. What should he do?",
+    "options": [
+      "Pick any door randomly",
+      "Use Monty Hall strategy: switch after guard opens",
+      "Always pick first door",
+      "Impossible to improve"
+    ],
+    "answerIndex": 1,
+    "solution": "His first pick is right with probability $1/n$, and the guard's action (always possible, and uninformative about his own door) doesn't change that. The remaining closed door gets the rest, $(n-1)/n$. Always switch."
+  },
+  {
+    "id": "brainteasers-31",
+    "subject": "brainteasers",
+    "n": 31,
+    "title": "Sum of First n Integers",
+    "difficulty": "easy",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: for every positive integer $n$, $\\sum_{i=1}^{n} i=\\dfrac{n(n+1)}{2}$.",
+    "answer": "true",
+    "solution": "True, by induction. Base case: $n=1$ gives $1=\\frac{1\\cdot2}{2}$.\nStep: if $\\sum_{i=1}^{k}i=\\frac{k(k+1)}{2}$, then $\\sum_{i=1}^{k+1}i=\\frac{k(k+1)}{2}+(k+1)=\\frac{(k+1)(k+2)}{2}$."
+  },
+  {
+    "id": "brainteasers-32",
+    "subject": "brainteasers",
+    "n": 32,
+    "title": "Sum of Squares Formula",
+    "difficulty": "medium",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: for every positive integer $n$, $\\sum_{i=1}^{n} i^2=\\dfrac{n(n+1)(2n+1)}{6}$.",
+    "answer": "true",
+    "solution": "True, by induction. Base case: $1=\\frac{1\\cdot2\\cdot3}{6}$.\nStep: $\\frac{k(k+1)(2k+1)}{6}+(k+1)^2=\\frac{(k+1)(2k^2+7k+6)}{6}=\\frac{(k+1)(k+2)(2k+3)}{6}$, which is the formula for $n=k+1$."
+  },
+  {
+    "id": "brainteasers-33",
+    "subject": "brainteasers",
+    "n": 33,
+    "title": "Geometric Series Convergence",
+    "difficulty": "medium",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: the geometric series $1+r+r^2+\\cdots$ converges whenever $|r|<1$.",
+    "answer": "true",
+    "solution": "True. The partial sum of the first $n$ terms is $s_n=\\dfrac{1-r^{n}}{1-r}$. If $|r|<1$ then $r^n\\to0$, so $s_n\\to\\dfrac{1}{1-r}$, a finite limit."
+  },
+  {
+    "id": "brainteasers-34",
+    "subject": "brainteasers",
+    "n": 34,
+    "title": "Equal-Sum Split of 1..n",
+    "difficulty": "hard",
+    "topics": [
+      "Number puzzles",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "You have coins numbered 1..n. Split into two piles so sums equal. Prove possible only if n(n+1)/2 even.",
+    "options": [
+      "Always possible",
+      "Possible iff n(n+1)/2 even",
+      "Impossible",
+      "Depends on parity of n"
+    ],
+    "answerIndex": 1,
+    "solution": "Necessity: the total $n(n+1)/2$ must split into two equal integers, so it must be even.\nSufficiency: $n(n+1)/2$ is even iff $n\\equiv0$ or $3\\pmod 4$.\nIf $n\\equiv0\\pmod4$: split into blocks $\\{4j+1,4j+2,4j+3,4j+4\\}$ and put $4j+1,4j+4$ in pile A and $4j+2,4j+3$ in pile B. Each block adds the same to both piles.\nIf $n\\equiv3\\pmod4$: put $\\{1,2\\}$ against $\\{3\\}$, then handle $4,\\dots,n$ in blocks of 4 the same way."
+  },
+  {
+    "id": "brainteasers-35",
+    "subject": "brainteasers",
+    "n": 35,
+    "title": "Breaking a 2×3 Chocolate Bar",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A chocolate bar of size 2×3. Break along grid lines until all 1×1. Minimum breaks?",
+    "answer": "5",
+    "solution": "Each break increases piece count by 1. Start with 1 piece, need 6 pieces ⇒ 5 breaks."
+  },
+  {
+    "id": "brainteasers-36",
+    "subject": "brainteasers",
+    "n": 36,
+    "title": "No Smallest Positive Rational",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Prove by contradiction: There is no smallest positive rational number.",
+    "options": [
+      "Assume smallest exists, divide by 2, contradiction",
+      "Use decimal expansion",
+      "Use induction",
+      "Impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "Assume smallest positive rational r. Then r/2 is smaller, contradiction. Hence no smallest positive rational exists."
+  },
+  {
+    "id": "brainteasers-37",
+    "subject": "brainteasers",
+    "n": 37,
+    "title": "Four Coins to Tails",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Four coins all show heads. In one move you may flip any subset of them. True or false: you can reach all tails in finitely many moves.",
+    "answer": "true",
+    "solution": "True: flip all four coins in a single move."
+  },
+  {
+    "id": "brainteasers-38",
+    "subject": "brainteasers",
+    "n": 38,
+    "title": "Runners Realigning at the Start",
+    "difficulty": "hard",
+    "topics": [
+      "Number puzzles",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "$n$ runners start together at the start line of a circular track and run with constant speeds whose pairwise ratios are all rational. True or false: at some later time they are all at the start line together again.",
+    "answer": "true",
+    "solution": "True. Write every speed as $v_i=\\frac{a_i}{b}v_1$ with integers $a_i,b$. At time $t=bL/v_1$ (track length $L$), runner $i$ has covered $v_it=a_iL$, a whole number of laps. So everyone is back at the start, and the pattern repeats with that period.\nIf some ratio $v_i/v_j$ were irrational, both being at the start would need $v_it=mL$ and $v_jt=kL$, forcing $v_i/v_j=m/k$, which is a contradiction."
+  },
+  {
+    "id": "brainteasers-39",
+    "subject": "brainteasers",
+    "n": 39,
+    "title": "√3 Is Irrational",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: no rational number has square equal to 3.",
+    "answer": "true",
+    "solution": "True. Suppose $(p/q)^2=3$ in lowest terms. Then $p^2=3q^2$, so $3\\mid p$ (3 is prime). Write $p=3k$: $9k^2=3q^2\\Rightarrow q^2=3k^2$, so $3\\mid q$. That contradicts lowest terms."
+  },
+  {
+    "id": "brainteasers-40",
+    "subject": "brainteasers",
+    "n": 40,
+    "title": "Hat Guessing Guarantee",
+    "difficulty": "hard",
+    "topics": [
+      "Logic",
+      "Game theory"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Three people each receive a red or blue hat. Each sees the others' hats but not their own. Using a strategy agreed in advance, they all guess their own colour simultaneously, with no communication. True or false: some strategy guarantees at least one correct guess.",
+    "answer": "true",
+    "solution": "True. Code red = 1, blue = 0. Person A guesses assuming A's and B's hats sum to an even number; B guesses assuming that sum is odd. Exactly one assumption is right, so exactly one of A and B guesses correctly. C's guess is irrelevant.\n(Each person alone is right only half the time; the trick is correlating the errors.)"
+  },
+  {
+    "id": "brainteasers-41",
+    "subject": "brainteasers",
+    "n": 41,
+    "title": "Socks: 13 Colours",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A drawer holds 13 pairs of socks, each pair a different colour, all mixed up. How many socks must you pull out without looking to guarantee at least one matching pair?",
+    "answer": "14",
+    "solution": "By the pigeonhole principle: 13 colors → pulling 14 socks guarantees at least one duplicate, because if you pulled only 13, each could be different."
+  },
+  {
+    "id": "brainteasers-42",
+    "subject": "brainteasers",
+    "n": 42,
+    "title": "Handshake Pigeonhole",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: at any party of 10 people, there are two people who shook hands with the same number of others.",
+    "answer": "true",
+    "solution": "True. Each count is in $\\{0,\\dots,9\\}$, but 0 and 9 can't both occur: someone who shook hands with everyone shook the 0-person's hand. So 10 people share at most 9 values, and by pigeonhole two counts coincide."
+  },
+  {
+    "id": "brainteasers-43",
+    "subject": "brainteasers",
+    "n": 43,
+    "title": "367 People Birthday Pigeonhole",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: in any group of 367 people, at least two share a birthday.",
+    "answer": "true",
+    "solution": "There are only 366 possible birthdays (including Feb 29). By pigeonhole principle, 367 people guarantee at least one shared birthday."
+  },
+  {
+    "id": "brainteasers-44",
+    "subject": "brainteasers",
+    "n": 44,
+    "title": "Ants on a Square II",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Four ants on a square, each randomly picks a direction along the edges. What is the probability no ants collide?",
+    "answer": "0.125",
+    "solution": "Each ant has 2 choices: clockwise or counterclockwise. All must choose same direction to avoid collisions. Total ways = 2^4 =16. Favorable =2 → probability = 2/16 = 0.125."
+  },
+  {
+    "id": "brainteasers-45",
+    "subject": "brainteasers",
+    "n": 45,
+    "title": "Twelve Coins, One Lighter",
+    "difficulty": "medium",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Twelve coins, one counterfeit and lighter. You have a balance. Find minimum weighings to guarantee finding it.",
+    "answer": "3",
+    "solution": "Lower bound: 2 weighings give $3^2=9<12$ outcomes, so you need at least 3.\nScheme: weigh 4 vs 4. The fake is in the lighter group, or in the 4 set aside if balanced. Weigh 1 vs 1 from that group; if balanced, weigh the other two. That is 3 weighings."
+  },
+  {
+    "id": "brainteasers-46",
+    "subject": "brainteasers",
+    "n": 46,
+    "title": "100 Prisoners and Boxes",
+    "difficulty": "hard",
+    "topics": [
+      "Probability puzzles",
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "100 prisoners' numbers are placed in random order in 100 boxes. One at a time, each prisoner may open 50 boxes looking for his own number, and nothing is changed between visits. They are all freed only if every prisoner succeeds, and they can't communicate once it starts. True or false: there is a strategy giving them a success probability above 30%.",
+    "answer": "true",
+    "solution": "True. Each prisoner opens the box with his own number, then the box numbered by what he finds, and so on. He follows the cycle of the random permutation that contains his number, and succeeds iff that cycle has length at most 50.\nSo everyone succeeds iff the permutation has no cycle longer than 50. For $k>50$ the probability of a cycle of length $k$ is $1/k$, and at most one such cycle can exist, so\n$P=1-\\sum_{k=51}^{100}\\frac1k\\approx1-0.6882=0.3118$."
+  },
+  {
+    "id": "brainteasers-47",
+    "subject": "brainteasers",
+    "n": 47,
+    "title": "Digit-Sum Proof for 9",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Find divisibility by 9 using digits. Prove it works using modular arithmetic.",
+    "options": [
+      "Number divisible by 9 iff sum of digits divisible by 9",
+      "Last digit divisible by 9",
+      "Even numbers divisible by 9",
+      "Number contains 9"
+    ],
+    "answerIndex": 0,
+    "solution": "10 ≡ 1 (mod 9). Thus, number = d_n*10^n + ... + d_0 ≡ sum of digits mod 9. Divisibility depends on sum."
+  },
+  {
+    "id": "brainteasers-48",
+    "subject": "brainteasers",
+    "n": 48,
+    "title": "Chameleons Revisited",
+    "difficulty": "hard",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Chameleons come in three colours: 7 red, 9 green, 11 blue. When two chameleons of different colours meet, both change to the third colour. True or false: they can all become the same colour.",
+    "answer": "false",
+    "solution": "In a meeting the three counts change by $(-1,-1,+2)$ in some order, so every pairwise difference changes by 0 or $\\pm3$. The differences mod 3 are therefore invariant.\nInitially $7,9,11\\equiv1,0,2\\pmod 3$, so no two counts are congruent mod 3.\nEnding all one colour means $(27,0,0)$ in some order: two counts equal (both 0), so that difference is $\\equiv0\\pmod 3$. This is unreachable, so the answer is false."
+  },
+  {
+    "id": "brainteasers-49",
+    "subject": "brainteasers",
+    "n": 49,
+    "title": "Look-and-Say Sequence",
+    "difficulty": "easy",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Infinite sequence: 1, 11, 21, 1211, 111221,... Find the next term.",
+    "answer": "312211",
+    "solution": "This is the 'look-and-say' sequence. Describe previous term: 111221 → three 1s, two 2s, one 1 → 312211."
+  },
+  {
+    "id": "brainteasers-50",
+    "subject": "brainteasers",
+    "n": 50,
+    "title": "Three Pairs from Ten",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A drawer holds 10 pairs of socks (20 socks), each pair a different colour. How many socks must you draw without looking to guarantee at least 3 matching pairs?",
+    "answer": "13",
+    "solution": "The most socks you can hold with only 2 pairs is 2 pairs (4 socks) plus one sock of each of the other 8 colours: 12 socks.\nThe 13th sock must match one of those 8 singletons, completing a 3rd pair. So 13."
+  },
+  {
+    "id": "brainteasers-51",
+    "subject": "brainteasers",
+    "n": 51,
+    "title": "Ants on an Octagon",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Eight ants sit at the corners of a regular octagon. Each independently picks clockwise or anticlockwise at random and walks along the edges at the same speed. What is the probability that no two ants collide?",
+    "answer": "0.0078125",
+    "solution": "No collision happens only if all ants go the same way: 2 of the $2^8=256$ equally likely choices. $P=2/256=1/128=0.0078125$."
+  },
+  {
+    "id": "brainteasers-52",
+    "subject": "brainteasers",
+    "n": 52,
+    "title": "39 Coins, One Light II",
+    "difficulty": "medium",
+    "topics": [
+      "Strategy & optimisation",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Counterfeit coins 2: 39 coins, one lighter. Minimum weighings?",
+    "answer": "4",
+    "solution": "Lower bound: 3 weighings give at most $3^3=27<39$ outcomes, so 3 aren't enough. Upper bound: $3^4=81\\ge39$. Split 13/13/13, then the suspect 13 into 4/4/5, then at most 5 into 2/2/1, then a final 1 vs 1. So 4 weighings."
+  },
+  {
+    "id": "brainteasers-53",
+    "subject": "brainteasers",
+    "n": 53,
+    "title": "Remainder of 100 mod 9",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "If you divide 100 by 9, what is the remainder? Use modular arithmetic reasoning.",
+    "answer": "1",
+    "solution": "100 mod 9. 9*11 = 99, remainder = 1."
+  },
+  {
+    "id": "brainteasers-54",
+    "subject": "brainteasers",
+    "n": 54,
+    "title": "100 Prisoners and a Light Bulb",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "100 prisoners are taken, one at a time in a random order that goes on forever (each is taken infinitely often), into a room with a light bulb that is initially off and that they can switch. They agree a strategy beforehand and can't communicate otherwise. True or false: they can guarantee that someone eventually declares, correctly and with certainty, that every prisoner has visited the room.",
+    "answer": "true",
+    "solution": "True. Choose one counter. Every other prisoner turns the bulb on the first time he finds it off, and never touches it again. Whenever the counter finds the bulb on, he turns it off and adds 1 to his count. When his count reaches 99, every other prisoner has been in, so he declares."
+  },
+  {
+    "id": "brainteasers-55",
+    "subject": "brainteasers",
+    "n": 55,
+    "title": "Handshake Lemma",
+    "difficulty": "medium",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: in any group of 6 people, the number of people who have shaken an odd number of hands (within the group) is even.",
+    "answer": "true",
+    "solution": "True. Adding everyone's handshake count counts each handshake twice, so the total is even. A sum of integers is even only if it contains an even number of odd terms, so an even number of people have an odd count."
+  },
+  {
+    "id": "brainteasers-56",
+    "subject": "brainteasers",
+    "n": 56,
+    "title": "Cesàro Sum of Grandi's Series",
+    "difficulty": "medium",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Infinite series: 1 − 1 + 1 − 1 + ... What is the Cesàro sum?",
+    "answer": "0.5",
+    "solution": "Partial sums alternate 1,0,1,0,... Cesàro sum = limit of average of first n partial sums = 0.5."
+  },
+  {
+    "id": "brainteasers-57",
+    "subject": "brainteasers",
+    "n": 57,
+    "title": "51 of One Colour",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A drawer has 101 socks, each black or white, in unknown proportions. How many must you draw to be certain of getting 51 of the same colour?",
+    "answer": "101",
+    "solution": "With 100 socks you might have 50 black and 50 white (if the drawer has, say, 50 black and 51 white), so 100 isn't enough. Drawing all 101 always works: by pigeonhole, one colour has at least $\\lceil101/2\\rceil=51$."
+  },
+  {
+    "id": "brainteasers-58",
+    "subject": "brainteasers",
+    "n": 58,
+    "title": "Ants on a Hexagon",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Six ants sit at the corners of a regular hexagon. Each independently picks clockwise or anticlockwise at random and walks along the edges at the same speed. What is the probability that no two ants collide?",
+    "answer": "0.03125",
+    "solution": "Only 'all clockwise' or 'all anticlockwise' avoid a collision: 2 of $2^6=64$ outcomes. $P=2/64=1/32=0.03125$."
+  },
+  {
+    "id": "brainteasers-59",
+    "subject": "brainteasers",
+    "n": 59,
+    "title": "81 Coins, One Light",
+    "difficulty": "easy",
+    "topics": [
+      "Strategy & optimisation",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Counterfeit coins 3: 81 coins, one lighter. Minimum weighings to find it?",
+    "answer": "4",
+    "solution": "Use ternary division logic. 3^4=81 → 4 weighings suffice."
+  },
+  {
+    "id": "brainteasers-60",
+    "subject": "brainteasers",
+    "n": 60,
+    "title": "Phone Number Last Digits",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "True or false: among any 20 people, at least two have phone numbers ending in the same digit.",
+    "answer": "true",
+    "solution": "Last digits 0–9 = 10 options. 20 people → 2 must share a last digit by pigeonhole principle."
+  },
+  {
+    "id": "brainteasers-61",
+    "subject": "brainteasers",
+    "n": 61,
+    "title": "Nesting Boxes",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You have 8 boxes, each fits inside a bigger one. What is the minimum number of moves to nest all boxes?",
+    "answer": "7",
+    "solution": "Each move places one box inside another. Start with the smallest, put it inside the next, then the combined set inside the next bigger box. Each additional box requires 1 move. Total moves = number of boxes − 1 = 8−1 = 7."
+  },
+  {
+    "id": "brainteasers-62",
+    "subject": "brainteasers",
+    "n": 62,
+    "title": "Calendar Cubes: Shared Digits",
+    "difficulty": "hard",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Two cubes each have one digit on each face. Placed side by side they must show every day of the month from 01 to 31, and a 6 can be turned upside down to make a 9. Which digits must appear on both cubes?",
+    "options": [
+      "0, 1 and 2",
+      "1 and 2 only",
+      "0 and 1 only",
+      "0, 1, 2 and 3"
+    ],
+    "answerIndex": 0,
+    "answer": "6",
+    "solution": "11 and 22 force 1 and 2 onto both cubes.\nDates 01–09 pair 0 with eight different digits (1–8, with 9 sharing the 6 face). If 0 were on only one cube, the other would need all eight digits, but it has only 6 faces. So 0 is on both cubes too.\nThat leaves 6 faces for 3, 4, 5, 6, 7, 8, e.g. $\\{0,1,2,3,4,5\\}$ and $\\{0,1,2,6,7,8\\}$. 3 needn't be on both."
+  },
+  {
+    "id": "brainteasers-63",
+    "subject": "brainteasers",
+    "n": 63,
+    "title": "Monty Hall",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A person can open one of three doors. Behind one is a prize. Host opens a door without a prize. Should the person switch or stay?",
+    "options": [
+      "Stay",
+      "Switch",
+      "It doesn’t matter",
+      "Impossible to tell"
+    ],
+    "answerIndex": 1,
+    "solution": "This is the Monty Hall problem. Switching gives a 2/3 chance of winning, staying gives 1/3. Probability improves by switching."
+  },
+  {
+    "id": "brainteasers-64",
+    "subject": "brainteasers",
+    "n": 64,
+    "title": "Expected Ball Number",
+    "difficulty": "easy",
+    "topics": [
+      "Expected value"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A box contains balls numbered 1 to 100. You draw one at random. What is the expected number on the ball?",
+    "answer": "50.5",
+    "solution": "Uniform discrete distribution from 1 to 100. Expected value = (1+100)/2 = 50.5."
+  },
+  {
+    "id": "brainteasers-65",
+    "subject": "brainteasers",
+    "n": 65,
+    "title": "Three-Messenger Desert Relay",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Three messengers set out together from base across a desert. Each can carry at most 1 day's worth of water. Water can be passed between messengers, but each helper must keep enough water to walk back to base unaided, and no one makes a second trip. How far from base (in days of walking) can the last messenger get?",
+    "answer": "1.5",
+    "solution": "Stage 1: after $x$ days all three have $1-x$. Helper 1 needs $x$ to return, so he can give $1-2x$. The other two need $x$ each to refill: $1-2x=2x\\Rightarrow x=\\tfrac14$.\nStage 2: two full messengers at $\\tfrac14$ walk a further $y$. Helper 2 has $1-y$ and needs $\\tfrac14+y$ to get home, so he can give $\\tfrac34-2y$. Setting this equal to $y$ gives $y=\\tfrac14$.\nThe last messenger is full at $\\tfrac12$ day out and walks 1 more day, reaching $1.5$ days."
+  },
+  {
+    "id": "brainteasers-66",
+    "subject": "brainteasers",
+    "n": 66,
+    "title": "100 Switches, 100 Passes",
+    "difficulty": "medium",
+    "topics": [
+      "Number puzzles",
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A row of 100 light switches is all off. On pass $k$ ($k=1,2,\\dots,100$) you toggle every $k$-th switch, so pass 1 toggles all of them and pass 2 toggles switches 2, 4, 6, … How many switches are on at the end?",
+    "answer": "10",
+    "solution": "Switch toggled on every divisor. Only switches with odd number of divisors remain on → perfect squares. Squares ≤ 100: 1,4,9,...,100 → 10 switches."
+  },
+  {
+    "id": "brainteasers-67",
+    "subject": "brainteasers",
+    "n": 67,
+    "title": "Percentage Raises: Who Earns More?",
+    "difficulty": "easy",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Quant A currently earns more than quant B. Over the next 2 years A gets a 10% raise each year and B gets a 20% raise each year. Who earns more after 2 years?",
+    "options": [
+      "First quant",
+      "Second quant",
+      "Both equal",
+      "Cannot tell without numbers"
+    ],
+    "answerIndex": 3,
+    "solution": "After 2 years A earns $1.21S_A$ and B earns $1.44S_B$. A is still ahead iff $S_A/S_B>1.44/1.21\\approx1.19$.\nFor example, \\$120k vs \\$100k leaves A ahead, but \\$110k vs \\$100k puts B ahead. You can't tell without the numbers."
+  },
+  {
+    "id": "brainteasers-68",
+    "subject": "brainteasers",
+    "n": 68,
+    "title": "Doubling Offer",
+    "difficulty": "easy",
+    "topics": [
+      "Sequences & patterns",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are offered \\$100 now, or you can let the \\$100 double every day for 7 days and then collect it. How many dollars does the second option pay?",
+    "answer": "12800",
+    "solution": "$100\\times2^7=100\\times128=\\$12{,}800$, far more than \\$100."
+  },
+  {
+    "id": "brainteasers-69",
+    "subject": "brainteasers",
+    "n": 69,
+    "title": "Josephus Problem (100 Balls)",
+    "difficulty": "hard",
+    "topics": [
+      "Sequences & patterns",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "100 balls are arranged in a circle and numbered 1 to 100. Starting from ball 1, you skip one ball and remove the next (so 2, 4, 6, … go first), carrying on around the circle until one ball remains. What is its number?",
+    "answer": "73",
+    "solution": "Write $n=2^m+\\ell$ with $0\\le\\ell<2^m$. The survivor is $2\\ell+1$.\nThe reason: after $\\ell$ removals, $2^m$ balls remain and the next to act is ball $2\\ell+1$. With a power of 2, the starting ball survives.\n$100=64+36$, so the survivor is $2(36)+1=73$."
+  },
+  {
+    "id": "brainteasers-70",
+    "subject": "brainteasers",
+    "n": 70,
+    "title": "Jeep Problem: Desert Caches",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation",
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A messenger must cross a desert. He can carry at most 1 unit of water, and 1 unit lasts exactly 1 day of walking. At the start there are 4 units of water. He may carry water forward, leave caches anywhere, and walk back for more, but he must never run dry. At most how far from the start (in days of walking) can he get? Round to 4 decimals.",
+    "answer": "1.6762",
+    "solution": "Work backwards. Moving water forward when $k$ loads remain takes $2k-1$ crossings of each stretch ($k$ forward, $k-1$ back). So he should advance exactly far enough to burn one load, i.e. $\\frac{1}{2k-1}$.\nMaximum distance $=1+\\frac13+\\frac15+\\frac17=\\frac{176}{105}\\approx1.6762$ days."
+  },
+  {
+    "id": "brainteasers-71",
+    "subject": "brainteasers",
+    "n": 71,
+    "title": "Four Switches, One Bulb",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "You have 4 light switches, one bulb. You can enter room once. How to identify which switch controls the bulb?",
+    "options": [
+      "Turn A and B on; after 10 minutes turn B off and C on, then enter at once",
+      "Turn one switch on, wait, then enter",
+      "Turn all switches on and enter",
+      "Impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "Turn A and B on. After 10 minutes, turn B off and C on, then enter immediately.\nOn and hot: A. Off but warm: B. On but cold: C. Off and cold: D."
+  },
+  {
+    "id": "brainteasers-72",
+    "subject": "brainteasers",
+    "n": 72,
+    "title": "Bin Packing Ten Items",
+    "difficulty": "medium",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Ten items have sizes 7, 6, 5, 5, 4, 3, 3, 2, 2, 1. Each box holds a total size of at most 10. What is the minimum number of boxes needed?",
+    "answer": "4",
+    "solution": "Lower bound: total size is 38, so at least $\\lceil38/10\\rceil=4$ boxes.\n4 boxes suffice: $\\{7,3\\},\\{6,4\\},\\{5,5\\},\\{3,2,2,1\\}$."
+  },
+  {
+    "id": "brainteasers-73",
+    "subject": "brainteasers",
+    "n": 73,
+    "title": "Calendar Cubes Without 6-as-9",
+    "difficulty": "medium",
+    "topics": [
+      "Logic",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Two cubes, each with one digit per face, must show every date from 01 to 31. True or false: this is possible even if a 6 cannot be turned upside down to serve as a 9.",
+    "answer": "false",
+    "solution": "False. 11 and 22 put 1 and 2 on both cubes. 01–09 put 0 on both cubes (otherwise one cube would need all of 1–9). That uses 6 of the 12 faces and leaves 6 faces for the seven digits 3, 4, 5, 6, 7, 8, 9. Without using 6 as 9, it can't be done."
+  },
+  {
+    "id": "brainteasers-74",
+    "subject": "brainteasers",
+    "n": 74,
+    "title": "Relay Riders Needed",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles",
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A message must travel 250 km. Each relay rider can cover at most 40 km before handing over. What is the minimum number of riders needed?",
+    "answer": "7",
+    "solution": "Riders needed $=\\lceil250/40\\rceil=\\lceil6.25\\rceil=7$. Six riders cover only 240 km."
+  },
+  {
+    "id": "brainteasers-75",
+    "subject": "brainteasers",
+    "n": 75,
+    "title": "Expected Value of a Gamble",
+    "difficulty": "easy",
+    "topics": [
+      "Expected value"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A quant can take a guaranteed \\$100k, or a gamble paying \\$250k with probability 50% and \\$0 otherwise. What is the expected value of the gamble, in dollars?",
+    "answer": "125000",
+    "solution": "$E=0.5(250{,}000)+0.5(0)=\\$125{,}000$, which beats the sure \\$100k on expected value."
+  },
+  {
+    "id": "brainteasers-76",
+    "subject": "brainteasers",
+    "n": 76,
+    "title": "Calendar Cubes: Upside-Down Sixes",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A standard pair of calendar cubes has faces $\\{0,1,2,3,4,5\\}$ and $\\{0,1,2,6,7,8\\}$. The 6 is turned upside down to make a 9 when needed. For how many of the dates 01–31 must the 6 be used as a 9?",
+    "answer": "3",
+    "solution": "The dates containing a 9 are 09, 19 and 29. That's 3 dates."
+  },
+  {
+    "id": "brainteasers-77",
+    "subject": "brainteasers",
+    "n": 77,
+    "title": "Monty Hall with Five Doors",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "You have 5 doors. One has a prize. Host opens 3 empty doors. Should you switch?",
+    "options": [
+      "Yes",
+      "No",
+      "Doesn’t matter",
+      "Impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "By extended Monty Hall logic: switching increases probability of winning. Initial pick 1/5 → probability prize in other doors = 4/5. After host reveals 3 empty doors, switching gives 4/5 chance."
+  },
+  {
+    "id": "brainteasers-78",
+    "subject": "brainteasers",
+    "n": 78,
+    "title": "Josephus Problem (6 Balls)",
+    "difficulty": "medium",
+    "topics": [
+      "Sequences & patterns",
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Six balls are arranged in a circle and numbered 1 to 6. Starting from ball 1, you skip one ball and remove the next, carrying on around the circle until one ball remains. Which ball remains?",
+    "answer": "5",
+    "solution": "Removal order: 2, 4, 6, 3, 1, so ball 5 remains.\nCheck with the formula: $6=4+2$, survivor $=2(2)+1=5$."
+  },
+  {
+    "id": "brainteasers-79",
+    "subject": "brainteasers",
+    "n": 79,
+    "title": "Three Switches, One Bulb II",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Light switches: 3 switches, one bulb, enter room once. How to find correct switch?",
+    "options": [
+      "Turn on first, wait, off; turn on second, enter",
+      "Turn all on",
+      "Guess randomly",
+      "Impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "Same as previous: warm bulb indicates switch turned on then off; lit bulb indicates current switch; cold bulb indicates remaining switch."
+  },
+  {
+    "id": "brainteasers-80",
+    "subject": "brainteasers",
+    "n": 80,
+    "title": "Salaries with Different Raises",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "truefalse",
+    "prompt": "Quant A starts on \\$120k and gets a 10% raise each year. Quant B starts on \\$100k and gets a 20% raise each year. True or false: after 2 years, A still earns more than B.",
+    "answer": "true",
+    "solution": "True, just. A: $120\\times1.1^2=145.2$k. B: $100\\times1.2^2=144$k. (B overtakes in year 3: 172.8k vs 159.72k.)"
+  },
+  {
+    "id": "brainteasers-81",
+    "subject": "brainteasers",
+    "n": 81,
+    "title": "Wolf, Goat and Cabbage Crossing",
+    "difficulty": "medium",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A man must cross a river with a wolf, goat, and cabbage. He can take one at a time. How should he transport them?",
+    "options": [
+      "Take wolf first, then goat, then cabbage",
+      "Goat across; wolf across and goat back; cabbage across; goat across",
+      "Take cabbage first, then wolf, then goat",
+      "Impossible"
+    ],
+    "answerIndex": 1,
+    "solution": "Take the goat across. Go back and take the wolf across, then bring the goat back. Take the cabbage across, leaving it with the wolf. Return for the goat. The goat is never left alone with the wolf or the cabbage. (Swapping wolf and cabbage also works.)"
+  },
+  {
+    "id": "brainteasers-82",
+    "subject": "brainteasers",
+    "n": 82,
+    "title": "Birthday Problem (23 People)",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Birthday problem: In a group of 23 people, what is the probability at least two share a birthday?",
+    "answer": "0.507",
+    "solution": "Complement probability: P(all different) = 365/365 * 364/365 * ... * 343/365 ≈ 0.493. So probability at least two share = 1−0.493 ≈ 0.507."
+  },
+  {
+    "id": "brainteasers-83",
+    "subject": "brainteasers",
+    "n": 83,
+    "title": "Red Card Is a Heart",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A card came from a standard deck. It is red. What is the probability it is a heart?",
+    "answer": "0.5",
+    "solution": "There are 26 red cards: 13 hearts and 13 diamonds. Probability = 13/26 = 0.5."
+  },
+  {
+    "id": "brainteasers-84",
+    "subject": "brainteasers",
+    "n": 84,
+    "title": "Burning Ropes II",
+    "difficulty": "easy",
+    "topics": [
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two ropes each take exactly 60 minutes to burn, but burn unevenly. At time 0 you light rope A at both ends and rope B at one end. The moment A burns out, you light the other end of B. How many minutes after time 0 does B burn out?",
+    "answer": "45",
+    "solution": "A, lit at both ends, burns out at 30 minutes. B then has 30 minutes of rope left; lit at both ends it lasts 15 more minutes. B burns out at $30+15=45$ minutes."
+  },
+  {
+    "id": "brainteasers-85",
+    "subject": "brainteasers",
+    "n": 85,
+    "title": "Eight Balls, One Lighter",
+    "difficulty": "easy",
+    "topics": [
+      "Strategy & optimisation"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "One ball among 8 is defective and lighter than the others. Using a balance scale, what is the minimum number of weighings that guarantees finding it?",
+    "answer": "2",
+    "solution": "Weigh 3 vs 3. If equal, fake in remaining 2 → weigh 1 vs 1. Else, lighter side → weigh 1 vs 1. Maximum 2 weighings suffice."
+  },
+  {
+    "id": "brainteasers-86",
+    "subject": "brainteasers",
+    "n": 86,
+    "title": "Trailing Zeros of 50!",
+    "difficulty": "easy",
+    "topics": [
+      "Number puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Find number of trailing zeros in 50!",
+    "answer": "12",
+    "solution": "Number of 5s: floor(50/5)=10, floor(50/25)=2. Total 12 zeros. Each zero comes from factor 2*5."
+  },
+  {
+    "id": "brainteasers-87",
+    "subject": "brainteasers",
+    "n": 87,
+    "title": "25 Horses, Top 3 II",
+    "difficulty": "hard",
+    "topics": [
+      "Strategy & optimisation",
+      "Logic"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Horse race: 25 horses, 5 at a time, no stopwatch. Find top 3 fastest with minimum races.",
+    "answer": "7",
+    "solution": "Races 1–5: split the horses into five groups of 5 and race each group.\nRace 6: race the five group winners. Label the groups A, B, C, D, E by where their winner finished (A's winner is the fastest horse overall).\nEliminate group D and E entirely, plus C2, C3, B3 and everything below them: each has at least three horses known to be faster.\nThe only candidates for 2nd and 3rd overall are A2, A3, B1, B2 and C1, which is exactly five horses.\nRace 7: race those five. The top two finishers are 2nd and 3rd overall. Total: 7 races."
+  },
+  {
+    "id": "brainteasers-89",
+    "subject": "brainteasers",
+    "n": 88,
+    "title": "Binomial Darts",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dart game: probability hitting bullseye is 0.2. Throw 3 times. Probability of exactly 2 hits?",
+    "answer": "0.096",
+    "solution": "Binomial probability: C(3,2)*0.2^2*0.8 = 3*0.04*0.8=0.096."
+  },
+  {
+    "id": "brainteasers-90",
+    "subject": "brainteasers",
+    "n": 89,
+    "title": "First Die Beats Second",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Dice order: 2 dice rolled. Probability first die > second die?",
+    "answer": "0.4167",
+    "solution": "$P(\\text{tie})=6/36$. By symmetry $P(X>Y)=P(X<Y)=\\frac{1-1/6}{2}=\\frac{15}{36}\\approx0.4167$."
+  },
+  {
+    "id": "brainteasers-91",
+    "subject": "brainteasers",
+    "n": 90,
+    "title": "Monty Hall II",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Monty Hall: 3 doors, prize behind one. Pick door, host opens empty door. Switch or stay?",
+    "options": [
+      "Switch",
+      "Stay",
+      "Doesn’t matter",
+      "Impossible"
+    ],
+    "answerIndex": 0,
+    "solution": "Switching gives 2/3 probability of winning vs 1/3 if staying."
+  },
+  {
+    "id": "brainteasers-92",
+    "subject": "brainteasers",
+    "n": 91,
+    "title": "Amoeba Doubling",
+    "difficulty": "easy",
+    "topics": [
+      "Sequences & patterns"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Amoeba population doubles every hour. Initially 1. After 5 hours, how many?",
+    "answer": "32",
+    "solution": "Population = 2^5 = 32."
+  },
+  {
+    "id": "brainteasers-93",
+    "subject": "brainteasers",
+    "n": 92,
+    "title": "Candies of Three Colours",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Candies in a jar: 10 candies, pick 3 at random. Probability all different colors? Assume 5 red,3 green,2 blue.",
+    "answer": "0.25",
+    "solution": "$\\binom{10}{3}=120$ equally likely draws. One of each colour: $5\\times3\\times2=30$. $P=30/120=0.25$."
+  },
+  {
+    "id": "brainteasers-94",
+    "subject": "brainteasers",
+    "n": 93,
+    "title": "Russian Roulette with Re-Spins",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Russian roulette: 6-chamber revolver, 1 bullet, spin each time. Probability survive 3 rounds?",
+    "answer": "0.5787",
+    "solution": "Survival per round=5/6. Three rounds: (5/6)^3≈0.5787."
+  },
+  {
+    "id": "brainteasers-95",
+    "subject": "brainteasers",
+    "n": 94,
+    "title": "Exactly Two Aces",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Draw 4 cards from a well-shuffled standard 52-card deck. What is the probability of exactly 2 aces? Round to 4 decimals.",
+    "answer": "0.0250",
+    "solution": "$P=\\dfrac{\\binom42\\binom{48}{2}}{\\binom{52}{4}}=\\dfrac{6\\times1128}{270725}=\\dfrac{6768}{270725}=0.0250$"
+  },
+  {
+    "id": "brainteasers-96",
+    "subject": "brainteasers",
+    "n": 95,
+    "title": "Gambler's Ruin (Fair Coin)",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles",
+      "Expected value"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Gambler's Ruin: Player has \\$5, bets \\$1 each time. Probability reach \\$10 before \\$0? Fair coin.",
+    "answer": "0.5",
+    "solution": "Fair coin, symmetric random walk: probability = current/target =5/10=0.5."
+  },
+  {
+    "id": "brainteasers-97",
+    "subject": "brainteasers",
+    "n": 96,
+    "title": "Basketball Possessions",
+    "difficulty": "medium",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A basketball team has three possessions. On each, independently, it scores either 2 or 3 points with probability 1/2 each. What is the probability that it scores exactly 7 points in total?",
+    "answer": "0.375",
+    "solution": "A total of 7 needs exactly one 3 and two 2s: $\\binom31=3$ of the $2^3=8$ equally likely outcomes. $P=3/8=0.375$."
+  },
+  {
+    "id": "brainteasers-98",
+    "subject": "brainteasers",
+    "n": 97,
+    "title": "Cars in Distinct Lanes",
+    "difficulty": "easy",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Cars on road: 3 cars in 3 lanes, each chooses lane randomly. Probability no two in same lane?",
+    "answer": "0.2222",
+    "solution": "$3^3=27$ equally likely lane choices; $3!=6$ put the cars in different lanes. $P=6/27=0.2222$."
+  },
+  {
+    "id": "brainteasers-99",
+    "subject": "brainteasers",
+    "n": 98,
+    "title": "Lost Boarding Pass",
+    "difficulty": "hard",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "100 passengers board a full plane one by one. The first has lost his boarding pass and sits in a uniformly random seat. Each later passenger takes their own seat if it is free, otherwise a uniformly random free seat. What is the probability that the last passenger gets their own seat?",
+    "answer": "0.5",
+    "solution": "Whenever someone chooses at random, seat 1 (the first passenger's) and seat 100 (the last passenger's) are equally likely to be picked. The process ends as soon as one of them is taken: if seat 1 is taken, everyone else then gets their own seat; if seat 100 is taken, the last passenger loses. By symmetry, $P=1/2$."
+  },
+  {
+    "id": "brainteasers-100",
+    "subject": "brainteasers",
+    "n": 99,
+    "title": "Points in a Semicircle",
+    "difficulty": "hard",
+    "topics": [
+      "Probability puzzles"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Four points are placed independently and uniformly at random on a circle. What is the probability that all four lie in some semicircle?",
+    "answer": "0.5",
+    "solution": "Let $A_i$ be the event that all other points lie in the semicircle running clockwise from point $i$. $P(A_i)=(1/2)^{n-1}$, and the $A_i$ are disjoint (with probability 1). All points lie in a semicircle iff some $A_i$ occurs, so\n$P=\\dfrac{n}{2^{n-1}}=\\dfrac{4}{8}=0.5$"
+  }
+]

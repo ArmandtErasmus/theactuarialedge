@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "finance-1",
+    "subject": "finance",
+    "n": 1,
+    "title": "Black–Scholes Call Price",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A European call option has S=\\$100, K=\\$105, r=5%, σ=25%, T=0.5 years. Using Black-Scholes, compute the option price (round to 2 decimals).",
+    "answer": "5.99",
+    "solution": "$$d_1=\\frac{\\ln(S/K)+(r+\\sigma^2/2)T}{\\sigma\\sqrt{T}},\\qquad d_2=d_1-\\sigma\\sqrt{T}$$\n$d_1=\\dfrac{\\ln(100/105)+(0.05+0.03125)(0.5)}{0.25\\sqrt{0.5}}=\\dfrac{-0.04879+0.04063}{0.17678}=-0.0462$\n$d_2=-0.0462-0.1768=-0.2230$\n$N(d_1)=0.4816,\\ N(d_2)=0.4118$\n$C=SN(d_1)-Ke^{-rT}N(d_2)=100(0.4816)-105e^{-0.025}(0.4118)=48.16-42.17=5.99$"
+  },
+  {
+    "id": "finance-2",
+    "subject": "finance",
+    "n": 2,
+    "title": "Put–Call Parity",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A European put option has price P=\\$4.50, S=\\$50, K=\\$52, r=3%, T=0.25 years. Using put-call parity, compute the price of the corresponding call (round to 2 decimals).",
+    "answer": "2.89",
+    "solution": "Put–call parity: $C-P=S-Ke^{-rT}$.\n$Ke^{-rT}=52e^{-0.03\\times0.25}=52(0.99253)=51.6115$\n$C=P+S-Ke^{-rT}=4.50+50-51.6115=2.89$"
+  },
+  {
+    "id": "finance-3",
+    "subject": "finance",
+    "n": 3,
+    "title": "Delta Approximation of Price Change",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A European call has delta 0.6. The underlying stock increases by \\$2. Estimate the change in option price (round to 2 decimals).",
+    "answer": "1.20",
+    "solution": "First-order (delta) approximation: $\\Delta C\\approx \\Delta\\cdot\\Delta S=0.6\\times 2=1.20$."
+  },
+  {
+    "id": "finance-4",
+    "subject": "finance",
+    "n": 4,
+    "title": "Modified Duration Price Change",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A bond with price \\$950 and face \\$1000 matures in 2 years. If the bond’s modified duration is 1.8, estimate the price change if yield increases by 0.5% (round to 2 decimals).",
+    "answer": "-8.55",
+    "solution": "$\\Delta P\\approx -D_{\\text{mod}}\\,\\Delta y\\,P=-1.8\\times0.005\\times950=-8.55$\nThe price falls by about \\$8.55."
+  },
+  {
+    "id": "finance-5",
+    "subject": "finance",
+    "n": 5,
+    "title": "Implied Rate from a 6-Month Forward",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock pays no dividends. Forward price for 6 months is \\$105, spot price \\$100. Compute the annualized risk-free rate (continuous compounding, round to 4 decimals).",
+    "answer": "0.0976",
+    "solution": "$F=Se^{rT}\\Rightarrow r=\\dfrac{\\ln(F/S)}{T}=\\dfrac{\\ln(1.05)}{0.5}=\\dfrac{0.04879}{0.5}=0.0976$"
+  },
+  {
+    "id": "finance-6",
+    "subject": "finance",
+    "n": 6,
+    "title": "Straddle Payoff at Expiry",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A long straddle (long call and long put, both $K=\\$50$, $T=0.5$ years) costs \\$6. At expiry the stock is either \\$55 or \\$45. What is the straddle's payoff at expiry, before deducting the premium (round to 2 decimals)?",
+    "answer": "5.00",
+    "solution": "Straddle payoff $=\\max(S_T-K,0)+\\max(K-S_T,0)=|S_T-K|$.\n$S_T=55$: payoff $=5$. $S_T=45$: payoff $=5$.\nSo the payoff is \\$5.00 either way (the profit after the \\$6 premium would be $-\\$1$)."
+  },
+  {
+    "id": "finance-7",
+    "subject": "finance",
+    "n": 7,
+    "title": "American Put Lower Bound",
+    "difficulty": "easy",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "An American put with strike \\$40, stock price \\$38, T=0.25 years, risk-free rate 2%, non-dividend stock. Approximate lower bound price (round to 2 decimals).",
+    "answer": "2.00",
+    "solution": "American put price ≥ max(K-S,0) = 40-38=2.00. Early exercise value provides lower bound."
+  },
+  {
+    "id": "finance-8",
+    "subject": "finance",
+    "n": 8,
+    "title": "Parametric VaR (95%)",
+    "difficulty": "easy",
+    "topics": [
+      "Risk measures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the 1-day VaR at 95% confidence for a \\$1,000,000 portfolio with daily volatility $\\sigma=2\\%$. Assume normally distributed returns with zero mean and use $z_{0.95}=1.645$. Round to the nearest dollar.",
+    "answer": "32900",
+    "solution": "$\\text{VaR}=z\\,\\sigma\\,V=1.645\\times0.02\\times1{,}000{,}000=\\$32{,}900$"
+  },
+  {
+    "id": "finance-9",
+    "subject": "finance",
+    "n": 9,
+    "title": "Bull Call Spread Max Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A bull call spread: Buy call K1=\\$50, Sell call K2=\\$55, net premium paid \\$2. Maximum profit (round to 2 decimals)?",
+    "answer": "3.00",
+    "solution": "Max profit = (K2-K1) - net premium = 55-50-2=3.00"
+  },
+  {
+    "id": "finance-10",
+    "subject": "finance",
+    "n": 10,
+    "title": "Black–Scholes d1 (30% Vol)",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock has σ=30%, T=0.5 years. Compute d1 for a call with S=\\$100, K=\\$105, r=5% (round to 4 decimals).",
+    "answer": "-0.0061",
+    "solution": "$$d_1=\\frac{\\ln(S/K)+(r+\\sigma^2/2)T}{\\sigma\\sqrt{T}},\\qquad d_2=d_1-\\sigma\\sqrt{T}$$\nNumerator: $\\ln(100/105)+(0.05+0.045)(0.5)=-0.04879+0.0475=-0.00129$\nDenominator: $0.3\\sqrt{0.5}=0.21213$\n$d_1=-0.00129/0.21213=-0.0061$"
+  },
+  {
+    "id": "finance-11",
+    "subject": "finance",
+    "n": 11,
+    "title": "Margrabe Exchange Option",
+    "difficulty": "hard",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "An option gives the right to hand over asset $Y$ and receive asset $X$ in 1 year, i.e. payoff $\\max(X_T-Y_T,0)$. Today $X=\\$100$, $Y=\\$95$, neither pays dividends, and the volatility of the ratio $X/Y$ is $\\sigma=20\\%$. The risk-free rate is 5%. Using Margrabe's formula, value the option (round to 2 decimals).",
+    "answer": "10.52",
+    "solution": "Margrabe: $V=X\\,N(d_1)-Y\\,N(d_2)$ with $d_1=\\dfrac{\\ln(X/Y)+\\sigma^2T/2}{\\sigma\\sqrt T}$, $d_2=d_1-\\sigma\\sqrt T$. The risk-free rate drops out.\n$d_1=\\dfrac{\\ln(100/95)+0.02}{0.2}=\\dfrac{0.05129+0.02}{0.2}=0.3565,\\quad d_2=0.1565$\n$N(d_1)=0.6393,\\ N(d_2)=0.5622$\n$V=100(0.6393)-95(0.5622)=63.93-53.41=10.52$"
+  },
+  {
+    "id": "finance-12",
+    "subject": "finance",
+    "n": 12,
+    "title": "Duration–Convexity Price Change",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A bond has modified duration 5 and convexity 20. Its yield rises by 1 percentage point. Using the duration–convexity approximation, estimate the percentage change in the bond's price (in %, round to 2 decimals).",
+    "answer": "-4.90%",
+    "solution": "$\\dfrac{\\Delta P}{P}\\approx -D\\,\\Delta y+\\tfrac12 C(\\Delta y)^2=-5(0.01)+\\tfrac12(20)(0.01)^2=-0.05+0.001=-0.049$\nSo the price falls by about $4.90\\%$."
+  },
+  {
+    "id": "finance-13",
+    "subject": "finance",
+    "n": 13,
+    "title": "Black–Scholes Put Delta",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging",
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute delta of a European put with S=\\$50, K=\\$50, r=5%, σ=20%, T=0.5 years (round to 4 decimals).",
+    "answer": "-0.4023",
+    "solution": "Put delta $=N(d_1)-1$.\n$d_1=\\dfrac{0+(0.05+0.02)(0.5)}{0.2\\sqrt{0.5}}=\\dfrac{0.035}{0.14142}=0.2475$\n$N(0.2475)=0.5977\\Rightarrow \\Delta_P=0.5977-1=-0.4023$"
+  },
+  {
+    "id": "finance-14",
+    "subject": "finance",
+    "n": 14,
+    "title": "Implied Rate from a Futures Price",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A futures contract is trading at \\$102, spot \\$100, T=0.25 years. Compute implied risk-free rate (annual, continuous, round to 4 decimals).",
+    "answer": "0.0792",
+    "solution": "$r=\\dfrac{\\ln(F/S)}{T}=\\dfrac{\\ln(1.02)}{0.25}=\\dfrac{0.019803}{0.25}=0.0792$"
+  },
+  {
+    "id": "finance-15",
+    "subject": "finance",
+    "n": 15,
+    "title": "Black–Scholes Vega",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the vega of a European call with $S=\\$50$, $K=\\$50$, $T=0.5$, $\\sigma=25\\%$, $r=5\\%$, using $\\text{Vega}=S\\sqrt{T}\\,N'(d_1)$ (i.e. per unit change in $\\sigma$, not per 1%). Round to 2 decimals.",
+    "answer": "13.74",
+    "solution": "$d_1=\\dfrac{0+(0.05+0.03125)(0.5)}{0.25\\sqrt{0.5}}=\\dfrac{0.040625}{0.17678}=0.2298$\n$N'(d_1)=\\frac{1}{\\sqrt{2\\pi}}e^{-0.2298^2/2}=0.3885$\n$\\text{Vega}=50\\times0.7071\\times0.3885=13.74$ (about 0.137 per 1% vol)."
+  },
+  {
+    "id": "finance-16",
+    "subject": "finance",
+    "n": 16,
+    "title": "Volatility of Stock–Cash Portfolio",
+    "difficulty": "easy",
+    "topics": [
+      "Portfolio theory"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A portfolio is 60% in a stock and 40% in risk-free cash. The stock's volatility is 20% and cash has zero volatility. What is the portfolio volatility (as a percentage, round to 2 decimals)?",
+    "answer": "12.00%",
+    "solution": "Cash contributes no variance or covariance, so $\\sigma_p=w\\sigma_S=0.6\\times20\\%=12.00\\%$."
+  },
+  {
+    "id": "finance-17",
+    "subject": "finance",
+    "n": 17,
+    "title": "Cash-or-Nothing Binary Call",
+    "difficulty": "hard",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A cash-or-nothing binary call pays \\$100 at expiry if $S_T>K=\\$50$. The stock is \\$52, $r=5\\%$, $\\sigma=25\\%$, $T=0.5$ years, no dividends. Price it under Black–Scholes (round to 2 decimals).",
+    "answer": "59.33",
+    "solution": "Price $=Qe^{-rT}N(d_2)$, since $N(d_2)$ is the risk-neutral probability that $S_T>K$.\n$d_1=\\dfrac{\\ln(52/50)+(0.05+0.03125)(0.5)}{0.25\\sqrt{0.5}}=\\dfrac{0.03922+0.04063}{0.17678}=0.4517$\n$d_2=0.4517-0.1768=0.2749,\\ N(d_2)=0.6083$\nPrice $=100e^{-0.025}(0.6083)=97.53\\times0.6083=59.33$"
+  },
+  {
+    "id": "finance-18",
+    "subject": "finance",
+    "n": 18,
+    "title": "Bear Put Spread Max Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the maximum profit of a bear put spread: Buy put K1=\\$55, Sell put K2=\\$50, net premium \\$3 (round to 2 decimals).",
+    "answer": "2.00",
+    "solution": "Max profit = (K1-K2) - net premium = 55-50-3=2.00"
+  },
+  {
+    "id": "finance-19",
+    "subject": "finance",
+    "n": 19,
+    "title": "Black–Scholes Call Theta",
+    "difficulty": "hard",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the theta (per year) of a European call: $S=\\$50$, $K=\\$50$, $\\sigma=25\\%$, $r=5\\%$, $T=0.5$. Use $\\theta=-\\dfrac{S\\sigma N'(d_1)}{2\\sqrt T}-rKe^{-rT}N(d_2)$. Round to 2 decimals.",
+    "answer": "-4.70",
+    "solution": "$d_1=\\dfrac{0.040625}{0.17678}=0.2298,\\ d_2=0.0530$\n$N'(d_1)=0.3885,\\ N(d_2)=0.5211$\nFirst term: $\\dfrac{50(0.25)(0.3885)}{2(0.7071)}=3.434$\nSecond term: $0.05(50)e^{-0.025}(0.5211)=1.271$\n$\\theta=-3.434-1.271=-4.70$ per year (about $-0.013$ per calendar day)."
+  },
+  {
+    "id": "finance-20",
+    "subject": "finance",
+    "n": 20,
+    "title": "Forward Price with Dividend Yield",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute forward price of dividend-paying stock: S=\\$100, K irrelevant, T=1, risk-free r=5%, dividend yield q=2% (round to 2 decimals).",
+    "answer": "103.05",
+    "solution": "$F=Se^{(r-q)T}=100e^{0.03}=100(1.030455)=103.05$"
+  },
+  {
+    "id": "finance-21",
+    "subject": "finance",
+    "n": 21,
+    "title": "Black–Scholes d1 (In-the-Money)",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You buy a European call with S=\\$100, K=\\$95, T=0.25 years, σ=30%, r=5%. Compute d1 (round to 4 decimals).",
+    "answer": "0.5003",
+    "solution": "$$d_1=\\frac{\\ln(S/K)+(r+\\sigma^2/2)T}{\\sigma\\sqrt{T}},\\qquad d_2=d_1-\\sigma\\sqrt{T}$$\nNumerator: $\\ln(100/95)+(0.05+0.045)(0.25)=0.05129+0.02375=0.07504$\nDenominator: $0.3\\sqrt{0.25}=0.15$\n$d_1=0.07504/0.15=0.5003$"
+  },
+  {
+    "id": "finance-22",
+    "subject": "finance",
+    "n": 22,
+    "title": "Straddle Profit",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A straddle costs \\$7 (call+put at K=\\$50, T=0.5), stock moves to \\$60 at expiry. Compute profit (round to 2 decimals).",
+    "answer": "3.00",
+    "solution": "Straddle payoff = |S-K| = 60-50=10. Profit = payoff - premium = 10-7=3.00"
+  },
+  {
+    "id": "finance-23",
+    "subject": "finance",
+    "n": 23,
+    "title": "Bull Call Spread Max Loss",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Bull spread: Buy call K1=\\$100, sell call K2=\\$110. Net premium \\$4. Maximum loss (round to 2 decimals)?",
+    "answer": "4.00",
+    "solution": "Max loss = net premium paid = 4. Loss occurs if stock ≤ K1 at expiry."
+  },
+  {
+    "id": "finance-24",
+    "subject": "finance",
+    "n": 24,
+    "title": "Black–Scholes Call Delta",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging",
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute delta of a European call with S=\\$100, K=\\$100, σ=20%, r=5%, T=0.5 years (round to 4 decimals).",
+    "answer": "0.5977",
+    "solution": "$d_1=\\dfrac{0+(0.05+0.02)(0.5)}{0.2\\sqrt{0.5}}=\\dfrac{0.035}{0.14142}=0.2475$\n$\\Delta_C=N(d_1)=N(0.2475)=0.5977$"
+  },
+  {
+    "id": "finance-25",
+    "subject": "finance",
+    "n": 25,
+    "title": "Implied Rate from a 1-Year Forward",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year forward contract on a stock has price \\$105. Spot \\$100. Compute implied annual continuous rate (round to 4 decimals).",
+    "answer": "0.0488",
+    "solution": "F=S*exp(rT) → r = ln(F/S)/T = ln(105/100)/1 ≈ ln(1.05)=0.04879 → 0.0488"
+  },
+  {
+    "id": "finance-26",
+    "subject": "finance",
+    "n": 26,
+    "title": "Two-Asset Portfolio Volatility",
+    "difficulty": "medium",
+    "topics": [
+      "Portfolio theory"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A portfolio is 50% in stock A ($\\sigma_A=15\\%$) and 50% in stock B ($\\sigma_B=20\\%$) with correlation 0.3. Compute the portfolio volatility (as a percentage, round to 2 decimals).",
+    "answer": "14.19%",
+    "solution": "$\\sigma_p^2=w_A^2\\sigma_A^2+w_B^2\\sigma_B^2+2w_Aw_B\\rho\\sigma_A\\sigma_B$\n$=0.25(0.0225)+0.25(0.04)+2(0.5)(0.5)(0.3)(0.15)(0.2)=0.005625+0.01+0.0045=0.020125$\n$\\sigma_p=\\sqrt{0.020125}=0.1419=14.19\\%$"
+  },
+  {
+    "id": "finance-27",
+    "subject": "finance",
+    "n": 27,
+    "title": "Strategy for Big Moves",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which option strategy profits from large moves in either direction of the underlying?",
+    "options": [
+      "Straddle",
+      "Bull spread",
+      "Bear spread",
+      "Covered call"
+    ],
+    "answerIndex": 0,
+    "solution": "Straddle = buy call + buy put at same strike. Profits if stock moves significantly up or down; loss occurs if stock stays near strike."
+  },
+  {
+    "id": "finance-28",
+    "subject": "finance",
+    "n": 28,
+    "title": "Forward-Start Call",
+    "difficulty": "hard",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock (no dividends) trades at \\$100. A forward-start call starts in 6 months: on that date its strike is set to 105% of the then stock price, and it expires 1 year after it starts. With $r=5\\%$ and $\\sigma=25\\%$, what is its value today under Black–Scholes (round to 2 decimals)?",
+    "answer": "10.00",
+    "solution": "At the start date $t_1$ the option is an ordinary call with $K=1.05S_{t_1}$ and 1 year to run, worth $S_{t_1}\\,c(1,1.05)$ by homogeneity of Black–Scholes. With no dividends, $S_{t_1}$ has present value $S_0$, so the value today is $S_0\\,c(1,1.05)$, i.e. a BS call with $S=100$, $K=105$, $T=1$:\n$d_1=\\dfrac{\\ln(100/105)+(0.05+0.03125)}{0.25}=0.1298,\\ d_2=-0.1202$\n$N(d_1)=0.5517,\\ N(d_2)=0.4522$\n$C=100(0.5517)-105e^{-0.05}(0.4522)=55.17-45.16=10.00$"
+  },
+  {
+    "id": "finance-29",
+    "subject": "finance",
+    "n": 29,
+    "title": "Time Value of an American Call",
+    "difficulty": "easy",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "An American call on a non-dividend-paying stock trades at \\$5 and its intrinsic value is \\$3. What is the option's time value, i.e. the amount you would give up by exercising now (round to 2 decimals)?",
+    "answer": "2.00",
+    "solution": "Time value $=$ price $-$ intrinsic $=5-3=\\$2.00$.\nFor a non-dividend stock, early exercise of an American call is never optimal: exercising throws away this \\$2."
+  },
+  {
+    "id": "finance-30",
+    "subject": "finance",
+    "n": 30,
+    "title": "Zero-Coupon Bond Price (3-Year)",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income",
+      "Time value of money"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the value of a 3-year zero-coupon bond with face \\$1000, yield 6% (continuous) (round to 2 decimals).",
+    "answer": "835.27",
+    "solution": "Price = F*exp(-r*T) = 1000*exp(-0.06*3)=1000*exp(-0.18)=1000*0.83527≈835.27"
+  },
+  {
+    "id": "finance-31",
+    "subject": "finance",
+    "n": 31,
+    "title": "Greek for Volatility",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which Greek measures sensitivity of option price to volatility?",
+    "options": [
+      "Vega",
+      "Delta",
+      "Theta",
+      "Gamma"
+    ],
+    "answerIndex": 0,
+    "solution": "Vega = ∂V/∂σ. Measures how much option price changes with volatility."
+  },
+  {
+    "id": "finance-32",
+    "subject": "finance",
+    "n": 32,
+    "title": "Long Call Butterfly Max Profit",
+    "difficulty": "medium",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the maximum profit of a long butterfly spread: Buy 1 call K1=\\$50, Sell 2 calls K2=\\$55, Buy 1 call K3=\\$60. Premium paid \\$2 (round to 2 decimals).",
+    "answer": "3.00",
+    "solution": "Maximum payoff occurs at $S_T=K_2=55$: the 50-call pays 5 and the others pay 0.\nMax profit $=(K_2-K_1)-\\text{premium}=5-2=3.00$"
+  },
+  {
+    "id": "finance-33",
+    "subject": "finance",
+    "n": 33,
+    "title": "Implied Rate with Dividend Yield",
+    "difficulty": "medium",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock with price \\$100, dividend yield 2%, forward price for 1 year \\$103. Compute implied risk-free rate (continuous, round to 4 decimals).",
+    "answer": "0.0496",
+    "solution": "$F=Se^{(r-q)T}\\Rightarrow r=\\dfrac{\\ln(F/S)}{T}+q=\\ln(1.03)+0.02=0.02956+0.02=0.0496$"
+  },
+  {
+    "id": "finance-34",
+    "subject": "finance",
+    "n": 34,
+    "title": "Short Forward Payoff",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You short a forward contract at \\$105. Spot rises to \\$108 at expiry. What is your profit (round to 2 decimals)?",
+    "answer": "-3.00",
+    "solution": "Profit for short forward = K-Final spot = 105-108=-3.00"
+  },
+  {
+    "id": "finance-35",
+    "subject": "finance",
+    "n": 35,
+    "title": "Delta Estimate for a Stock Move",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year European call has price \\$5, delta=0.55. Estimate the change in option price if stock rises \\$2 (round to 2 decimals).",
+    "answer": "1.10",
+    "solution": "ΔC ≈ delta * ΔS = 0.55*2 = 1.10"
+  },
+  {
+    "id": "finance-36",
+    "subject": "finance",
+    "n": 36,
+    "title": "Long Vega Position",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies",
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Before expiry, which position gains if implied volatility rises while the stock price stays near the strike?",
+    "options": [
+      "Long straddle",
+      "Bull call spread",
+      "Covered call",
+      "Short put"
+    ],
+    "answerIndex": 0,
+    "solution": "A long straddle is long both a call and a put, so it has positive vega: a rise in implied volatility raises its value even without a price move. The bull spread and covered call have little or negative vega, and a short put has negative vega."
+  },
+  {
+    "id": "finance-37",
+    "subject": "finance",
+    "n": 37,
+    "title": "Black–Scholes Gamma",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute gamma for a European call: S=\\$100, K=\\$100, σ=20%, T=0.5, r=5% (formula: Γ = N'(d1)/(Sσ√T), round to 4 decimals).",
+    "answer": "0.0274",
+    "solution": "$d_1=0.035/0.14142=0.2475,\\ N'(d_1)=0.3869$\n$\\Gamma=\\dfrac{N'(d_1)}{S\\sigma\\sqrt T}=\\dfrac{0.3869}{100(0.2)(0.7071)}=\\dfrac{0.3869}{14.142}=0.0274$"
+  },
+  {
+    "id": "finance-38",
+    "subject": "finance",
+    "n": 38,
+    "title": "Duration of a Bond Portfolio",
+    "difficulty": "hard",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Bond A: 3-year, 6% annual coupon. Bond B: 5-year, 5% annual coupon. Both have face \\$1000 and are priced at a flat yield of 5% (annual compounding). A portfolio invests 50% of its value in each. Compute the portfolio's Macaulay duration (round to 2 decimals).",
+    "answer": "3.69",
+    "solution": "Bond A: PVs of 60, 60, 1060 are 57.14, 54.42, 915.67; price 1027.23.\n$D_A=\\dfrac{1(57.14)+2(54.42)+3(915.67)}{1027.23}=\\dfrac{2912.99}{1027.23}=2.836$\nBond B (priced at par, 1000): PVs 47.62, 45.35, 43.19, 41.14, 822.70.\n$D_B=\\dfrac{47.62+90.70+129.58+164.54+4113.51}{1000}=4.546$\nPortfolio duration is the value-weighted average: $0.5(2.836)+0.5(4.546)=3.69$"
+  },
+  {
+    "id": "finance-39",
+    "subject": "finance",
+    "n": 39,
+    "title": "Put Delta from a Market Price",
+    "difficulty": "hard",
+    "topics": [
+      "Greeks & hedging",
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A European put with $S=\\$50$, $K=\\$50$, $T=0.5$ years trades at \\$2.00. The stock pays no dividends and $r=5\\%$. Back out the Black–Scholes implied volatility, then compute the put's delta (round to 4 decimals).",
+    "answer": "-0.3987",
+    "solution": "Solve $P(\\sigma)=Ke^{-rT}N(-d_2)-SN(-d_1)=2.00$ numerically (e.g. Newton or bisection): $\\sigma_{\\text{imp}}\\approx18.46\\%$.\nThen $d_1=\\dfrac{(0.05+0.1846^2/2)(0.5)}{0.1846\\sqrt{0.5}}=0.2568$\n$\\Delta_P=N(d_1)-1=0.6013-1=-0.3987$"
+  },
+  {
+    "id": "finance-40",
+    "subject": "finance",
+    "n": 40,
+    "title": "Implied Rate from a 1-Year Futures",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A futures contract with F=\\$105, spot \\$100, T=1. Compute annual continuous risk-free rate (round to 4 decimals).",
+    "answer": "0.0488",
+    "solution": "r=ln(F/S)/T = ln(105/100)/1 ≈0.04879 →0.0488"
+  },
+  {
+    "id": "finance-41",
+    "subject": "finance",
+    "n": 41,
+    "title": "Up-and-Out Call After Knock-Out",
+    "difficulty": "easy",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A barrier up-and-out call has S=\\$100, K=\\$105, barrier=\\$110, T=0.5, σ=25%, r=5%. If the stock price hits \\$110, what is the option value (numeric, round to 2 decimals)?",
+    "answer": "0.00",
+    "solution": "An up-and-out call becomes worthless if the barrier is touched. Since S hits \\$110, the option ceases to exist. Value=0.00"
+  },
+  {
+    "id": "finance-42",
+    "subject": "finance",
+    "n": 42,
+    "title": "Delta of a Calls and Short Puts Book",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You hold a portfolio: long 100 calls (Δ=0.6), short 50 puts (Δ=-0.4). Compute approximate portfolio delta (round to 2 decimals).",
+    "answer": "80.00",
+    "solution": "Portfolio delta = 100*0.6 + (-50)*(-0.4) = 60 + 20 = 80.00"
+  },
+  {
+    "id": "finance-43",
+    "subject": "finance",
+    "n": 43,
+    "title": "Zero-Coupon Continuous Yield",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income",
+      "Time value of money"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 2-year zero-coupon bond with face \\$1000 has price \\$900. Compute yield to maturity (annual, continuous, round to 4 decimals).",
+    "answer": "0.0527",
+    "solution": "Price = F*exp(-y*T) → y = -ln(P/F)/T = -ln(900/1000)/2 = -ln(0.9)/2 ≈ 0.0527"
+  },
+  {
+    "id": "finance-44",
+    "subject": "finance",
+    "n": 44,
+    "title": "Cash-or-Nothing Binary Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a cash-or-nothing binary call?",
+    "options": [
+      "Pays fixed cash if underlying > strike",
+      "Pays stock if underlying > strike",
+      "Pays nothing unless underlying < strike",
+      "Pays both cash and stock"
+    ],
+    "answerIndex": 0,
+    "solution": "A cash-or-nothing call pays a fixed amount if the underlying is above strike at expiry, otherwise pays nothing."
+  },
+  {
+    "id": "finance-45",
+    "subject": "finance",
+    "n": 45,
+    "title": "Forward Price with 3% Dividend Yield",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute price of a 1-year forward contract on a dividend-paying stock: S=\\$100, q=3%, r=5%, T=1 (round to 2 decimals).",
+    "answer": "102.02",
+    "solution": "F = S*exp((r-q)T) = 100*exp(0.05-0.03)=100*exp(0.02)=102.02"
+  },
+  {
+    "id": "finance-46",
+    "subject": "finance",
+    "n": 46,
+    "title": "Macaulay Duration (Premium Bond)",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 3-year annual-coupon bond has face \\$1000, coupon 6% and yield 5% (annual compounding). Compute its Macaulay duration (round to 2 decimals).",
+    "answer": "2.84",
+    "solution": "PVs at 5%: $60/1.05=57.14$, $60/1.05^2=54.42$, $1060/1.05^3=915.67$; price $=1027.23$.\n$D=\\dfrac{1(57.14)+2(54.42)+3(915.67)}{1027.23}=\\dfrac{2912.99}{1027.23}=2.84$"
+  },
+  {
+    "id": "finance-47",
+    "subject": "finance",
+    "n": 47,
+    "title": "Black–Scholes Put Theta",
+    "difficulty": "hard",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the theta (per year) of a European put: $S=\\$50$, $K=\\$50$, $\\sigma=25\\%$, $r=5\\%$, $T=0.5$, no dividends. Round to 2 decimals.",
+    "answer": "-2.27",
+    "solution": "$\\theta_P=-\\dfrac{S\\sigma N'(d_1)}{2\\sqrt T}+rKe^{-rT}N(-d_2)$\n$d_1=0.2298,\\ d_2=0.0530,\\ N'(d_1)=0.3885,\\ N(-d_2)=0.4789$\nFirst term: $\\dfrac{50(0.25)(0.3885)}{2(0.7071)}=3.434$\nSecond term: $0.05(50)e^{-0.025}(0.4789)=1.168$\n$\\theta_P=-3.434+1.168=-2.27$ per year"
+  },
+  {
+    "id": "finance-48",
+    "subject": "finance",
+    "n": 48,
+    "title": "Delta Hedge Share Count",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are delta-hedging 100 call options, delta per option 0.55. How many shares should you hold (round to 0 decimals)?",
+    "answer": "55",
+    "solution": "Hedge shares = number of options * delta per option =100*0.55=55 shares"
+  },
+  {
+    "id": "finance-49",
+    "subject": "finance",
+    "n": 49,
+    "title": "Strategy for a Range-Bound Stock",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which option strategy benefits from small movements around the strike?",
+    "options": [
+      "Iron condor",
+      "Long straddle",
+      "Bull spread",
+      "Long call"
+    ],
+    "answerIndex": 0,
+    "solution": "A (short) iron condor sells an OTM put and an OTM call and buys further-OTM wings. It collects premium and keeps the maximum profit if the underlying stays between the short strikes; the other choices need a move."
+  },
+  {
+    "id": "finance-50",
+    "subject": "finance",
+    "n": 50,
+    "title": "Implied Dividend Yield from a Forward",
+    "difficulty": "medium",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 6-month forward on a stock with $S=\\$50$ trades at $F=\\$50.50$. The risk-free rate is 4% (continuous). Compute the implied continuous dividend yield $q$ (round to 4 decimals).",
+    "answer": "0.0201",
+    "solution": "$F=Se^{(r-q)T}\\Rightarrow q=r-\\dfrac{\\ln(F/S)}{T}=0.04-\\dfrac{\\ln(1.01)}{0.5}=0.04-0.0199=0.0201$"
+  },
+  {
+    "id": "finance-51",
+    "subject": "finance",
+    "n": 51,
+    "title": "Parametric VaR (Smaller Portfolio)",
+    "difficulty": "easy",
+    "topics": [
+      "Risk measures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the 1-day 95% VaR of a \\$500,000 portfolio with daily volatility 1.5%, assuming normal returns with zero mean and $z_{0.95}=1.645$ (round to the nearest dollar).",
+    "answer": "12338",
+    "solution": "$\\text{VaR}=1.645\\times0.015\\times500{,}000=12{,}337.5\\approx\\$12{,}338$"
+  },
+  {
+    "id": "finance-52",
+    "subject": "finance",
+    "n": 52,
+    "title": "American vs European Exercise",
+    "difficulty": "easy",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which of the following is true about American vs European options?",
+    "options": [
+      "American options can be exercised anytime; European only at expiry",
+      "European options can be exercised anytime",
+      "American options are always cheaper",
+      "European options have intrinsic value only"
+    ],
+    "answerIndex": 0,
+    "solution": "American options allow early exercise; European only at expiry. Early exercise may add value."
+  },
+  {
+    "id": "finance-53",
+    "subject": "finance",
+    "n": 53,
+    "title": "Forward-Start Call II",
+    "difficulty": "hard",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock (no dividends) trades at \\$100. A forward-start call starts in 1 year: on that date its strike is set to 110% of the then stock price, and it then runs for 1 year. With $r=5\\%$ and $\\sigma=20\\%$, value it today under Black–Scholes (round to 2 decimals).",
+    "answer": "6.04",
+    "solution": "By homogeneity, at the start date the option is worth $S_{t_1}c(1,1.10)$. With no dividends its value today is $S_0\\,c(1,1.10)$: a BS call with $S=100$, $K=110$, $T=1$. The 1-year wait before it starts doesn't matter.\n$d_1=\\dfrac{\\ln(100/110)+0.05+0.02}{0.2}=\\dfrac{-0.09531+0.07}{0.2}=-0.1266,\\ d_2=-0.3266$\n$N(d_1)=0.4496,\\ N(d_2)=0.3720$\n$C=100(0.4496)-110e^{-0.05}(0.3720)=44.96-38.92=6.04$"
+  },
+  {
+    "id": "finance-54",
+    "subject": "finance",
+    "n": 54,
+    "title": "Cash-or-Nothing Binary Put",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A cash-or-nothing binary put pays \\$100 if $S_T<K=\\$50$. The stock is \\$48, $r=5\\%$, $\\sigma=25\\%$, $T=0.25$ years, no dividends. Price it under Black–Scholes (round to 2 decimals).",
+    "answer": "60.61",
+    "solution": "Price $=Qe^{-rT}N(-d_2)$.\n$d_1=\\dfrac{\\ln(48/50)+(0.05+0.03125)(0.25)}{0.25(0.5)}=\\dfrac{-0.04082+0.02031}{0.125}=-0.1641$\n$d_2=-0.1641-0.125=-0.2891,\\ N(-d_2)=0.6137$\nPrice $=100e^{-0.0125}(0.6137)=98.76\\times0.6137=60.61$"
+  },
+  {
+    "id": "finance-55",
+    "subject": "finance",
+    "n": 55,
+    "title": "Black–Scholes Put Gamma",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute gamma of a European put: S=\\$100, K=\\$100, σ=25%, T=0.5, r=5% (round to 4 decimals).",
+    "answer": "0.0220",
+    "solution": "Put and call gamma are equal: $\\Gamma=\\dfrac{N'(d_1)}{S\\sigma\\sqrt T}$.\n$d_1=\\dfrac{(0.05+0.03125)(0.5)}{0.25\\sqrt{0.5}}=0.2298,\\ N'(d_1)=0.3885$\n$\\Gamma=\\dfrac{0.3885}{100(0.25)(0.7071)}=\\dfrac{0.3885}{17.678}=0.0220$"
+  },
+  {
+    "id": "finance-56",
+    "subject": "finance",
+    "n": 56,
+    "title": "Iron Condor Max Loss",
+    "difficulty": "medium",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You sell an iron condor: sell the 50 put and the 55 call, buy the 45 put and the 60 call, for a net credit of \\$2. What is the maximum loss at expiry (round to 2 decimals)?",
+    "answer": "3.00",
+    "solution": "The worst case is $S_T\\le45$ or $S_T\\ge60$: one wing is fully in the money and loses its width, $50-45=60-55=5$.\nMax loss $=5-2=3.00$ (max profit is the \\$2 credit, earned if $50\\le S_T\\le55$)."
+  },
+  {
+    "id": "finance-57",
+    "subject": "finance",
+    "n": 57,
+    "title": "Short Forward P&L",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You sell a 1-year forward at F=\\$105. Spot rises to \\$110. Profit (round to 2 decimals)?",
+    "answer": "-5.00",
+    "solution": "Short forward profit = K - S_T = 105-110=-5.00"
+  },
+  {
+    "id": "finance-58",
+    "subject": "finance",
+    "n": 58,
+    "title": "Greek for Convexity",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which Greek measures curvature of option price vs underlying?",
+    "options": [
+      "Gamma",
+      "Delta",
+      "Vega",
+      "Theta"
+    ],
+    "answerIndex": 0,
+    "solution": "Gamma = ∂^2V/∂S^2 measures how delta changes with underlying. It's the convexity of option price vs stock."
+  },
+  {
+    "id": "finance-59",
+    "subject": "finance",
+    "n": 59,
+    "title": "Zero-Coupon Bond Price (5-Year)",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income",
+      "Time value of money"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 5-year zero-coupon bond has face \\$1000 and a continuously compounded yield of 6%. What is its price (round to 2 decimals)?",
+    "answer": "740.82",
+    "solution": "$P=1000e^{-0.06\\times5}=1000e^{-0.3}=740.82$"
+  },
+  {
+    "id": "finance-60",
+    "subject": "finance",
+    "n": 60,
+    "title": "Portfolio Delta II",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A portfolio: long 50 calls Δ=0.6, short 30 puts Δ=-0.4. Total delta (round to 2 decimals)?",
+    "answer": "42.00",
+    "solution": "Portfolio delta = 50*0.6 + (-30)*(-0.4)=30+12=42.00"
+  },
+  {
+    "id": "finance-61",
+    "subject": "finance",
+    "n": 61,
+    "title": "Gamma and Change in Position Delta",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You hold 100 European calls with delta 0.55 and gamma 0.02. Stock rises \\$2. Estimate the change in delta (round to 2 decimals).",
+    "answer": "4.00",
+    "solution": "Change in delta ≈ Gamma * ΔS * number of options = 0.02 * 2 * 100 = 4.00"
+  },
+  {
+    "id": "finance-62",
+    "subject": "finance",
+    "n": 62,
+    "title": "Duration–Convexity for a Yield Drop",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 2-year bond with price \\$950, yield 6%, modified duration 1.8, convexity 20. Estimate approximate price change for yield drop 0.5% (round to 2 decimals).",
+    "answer": "8.79",
+    "solution": "$\\Delta y=-0.005$\n$\\dfrac{\\Delta P}{P}\\approx -D\\Delta y+\\tfrac12C(\\Delta y)^2=-1.8(-0.005)+\\tfrac12(20)(0.005)^2=0.009+0.00025=0.00925$\n$\\Delta P=0.00925\\times950=8.79$"
+  },
+  {
+    "id": "finance-63",
+    "subject": "finance",
+    "n": 63,
+    "title": "Rebalancing a Delta Hedge",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are long 50 calls (each $\\Delta=0.6$, $\\Gamma=0.03$), delta-hedged with short stock. The stock rises \\$1. Using gamma, how many additional shares must you sell short to stay delta-neutral (round to 1 decimal)?",
+    "answer": "1.5",
+    "solution": "Change in position delta $\\approx 50\\times\\Gamma\\times\\Delta S=50(0.03)(1)=1.5$.\nThe book is now long 1.5 deltas, so sell 1.5 more shares."
+  },
+  {
+    "id": "finance-64",
+    "subject": "finance",
+    "n": 64,
+    "title": "d1 with Continuous Dividends",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year European call on stock paying 2% continuous dividend, S=\\$100, K=\\$105, σ=25%, r=5%. Compute d1 (round to 4 decimals).",
+    "answer": "0.0498",
+    "solution": "$d_1=\\dfrac{\\ln(S/K)+(r-q+\\sigma^2/2)T}{\\sigma\\sqrt T}=\\dfrac{-0.04879+(0.05-0.02+0.03125)}{0.25}=\\dfrac{0.01246}{0.25}=0.0498$"
+  },
+  {
+    "id": "finance-65",
+    "subject": "finance",
+    "n": 65,
+    "title": "Minimum-Variance Weight",
+    "difficulty": "medium",
+    "topics": [
+      "Portfolio theory"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Two assets have variances $\\sigma_1^2=0.04$, $\\sigma_2^2=0.09$ and covariance $\\sigma_{12}=0.01$ (expected returns 8% and 12%). Find the weight in asset 1 of the minimum-variance portfolio (round to 2 decimals).",
+    "answer": "0.73",
+    "solution": "$w_1^*=\\dfrac{\\sigma_2^2-\\sigma_{12}}{\\sigma_1^2+\\sigma_2^2-2\\sigma_{12}}=\\dfrac{0.09-0.01}{0.04+0.09-0.02}=\\dfrac{0.08}{0.11}=0.727\\approx0.73$\n(Expected returns don't affect the minimum-variance portfolio.)"
+  },
+  {
+    "id": "finance-66",
+    "subject": "finance",
+    "n": 66,
+    "title": "Short Forward Loss",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You have a short forward on stock F=\\$105. Spot rises to \\$110. Profit/loss (round to 2 decimals)?",
+    "answer": "-5.00",
+    "solution": "Short forward profit = K - S_T = 105 - 110 = -5.00"
+  },
+  {
+    "id": "finance-67",
+    "subject": "finance",
+    "n": 67,
+    "title": "What Vega Measures",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which of the following is true about Vega?",
+    "options": [
+      "It measures sensitivity to volatility",
+      "It measures sensitivity to interest rate",
+      "It measures curvature of option price",
+      "It measures time decay"
+    ],
+    "answerIndex": 0,
+    "solution": "Vega = ∂V/∂σ, measures how option price changes with volatility."
+  },
+  {
+    "id": "finance-68",
+    "subject": "finance",
+    "n": 68,
+    "title": "Delta–Gamma–Theta P&L",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You hold 100 options, each with delta 0.55, gamma 0.02 and theta $-0.03$ per day. The stock rises \\$2 over 1 day. Using the delta–gamma–theta approximation, estimate the position's P&L (round to 2 decimals).",
+    "answer": "111.00",
+    "solution": "Per option: $\\Delta\\,\\delta S+\\tfrac12\\Gamma(\\delta S)^2+\\theta\\,\\delta t=0.55(2)+\\tfrac12(0.02)(4)+(-0.03)(1)=1.10+0.04-0.03=1.11$\nPosition: $100\\times1.11=111.00$"
+  },
+  {
+    "id": "finance-69",
+    "subject": "finance",
+    "n": 69,
+    "title": "Identify the Vasicek Model",
+    "difficulty": "easy",
+    "topics": [
+      "Interest rate derivatives"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "A stochastic interest rate model: short rate r follows dr=0.05(0.03-r)dt+0.01dW. What is this model type?",
+    "options": [
+      "Vasicek model",
+      "Black-Scholes",
+      "Cox-Ingersoll-Ross",
+      "Hull-White"
+    ],
+    "answerIndex": 0,
+    "solution": "$dr=a(b-r)\\,dt+\\sigma\\,dW$ with constant $a=0.05$, $b=0.03$, $\\sigma=0.01$ is Vasicek: Gaussian and mean-reverting. CIR would have $\\sigma\\sqrt r\\,dW$, and Hull–White has a time-dependent drift $\\theta(t)$."
+  },
+  {
+    "id": "finance-70",
+    "subject": "finance",
+    "n": 70,
+    "title": "Zero-Coupon Bond (Annual Compounding)",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income",
+      "Time value of money"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 5-year zero-coupon bond has face \\$1000 and a yield of 4% per year (annual compounding). What is its price (round to 2 decimals)?",
+    "answer": "821.93",
+    "solution": "$P=\\dfrac{1000}{1.04^5}=\\dfrac{1000}{1.21665}=821.93$"
+  },
+  {
+    "id": "finance-71",
+    "subject": "finance",
+    "n": 71,
+    "title": "Gamma Delta Drift",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute approximate change in delta of a portfolio: long 50 calls (Δ=0.55, Γ=0.02), stock rises \\$1 (round to 2 decimals).",
+    "answer": "1.00",
+    "solution": "ΔΔ ≈ Γ*ΔS*number of options = 0.02*1*50=1.00"
+  },
+  {
+    "id": "finance-72",
+    "subject": "finance",
+    "n": 72,
+    "title": "Forward Price with Dividend Yield II",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year forward on stock S=\\$100, risk-free r=5%, dividend yield q=2%. Compute forward price F (round to 2 decimals).",
+    "answer": "103.05",
+    "solution": "$F=Se^{(r-q)T}=100e^{0.03}=100(1.030455)=103.05$"
+  },
+  {
+    "id": "finance-73",
+    "subject": "finance",
+    "n": 73,
+    "title": "Profiting from Volatility",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which option strategy profits from large movements in either direction?",
+    "options": [
+      "Straddle",
+      "Bull spread",
+      "Covered call",
+      "Long put"
+    ],
+    "answerIndex": 0,
+    "solution": "Long straddle (buy call + buy put) profits from volatility; large moves up or down increase payoff."
+  },
+  {
+    "id": "finance-74",
+    "subject": "finance",
+    "n": 74,
+    "title": "Theta of an At-the-Money Call",
+    "difficulty": "hard",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute the theta (per year) of a European call: $S=\\$100$, $K=\\$100$, $\\sigma=25\\%$, $r=5\\%$, $T=0.5$, no dividends (round to 2 decimals).",
+    "answer": "-9.41",
+    "solution": "$\\theta=-\\dfrac{S\\sigma N'(d_1)}{2\\sqrt T}-rKe^{-rT}N(d_2)$\n$d_1=0.2298,\\ d_2=0.0530,\\ N'(d_1)=0.3885,\\ N(d_2)=0.5211$\nFirst term: $\\dfrac{100(0.25)(0.3885)}{2(0.7071)}=6.869$\nSecond term: $0.05(100)e^{-0.025}(0.5211)=2.541$\n$\\theta=-9.41$ per year"
+  },
+  {
+    "id": "finance-75",
+    "subject": "finance",
+    "n": 75,
+    "title": "Macaulay Duration (Discount Bond)",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 3-year annual coupon bond: face \\$1000, coupon 5%, yield 6%. Compute approximate Macaulay duration (round to 2 decimals).",
+    "answer": "2.86",
+    "solution": "PVs at 6%: $50/1.06=47.17$, $50/1.06^2=44.50$, $1050/1.06^3=881.60$; price $=973.27$.\n$D=\\dfrac{1(47.17)+2(44.50)+3(881.60)}{973.27}=\\dfrac{2780.97}{973.27}=2.86$"
+  },
+  {
+    "id": "finance-76",
+    "subject": "finance",
+    "n": 76,
+    "title": "Re-Hedging After a Stock Move",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are long 100 calls, each with gamma 0.02, and delta-hedged with short stock. The stock rises \\$2. How many additional shares must you sell to restore delta-neutrality (round to 0 decimals)?",
+    "answer": "4",
+    "solution": "Change in position delta $\\approx 100\\times0.02\\times2=4$. The book is now long 4 deltas, so sell 4 shares."
+  },
+  {
+    "id": "finance-77",
+    "subject": "finance",
+    "n": 77,
+    "title": "Delta of Short Calls and Long Puts",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You short 50 calls (Δ=0.55) and long 30 puts (Δ=-0.4). Portfolio delta (round to 2 decimals)?",
+    "answer": "-39.50",
+    "solution": "$\\Delta=-50(0.55)+30(-0.4)=-27.5-12=-39.50$"
+  },
+  {
+    "id": "finance-78",
+    "subject": "finance",
+    "n": 78,
+    "title": "Delta–Gamma–Theta P&L II",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are long 50 calls, each with $\\Delta=0.55$, $\\Gamma=0.02$ and $\\theta=-0.03$ per day. The stock rises \\$1 over 1 day. Estimate the position's P&L with the delta–gamma–theta approximation (round to 2 decimals).",
+    "answer": "26.50",
+    "solution": "Per option: $0.55(1)+\\tfrac12(0.02)(1)^2-0.03=0.55+0.01-0.03=0.53$\nPosition: $50\\times0.53=26.50$"
+  },
+  {
+    "id": "finance-79",
+    "subject": "finance",
+    "n": 79,
+    "title": "Constant-Parameter Gaussian Short Rate",
+    "difficulty": "medium",
+    "topics": [
+      "Interest rate derivatives"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which short-rate model has a mean-reverting drift, constant parameters and normally distributed rates (so rates can go negative)?",
+    "options": [
+      "Vasicek",
+      "Black-Scholes",
+      "CIR",
+      "Hull-White"
+    ],
+    "answerIndex": 0,
+    "solution": "Vasicek: $dr=a(b-r)dt+\\sigma dW$. CIR is also mean-reverting, but its volatility is $\\sigma\\sqrt r$, so rates stay non-negative and aren't Gaussian. Hull–White is Gaussian but has a time-dependent drift $\\theta(t)$. Black–Scholes isn't a short-rate model."
+  },
+  {
+    "id": "finance-80",
+    "subject": "finance",
+    "n": 80,
+    "title": "Put Delta (1-Year)",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging",
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute approximate delta of a 1-year European put: S=\\$100, K=\\$100, σ=25%, r=5% (round to 4 decimals).",
+    "answer": "-0.3726",
+    "solution": "$d_1=\\dfrac{0+(0.05+0.03125)(1)}{0.25}=0.325$\n$\\Delta_P=N(d_1)-1=0.6274-1=-0.3726$"
+  },
+  {
+    "id": "finance-81",
+    "subject": "finance",
+    "n": 81,
+    "title": "Gamma Re-Hedge Share Count",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You are long 200 calls ($\\Delta=0.6$, $\\Gamma=0.025$ each), delta-hedged with short stock. The stock rises \\$1. How many additional shares must you sell to stay delta-neutral (round to 0 decimals)?",
+    "answer": "5",
+    "solution": "Change in position delta $\\approx 200\\times0.025\\times1=5$, so sell 5 more shares."
+  },
+  {
+    "id": "finance-82",
+    "subject": "finance",
+    "n": 82,
+    "title": "Net Duration of a Payer Swap",
+    "difficulty": "medium",
+    "topics": [
+      "Interest rate derivatives",
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You enter a 2-year interest rate swap on \\$1M notional: pay fixed 4%, receive floating. Treat it as long a floating-rate bond (duration 0.5) and short a fixed-rate bond (duration 1.9) of equal value. What is the net duration of your position per unit of notional (round to 2 decimals, include the sign)?",
+    "answer": "-1.40",
+    "solution": "$D_{\\text{swap}}=D_{\\text{float}}-D_{\\text{fixed}}=0.5-1.9=-1.40$\nThe payer swap gains when rates rise, like a short bond."
+  },
+  {
+    "id": "finance-83",
+    "subject": "finance",
+    "n": 83,
+    "title": "Black–Scholes d2",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A European call, S=\\$100, K=\\$105, σ=20%, r=5%, T=0.5. Compute d2 (round to 4 decimals).",
+    "answer": "-0.2389",
+    "solution": "$d_1=\\dfrac{-0.04879+(0.05+0.02)(0.5)}{0.2\\sqrt{0.5}}=\\dfrac{-0.01379}{0.14142}=-0.0975$\n$d_2=d_1-\\sigma\\sqrt T=-0.0975-0.1414=-0.2389$"
+  },
+  {
+    "id": "finance-84",
+    "subject": "finance",
+    "n": 84,
+    "title": "Sensitivity of Delta",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which Greek measures sensitivity of delta to underlying price?",
+    "options": [
+      "Gamma",
+      "Theta",
+      "Vega",
+      "Rho"
+    ],
+    "answerIndex": 0,
+    "solution": "Gamma = ∂Δ/∂S, measures curvature of option price w.r.t underlying."
+  },
+  {
+    "id": "finance-85",
+    "subject": "finance",
+    "n": 85,
+    "title": "Forward-Start Call III",
+    "difficulty": "hard",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A stock (no dividends) trades at \\$100. A forward-start call starts in 3 months: its strike is set then to 110% of the prevailing stock price, and it runs for 1 year from that date. With $r=5\\%$ and $\\sigma=25\\%$, value it today under Black–Scholes (round to 2 decimals).",
+    "answer": "8.03",
+    "solution": "Value today $=S_0\\,c(1,1.10)$ for a 1-year option, i.e. a BS call with $S=100$, $K=110$, $T=1$:\n$d_1=\\dfrac{-0.09531+0.05+0.03125}{0.25}=-0.0562,\\ d_2=-0.3062$\n$N(d_1)=0.4776,\\ N(d_2)=0.3797$\n$C=100(0.4776)-110e^{-0.05}(0.3797)=47.76-39.73=8.03$"
+  },
+  {
+    "id": "finance-86",
+    "subject": "finance",
+    "n": 86,
+    "title": "Delta–Gamma P&L",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A portfolio: long 100 calls Δ=0.55, gamma=0.02, stock rises \\$2. Approximate P&L from delta-gamma (round to 2 decimals).",
+    "answer": "114.00",
+    "solution": "ΔC ≈ delta*ΔS*options + 0.5*gamma*(ΔS)^2*options = 0.55*2*100 + 0.5*0.02*4*100 =110+4=114.00"
+  },
+  {
+    "id": "finance-87",
+    "subject": "finance",
+    "n": 87,
+    "title": "Bond Convexity",
+    "difficulty": "hard",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 3-year annual-coupon bond has face \\$1000, coupon 6% and yield 5%. Compute its convexity $C=\\dfrac{1}{P(1+y)^2}\\sum_t \\dfrac{t(t+1)CF_t}{(1+y)^t}$ (round to 2 decimals).",
+    "answer": "10.09",
+    "solution": "PVs: 57.14, 54.42, 915.67; $P=1027.23$.\n$\\sum t(t+1)PV_t=2(57.14)+6(54.42)+12(915.67)=114.29+326.53+10988.01=11428.83$\n$C=\\dfrac{11428.83}{1027.23\\times1.05^2}=\\dfrac{11428.83}{1132.52}=10.09$"
+  },
+  {
+    "id": "finance-88",
+    "subject": "finance",
+    "n": 88,
+    "title": "Long Calls and Long Puts Delta",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You hold 50 calls, 30 puts, delta 0.6 and -0.4 respectively. Compute portfolio delta (round to 2 decimals).",
+    "answer": "18.00",
+    "solution": "Delta = 50*0.6 + 30*(-0.4)=30-12=18.00"
+  },
+  {
+    "id": "finance-89",
+    "subject": "finance",
+    "n": 89,
+    "title": "Short Straddle View",
+    "difficulty": "easy",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which strategy profits if stock stays near strike and implied volatility drops?",
+    "options": [
+      "Short straddle",
+      "Long straddle",
+      "Bull spread",
+      "Covered call"
+    ],
+    "answerIndex": 0,
+    "solution": "Short straddle: sell call+put, profits if stock remains near strike and volatility falls (options decay)."
+  },
+  {
+    "id": "finance-90",
+    "subject": "finance",
+    "n": 90,
+    "title": "Forward Price with Dividend Yield III",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year forward on a stock: S=\\$100, r=5%, dividend yield 2%. Forward price F? (round to 2 decimals)",
+    "answer": "103.05",
+    "solution": "$F=Se^{(r-q)T}=100e^{0.03}=100(1.030455)=103.05$"
+  },
+  {
+    "id": "finance-91",
+    "subject": "finance",
+    "n": 91,
+    "title": "Reverse Iron Condor Max Profit",
+    "difficulty": "medium",
+    "topics": [
+      "Option strategies"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You buy a (reverse) iron condor: buy the 50 put and the 55 call, sell the 45 put and the 60 call, for a net debit of \\$2. What is the maximum profit at expiry (round to 2 decimals)?",
+    "answer": "3.00",
+    "solution": "Best case is $S_T\\le45$ or $S_T\\ge60$: one long spread pays its full width of 5.\nMax profit $=5-2=3.00$ (max loss is the \\$2 debit, if $50\\le S_T\\le55$)."
+  },
+  {
+    "id": "finance-92",
+    "subject": "finance",
+    "n": 92,
+    "title": "Zero-Coupon Bond Price II",
+    "difficulty": "easy",
+    "topics": [
+      "Bonds & fixed income",
+      "Time value of money"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 5-year zero-coupon bond has face \\$1000 and a continuously compounded yield of 6%. Price (round to 2 decimals)?",
+    "answer": "740.82",
+    "solution": "$P=1000e^{-0.3}=740.82$"
+  },
+  {
+    "id": "finance-93",
+    "subject": "finance",
+    "n": 93,
+    "title": "Square-Root Short-Rate Model",
+    "difficulty": "medium",
+    "topics": [
+      "Interest rate derivatives"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which mean-reverting short-rate model has volatility proportional to $\\sqrt{r}$, which keeps rates non-negative?",
+    "options": [
+      "Vasicek",
+      "CIR",
+      "Black-Scholes",
+      "Hull-White"
+    ],
+    "answerIndex": 1,
+    "solution": "Cox–Ingersoll–Ross: $dr=a(b-r)dt+\\sigma\\sqrt r\\,dW$. Vasicek and Hull–White have constant volatility (Gaussian rates), and Black–Scholes is not a short-rate model."
+  },
+  {
+    "id": "finance-94",
+    "subject": "finance",
+    "n": 94,
+    "title": "Short Forward Mark at Expiry",
+    "difficulty": "easy",
+    "topics": [
+      "Forwards & futures"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "You short a forward contract at \\$105. Spot rises to \\$110. Profit (round to 2 decimals)?",
+    "answer": "-5.00",
+    "solution": "Short forward profit = K - S_T = 105 - 110 = -5.00"
+  },
+  {
+    "id": "finance-95",
+    "subject": "finance",
+    "n": 95,
+    "title": "Put Delta (1-Year) II",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging",
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute delta of 1-year European put: S=\\$100, K=\\$100, σ=25%, r=5% (round to 4 decimals).",
+    "answer": "-0.3726",
+    "solution": "$d_1=\\dfrac{0+(0.05+0.03125)(1)}{0.25}=0.325$\n$\\Delta_P=N(d_1)-1=0.6274-1=-0.3726$"
+  },
+  {
+    "id": "finance-96",
+    "subject": "finance",
+    "n": 96,
+    "title": "Binary Call with Smaller Payout",
+    "difficulty": "medium",
+    "topics": [
+      "Option pricing"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A cash-or-nothing binary call pays \\$50 if $S_T>K=\\$100$. The stock is \\$102, $r=5\\%$, $\\sigma=25\\%$, $T=0.25$, no dividends. Price it under Black–Scholes (round to 2 decimals).",
+    "answer": "28.52",
+    "solution": "Price $=Qe^{-rT}N(d_2)$.\n$d_1=\\dfrac{\\ln(1.02)+(0.08125)(0.25)}{0.125}=\\dfrac{0.01980+0.02031}{0.125}=0.3209,\\ d_2=0.1959$\n$N(d_2)=0.5777$\nPrice $=50e^{-0.0125}(0.5777)=49.38\\times0.5777=28.52$"
+  },
+  {
+    "id": "finance-97",
+    "subject": "finance",
+    "n": 97,
+    "title": "Greek for Time Decay",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "mcq",
+    "prompt": "Which Greek measures time decay of option value?",
+    "options": [
+      "Theta",
+      "Delta",
+      "Gamma",
+      "Vega"
+    ],
+    "answerIndex": 0,
+    "solution": "Theta = ∂V/∂t, measures rate of option value loss over time."
+  },
+  {
+    "id": "finance-98",
+    "subject": "finance",
+    "n": 98,
+    "title": "Theta of a 1-Year ATM Call",
+    "difficulty": "hard",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 1-year European call has $S=\\$100$, $K=\\$100$, $\\sigma=30\\%$, $r=5\\%$, no dividends. Compute its theta per year (round to 2 decimals).",
+    "answer": "-8.10",
+    "solution": "$d_1=\\dfrac{0.05+0.045}{0.3}=0.3167,\\ d_2=0.0167$\n$N'(d_1)=0.3794,\\ N(d_2)=0.5066$\n$\\theta=-\\dfrac{100(0.3)(0.3794)}{2(1)}-0.05(100)e^{-0.05}(0.5066)=-5.691-2.410=-8.10$"
+  },
+  {
+    "id": "finance-99",
+    "subject": "finance",
+    "n": 99,
+    "title": "Macaulay Duration II",
+    "difficulty": "medium",
+    "topics": [
+      "Bonds & fixed income"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "A 3-year bond: face \\$1000, coupon 5%, yield 6%. Approximate Macaulay duration (round to 2 decimals).",
+    "answer": "2.86",
+    "solution": "PVs at 6%: $50/1.06=47.17$, $50/1.06^2=44.50$, $1050/1.06^3=881.60$; price $=973.27$.\n$D=\\dfrac{1(47.17)+2(44.50)+3(881.60)}{973.27}=\\dfrac{2780.97}{973.27}=2.86$"
+  },
+  {
+    "id": "finance-100",
+    "subject": "finance",
+    "n": 100,
+    "title": "Gamma of an ATM Call",
+    "difficulty": "medium",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [],
+    "type": "numeric",
+    "prompt": "Compute gamma for European call: S=\\$100, K=\\$100, σ=25%, T=0.5, r=5% (round to 4 decimals).",
+    "answer": "0.0220",
+    "solution": "$d_1=0.2298,\\ N'(d_1)=0.3885$\n$\\Gamma=\\dfrac{0.3885}{100(0.25)\\sqrt{0.5}}=\\dfrac{0.3885}{17.678}=0.0220$"
+  }
+]

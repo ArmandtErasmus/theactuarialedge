@@ -1,0 +1,3625 @@
+[
+  {
+    "id": "cm2-1",
+    "subject": "cm2",
+    "n": 1,
+    "title": "Weak-Form EMH Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following forms of the Efficient Markets Hypothesis suggests that all past price information is reflected in current prices?",
+    "options": [
+      "Weak form",
+      "Semi-strong form",
+      "Strong form",
+      "Adaptive form"
+    ],
+    "answerIndex": 0,
+    "solution": "The weak form EMH states that past prices are fully reflected in current prices, so technical analysis cannot generate abnormal returns."
+  },
+  {
+    "id": "cm2-2",
+    "subject": "cm2",
+    "n": 2,
+    "title": "Purpose of a Utility Function",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A utility function is used to represent:",
+    "options": [
+      "Investor preferences over wealth or outcomes",
+      "Market equilibrium prices",
+      "Expected return of a portfolio",
+      "Risk-free rate of interest"
+    ],
+    "answerIndex": 0,
+    "solution": "Utility functions encode investor preferences and attitudes towards risk."
+  },
+  {
+    "id": "cm2-3",
+    "subject": "cm2",
+    "n": 3,
+    "title": "Increasing Absolute Risk Aversion",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which property describes an investor who becomes less willing to take absolute risks as wealth increases?",
+    "options": [
+      "Decreasing absolute risk aversion",
+      "Increasing absolute risk aversion",
+      "Relative risk neutrality",
+      "Risk seeking"
+    ],
+    "answerIndex": 1,
+    "solution": "Absolute risk aversion $A(w) = -u''(w)/u'(w)$ measures willingness to take risks of a fixed absolute size.\nIf the investor becomes less willing to take such risks as wealth grows, $A(w)$ rises with $w$: this is increasing absolute risk aversion (IARA). Quadratic utility is an example.\nUnder decreasing absolute risk aversion the investor would instead become more willing to take absolute risks as wealth increases."
+  },
+  {
+    "id": "cm2-4",
+    "subject": "cm2",
+    "n": 4,
+    "title": "Rational Choice and Expected Utility",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Rational choice theory assumes that individuals:",
+    "options": [
+      "Select the option with maximum expected utility",
+      "Always prefer risky options",
+      "Act without considering probabilities",
+      "Focus only on past returns"
+    ],
+    "answerIndex": 0,
+    "solution": "Rational choice theory is based on the expected utility maximization principle."
+  },
+  {
+    "id": "cm2-5",
+    "subject": "cm2",
+    "n": 5,
+    "title": "Role of Expected Utility Theory",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected utility theory helps to:",
+    "options": [
+      "Quantify preferences under uncertainty",
+      "Predict stock prices exactly",
+      "Calculate dividends directly",
+      "Eliminate market risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility theory provides a framework for comparing uncertain outcomes based on their probabilities and utilities."
+  },
+  {
+    "id": "cm2-6",
+    "subject": "cm2",
+    "n": 6,
+    "title": "Utility Function for Risk Neutrality",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which type of utility function represents risk neutrality?",
+    "options": [
+      "Linear",
+      "Exponential",
+      "Quadratic",
+      "Logarithmic"
+    ],
+    "answerIndex": 0,
+    "solution": "A linear utility function implies constant marginal utility and no risk aversion."
+  },
+  {
+    "id": "cm2-7",
+    "subject": "cm2",
+    "n": 7,
+    "title": "Meaning of State-Dependent Utility",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "State-dependent utility functions mean:",
+    "options": [
+      "Utility depends on both wealth and the state of the world",
+      "Utility is independent of wealth",
+      "Utility depends only on previous returns",
+      "Utility is always quadratic"
+    ],
+    "answerIndex": 0,
+    "solution": "State-dependent utility accounts for external conditions affecting investor preferences."
+  },
+  {
+    "id": "cm2-8",
+    "subject": "cm2",
+    "n": 8,
+    "title": "Non-Satiation Property",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which economic property corresponds to investors preferring more wealth to less?",
+    "options": [
+      "Non-satiation",
+      "Risk aversion",
+      "Absolute risk seeking",
+      "Time preference"
+    ],
+    "answerIndex": 0,
+    "solution": "Non-satiation indicates that more wealth is always preferred to less."
+  },
+  {
+    "id": "cm2-9",
+    "subject": "cm2",
+    "n": 9,
+    "title": "Concave Utility and Risk Attitude",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which investor attitude is captured by a concave utility function?",
+    "options": [
+      "Risk aversion",
+      "Risk seeking",
+      "Risk neutrality",
+      "Indifference"
+    ],
+    "answerIndex": 0,
+    "solution": "A concave utility function implies diminishing marginal utility of wealth, representing risk aversion."
+  },
+  {
+    "id": "cm2-10",
+    "subject": "cm2",
+    "n": 10,
+    "title": "Strong-Form EMH Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which form of EMH suggests that all information, public and private, is reflected in asset prices?",
+    "options": [
+      "Strong form",
+      "Weak form",
+      "Semi-strong form",
+      "Adaptive form"
+    ],
+    "answerIndex": 0,
+    "solution": "The strong form EMH assumes no investor can earn abnormal returns, even with insider information."
+  },
+  {
+    "id": "cm2-11",
+    "subject": "cm2",
+    "n": 11,
+    "title": "Evidence Against Semi-Strong EMH",
+    "difficulty": "medium",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Evidence against semi-strong EMH might include:",
+    "options": [
+      "Persistent abnormal returns after public announcements",
+      "Random walk in stock prices",
+      "Efficient diversification",
+      "Low transaction costs"
+    ],
+    "answerIndex": 0,
+    "solution": "Semi-strong EMH assumes public info is reflected immediately; abnormal returns indicate a violation."
+  },
+  {
+    "id": "cm2-12",
+    "subject": "cm2",
+    "n": 12,
+    "title": "Exponential Utility and CARA",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Exponential utility functions are often used to model:",
+    "options": [
+      "Constant absolute risk aversion",
+      "Decreasing relative risk aversion",
+      "Risk neutrality",
+      "Non-satiation"
+    ],
+    "answerIndex": 0,
+    "solution": "Exponential utility has constant absolute risk aversion properties."
+  },
+  {
+    "id": "cm2-13",
+    "subject": "cm2",
+    "n": 13,
+    "title": "Applications of Expected Utility",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected utility comparisons can be applied to:",
+    "options": [
+      "Insurance decisions",
+      "Forecasting GDP",
+      "Setting interest rates",
+      "Measuring inflation"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility provides a framework to analyse trade-offs under uncertainty, such as in insurance."
+  },
+  {
+    "id": "cm2-14",
+    "subject": "cm2",
+    "n": 14,
+    "title": "Ranking Uncertain Prospects",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Utility theory assumes investors can:",
+    "options": [
+      "Rank all uncertain prospects consistently",
+      "Predict stock prices with certainty",
+      "Ignore probabilities",
+      "Guarantee arbitrage profits"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility requires consistent preference ranking of uncertain prospects."
+  },
+  {
+    "id": "cm2-15",
+    "subject": "cm2",
+    "n": 15,
+    "title": "Convex Utility and Risk Attitude",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A convex utility function represents an investor who is:",
+    "options": [
+      "Risk seeking",
+      "Risk averse",
+      "Risk neutral",
+      "Non-satiated"
+    ],
+    "answerIndex": 0,
+    "solution": "Convex utility implies increasing marginal utility of wealth, which corresponds to risk-seeking behavior."
+  },
+  {
+    "id": "cm2-16",
+    "subject": "cm2",
+    "n": 16,
+    "title": "Semi-Strong EMH Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The semi-strong form of EMH states that:",
+    "options": [
+      "All publicly available information is reflected in current prices",
+      "Only past price information is reflected",
+      "All information, public and private, is reflected",
+      "Prices do not follow a random walk"
+    ],
+    "answerIndex": 0,
+    "solution": "Semi-strong EMH incorporates all publicly available information into prices, so fundamental analysis cannot generate abnormal returns."
+  },
+  {
+    "id": "cm2-17",
+    "subject": "cm2",
+    "n": 17,
+    "title": "Illustrating Non-Satiation",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following illustrates non-satiation?",
+    "options": [
+      "Investors always prefer more wealth to less",
+      "Investors take infinite risk",
+      "Investors are indifferent between all options",
+      "Investors prefer riskier portfolios"
+    ],
+    "answerIndex": 0,
+    "solution": "Non-satiation means $u'(w) > 0$: the investor always prefers more wealth to less."
+  },
+  {
+    "id": "cm2-18",
+    "subject": "cm2",
+    "n": 18,
+    "title": "Purpose of the Expected Utility Theorem",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The expected utility theorem is used to:",
+    "options": [
+      "Rank uncertain prospects based on their expected utility",
+      "Predict future stock returns",
+      "Estimate interest rates",
+      "Guarantee portfolio outperformance"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility allows investors to make consistent decisions under uncertainty by comparing the expected utility of alternatives."
+  },
+  {
+    "id": "cm2-19",
+    "subject": "cm2",
+    "n": 19,
+    "title": "Utility with Constant Relative Risk Aversion",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which utility function is most appropriate for constant relative risk aversion?",
+    "options": [
+      "Logarithmic",
+      "Linear",
+      "Exponential",
+      "Quadratic"
+    ],
+    "answerIndex": 0,
+    "solution": "Logarithmic utility implies constant relative risk aversion, meaning the proportion of wealth invested in risky assets does not change with wealth."
+  },
+  {
+    "id": "cm2-20",
+    "subject": "cm2",
+    "n": 20,
+    "title": "Shape of a Risk-Neutral Utility Function",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A risk-neutral investor has a utility function that is:",
+    "options": [
+      "Linear",
+      "Concave",
+      "Convex",
+      "Exponential"
+    ],
+    "answerIndex": 0,
+    "solution": "Linear utility implies the investor values each additional unit of wealth equally, showing no risk aversion."
+  },
+  {
+    "id": "cm2-21",
+    "subject": "cm2",
+    "n": 21,
+    "title": "Put-Call Parity and Investor Preferences",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes",
+      "Binomial option pricing"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Put-call parity is independent of:",
+    "options": [
+      "Investor utility function",
+      "Strike price",
+      "Option maturity",
+      "Underlying asset price"
+    ],
+    "answerIndex": 0,
+    "solution": "Put-call parity relies on arbitrage and the option’s characteristics, not investor preferences."
+  },
+  {
+    "id": "cm2-22",
+    "subject": "cm2",
+    "n": 22,
+    "title": "Uses of State-Dependent Utility",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "State-dependent utility functions are useful for:",
+    "options": [
+      "Modelling preferences that change with external conditions",
+      "Assuming constant risk aversion",
+      "Evaluating only risk-free investments",
+      "Calculating expected returns only"
+    ],
+    "answerIndex": 0,
+    "solution": "State-dependent utilities allow for wealth-dependent or scenario-dependent changes in investor preferences."
+  },
+  {
+    "id": "cm2-23",
+    "subject": "cm2",
+    "n": 23,
+    "title": "Evidence Supporting Weak-Form EMH",
+    "difficulty": "medium",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Evidence supporting weak-form EMH includes:",
+    "options": [
+      "Stock prices follow a random walk",
+      "Persistent post-announcement abnormal returns",
+      "All investors earn abnormal returns",
+      "Strong insider trading effects"
+    ],
+    "answerIndex": 0,
+    "solution": "Random-walk-like behaviour supports the weak form EMH, as past prices cannot predict future returns."
+  },
+  {
+    "id": "cm2-24",
+    "subject": "cm2",
+    "n": 24,
+    "title": "Axioms Behind Expected Utility",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The expected utility theorem requires which assumption about preferences?",
+    "options": [
+      "Completeness and transitivity",
+      "Risk seeking only",
+      "No time preference",
+      "Perfect information"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility assumes that preferences are complete (all alternatives can be ranked) and transitive (consistent ranking)."
+  },
+  {
+    "id": "cm2-25",
+    "subject": "cm2",
+    "n": 25,
+    "title": "Interpreting a Convex Utility Function",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which type of risk attitude corresponds to a convex utility function?",
+    "options": [
+      "Risk seeking",
+      "Risk averse",
+      "Risk neutral",
+      "Non-satiated"
+    ],
+    "answerIndex": 0,
+    "solution": "Convex utility functions increase marginal utility with wealth, representing risk-seeking behaviour."
+  },
+  {
+    "id": "cm2-26",
+    "subject": "cm2",
+    "n": 26,
+    "title": "Decreasing Absolute Risk Aversion",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Absolute risk aversion is decreasing if:",
+    "options": [
+      "The investor tolerates more absolute risk as wealth increases",
+      "The investor tolerates less risk as wealth increases",
+      "Risk neutrality occurs",
+      "Utility is quadratic"
+    ],
+    "answerIndex": 0,
+    "solution": "Decreasing absolute risk aversion implies that the investor becomes less risk averse in absolute terms as wealth rises."
+  },
+  {
+    "id": "cm2-27",
+    "subject": "cm2",
+    "n": 27,
+    "title": "Expected Utility in Insurance Decisions",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory",
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The expected utility approach can analyse:",
+    "options": [
+      "Insurance problems",
+      "Interest rate forecasts",
+      "GDP predictions",
+      "Inflation indexing"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected utility provides a framework for decisions under uncertainty, e.g., whether to buy insurance."
+  },
+  {
+    "id": "cm2-28",
+    "subject": "cm2",
+    "n": 28,
+    "title": "Testing the Weak-Form EMH",
+    "difficulty": "medium",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which form of the Efficient Markets Hypothesis is the most straightforward to test empirically, since the tests need only historical price data?",
+    "options": [
+      "Weak form",
+      "Semi-strong form",
+      "Strong form",
+      "Adaptive form"
+    ],
+    "answerIndex": 0,
+    "solution": "Weak-form tests (serial correlation, runs tests, filter rules) need only past prices.\nSemi-strong tests need event studies around public announcements, and strong-form tests need data on how investors with private information perform, so both are harder to carry out."
+  },
+  {
+    "id": "cm2-29",
+    "subject": "cm2",
+    "n": 29,
+    "title": "Properties of Concave Utility",
+    "difficulty": "easy",
+    "topics": [
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which property does a concave utility function demonstrate?",
+    "options": [
+      "Risk aversion",
+      "Risk seeking",
+      "Risk neutrality",
+      "Non-satiation"
+    ],
+    "answerIndex": 0,
+    "solution": "Concave utility functions reflect diminishing marginal utility and risk aversion."
+  },
+  {
+    "id": "cm2-30",
+    "subject": "cm2",
+    "n": 30,
+    "title": "EMH and Insider Information",
+    "difficulty": "easy",
+    "topics": [
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which EMH form would predict that even insider information cannot generate abnormal returns?",
+    "options": [
+      "Strong form",
+      "Weak form",
+      "Semi-strong form",
+      "Adaptive form"
+    ],
+    "answerIndex": 0,
+    "solution": "Strong-form EMH assumes that all information, public or private, is reflected in prices."
+  },
+  {
+    "id": "cm2-31",
+    "subject": "cm2",
+    "n": 31,
+    "title": "Shortfall Probability Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Shortfall probability measures:",
+    "options": [
+      "The probability that returns fall below a target level",
+      "The total variance of a portfolio",
+      "Expected portfolio return",
+      "The maximum possible return"
+    ],
+    "answerIndex": 0,
+    "solution": "Shortfall probability quantifies the likelihood of achieving less than a specified target return."
+  },
+  {
+    "id": "cm2-32",
+    "subject": "cm2",
+    "n": 32,
+    "title": "Tail Thickness and Risk Measures",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Tail thickness of a return distribution affects:",
+    "options": [
+      "Risk measures such as VaR and Tail VaR",
+      "Expected return only",
+      "Diversification benefit",
+      "Risk-free rate"
+    ],
+    "answerIndex": 0,
+    "solution": "Thicker tails increase the probability of extreme losses, impacting tail-based risk measures."
+  },
+  {
+    "id": "cm2-33",
+    "subject": "cm2",
+    "n": 33,
+    "title": "Risk Measures and Utility Functions",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk",
+      "Utility theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Variance and downside semi-variance are related to the investor's:",
+    "options": [
+      "Utility function",
+      "Investment horizon only",
+      "Inflation expectation",
+      "Tax considerations"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk measures reflect investor preferences encoded in their utility functions."
+  },
+  {
+    "id": "cm2-34",
+    "subject": "cm2",
+    "n": 34,
+    "title": "How Insurance Reduces Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Insurance can reduce investment risk by:",
+    "options": [
+      "Transferring or pooling risk",
+      "Increasing expected return",
+      "Eliminating market risk completely",
+      "Changing asset correlations"
+    ],
+    "answerIndex": 0,
+    "solution": "Insurance reduces risk by transferring it to the insurer or pooling with other investors."
+  },
+  {
+    "id": "cm2-35",
+    "subject": "cm2",
+    "n": 35,
+    "title": "Moral Hazard Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Moral hazard occurs when:",
+    "options": [
+      "Behaviour changes because a party is protected from risk",
+      "An investor underestimates volatility",
+      "Expected return is miscalculated",
+      "Market prices are inaccurate"
+    ],
+    "answerIndex": 0,
+    "solution": "Moral hazard arises when protection from risk changes a party's behaviour, increasing the chance of loss."
+  },
+  {
+    "id": "cm2-36",
+    "subject": "cm2",
+    "n": 36,
+    "title": "Adverse Selection Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Adverse selection refers to:",
+    "options": [
+      "High-risk participants being more likely to seek insurance",
+      "Investors ignoring risk",
+      "Incorrect estimation of tail risk",
+      "Over-diversification of assets"
+    ],
+    "answerIndex": 0,
+    "solution": "Adverse selection occurs when those most likely to suffer a loss are more likely to engage with insurance or financial products."
+  },
+  {
+    "id": "cm2-37",
+    "subject": "cm2",
+    "n": 37,
+    "title": "Semi-Variance vs Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Semi-variance differs from variance because it:",
+    "options": [
+      "Focuses only on returns below the mean or target",
+      "Includes all returns",
+      "Measures expected return",
+      "Ignores correlations"
+    ],
+    "answerIndex": 0,
+    "solution": "Semi-variance captures only downside risk, ignoring returns above the threshold."
+  },
+  {
+    "id": "cm2-38",
+    "subject": "cm2",
+    "n": 38,
+    "title": "Interpreting 95% Value at Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Value at Risk at 95% confidence level means:",
+    "options": [
+      "There is a 5% chance losses exceed this value",
+      "The expected return is 95%",
+      "Portfolio variance is 95%",
+      "The portfolio is guaranteed not to lose"
+    ],
+    "answerIndex": 0,
+    "solution": "VaR at 95% confidence indicates a 5% probability of losses exceeding the VaR threshold."
+  },
+  {
+    "id": "cm2-39",
+    "subject": "cm2",
+    "n": 39,
+    "title": "Coherence of Expected Shortfall",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected Shortfall (Tail VaR) is considered:",
+    "options": [
+      "A coherent risk measure",
+      "Equivalent to standard deviation",
+      "Always less than VaR",
+      "A measure of expected return"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected Shortfall accounts for average losses in the tail beyond the VaR level and satisfies coherence properties."
+  },
+  {
+    "id": "cm2-40",
+    "subject": "cm2",
+    "n": 40,
+    "title": "Why Risk Measures Depend on the Distribution",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Risk measures depend on the distribution of returns because:",
+    "options": [
+      "Different distributions affect the probability of extreme losses",
+      "Expected returns are constant",
+      "Covariance is irrelevant",
+      "Investors ignore variance"
+    ],
+    "answerIndex": 0,
+    "solution": "The shape and tails of the return distribution influence the risk as measured by VaR, Tail VaR, and semi-variance."
+  },
+  {
+    "id": "cm2-41",
+    "subject": "cm2",
+    "n": 41,
+    "title": "Risk Measure Most Sensitive to Tail Losses",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which risk measure is most sensitive to tail losses?",
+    "options": [
+      "Tail Value at Risk (Expected Shortfall)",
+      "Variance",
+      "Standard deviation",
+      "Mean return"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected Shortfall specifically focuses on the expected loss in the tail of the distribution, making it sensitive to extreme losses."
+  },
+  {
+    "id": "cm2-42",
+    "subject": "cm2",
+    "n": 42,
+    "title": "Role of Utility in Risk Assessment",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory",
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "An investor's utility function is most relevant for:",
+    "options": [
+      "Interpreting how risk measures affect investment decisions",
+      "Determining inflation",
+      "Calculating historical returns",
+      "Estimating bond prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk measures are interpreted through the lens of the investor's preferences as captured by their utility function."
+  },
+  {
+    "id": "cm2-43",
+    "subject": "cm2",
+    "n": 43,
+    "title": "Measuring Downside Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which measure is best for evaluating downside risk?",
+    "options": [
+      "Downside semi-variance",
+      "Variance",
+      "Mean return",
+      "Skewness"
+    ],
+    "answerIndex": 0,
+    "solution": "Downside semi-variance isolates negative deviations from a target, making it suitable for downside risk assessment."
+  },
+  {
+    "id": "cm2-44",
+    "subject": "cm2",
+    "n": 44,
+    "title": "Risk Pooling and Transfer in Insurance",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Insurance mitigates risk primarily by:",
+    "options": [
+      "Pooling and transferring risk",
+      "Guaranteeing positive returns",
+      "Eliminating market volatility",
+      "Increasing expected return"
+    ],
+    "answerIndex": 0,
+    "solution": "Insurance reduces individual exposure to risk by spreading losses across many participants or transferring risk to the insurer."
+  },
+  {
+    "id": "cm2-45",
+    "subject": "cm2",
+    "n": 45,
+    "title": "Barriers to Risk Reduction by Insurance",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Adverse selection and moral hazard are:",
+    "options": [
+      "Challenges that insurance faces when reducing risk",
+      "Ways to increase returns",
+      "Market efficiency measures",
+      "Risk-free strategies"
+    ],
+    "answerIndex": 0,
+    "solution": "These concepts describe behavioural and informational challenges that can undermine risk reduction by insurance."
+  },
+  {
+    "id": "cm2-46",
+    "subject": "cm2",
+    "n": 46,
+    "title": "Focus of Downside Semi-Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Downside semi-variance focuses on:",
+    "options": [
+      "Returns below a target or mean",
+      "All returns equally",
+      "Only extreme positive returns",
+      "Portfolio covariance"
+    ],
+    "answerIndex": 0,
+    "solution": "Semi-variance isolates only negative deviations from a benchmark, capturing downside risk."
+  },
+  {
+    "id": "cm2-47",
+    "subject": "cm2",
+    "n": 47,
+    "title": "Variance as a Risk Measure",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Variance of return measures:",
+    "options": [
+      "Overall dispersion of returns around the mean",
+      "Probability of loss",
+      "Tail risk only",
+      "Expected return"
+    ],
+    "answerIndex": 0,
+    "solution": "Variance quantifies total variability of returns, considering deviations both above and below the mean."
+  },
+  {
+    "id": "cm2-48",
+    "subject": "cm2",
+    "n": 48,
+    "title": "What VaR Does Not Tell You",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Value at Risk (VaR) does NOT provide:",
+    "options": [
+      "The expected loss beyond the threshold",
+      "The loss threshold at a given confidence level",
+      "A quantile of the loss distribution",
+      "A probabilistic measure of risk"
+    ],
+    "answerIndex": 0,
+    "solution": "VaR identifies a loss level not to be exceeded with a given probability but does not give the expected loss beyond that level; Tail VaR does."
+  },
+  {
+    "id": "cm2-49",
+    "subject": "cm2",
+    "n": 49,
+    "title": "Expected Shortfall vs VaR",
+    "difficulty": "medium",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected Shortfall (Tail VaR) is preferred over VaR because:",
+    "options": [
+      "It considers the average of losses exceeding VaR",
+      "It ignores extreme losses",
+      "It equals the mean return",
+      "It measures expected gain"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected Shortfall accounts for the severity of losses beyond the VaR threshold, making it a coherent risk measure."
+  },
+  {
+    "id": "cm2-50",
+    "subject": "cm2",
+    "n": 50,
+    "title": "Heavy Tails and Extreme Losses",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Thicker tails in a return distribution imply:",
+    "options": [
+      "Higher probability of extreme losses",
+      "Lower expected return",
+      "No change in risk measures",
+      "Guaranteed returns"
+    ],
+    "answerIndex": 0,
+    "solution": "Heavy tails increase the likelihood of extreme negative outcomes, impacting risk assessments."
+  },
+  {
+    "id": "cm2-51",
+    "subject": "cm2",
+    "n": 51,
+    "title": "Uses of Shortfall Probability",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Shortfall probability can be used to:",
+    "options": [
+      "Quantify risk relative to a target return",
+      "Measure overall variance",
+      "Calculate expected gain",
+      "Ignore downside risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Shortfall probability focuses on the likelihood of failing to achieve a specific target, useful for risk-averse investors."
+  },
+  {
+    "id": "cm2-52",
+    "subject": "cm2",
+    "n": 52,
+    "title": "How Insurers Mitigate Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Insurance companies mitigate risk mainly by:",
+    "options": [
+      "Pooling and transferring individual risk",
+      "Guaranteeing portfolio returns",
+      "Eliminating market volatility",
+      "Maximizing expected return"
+    ],
+    "answerIndex": 0,
+    "solution": "Insurance spreads risk across participants and transfers it to the insurer, reducing exposure to any single loss."
+  },
+  {
+    "id": "cm2-53",
+    "subject": "cm2",
+    "n": 53,
+    "title": "Moral Hazard Mechanism",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Moral hazard arises when:",
+    "options": [
+      "Individuals change behaviour due to risk protection",
+      "Market returns are high",
+      "Investment horizon is long",
+      "Expected return is low"
+    ],
+    "answerIndex": 0,
+    "solution": "Protection from risk can encourage behaviour that increases the probability or magnitude of loss."
+  },
+  {
+    "id": "cm2-54",
+    "subject": "cm2",
+    "n": 54,
+    "title": "Describing Adverse Selection",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Adverse selection can be described as:",
+    "options": [
+      "High-risk individuals being more likely to seek insurance",
+      "Incorrect calculation of variance",
+      "Ignoring diversification",
+      "Overestimating expected return"
+    ],
+    "answerIndex": 0,
+    "solution": "Those most likely to suffer losses are more inclined to participate in insurance, potentially increasing risk to the insurer."
+  },
+  {
+    "id": "cm2-55",
+    "subject": "cm2",
+    "n": 55,
+    "title": "Risk Measure That Ignores Upside",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Which risk measure ignores gains above a target?",
+    "options": [
+      "Downside semi-variance",
+      "Variance",
+      "Expected return",
+      "Skewness"
+    ],
+    "answerIndex": 0,
+    "solution": "Downside semi-variance focuses solely on shortfalls, ignoring positive deviations from the target."
+  },
+  {
+    "id": "cm2-56",
+    "subject": "cm2",
+    "n": 56,
+    "title": "Linking Utility and Risk Measures",
+    "difficulty": "medium",
+    "topics": [
+      "Utility theory",
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The relationship between utility functions and risk measures is:",
+    "options": [
+      "Risk measures are interpreted based on investor preferences",
+      "Utility functions do not depend on risk",
+      "Risk measures ignore investor behaviour",
+      "Utility functions are unrelated to returns"
+    ],
+    "answerIndex": 0,
+    "solution": "Utility functions capture investor attitudes towards risk, allowing interpretation of variance, VaR, and semi-variance in terms of preference."
+  },
+  {
+    "id": "cm2-57",
+    "subject": "cm2",
+    "n": 57,
+    "title": "Interpreting 99% Value at Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "VaR at 99% confidence implies:",
+    "options": [
+      "1% probability of exceeding the loss threshold",
+      "Expected return is 99%",
+      "Variance equals 99%",
+      "Portfolio cannot lose more than VaR"
+    ],
+    "answerIndex": 0,
+    "solution": "By definition, VaR at 99% confidence indicates a 1% chance that losses exceed the specified threshold."
+  },
+  {
+    "id": "cm2-58",
+    "subject": "cm2",
+    "n": 58,
+    "title": "Expected Shortfall Complementing VaR",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected Shortfall complements VaR because it:",
+    "options": [
+      "Provides the average loss beyond the VaR level",
+      "Ignores tail losses",
+      "Equals the mean return",
+      "Measures upside risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Expected Shortfall accounts for extreme losses beyond the VaR threshold, providing a more comprehensive view of tail risk."
+  },
+  {
+    "id": "cm2-59",
+    "subject": "cm2",
+    "n": 59,
+    "title": "Heavy Tails and Tail Risk Measures",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Thicker tails in the distribution of returns result in:",
+    "options": [
+      "Higher risk measures for tail events",
+      "Lower variance",
+      "Higher expected return",
+      "Reduced probability of loss"
+    ],
+    "answerIndex": 0,
+    "solution": "Heavy tails increase the probability and expected severity of extreme losses, affecting tail-sensitive measures."
+  },
+  {
+    "id": "cm2-60",
+    "subject": "cm2",
+    "n": 60,
+    "title": "Examples of Downside Risk Measures",
+    "difficulty": "easy",
+    "topics": [
+      "Measures of risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Semi-variance and expected shortfall are both examples of:",
+    "options": [
+      "Downside risk measures",
+      "Mean return measures",
+      "Diversification metrics",
+      "Portfolio return measures"
+    ],
+    "answerIndex": 0,
+    "solution": "Both metrics specifically focus on negative deviations from a benchmark, quantifying downside risk."
+  },
+  {
+    "id": "cm2-61",
+    "subject": "cm2",
+    "n": 61,
+    "title": "Mean-Variance Investor Assumptions",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Mean-variance portfolio theory assumes investors:",
+    "options": [
+      "Choose portfolios based on expected return and variance",
+      "Ignore variance of returns",
+      "Only care about maximum return",
+      "Assume perfect information is unavailable"
+    ],
+    "answerIndex": 0,
+    "solution": "Investors are assumed to select portfolios that maximize expected return for a given level of risk (variance)."
+  },
+  {
+    "id": "cm2-62",
+    "subject": "cm2",
+    "n": 62,
+    "title": "Benefit of Diversification",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The benefit of diversification is:",
+    "options": [
+      "Reduction in portfolio risk without reducing expected return",
+      "Increase in variance of individual assets",
+      "Guaranteeing returns",
+      "Ignoring correlations"
+    ],
+    "answerIndex": 0,
+    "solution": "Diversification reduces unsystematic risk by combining assets with imperfectly correlated returns."
+  },
+  {
+    "id": "cm2-63",
+    "subject": "cm2",
+    "n": 63,
+    "title": "Portfolio Expected Return",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The expected return of a portfolio is calculated by:",
+    "options": [
+      "Weighted sum of individual asset expected returns",
+      "Sum of variances of assets",
+      "Maximum return of any asset",
+      "Risk-free rate only"
+    ],
+    "answerIndex": 0,
+    "solution": "Portfolio expected return is the sum of the expected returns of assets weighted by their portfolio proportions."
+  },
+  {
+    "id": "cm2-64",
+    "subject": "cm2",
+    "n": 64,
+    "title": "Drivers of Portfolio Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The portfolio variance depends on:",
+    "options": [
+      "Individual variances and covariances between assets",
+      "Expected return only",
+      "Risk-free rate only",
+      "Mean-variance efficiency"
+    ],
+    "answerIndex": 0,
+    "solution": "Variance accounts for each asset's risk and how assets move together (covariance)."
+  },
+  {
+    "id": "cm2-65",
+    "subject": "cm2",
+    "n": 65,
+    "title": "CAPM Assumptions",
+    "difficulty": "medium",
+    "topics": [
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "CAPM assumes:",
+    "options": [
+      "Investors are risk-averse, choose portfolios on mean-variance criteria over a single period and have homogeneous expectations",
+      "Investors ignore the risk-free rate",
+      "Returns are deterministic",
+      "Markets are always inefficient"
+    ],
+    "answerIndex": 0,
+    "solution": "CAPM adds assumptions to mean-variance portfolio theory: all investors are risk-averse and non-satiated, use the same one-period horizon, have homogeneous expectations, and can borrow and lend without limit at the risk-free rate in frictionless markets.\nThat every investor holds a combination of the market portfolio and the risk-free asset is a result of these assumptions, not an assumption itself."
+  },
+  {
+    "id": "cm2-66",
+    "subject": "cm2",
+    "n": 66,
+    "title": "Interpreting CAPM Beta",
+    "difficulty": "easy",
+    "topics": [
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "In CAPM, beta measures:",
+    "options": [
+      "Systematic risk relative to the market",
+      "Total variance of an asset",
+      "Expected return of a portfolio",
+      "Risk-free rate"
+    ],
+    "answerIndex": 0,
+    "solution": "Beta quantifies how an asset's returns move with the market; higher beta means higher systematic risk."
+  },
+  {
+    "id": "cm2-67",
+    "subject": "cm2",
+    "n": 67,
+    "title": "Single-Index Model Structure",
+    "difficulty": "easy",
+    "topics": [
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A single-index model uses:",
+    "options": [
+      "Market index to explain asset returns",
+      "Multiple macroeconomic factors",
+      "Risk-free rate only",
+      "Random error only"
+    ],
+    "answerIndex": 0,
+    "solution": "The single-index model simplifies return analysis by linking asset returns to one common factor, usually the market."
+  },
+  {
+    "id": "cm2-68",
+    "subject": "cm2",
+    "n": 68,
+    "title": "Non-Diversifiable Risk",
+    "difficulty": "easy",
+    "topics": [
+      "CAPM & factor models",
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Non-diversifiable risk is also called:",
+    "options": [
+      "Systematic risk",
+      "Unsystematic risk",
+      "Specific risk",
+      "Idiosyncratic risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Systematic risk affects all assets and cannot be eliminated through diversification."
+  },
+  {
+    "id": "cm2-69",
+    "subject": "cm2",
+    "n": 69,
+    "title": "Geometric Brownian Motion Application",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Geometric Brownian motion is used to model:",
+    "options": [
+      "Continuous-time stock price evolution",
+      "Discrete portfolio returns only",
+      "Insurance claim counts",
+      "Risk-free bond prices"
+    ],
+    "answerIndex": 0,
+    "solution": "GBM models stock prices continuously with drift and volatility components."
+  },
+  {
+    "id": "cm2-70",
+    "subject": "cm2",
+    "n": 70,
+    "title": "Purpose of Itô's Lemma",
+    "difficulty": "medium",
+    "topics": [
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Ito's Lemma is applied to:",
+    "options": [
+      "Transform stochastic processes for functions of prices",
+      "Calculate risk-free rate",
+      "Measure portfolio variance",
+      "Estimate expected return only"
+    ],
+    "answerIndex": 0,
+    "solution": "Ito's Lemma allows computation of the differential of a function of a stochastic process."
+  },
+  {
+    "id": "cm2-71",
+    "subject": "cm2",
+    "n": 71,
+    "title": "Ornstein-Uhlenbeck Mean Reversion",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion & Itô calculus",
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Ornstein-Uhlenbeck process models:",
+    "options": [
+      "Mean-reverting processes",
+      "Purely random walks",
+      "Poisson jumps",
+      "Systematic risk only"
+    ],
+    "answerIndex": 0,
+    "solution": "OU process models variables that tend to revert to a long-term mean over time."
+  },
+  {
+    "id": "cm2-72",
+    "subject": "cm2",
+    "n": 72,
+    "title": "Term Structure Models",
+    "difficulty": "easy",
+    "topics": [
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A term structure model describes:",
+    "options": [
+      "Relationship between interest rates and maturities",
+      "Portfolio weights",
+      "Expected return of stocks",
+      "Insurance claims"
+    ],
+    "answerIndex": 0,
+    "solution": "Term structure models describe how interest rates vary across different maturities, used in bond and derivative pricing."
+  },
+  {
+    "id": "cm2-73",
+    "subject": "cm2",
+    "n": 73,
+    "title": "Vasicek Short-Rate Model",
+    "difficulty": "easy",
+    "topics": [
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Vasicek model is used for:",
+    "options": [
+      "One-factor short rate modeling",
+      "Portfolio optimization",
+      "CAPM estimation",
+      "Option pricing only"
+    ],
+    "answerIndex": 0,
+    "solution": "Vasicek provides a mean-reverting model for short-term interest rates, used for bond pricing."
+  },
+  {
+    "id": "cm2-74",
+    "subject": "cm2",
+    "n": 74,
+    "title": "Merton Structural Credit Model",
+    "difficulty": "easy",
+    "topics": [
+      "Credit risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Merton model addresses:",
+    "options": [
+      "Structural credit risk of a firm",
+      "Probability of ruin",
+      "Option Greeks",
+      "Poisson processes"
+    ],
+    "answerIndex": 0,
+    "solution": "Merton models default as a function of a firm’s asset value relative to liabilities."
+  },
+  {
+    "id": "cm2-75",
+    "subject": "cm2",
+    "n": 75,
+    "title": "Intensity-Based Credit Models",
+    "difficulty": "medium",
+    "topics": [
+      "Credit risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Credit risk intensity models are:",
+    "options": [
+      "Reduced-form models in which default arrives at a random time governed by a hazard rate (intensity), which may be deterministic or stochastic",
+      "Same as CAPM beta",
+      "Portfolio diversification metrics",
+      "Poisson jump models only"
+    ],
+    "answerIndex": 0,
+    "solution": "Intensity-based (reduced-form) models do not model the firm's assets. Default is a random event whose probability of occurring in a short interval $dt$ is approximately $\\lambda(t)\\,dt$. The intensity $\\lambda(t)$ may be constant, time-dependent or itself stochastic."
+  },
+  {
+    "id": "cm2-76",
+    "subject": "cm2",
+    "n": 76,
+    "title": "Lognormal Model of Share Prices",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Continuous-time log-normal model assumes:",
+    "options": [
+      "Stock prices follow a geometric Brownian motion",
+      "Stock prices are deterministic",
+      "All assets have the same expected return",
+      "Interest rates are constant"
+    ],
+    "answerIndex": 0,
+    "solution": "The log-normal model describes stock prices as continuous-time processes with drift and volatility, ensuring positive values."
+  },
+  {
+    "id": "cm2-77",
+    "subject": "cm2",
+    "n": 77,
+    "title": "Purpose of the Itô Integral",
+    "difficulty": "medium",
+    "topics": [
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Ito integral is used to:",
+    "options": [
+      "Integrate with respect to stochastic processes",
+      "Compute simple interest",
+      "Calculate portfolio weights",
+      "Estimate discount factors"
+    ],
+    "answerIndex": 0,
+    "solution": "Ito integrals allow integration of functions along stochastic processes, fundamental in continuous-time finance."
+  },
+  {
+    "id": "cm2-78",
+    "subject": "cm2",
+    "n": 78,
+    "title": "Black-Scholes Key Assumption",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Black-Scholes model requires which assumption?",
+    "options": [
+      "Constant volatility and risk-free rate",
+      "Discrete trading only",
+      "Market inefficiency",
+      "No underlying asset"
+    ],
+    "answerIndex": 0,
+    "solution": "The Black-Scholes PDE assumes constant volatility and risk-free rate, continuous trading, and no arbitrage."
+  },
+  {
+    "id": "cm2-79",
+    "subject": "cm2",
+    "n": 79,
+    "title": "What the Greeks Measure",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The Greeks measure:",
+    "options": [
+      "Sensitivities of option prices to parameters",
+      "Portfolio expected return",
+      "Credit risk only",
+      "Historical volatility"
+    ],
+    "answerIndex": 0,
+    "solution": "Delta, gamma, vega, theta, rho are the primary Greeks that measure option sensitivity to underlying factors."
+  },
+  {
+    "id": "cm2-80",
+    "subject": "cm2",
+    "n": 80,
+    "title": "Hull-White Extension of Vasicek",
+    "difficulty": "medium",
+    "topics": [
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Hull-White model extends Vasicek by:",
+    "options": [
+      "Making the mean-reversion level time-dependent so the model fits the initial term structure",
+      "Assuming constant volatility only",
+      "Ignoring interest rates",
+      "Single-period returns only"
+    ],
+    "answerIndex": 0,
+    "solution": "Hull-White: $dr_t = \\alpha\\left(\\theta(t) - r_t\\right)dt + \\sigma\\,dW_t$.\nReplacing Vasicek's constant mean-reversion level with a deterministic function $\\theta(t)$ lets the model reproduce the observed initial term structure of interest rates."
+  },
+  {
+    "id": "cm2-81",
+    "subject": "cm2",
+    "n": 81,
+    "title": "Two-Asset Portfolio Expected Return",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected return of a portfolio with two assets depends on:",
+    "options": [
+      "Weighted average of the assets' expected returns",
+      "Only the variance of the first asset",
+      "Covariance alone",
+      "Risk-free rate only"
+    ],
+    "answerIndex": 0,
+    "solution": "The expected portfolio return is the sum of weighted individual asset returns."
+  },
+  {
+    "id": "cm2-82",
+    "subject": "cm2",
+    "n": 82,
+    "title": "Two-Asset Portfolio Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Variance of a two-asset portfolio depends on:",
+    "options": [
+      "Asset variances and their covariance",
+      "Expected returns only",
+      "Risk-free rate only",
+      "Portfolio mean only"
+    ],
+    "answerIndex": 0,
+    "solution": "Portfolio variance combines individual variances and the covariance term that captures how assets move together."
+  },
+  {
+    "id": "cm2-83",
+    "subject": "cm2",
+    "n": 83,
+    "title": "Cox-Ingersoll-Ross Model Property",
+    "difficulty": "medium",
+    "topics": [
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Cox-Ingersoll-Ross model ensures:",
+    "options": [
+      "Non-negative interest rates",
+      "Mean-reverting stock prices",
+      "Constant dividend yields",
+      "Portfolio optimization"
+    ],
+    "answerIndex": 0,
+    "solution": "CIR: $dr_t = \\alpha(\\mu - r_t)\\,dt + \\sigma\\sqrt{r_t}\\,dW_t$.\nThe volatility $\\sigma\\sqrt{r_t}$ shrinks to zero as $r_t \\to 0$, so the short rate cannot become negative. It stays strictly positive if $2\\alpha\\mu \\ge \\sigma^2$. Like Vasicek, the model is mean-reverting."
+  },
+  {
+    "id": "cm2-84",
+    "subject": "cm2",
+    "n": 84,
+    "title": "Default Trigger in Structural Models",
+    "difficulty": "easy",
+    "topics": [
+      "Credit risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Structural credit risk models assume default occurs when:",
+    "options": [
+      "Firm's asset value falls below a threshold",
+      "Interest rates rise above a level",
+      "Market portfolio underperforms",
+      "Insurance premiums increase"
+    ],
+    "answerIndex": 0,
+    "solution": "Merton-type models link firm default to its assets relative to liabilities."
+  },
+  {
+    "id": "cm2-85",
+    "subject": "cm2",
+    "n": 85,
+    "title": "Reduced-Form Credit Models",
+    "difficulty": "medium",
+    "topics": [
+      "Credit risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Reduced-form credit models specify:",
+    "options": [
+      "Default intensity without modeling assets",
+      "Market portfolio returns",
+      "Term structure only",
+      "Option delta"
+    ],
+    "answerIndex": 0,
+    "solution": "Reduced-form (intensity-based) models treat default as an exogenous stochastic event."
+  },
+  {
+    "id": "cm2-86",
+    "subject": "cm2",
+    "n": 86,
+    "title": "Two-State Credit Model",
+    "difficulty": "medium",
+    "topics": [
+      "Credit risk"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A two-state credit model uses:",
+    "options": [
+      "A transition intensity (hazard rate) from the non-default state to an absorbing default state",
+      "Variable stock prices",
+      "Multiple interest rate factors",
+      "Option Greeks"
+    ],
+    "answerIndex": 0,
+    "solution": "The two-state model has states N (not defaulted) and D (defaulted). Transitions from N to D occur with intensity $\\lambda(t)$, and D is absorbing.\nThe probability of surviving to time $t$ is $\\exp\\left(-\\int_0^t \\lambda(s)\\,ds\\right)$. The intensity is often taken as constant, but it may depend on time."
+  },
+  {
+    "id": "cm2-87",
+    "subject": "cm2",
+    "n": 87,
+    "title": "CAPM Expected Return Formula",
+    "difficulty": "easy",
+    "topics": [
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Expected return in CAPM is calculated as:",
+    "options": [
+      "Risk-free rate plus beta times market risk premium",
+      "Only risk-free rate",
+      "Sum of variances",
+      "Portfolio volatility only"
+    ],
+    "answerIndex": 0,
+    "solution": "CAPM: $E[R_i] = r_f + \\beta_i\\left(E[R_M] - r_f\\right)$, where $\\beta_i = \\operatorname{Cov}(R_i, R_M)/\\operatorname{Var}(R_M)$."
+  },
+  {
+    "id": "cm2-88",
+    "subject": "cm2",
+    "n": 88,
+    "title": "Limitations of CAPM",
+    "difficulty": "medium",
+    "topics": [
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Limitations of CAPM include:",
+    "options": [
+      "Assumes one-period horizon and single-factor market model",
+      "Cannot estimate expected return",
+      "Ignores risk-free asset",
+      "Overfits portfolios"
+    ],
+    "answerIndex": 0,
+    "solution": "CAPM relies on simplifying assumptions that are not fully realistic but useful for theory."
+  },
+  {
+    "id": "cm2-89",
+    "subject": "cm2",
+    "n": 89,
+    "title": "Diversifiable Risk",
+    "difficulty": "easy",
+    "topics": [
+      "Mean-variance portfolio theory",
+      "CAPM & factor models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Diversifiable risk can be:",
+    "options": [
+      "Eliminated through diversification",
+      "Systematic",
+      "Market risk only",
+      "Uncorrelated with portfolio"
+    ],
+    "answerIndex": 0,
+    "solution": "Diversifiable (unsystematic) risk is asset-specific and can be reduced by holding many assets."
+  },
+  {
+    "id": "cm2-90",
+    "subject": "cm2",
+    "n": 90,
+    "title": "Empirical Behaviour of Share Prices",
+    "difficulty": "hard",
+    "topics": [
+      "Brownian motion & Itô calculus",
+      "Efficient markets"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Empirical evidence suggests stock prices:",
+    "options": [
+      "Have log-returns that are more peaked with fatter tails than the normal distribution over short intervals",
+      "Are deterministic",
+      "Have prices that are uncorrelated with their own past values",
+      "Always mean-revert daily"
+    ],
+    "answerIndex": 0,
+    "solution": "Empirical studies show the lognormal model fits poorly over short intervals. Daily or weekly log-returns are more peaked with fatter tails than a normal distribution (excess kurtosis), and volatility varies over time.\nThe lognormal approximation is better over longer intervals. Prices are strongly correlated with past prices; only returns are close to uncorrelated."
+  },
+  {
+    "id": "cm2-91",
+    "subject": "cm2",
+    "n": 91,
+    "title": "Aggregate Claims Process",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The aggregate claim process models:",
+    "options": [
+      "Total claims over time for an insurer",
+      "Stock price movements",
+      "Interest rate fluctuations",
+      "Option Greeks"
+    ],
+    "answerIndex": 0,
+    "solution": "Aggregate claim process sums individual claim amounts and frequencies to model insurer liabilities."
+  },
+  {
+    "id": "cm2-92",
+    "subject": "cm2",
+    "n": 92,
+    "title": "Finite-Time Ruin Probability Methods",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Probability of ruin in finite time can be calculated using:",
+    "options": [
+      "Simulation or analytical methods",
+      "CAPM",
+      "Option pricing",
+      "Single-factor regression"
+    ],
+    "answerIndex": 0,
+    "solution": "Finite-time ruin probability may require simulation or compound Poisson calculations."
+  },
+  {
+    "id": "cm2-93",
+    "subject": "cm2",
+    "n": 93,
+    "title": "Poisson Process Application",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Poisson process is used to model:",
+    "options": [
+      "Number of events in a fixed interval",
+      "Portfolio returns",
+      "Option pricing paths",
+      "Discount factor curves"
+    ],
+    "answerIndex": 0,
+    "solution": "Poisson process describes the timing of independent random events, such as claims arrivals."
+  },
+  {
+    "id": "cm2-94",
+    "subject": "cm2",
+    "n": 94,
+    "title": "Compound vs Simple Poisson Process",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Compound Poisson process differs from Poisson by:",
+    "options": [
+      "Summing random claim amounts, not just counts",
+      "Ignoring claims",
+      "Modeling stock prices only",
+      "Using deterministic arrivals"
+    ],
+    "answerIndex": 0,
+    "solution": "Compound Poisson accounts for both number and size of claims, unlike simple Poisson which counts events."
+  },
+  {
+    "id": "cm2-95",
+    "subject": "cm2",
+    "n": 95,
+    "title": "Lundberg Adjustment Coefficient",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Lundberg’s adjustment coefficient is used to:",
+    "options": [
+      "Give an upper bound for the infinite-time probability of ruin (Lundberg's inequality)",
+      "Price options",
+      "Estimate bond yields",
+      "Measure portfolio beta"
+    ],
+    "answerIndex": 0,
+    "solution": "Lundberg's inequality: $\\psi(u) \\le e^{-Ru}$, where $R$ is the adjustment coefficient and $u$ the initial surplus.\nA larger $R$ gives a tighter bound, so $R$ is used as a measure of the riskiness of the surplus process."
+  },
+  {
+    "id": "cm2-96",
+    "subject": "cm2",
+    "n": 96,
+    "title": "Proportional Reinsurance Mechanism",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Proportional reinsurance affects ruin probability by:",
+    "options": [
+      "Sharing claim amounts between insurer and reinsurer",
+      "Changing interest rates",
+      "Eliminating risk-free assets",
+      "Modifying CAPM beta"
+    ],
+    "answerIndex": 0,
+    "solution": "Proportional reinsurance reduces insurer’s exposure by ceding a proportion of claims."
+  },
+  {
+    "id": "cm2-97",
+    "subject": "cm2",
+    "n": 97,
+    "title": "Excess-of-Loss Reinsurance Mechanism",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Excess-of-loss reinsurance works by:",
+    "options": [
+      "Insurer retains losses up to a threshold, reinsurer covers the excess",
+      "Insurer covers all claims",
+      "Redistributing returns in CAPM",
+      "Modeling term structure of interest rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Excess-of-loss treaties cap the insurer’s liability per claim, with reinsurer covering excess losses."
+  },
+  {
+    "id": "cm2-98",
+    "subject": "cm2",
+    "n": 98,
+    "title": "Purpose of Run-Off Triangles",
+    "difficulty": "easy",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Run-off triangles are used to:",
+    "options": [
+      "Project future claims from historical claims data",
+      "Price derivatives",
+      "Calculate expected returns",
+      "Model interest rates"
+    ],
+    "answerIndex": 0,
+    "solution": "Run-off triangles display cumulative claims by accident year and development year for projections."
+  },
+  {
+    "id": "cm2-99",
+    "subject": "cm2",
+    "n": 99,
+    "title": "Chain-Ladder Key Assumption",
+    "difficulty": "easy",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Chain ladder method assumes:",
+    "options": [
+      "Past development patterns continue into the future",
+      "Zero claims in the future",
+      "All claims are deterministic",
+      "Interest rates are constant"
+    ],
+    "answerIndex": 0,
+    "solution": "Chain ladder extrapolates future claims using historical development factors."
+  },
+  {
+    "id": "cm2-100",
+    "subject": "cm2",
+    "n": 100,
+    "title": "Bornhuetter-Ferguson Method",
+    "difficulty": "easy",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Bornhuetter-Ferguson method combines:",
+    "options": [
+      "Prior expected claims and observed data",
+      "Option pricing and bond yields",
+      "CAPM beta and expected return",
+      "Poisson intensity and asset prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Bornhuetter-Ferguson blends prior expected claims with partial claim development information."
+  },
+  {
+    "id": "cm2-101",
+    "subject": "cm2",
+    "n": 101,
+    "title": "Average Cost per Claim Method",
+    "difficulty": "easy",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Average cost per claim method estimates:",
+    "options": [
+      "Outstanding claims using mean claim size",
+      "Portfolio expected return",
+      "Option Greeks",
+      "Interest rate curves"
+    ],
+    "answerIndex": 0,
+    "solution": "This method multiplies estimated number of outstanding claims by the average cost per claim."
+  },
+  {
+    "id": "cm2-102",
+    "subject": "cm2",
+    "n": 102,
+    "title": "Stochastic Reserving Models",
+    "difficulty": "medium",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Statistical models underpinning run-off triangles help:",
+    "options": [
+      "Provide probabilistic estimates of future claims",
+      "Price forward contracts",
+      "Compute CAPM alpha",
+      "Measure diversification"
+    ],
+    "answerIndex": 0,
+    "solution": "Using a stochastic model provides confidence intervals and variance estimates for claims projections."
+  },
+  {
+    "id": "cm2-103",
+    "subject": "cm2",
+    "n": 103,
+    "title": "Assumptions in Run-Off Triangle Methods",
+    "difficulty": "easy",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Assumptions in run-off triangle methods include:",
+    "options": [
+      "Claims development patterns are stable over time",
+      "Interest rates are zero",
+      "All claims occur instantly",
+      "CAPM holds exactly"
+    ],
+    "answerIndex": 0,
+    "solution": "Stability in claim development factors is crucial for accurate projections."
+  },
+  {
+    "id": "cm2-104",
+    "subject": "cm2",
+    "n": 104,
+    "title": "Simulation in Liability Valuation",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory",
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Simulation in liability valuation is used to:",
+    "options": [
+      "Estimate probabilities and distributions of future claims",
+      "Compute CAPM beta",
+      "Price options",
+      "Calculate interest rate curves"
+    ],
+    "answerIndex": 0,
+    "solution": "Monte Carlo simulation allows modeling complex stochastic claims and reinsurance structures."
+  },
+  {
+    "id": "cm2-105",
+    "subject": "cm2",
+    "n": 105,
+    "title": "Optimising Reinsurance via the Adjustment Coefficient",
+    "difficulty": "hard",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Maximizing the adjustment coefficient under reinsurance aims to:",
+    "options": [
+      "Minimize probability of ruin",
+      "Maximize expected return",
+      "Eliminate interest rate risk",
+      "Increase CAPM alpha"
+    ],
+    "answerIndex": 0,
+    "solution": "A higher adjustment coefficient reduces the insurer's ruin probability under proportional or excess-of-loss treaties."
+  },
+  {
+    "id": "cm2-106",
+    "subject": "cm2",
+    "n": 106,
+    "title": "Inflation-Adjusted Chain Ladder",
+    "difficulty": "hard",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Run-off triangles can be adjusted for inflation by:",
+    "options": [
+      "Restating past incremental claims in current money using an index of past inflation, then applying assumed future inflation to the projected payments",
+      "Ignoring development factors",
+      "Using CAPM expected returns",
+      "Discounting by option prices"
+    ],
+    "answerIndex": 0,
+    "solution": "Inflation-adjusted chain ladder:\n1. Restate each past incremental payment in current money using the observed (past) inflation index.\n2. Accumulate and apply the chain ladder to project future incremental payments in current money.\n3. Inflate each future payment to its payment date using assumed future inflation.\n4. Sum the inflated future payments to obtain the reserve."
+  },
+  {
+    "id": "cm2-107",
+    "subject": "cm2",
+    "n": 107,
+    "title": "Chain-Ladder Homogeneity Assumption",
+    "difficulty": "medium",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Chain ladder method assumes homogeneity in:",
+    "options": [
+      "The development pattern across accident (origin) years",
+      "Portfolio returns",
+      "Interest rates",
+      "Option deltas"
+    ],
+    "answerIndex": 0,
+    "solution": "The basic chain ladder assumes every accident year develops in the same proportions, so the same development factors apply to all origin years.\nThis requires a homogeneous portfolio over time: a stable mix of business, claims handling and reporting patterns."
+  },
+  {
+    "id": "cm2-108",
+    "subject": "cm2",
+    "n": 108,
+    "title": "Bornhuetter-Ferguson Emerging Claims",
+    "difficulty": "medium",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "In the Bornhuetter-Ferguson method, the estimate of claims still to emerge for an accident year is based on:",
+    "options": [
+      "The prior estimate of ultimate claims multiplied by the proportion still to develop",
+      "Market CAPM returns",
+      "Option Greeks",
+      "Interest rate curves"
+    ],
+    "answerIndex": 0,
+    "solution": "BF emerging claims $= \\text{prior ultimate} \\times \\left(1 - \\dfrac{1}{f}\\right)$, where $f$ is the chain-ladder cumulative development factor to ultimate.\nThe prior ultimate is usually earned premium times an expected loss ratio. Estimated ultimate = claims to date + emerging claims."
+  },
+  {
+    "id": "cm2-109",
+    "subject": "cm2",
+    "n": 109,
+    "title": "When to Use Average Cost per Claim",
+    "difficulty": "medium",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Average cost per claim method is most suitable when:",
+    "options": [
+      "Reliable claim-number data are available, so claim numbers and average claim amounts can be projected separately",
+      "Stock returns are modeled",
+      "Option pricing is required",
+      "Interest rates are stochastic"
+    ],
+    "answerIndex": 0,
+    "solution": "The average cost per claim method projects claim numbers and average claim amounts separately, each from its own triangle. It then multiplies projected ultimate claim numbers by projected ultimate average costs.\nIt needs reliable claim-number data and a consistent definition of a claim over time."
+  },
+  {
+    "id": "cm2-110",
+    "subject": "cm2",
+    "n": 110,
+    "title": "Uncertainty in Reserve Projections",
+    "difficulty": "medium",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Statistical models for run-off triangles allow:",
+    "options": [
+      "Confidence intervals for projections",
+      "CAPM beta estimation",
+      "Option delta calculation",
+      "Bond pricing"
+    ],
+    "answerIndex": 0,
+    "solution": "Stochastic models provide measures of uncertainty around claims projections."
+  },
+  {
+    "id": "cm2-111",
+    "subject": "cm2",
+    "n": 111,
+    "title": "Assumptions of Statistical Run-Off Models",
+    "difficulty": "hard",
+    "topics": [
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Key assumption of statistical run-off models is:",
+    "options": [
+      "Independence of claim increments",
+      "CAPM holds exactly",
+      "Options are priced perfectly",
+      "Interest rates are constant"
+    ],
+    "answerIndex": 0,
+    "solution": "Assuming independence allows probabilistic modeling of cumulative claims over time."
+  },
+  {
+    "id": "cm2-112",
+    "subject": "cm2",
+    "n": 112,
+    "title": "When to Use Simulation",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Simulation is particularly useful when:",
+    "options": [
+      "Analytical solutions are intractable",
+      "CAPM returns are known",
+      "Option prices are given",
+      "Interest rates are deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Monte Carlo simulation allows exploration of complex stochastic claims and reinsurance structures."
+  },
+  {
+    "id": "cm2-113",
+    "subject": "cm2",
+    "n": 113,
+    "title": "Proportional Reinsurance and Ruin Probability",
+    "difficulty": "hard",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Effect of proportional reinsurance on finite-time ruin probability is to:",
+    "options": [
+      "It may lower or raise it, depending on the reinsurance premium charged relative to the insurer's own premium loading",
+      "It always increases it",
+      "It eliminates it completely",
+      "It has no effect"
+    ],
+    "answerIndex": 0,
+    "solution": "Ceding a proportion of each claim reduces the variability of retained claims, which tends to lower the probability of ruin.\nBut the insurer also pays a reinsurance premium. If the reinsurer's loading is higher than the insurer's, the insurer's retained loading falls and the probability of ruin can rise.\nThe overall effect therefore depends on the reinsurance terms."
+  },
+  {
+    "id": "cm2-114",
+    "subject": "cm2",
+    "n": 114,
+    "title": "Excess-of-Loss Retention",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Excess-of-loss reinsurance limits the insurer’s liability by:",
+    "options": [
+      "Capping retention per claim",
+      "Reducing claim frequency",
+      "Eliminating tail risk completely",
+      "Modifying investment returns"
+    ],
+    "answerIndex": 0,
+    "solution": "Insurer retains losses up to a threshold; reinsurer covers the excess, limiting exposure."
+  },
+  {
+    "id": "cm2-115",
+    "subject": "cm2",
+    "n": 115,
+    "title": "Why Maximise the Adjustment Coefficient",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Adjustment coefficient is maximized to:",
+    "options": [
+      "Minimize probability of ruin",
+      "Maximize portfolio return",
+      "Optimize option pricing",
+      "Control interest rate risk"
+    ],
+    "answerIndex": 0,
+    "solution": "Higher adjustment coefficient lowers the probability of ruin under risk models."
+  },
+  {
+    "id": "cm2-116",
+    "subject": "cm2",
+    "n": 116,
+    "title": "Infinite- vs Finite-Time Ruin",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Infinite-time probability of ruin differs from finite-time because:",
+    "options": [
+      "It assumes the insurer continues indefinitely",
+      "It ignores claims",
+      "It uses CAPM instead",
+      "It is always zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Infinite-time ruin considers the long-term survival of the insurer under the risk process."
+  },
+  {
+    "id": "cm2-117",
+    "subject": "cm2",
+    "n": 117,
+    "title": "Compound Poisson Independence Assumption",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Compound Poisson distribution in liability modeling assumes:",
+    "options": [
+      "Independent claim counts and claim sizes",
+      "CAPM beta independence",
+      "Option price independence",
+      "Deterministic claim amounts"
+    ],
+    "answerIndex": 0,
+    "solution": "Compound Poisson combines random frequency (Poisson) with random claim sizes for total claims distribution."
+  },
+  {
+    "id": "cm2-118",
+    "subject": "cm2",
+    "n": 118,
+    "title": "Simulating Complex Reinsurance",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Simulation can incorporate:",
+    "options": [
+      "Complex reinsurance and stochastic claims",
+      "CAPM expected returns",
+      "Option Greeks",
+      "Deterministic interest rate curves"
+    ],
+    "answerIndex": 0,
+    "solution": "Monte Carlo simulation allows modeling of both claim size randomness and reinsurance arrangements."
+  },
+  {
+    "id": "cm2-119",
+    "subject": "cm2",
+    "n": 119,
+    "title": "Drivers of the Adjustment Coefficient",
+    "difficulty": "medium",
+    "topics": [
+      "Ruin theory"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Maximizing adjustment coefficient is influenced by:",
+    "options": [
+      "Retention level and reinsurance type",
+      "Stock market beta",
+      "Option maturity",
+      "Discount factor"
+    ],
+    "answerIndex": 0,
+    "solution": "The adjustment coefficient depends on how much risk is retained versus ceded to reinsurers."
+  },
+  {
+    "id": "cm2-120",
+    "subject": "cm2",
+    "n": 120,
+    "title": "Aims of Liability Valuation Models",
+    "difficulty": "easy",
+    "topics": [
+      "Ruin theory",
+      "Loss reserving"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Key goal of liability valuation models is to:",
+    "options": [
+      "Estimate future claims and probability of ruin",
+      "Price options",
+      "Calculate portfolio alpha",
+      "Estimate CAPM beta"
+    ],
+    "answerIndex": 0,
+    "solution": "Liability models provide insurers with forecasts of claims and risk of insolvency."
+  },
+  {
+    "id": "cm2-121",
+    "subject": "cm2",
+    "n": 121,
+    "title": "No-Arbitrage Principle",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes",
+      "Binomial option pricing"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Arbitrage in financial markets ensures that:",
+    "options": [
+      "No riskless profit opportunities exist",
+      "All options are priced above intrinsic value",
+      "CAPM always holds",
+      "Interest rates are deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Arbitrage-free markets prevent the possibility of riskless profit through mispricing."
+  },
+  {
+    "id": "cm2-122",
+    "subject": "cm2",
+    "n": 122,
+    "title": "Factors Affecting Option Prices",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes",
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Factors affecting an option's price include:",
+    "options": [
+      "Underlying price, strike price, volatility, time to maturity, interest rate",
+      "CAPM beta only",
+      "Historical return of the market only",
+      "Dividend yield only"
+    ],
+    "answerIndex": 0,
+    "solution": "Option pricing depends on multiple factors including underlying asset characteristics and market conditions."
+  },
+  {
+    "id": "cm2-123",
+    "subject": "cm2",
+    "n": 123,
+    "title": "Scope of Put-Call Parity",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Put–call parity applies to:",
+    "options": [
+      "European options on non-dividend paying assets",
+      "American options only",
+      "All bonds",
+      "Futures contracts only"
+    ],
+    "answerIndex": 0,
+    "solution": "Put-call parity establishes a relationship between European call and put prices with the same strike and expiry."
+  },
+  {
+    "id": "cm2-124",
+    "subject": "cm2",
+    "n": 124,
+    "title": "No-Arbitrage Bounds on a European Call",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "For a European call on a non-dividend-paying share, the no-arbitrage bounds on the call price $c$ are:",
+    "options": [
+      "Lower bound $\\max(0,\\, S_0 - Ke^{-rT})$ and upper bound $S_0$",
+      "Determined by CAPM alpha",
+      "Determined by bond duration",
+      "Determined by the option Greeks"
+    ],
+    "answerIndex": 0,
+    "solution": "Upper bound: the call can never be worth more than the share, so $c \\le S_0$.\nLower bound: a call plus cash $Ke^{-rT}$ is worth at least as much as the share at expiry, so $c \\ge S_0 - Ke^{-rT}$. Also $c \\ge 0$.\nHence $\\max(0,\\, S_0 - Ke^{-rT}) \\le c \\le S_0$."
+  },
+  {
+    "id": "cm2-125",
+    "subject": "cm2",
+    "n": 125,
+    "title": "Value of a Forward Contract",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "At time $t$, what is the value of a long forward contract on a non-income-paying asset, with delivery price $K$ agreed earlier and delivery at time $T$?",
+    "options": [
+      "$S_t - Ke^{-r(T-t)}$",
+      "CAPM beta",
+      "Black-Scholes delta",
+      "Average claim size"
+    ],
+    "answerIndex": 0,
+    "solution": "Holding the long forward plus cash $Ke^{-r(T-t)}$ gives one unit of the asset at time $T$, so the forward is worth $S_t - Ke^{-r(T-t)}$, where $r$ is the continuously compounded risk-free rate.\nThis is zero at inception, when $K$ equals the forward price."
+  },
+  {
+    "id": "cm2-126",
+    "subject": "cm2",
+    "n": 126,
+    "title": "Risk-Neutral Valuation Principle",
+    "difficulty": "medium",
+    "topics": [
+      "Binomial option pricing",
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Risk-neutral valuation prices a derivative by:",
+    "options": [
+      "Taking the expected payoff under a risk-neutral measure and discounting at the risk-free rate",
+      "Assuming market returns follow CAPM exactly",
+      "Assuming options are always in-the-money",
+      "Assuming interest rates are zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk-neutral valuation does not assume investors are actually risk-neutral. A derivative that can be replicated has the same price whatever investors' risk preferences, so we may price it as if they were risk-neutral:\n$$V_0 = e^{-rT}\\,E_Q[\\text{payoff}]$$"
+  },
+  {
+    "id": "cm2-127",
+    "subject": "cm2",
+    "n": 127,
+    "title": "Role of Risk-Neutral Probabilities",
+    "difficulty": "easy",
+    "topics": [
+      "Binomial option pricing"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "In a binomial option pricing model, risk-neutral probability is used to:",
+    "options": [
+      "Calculate expected option payoff under risk-neutral measure",
+      "Estimate historical volatility",
+      "Compute CAPM beta",
+      "Discount bond cashflows"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk-neutral probability weights the up and down moves to price options without considering investor risk preferences."
+  },
+  {
+    "id": "cm2-128",
+    "subject": "cm2",
+    "n": 128,
+    "title": "Real-World vs Risk-Neutral Measure",
+    "difficulty": "medium",
+    "topics": [
+      "Binomial option pricing",
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "The difference between real-world and risk-neutral measure is:",
+    "options": [
+      "Real-world includes risk preferences; risk-neutral does not",
+      "Real-world ignores stock prices",
+      "Risk-neutral uses CAPM beta",
+      "Real-world sets interest rates to zero"
+    ],
+    "answerIndex": 0,
+    "solution": "Risk-neutral pricing is a computational construct, not reflecting actual investor preferences."
+  },
+  {
+    "id": "cm2-129",
+    "subject": "cm2",
+    "n": 129,
+    "title": "Deriving the Black-Scholes PDE",
+    "difficulty": "hard",
+    "topics": [
+      "Black-Scholes",
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Black-Scholes PDE is derived using:",
+    "options": [
+      "Itô's Lemma and hedging arguments",
+      "CAPM formula",
+      "Compound Poisson",
+      "Expected shortfall"
+    ],
+    "answerIndex": 0,
+    "solution": "Applying Itô’s Lemma to a delta-hedged portfolio leads to the Black-Scholes partial differential equation."
+  },
+  {
+    "id": "cm2-130",
+    "subject": "cm2",
+    "n": 130,
+    "title": "Black-Scholes Model Assumptions",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Black-Scholes model assumes:",
+    "options": [
+      "Log-normal asset prices, constant volatility and interest rate, no arbitrage",
+      "Discrete asset returns",
+      "CAPM beta equal to one",
+      "Poisson jump process only"
+    ],
+    "answerIndex": 0,
+    "solution": "These assumptions are fundamental for deriving closed-form Black-Scholes option prices."
+  },
+  {
+    "id": "cm2-131",
+    "subject": "cm2",
+    "n": 131,
+    "title": "Martingale Approach to Option Pricing",
+    "difficulty": "hard",
+    "topics": [
+      "Black-Scholes",
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Martingale approach in option pricing implies:",
+    "options": [
+      "Discounted asset prices under risk-neutral measure are martingales",
+      "Assets follow CAPM exactly",
+      "Options always pay dividends",
+      "Interest rates are deterministic"
+    ],
+    "answerIndex": 0,
+    "solution": "Martingale property ensures no-arbitrage pricing when discounted at the risk-free rate."
+  },
+  {
+    "id": "cm2-132",
+    "subject": "cm2",
+    "n": 132,
+    "title": "Garman-Kohlhagen Currency Options",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Garman-Kohlhagen model extends Black-Scholes to:",
+    "options": [
+      "Currency options with foreign interest rates",
+      "American options only",
+      "Commodity forwards",
+      "CAPM portfolios"
+    ],
+    "answerIndex": 0,
+    "solution": "It incorporates both domestic and foreign risk-free rates for currency derivatives."
+  },
+  {
+    "id": "cm2-133",
+    "subject": "cm2",
+    "n": 133,
+    "title": "Interpreting the Option Greeks",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Greeks of an option measure:",
+    "options": [
+      "Sensitivity of option price to underlying parameters",
+      "Expected claim sizes",
+      "CAPM alpha",
+      "Probability of ruin"
+    ],
+    "answerIndex": 0,
+    "solution": "Delta, Gamma, Vega, Theta, Rho describe how option price reacts to price, volatility, time, and rates."
+  },
+  {
+    "id": "cm2-134",
+    "subject": "cm2",
+    "n": 134,
+    "title": "Market Conditions for Black-Scholes",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Black-Scholes model is valid under:",
+    "options": [
+      "Continuous trading and frictionless markets",
+      "Discontinuous jump markets only",
+      "Illiquid bonds",
+      "CAPM beta = 0 only"
+    ],
+    "answerIndex": 0,
+    "solution": "Continuous hedging and no transaction costs are assumptions for the model’s theoretical validity."
+  },
+  {
+    "id": "cm2-135",
+    "subject": "cm2",
+    "n": 135,
+    "title": "State-Price Deflator Equivalence",
+    "difficulty": "hard",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "State-price deflator approach is equivalent to:",
+    "options": [
+      "Risk-neutral pricing approach",
+      "CAPM alpha estimation",
+      "Poisson claim model",
+      "Compound interest formula"
+    ],
+    "answerIndex": 0,
+    "solution": "Discounting by state-price deflators produces the same prices as under risk-neutral probabilities."
+  },
+  {
+    "id": "cm2-136",
+    "subject": "cm2",
+    "n": 136,
+    "title": "European Call Price Sensitivity",
+    "difficulty": "easy",
+    "topics": [
+      "Black-Scholes",
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A European call option’s value increases when:",
+    "options": [
+      "Underlying asset price rises",
+      "Strike price rises",
+      "Time to maturity decreases",
+      "Volatility decreases"
+    ],
+    "answerIndex": 0,
+    "solution": "Higher underlying price increases the intrinsic value and expected payoff of a call."
+  },
+  {
+    "id": "cm2-137",
+    "subject": "cm2",
+    "n": 137,
+    "title": "European Put Price Sensitivity",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes",
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "A European put option’s value increases when:",
+    "options": [
+      "Strike price rises",
+      "Underlying price rises",
+      "Volatility decreases",
+      "Expected dividends on the underlying decrease"
+    ],
+    "answerIndex": 0,
+    "solution": "A put pays $\\max(K - S_T, 0)$, so a higher strike increases its value.\nThe put loses value when the share price rises, when volatility falls, and when expected dividends fall (lower dividends mean a higher expected share price). A fall in interest rates would increase a European put's value."
+  },
+  {
+    "id": "cm2-138",
+    "subject": "cm2",
+    "n": 138,
+    "title": "Effect of Time to Maturity on Options",
+    "difficulty": "medium",
+    "topics": [
+      "Black-Scholes",
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Time to maturity affects option price because:",
+    "options": [
+      "More time allows more chance for profitable moves",
+      "Time has no effect under risk-neutral pricing",
+      "Time only affects bonds",
+      "Time reduces volatility"
+    ],
+    "answerIndex": 0,
+    "solution": "Longer maturities increase option value due to the greater potential for favorable asset movements."
+  },
+  {
+    "id": "cm2-139",
+    "subject": "cm2",
+    "n": 139,
+    "title": "Option Delta Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Option delta measures:",
+    "options": [
+      "Change in option price per unit change in underlying price",
+      "Time decay of option value",
+      "Sensitivity to volatility",
+      "Discount rate effect"
+    ],
+    "answerIndex": 0,
+    "solution": "Delta represents the first derivative of the option price with respect to the underlying asset price."
+  },
+  {
+    "id": "cm2-140",
+    "subject": "cm2",
+    "n": 140,
+    "title": "Option Gamma Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Option gamma measures:",
+    "options": [
+      "Rate of change of delta with respect to underlying price",
+      "Time decay of option value",
+      "Sensitivity to interest rates",
+      "Expected payoff"
+    ],
+    "answerIndex": 0,
+    "solution": "Gamma is the second derivative of option price with respect to the underlying, indicating convexity."
+  },
+  {
+    "id": "cm2-141",
+    "subject": "cm2",
+    "n": 141,
+    "title": "Option Vega Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Vega of an option measures:",
+    "options": [
+      "Sensitivity of option price to volatility",
+      "Change in option price due to time",
+      "Interest rate sensitivity",
+      "Underlying asset sensitivity"
+    ],
+    "answerIndex": 0,
+    "solution": "Vega $= \\partial V/\\partial \\sigma$, the sensitivity of the option price to volatility. It is often quoted per 1 percentage-point change in $\\sigma$. Vega is positive for European calls and puts."
+  },
+  {
+    "id": "cm2-142",
+    "subject": "cm2",
+    "n": 142,
+    "title": "Option Theta Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Theta of an option measures:",
+    "options": [
+      "Rate of change of option price with respect to time",
+      "Change in delta with asset price",
+      "Sensitivity to volatility",
+      "Risk-free rate effect"
+    ],
+    "answerIndex": 0,
+    "solution": "Theta represents time decay, the loss in option value as maturity approaches."
+  },
+  {
+    "id": "cm2-143",
+    "subject": "cm2",
+    "n": 143,
+    "title": "Option Rho Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Rho of an option measures:",
+    "options": [
+      "Sensitivity of option price to interest rates",
+      "Sensitivity to asset price",
+      "Volatility effect",
+      "Time decay"
+    ],
+    "answerIndex": 0,
+    "solution": "Rho $= \\partial V/\\partial r$, the sensitivity of the option price to the risk-free interest rate. It is often quoted per 1 percentage-point change in $r$. Rho is positive for European calls and negative for European puts."
+  },
+  {
+    "id": "cm2-144",
+    "subject": "cm2",
+    "n": 144,
+    "title": "American vs European Options",
+    "difficulty": "easy",
+    "topics": [
+      "Binomial option pricing",
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "American options differ from European because:",
+    "options": [
+      "They can be exercised any time up to expiry",
+      "They expire automatically before maturity",
+      "They are always more valuable than European calls",
+      "They follow risk-neutral pricing only"
+    ],
+    "answerIndex": 0,
+    "solution": "The early exercise feature differentiates American options and affects their valuation."
+  },
+  {
+    "id": "cm2-145",
+    "subject": "cm2",
+    "n": 145,
+    "title": "Binomial Convergence to Black-Scholes",
+    "difficulty": "medium",
+    "topics": [
+      "Binomial option pricing",
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Binomial model converges to Black-Scholes price as:",
+    "options": [
+      "Number of steps increases",
+      "Interest rates go to zero",
+      "Volatility decreases",
+      "Underlying price decreases"
+    ],
+    "answerIndex": 0,
+    "solution": "With finer time steps, the binomial model approximates continuous-time Black-Scholes results."
+  },
+  {
+    "id": "cm2-146",
+    "subject": "cm2",
+    "n": 146,
+    "title": "How Risk-Neutral Pricing Simplifies Valuation",
+    "difficulty": "medium",
+    "topics": [
+      "Binomial option pricing"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Risk-neutral pricing simplifies calculations by:",
+    "options": [
+      "Ignoring risk preferences of investors",
+      "Assuming zero interest rates",
+      "Assuming underlying always rises",
+      "Only applying to American options"
+    ],
+    "answerIndex": 0,
+    "solution": "Under risk-neutral measure, expected discounted payoff equals option price, independent of investor risk aversion."
+  },
+  {
+    "id": "cm2-147",
+    "subject": "cm2",
+    "n": 147,
+    "title": "Distribution Under Geometric Brownian Motion",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion & Itô calculus"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Geometric Brownian motion assumes:",
+    "options": [
+      "Log-normal distribution of asset prices",
+      "Normal distribution of asset prices",
+      "Poisson jumps only",
+      "Deterministic paths"
+    ],
+    "answerIndex": 0,
+    "solution": "GBM is the underlying stochastic process assumed in Black-Scholes, giving log-normal asset prices."
+  },
+  {
+    "id": "cm2-148",
+    "subject": "cm2",
+    "n": 148,
+    "title": "Ornstein-Uhlenbeck Applications",
+    "difficulty": "easy",
+    "topics": [
+      "Brownian motion & Itô calculus",
+      "Interest rate models"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Ornstein-Uhlenbeck process is used for:",
+    "options": [
+      "Mean-reverting processes like interest rates",
+      "Option delta hedging",
+      "Stock dividends",
+      "Black-Scholes PDE"
+    ],
+    "answerIndex": 0,
+    "solution": "OU process models quantities that tend to revert toward a long-term mean."
+  },
+  {
+    "id": "cm2-149",
+    "subject": "cm2",
+    "n": 149,
+    "title": "Pricing with State-Price Deflators",
+    "difficulty": "hard",
+    "topics": [
+      "Black-Scholes"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "State-price deflator approach prices options by:",
+    "options": [
+      "Multiplying payoffs by deflators and taking expectation",
+      "Using CAPM alpha",
+      "Discounting only by volatility",
+      "Estimating future dividends"
+    ],
+    "answerIndex": 0,
+    "solution": "State-price deflators adjust payoffs for risk and time, yielding the same result as risk-neutral pricing."
+  },
+  {
+    "id": "cm2-150",
+    "subject": "cm2",
+    "n": 150,
+    "title": "Uses of the Black-Scholes Greeks",
+    "difficulty": "easy",
+    "topics": [
+      "Greeks & hedging"
+    ],
+    "exams": [
+      "ifoa-cm2",
+      "assa-a214"
+    ],
+    "type": "mcq",
+    "prompt": "Black-Scholes Greeks are useful for:",
+    "options": [
+      "Managing and hedging option portfolios",
+      "Estimating historical returns",
+      "Measuring insurance premiums",
+      "Determining bond duration"
+    ],
+    "answerIndex": 0,
+    "solution": "Greeks quantify sensitivity to underlying, volatility, time, and interest rate, allowing effective hedging."
+  }
+]

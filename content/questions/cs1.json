@@ -1,0 +1,3017 @@
+[
+  {
+    "id": "cs1-1",
+    "subject": "cs1",
+    "n": 1,
+    "title": "Aim of Descriptive Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the primary aim of descriptive data analysis?",
+    "options": [
+      "To test a statistical hypothesis",
+      "To estimate unknown population parameters",
+      "To summarize and present key features of a dataset",
+      "To predict future outcomes"
+    ],
+    "answerIndex": 2,
+    "solution": "Descriptive analysis focuses on summarising and describing the main characteristics of a dataset using statistics and visualisations."
+  },
+  {
+    "id": "cs1-2",
+    "subject": "cs1",
+    "n": 2,
+    "title": "Inferential Data Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following activities is most closely associated with inferential data analysis?",
+    "options": [
+      "Constructing histograms and boxplots",
+      "Cleaning missing observations",
+      "Sorting raw data into ascending order",
+      "Estimating population parameters from sample data"
+    ],
+    "answerIndex": 3,
+    "solution": "Inferential analysis draws conclusions about a population based on a sample, such as estimating parameters or testing hypotheses."
+  },
+  {
+    "id": "cs1-3",
+    "subject": "cs1",
+    "n": 3,
+    "title": "Predictive Data Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is an example of predictive data analysis?",
+    "options": [
+      "Using past sales data to forecast future revenue",
+      "Computing a correlation coefficient",
+      "Calculating the mean of historical profits",
+      "Constructing a scatter plot"
+    ],
+    "answerIndex": 0,
+    "solution": "Predictive analysis uses historical data to make predictions about future outcomes."
+  },
+  {
+    "id": "cs1-4",
+    "subject": "cs1",
+    "n": 4,
+    "title": "Exploratory Data Analysis Stage",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which stage of data analysis primarily focuses on detecting patterns, anomalies and relationships?",
+    "options": [
+      "Exploratory data analysis",
+      "Result communication",
+      "Model deployment",
+      "Data collection"
+    ],
+    "answerIndex": 0,
+    "solution": "Exploratory data analysis (EDA) involves visualisations and summary statistics to explore structure and relationships in the data."
+  },
+  {
+    "id": "cs1-5",
+    "subject": "cs1",
+    "n": 5,
+    "title": "Visualising a Single Continuous Variable",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following tools is most appropriate for visualising the distribution of a single continuous variable?",
+    "options": [
+      "Line chart",
+      "Bar chart",
+      "Scatter plot",
+      "Histogram"
+    ],
+    "answerIndex": 3,
+    "solution": "A histogram displays the frequency distribution of a continuous variable."
+  },
+  {
+    "id": "cs1-6",
+    "subject": "cs1",
+    "n": 6,
+    "title": "Robust Measure of Location",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a robust measure of central tendency?",
+    "options": [
+      "Mean",
+      "Range",
+      "Variance",
+      "Median"
+    ],
+    "answerIndex": 3,
+    "solution": "The median is robust because it is not sensitive to extreme values or outliers."
+  },
+  {
+    "id": "cs1-7",
+    "subject": "cs1",
+    "n": 7,
+    "title": "Measuring Spread About the Mean",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statistic measures the spread of data around its mean?",
+    "options": [
+      "Median",
+      "Kurtosis",
+      "Variance",
+      "Skewness"
+    ],
+    "answerIndex": 2,
+    "solution": "Variance measures the average squared deviation from the mean."
+  },
+  {
+    "id": "cs1-8",
+    "subject": "cs1",
+    "n": 8,
+    "title": "Measuring Linear Association",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis",
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correlation measures assesses linear association between two variables?",
+    "options": [
+      "Chi-square statistic",
+      "Spearman's rank correlation",
+      "Pearson's correlation coefficient",
+      "Kendall's tau"
+    ],
+    "answerIndex": 2,
+    "solution": "Pearson’s correlation measures the strength of linear association between two continuous variables."
+  },
+  {
+    "id": "cs1-9",
+    "subject": "cs1",
+    "n": 9,
+    "title": "Rank-Based Correlation",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis",
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which correlation measure is based on ranked data?",
+    "options": [
+      "Spearman's rank correlation",
+      "Regression coefficient",
+      "Covariance",
+      "Pearson's correlation"
+    ],
+    "answerIndex": 0,
+    "solution": "Spearman’s correlation uses the ranks of the data rather than the raw values."
+  },
+  {
+    "id": "cs1-10",
+    "subject": "cs1",
+    "n": 10,
+    "title": "Purpose of Principal Component Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the purpose of principal component analysis (PCA)?",
+    "options": [
+      "To test model assumptions",
+      "To reduce dimensionality while retaining most variability",
+      "To estimate regression coefficients",
+      "To compute correlation coefficients"
+    ],
+    "answerIndex": 1,
+    "solution": "PCA transforms correlated variables into a smaller number of uncorrelated components capturing most of the variance."
+  },
+  {
+    "id": "cs1-11",
+    "subject": "cs1",
+    "n": 11,
+    "title": "Meaning of Reproducible Research",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the meaning of reproducible research?",
+    "options": [
+      "Collecting data from different sources",
+      "Ensuring that the same results can be obtained using the same data and analysis steps",
+      "Repeating an experiment many times",
+      "Using multiple datasets to confirm conclusions"
+    ],
+    "answerIndex": 1,
+    "solution": "Reproducible research ensures that independent analysts can obtain the same results when given the same data and methods."
+  },
+  {
+    "id": "cs1-12",
+    "subject": "cs1",
+    "n": 12,
+    "title": "Essentials of Reproducible Analysis",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is an essential element of reproducible data analysis?",
+    "options": [
+      "Avoiding automation",
+      "Deleting intermediate results",
+      "Using proprietary software only",
+      "Documenting code, data sources and analysis procedures"
+    ],
+    "answerIndex": 3,
+    "solution": "Clear documentation of data, code and methodology is fundamental to reproducibility."
+  },
+  {
+    "id": "cs1-13",
+    "subject": "cs1",
+    "n": 13,
+    "title": "Defining Extremely Large Data Sets",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes extremely large data sets?",
+    "options": [
+      "Any dataset with more than 1,000 observations",
+      "Datasets whose size or complexity exceeds the capabilities of traditional data-processing tools",
+      "Datasets without missing values",
+      "Only datasets stored in cloud systems"
+    ],
+    "answerIndex": 1,
+    "solution": "Extremely large datasets require specialised storage, processing and analytical techniques."
+  },
+  {
+    "id": "cs1-14",
+    "subject": "cs1",
+    "n": 14,
+    "title": "Summarising Skewed Income Data",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which summary statistic is most appropriate for describing skewed income data?",
+    "options": [
+      "Range",
+      "Variance",
+      "Mean",
+      "Median"
+    ],
+    "answerIndex": 3,
+    "solution": "The median is resistant to extreme values and better represents central tendency for skewed distributions."
+  },
+  {
+    "id": "cs1-15",
+    "subject": "cs1",
+    "n": 15,
+    "title": "Spotting Outliers Graphically",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which plot is most useful for identifying potential outliers?",
+    "options": [
+      "Boxplot",
+      "Histogram",
+      "Bar chart",
+      "Scatter plot"
+    ],
+    "answerIndex": 0,
+    "solution": "Boxplots display quartiles and highlight potential outliers using fences."
+  },
+  {
+    "id": "cs1-16",
+    "subject": "cs1",
+    "n": 16,
+    "title": "Measuring Monotonic Association",
+    "difficulty": "medium",
+    "topics": [
+      "Data analysis",
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statistic measures monotonic association between two variables?",
+    "options": [
+      "Pearson's correlation",
+      "Spearman's rank correlation",
+      "Variance",
+      "Standard deviation"
+    ],
+    "answerIndex": 1,
+    "solution": "Spearman’s correlation captures monotonic relationships even when the relationship is not linear."
+  },
+  {
+    "id": "cs1-17",
+    "subject": "cs1",
+    "n": 17,
+    "title": "Kendall's Tau",
+    "difficulty": "medium",
+    "topics": [
+      "Data analysis",
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement about Kendall’s tau is correct?",
+    "options": [
+      "It requires normally distributed variables",
+      "It is identical to Pearson's correlation",
+      "It measures only linear dependence",
+      "It measures ordinal association based on concordant and discordant pairs"
+    ],
+    "answerIndex": 3,
+    "solution": "Kendall’s tau quantifies ordinal association using the proportion of concordant and discordant pairs."
+  },
+  {
+    "id": "cs1-18",
+    "subject": "cs1",
+    "n": 18,
+    "title": "First Principal Component",
+    "difficulty": "medium",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is true about the first principal component in PCA?",
+    "options": [
+      "It is chosen arbitrarily",
+      "It minimizes the total variance",
+      "It explains the maximum possible variance in the data",
+      "It is always aligned with the original axes"
+    ],
+    "answerIndex": 2,
+    "solution": "The first principal component is the linear combination of variables capturing the greatest variance."
+  },
+  {
+    "id": "cs1-19",
+    "subject": "cs1",
+    "n": 19,
+    "title": "Bivariate Data Visualisation",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is an appropriate tool for bivariate data visualisation?",
+    "options": [
+      "Pie chart",
+      "Scatter plot",
+      "Boxplot of a single variable",
+      "Histogram"
+    ],
+    "answerIndex": 1,
+    "solution": "Scatter plots visualise relationships between two quantitative variables."
+  },
+  {
+    "id": "cs1-20",
+    "subject": "cs1",
+    "n": 20,
+    "title": "Benefits of Data Visualisation",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a key benefit of data visualisation?",
+    "options": [
+      "It guarantees causation",
+      "It replaces statistical inference",
+      "It reveals patterns and relationships not obvious from raw numbers",
+      "It eliminates the need for models"
+    ],
+    "answerIndex": 2,
+    "solution": "Visualisation aids understanding by revealing structure, trends and anomalies."
+  },
+  {
+    "id": "cs1-21",
+    "subject": "cs1",
+    "n": 21,
+    "title": "Role of Data Cleaning",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the role of data cleaning?",
+    "options": [
+      "Identifying and correcting errors, missing values and inconsistencies",
+      "Visualising regression results",
+      "Selecting a statistical model",
+      "Performing hypothesis tests"
+    ],
+    "answerIndex": 0,
+    "solution": "Data cleaning improves data quality and reliability of subsequent analysis."
+  },
+  {
+    "id": "cs1-22",
+    "subject": "cs1",
+    "n": 22,
+    "title": "Function of Summary Statistics",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the function of summary statistics?",
+    "options": [
+      "To remove variability",
+      "To condense large datasets into key numerical descriptors",
+      "To guarantee accurate predictions",
+      "To replace raw data"
+    ],
+    "answerIndex": 1,
+    "solution": "Summary statistics provide concise numerical information about location, spread and shape of data."
+  },
+  {
+    "id": "cs1-23",
+    "subject": "cs1",
+    "n": 23,
+    "title": "Interquartile Range",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the interquartile range (IQR)?",
+    "options": [
+      "The difference between maximum and minimum values",
+      "The difference between the third and first quartiles",
+      "The median of the dataset",
+      "The average of squared deviations from the mean"
+    ],
+    "answerIndex": 1,
+    "solution": "The IQR measures the spread of the middle 50% of the data."
+  },
+  {
+    "id": "cs1-24",
+    "subject": "cs1",
+    "n": 24,
+    "title": "Correlation Pitfalls",
+    "difficulty": "medium",
+    "topics": [
+      "Correlation & regression",
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is true about correlation?",
+    "options": [
+      "Correlation does not imply causation",
+      "Correlation always implies causation",
+      "Correlation can exceed 1 in magnitude",
+      "Zero correlation means independence"
+    ],
+    "answerIndex": 0,
+    "solution": "Correlation measures association, not causality, and lies between -1 and 1."
+  },
+  {
+    "id": "cs1-25",
+    "subject": "cs1",
+    "n": 25,
+    "title": "Purpose of the Data Analysis Process",
+    "difficulty": "easy",
+    "topics": [
+      "Data analysis"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best summarises the purpose of the entire data analysis process?",
+    "options": [
+      "To eliminate uncertainty",
+      "To extract meaningful insights and support decision-making from data",
+      "To maximise sample size",
+      "To replace subject matter expertise"
+    ],
+    "answerIndex": 1,
+    "solution": "Data analysis transforms raw data into actionable insights for informed decisions."
+  },
+  {
+    "id": "cs1-26",
+    "subject": "cs1",
+    "n": 26,
+    "title": "Geometric Memoryless Property",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a property of a geometric distribution with success probability p?",
+    "options": [
+      "It is memoryless",
+      "It is continuous",
+      "Its mean is equal to its variance",
+      "It is symmetric"
+    ],
+    "answerIndex": 0,
+    "solution": "The geometric distribution is memoryless: $$P(X > m+n \\mid X > m) = P(X > n).$$ It is the only discrete distribution with this property."
+  },
+  {
+    "id": "cs1-27",
+    "subject": "cs1",
+    "n": 27,
+    "title": "Binomial Random Variable Definition",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a binomial random variable?",
+    "options": [
+      "Time until the first success",
+      "Number of successes in a fixed number of independent Bernoulli trials",
+      "Number of failures before the r-th success",
+      "Number of events occurring in continuous time"
+    ],
+    "answerIndex": 1,
+    "solution": "A binomial random variable counts the number of successes in n independent trials with success probability p."
+  },
+  {
+    "id": "cs1-28",
+    "subject": "cs1",
+    "n": 28,
+    "title": "Binomial Variance",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is the variance of a $\\text{Binomial}(n, p)$ distribution?",
+    "options": [
+      "$np$",
+      "$n^2p(1-p)$",
+      "$p(1-p)$",
+      "$np(1-p)$"
+    ],
+    "answerIndex": 3,
+    "solution": "For $X \\sim \\text{Bin}(n, p)$, $X$ is a sum of $n$ independent Bernoulli($p$) variables, each with variance $p(1-p)$, so $$E[X] = np, \\qquad \\text{Var}(X) = np(1-p).$$"
+  },
+  {
+    "id": "cs1-29",
+    "subject": "cs1",
+    "n": 29,
+    "title": "Counting Failures Before the r-th Success",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution models the number of failures before the r-th success?",
+    "options": [
+      "Binomial distribution",
+      "Geometric distribution",
+      "Hypergeometric distribution",
+      "Negative binomial distribution"
+    ],
+    "answerIndex": 3,
+    "solution": "The negative binomial distribution counts the number of failures before achieving a fixed number of successes."
+  },
+  {
+    "id": "cs1-30",
+    "subject": "cs1",
+    "n": 30,
+    "title": "Hypergeometric vs Binomial",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following distinguishes the hypergeometric distribution from the binomial distribution?",
+    "options": [
+      "Sampling is without replacement",
+      "Population is infinite",
+      "Trials are independent",
+      "Number of trials is random"
+    ],
+    "answerIndex": 0,
+    "solution": "The hypergeometric distribution models sampling without replacement from a finite population."
+  },
+  {
+    "id": "cs1-31",
+    "subject": "cs1",
+    "n": 31,
+    "title": "Poisson Mean–Variance Property",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a property of the Poisson distribution with parameter λ?",
+    "options": [
+      "It is symmetric for all λ",
+      "It has finite support",
+      "Mean equals variance",
+      "It is continuous"
+    ],
+    "answerIndex": 2,
+    "solution": "For X ~ Poisson(λ), E[X] = Var(X) = λ."
+  },
+  {
+    "id": "cs1-32",
+    "subject": "cs1",
+    "n": 32,
+    "title": "Memoryless Continuous Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which continuous distribution is memoryless?",
+    "options": [
+      "Exponential distribution",
+      "Gamma distribution",
+      "Uniform distribution",
+      "Normal distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "The exponential distribution satisfies the memoryless property: P(X > s+t | X > s) = P(X > t)."
+  },
+  {
+    "id": "cs1-33",
+    "subject": "cs1",
+    "n": 33,
+    "title": "Sum of Independent Exponentials",
+    "difficulty": "medium",
+    "topics": [
+      "Random variables & distributions",
+      "Generating functions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is the sum of k independent exponential random variables with common rate?",
+    "options": [
+      "Gamma distribution",
+      "Chi-square distribution",
+      "Beta distribution",
+      "Normal distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "If $X_1, \\dots, X_k$ are independent $\\text{Exp}(\\lambda)$, then (e.g. by multiplying MGFs) $$\\sum_{i=1}^k X_i \\sim \\text{Gamma}(k, \\lambda).$$ The chi-square is only the special case $\\lambda = \\tfrac12$, so gamma is the general answer."
+  },
+  {
+    "id": "cs1-34",
+    "subject": "cs1",
+    "n": 34,
+    "title": "Symmetry of the Normal Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a property of the normal distribution?",
+    "options": [
+      "It is skewed for all parameter values",
+      "Mean equals variance",
+      "It has finite support",
+      "It is symmetric about its mean"
+    ],
+    "answerIndex": 3,
+    "solution": "The normal distribution is symmetric about its mean μ."
+  },
+  {
+    "id": "cs1-35",
+    "subject": "cs1",
+    "n": 35,
+    "title": "Distribution on the Unit Interval",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution has support on the interval (0, 1)?",
+    "options": [
+      "Gamma distribution",
+      "Exponential distribution",
+      "Beta distribution",
+      "Chi-square distribution"
+    ],
+    "answerIndex": 2,
+    "solution": "The beta distribution is defined on the interval (0,1)."
+  },
+  {
+    "id": "cs1-36",
+    "subject": "cs1",
+    "n": 36,
+    "title": "Waiting Time to the k-th Poisson Event",
+    "difficulty": "medium",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution describes the waiting time until the k-th event in a Poisson process?",
+    "options": [
+      "Normal distribution",
+      "Gamma distribution",
+      "Exponential distribution",
+      "Uniform distribution"
+    ],
+    "answerIndex": 1,
+    "solution": "The waiting time to the k-th arrival in a Poisson process follows a gamma distribution."
+  },
+  {
+    "id": "cs1-37",
+    "subject": "cs1",
+    "n": 37,
+    "title": "Poisson Process Assumptions",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a Poisson process?",
+    "options": [
+      "Events occur independently at a constant average rate",
+      "Events depend on previous occurrences",
+      "Events occur in fixed batches",
+      "Events occur at increasing rates"
+    ],
+    "answerIndex": 0,
+    "solution": "A Poisson process assumes independent events occurring at a constant rate λ over time."
+  },
+  {
+    "id": "cs1-38",
+    "subject": "cs1",
+    "n": 38,
+    "title": "Inverse Transform Simulation",
+    "difficulty": "easy",
+    "topics": [
+      "Random variables & distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which method can be used to generate random variables from a given distribution using uniform random numbers?",
+    "options": [
+      "Least squares method",
+      "Inverse transform method",
+      "Bootstrap method",
+      "Newton-Raphson method"
+    ],
+    "answerIndex": 1,
+    "solution": "The inverse transform method uses the inverse CDF to generate samples from a distribution."
+  },
+  {
+    "id": "cs1-39",
+    "subject": "cs1",
+    "n": 39,
+    "title": "Condition for Independence",
+    "difficulty": "medium",
+    "topics": [
+      "Joint distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which condition is required for two random variables X and Y to be independent?",
+    "options": [
+      "Their covariance is zero",
+      "The joint distribution equals the product of the marginals",
+      "Their correlation is zero",
+      "They have the same distribution"
+    ],
+    "answerIndex": 1,
+    "solution": "$X$ and $Y$ are independent if and only if $$f_{X,Y}(x,y) = f_X(x)\\,f_Y(y) \\quad \\text{for all } x, y.$$ Independence implies zero covariance and correlation, but zero covariance does not imply independence."
+  },
+  {
+    "id": "cs1-40",
+    "subject": "cs1",
+    "n": 40,
+    "title": "Definition of Covariance",
+    "difficulty": "easy",
+    "topics": [
+      "Joint distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly defines covariance?",
+    "options": [
+      "$\\text{Cov}(X,Y) = E\\big[(X-E[X])(Y-E[Y])\\big]$",
+      "$\\text{Cov}(X,Y) = \\text{Var}(X)\\,\\text{Var}(Y)$",
+      "$\\text{Cov}(X,Y) = E[X+Y]$",
+      "$\\text{Cov}(X,Y) = E[XY] - E[X]E[Y] - 1$"
+    ],
+    "answerIndex": 0,
+    "solution": "Covariance measures joint variability about the means: $$\\text{Cov}(X,Y) = E\\big[(X-E[X])(Y-E[Y])\\big] = E[XY] - E[X]E[Y].$$"
+  },
+  {
+    "id": "cs1-41",
+    "subject": "cs1",
+    "n": 41,
+    "title": "Variance of a Linear Combination",
+    "difficulty": "medium",
+    "topics": [
+      "Joint distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following gives the variance of a linear combination $aX + bY$?",
+    "options": [
+      "$a\\,\\text{Var}(X) + b\\,\\text{Var}(Y)$",
+      "$a^2 + b^2$",
+      "$a^2\\,\\text{Var}(X) + b^2\\,\\text{Var}(Y) + 2ab\\,\\text{Cov}(X,Y)$",
+      "$\\text{Var}(X) + \\text{Var}(Y)$"
+    ],
+    "answerIndex": 2,
+    "solution": "$$\\text{Var}(aX+bY) = a^2\\,\\text{Var}(X) + b^2\\,\\text{Var}(Y) + 2ab\\,\\text{Cov}(X,Y).$$ The covariance term vanishes only when $X$ and $Y$ are uncorrelated."
+  },
+  {
+    "id": "cs1-42",
+    "subject": "cs1",
+    "n": 42,
+    "title": "Conditional Expectation",
+    "difficulty": "medium",
+    "topics": [
+      "Joint distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines conditional expectation E[X | Y]?",
+    "options": [
+      "The joint expectation of X and Y",
+      "The unconditional mean of X",
+      "The variance of X given Y",
+      "The expected value of X given a specific value of Y"
+    ],
+    "answerIndex": 3,
+    "solution": "Conditional expectation incorporates information about Y when computing the expected value of X."
+  },
+  {
+    "id": "cs1-43",
+    "subject": "cs1",
+    "n": 43,
+    "title": "Law of Total Expectation",
+    "difficulty": "medium",
+    "topics": [
+      "Joint distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following identities is known as the law of total expectation?",
+    "options": [
+      "$E[X] = E[Y \\mid X]$",
+      "$E[X] = \\text{Var}(X)$",
+      "$E[X] = E[X \\mid Y]$",
+      "$E[X] = E\\big[E[X \\mid Y]\\big]$"
+    ],
+    "answerIndex": 3,
+    "solution": "The law of total expectation (tower property) states $$E[X] = E\\big[E[X \\mid Y]\\big],$$ i.e. the mean of $X$ is the average of its conditional means."
+  },
+  {
+    "id": "cs1-44",
+    "subject": "cs1",
+    "n": 44,
+    "title": "Uniqueness of the MGF",
+    "difficulty": "hard",
+    "topics": [
+      "Generating functions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which function uniquely determines the distribution of a random variable (when it exists)?",
+    "options": [
+      "Regression function",
+      "Variance function",
+      "Likelihood function",
+      "Moment generating function"
+    ],
+    "answerIndex": 3,
+    "solution": "The moment generating function, when it exists in a neighbourhood of zero, uniquely determines the distribution."
+  },
+  {
+    "id": "cs1-45",
+    "subject": "cs1",
+    "n": 45,
+    "title": "Normal Limit of Sums",
+    "difficulty": "easy",
+    "topics": [
+      "Central limit theorem"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which theorem explains why the sum of many independent random variables tends toward a normal distribution?",
+    "options": [
+      "Markov's Inequality",
+      "Bayes' Theorem",
+      "Central Limit Theorem",
+      "Law of Large Numbers"
+    ],
+    "answerIndex": 2,
+    "solution": "The Central Limit Theorem describes convergence in distribution to the normal distribution."
+  },
+  {
+    "id": "cs1-46",
+    "subject": "cs1",
+    "n": 46,
+    "title": "What Is a Sampling Distribution?",
+    "difficulty": "easy",
+    "topics": [
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a sampling distribution?",
+    "options": [
+      "The joint distribution of all variables",
+      "The distribution of a statistic over repeated samples",
+      "The distribution of the raw data",
+      "The population distribution"
+    ],
+    "answerIndex": 1,
+    "solution": "A sampling distribution describes how a statistic varies across repeated samples."
+  },
+  {
+    "id": "cs1-47",
+    "subject": "cs1",
+    "n": 47,
+    "title": "Sample Mean from a Normal Population",
+    "difficulty": "easy",
+    "topics": [
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which is the distribution of the sample mean from a normal population with known variance?",
+    "options": [
+      "t distribution",
+      "Chi-square distribution",
+      "Normal distribution",
+      "F distribution"
+    ],
+    "answerIndex": 2,
+    "solution": "The sample mean from a normal population is normally distributed."
+  },
+  {
+    "id": "cs1-48",
+    "subject": "cs1",
+    "n": 48,
+    "title": "Distribution of the Sample Variance",
+    "difficulty": "medium",
+    "topics": [
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution does the sample variance (scaled appropriately) follow for normal data?",
+    "options": [
+      "F distribution",
+      "t distribution",
+      "Chi-square distribution",
+      "Normal distribution"
+    ],
+    "answerIndex": 2,
+    "solution": "For a random sample of size $n$ from $N(\\mu, \\sigma^2)$: $$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2_{n-1}.$$"
+  },
+  {
+    "id": "cs1-49",
+    "subject": "cs1",
+    "n": 49,
+    "title": "Ratio of Two Sample Variances",
+    "difficulty": "medium",
+    "topics": [
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution describes the ratio of two independent sample variances from normal populations, each divided by its population variance?",
+    "options": [
+      "Chi-square distribution",
+      "Normal distribution",
+      "F distribution",
+      "t distribution"
+    ],
+    "answerIndex": 2,
+    "solution": "$$\\frac{S_1^2/\\sigma_1^2}{S_2^2/\\sigma_2^2} \\sim F_{n_1-1,\\; n_2-1},$$ since it is a ratio of independent chi-square variables, each divided by its degrees of freedom."
+  },
+  {
+    "id": "cs1-50",
+    "subject": "cs1",
+    "n": 50,
+    "title": "Studentised Sample Mean",
+    "difficulty": "medium",
+    "topics": [
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statistic follows a t distribution for a normal population with unknown variance?",
+    "options": [
+      "The sample variance",
+      "The standardized sample mean using the sample variance",
+      "The population variance",
+      "The sample mean"
+    ],
+    "answerIndex": 1,
+    "solution": "When $\\sigma$ is unknown it is replaced by $S$, and $$\\frac{\\bar X - \\mu}{S/\\sqrt{n}} \\sim t_{n-1}.$$"
+  },
+  {
+    "id": "cs1-51",
+    "subject": "cs1",
+    "n": 51,
+    "title": "Method of Moments",
+    "difficulty": "easy",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the method of moments?",
+    "options": [
+      "Equating sample moments to population moments to estimate parameters",
+      "Matching quantiles of the sample and population",
+      "Minimising squared errors",
+      "Maximising the likelihood function"
+    ],
+    "answerIndex": 0,
+    "solution": "The method of moments constructs estimators by setting sample moments equal to theoretical moments."
+  },
+  {
+    "id": "cs1-52",
+    "subject": "cs1",
+    "n": 52,
+    "title": "Defining the MLE",
+    "difficulty": "easy",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following defines the maximum likelihood estimator (MLE)?",
+    "options": [
+      "The parameter value that minimises bias",
+      "The parameter value that maximises the sample mean",
+      "The parameter value that maximises the likelihood function",
+      "The parameter value that minimises the variance"
+    ],
+    "answerIndex": 2,
+    "solution": "MLE chooses the parameter value that makes the observed data most probable."
+  },
+  {
+    "id": "cs1-53",
+    "subject": "cs1",
+    "n": 53,
+    "title": "Unbiased Estimators",
+    "difficulty": "easy",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which property of an estimator means that its expected value equals the true parameter?",
+    "options": [
+      "Consistency",
+      "Efficiency",
+      "Unbiasedness",
+      "Sufficiency"
+    ],
+    "answerIndex": 2,
+    "solution": "An estimator $\\hat\\theta$ is unbiased if $E[\\hat\\theta] = \\theta$, i.e. its bias $E[\\hat\\theta] - \\theta$ is zero."
+  },
+  {
+    "id": "cs1-54",
+    "subject": "cs1",
+    "n": 54,
+    "title": "Consistency of an Estimator",
+    "difficulty": "medium",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes consistency of an estimator?",
+    "options": [
+      "The estimator is unbiased for all sample sizes",
+      "The estimator has zero mean square error",
+      "The estimator converges in probability to the true parameter as sample size increases",
+      "The estimator has minimum variance"
+    ],
+    "answerIndex": 2,
+    "solution": "Consistency means $\\hat\\theta \\to \\theta$ in probability as $n \\to \\infty$. A sufficient condition is that $\\text{MSE}(\\hat\\theta) \\to 0$."
+  },
+  {
+    "id": "cs1-55",
+    "subject": "cs1",
+    "n": 55,
+    "title": "Bias–Variance Decomposition of MSE",
+    "difficulty": "medium",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly defines the mean squared error of an estimator?",
+    "options": [
+      "$\\text{Var}(\\hat\\theta) + \\big[\\text{bias}(\\hat\\theta)\\big]^2$",
+      "$E[\\hat\\theta - \\theta]$",
+      "$\\text{Var}(\\hat\\theta)/n$",
+      "$\\text{Var}(\\hat\\theta) - \\text{bias}(\\hat\\theta)$"
+    ],
+    "answerIndex": 0,
+    "solution": "$$\\text{MSE}(\\hat\\theta) = E\\big[(\\hat\\theta - \\theta)^2\\big] = \\text{Var}(\\hat\\theta) + \\big[\\text{bias}(\\hat\\theta)\\big]^2.$$ Note $E[\\hat\\theta - \\theta]$ is the bias itself, not the MSE."
+  },
+  {
+    "id": "cs1-56",
+    "subject": "cs1",
+    "n": 56,
+    "title": "Efficient Estimators",
+    "difficulty": "hard",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement about an efficient estimator is correct?",
+    "options": [
+      "It has minimum MSE among all estimators, biased or unbiased",
+      "It must have zero variance",
+      "It has the smallest variance among all unbiased estimators",
+      "It is always the method of moments estimator"
+    ],
+    "answerIndex": 2,
+    "solution": "Efficiency compares variances within the class of unbiased estimators: an efficient (minimum variance unbiased) estimator has the smallest variance in that class, e.g. it attains the Cramér–Rao lower bound. A biased estimator may still have a smaller MSE."
+  },
+  {
+    "id": "cs1-57",
+    "subject": "cs1",
+    "n": 57,
+    "title": "Asymptotic Properties of MLEs",
+    "difficulty": "medium",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is an asymptotic property of MLEs?",
+    "options": [
+      "They require normal data",
+      "They are exactly unbiased",
+      "They have finite sample efficiency",
+      "They are asymptotically normally distributed"
+    ],
+    "answerIndex": 3,
+    "solution": "Under regularity conditions, MLEs are asymptotically normal."
+  },
+  {
+    "id": "cs1-58",
+    "subject": "cs1",
+    "n": 58,
+    "title": "The Bootstrap",
+    "difficulty": "easy",
+    "topics": [
+      "Point estimation"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the bootstrap method?",
+    "options": [
+      "Resampling with replacement from the observed data to estimate properties of an estimator",
+      "Generating random numbers from known distributions",
+      "Using asymptotic theory to approximate distributions",
+      "Sampling repeatedly from the population"
+    ],
+    "answerIndex": 0,
+    "solution": "The bootstrap approximates the sampling distribution via resampling the observed data."
+  },
+  {
+    "id": "cs1-59",
+    "subject": "cs1",
+    "n": 59,
+    "title": "Interpreting a 95% Confidence Interval",
+    "difficulty": "medium",
+    "topics": [
+      "Confidence intervals"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is the correct interpretation of a 95% confidence interval?",
+    "options": [
+      "The probability the true parameter lies in this specific interval is 95%",
+      "95% of the data lie inside the interval",
+      "95% of such intervals constructed from repeated samples will contain the true parameter",
+      "The true parameter equals the midpoint with 95% probability"
+    ],
+    "answerIndex": 2,
+    "solution": "The confidence level refers to long-run frequency of correct intervals."
+  },
+  {
+    "id": "cs1-60",
+    "subject": "cs1",
+    "n": 60,
+    "title": "Interval for a Future Observation",
+    "difficulty": "easy",
+    "topics": [
+      "Confidence intervals"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which interval is used to estimate the range of a future observation?",
+    "options": [
+      "Tolerance interval",
+      "Prediction interval",
+      "Confidence interval",
+      "Credible interval"
+    ],
+    "answerIndex": 1,
+    "solution": "Prediction intervals account for both parameter uncertainty and observation variability."
+  },
+  {
+    "id": "cs1-61",
+    "subject": "cs1",
+    "n": 61,
+    "title": "CI for a Normal Mean, Variance Unknown",
+    "difficulty": "easy",
+    "topics": [
+      "Confidence intervals",
+      "Sampling distributions"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is used for a confidence interval for the mean of a normal population with unknown variance?",
+    "options": [
+      "F distribution",
+      "t distribution",
+      "Normal distribution",
+      "Chi-square distribution"
+    ],
+    "answerIndex": 1,
+    "solution": "The t distribution is used when σ is unknown."
+  },
+  {
+    "id": "cs1-62",
+    "subject": "cs1",
+    "n": 62,
+    "title": "Comparing Two Normal Variances",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which test is appropriate for comparing two population variances from normal samples?",
+    "options": [
+      "Chi-square test",
+      "t test",
+      "Z test",
+      "F test"
+    ],
+    "answerIndex": 3,
+    "solution": "The ratio of sample variances follows an F distribution under normality."
+  },
+  {
+    "id": "cs1-63",
+    "subject": "cs1",
+    "n": 63,
+    "title": "Type I Error",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following defines a Type I error?",
+    "options": [
+      "Accepting a true null hypothesis",
+      "Rejecting a true null hypothesis",
+      "Failing to reject a false null hypothesis",
+      "Rejecting a false null hypothesis"
+    ],
+    "answerIndex": 1,
+    "solution": "Type I error occurs when a true null hypothesis is incorrectly rejected."
+  },
+  {
+    "id": "cs1-64",
+    "subject": "cs1",
+    "n": 64,
+    "title": "Probability of a Type I Error",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which quantity represents the probability of a Type I error?",
+    "options": [
+      "Confidence level",
+      "p-value",
+      "Power of the test",
+      "Significance level"
+    ],
+    "answerIndex": 3,
+    "solution": "The significance level α is the probability of rejecting H₀ when it is true."
+  },
+  {
+    "id": "cs1-65",
+    "subject": "cs1",
+    "n": 65,
+    "title": "Power of a Test",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following defines the power of a test?",
+    "options": [
+      "The probability that the null hypothesis is true",
+      "The probability of rejecting a false null hypothesis",
+      "The probability of a Type II error",
+      "The probability of rejecting a true null hypothesis"
+    ],
+    "answerIndex": 1,
+    "solution": "Power equals 1 − β, where β is the probability of a Type II error."
+  },
+  {
+    "id": "cs1-66",
+    "subject": "cs1",
+    "n": 66,
+    "title": "Interpreting the p-Value",
+    "difficulty": "medium",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes the p-value?",
+    "options": [
+      "The probability that H₀ is true",
+      "The probability of observing a test statistic as extreme or more extreme under H₀",
+      "The probability of a Type I error",
+      "The probability that H₁ is true"
+    ],
+    "answerIndex": 1,
+    "solution": "The p-value measures the strength of evidence against the null hypothesis."
+  },
+  {
+    "id": "cs1-67",
+    "subject": "cs1",
+    "n": 67,
+    "title": "Goodness-of-Fit Testing",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which test is used to assess whether a sample follows a specified distribution?",
+    "options": [
+      "t test",
+      "F test",
+      "Z test",
+      "Chi-square goodness-of-fit test"
+    ],
+    "answerIndex": 3,
+    "solution": "The chi-square goodness-of-fit test compares observed and expected frequencies."
+  },
+  {
+    "id": "cs1-68",
+    "subject": "cs1",
+    "n": 68,
+    "title": "Testing Independence in a Contingency Table",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which test is used to assess independence in a contingency table?",
+    "options": [
+      "F test",
+      "t test",
+      "Z test",
+      "Chi-square test of independence"
+    ],
+    "answerIndex": 3,
+    "solution": "The chi-square test of independence is applied to contingency tables."
+  },
+  {
+    "id": "cs1-69",
+    "subject": "cs1",
+    "n": 69,
+    "title": "Permutation Tests",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which non-parametric testing approach is based on rearranging the observed data?",
+    "options": [
+      "F test",
+      "Z test",
+      "t test",
+      "Permutation test"
+    ],
+    "answerIndex": 3,
+    "solution": "Permutation tests construct the null distribution by rearranging the observed data."
+  },
+  {
+    "id": "cs1-70",
+    "subject": "cs1",
+    "n": 70,
+    "title": "Simple Null Hypothesis",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a simple null hypothesis?",
+    "options": [
+      "A hypothesis involving two populations",
+      "A hypothesis that completely specifies the distribution",
+      "A hypothesis that leaves some parameters unspecified",
+      "A hypothesis that can never be tested"
+    ],
+    "answerIndex": 1,
+    "solution": "A simple hypothesis fully specifies the probability model."
+  },
+  {
+    "id": "cs1-71",
+    "subject": "cs1",
+    "n": 71,
+    "title": "Composite Hypotheses",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement about composite hypotheses is correct?",
+    "options": [
+      "They leave at least one parameter unspecified",
+      "They can never be tested",
+      "They fully specify the model",
+      "They are always two-sided"
+    ],
+    "answerIndex": 0,
+    "solution": "Composite hypotheses do not fully specify the distribution."
+  },
+  {
+    "id": "cs1-72",
+    "subject": "cs1",
+    "n": 72,
+    "title": "Sensitivity of a Diagnostic Test",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which concept measures the ability of a diagnostic test to correctly identify positives?",
+    "options": [
+      "Sensitivity",
+      "Specificity",
+      "Accuracy",
+      "Power"
+    ],
+    "answerIndex": 0,
+    "solution": "Sensitivity measures the true positive rate."
+  },
+  {
+    "id": "cs1-73",
+    "subject": "cs1",
+    "n": 73,
+    "title": "Specificity of a Diagnostic Test",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which concept measures the ability of a diagnostic test to correctly identify negatives?",
+    "options": [
+      "Specificity",
+      "Accuracy",
+      "Sensitivity",
+      "Power"
+    ],
+    "answerIndex": 0,
+    "solution": "Specificity measures the true negative rate."
+  },
+  {
+    "id": "cs1-74",
+    "subject": "cs1",
+    "n": 74,
+    "title": "Likelihood Ratio Test Statistic",
+    "difficulty": "hard",
+    "topics": [
+      "Hypothesis testing",
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly defines the likelihood ratio test statistic, where $L_0$ and $L_1$ are the maximised likelihoods under $H_0$ and $H_1$?",
+    "options": [
+      "$L_1 - L_0$",
+      "$L_1 / L_0$",
+      "$L_0 + L_1$",
+      "$-2\\log(L_0 / L_1)$"
+    ],
+    "answerIndex": 3,
+    "solution": "$$-2\\log\\frac{L_0}{L_1} = 2(\\ell_1 - \\ell_0),$$ where $\\ell = \\log L$. For nested models it is approximately $\\chi^2$ with degrees of freedom equal to the difference in the number of parameters."
+  },
+  {
+    "id": "cs1-75",
+    "subject": "cs1",
+    "n": 75,
+    "title": "Critical Region",
+    "difficulty": "easy",
+    "topics": [
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes a critical region?",
+    "options": [
+      "The region containing the true parameter",
+      "The region where p-values are computed",
+      "The region of highest likelihood",
+      "The set of values of the test statistic for which H₀ is rejected"
+    ],
+    "answerIndex": 3,
+    "solution": "The critical region determines the decision rule of the test."
+  },
+  {
+    "id": "cs1-76",
+    "subject": "cs1",
+    "n": 76,
+    "title": "Response Variable",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines the response variable in a regression model?",
+    "options": [
+      "The variable used to explain another variable",
+      "The variable being explained or predicted",
+      "The variable that has no randomness",
+      "The variable that is fixed by design"
+    ],
+    "answerIndex": 1,
+    "solution": "The response variable (dependent variable) is the outcome the model aims to explain or predict."
+  },
+  {
+    "id": "cs1-77",
+    "subject": "cs1",
+    "n": 77,
+    "title": "Explanatory Variable",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best defines the explanatory variable in regression?",
+    "options": [
+      "The variable used to explain variation in the response",
+      "The intercept",
+      "The error term",
+      "The variable being predicted"
+    ],
+    "answerIndex": 0,
+    "solution": "Explanatory variables (independent variables) explain variation in the response variable."
+  },
+  {
+    "id": "cs1-78",
+    "subject": "cs1",
+    "n": 78,
+    "title": "Simple Linear Regression Model",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following correctly states the simple linear regression model?",
+    "options": [
+      "$X = \\beta_0 + \\beta_1 Y + \\varepsilon$",
+      "$Y = \\beta_0 + \\varepsilon$",
+      "$Y = \\beta_0 + \\beta_1 X + \\varepsilon$",
+      "$Y = \\beta_0 + \\beta_1 X$ (with no error term)"
+    ],
+    "answerIndex": 2,
+    "solution": "The simple linear regression model is $Y_i = \\beta_0 + \\beta_1 x_i + \\varepsilon_i$, relating the response $Y$ to the explanatory variable $x$ with intercept $\\beta_0$, slope $\\beta_1$ and random error $\\varepsilon$."
+  },
+  {
+    "id": "cs1-79",
+    "subject": "cs1",
+    "n": 79,
+    "title": "Ordinary Least Squares Criterion",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which method is used to estimate the regression coefficients in ordinary least squares?",
+    "options": [
+      "Matching moments",
+      "Minimising the sum of squared residuals",
+      "Minimising absolute deviations",
+      "Maximising the likelihood function"
+    ],
+    "answerIndex": 1,
+    "solution": "Ordinary least squares chooses coefficients that minimise the sum of squared residuals."
+  },
+  {
+    "id": "cs1-80",
+    "subject": "cs1",
+    "n": 80,
+    "title": "Least Squares Slope Estimator",
+    "difficulty": "hard",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is the least squares estimator of the slope $\\beta_1$ in simple linear regression?",
+    "options": [
+      "$\\dfrac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sum (x_i - \\bar x)^2}$",
+      "$\\dfrac{\\sum x_i y_i}{\\sum x_i^2}$",
+      "$\\bar y / \\bar x$",
+      "$\\dfrac{\\sum (y_i - \\bar y)}{\\sum (x_i - \\bar x)}$"
+    ],
+    "answerIndex": 0,
+    "solution": "Minimising $\\sum (y_i - \\beta_0 - \\beta_1 x_i)^2$ gives $$\\hat\\beta_1 = \\frac{S_{xy}}{S_{xx}} = \\frac{\\sum (x_i - \\bar x)(y_i - \\bar y)}{\\sum (x_i - \\bar x)^2}, \\qquad \\hat\\beta_0 = \\bar y - \\hat\\beta_1 \\bar x.$$ $\\sum x_i y_i / \\sum x_i^2$ is the estimator for a line forced through the origin."
+  },
+  {
+    "id": "cs1-81",
+    "subject": "cs1",
+    "n": 81,
+    "title": "Classical Regression Assumptions",
+    "difficulty": "medium",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is a key assumption of the classical linear regression model?",
+    "options": [
+      "The explanatory variables are random",
+      "The errors have mean zero and constant variance",
+      "The regression line always passes through the origin",
+      "The response variable is normally distributed"
+    ],
+    "answerIndex": 1,
+    "solution": "Homoscedasticity and zero-mean errors are core regression assumptions."
+  },
+  {
+    "id": "cs1-82",
+    "subject": "cs1",
+    "n": 82,
+    "title": "Coefficient of Determination",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following measures the proportion of variation in Y explained by the regression model?",
+    "options": [
+      "Residual standard error",
+      "p-value",
+      "Coefficient of determination ($R^2$)",
+      "Standard error of $\\hat\\beta_1$"
+    ],
+    "answerIndex": 2,
+    "solution": "$R^2 = SS_{\\text{REG}}/SS_{\\text{TOT}}$ is the proportion of the total variation in $Y$ explained by the regression."
+  },
+  {
+    "id": "cs1-83",
+    "subject": "cs1",
+    "n": 83,
+    "title": "Significance of a Regression Coefficient",
+    "difficulty": "medium",
+    "topics": [
+      "Correlation & regression",
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which test is usually used to assess whether an individual regression coefficient, such as the slope, is statistically significant?",
+    "options": [
+      "Durbin–Watson test",
+      "t-test",
+      "Chi-square goodness-of-fit test",
+      "Shapiro–Wilk test"
+    ],
+    "answerIndex": 1,
+    "solution": "Under $H_0: \\beta_1 = 0$, $$t = \\frac{\\hat\\beta_1}{\\text{s.e.}(\\hat\\beta_1)} \\sim t_{n-2}$$ in simple linear regression. (The ANOVA F-test is equivalent there, with $F = t^2$.)"
+  },
+  {
+    "id": "cs1-84",
+    "subject": "cs1",
+    "n": 84,
+    "title": "Residuals vs Fitted Values Plot",
+    "difficulty": "medium",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which plot is most useful for checking linearity and homoscedasticity?",
+    "options": [
+      "Histogram of X",
+      "Scatter plot of X and Y",
+      "Residuals versus fitted values plot",
+      "Boxplot of Y"
+    ],
+    "answerIndex": 2,
+    "solution": "Residual plots reveal violations of regression assumptions."
+  },
+  {
+    "id": "cs1-85",
+    "subject": "cs1",
+    "n": 85,
+    "title": "Multicollinearity",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes multicollinearity?",
+    "options": [
+      "Correlation between Y and X",
+      "Nonlinear relationship between X and Y",
+      "Correlation among residuals",
+      "Strong correlation among explanatory variables"
+    ],
+    "answerIndex": 3,
+    "solution": "Multicollinearity occurs when predictors are highly correlated."
+  },
+  {
+    "id": "cs1-86",
+    "subject": "cs1",
+    "n": 86,
+    "title": "Categorical Explanatory Variable",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression",
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is an example of a categorical explanatory variable?",
+    "options": [
+      "Age",
+      "Marital status",
+      "Income",
+      "Height"
+    ],
+    "answerIndex": 1,
+    "solution": "Categorical variables take distinct categories rather than numerical values."
+  },
+  {
+    "id": "cs1-87",
+    "subject": "cs1",
+    "n": 87,
+    "title": "Exponential Family Models in GLMs",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following regression models is a GLM whose response distribution is a non-normal member of the exponential family?",
+    "options": [
+      "Lasso regression",
+      "Ridge regression",
+      "Poisson regression",
+      "Ordinary least squares (normal linear) regression"
+    ],
+    "answerIndex": 2,
+    "solution": "Poisson regression uses a Poisson response (an exponential-family distribution) with a log link. The normal linear model is also a GLM, which made the original wording ambiguous; ridge and lasso are penalised least squares methods with normal errors."
+  },
+  {
+    "id": "cs1-88",
+    "subject": "cs1",
+    "n": 88,
+    "title": "Canonical Link for the Poisson",
+    "difficulty": "easy",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is the canonical link function for the Poisson distribution?",
+    "options": [
+      "Logit link",
+      "Identity link",
+      "Probit link",
+      "Log link"
+    ],
+    "answerIndex": 3,
+    "solution": "The canonical link for Poisson models is the log link."
+  },
+  {
+    "id": "cs1-89",
+    "subject": "cs1",
+    "n": 89,
+    "title": "Fitting Criterion for GLMs",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which quantity is minimised when fitting a GLM?",
+    "options": [
+      "Absolute deviations",
+      "Deviance",
+      "Sum of squared errors",
+      "Mean squared error"
+    ],
+    "answerIndex": 1,
+    "solution": "GLMs are fitted by maximum likelihood, which is equivalent to minimising the deviance (twice the gap in log-likelihood between the saturated model and the fitted model). For the normal model this reduces to least squares."
+  },
+  {
+    "id": "cs1-90",
+    "subject": "cs1",
+    "n": 90,
+    "title": "Deviance Residuals",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which residual is used to assess overall model adequacy in GLMs?",
+    "options": [
+      "Deviance residual",
+      "Ordinary residual",
+      "Prediction residual",
+      "Least squares residual"
+    ],
+    "answerIndex": 0,
+    "solution": "Deviance residuals assess goodness-of-fit in GLMs."
+  },
+  {
+    "id": "cs1-91",
+    "subject": "cs1",
+    "n": 91,
+    "title": "Comparing Nested GLMs",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models",
+      "Hypothesis testing"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which test compares nested GLMs?",
+    "options": [
+      "Sign test",
+      "Paired t-test",
+      "Kolmogorov–Smirnov test",
+      "Likelihood ratio (deviance) test"
+    ],
+    "answerIndex": 3,
+    "solution": "For nested models, the difference in scaled deviances is approximately $\\chi^2$ with degrees of freedom equal to the difference in the number of parameters. This is the likelihood ratio test. (An F-test is used instead when the scale parameter has to be estimated.)"
+  },
+  {
+    "id": "cs1-92",
+    "subject": "cs1",
+    "n": 92,
+    "title": "GLM Linear Predictor",
+    "difficulty": "easy",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following defines the linear predictor $\\eta$ in a GLM?",
+    "options": [
+      "$\\eta = \\varepsilon$",
+      "$\\eta = \\text{Var}(Y)$",
+      "$\\eta = \\mathbf{x}^{\\top}\\boldsymbol\\beta$",
+      "$\\eta = \\beta_0$"
+    ],
+    "answerIndex": 2,
+    "solution": "The linear predictor is $\\eta = \\mathbf{x}^{\\top}\\boldsymbol\\beta = \\beta_0 + \\beta_1 x_1 + \\dots + \\beta_p x_p$. It is related to the mean by the link function, $g(\\mu) = \\eta$."
+  },
+  {
+    "id": "cs1-93",
+    "subject": "cs1",
+    "n": 93,
+    "title": "Detecting Non-Linearity",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which plot is useful for detecting non-linearity in regression?",
+    "options": [
+      "Residual plot",
+      "Bar chart of categories",
+      "Histogram of X",
+      "Q-Q plot of Y"
+    ],
+    "answerIndex": 0,
+    "solution": "Patterns in residual plots indicate model inadequacy."
+  },
+  {
+    "id": "cs1-94",
+    "subject": "cs1",
+    "n": 94,
+    "title": "Model Selection with Adjusted R-Squared",
+    "difficulty": "easy",
+    "topics": [
+      "Correlation & regression"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following is used for model selection in multiple regression?",
+    "options": [
+      "Adjusted $R^2$",
+      "Sample size",
+      "Mean of $Y$",
+      "Variance of $X$"
+    ],
+    "answerIndex": 0,
+    "solution": "Adjusted $R^2$ penalises extra parameters, so unlike $R^2$ it does not automatically increase when a predictor is added."
+  },
+  {
+    "id": "cs1-95",
+    "subject": "cs1",
+    "n": 95,
+    "title": "Interaction Terms",
+    "difficulty": "medium",
+    "topics": [
+      "Correlation & regression",
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following statements about interaction terms is correct?",
+    "options": [
+      "They allow the effect of one variable to depend on another",
+      "They eliminate multicollinearity",
+      "They always improve model fit",
+      "They replace main effects"
+    ],
+    "answerIndex": 0,
+    "solution": "Interaction terms capture dependence between predictors."
+  },
+  {
+    "id": "cs1-96",
+    "subject": "cs1",
+    "n": 96,
+    "title": "Pearson Residuals",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes Pearson residuals?",
+    "options": [
+      "Difference between predicted and mean response",
+      "Difference between fitted and true values",
+      "Difference between observed and predicted values",
+      "Standardised difference between observed and fitted values"
+    ],
+    "answerIndex": 3,
+    "solution": "The Pearson residual is $$\\frac{y - \\hat\\mu}{\\sqrt{V(\\hat\\mu)}},$$ the raw residual divided by the estimated standard deviation under the model."
+  },
+  {
+    "id": "cs1-97",
+    "subject": "cs1",
+    "n": 97,
+    "title": "GLM for Count Data",
+    "difficulty": "easy",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which model is appropriate for count data in GLMs?",
+    "options": [
+      "Logistic regression",
+      "Gamma regression",
+      "Poisson regression",
+      "Linear regression"
+    ],
+    "answerIndex": 2,
+    "solution": "Poisson regression is designed for modelling counts."
+  },
+  {
+    "id": "cs1-98",
+    "subject": "cs1",
+    "n": 98,
+    "title": "Response Distribution in Logistic Regression",
+    "difficulty": "easy",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is used in logistic regression?",
+    "options": [
+      "Gamma distribution",
+      "Poisson distribution",
+      "Normal distribution",
+      "Binomial distribution"
+    ],
+    "answerIndex": 3,
+    "solution": "Logistic regression models binomial outcomes."
+  },
+  {
+    "id": "cs1-99",
+    "subject": "cs1",
+    "n": 99,
+    "title": "Link Function in Logistic Regression",
+    "difficulty": "easy",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which link function is used in logistic regression?",
+    "options": [
+      "Log link",
+      "Logit link",
+      "Probit link",
+      "Identity link"
+    ],
+    "answerIndex": 1,
+    "solution": "The logit link relates probabilities to the linear predictor."
+  },
+  {
+    "id": "cs1-100",
+    "subject": "cs1",
+    "n": 100,
+    "title": "Overdispersion in a Poisson GLM",
+    "difficulty": "medium",
+    "topics": [
+      "Generalised linear models"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes overdispersion in a Poisson GLM?",
+    "options": [
+      "The mean exceeds the variance",
+      "The residuals are normally distributed",
+      "The observed variance exceeds the model variance",
+      "The model has too many predictors"
+    ],
+    "answerIndex": 2,
+    "solution": "Overdispersion occurs when data variability is larger than the Poisson assumption allows."
+  },
+  {
+    "id": "cs1-101",
+    "subject": "cs1",
+    "n": 101,
+    "title": "What Is Bayesian Inference?",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which of the following best describes Bayesian inference?",
+    "options": [
+      "Updating beliefs using observed data",
+      "Estimating parameters using only sample means",
+      "Testing hypotheses without prior information",
+      "Fitting models using least squares"
+    ],
+    "answerIndex": 0,
+    "solution": "Bayesian inference updates prior beliefs in light of observed data."
+  },
+  {
+    "id": "cs1-102",
+    "subject": "cs1",
+    "n": 102,
+    "title": "Ingredients of Bayes' Theorem",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which components make up Bayes' theorem?",
+    "options": [
+      "Estimator, parameter and statistic",
+      "Prior, likelihood and posterior",
+      "Bias, error and variance",
+      "Mean, variance and skewness"
+    ],
+    "answerIndex": 1,
+    "solution": "Bayes’ theorem combines prior beliefs with data through the likelihood to obtain the posterior."
+  },
+  {
+    "id": "cs1-103",
+    "subject": "cs1",
+    "n": 103,
+    "title": "Prior Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution represents knowledge about a parameter before observing data?",
+    "options": [
+      "Predictive distribution",
+      "Prior distribution",
+      "Sampling distribution",
+      "Posterior distribution"
+    ],
+    "answerIndex": 1,
+    "solution": "The prior reflects beliefs about the parameter before seeing data."
+  },
+  {
+    "id": "cs1-104",
+    "subject": "cs1",
+    "n": 104,
+    "title": "Posterior Distribution",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution represents updated beliefs after observing data?",
+    "options": [
+      "Posterior distribution",
+      "Sampling distribution",
+      "Prior distribution",
+      "Likelihood function"
+    ],
+    "answerIndex": 0,
+    "solution": "The posterior combines the prior and the likelihood."
+  },
+  {
+    "id": "cs1-105",
+    "subject": "cs1",
+    "n": 105,
+    "title": "Normalising Constant in Bayes' Theorem",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which term in Bayes' theorem ensures the posterior integrates to one?",
+    "options": [
+      "Likelihood",
+      "Prior",
+      "Marginal likelihood (evidence)",
+      "Posterior mean"
+    ],
+    "answerIndex": 2,
+    "solution": "The marginal likelihood acts as the normalising constant."
+  },
+  {
+    "id": "cs1-106",
+    "subject": "cs1",
+    "n": 106,
+    "title": "Non-Informative Priors",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which type of prior is chosen to have minimal influence on the posterior, reflecting little or no prior knowledge?",
+    "options": [
+      "Empirical prior",
+      "Subjective prior",
+      "Conjugate prior",
+      "Non-informative prior"
+    ],
+    "answerIndex": 3,
+    "solution": "Non-informative priors aim to have minimal influence on the posterior."
+  },
+  {
+    "id": "cs1-107",
+    "subject": "cs1",
+    "n": 107,
+    "title": "Conjugate Priors",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which prior leads to a posterior of the same functional form?",
+    "options": [
+      "Conjugate prior",
+      "Empirical prior",
+      "Non-informative prior",
+      "Improper prior"
+    ],
+    "answerIndex": 0,
+    "solution": "Conjugate priors simplify Bayesian updating."
+  },
+  {
+    "id": "cs1-108",
+    "subject": "cs1",
+    "n": 108,
+    "title": "Conjugate Prior for Binomial Data",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is conjugate to the binomial likelihood?",
+    "options": [
+      "Poisson distribution",
+      "Gamma distribution",
+      "Beta distribution",
+      "Normal distribution"
+    ],
+    "answerIndex": 2,
+    "solution": "The Beta distribution is conjugate to the Binomial."
+  },
+  {
+    "id": "cs1-109",
+    "subject": "cs1",
+    "n": 109,
+    "title": "Conjugate Prior for Poisson Data",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution is conjugate to the Poisson likelihood?",
+    "options": [
+      "Gamma distribution",
+      "Beta distribution",
+      "Normal distribution",
+      "Inverse-Gamma distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "The Gamma distribution is conjugate to the Poisson likelihood."
+  },
+  {
+    "id": "cs1-110",
+    "subject": "cs1",
+    "n": 110,
+    "title": "Bayes Estimator Under Squared Error Loss",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which Bayesian estimator minimises expected squared error loss?",
+    "options": [
+      "Maximum likelihood estimate",
+      "Posterior median",
+      "Posterior mean",
+      "Posterior mode"
+    ],
+    "answerIndex": 2,
+    "solution": "The posterior mean minimises quadratic loss."
+  },
+  {
+    "id": "cs1-111",
+    "subject": "cs1",
+    "n": 111,
+    "title": "Bayes Estimator Under Absolute Error Loss",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which Bayesian estimator minimises absolute error loss?",
+    "options": [
+      "Posterior median",
+      "Posterior mode",
+      "Posterior mean",
+      "Maximum likelihood estimate"
+    ],
+    "answerIndex": 0,
+    "solution": "The posterior median minimises absolute loss."
+  },
+  {
+    "id": "cs1-112",
+    "subject": "cs1",
+    "n": 112,
+    "title": "Bayes Estimator Under All-or-Nothing Loss",
+    "difficulty": "hard",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which Bayesian estimator minimises 0–1 loss?",
+    "options": [
+      "Posterior mode (MAP)",
+      "Posterior median",
+      "Sample mean",
+      "Posterior mean"
+    ],
+    "answerIndex": 0,
+    "solution": "The MAP estimate minimises 0–1 loss."
+  },
+  {
+    "id": "cs1-113",
+    "subject": "cs1",
+    "n": 113,
+    "title": "Posterior Predictive Distribution",
+    "difficulty": "hard",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which distribution describes future observations given current data?",
+    "options": [
+      "Posterior predictive distribution",
+      "Likelihood function",
+      "Prior distribution",
+      "Sampling distribution"
+    ],
+    "answerIndex": 0,
+    "solution": "The posterior predictive combines uncertainty in parameters and new data."
+  },
+  {
+    "id": "cs1-114",
+    "subject": "cs1",
+    "n": 114,
+    "title": "Summarising the Posterior",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which quantity summarises the central tendency of the posterior distribution?",
+    "options": [
+      "Marginal likelihood",
+      "Likelihood",
+      "Prior",
+      "Posterior mean"
+    ],
+    "answerIndex": 3,
+    "solution": "The posterior mean is a key summary statistic."
+  },
+  {
+    "id": "cs1-115",
+    "subject": "cs1",
+    "n": 115,
+    "title": "Credible Intervals",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics",
+      "Confidence intervals"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which interval contains a fixed proportion of posterior probability?",
+    "options": [
+      "Tolerance interval",
+      "Prediction interval",
+      "Credible interval",
+      "Confidence interval"
+    ],
+    "answerIndex": 2,
+    "solution": "Credible intervals are Bayesian probability statements."
+  },
+  {
+    "id": "cs1-116",
+    "subject": "cs1",
+    "n": 116,
+    "title": "Approximating Complex Posteriors",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which algorithm is commonly used for approximating complex posteriors?",
+    "options": [
+      "Gradient descent",
+      "Newton-Raphson",
+      "Ordinary least squares",
+      "Markov Chain Monte Carlo (MCMC)"
+    ],
+    "answerIndex": 3,
+    "solution": "MCMC methods sample from complex posterior distributions."
+  },
+  {
+    "id": "cs1-117",
+    "subject": "cs1",
+    "n": 117,
+    "title": "Metropolis–Hastings Algorithm",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which MCMC method uses proposal distributions and acceptance probabilities?",
+    "options": [
+      "EM algorithm",
+      "Bootstrap",
+      "Metropolis-Hastings algorithm",
+      "Gibbs sampler"
+    ],
+    "answerIndex": 2,
+    "solution": "Metropolis-Hastings generates samples using acceptance-rejection."
+  },
+  {
+    "id": "cs1-118",
+    "subject": "cs1",
+    "n": 118,
+    "title": "Gibbs Sampler",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which MCMC method samples directly from conditional distributions?",
+    "options": [
+      "Rejection sampling",
+      "Metropolis-Hastings",
+      "Gibbs sampler",
+      "Importance sampling"
+    ],
+    "answerIndex": 2,
+    "solution": "Gibbs sampling draws from full conditional distributions."
+  },
+  {
+    "id": "cs1-119",
+    "subject": "cs1",
+    "n": 119,
+    "title": "Role of the Likelihood in Bayes' Theorem",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "In Bayes' theorem, $f(\\theta \\mid x) \\propto f(x \\mid \\theta)\\, f(\\theta)$. Which component carries the information supplied by the observed data?",
+    "options": [
+      "Prior variance",
+      "Credible interval width",
+      "Likelihood",
+      "Posterior mean"
+    ],
+    "answerIndex": 2,
+    "solution": "The likelihood $f(x \\mid \\theta)$ carries the information in the data. The more data there are, the more the likelihood dominates the prior in the posterior."
+  },
+  {
+    "id": "cs1-120",
+    "subject": "cs1",
+    "n": 120,
+    "title": "Improper Priors",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which prior distribution is improper?",
+    "options": [
+      "Uniform distribution on the real line",
+      "Gamma(1,1)",
+      "Normal(0,1)",
+      "Beta(1,1)"
+    ],
+    "answerIndex": 0,
+    "solution": "A uniform prior over the real line does not integrate to one."
+  },
+  {
+    "id": "cs1-121",
+    "subject": "cs1",
+    "n": 121,
+    "title": "MAP Estimation",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which quantity is maximised in maximum a posteriori estimation?",
+    "options": [
+      "Sampling distribution",
+      "Prior distribution",
+      "Likelihood function",
+      "Posterior distribution"
+    ],
+    "answerIndex": 3,
+    "solution": "MAP estimation maximises the posterior."
+  },
+  {
+    "id": "cs1-122",
+    "subject": "cs1",
+    "n": 122,
+    "title": "Bayesian Analogue of a Confidence Interval",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics",
+      "Confidence intervals"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which Bayesian concept corresponds most closely to a frequentist confidence interval?",
+    "options": [
+      "Prediction interval",
+      "Likelihood region",
+      "Posterior mode",
+      "Credible interval"
+    ],
+    "answerIndex": 3,
+    "solution": "Credible intervals represent probability statements about parameters."
+  },
+  {
+    "id": "cs1-123",
+    "subject": "cs1",
+    "n": 123,
+    "title": "Bayesian Updating",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which method combines prior and likelihood information numerically?",
+    "options": [
+      "Jackknife resampling",
+      "Bayesian updating",
+      "Cross-validation",
+      "Bootstrapping"
+    ],
+    "answerIndex": 1,
+    "solution": "Bayesian updating applies Bayes' theorem."
+  },
+  {
+    "id": "cs1-124",
+    "subject": "cs1",
+    "n": 124,
+    "title": "Empirical Bayes Priors",
+    "difficulty": "medium",
+    "topics": [
+      "Bayesian statistics",
+      "Credibility theory"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which type of prior is estimated from the data?",
+    "options": [
+      "Conjugate prior",
+      "Empirical Bayes prior",
+      "Subjective prior",
+      "Non-informative prior"
+    ],
+    "answerIndex": 1,
+    "solution": "Empirical Bayes methods estimate priors from data."
+  },
+  {
+    "id": "cs1-125",
+    "subject": "cs1",
+    "n": 125,
+    "title": "Bayesian Philosophy",
+    "difficulty": "easy",
+    "topics": [
+      "Bayesian statistics"
+    ],
+    "exams": [
+      "ifoa-cs1",
+      "assa-a111"
+    ],
+    "type": "mcq",
+    "prompt": "Which statement best summarises the Bayesian approach?",
+    "options": [
+      "Prior information is ignored",
+      "Only data randomness is modelled",
+      "Parameters are fixed but unknown constants",
+      "Probability is used to quantify uncertainty in parameters"
+    ],
+    "answerIndex": 3,
+    "solution": "Bayesian statistics treats parameters as random variables with probability distributions."
+  }
+]
