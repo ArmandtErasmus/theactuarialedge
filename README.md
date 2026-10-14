@@ -47,8 +47,7 @@ Your answer           1.2167
                       ✓ Correct · +10 Actuary Bucks · 13-day streak 🔥
 ```
 
-Everything runs in your browser. There's nothing to install and no account to make: your progress,
-streak and avatar are saved on your device.
+Everything runs in your browser. There's nothing to install and no account to make.
 
 **[→ Start at theactuarialedge.com](https://www.theactuarialedge.com)**
 
